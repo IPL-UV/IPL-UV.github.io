@@ -1,0 +1,73 @@
+<!doctype html><html lang=en-us dir=ltr><head><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>ISP - Image and Signal Processing group</title>
+<link href=https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css rel=stylesheet integrity=sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN crossorigin=anonymous><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin=anonymous referrerpolicy=no-referrer><link rel="shortcut icon" href=http://isp.uv.es/favicon.ico type=image/x-icon><link rel=stylesheet href=/isp/style.css></head></head><body><nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top"><div class=container-fluid><button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarTogglerDemo01 aria-controls=navbarTogglerDemo01 aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse" id=navbarTogglerDemo01><ul class="navbar-nav mx-auto mb-lg-0"><li class="nav-item px-2 nav-item-highlight"><a class="nav-link active a" aria-current=page href=/>ISP</a></li><li class="nav-item px-2 nav-item-highlight"><a class="nav-link active a" aria-current=page href=/people/>People</a></li><li class="nav-item dropdown px-2 nav-item-highlight"><a class="nav-link dropdown-toggle active a" href=/research/ role=button data-bs-toggle=dropdown aria-expanded=false>Research</a><ul class=dropdown-menu><li><a class="dropdown-item a" href=/research/machine_learning/>Machine learning</a></li><li><a class="dropdown-item a" href=/research/visual_neuroscience/>Visual neuroscience</a></li><li><a class="dropdown-item a" href=/research/visual_brain/>Visual brain</a></li><li><a class="dropdown-item a" href=/research/earth_science/>Earth science</a></li><li><a class="dropdown-item a" href=/research/social_science>Social science</a></li></ul></li><li class="nav-item px-2 nav-item-highlight"><a class="nav-link active a" aria-current=page href=/projects/>Projects</a></li><li class="nav-item px-2 nav-item-highlight"><a class="nav-link active a" aria-current=page href=/facilities/>Facilities</a></li><li class="nav-item dropdown px-2 nav-item-highlight"><a class="nav-link dropdown-toggle active a" href=/publications/journals role=button data-bs-toggle=dropdown aria-expanded=false>Publications</a><ul class=dropdown-menu><li><a class="dropdown-item a" href=/publications/journals/>Journals</a></li><li><a class="dropdown-item a" href=/publications/conferences/>Conferences</a></li><li><a class="dropdown-item a" href=/publications/books/>Books</a></li><li><a class="dropdown-item a" href=/publications/talks/>Talks</a></li><li><a class="dropdown-item a" href=/publications/technical_reports/>Technical Reports</a></li><li><a class="dropdown-item a" href=/publications/theses/>Theses</a></li></ul></li><li class="nav-item px-2 nav-item-highlight"><a class="nav-link active a" aria-current=page href=/code/>Code</a></li><li class="nav-item px-2 nav-item-highlight"><a class="nav-link active a" aria-current=page href=/data/>Data</a></li><li class="nav-item px-2 nav-item-highlight"><a class="nav-link active a" aria-current=page href=/seminars/>Seminars</a></li><li class="nav-item px-2 nav-item-highlight"><a class="nav-link active a" aria-current=page href=/courses/>Courses</a></li><li class="nav-item px-2 nav-item-highlight"><a class="nav-link active a" aria-current=page href=/collaborators/>Collaborators</a></li><li class="nav-item px-2 nav-item-highlight"><a class="nav-link active a" aria-current=page href=/news/>News</a></li><li class="nav-item px-2 nav-item-highlight"><a class="nav-link active a" aria-current=page href=/contact/>Contact</a></li></ul></div></div></nav><style>.navbar{--bs-navbar-padding-y:0rem !important;background-color:#222!important}.a{color:#949494!important}.a:hover{color:#fff!important}.navbar-nav .dropdown:hover .dropdown-menu{display:block}.navbar-nav .dropdown-menu:hover{display:block}.dropdown-menu{margin-top:7px}.navbar-toggler-icon{background-image:url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")}.navbar-toggler{border:none}.navbar-toggler:focus{outline:none}.nav-item-highlight{padding:.4rem}.nav-item-highlight:hover{background-color:#2d70aa!important}.dropdown-menu{background-color:#fff!important;color:#000!important}.dropdown-item:hover{background-color:#2d70aa!important;color:#fff!important}.navbar-nav li.nav-item .nav-link,.dropdown-menu .dropdown-item{transition:color .3s,background-color .3s}.navbar-toggler:focus{box-shadow:none!important}</style><script>document.querySelectorAll(".dropdown-toggle").forEach(e=>{e.removeAttribute("data-bs-toggle")})</script><script>window.onload=function(){const e=window.devicePixelRatio,t=document.querySelector(".navbar-collapse");e>=1.25&&t.classList.add("show")}</script><main><div class=container><div class=content-container></div><script type=module>
+  import Ajv from 'https://cdn.skypack.dev/ajv';
+
+  
+  async function validateData(filePath, schemaPath) {
+    const response = await fetch(filePath);
+    const data = await response.json();
+
+    const schemaResponse = await fetch(schemaPath);
+    const schema = await schemaResponse.json();
+
+    const ajv = new Ajv();
+    const validate = ajv.compile(schema);
+
+    const valid = validate(data);
+
+    if (!valid) {
+      console.error(`Error de validación en el archivo ${filePath}:`);
+      validate.errors.forEach(error => {
+        console.error(`  - En la propiedad ${error.instancePath}: ${error.message}`);
+      });
+    } else {
+      console.log('Los datos son válidos.');
+    }
+  }
+
+  
+  const files = [
+    'alumni.json',
+    'assistant_professors.json',
+    'associate_professors.json',
+    'full_professors.json',
+    'phd_students.json',
+    'postdocs.json',
+    'senior_research_scientists.json',
+    'visitors.json'
+  ];
+
+  const schemaPath = '/isp/schema.json';
+
+  files.forEach(file => {
+    validateData(`/isp/data/people/${file}`, schemaPath);
+  });
+</script><script>async function loadData(e){const t=await fetch(e);return t.json()}async function loadAllData(){const e=["full_professors","associate_professors","assistant_professors","senior_research_scientists","postdocs","phd_students","visitors","alumni"],t="/isp/data/people/";for(const a of e){const r=`${t}${a}.json`,o=await loadData(r),i=document.querySelector(".content-container"),n=document.createElement("h1");n.style.marginBottom="20px",n.classList.add("label","label-info"),n.textContent=o.groupTitle,i.appendChild(n);const s=document.createElement("div");s.classList.add("card-container"),s.style.marginLeft="3%",i.appendChild(s);const c="/isp/images/people/";o.members.forEach(e=>{const t=document.createElement("div");t.classList.add("card","mb-3"),t.innerHTML=`
+            <div class="row g-0">
+              <div class="col-md-3">
+                <img src="${c+e.image}" class="img-fluid" alt="Imagen de ${e.name}">
+              </div>
+              <div class="col-md-9">
+                <div class="card-body" style="max-height: 200px;">
+                  <h5 class="card-title" style="font-size: 88.5%; margin-top:-10px"><b>${e.name}</b></h5>
+                  <p class="card-text" style="font-size: 0.95em;">${truncateText(e.description,150)}</p>
+                  <div class="card-links">
+                    ${e.social_networks.google_scholar&&e.social_networks.google_scholar!==null?`<a href="${e.social_networks.google_scholar}"><img src="/isp/images/people/redes/gscholar.png" height="25" width="25"></a>`:""}
+                    ${e.social_networks.orcid&&e.social_networks.orcid!==null?`<a href="${e.social_networks.orcid}"><img src="/isp/images/people/redes/orcid.png" height="25" width="25"></a>`:""}
+                    ${e.social_networks.twitter&&e.social_networks.twitter!==null?`<a href="${e.social_networks.twitter}"><img src="/isp/images/people/redes/twitter.png" height="24" width="30"></a>`:""}
+                    ${e.social_networks.github&&e.social_networks.github!==null?`<a href="${e.social_networks.github}"><img src="/isp/images/people/redes/github.png" height="25" width="25"></a>`:""}
+                    ${e.social_networks.semantic_scholar&&e.social_networks.semantic_scholar!==null?`<a href="${e.social_networks.semantic_scholar}"><img src="/isp/images/people/redes/semantic.png" height="25" width="25"></a>`:""}
+                    ${e.social_networks.researchgate&&e.social_networks.researchgate!==null?`<a href="${e.social_networks.researchgate}"><img src="/isp/images/people/redes/rg.png" height="25" width="25"></a>`:""}
+                    ${e.social_networks.personal_uv&&e.social_networks.personal_uv!==null?`<a href="${e.social_networks.personal_uv}" class="btn btn-xss btn-info" aria-label="Left Align">UV</a>`:""}
+                    ${e.social_networks.linkedin&&e.social_networks.linkedin!==null?`<a href="${e.social_networks.linkedin}"><img src="/isp/images/people/redes/linkedin.png" height="25" width="25"></a>`:""}
+                    ${e.social_networks.ieee&&e.social_networks.ieee!==null?`<a href="${e.social_networks.ieee}"><button type="button" class="btn btn-xss btn-success" aria-label="Left Align">IEEE</button></a>`:""}
+                    ${e.social_networks.dblp&&e.social_networks.dblp!==null?`<a href="${e.social_networks.dblp}"><button type="button" class="btn btn-xss btn-danger" aria-label="Left Align">dblp</button></a>`:""}
+                    ${e.social_networks.personal_website&&e.social_networks.personal_website!==null?`<a href="${e.social_networks.personal_website}"><button type="button" class="btn btn-xss btn-info" aria-label="Left Align">Website</button></a>`:""}
+                    ${e.social_networks.causality&&e.social_networks.causality!==null?`<a href="${e.social_networks.causality}"><button type="button" class="btn btn-xss btn-success" aria-label="Left Align">Causality</button></a>`:""}
+                    ${e.social_networks.manifold_learning&&e.social_networks.manifold_learning!==null?`<a href="${e.social_networks.manifold_learning}"><button type="button" class="btn btn-xss btn-danger" aria-label="Left Align">Manifold Learning</button></a>`:""}
+                   </div>
+                </div>
+              </div>
+            </div>
+          `,s.appendChild(t)})}}document.addEventListener("DOMContentLoaded",loadAllData);function truncateText(e,t){return e.length>t?e.slice(0,t)+"...":e}</script></div></main></body><script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js integrity=sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL crossorigin=anonymous></script></html>

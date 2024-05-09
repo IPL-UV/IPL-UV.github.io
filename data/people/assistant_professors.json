@@ -1,0 +1,165 @@
+{
+  "groupTitle": "Assistant Professors",
+  "members": [
+    {     
+    "name": "Julia Amorós",
+    "image": "julia.jpg",
+    "description": "I'm working on image fusion, developing downscaling and pansharpening methods. The goal is to tackle multitemporal image fusion and change detection problems with improved resolution.",
+    "social_networks": {
+      "google_scholar": "https://scholar.google.es/citations?hl=es&user=pj5R_mQAAAAJ",
+      "orcid": "https://orcid.org/0000-0003-0876-8340",
+      "twitter": null,
+      "github": null,
+      "semantic_scholar": null,
+      "researchgate": null,
+      "personal_uv": null,
+      "linkedin": null,
+      "ieee": null,
+      "dblp": null,
+      "personal_website": null,
+      "causality": null,
+      "manifold_learning": null
+    }
+    },
+    {
+    "name": "Adrián Pérez-Suay",
+    "image": "Adrian2018.png",
+    "description": "The topic of my thesis was Distance Metric Learning. Currently, I am working on kernel methods, dependence estimation and Machine Learning in general. I am interested on the applications of Machine Learning techniques to solve the Remote Sensing challenges.",
+    "social_networks": {
+      "google_scholar": "https://scholar.google.es/citations?user=9GfwpZ4AAAAJ&hl=es&authuser=1&oi=ao",
+      "orcid": "https://orcid.org/0000-0002-8258-4454",
+      "twitter": "https://twitter.com/PerezSuay",
+      "github": null,
+      "semantic_scholar": null,
+      "researchgate": null,
+      "personal_uv": null,
+      "linkedin": null,
+      "ieee": "https://ieeexplore.ieee.org/author/37086232804",
+      "dblp": "https://dblp.org/pid/80/1517.html",
+      "personal_website": "http://www.uv.es/pesuaya",
+      "causality": null,
+      "manifold_learning": null
+    }
+    },
+    {
+    "name": "José J. Esteve-Taboada",
+    "image": "joseesteve.png",
+    "description": "I am developing computational models of the visual function based on functional Magnetic Resonance Imaging, psychophysics, and image statistics.",
+    "social_networks": {
+      "google_scholar": null,
+      "orcid": null,
+      "twitter": null,
+      "github": null,
+      "semantic_scholar": null,
+      "researchgate": null,
+      "personal_uv": null,
+      "linkedin": null,
+      "ieee": null,
+      "dblp": null,
+      "personal_website": null,
+      "causality": null,
+      "manifold_learning": null
+    }
+    },
+    {
+    "name": "Valero Laparra",
+    "image": "valero.png",
+    "description": "I'm working in image statistics and vision science. I have developed several methods for density estimation, measure independence, manifold learning and visual quality assessment.",
+    "social_networks": {
+      "google_scholar": "https://scholar.google.com/citations?user=dNt_xikAAAAJ&hl=ca",
+      "orcid": "https://orcid.org/0000-0001-7531-9890",
+      "twitter": null,
+      "github": null,
+      "semantic_scholar": null,
+      "researchgate": null,
+      "personal_uv": null,
+      "linkedin": null,
+      "ieee": null,
+      "dblp": null,
+      "personal_website": null,
+      "causality": null,
+      "manifold_learning": null
+    }
+    },
+    {
+    "name": "Ana B. Ruescas",
+    "image": "06_AnaBR_ISP.png",
+    "description": "I am a data scientist and project manager. As a remote sensing specialist I have experience in several application areas like ocean colour and thermal algorithm development and validation.",
+    "social_networks": {
+      "google_scholar": "https://scholar.google.com/citations?user=G-hjVSkAAAAJ&hl=en",
+      "orcid": "https://orcid.org/0000-0002-0843-7288",
+      "twitter": null,
+      "github": null,
+      "semantic_scholar": null,
+      "researchgate": "https://www.researchgate.com/profile/Ana-Ruescas",
+      "personal_uv": null,
+      "linkedin": "https://www.linkedin.com/in/ana-b-ruescas-5a867518/",
+      "ieee": null,
+      "dblp": null,
+      "personal_website": "https://www.uv.es/uvweb/universidad/es/ficha-persona-1285950309813.html?p2=bruescas",
+      "causality": null,
+      "manifold_learning": null
+    }
+    },
+    {
+    "name": "José Enrique Adsuara",
+    "image": "jose.png",
+    "description": "Currently, I am working on learning parameters of differential equations, HPC for linear solvers, and causality. I am interested in machine learning, especially statistical learning and deep neural networks.",
+    "social_networks": {
+      "google_scholar": "https://scholar.google.es/citations?user=emaUK3AAAAAJ&hl=es",
+      "orcid": "https://orcid.org/0000-0002-3842-965X",
+      "twitter": null,
+      "github": null,
+      "semantic_scholar": null,
+      "researchgate": "https://www.researchgate.com/profile/Jose-Adsuara",
+      "personal_uv": null,
+      "linkedin": "https://www.linkedin.com/in/jose-adsuara-fuster-7508a957/",
+      "ieee": null,
+      "dblp": null,
+      "personal_website": "https://jadsuafu.wordpress.com/",
+      "causality": null,
+      "manifold_learning": null
+    }
+    },
+    {
+    "name": "Roberto Fernandez-Moran",
+    "image": "roberto.png",
+    "description": "My current research focuses on cloud screening in multispectral imagery using machine learning techniques. Previously I was also involved in the algorithm improvement for the retrieval of soil moisture and vegetation parameters from microwave observations.",
+    "social_networks": {
+      "google_scholar": "https://scholar.google.com/citations?user=q9Bp1ekAAAAJ&hl=es&oi=ao",
+      "orcid": "https://orcid.org/0000-0002-6030-8598",
+      "twitter": null,
+      "github": "https://github.com/IPL-UV/",
+      "semantic_scholar": null,
+      "researchgate": "https://www.researchgate.com/profile/Roberto-Fernandez-Moran",
+      "personal_uv": null,
+      "linkedin": "https://www.linkedin.com/in/roberto-fernandez-moran/details/experience/",
+      "ieee": null,
+      "dblp": null,
+      "personal_website": "https://www.uv.es/uvweb/college/en/profile-1285950309813.html?p2=fermoro&idA=truel",
+      "causality": null,
+      "manifold_learning": null
+    }
+    },
+    {
+    "name": "Maria Piles",
+    "image": "maria.png",
+    "description": "My research interests include microwave remote sensing, estimation of soil moisture and vegetation biogeophysical parameters and development of multisensor techniques for enhanced retrievals with focus on agriculture, forestry, wildfire prediction, extreme detection, and climate studies.",
+    "social_networks": {
+      "google_scholar": "https://scholar.google.es/citations?user=KTva-HMAAAAJ&hl=es",
+      "orcid": "https://orcid.org/0000-0002-1169-3098",
+      "twitter": "https://twitter.com/maria_piles",
+      "github": "https://github.com/IPL-UV/",
+      "semantic_scholar": null,
+      "researchgate": "https://www.researchgate.com/profile/Maria-Piles-2",
+      "personal_uv": null,
+      "linkedin": "https://www.linkedin.com/in/maria-piles-33a26867/?originalSubdomain=es",
+      "ieee": null,
+      "dblp": null,
+      "personal_website": "https://www.uv.es/uvweb/college/en/profile-1285950309813.html?p2=piguima&idA=true",
+      "causality": null,
+      "manifold_learning": null
+    }
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "facilities": [
+    {
+      "image": "ipl2.png",
+      "name": "",
+      "description": "We are at the Parc Científic of the Universitat de València. The IPL is well equipped with space, access to image acquisition equipment and antennae reception of satellite images. The ISP group has the physical space needed for the integration of interns and material provision (computers, office equipment, and standard resources) for training and work. The ISP group has a range of instruments for ground and lab experimentation particularly spectro-radiometers and unique multispectral image acquisition systems developed in a EU-funded project, as well as others designed and manufactured by the group through the last years. Access to internal computer grids and external computer grids (such as Tirant and MareNostrum) is also available.",
+      "image_size": {
+        "height": 140,
+        "width": 260
+      }
+    },
+    {
+      "image": "servers.jpg",
+      "name": "Computer resources",
+      "description": "Currently, at ISP we have a cluster of 4 interconnected servers with a total of 8 CPUs + 4 GPUs, and another cluster with 24 nodess (2 CPUs Intel Xeon / AMD EPYC each: 48-CPUs + 2 GPUs NVIDIA K40). We have a storage capacity of roughly 100 TB and a small cluster dedicated to the web site. The experimental members from VA and ERS also count with smaller clusters appropriate for data preprocessing and the use of numerical models and huge storage capacity (100 TB). Similar capacities exist in our collaborators. The <a href='https://cordis.europa.eu/project/id/647423/''>ERC-CoG-2015 SEDAL</a> project scaled this computational power keep it up-to-date. Thanks to the <a href='https://cordis.europa.eu/project/id/855187/es'>ERC-SyG-2020 USMILE</a> we just started the building of a new cold room with a powerful computer facilities for big EO data analysis.",
+      "image_size": {
+        "height": 90,
+        "width": 130
+      }
+    },
+    {
+      "image": "marenostrum.jpg",
+      "name": "External facilities",
+      "description": "We have access to external computer grids (such as <a href='https://www.res.es/es/nodos-de-la-res/tirant'>Tirant</a> and <a href='https://www.bsc.es/es/marenostrum/marenostrum'>MareNostrum</a>), as well as accounts and regular users of <a href='https://earthengine.google.com/'>Google Earth Engine (GEE)</a>, Amazon AWS Cloud and MS Azure, or the <a href='https://www.esa.int/ESA_Multimedia/Sets/Thematic_Exploitation_Platforms/(result_type)/videos'>ESA Mission Explotation Platform.</a>",      
+      "image_size": {
+        "height": 90,
+        "width": 130
+      }
+    },
+    {
+      "image": "databases.jpg",
+      "name": "Databases",
+      "description": "Given our long standing relations with <a href='https://esa.int'>ESA</a> and  <a href='https://eumetsat.int'>EUMETSAT</a> we have a huge library of both real and syntetic time series of archived satellite products including (1) reflectance data (Quickbird, WorldView2, HyMap, SPOT, RapidEye, LandSat, VTG, MODIS and SEVIRI, IASI), and (2) Biophysical products from MODIS, COPERNICUS Global Land, MERIS and LSA SAF. Moreover, we have access to thematic maps and databases on land-cover and land-use (CORINE, SIOSE) and reference databases such as LUCAS and BIOSOIL. Check our <a href='data.html'>Databases</a> section!",      
+      "image_size": {
+        "height": 90,
+        "width": 130
+      }
+    },
+    {
+      "image": "psycho.jpg",
+      "name": "Psychophysics lab",
+      "description": "We have a number of working physiological and psychophysical experimental settings to get relevant measurements in visual neuroscience. At ISP we count with eye tracking systems and colourimetrically calibrated displays to do psychophysics, and thanks to the projects with <a href='https://www.iislafe.es/en/'>Hospital La Fe</a> and <a href='https://www.incliva.es/'>Hospital Clínic</a>, we also have access to the fMRI facilities for brain imaging.",
+      "image_size": {
+        "height": 90,
+        "width": 130
+      }
+    },
+    {
+      "image": "optical_spectroscopy.jpg",
+      "name": "Optics and spectroscopy lab",
+      "description": "",
+      "image_size": {
+        "height": 90,
+        "width": 130
+      }
+    },
+    {
+      "image": "auditorium.jpg",
+      "name": "Lecture rooms",
+      "description": "We are located at the <a href='https://www.pcuv.es/en/servicios/servicios-generales.html'>Science Park of the Universitat de València</a>. We have a wide variety of meeting rooms and open spaces, as well bigger seminars for workshops. The permanent professors in ISP are associated to the <a href='https://www.uv.es/uvweb/engineering/en/school/areas-resources/directory-areas-1285846791606.html'>Engineering School ETSE</a> just few minutes away with excellent auditorium, seminars, and modern classes.",
+      "image_size": {
+        "height": 90,
+        "width": 130
+      }
+    }
+  ]
+}
