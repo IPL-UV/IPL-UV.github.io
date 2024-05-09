@@ -1,0 +1,52 @@
+{
+  "type": "object",
+  "properties": {
+    "groupTitle": { "type": "string" },
+    "members": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" , "minLength": 1},
+          "image": { "type": "string", "pattern": ".*\\.(png|jpg|webp)$" },
+          "description": { "type": "string" , "minLength": 1 },
+          "social_networks": {
+            "type": "object",
+            "properties": {
+              "google_scholar": { "type": ["string", "null"] },
+              "orcid": { "type": ["string", "null"] },
+              "twitter": { "type": ["string", "null"] },
+              "github": { "type": ["string", "null"] },
+              "semantic_scholar": { "type": ["string", "null"] },
+              "researchgate": { "type": ["string", "null"] },
+              "personal_uv": { "type": ["string", "null"] },
+              "linkedin": { "type": ["string", "null"] },
+              "ieee": { "type": ["string", "null"] },
+              "dblp": { "type": ["string", "null"] },
+              "personal_website": { "type": ["string", "null"] },
+              "causality": { "type": ["string", "null"] },
+              "manifold_learning": { "type": ["string", "null"] }
+            },
+            "required": [
+              "google_scholar",
+              "orcid",
+              "twitter",
+              "github",
+              "semantic_scholar",
+              "researchgate",
+              "personal_uv",
+              "linkedin",
+              "ieee",
+              "dblp",
+              "personal_website",
+              "causality",
+              "manifold_learning"
+            ]
+          }
+        },
+        "required": ["name", "image", "description", "social_networks"]
+      }
+    }
+  },
+  "required": ["groupTitle", "members"]
+}

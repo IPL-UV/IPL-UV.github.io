@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>{{ .Params.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="/isp/generic_dataset.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h1 class="title"><b>{{ .Params.title }}</b></h1>
+      <p class="subtitle">{{ .Params.subtitle }}</p>
+      <img src="{{ .Params.logo }}" alt="Logo" style="display: block; margin: 0 auto; margin-bottom: 5px;">
+
+      <a href="{{ .Params.github }}"><img src="/isp/images/data/github.png" style="width: 25px;"> GitHub</a>
+      <a href="{{ .Params.huggingface }}"><img src="/isp/images/data/hugging_face.png" style="width: 25px;"> Hugging
+        Face</a>
+      <a href="/isp/data/" class="back-to-data"><img src="/isp/images/data/backtoisp.png" style="width: 25px;"> Back to
+        ISP</a>
+
+      <div class="tags">
+        <h3>Tags:</h3>
+        <ul style="margin-left: -30px;">
+          {{ range .Params.tags }}
+          <li>{{ . }}</li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+    <div class="content">
+      <div class="scrollable-content">
+        <div class="banner">
+          <img src="/isp/images/data/{{ .Params.banner }}" alt="Banner">
+        </div>
+        {{ .Content }}
+        <h2>Authors</h2>
+        <div class="author-grid">
+          {{ range .Params.authors }}
+          <div class="author">
+            <img src="/isp/images/data/{{ .image }}" alt="{{ .name }}">
+            <p>{{ .name }}</p>
+          </div>
+          {{ end }}
+        </div>
+
+        <div class="examples">
+          <h2>Examples</h2>
+          <table style="margin-bottom: 10px;">
+            <tr>
+              <th>Title</th>
+              <th>Link</th>
+            </tr>
+            {{ range .Params.examples }}
+            <tr>
+              <td>{{ .title }}</td>
+              <td><a href="{{ .link }}">{{ .link }}</a></td>
+            </tr>
+            {{ end }}
+          </table>
+        </div>
+        <div class="citation">
+          <h2>Citation</h2>
+          <pre style="background-color: #f2f2f2; padding: 10px; width: 100%; white-space: pre-wrap;">
+{{ .Params.citation | safeHTML }}</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

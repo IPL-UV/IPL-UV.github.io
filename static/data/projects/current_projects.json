@@ -1,0 +1,205 @@
+{
+  "groupTitle": "Current projects",
+  "projects": [
+    {
+      "image": "erc.png",
+      "name": "USMILE: Understanding and Modeling the Earth System with Machine Learning",
+      "description": "ERC Synergy Grant, PIs: V. Eyring, M. Reichstein, G. Camps-Valls, P. Gentine, 2020-2026",
+      "link": "https://www.usmile-erc.eu/",
+      "image_size": {
+        "height": 70,
+        "width": 80
+      }
+    },
+    {
+      "image": "h2020.jpg",
+      "name": "XAIDA: Extreme Events - Artificial Intelligence for Detection and Attribution",
+      "description": "EU H2020, UV PI: Gustau Camps-Valls, 2021-2025",
+      "link": "https://xaida.eu",
+      "image_size": {
+        "height": 50,
+        "width": 80
+      }
+    },
+    {
+      "image": "h2020.jpg",
+      "name": "DeepCube: Explainable AI pipelines for big Copernicus data",
+      "description": "EU H2020, UV PIs: Gustau Camps-Valls, M. Piles, 2021-2024",
+      "link": "https://deepcube-h2020.eu",
+      "image_size": {
+        "height": 50,
+        "width": 80
+      }
+    },
+    {
+      "image": "h2020.jpg",
+      "name": "ELISE: European Learning And Intelligent Systems Excellence",
+      "description": "ICT-48, Universitat de València (UVEG) is a Participant partner, UV PI: Gustau Camps-Valls, 2020-2023",
+      "link": "https://www.elise-ai.eu/",
+      "image_size": {
+        "height": 50,
+        "width": 80
+      }
+    },
+    {
+      "image": "h2020.jpg",
+      "name": "ELIAS: European Lighthouse of AI for Sustainability",
+      "description": "Universitat de València (UVEG) is a Participant partner, UV PI: Gustau Camps-Valls, 2024-2027",
+      "link": "https://elias-ai.eu/",
+      "image_size": {
+        "height": 50,
+        "width": 80
+      }
+    },
+    {
+      "image": "h2020.jpg",
+      "name": "ThinkingEarth - Copernicus Foundation Models for a Thinking Earth",
+      "description": "Universitat de València (UVEG) is a Participant partner, UV PI: Gustau Camps-Valls, 2023-2026",
+      "link": "https://www.euspa.europa.eu/thinkingearth-copernicus-foundation-models-thinking-earth",
+      "image_size": {
+        "height": 50,
+        "width": 80
+      }
+    },
+    {
+      "image": "h2020.jpg",
+      "name": "AI4PEX: Artificial Intelligence for enhanced representation of processes and extremes in Earth System Models",
+      "description": "Universitat de València (UVEG), UV PI: Gustau Camps-Valls, Maria Piles, 2024-2027",
+      "link": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/how-to-participate/org-details/999578890/project/101137682/program/43108390/details",
+      "image_size": {
+        "height": 50,
+        "width": 80
+      }
+    },
+    {
+      "image": "h2020.jpg",
+      "name": "MediTwin: Mediterranean Digital Twin Network for Understanding Climate Extremes",
+      "description": "Universitat de València (UVEG), UV PI: Gustau Camps-Valls, 2024-2027",
+      "link": "",
+      "image_size": {
+        "height": 50,
+        "width": 80
+      }
+    },
+    {
+      "image": "ellis.png",
+      "name": "ELLIS - European Laboratory for Learning and Intelligent Systems",
+      "description": "Universitat de València (UVEG) co-coordinates the research program 'Machine Learning for the Earth and Climate Sciences'. Gustau Camps-Valls and Markus Reichstein, 2019--",
+      "link": "https://ellis.eu/programs/machine-learning-for-earth-and-climate-sciences",
+      "image_size": {
+        "height": 70,
+        "width": 70
+      }
+    },
+    {
+      "image": "etn.png",
+      "name": "iMIRACLI: innovative MachIne leaRning to constrain Aerosol-cloud CLimate Impacts",
+      "description": "ETN Marie Curie Training Network, G. Camps-Valls, 01/01/20 - 31/08/23",
+      "link": "http://www.imiracli.eu",
+      "image_size": {
+        "height": 50,
+        "width": 80
+      }
+    },
+    {
+      "image": "aida.png",
+      "name": "i-AIDA: International AI Doctoral Academy",
+      "description": "ICT-48 alliance and network of excellence in AI, G. Camps-Valls, 01/01/22",
+      "link": "https://www.i-aida.org/",
+      "image_size": {
+        "height": 50,
+        "width": 80
+      }
+    },
+    {
+      "image": "esa.png",
+      "name": "OpenSR — Robust, accountable super-resolution for Sentinel-2 and beyond",
+      "description": "ESA - Towards Explainable AI: Application to Trustworthy Super-Resolution, F. Kalaitzis (U. Oxford) L. Gómez-Chova (U. Valencia), 2022-2024",
+      "link": "/isp/projects/projects_links/opensr",
+      "image_size": {
+        "height": 50,
+        "width": 90
+      }
+    },
+    {
+      "image": "esa.png",
+      "name": "CIMR-DEVALGO: CIMR Level-2 Algorithm Development",
+      "description": "ESA ITT, M. Piles (UV), Thomas Lavergne (Norwegian Meteorological Institute, PI), 2023 - 2024",
+      "link": "https://github.com/CIMR-Algos/",
+      "image_size": {
+        "height": 50,
+        "width": 90
+      }
+    },
+    {
+      "image": "esa.png",
+      "name": "DeepExtremes: Multi-Hazards, Compounds and Cascade events",
+      "description": "AI for Science 2021, G. Camps-Valls, 01/02/22",
+      "link": "https://rsc4earth.de/project/deepextremes/",
+      "image_size": {
+        "height": 50,
+        "width": 90
+      }
+    },
+    {
+      "image": "mineco.jpg",
+      "name": "DEEPCLOUD: Deep learning tools for operational cloud detecteion in Earth observation satellite images.",
+      "description": "Spanish Ministry of Science, Innovation and Universities (MCIU/AEI/FEDER, UE), PID2019-109026RB-I00, L. Gomez-Chova, 2020-2024",
+      "link": "",
+      "image_size": {
+        "height": 40,
+        "width": 80
+      }
+    },
+    {
+      "image": "gva.jpg",
+      "name": "AI for complex systems: Brain, Earth, Climate, Society",
+      "description": "Generalitat Valenciana - Regional Ministry of Education, Research, Culture and Sport under PROMETEO programme. G. Camps-Valls, M. Piles, 2022-2026",
+      "link": "/isp/projects/projects_links/ai4cs",
+      "image_size": {
+        "height": 50,
+        "width": 90
+      }
+    },
+    {
+      "image": "gva.jpg",
+      "name": "MALOC: MAchine Learning for assessing Ocean Climate",
+      "description": "Generalitat Valenciana - Regional Ministry of Education, Research, Culture and Sport under the Talented Researcher Support Programme - Plan GenT (CIDEGENT/2019/055), V. Nieves, 2020-2024",
+      "link": "https://www.aiforoceans.org/maloc/",
+      "image_size": {
+        "height": 50,
+        "width": 90
+      }
+    },
+    {
+      "image": "esa.png",
+      "name": "MALOPH: A novel MAchine Learning based perspective to identify and model Ocean Precursors to extreme Hurricane development",
+      "description": "European Space Agency - Open Discovery Ideas Channel under the ESA’s Discovery & Preparation Programme (ESA Contract No. 4000134529/21/NL/GLC/my), V. Nieves, 2021-2024",
+      "link": "https://www.aiforoceans.org/maloph/",
+      "image_size": {
+        "height": 50,
+        "width": 90
+      }
+    },
+    {
+      "image": "belspo.png",
+      "name": "HERMES: Hybrid Estimation and Remote Sensing Monitoring of Evaporation and Soil Moisture.",
+      "description": "Diego Miralles (Uni Ghent), Miguel Mahecha (Uni Leipzig), Gustau Camps-Valls and Alvaro Moreno (Uni València). BELSPO Stereo IV Research program, 2023-2024",
+      "link": "https://research.ugent.be/web/result/project/ea6c1a10-e558-4aa0-a053-176316ccc5bc/details/en",
+      "image_size": {
+        "height": 50,
+        "width": 60
+      }
+    },
+    {
+      "image": "msr.png",
+      "name": "Causal Inference to Understand the Impact of Humanitarian Interventions on Food Security in Africa",
+      "description": "Microsoft Research - Microsoft Climate Research Initiative, Universitat de València: Gustau Camps-Valls (PI), Gherardo Varando (Co-PI), Jose Maria Tarraga (Scientific Researcher), University of Reading: Ted Shepherd (PI), Ros Cornforth (Co-PI), 2022-2024.",
+      "link": "https://www.microsoft.com/en-us/research/collaboration/microsoft-climate-research-initiative/",
+      "image_size": {
+        "height": 25,
+        "width": 110
+      }
+    }
+  ]
+}
