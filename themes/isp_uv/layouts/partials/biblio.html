@@ -56,8 +56,8 @@
 <select class="bibtex_search bibtex_generate_author" search="author">
   <option value="">All Authors</option>
 </select>
-<select class="bibtex_search bibtex_generate_projects" search="projects">
-  <option value="">Search projects</option>
+<select class="bibtex_search bibtex_generate_project" search="project" bibtex_split_by=",">
+  <option value="">Search project</option>
 </select>
 <input type="text" class="bibtex_search" id="searchbar" placeholder="Search publications">
 {{ end }} 
@@ -119,9 +119,8 @@
 						pdf 
 					</a>
 				</span>
-				<span class="if projects || project">
-					| <span class="projects"> </span>
-                                       <span class="project"> </span>
+				<span class="if project">
+					| <span class="project"> </span>
 				</span>
 				<div>
 					<button class = "bibtexVar" extra = "bibtexkey" 
