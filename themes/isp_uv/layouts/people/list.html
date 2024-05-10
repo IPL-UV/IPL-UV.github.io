@@ -5,28 +5,30 @@
 {{ $twitter := resources.Get "images/people/redes/twitter.png" }}
 {{ $github := resources.Get "images/people/redes/github.png" }}
 {{ $semantic := resources.Get "images/people/redes/semantic.png" }}
-{{ $researchgate := resources.Get "images/people/redes/gscholar.png" }}
-{{ $linkedin := resources.Get "images/people/redes/gscholar.png" }}
+{{ $researchgate := resources.Get "images/people/redes/rg.png" }}
+{{ $linkedin := resources.Get "images/people/redes/linkedin.png" }}
 <div class="content-container">
     {{ range .Pages.GroupByParam "role" }}
-      <h2><span class="label label-info">{{ .Key  | title }}s</span></h2>
+      <h1><span class="label label-info">{{ .Key  | title }}s</span></h1>
+      <div class="card container" style = "margin-left:3%;">
          {{ range .Pages }}
 	    {{ $img := urls.JoinPath "images/people" .Params.img }}
-            <div class="row g-0">
-              <div class="col-md-3">
-		      {{ with resources.Get $img }}
-		      <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="img-fluid" alt="Image of {{ $.Title }}">
+	    <div class="card mb-3">
+             <div class="row g-0">
+               <div class="col-md-3">
+	 	      {{ with resources.Get $img }}
+	 	      <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="img-fluid" alt="Image of {{ $.Title }}">
                      {{ end }}
-              </div>
-              <div class="col-md-9">
-                <div class="card-body" style="max-height: 200px;">
-			<h5 class="card-title" style="font-size: 88.5%; margin-top:-10px"><b>{{ .Title }}</b></h5>
-			<p class="card-text" style="font-size: 0.95em;">{{ .Content }}</p>
-                  <div class="card-links">
-			  <a href="{{ .Params.googlescholar }}"><img src="{{ $gscholar.RelPermalink }}" height="25" width="25"></a>
-			  <a href="{{ .Params.orcid }}"><img src="{{ $orcid.RelPermalink }}" height="25" width="25"></a>
-		   <a href="{{ .Params.twitter }}"><img src="{{ $twitter.RelPermalink }}" height="24" width="30"></a>
-		   <a href="{{ .Params.github }}"><img src="{{ $github.RelPermalink }}" height="25" width="25"></a>
+               </div>
+               <div class="col-md-9">
+                 <div class="card-body" style="max-height: 200px;">
+	 		 <h5 class="card-title" style="font-size: 88.5%; margin-top:-10px"><b>{{ .Title }}</b></h5>
+			 <p class="card-text" style="font-size: 0.95em;">{{ .Content }}</p>
+                   <div class="card-links">
+	 		  <a href="{{ .Params.googlescholar }}"><img src="{{ $gscholar.RelPermalink }}" height="25" width="25"></a>
+	 		  <a href="{{ .Params.orcid }}"><img src="{{ $orcid.RelPermalink }}" height="25" width="25"></a>
+	 	   <a href="{{ .Params.twitter }}"><img src="{{ $twitter.RelPermalink }}" height="24" width="30"></a>
+	 	   <a href="{{ .Params.github }}"><img src="{{ $github.RelPermalink }}" height="25" width="25"></a>
 		   <a href="{{ .Params.semanticscholar }}"><img src="{{ $semantic.RelPermalink }}" height="25" width="25"></a>
 		   <a href="{{ .Params.researchgate }}"><img src="{{ $researchgate.RelPermalink }}" height="25" width="25"></a>
 		   <a href="{{ .Params.uv }}" class="btn btn-xss btn-info" aria-label="Left Align">UV</a>
@@ -34,11 +36,13 @@
 		   <a href="{{ .Params.ieee }}"><button type="button" class="btn btn-xss btn-success" aria-label="Left Align">IEEE</button></a>
 		   <a href="{{ .Params.dblp }}"><button type="button" class="btn btn-xss btn-danger" aria-label="Left Align">dblp</button></a>
 		   <a href="{{ .Params.website }}"><button type="button" class="btn btn-xss btn-info" aria-label="Left Align">Website</button></a>
-                   </div>
-                </div>
-              </div>
-            </div>    
+                    </div>
+                 </div>
+               </div>
+             </div>    
+	    </div>
 	    {{ end }}
+      </div>
 	    {{ end }}
 </div>
 {{ end }}

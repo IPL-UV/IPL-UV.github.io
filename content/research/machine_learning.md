@@ -36,3 +36,60 @@ Modeling input data, however, does not ensure that the model will adapt to chang
 **Sparsity as a form of compacting information was studied in both deep architectures and kernel machines.** In all these settings, we are particularly interested in **encoding prior knowledge and invariances** in the models: signal and noise properties, spatial-temporal constraints, amd robustness to illumination changes, just to name a few. Dealing with invariances and priors inmediately call for **regularization and Bayesian inference**. While pure discriminative approaches have been developed in our group, in recent years we have payed attention to the field of Bayesian nonparametric models as a proper framework to encode such beliefs. We are active in kernel design for **Gaussian processes regression and model inversion, and in designing efficient sampling schemes with modern Markov Chain Montecarlo strategies**.
 
 ### Related projects
+
+<div class="content-container" style="font-size: 1.1em; text-align: justify; line-height: 1.1;">
+  {{ .Content }}
+
+  <table class="table table-hover">
+    <tr>
+      <th style="width: 10%">
+        <img src="/isp/images/research/h2020.jpg" height="50" width="80">
+      </th>
+      <th style="width: 90%">
+        <a href="https://xaida.eu">XAIDA: Extreme Events - Artificial Intelligence for Detection and Attribution</a><br>
+        EU H2020, UV PI: Gustau Camps-Valls, 2021-2025
+      </th>
+    </tr>
+    <tr>
+      <th style="width: 10%">
+        <img src="/isp/images/research/h2020.jpg" height="50" width="80">
+      </th>
+      <th style="width: 90%">
+        <a href="https://deepcube-h2020.eu">DeepCube: Explainable AI pipelines for big Copernicus data, UV PI: Gustau
+          Camps-Valls</a><br>
+        EU H2020, 2021-2024
+      </th>
+    </tr>
+    <tr>
+      <th style="width: 10%">
+        <img src="/isp/images/research/h2020.jpg" height="50" width="80">
+      </th>
+      <th style="width: 90%">
+        <a href="https://www.elise-ai.eu/">ELISE: European Learning And Intelligent Systems Excellence</a><br>
+        ICT-48, Universitat de València (UVEG) is a Participant partner, UV PI: Gustau Camps-Valls, 2020-2022
+      </th>
+    </tr>
+    <tr>
+      <th style="width: 10%">
+        <img src="/isp/images/research/erc.png" height="70" width="80">
+      </th>
+      <th style="width: 90%">
+        <a href="https://www.usmile-erc.eu/">USMILE: Understanding and Modeling the Earth System with Machine
+          Learning</a><br>
+        ERC Synergy Grant, PIs: V. Eyring, M. Reichstein, G. Camps-Valls, P. Gentine, 2020-2026
+      </th>
+    </tr>
+    <tr>
+      <th style="width: 10%">
+        <img src="/isp/images/research/aida.png" height="50" width="80">
+      </th>
+      <th style="width: 90%">
+        <a href="https://www.i-aida.org/">i-AIDA: International AI Doctoral Academy</a><br>
+        ICT-48 alliance and network of excellence in AI, G. Camps-Valls, 01/01/22
+      </th>
+    </tr>
+  </table>
+
+  <br>
+  <br>
+</div>
