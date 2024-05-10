@@ -1,12 +1,12 @@
 {{ define "main" }}
 
-{{ $gscholar := resources.Get "images/people/redes/gscholar.png" }}
-{{ $orcid := resources.Get "images/people/redes/orcid.png" }}
-{{ $twitter := resources.Get "images/people/redes/twitter.png" }}
-{{ $github := resources.Get "images/people/redes/github.png" }}
-{{ $semantic := resources.Get "images/people/redes/semantic.png" }}
-{{ $researchgate := resources.Get "images/people/redes/rg.png" }}
-{{ $linkedin := resources.Get "images/people/redes/linkedin.png" }}
+{{ $gscholar := resources.Get "images/people/redes/gscholar.webp" }}
+{{ $orcid := resources.Get "images/people/redes/orcid.webp" }}
+{{ $twitter := resources.Get "images/people/redes/twitter.webp" }}
+{{ $github := resources.Get "images/people/redes/github.webp" }}
+{{ $semantic := resources.Get "images/people/redes/semantic.webp" }}
+{{ $researchgate := resources.Get "images/people/redes/rg.webp" }}
+{{ $linkedin := resources.Get "images/people/redes/linkedin.webp" }}
 <div class="content-container">
     {{ range .Pages.GroupByParam "role" }}
       <h1><span class="label label-info">{{ .Key  | title }}s</span></h1>
