@@ -9,8 +9,8 @@
 {{ $linkedin := resources.Get "images/people/redes/linkedin.webp" }}
 <div class="content-container">
     {{ range .Pages.GroupByParam "role" }}
-      <h1><span class="label label-info">{{ .Key  | title }}s</span></h1>
-      <div class="card container" style = "margin-left:3%;">
+      <h1><span class="label label-info">{{ .Key | title }}s</span></h1>
+      <div class="card container" style="margin-left:3%;">
          {{ range .Pages }}
 	    {{ $img := urls.JoinPath "images/people" .Params.img }}
 	    <div class="card mb-3">
@@ -43,6 +43,7 @@
 	    </div>
 	    {{ end }}
       </div>
-	    {{ end }}
+    {{ end }}
 </div>
+
 {{ end }}

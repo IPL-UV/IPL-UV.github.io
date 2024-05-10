@@ -7,7 +7,7 @@ params:
   scholar: 'https://scholar.google.com/'
   twitter: ''
   orcid: ''
-  img: 'img.png'
+  img: jesus.webp
 ---
 
 I'm interested in understanding human vision from information theoretic principles. This statistical view has implications in experimental and computational neuroscience. [See the ex-cathedra statement](https://isp.uv.es/excathedra.html)
