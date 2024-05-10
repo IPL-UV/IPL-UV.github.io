@@ -1,0 +1,196 @@
+---
+title: Visual Brain
+---
+
+<div class="content-container" style="max-width: 100%;">
+
+<div class="text-center">
+<p><h1 style="margin-left: -200px; font-size: 1.7em;">Image and Video Processing:</h1></left></p>
+<p><h1 style="font-style: italic; margin-top: -10px;">Scene Statistics and Visual Neuroscience at work!</h1></p>
+</div>
+
+<div class="row">
+<div class="uno" style="width: 23%;">
+<div style="width: 60%; float: right; margin-bottom: 100px;">
+<img alt="Jesus" style="width: 100%;" src="/isp/images/research/visual_brain/image_processing.jpg">
+<p align="justify" style="font-size: 85%; text-align: justify"><small>Controversies: don't use (1) the Mean Squared Error, nor (2) the image of <a href="https://en.wikipedia.org/wiki/Lenna"><span style="font-style: italic;">Lena S&oumlderberg</span></a>. Here we only talk about the <a href="http://isp.uv.es/vista_toolbox.html">MSE issue</a>.</small><br><br><br><br><br>
+</div>
+<div style="margin-left: -50px;">
+<img style="width: 100%;" src="/isp/images/research/visual_brain/animated_coder.gif" />
+<p style="font-size: 85%; text-align: justify"><small>MPEG-like video compression is based on predictive coding: i.e. motion compensation and residual quantization.  Motion compensation consist of optical flow estimation (<strong>M</strong> module) and motion-based prediction (<strong>P</strong> module).Residuals (prediction errors) are analyzed in a different domain (<strong>T</strong> module) and quantized therein (<strong>Q</strong> module). The different modules in this framework will continue to benefit from image representations coming from <b>Vision Science</b> and prediction and regression based on <b>Statistical Learning</b>.</small>
+</div>
+</div>
+
+
+<div class="dos" style="width: 55%;">
+<p align="justify">Efficient coding of visual information and efficient inference of missing information in images depend on two factors: (1) the statistical structure of photographic images, and (2) the nature of the observer that will analyze the result. Interestingly, these two factors (image regularities and human vision) are deeply related since the evolution of biological sensors seems to be guided by statistical learning (see our work on the <span style="font-style: italic;">Efficient Coding Hypothesis</span> in <a href="neuro.html">Visual Neuroscience</a>).
+However, the simultaneous consideration of these two factors is unusual in the image processing community, particularly beyond Gaussian image models and linear models
+of the observer. <br>
+Our work in image and video processing has been parallel to our investigation in describing the non-Gaussian nature of visual scenes and the nonlinear behavior of visual cortex. This parallel approach is sensible since these are two sides of the same issue in vision (<a href="https://en.wikipedia.org/wiki/Efficient_coding_hypothesis">the Efficient Coding Hypothesis again!</a>). Specifically, the core algorithm used in many applications has been the <a href="https://en.wikipedia.org/wiki/Normalization_model">Divisive Normalization</a>, a canonical computation in sensory neurons with interesting statistical effects (see [<a href="http://isp.uv.es/papers/Malo_Laparra_Neural_10b.pdf">Neur.Comp.10</a>]). We have used this perceptual (and also statistical) model to propose novel solutions in bit allocation, to identify perceptually relevant motion, to smooth image representations and to compute distances between images.<br>
+</p>
+
+<div class="list-group">
+<a href="#ImageCoding" class="list-group-item">
+<h4 class="list-group-item-heading" style="color:rgb(0,150,200)">Image Coding:</h4>
+<ul>
+<li>Image statistics, feature extraction and transform coding.</li>
+<li>Perceptually optimal bit allocation and quantization.</li>
+<li>Texture perception models in image coding: JPEG and beyond.</li>
+</ul>
+</a>
+<a href="#MotionEstimation" class="list-group-item">
+<h4 class="list-group-item-heading" style="color:rgb(0,150,200)">Motion Estimation:</h4>
+<ul>
+<li><span style="font-style: italic;">Perceptually relevant optical flow.</span></li>
+<li><span style="font-style: italic;">Motion-based video segmentation.</span></li>
+</ul>
+</a>
+<a href="#VideoCoding" class="list-group-item">
+<h4 class="list-group-item-heading" style="color:rgb(0,150,200)">Video Coding:</h4>
+<ul>
+<li>Motion compensation and transform coding: the MPEG framework</li>
+<li>Perceptual relevance of prediction and quantization.</li>
+</ul>
+</a>
+<a href="#Restoration" class="list-group-item">
+<h4 class="list-group-item-heading" style="color:rgb(0,150,200)">Image Restoration:</h4>
+<ul>
+<li>Denoising and deblurring using Perceptual Regularization.</li>
+<li>Denoising through regression in the wavelet domain.</li>
+</ul>
+</a>
+<a href="#Metrics" class="list-group-item">
+<h4 class="list-group-item-heading" style="color:rgb(0,150,200)">Image and Video Distortion Metrics:</h4>
+<ul>
+<li>Metrics induced by vision models.</li>
+<li>Metrics induced by non-Gaussian scene statistics.</li>
+</ul>
+</a>
+<a href="#Color" class="list-group-item">
+<h4 class="list-group-item-heading" style="color:rgb(0,150,200)">Color Constancy and White Balance:</h4>
+<ul>
+<li>Color constancy through chromatic adaptation models.</li>
+<li>Automatic White Balance through statistical adaptation models.</li>
+<li>Color constancy (reflectance estimation) using spatio-spectral information.</li>
+</ul>
+</a>
+<a href="#Classif" class="list-group-item">
+<h4 class="list-group-item-heading" style="color:rgb(0,150,200)">Classification and Understanding</h4>
+<ul>
+<li>Nonlinear feature extraction for image representation.</li>
+<li>Image classification from nonlinear features.</li>
+<li>Knowledge retrieval (regression, estimation of physical parameters) from nonlinear features.</li>
+</ul>
+</a>
+</div>
+
+</div>
+
+<div class="tres" style="width:22%;">
+<div style="width: 120%;">
+<img class="img-responsive" style="margin-top: 500px; width: 100%;" src="/isp/images/research/visual_brain/animated_video_coding.gif" />
+<p style="font-size: 85%; text-align: justify;"><small>Decoded sequences for various settings of Motion Estimation (<b>M</b> module) and Residual Quantization (<b>T+Q</b> modules). See for example <a href="http://isp.uv.es/papers/elect00.ps">Electr.Lett.00a</a>, or <a href="http://www.uv.es/vista/vistavalencia/papers/ieeeoct01.pdf">IEEE TIP01</a>.</small></p><br><br>
+</div>
+</div>
+
+<div>
+<div class="content-container" style="width: 70%;">
+<p align="justify"><h3>Image and Video Processing</h3></p>
+<p align="justify">Low level Image Processing (coding, restoration, synthesis, white balance, color and texture edition, etc...) is all about <span style="font-style: italic;">image statistics</span> in a domain where <span style="font-style: italic;">the metric is non-Euclidean</span> (i.e. induced by the data or the observer).</p>
+<p align="justify">We proposed original image processing techniques using both perception models and image statistics including (i) improvements of JPEG standard for <strong>image coding</strong> through nonlinear texture vision models
+[<a href="http://isp.uv.es/papers/ELECT95.PS.gz">Electr.Lett.95</a>, <a href="http://isp.uv.es/papers/ELECT99.PS.gz">Electr.Lett.99</a>, <a href="http://isp.uv.es/papers/Gomez-Perez05_IEEETNN.pdf">IEEE TNN05</a>, <a href="http://www.uv.es/vista/vistavalencia/papers/manuscript4.pdf">IEEE TIP06a</a>, <a href="http://isp.uv.es/papers/Camps-Valls08_JMLR.pdf">JMLR08</a>, <a href="http://www.uv.es/gcamps/papers/paper_patent_6_review.pdf">RPSP12</a>, <a href="http://isp.uv.es/papers/patente_v5_jesus.pdf">Patent08</a>], (ii) improvements of MPEG standard for <strong>video coding</strong> with new perceptual quantization scheme and new motion estimation focused on perceptually relevant <strong>optical flow</strong> [<a href="http://isp.uv.es/papers/LNCS97.PS.gz">LNCS97</a>, <a href="http://isp.uv.es/papers/ELECT98.PS.gz">Electr.Lett.98</a>,
+<a href="http://isp.uv.es/papers/elect00.ps">Electr.Lett.00a</a>, <a href="http://isp.uv.es/papers/seg_ade2.ps">Electr.Lett.00b</a>, <a href="http://www.uv.es/vista/vistavalencia/papers/ieeeoct01.pdf">IEEE TIP01</a>, <a href="http://isp.uv.es/papers/Redundancy_Reduction_Malo_99.pdf">Redund.Reduct.99</a>], (iii)
+new <strong>image restoration</strong> techniques based on nonlinear contrast perception models and the image statistics in local frequency domains [<a href="http://www.uv.es/vista/vistavalencia/papers/manuscript_TIP_00864_2004_R2.pdf">IEEE TIP 06b</a>, <a href="http://www.jmlr.org/papers/volume11/laparra10a/laparra10a.pdf">JMLR10</a>]; (iv) new approaches to <strong>color constancy</strong> either based on relative chromatic descriptors [<a href="http://isp.uv.es/papers/VISRES97.PS.gz">Vis.Res.97</a>,
+<a href="http://isp.uv.es/papers/JOPT96.PS.gz">J.Opt.96</a>], statistically-based chromatic adaptation models [<a href="http://isp.uv.es/papers/Neco_accepted_2012.pdf">Neur.Comp.12</a>,
+<a href="http://isp.uv.es/papers/Gutmann_PLOS_ONE_2014.pdf">PLoS-ONE14</a>], or Bayesian estimation of surface reflectance [<a href="http://isp.uv.es/papers/manuscr_TGRS_2012_00431.pdf">IEEE-TGRS14</a>]; (v) new subjective <strong>image and video distortion measures</strong> using nonlinear perception models [<a href="http://isp.uv.es/papers/IVC97.PS.gz">Im.Vis.Comp.97</a>, <a href="http://www.uv.es/vista/vistavalencia/papers/displays_99.pdf">Disp.99</a>, <a href="http://www.uv.es/vista/vistavalencia/papers/icip02.pdf">IEEE ICIP02</a>, <a href="http://www.uv.es/vista/vistavalencia/papers/Laparra_JOSA_10.pdf">JOSA10</a>, <a href="http://isp.uv.es/papers/malo15a-reprint.pdf">Proc.SPIE15</a>]; and (vi) <strong>image classification</strong> and <strong>knowledge extraction</strong> (or regression) based on our feature extraction techniques [<a href="http://isp.uv.es/papers/Laparra11.pdf">IEEE-TNN11</a>, <a href="http://isp.uv.es/papers/AdaptVQ_ieeetgars_2012.pdf">IEEE-TGRS13</a>,<a href="http://isp.uv.es/papers/IJNS_Laparra14_accepted_v5.pdf">Int.J.Neur.Syst.14</a>, <a href="http://isp.uv.es/papers/drr_jstsp2014_final.pdf">IEEE-JSTSP15</a>]. See CODE for image and video processing applications <a href="http://isp.uv.es/soft_imvideo.html">here</a>.</p>
+</div>
+
+
+<div class="content-container" style="width: 85%; margin-top: -10px;">
+<div class="row">
+<div class="col-md-6">
+<img class="img-responsive" style="max-width: 100%;" src="/isp/images/research/visual_brain/im_coding.jpg" />
+<p align="justify" style="font-size: 85%;"><strong><span style="color:rgb(0,160,0)">Image Coding:</span></strong>
+<small>using nonlinear perceptual image representations is critical to improve JPEG (see the gain in visual quality at 1 bit/pix). Measuring subjective
+distortion (the numbers at the bottom) is another vision-related problem we addressed (see below).</small></p><br><br>
+</div>
+<div class="col-md-6">
+<img class="img-responsive" style="max-width: 100%;" src="/isp/images/research/visual_brain/video_coding.jpg" />
+<p align="justify" style="font-size: 85%;"><strong><span style="color:rgb(0,160,0)">Video Coding:&nbsp;</span></strong>
+<small>improved bit allocation according to nonlinear perception model (right vs left) is critical to improve MPEG video coding with regard to improved
+optical flow computation (bottom vs top).</small></p>
+</div>
+
+
+<div class="col-md-6">
+<img class="img-responsive" style="max-width: 100%;" src="/isp/images/research/visual_brain/ruidos_great.jpg" />
+<p align="justify" style="font-size: 85%;"><strong><span style="color:rgb(0,160,0)">Image Restoration:</span></strong>
+<small>regularization functionals based on nonlinear perception models and signal smoothing according to image statistics in the wavelet domain help in image
+restoration.</small></p>
+</div>
+<div class="col-md-6">
+<div style="display: inline-block;">
+<img class="img-responsive" style="max-width: 48%;" src="/isp/images/research/visual_brain/flor1.jpg" />
+<img class="img-responsive" style="max-width: 48%;" src="/isp/images/research/visual_brain/flor2.jpg" />
+</div>
+<p align="justify" style="font-size: 85%;"><strong><span style="color:rgb(0,160,0)">Color Constancy and White Balance:&nbsp;</span></strong>
+<small>these <span style="font-style: italic;">adaptation</span> problems reduce to manifold matching in different illumination conditions. We proposed linear and nonlinear solutions to this geometric problem.</small></p>
+</div>
+
+
+<div class="col-md-6">
+<img class="img-responsive" style="max-width: 100%;" src="/isp/images/research/visual_brain/metrics.jpg" />
+<p align="justify"><strong><span style="color:rgb(0,160,0)">Subjective image/video distortion metrics:</span></strong>
+<small>Observer's opinion (ground truth in the vertical axis) is better correlated with our Euclidean distance in nonlinear perceptual domains (right) than with the widely used Structural Similarity Index (left).</small></p>
+</div>
+<div class="col-md-6">
+<div style="display: inline-block;">
+<img class="img-responsive" style="max-width: 45%;" src="/isp/images/research/visual_brain/clasi1.jpg" />
+<img class="img-responsive" style="max-width: 50%;" src="/isp/images/research/visual_brain/clasi2.jpg" />
+<div>
+<p align="justify"><strong><span style="color:rgb(0,160,0)">Image classification:&nbsp;</span></strong>
+<small>Classifiers based on flexible features adapted to the data (such as RBIG, SPCA, PPA, DRR) are robust to changes in acquisition conditions (adaptivity implies no&nbsp;retraining is needed).</small></p>
+</div>
+</div>
+</div>
+<hr>
+
+<div class="content-container" style="width: 70%;">
+<p align="justify"><h3>References</h3></p>
+<ul style="margin-left: 30px;">
+<li> [<a href="http://isp.uv.es/papers/ELECT95.PS.gz">Electr.Lett.95</a>]
+<li>[<a href="http://isp.uv.es/papers/ELECT99.PS.gz">Electr.Lett.99</a>]
+<li>[<a href="http://isp.uv.es/papers/Gomez-Perez05_IEEETNN.pdf">IEEE TNN05</a>]
+<li>[<a href="http://www.uv.es/vista/vistavalencia/papers/manuscript4.pdf">IEEE TIP06a</a>],
+<li>[<a href="http://isp.uv.es/papers/Camps-Valls08_JMLR.pdf">JMLR08</a>],
+<li>[<a href="http://www.uv.es/gcamps/papers/paper_patent_6_review.pdf">RPSP12</a>,]
+<li> [<a href="http://isp.uv.es/papers/patente_v5_jesus.pdf">Patent08</a>],
+<li> [<a href="http://isp.uv.es/papers/LNCS97.PS.gz">LNCS97</a>]
+<li> [<a href="http://isp.uv.es/papers/ELECT98.PS.gz">Electr.Lett.98</a>]
+<li> [<a href="http://isp.uv.es/papers/elect00.ps">Electr.Lett.00a</a>],
+<li> [<a href="http://isp.uv.es/papers/seg_ade2.ps">Electr.Lett.00b</a>],
+<li> [<a href="http://www.uv.es/vista/vistavalencia/papers/ieeeoct01.pdf">IEEE TIP01</a>,]
+<li> [<a href="http://isp.uv.es/papers/Redundancy_Reduction_Malo_99.pdf">Redund.Reduct.99</a>],
+<li> [<a href="http://www.uv.es/vista/vistavalencia/papers/manuscript_TIP_00864_2004_R2.pdf">IEEE TIP 06b</a>],
+<li> [<a href="http://www.jmlr.org/papers/volume11/laparra10a/laparra10a.pdf">JMLR10</a>];
+<li> [<a href="http://isp.uv.es/papers/VISRES97.PS.gz">Vis.Res.97</a>],
+<li> [<a href="http://isp.uv.es/papers/JOPT96.PS.gz">J.Opt.96</a>]
+<li> [<a href="http://isp.uv.es/papers/Neco_accepted_2012.pdf">Neur.Comp.12</a>],
+<li> [<a href="http://isp.uv.es/papers/Gutmann_PLOS_ONE_2014.pdf">PLoS-ONE14</a>],
+<li> [<a href="http://isp.uv.es/papers/manuscr_TGRS_2012_00431.pdf">IEEE-TGRS14</a>];
+<li> [<a href="http://isp.uv.es/papers/IVC97.PS.gz">Im.Vis.Comp.97</a>]
+<li>[<a href="http://www.uv.es/vista/vistavalencia/papers/displays_99.pdf">Disp.99</a>],
+<li> [<a href="http://www.uv.es/vista/vistavalencia/papers/icip02.pdf">IEEE ICIP02</a>],
+<li> [<a href="http://www.uv.es/vista/vistavalencia/papers/Laparra_JOSA_10.pdf">JOSA10</a>],
+<li> [<a href="http://isp.uv.es/papers/malo15a-reprint.pdf">Proc.SPIE15</a>];
+<li> [<a href="http://isp.uv.es/papers/Laparra11.pdf">IEEE-TNN11</a>],
+<li> [<a href="http://isp.uv.es/papers/AdaptVQ_ieeetgars_2012.pdf">IEEE-TGRS13</a>],
+<li> [<a href="http://isp.uv.es/papers/IJNS_Laparra14_accepted_v5.pdf">Int.J.Neur.Syst.14</a>],
+<li> [<a href="http://isp.uv.es/papers/drr_jstsp2014_final.pdf">IEEE-JSTSP15</a>]
+<ul>
+</div>
+</div>
+
+</div>
+
+

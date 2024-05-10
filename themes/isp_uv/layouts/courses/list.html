@@ -1,0 +1,70 @@
+{{ define "main" }}
+<div class="content-container" style="font-size: 14px;">
+  <h1 style="margin-bottom: 20px;">Courses</h1>
+  <br>
+  <div class="course-container">
+    <div class="image-container">
+      <img src="/isp/images/courses/math.jpg" height="100" width="260">
+    </div>
+    <div class="text-container">
+      Another formative experience in our group includes courses on Vision Science, Machine Learning and Image Processing for the PhD students in the IPL. These courses are closely related to our research, and the lectures are typically given at our university (<a href="http://www.uv.es/uvweb/master-remote-sensing/en/master-s-degree-remote-sensing-1285883190980.html">Remote sensing Master</a>, and <a href="http://www.uv.es/uvweb/master-electronic-engineering/en/master-s-degree-electronic-engineering-1285905409621.html">Electrical Engineering Master</a>, and the <a href="https://www.uv.es/uvweb/college/en/postgraduate-courses/official-master-s-degrees/official-master-s-degrees-offered/master-s-degree-basic-applied-neurosciences-1285848941532/Titulacio.html?id=1285859342470">Neuroscience Master</a> ), as well as PhD and Master Programs in <a href="https://www.ioba.es/formacion/master-universitario-en-investigacion-en-ciencias-de-la-vision/">Vision Sciences (IOBA)</a> and <a href="http://pagines.uab.cat/mcv/">Computer Vision Master at Universitat Autònoma de Barcelona</a>. Nevertheless, the courses below have readily evolved as a convenient introduction for PhD students to advanced issues not covered in conventional curricula.
+    </div>
+  </div>
+  <div id="courses-container"></div>
+</div>
+<script>
+  async function loadCourses() {
+    const response = await fetch('/isp/data/courses/courses.json');
+    const data = await response.json();
+
+    const coursesContainer = document.getElementById('courses-container');
+
+    data.courses.forEach(course => {
+      const courseContainer = document.createElement('div');
+      courseContainer.classList.add('course-container');
+
+      const imageContainer = document.createElement('div');
+      imageContainer.classList.add('image-container');
+      imageContainer.style.width = '40%';
+      const image = document.createElement('img');
+      image.src = '/isp/images/courses/' + course.image;
+      image.alt = course.name;
+      image.height = course.image_size.height; // Establece la altura de la imagen según lo especificado en el JSON
+      if (course.image_size.width) { // Verifica si existe la propiedad width en image_size
+        image.width = course.image_size.width; // Establece el ancho de la imagen según lo especificado en el JSON
+      }
+      imageContainer.appendChild(image);
+
+      const textContainer = document.createElement('div');
+      textContainer.classList.add('text-container');
+      
+      // Agrega el nombre del curso si está presente en el JSON
+      if (course.name) {
+        const courseName = document.createElement('h6'); // o h4, según prefieras
+        courseName.textContent = course.name;
+        textContainer.appendChild(courseName);
+      }
+
+      textContainer.innerHTML += course.description;
+
+      // Agrega el enlace de descarga si la URL está presente en el JSON
+      if (course.download_url) {
+        const downloadLink = document.createElement('a');
+        downloadLink.href = course.download_url;
+        downloadLink.textContent = course.download_text; // Texto predeterminado: "Descargar"
+        downloadLink.classList.add('download-link');
+        textContainer.appendChild(document.createElement('br')); // Añade un salto de línea antes del enlace
+        textContainer.appendChild(downloadLink);
+      }
+
+      courseContainer.appendChild(imageContainer);
+      courseContainer.appendChild(textContainer);
+      coursesContainer.appendChild(courseContainer);
+    });
+
+  }
+
+  document.addEventListener('DOMContentLoaded', loadCourses);
+</script>
+
+{{ end }}
