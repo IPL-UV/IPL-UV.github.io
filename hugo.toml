@@ -7,8 +7,7 @@ publishDir = "docs"
 languageCode = "en-us"
 title = "ISP - Image and Signal Processing group"
 
-theme = "isp_uv_es"
-
+theme = "isp_uv"
 
 
 ### configuracion para leer html en archivos .md
