@@ -7,8 +7,7 @@ publishDir = "docs"
 languageCode = "en-us"
 title = "ISP - Image and Signal Processing group"
 
-theme = "isp_uv_es"
-
+theme = "isp_uv"
 
 
 ### configuracion para leer html en archivos .md
@@ -71,7 +70,7 @@ theme = "isp_uv_es"
 
 [[menu.main]]
   name = "Publications"
-  url = "/publications/journals"
+  url = "/publications/"
   weight = 6
   [[menu.main]]
     parent = "Publications"

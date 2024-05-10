@@ -1,0 +1,503 @@
+{
+  "groupTitle": "Current projects",
+  "projects": [
+    {
+      "image": "erc.png",
+      "name": "SEDAL: Statistical Learning for Earth Observation Data Analysis",
+      "description": "ERC Consolidator Grant, G. Camps-Valls, 01/09/15 - 31/08/20",
+      "link": "/isp/projects/projects_links/sedal",
+      "image_size": {
+        "height": 70,
+        "width": 80
+      }
+    },
+    {
+      "image": "fbbva.png",
+      "name": "SCALE: Causal inference in the human-biosphere coupled system (SCALE)",
+      "description": "Fundación BBVA, G. Camps-Valls, 2020-2022",
+      "link": "https://www.fbbva.es/noticias/concedidas-5-ayudas-a-equipos-de-investigacion-cientifica-en-big-data/",
+      "image_size": {
+        "height": 80,
+        "width": 90
+      }
+    },
+    {
+      "image": "lacaixa.png",
+      "name": "Analysis of Water Relations in the Soil-Plant Continuum Using Microwave-Lidar Synergy",
+      "description": "MIT-Spain-'la Caixa' Foundation Seed Fund, D. Chaparro, M. Vall-llossera (UPC), M. Piles (UV), D. Entekhabi (MIT), 2020-2021",
+      "link": "https://obrasociallacaixa.org/es/investigacion-y-becas/convocatorias-de-investigacion/mit-spain-la-caixa-foundation-seed-fund",
+      "image_size": {
+        "height": 50,
+        "width": 60
+      }
+    },
+    {
+      "image": "mineco.jpg",
+      "name": "LEAVES: LEArning drivers of Vegetation health from Earth observation Synergies.",
+      "description": "Spanish Ministry of Science, Innovation and Universities (MCIU/AEI/FEDER, UE), RTI2018-096765-A-100, M. Piles and J. Amorós, 2019-2021",
+      "image_size": {
+        "height": 40,
+        "width": 80
+      }
+    },
+    {
+      "image": "mineco.jpg",
+      "name": "Deep networks in the brain: from measurements to algorithms.",
+      "description": "Spanish Ministry of Science, Innovation and Universities (MCIU/AEI/FEDER, UE), DPI2017-89867-C2, J. Malo, 2018-2021",
+      "image_size": {
+        "height": 40,
+        "width": 80
+      }
+    },
+    {
+      "image": "mineco.jpg",
+      "name": "CLOUDSAT: Machine Learning in Earth Observation: Cloud Screening of Satellite Images",
+      "description": "Spanish Ministry of Economy and Competitiveness, TEC2016-77741-R, L. Gómez-Chova, 2016 - 2019",
+      "link": "",
+      "image_size": {
+        "height": 40,
+        "width": 80
+      }
+    },
+    {
+      "image": "mineco.jpg",
+      "name": "Red de Excelencia KERMES: Advances in kernel methods for structured data",
+      "description": "Spanish Ministry of Economy and Competitiveness, TEC2016-81900-REDT, G. Camps-Valls (Coordinator) 07/17 - 07/19",
+      "link": "/isp/projects/projects_links/kermes",
+      "image_size": {
+        "height": 40,
+        "width": 80
+      }
+    },
+    {
+      "image": "esa.png",
+      "name": "CIMR Mission Requirements and Performance Consolidation",
+      "description": "ESA, M. Piles (UV), Thomas Lavergne (Norwegian Meteorological Institute, PI) 09/18 - 12/19",
+      "link": "",
+      "image_size": {
+        "height": 40,
+        "width": 80
+      }
+    },
+    {
+      "image": "esa.png",
+      "name": "CIMR Mission Application Study",
+      "description": "ESA, M. Piles (UV), Christopher Merchant (Univ. Reading, PI) 09/18 - 12/19",
+      "link": "",
+      "image_size": {
+        "height": 40,
+        "width": 80
+      }
+    },
+    {
+      "image": "esa.png",
+      "name": "PV-CDRR: Clouds Detection Algorithms for Proba-V",
+      "description": "ESA IDEAS+ research grant, L. Gómez-Chova, 2016 - 2017.",
+      "link": "https://earth.esa.int/eogateway/",
+      "image_size": {
+        "height": 40,
+        "width": 80
+      }
+    },
+    {
+      "image": "esa.png",
+      "name": "ESA Climate Change Initiave Phase II Soil Moisture (CCI SM 2 project)",
+      "description": "ESA, M. Piles (Visiting Scientist), Wouter Dorigo (TU Wien, PI) 2017",
+      "link": "http://www.esa-soilmoisture-cci.org/",
+      "image_size": {
+        "height": 40,
+        "width": 80
+      }
+    },
+    {
+      "image": "mineco.jpg",
+      "name": "GEOLEARN: Advances in Machine Learning for Large Scale Remote Sensing Data Processing",
+      "description": "Spanish Ministry of Economy and Competitiveness, 2015. TIN2015-64210-R, Jordi Munoz-Mari 06/15 - 06/18",
+      "link": "http://harpo.uv.es/wiki/geolearn:start",
+      "image_size": {
+        "height": 40,
+        "width": 80
+      }
+    },
+    {
+      "image": "mineco.jpg",
+      "name": "New Compressive Sensing Algorithms from Natural and Artificial Brain Networks",
+      "description": "Spanish Ministry of Economy and Competitiveness, BFU2014-58776-R, J. Malo (co-IP in Univ. Valencia) and L. Martinez-Otero (co-IP in Instit. Neurosci. CSIC) 01/15 - 12/18",
+      "link": "",
+      "image_size": {
+        "height": 40,
+        "width": 80
+      }
+    },
+    {
+      "image": "mineco.jpg",
+      "name": "Red de Excelencia sobre Neurociencia Visual y Ciencias de la Computación",
+      "description": "Spanish Ministry of Economy and Competitiveness, TIN2015-71130-REDT, J. Malo (coordinator in Univ. Valencia), X. Otazu (global coordinator) 01/16 - 12/18",
+      "link": "",
+      "image_size": {
+        "height": 40,
+        "width": 80
+      }
+    },
+    {
+      "image": "mineco.jpg",
+      "name": "Quantifying Visual Beauty: Neuroaesthetics and Machine Learning",
+      "description": "Spanish Ministry of Economy and Competitiveness, TIN2013-50520-EXP, J. Malo. 01/15 - 12/17",
+      "link": "",
+      "image_size": {
+        "height": 40,
+        "width": 80
+      }
+    },
+    {
+      "image": "gva.jpg",
+      "name": "VLC-BioMedic/BioClinic agreements for the use of fMRI scanner facilities",
+      "description": "Hospital La Fe, Hospital Clinic, Generalitat Valenciana, 2014-049, 2014-002, 2016-B-003, J. Malo (UV), A. Alberich (La Fe), C. Montoliu (Clinic). 01/15 - 12/17",
+      "link": "",
+      "image_size": {
+        "height": 40,
+        "width": 80
+      }
+    },
+    {
+      "image": "google.png",
+      "name": "Cloud detection in the cloud",
+      "description": "Google Earth Engine Research Award, L. Gomez-Chova, 01/16 - 12/17",
+      "link": "./projects/cdc/GEE_cloud_detection_results.html",
+      "image_size": {
+        "height": 40,
+        "width": 40
+      }
+    },
+    {
+      "image": "davalor.jpeg",
+      "name": "Knowledge extraction from the Davalor Automated Vision Evaluator (EVA)",
+      "description": "Davalor Salud Ltd. contract with Univ. Valencia, Jesus Malo. 01/15 - 12/17",
+      "link": "",
+      "image_size": {
+        "height": 50,
+        "width": 50
+      }
+    },
+    {
+      "image": "MPInewlogo.jpeg",
+      "name": "FLUXCOM: An initiative to upscale biosphere-atmosphere fluxes from FLUXNET sites to continental and global scales",
+      "description": "PI Martin Jung. Max Planck Institute for Biogeochemistry",
+      "link": "http://www.fluxcom.org/index.html",
+      "image_size": {
+        "height": 40,
+        "width": 80
+      }
+    },
+    {
+      "image": "mineco.jpg",
+      "name": "LIFE-VISION: Learning Image Features to Encode Visual Information",
+      "description": "Spanish Ministry of Economy and Competitiveness, 2012. TIN2012-38102-C03-01, 01/13 - 12/15",
+      "link": "http://lifevisionproject.wordpress.com/",
+      "image_size": {
+        "height": 40,
+        "width": 80
+      }
+    },
+    {
+      "image": "cost.png",
+      "name": "Mapping and the citizen sensor",
+      "description": "ICT COST Action, 01/13 - 12/16",
+      "link": "https://www.cost.eu/actions/TD1202/",
+      "image_size": {
+        "height": 40,
+        "width": 80
+      }
+    },
+    {
+      "image": "h2020.jpg",
+      "name": "SenSyF: Sentinels Synergy Framework",
+      "description": "EU 7th Framework Programme on research, technological development and demostration (FP7-Space). Collaborative Projects: Preparing take-up of GMES Sentinel, 01/13 - 12/15",
+      "link": "https://cordis.europa.eu/project/id/313117/reporting",
+      "image_size": {
+        "height": 40,
+        "width": 80
+      }
+    },
+    {
+      "image": "eum.jpeg",
+      "name": "Study on pattern recognition based cloud detection over landmarks",
+      "description": "EUMETSAT European Organisation for the Exploitation of Meteorological Satellites, 01/15 - 11/15",
+      "link": "https://arxiv.org/pdf/2012.12306.pdf",
+      "image_size": {
+        "height": 50,
+        "width": 70
+      }
+    },
+    {
+      "image": "mineco.jpg",
+      "name": "Red Temática Española para el Avance y la Transferencia de la Inteligencia Computacional Aplicada (ATICA)",
+      "description": "Spanish Ministry of Economy and Competitiveness, TIN2011-14083-E, 01/11 - 12/14",
+      "link": "http://php5.lsi.upc.edu/atica/",
+      "image_size": {
+        "height": 40,
+        "width": 80
+      }
+    },
+    {
+      "image": "eum.jpeg",
+      "name": "Improvement of the current nonlinear regression retrieval (NLR) implemented within the MTGIRS prototype processor for monitoring (MTG-IRS L2 PPM) to generate whole globe profiles of temperature, water vapour and ozone",
+      "description": "EUMETSAT.- European Organisation for the Exploitation of Meteorological Satellites, 02/14 - 07/14",
+      "link": "",
+      "image_size": {
+        "height": 50,
+        "width": 70
+      }
+    },
+    {
+      "image": "belspo.png",
+      "name": "RELEARN: RE-using field reference data in space and time for vegetation mapping: the potential of semi-supervised and active LEARNing techniques",
+      "description": "01/11-01/13",
+      "link": "https://eo.belspo.be/en/stereo-in-action/projects/re-using-field-reference-data-space-and-time-vegetation-mapping-potential",
+      "image_size": {
+        "height": 40,
+        "width": 80
+      }
+    },
+    {
+      "image": "esa.png",
+      "name": "ESA Climate Change Initiative (CCI) Phase 1. Essential Climate Variable: ECV Cloud",
+      "description": "ESA CCI Clouds, 10/10-10/13",
+      "link": "http://www.esa-cci.org/",
+      "image_size": {
+        "height": 40,
+        "width": 80
+      }
+    },
+    {
+      "image": "esa.png",
+      "name": "Estimación de parámetros biofísicos para la misión FLEX a partir de Sentinel-3",
+      "description": "01/11-12/13",
+      "link": "",
+      "image_size": {
+        "height": 40,
+        "width": 80
+      }
+    },
+    {
+      "image": "mineco.jpg",
+      "name": "Natural Image Statistics: non-parametric models, Bayesian models and computational neuroscience for image processing",
+      "description": "the Spanish Ministry of Economy. TEC2009-13696, 01/10 - 12/12",
+      "link": "",
+      "image_size": {
+        "height": 40,
+        "width": 80
+      }
+    },
+    {
+      "image": "mineco.jpg",
+      "name": "MIPRCV: multimodal interaction in pattern recognition and computer vision",
+      "description": "CONSOLIDER-INGENIO CSD2007-00018, 10/07 - 10/12",
+      "link": "",
+      "image_size": {
+        "height": 40,
+        "width": 80
+      }
+    },
+    {
+      "image": "ign.jpeg",
+      "name": "Procesado de imágenes de sensores de satélite de media resolución y su integración espectro-temporal con sensores de satélite de baja resolución",
+      "description": "Instituto Geográfico Nacional  (IGN), 12/10 - 12/11",
+      "link": "",
+      "image_size": {
+        "height": 50,
+        "width": 50
+      }
+    },
+    {
+      "image": "mineco.jpg",
+      "name": "EODIX: Metodologías avanzadas en observación de la Tierra: calibración de datos ópticos y extracción de la información",
+      "description": "AYA2008-05965-C04-03, 01/09 - 12/11",
+      "link": "",
+      "image_size": {
+        "height": 40,
+        "width": 80
+      }
+    },
+    {
+      "image": "eum.jpeg",
+      "name": "Consolidation of scientific baseline for MTG-IRS L2 processing: role of non-linear regression methods",
+      "description": "EUMETSAT.- European Organisation for the Exploitation of Meteorological Satellites, EUMETSAT EUM/CO/09/4600000643/XC), 09/09 - 08/10",
+      "link": "",
+      "image_size": {
+        "height": 50,
+        "width": 70
+      }
+    },
+    {
+      "image": "mineco.jpg",
+      "name": "Integration of nonlinear perceptual and statistical representations in image restoration and coding",
+      "description": "the Spanish Ministry of Science and Technology. TEC2006-13845, 01/07 - 12/09",
+      "link": "",
+      "image_size": {
+        "height": 40,
+        "width": 80
+      }
+    },
+    {
+      "image": "ign.jpeg",
+      "name": "Interpolación normalizada de imágenes provenientes de múltiples sensores. Interpolación normalizada de imágenes LANDSAT mediante downscaling",
+      "description": "Instituto Geográfico Nacional (IGN), 05/09 - 09/09",
+      "link": "",
+      "image_size": {
+        "height": 50,
+        "width": 50
+      }
+    },
+    {
+      "image": "esa.png",
+      "name": "MERIS/AATSR synergy algorithms for cloud screening aerosol retrieval and athmospheric correction",
+      "description": "European Space Agency (ESA) ESRIN. Contract 21090/07/I-LG, 01/08 - 11/09",
+      "link": "",
+      "image_size": {
+        "height": 40,
+        "width": 80
+      }
+    },
+    {
+      "image": "esa.png",
+      "name": "Development of CHRIS/PROBA modules for the BEAM toolbox",
+      "description": "ESA ITT SoW ENVI-DTEX-EOPS-SW-06-0008, 02/07 - 05/08",
+      "link": "",
+      "image_size": {
+        "height": 40,
+        "width": 80
+      }
+    },
+    {
+      "image": "gva.jpg",
+      "name": "Support Vector Machines and Computational Human Vision Models for Image Coding and Denoising",
+      "description": "the Generalitat Valenciana, GV06/215, 01/06 - 12/08",
+      "link": "",
+      "image_size": {
+        "height": 40,
+        "width": 80
+      }
+    },
+    {
+      "image": "mineco.jpg",
+      "name": "Classification of hyperspectral remote sensing images based on semi-supervised kernel methods",
+      "description": "Minist. de Educación y Ciencia Minist. d'Istruzione, Università e Ricerca, MEC/HI2005-0228, 01/06 - 12/08",
+      "link": "",
+      "image_size": {
+        "height": 40,
+        "width": 80
+      }
+    },
+    {
+      "image": "gva.jpg",
+      "name": "HYPERCLASS: Métodos avanzados para la clasificación de imágenes hiperespectrales",
+      "description": "01/05 - 01/07",
+      "link": "",
+      "image_size": {
+        "height": 40,
+        "width": 80
+      }
+    },
+    {
+      "image": "mineco.jpg",
+      "name": "Aplicación de nuevos modelos visuales-estadísticos a la restauración de imágenes afectadas de ruido y desenfoque",
+      "description": "Ministerio de Defensa, Exp. 1053830112, 01/04 - 12/06",
+      "link": "",
+      "image_size": {
+        "height": 40,
+        "width": 80
+      }
+    },
+    {
+      "image": "mineco.jpg",
+      "name": "Modelos visuales-estadísticos de representación de imagenes y sus aplicaciones",
+      "description": "CICYT-FEDER TEC2003 Ministerio de Ciencia y Tecnología, 11/03 - 11/06",
+      "link": "",
+      "image_size": {
+        "height": 40,
+        "width": 80
+      }
+    },
+    {
+      "image": "gva.jpg",
+      "name": "Aplicaciones en biomedicina y modelos de vision humana",
+      "description": "Grupos de excelencia cientifica de la comunidad Valencia, G-04/08. Generalitat Valenciana, 01/04 - 12/05",
+      "link": "",
+      "image_size": {
+        "height": 40,
+        "width": 80
+      }
+    },
+    {
+      "image": "logo_uv.png",
+      "name": "Modelos no gaussianos para la representación de imágenes y secuencias",
+      "description": "Universitat de València, UV-AE-03-29, 01/03 - 12/03",
+      "link": "",
+      "image_size": {
+        "height": 50,
+        "width": 50
+      }
+    },
+    {
+      "image": "mineco.jpg",
+      "name": "Diseño desarrollo y validación de un dispositivo para la detección temprana de anomalías visuales",
+      "description": "CICYT Ministerio de Ciencia y Tecnología, DPI2000-0116-P4-02, 01/01 - 12/03",
+      "link": "",
+      "image_size": {
+        "height": 40,
+        "width": 80
+      }
+    },
+    {
+      "image": "mineco.jpg",
+      "name": "Compresión eficiente de vídeo en color mediante el análisis de secuencias basado en representaciones de imágenes perceptualmente significativas",
+      "description": "CICYT-FEDER Ministerio de Ciencia y Tecnología, TIC 1FD-97-0279, 01/99 - 12/01",
+      "link": "",
+      "image_size": {
+        "height": 40,
+        "width": 80
+      }
+    },
+    {
+      "image": "mineco.jpg",
+      "name": "Desarrollo de un sistema digital local de video comunicación para comunidades residenciales",
+      "description": "CICYT-FEDER Ministerio de Ciencia y Tecnología, TIC 1FD-97-1910, 01/00 - 12/01",
+      "link": "",
+      "image_size": {
+        "height": 40,
+        "width": 80
+      }
+    },
+    {
+      "image": "gva.jpg",
+      "name": "Optimización de los algoritmos de compresión de imágenes biomédicas mediante la utilización de parámetros perceptuales",
+      "description": "IVEI Generalitat Valenciana, IVEI 96/003-035, 01/97 - 12/98",
+      "link": "",
+      "image_size": {
+        "height": 40,
+        "width": 80
+      }
+    },
+    {
+      "image": "mineco.jpg",
+      "name": "Estimación de movimiento e interpretación de secuencias de imágenes",
+      "description": "CICYT, TIC 95-676-C02-01. Ministerio de Educación y Ciencia, 01/96 - 12/98",
+      "link": "",
+      "image_size": {
+        "height": 40,
+        "width": 80
+      }
+    },
+    {
+      "image": "jj.jpg",
+      "name": "Control objetivo de la calidad óptica de lentes de contacto desechables durante su periodo de utilización",
+      "description": "Johnson&Johnson Europe. (European Vistakon Research Award 94' received by J. Malo), 01/95 - 12/95",
+      "link": "",
+      "image_size": {
+        "height": 50,
+        "width": 50
+      }
+    }
+  ]
+}

@@ -1,3 +1,3 @@
 ---
-title: people
+title: People
 ---

@@ -1,0 +1,165 @@
+{
+  "groupTitle": "Visitors",
+  "members": [
+    {
+      "name": "Fernando Iglesias",
+      "image": "nando.png",
+      "description": "Research Associate in the German Aerospace Center (DLR), Ph.D. in Atmospheric Science from Lancaster University, UK. He works on combining causal discovery and deep learning methods to address systematic errors in climate models and improve climate projections.",
+      "social_networks": {
+        "google_scholar": null,
+        "orcid": null,
+        "twitter": null,
+        "github": null,
+        "semantic_scholar": null,
+        "researchgate": null,
+        "personal_uv": null,
+        "linkedin": null,
+        "ieee": null,
+        "dblp": null,
+        "personal_website": null,
+        "causality": null,
+        "manifold_learning": null
+      }
+    },
+    {
+      "name": "Chen Ma",
+      "image": "chenma.png",
+      "description": "PhD student in Harbin Institute of Technology, now visiting ISP. My research focuses on large foundation models and the processing of hyper/multi-spectral imagery.",
+      "social_networks": {
+        "google_scholar": null,
+        "orcid": null,
+        "twitter": null,
+        "github": null,
+        "semantic_scholar": null,
+        "researchgate": null,
+        "personal_uv": null,
+        "linkedin": null,
+        "ieee": null,
+        "dblp": null,
+        "personal_website": null,
+        "causality": null,
+        "manifold_learning": null
+      }
+    },
+    {
+      "name": "Alice Re",
+      "image": "alice.png",
+      "description": "I am a PhD student at Politecnico di Torino, Italy. My research focuses on preventive coastal flood assessment and mapping. During my research visit I will work on coastal flood susceptibility integrating remote sensing, GIS and ML.",
+      "social_networks": {
+        "google_scholar": null,
+        "orcid": null,
+        "twitter": null,
+        "github": null,
+        "semantic_scholar": null,
+        "researchgate": null,
+        "personal_uv": null,
+        "linkedin": null,
+        "ieee": null,
+        "dblp": null,
+        "personal_website": null,
+        "causality": null,
+        "manifold_learning": null
+      }
+    },
+    {
+      "name": "Francesco Martinuzzi",
+      "image": "francesco.png",
+      "description": "PhD student at the Center for Scalable Data Analytics and Artificial Intelligence (ScaDS.AI) and the Remote Sensing Center for Earth system research (RSC4Earth), Leipzig University. My research interests lie in the exploration of nonlinear dynamics with machine learning, with a focus on applications to Earth sciences.",
+      "social_networks": {
+        "google_scholar": null,
+        "orcid": null,
+        "twitter": null,
+        "github": null,
+        "semantic_scholar": null,
+        "researchgate": null,
+        "personal_uv": null,
+        "linkedin": null,
+        "ieee": null,
+        "dblp": null,
+        "personal_website": null,
+        "causality": null,
+        "manifold_learning": null
+      }
+    },
+    {
+      "name": "Shahine Bouabid",
+      "image": "bouabid.png",
+      "description": "I am a final year PhD student in the Oxford Computational Statistics and Machine Learning group at the University of Oxford. I am interested in developing simple and interpretable statistical ML methodologies to address challenges that arise in climate science, in particular on climate model emulation using physically-informed models and statistical downscaling. I use mostly kernel methods and Gaussian processes.",
+      "social_networks": {
+        "google_scholar": null,
+        "orcid": null,
+        "twitter": null,
+        "github": null,
+        "semantic_scholar": null,
+        "researchgate": null,
+        "personal_uv": null,
+        "linkedin": null,
+        "ieee": null,
+        "dblp": null,
+        "personal_website": null,
+        "causality": null,
+        "manifold_learning": null
+      }
+    },
+    {
+      "name": "Jessenia Gonzalez",
+      "image": "jessenia.png",
+      "description": "I am a PhD student at Leipzig University centered on understanding aerosol-cloud interactions directly from satellite observations using ML, bypassing the uncertainties inherent in traditional retrieval methods.",
+      "social_networks": {
+        "google_scholar": null,
+        "orcid": null,
+        "twitter": null,
+        "github": null,
+        "semantic_scholar": null,
+        "researchgate": null,
+        "personal_uv": null,
+        "linkedin": null,
+        "ieee": null,
+        "dblp": null,
+        "personal_website": null,
+        "causality": null,
+        "manifold_learning": null
+      }
+    },
+    {
+      "name": "Ioannis Prapas",
+      "image": "ioannis.png",
+      "description": "I'm a researcher at the Orion Lab, National Observatory of Athens and the University of Valencia. I am interested in Deep Learning for the Earth System sciences, aiming to improve fire prediction systems.",
+      "social_networks": {
+        "google_scholar": null,
+        "orcid": null,
+        "twitter": null,
+        "github": null,
+        "semantic_scholar": null,
+        "researchgate": null,
+        "personal_uv": null,
+        "linkedin": null,
+        "ieee": null,
+        "dblp": null,
+        "personal_website": null,
+        "causality": null,
+        "manifold_learning": null
+      }
+    },
+    {
+      "name": "Is this you?",
+      "image": "you2.png",
+      "description": "We are always happy to host smart people! Send us your resume and ideas of collaboration!",
+      "social_networks": {
+        "google_scholar": null,
+        "orcid": null,
+        "twitter": null,
+        "github": null,
+        "semantic_scholar": null,
+        "researchgate": null,
+        "personal_uv": null,
+        "linkedin": null,
+        "ieee": null,
+        "dblp": null,
+        "personal_website": null,
+        "causality": null,
+        "manifold_learning": null
+      }
+    }
+  ]
+}
