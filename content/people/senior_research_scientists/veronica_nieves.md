@@ -2,7 +2,7 @@
 date: '2024-05-10T05:29:29+02:00'
 draft: false
 title: 'Veronica Nieves - Distinguished Researcher'
-role: senior_research_scientists
+role: "senior research scientists"
 params:
   img: veronica.webp
   scholar: 'https://scholar.google.com/citations?user=ijT_5O4AAAAJ&hl=en'

@@ -2,7 +2,7 @@
 date: '2024-05-10T05:29:29+02:00'
 draft: false
 title: 'Jordi Muñoz-Marí'
-role: associate_professors
+role: "associate professors"
 params:
   img: jordi.webp
   scholar: 'https://scholar.google.com/citations?user=XPs4yHUAAAAJ&hl=en'
