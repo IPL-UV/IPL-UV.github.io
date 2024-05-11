@@ -11,7 +11,7 @@
 
 <script>
 async function loaddata() {
-  const response = await fetch('/isp/data/data/data.json');
+  const response = await fetch('/data/data/data.json');
   const data = await response.json();
 
   const gridContainer = document.getElementById('grid-container');
@@ -23,7 +23,7 @@ async function loaddata() {
     imageLink.href = data.link; // Enlaza la imagen al mismo destino
     imageLink.style.textDecoration = 'none'; // Elimina el subrayado del enlace
     const image = document.createElement('img');
-    image.src = '/isp/images/data/' + data.image;
+    image.src = '/images/data/' + data.image;
     image.alt = data.name;
     image.style.height = '100px';
     image.style.width = '100px';
