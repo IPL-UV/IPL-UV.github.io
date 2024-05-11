@@ -2,7 +2,7 @@
 date: '2024-05-10T05:29:29+02:00'
 draft: false
 title: 'Álvaro Moreno Martínez'
-role: senior_research_scientists
+role: "senior research scientists"
 params:
   img: alvaro.webp
   scholar: 'https://scholar.google.es/citations?user=vmedAiwAAAAJ&hl=es'

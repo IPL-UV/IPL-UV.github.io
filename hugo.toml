@@ -14,8 +14,6 @@ theme = "isp_uv"
 [markup.goldmark.renderer]
   unsafe = true
 
-
-
 # ////////////////////// Configuración del menú de navegación principal ////////////////////// #
 
 [[menu.main]]
