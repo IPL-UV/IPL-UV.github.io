@@ -12,4 +12,7 @@ params:
   personal_uv: 'https://www.uv.es/jmalo/'
 ---
 
-I'm interested in understanding human vision from information theoretic principles. This statistical view has implications in experimental and computational neuroscience.
+
+
+I'm interested in understanding human vision from information theoretic principles. This statistical view has implications in experimental and computational neuroscience. [See the ex-cathedra statement](https://isp.uv.es/excathedra.html)
+
