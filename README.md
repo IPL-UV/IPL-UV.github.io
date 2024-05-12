@@ -17,8 +17,8 @@ additioanlly to test locally and use hugo archetypes:
 
 Jump to how to sections: 
 
-- [Single pages][#single-pages]
-- [People][#people]
+- [Single pages](#single-pages)
+- [People](#people)
 
 ### Single pages 
 
