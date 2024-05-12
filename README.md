@@ -20,6 +20,8 @@ Jump to how to sections:
 - [Single pages](#single-pages)
 - [People](#people)
 
+----
+
 ### Single pages 
 
 To add a page with content add a file (`.html` or `.md`) in the `content` folder (better in some subfolder). 
