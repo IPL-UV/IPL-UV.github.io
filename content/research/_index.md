@@ -1,5 +1,7 @@
 ---
 title: research
+type: _default
+layout: single
 ---
 
 # Philosophy, Goal, Vision
