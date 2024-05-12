@@ -20,7 +20,7 @@ Jump to how to sections:
 - [Single pages](#single-pages)
 - [People](#people)
 
-----
+---
 
 ### Single pages 
 
@@ -45,6 +45,8 @@ content/
 ```
 
 For an example check `content/research/` pages. 
+
+--- 
 
 ### People
 
