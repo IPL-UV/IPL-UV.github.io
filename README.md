@@ -14,6 +14,12 @@ additioanlly to test locally and use hugo archetypes:
 - [install hugo](https://gohugo.io/installation/)
 - `hugo server` to deploy locally 
 
+
+Jump to how to sections: 
+
+- [Single pages][#single-pages]
+- [People][#people]
+
 ### Single pages 
 
 To add a page with content add a file (`.html` or `.md`) in the `content` folder (better in some subfolder). 
@@ -40,7 +46,9 @@ For an example check `content/research/` pages.
 
 ### People
 
-#### Add yourself
+Each person in the people page is associated with a `.md` file in the `content/people` folder (or a subfolder). 
+The information to generate personal links and the name of the image is defined in the front matter of the `.md` file. 
+The (short) bio is stored in the main file content (the part after the front matter). 
 
 There is a hugo archetype to add easily people, for that you need hugo installed (otherwise copy the front matter from another person file).``
 
