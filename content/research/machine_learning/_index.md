@@ -3,7 +3,8 @@ title: "Research Machine Learning"
 ---
 
 # Machine learning
-<br>
+
+<br> </br>
 
 ## Motivation
 
@@ -13,7 +14,7 @@ title: "Research Machine Learning"
 
 **The main research hypothesis of our research agenda is that current AI models are limited to tackle fitting problems only, and do not have a clear notion of space, time and causal relations.** We need to aboard the more ambitious questions of understanding through machine learning, going beyond mere model fitting. This goal needs to develop (i) targeted ML that respects data characteristics, (ii) hybrid physics-aware ML that incorporates domain knowledge and inductive priors, and more importantly (3) moving from fitting to understanding through AI models that are explainable and grasp causal relations from observational data.
 
-<img src="/isp/images/research/philosophy_balls.png" style="width:800px; display: block; margin: auto">
+<img src="img/philosophy_balls.webp" style="width:800px; display: block; margin: auto"></img>
 <br>
 
 **In order to advance in the previous AI agenda, we base our research in 3 fundamental research pillars:**

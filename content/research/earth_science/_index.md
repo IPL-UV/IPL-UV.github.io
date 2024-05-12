@@ -12,7 +12,8 @@ title: "Research Earth Science"
 **Machine learning has yielded many successful results and developments in remote sensing, geosciences and climate sciences. However, there are still strong limitations for the general adoption of machine learning algorithms for predicting and understanding the Earth and climate systems.**
 
 
-<img src="/isp/images/research/AI_earth_pic.png" style="width:300px; display: block; margin: auto"><br>
+<img src="img/AI_earth_pic.webp" style="width:300px; display: block; margin: auto"></img>
+<br>
 
 The current statistical treatment of biophysical parameters is strongly limited by the quantity and quality of EO data, as well as because of the abuse of standard off-the-shelf methods, which in general are not well-adapted to the particular EO data characteristics. Specifically, current regression models used for EO applications are still deficient because they rely on limited amount of meteorological and remote sensing data, do not observe the particular data characteristics, and often make strong assumptions of linearity, homoscedasticity or Gaussianity. These limitations translate into certain risks of overfitting and unreasonably large uncertainties for the predictions, suggesting a lack of explanatory variables and deficiencies in model specification. Graphical models have been seldom used in EO data analysis. The few works restrict to local studies, use limited amount of data and explanatory variables, consider remote sensing input features only, apply standard structure learning algorithms driven by univariate (often unconditioned) dependence estimates, and do not extract causal relations or identify new drivers in the problem.
 
