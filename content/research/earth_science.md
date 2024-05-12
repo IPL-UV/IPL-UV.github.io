@@ -1,6 +1,5 @@
 ---
 title: "Research Earth Science"
-type: research/earth_science
 ---
 
 <div class="content-container" style="font-size: 1.1em; text-align: justify; line-height: 1.1;">

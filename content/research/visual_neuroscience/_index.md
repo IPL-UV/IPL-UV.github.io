@@ -1,0 +1,221 @@
+---
+title: Visual Neuroscience
+---
+
+<div class="content-container" style="max-width: 100%;">
+
+<div class="text-center">
+<p><h1 style="font-size: 1.7em;">Vision Science:</h1></p>
+<p><h1 style="font-style: italic; margin-top: -20px;">from Optics to Neuroscience and Statistical Learning</h1></p>
+</div>
+<div class="row">
+<div class="col-md-2 uno">
+<img alt="Jesus" class="img-responsive" src="img/vision_science.jpg">
+<p align="justify"><small>The PSF of this <span style="font-style: italic;">nice</span> human eye can be measured <span style="font-style: italic;">in-vivo</span> [<a href="http://isp.uv.es/papers/OPH97.PS.gz">Opth.Phys.Opt.97</a>].</small></p>
+<div>
+<img class="img-responsive" style="width: 130%; margin-left: -50px;" src="img/anim_gif_v1_resp.gif" /><small>Linear V1 cells
+(see model here [<a href="http://isp.uv.es/after_effects">Front.Neurosci.15</a>]).</small><br><br>
+<img class="img-responsive" style="width: 130%; margin-left: -50px;" src="img/anim_gif_mt_resp.gif" /><small>Linear response of MT cells<br>
+(and see the CODE for V1 and MT cells <a href="http://isp.uv.es/virtual_labs.html"><span style="font-style: italic;">HERE</span></a>)</small>
+</div>
+</div>
+<div class="col-md-8 dos">
+<p align="justify"> <strong>Vision</strong> is the ability to interpret the surrounding environment by analyzing the measurements drawn by imaging systems.
+This ability is particularly impressive in <span style="font-style: italic;">humans</span> when compared to the current state of the art in <span style="font-style: italic;">computers</span> .<br>
+The study of all the phenomena related to <span style="font-style: italic;">vision in biological systems</span> (and particularly in humans) is usually referred to as <strong>Vision Science</strong>.
+It addresses a variety of issues ranging from the formation of the visual signal (e.g. the Physics of the imaging process that includes Radiometry and <strong>Physiological Optics</strong>),
+   to the analysis of the visual signal (of interest for Neuroscience and Psychology).
+   This analysis involves the extraction of visual primitives through basic computations in the retina-cortex neural pathway and the information processing leading to scene descriptors of higher abstraction level (<a href="http://www.scholarpedia.org/article/Models_of_visual_cortex">see elsewhere</a>). These problems may be addressed from a <span style="font-style: italic;">mechanistic perspective</span> focused on describing the empirical behavior of the system; or from a <span style="font-style: italic;">normative perspective</span> that looks for the functional reasons (organization principles) that explain the behavior. While the mechanistic perspective is based in experimental recordings from <strong>Psychophysics</strong> and <strong>Neurophysiology</strong>, the normative perspective is based on the study of <strong>Image Statistics</strong> and the use of concepts from <strong>Information Theory</strong> and <strong>Statistical Learning</strong>.
+   The latter is known as the <a href="https://en.wikipedia.org/wiki/Efficient_coding_hypothesis">Efficient Coding Hypothesis</a>.<br>
+   Over the years we have done original work in <span style="font-style: italic;">all</span> the above subdisciplines related to (low-level) Vision Science. Now we are shifting to more abstract visual functions.</p>
+
+   <div class="list-group">
+   <a href="#Experiments" class="list-group-item">
+   <h4 class="list-group-item-heading" style="color:rgb(0,150,200)">Experiments in Vision Science:</h4>
+   <ul>
+   <li>Physiological Optics</li>
+   <li>Psychophysics</li>
+   <li>Neural Response (fMRI)</li>
+   <li>Image Statistics (spectrally, chromatically and spatio-temporally calibrated scenes)</li>
+   </ul>
+   </a>
+   <a href="#Empirical" class="list-group-item">
+   <h4 class="list-group-item-heading" style="color:rgb(0,150,200)">Theory. Empirical models in Vision Science:</h4>
+   <ul>
+   <li><span style="font-style: italic;">Texture Vision</span> models based on contrast discrimination.</li>
+   <li><span style="font-style: italic;">Color Vision</span> models: tristimulus colorimetry and color adaptation and appearance.</li>
+   <li><span style="font-style: italic;">Motion Perception</span>: speed sensitive neurons and optical flow.</li>
+   <li><span style="font-style: italic;">Mathematical Techniques:</span> linear filter banks, wavelets and divisive normalization.</li>
+   </ul>
+   </a>
+   <a href="#Principled" class="list-group-item">
+   <h4 class="list-group-item-heading" style="color:rgb(0,150,200)">Theory. Principled models in Vision Science:</h4>
+   <ul>
+   <li>Receptive fields from linear infomax and manifold matching.</li>
+   <li>Adaptation, Saturation and After-effects from nonlinear infomax and quantization.</li>
+   </ul>
+   </a>
+   <a href="#Statistics" class="list-group-item">
+   <h4 class="list-group-item-heading" style="color:rgb(0,150,200)">Theory. Statistical Learning for Vision Science:</h4>
+   <ul>
+   <li>Linear and nonlinear manifold learning: feature extraction and dimens. reduction.</li>
+   <li>Probability Density Estimation.</li>
+   <li>Metric Learning.</li>
+   <li>Multi-information and Redundancy.</li>
+   </ul>
+   </a>
+   </div>
+   </div>
+
+   <div class="col-md-2 tres">
+   <div>
+   <img class="img-responsive" style="width: 135%; margin-left: -10px;" src="img/anim_gif.gif" />
+   <p><small>fMRI recordings at Hospital La Fe <a href="https://www.acim.lafe.san.gva.es/acim/?page_id=1229">NeuroImage Unit</a></small>.</p>
+   </div>
+   <br>
+   <div>
+   <img class="img-responsive" style="width: 100%;" src="img/anim_gif_texture.gif" />
+   <p><small>Texture Vision [<a href="http://isp.uv.es/papers/JMO97.PS.gz">J.Mod.Opt.97</a>, <a href="http://isp.uv.es/papers/Malo_Laparra_Neural_10b.pdf">Neur.Comp.10</a>]</small></p>
+   </div>
+   <div>
+   <img class="img-responsive" style="width: 100%;" src="img/anim_gif_color.gif" />
+   <p><small>Color vision [<a href="http://isp.uv.es/papers/VISRES97.PS.gz">Vis.Res.97</a>, <a href="http://isp.uv.es/papers/josa_04.pdf">JOSA04</a>]</small></p>
+   </div>
+   <div>
+   <img class="img-responsive" style="width: 100%;" src="img/anim_gif_motion2.gif" />
+   <p><small>Motion vision [<a href="http://journalofvision.org/1/3/309/">J.Vis.01</a>, <a href="http://www.uv.es/vista/vistavalencia/papers/ieeeoct01.pdf">IEEE TIP01</a> ]</small></p><br>
+   </div>
+   </div>
+   </div>
+
+   <div>
+   <div class="content-container" style="width: 78%; ">
+   <p align="justify"><h3>Experiments in Vision Science</h3></p>
+   <p  align="justify"> I made experimental contributions in three aspects: <span style="font-style: italic;">Physiological Optics, Psychophysics</span> and <span style="font-style: italic;">Image Statistics</span>. (i) In the field of <strong>Physiological Optics</strong>, we measured the optical transfer function of the lens+cornea system in-vivo [<a href="http://isp.uv.es/papers/OPH97.PS.gz">Opth.Phys.Opt.97</a>]. This work received the European Vistakon Research Award 94'. (ii) In <strong>Psychophysics</strong>, we proposed simplified methods to measure the Contrast Sensitivity Function in all the frequency domain [<a href="http://isp.uv.es/papers/JOPT94.PS.gz">J.Opt.94</a>], and a fast and accurate method to measure the parameters of multi-stage linear+nonlinear vision models [<a href="http://isp.uv.es/papers/malo15a-reprint.pdf">Proc.SPIE15</a>]. Finally, (iii) in <strong>Image Statistics</strong> we gathered spatially and spectrally calibrated image samples to determine the properties of these signals and their variation under changes in illumination, contrast and motion [<a href="http://isp.uv.es/papers/ivc99.ps.gz">Im.Vis.Comp.00</a>, <a href="http://isp.uv.es/papers/Neco_accepted_2012.pdf">Neur.Comp.12</a>, <a href="http://isp.uv.es/papers/manuscr_TGRS_2012_00431.pdf">IEEE-TGRS14</a>, <a href="http://isp.uv.es/papers/Gutmann_PLOS_ONE_2014.pdf">PLoS-ONE14</a>, <a href="http://isp.uv.es/files/rem_sens_im_proc_12_ch02.pdf">Rem.Sens.Im.Proc.11</a>, <a href="http://isp.uv.es/after_effects">Front.Neurosci.15</a>].</p>
+   <div>
+   <img class="img-responsive" style="width: 47%;" alt="DoblePaso" src="/isp/images/research/visual_neuroscience/experiment1.jpg" />
+   <img  class="img-responsive" style="width: 26%;" alt="IllumD"  src="/isp/images/research/visual_neuroscience/method1.jpg" />
+   <img class="img-responsive" style="width: 26%;" alt="IllumA" src="/isp/images/research/visual_neuroscience/method2.jpg" />
+   </div>
+   <br>
+   <p align="justify" style="font-size: 85%;">
+   <strong style="font-weight: bold; color:rgb(0,160,0)">Illustrative experimental equipment:</strong>
+   <small> <span style="font-style: italic;">Left:</span> double-pass setting for the measurement of the Modulation Transfer Function of the human eye [<a href="http://isp.uv.es/papers/OPH97.PS.gz">Opth.Phys.Opt.97</a>]. <span style="font-style: italic;">Right:</span>  Spectrally calibrated light sources, image colorimeter and spectroradiometer to gather accurate color image statistics, see the available <a href="http://isp.uv.es/data_color.htm">color image database</a> [<a href="http://isp.uv.es/papers/Neco_accepted_2012.pdf">Neur.Comp.12</a>,
+   <a href="http://isp.uv.es/papers/Gutmann_PLOS_ONE_2014.pdf">PLoS-ONE14</a>], and <a href="http://isp.uv.es/after_effects/">texture and motion datasets</a> [<a href="http://isp.uv.es/after_effects">Front.Neurosci.15</a>], with samples ready to be processed.</small>
+   </p>
+   <hr>
+   <br> 
+   <p align="justify"><h3>Theory: empirical models in Vision Science</h3></p>
+   <p align="justify">We proposed mathematical descriptions of different visual dimensions: <span style="font-style: italic;">Texture, <span style="font-style: italic;">Color, and <span style="font-style: italic;">Motion. (i) we used wavelet representations to propose nonstationary <strong>Texture Vision</strong> models [<a href="http://isp.uv.es/papers/JMO97.PS.gz">J.Mod.Opt.97</a>, <a href="http://isp.uv.es/papers/msc_jmalo.pdf">MScThesis95</a>], (ii) we developed <strong>Color Vision</strong> models with illumination invariance that allow the reproduction of chromatic anomalies, adaptation and aftereffects [<a href="http://isp.uv.es/papers/VISRES97.PS.gz">Vis.Res.97</a>,
+   <a href="http://isp.uv.es/papers/JOPT96.PS.gz">J.Opt.96</a>, <a href="http://isp.uv.es/papers/JOPT98.PS.gz">J. Opt.98</a>, <a href="http://isp.uv.es/papers/josa_04.pdf">JOSA04</a>, <a href="http://isp.uv.es/papers/Neco_accepted_2012.pdf">Neur.Comp.12</a>], and (iii) <strong>Motion Vision</strong> models [<a href="http://isp.uv.es/papers/Malo_Alheteia_08.pdf">Alheteia08</a>] that focus the optical flow computation in perceptually relevant moving regions [<a href="http://isp.uv.es/papers/vss_poster.eps">J.Vis.01</a>, <a href="http://isp.uv.es/papers/Redundancy_Reduction_Malo_99.pdf">PhDThesis99</a>], and explain the <span style="font-style: italic;">static motion aftereffect [<span style="font-size: 11pt; line-height: 115%; font-family: Arial,sans-serif;" lang="EN-US"><a href="http://isp.uv.es/after_effects">Front.Neurosci.15</a>]. All these psychophysical and physiological models have a parallel <span style="font-style: italic;">linear+nonlinear structure where <strong>receptive fields</strong> and <strong>surround-dependent normalization</strong> play an important role.
+   </div>
+
+
+   <div class="content-container" style="width: 85%; margin-top: -10px;">
+   <div class="row">
+   <div class="col-md-6">
+   <p align="justify" style="font-size: 85%;"><strong><span style="color:rgb(0,160,0)">Empirical motion model at work:</span></strong>
+   <small>Waving hands sequence recorded at my lab (just a remake of the original movie from <a href="http://vision.arc.nasa.gov/publications/ModelHumanVisualMotion.pdf">Watson &amp; Ahumada</a>), linear filter model of MT neurons as an aggregate of spatio-temporal wavelet-like filters (bottom left) tuned to certain speed for optical flow computation (example at bottom right for a later frame).
+   <span style="font-style: italic;">Note that our remake improved the original by including a striped costume for Fourier-obsessed freaks!</span></small></p>
+   <img class="img-responsive" style="max-width: 100%;" src="img/motion.jpg" />
+   </div>
+
+   <div class="col-md-6">
+   <img class="img-responsive" style="max-width: 100%;" src="img/dicromat.jpg" />
+   <p align="justify" style="font-size: 85%;"><strong><span style="color:rgb(0,160,0)">See how it feels to be color blind!:&nbsp;</span></strong>
+   <small>We proposed a way to simulate the perception of color blinds (here with Picasso's <a href="https://en.wikipedia.org/wiki/Dora_Maar">Dora Maar</a>). As you see, dichromats are not color blind at all: <span style="font-style: italic;">they simply see different colors</span>. Moreover, this simulation can be used to discriminate between color theories just by asking your dichromat friend which image is more similar to him.</small></p>
+   </div>
+   </div>
+   <p align="center"><small>See additional CODE for <a href="http://isp.uv.es/soft_visioncolor.htm"><span style="font-style: italic;">Texture</span>, <span style="font-style: italic;">Color</span> and <span style="font-style: italic;">Motion</span> perception</small></a></p>
+   <hr id="principled"><br>
+   </div>
+
+
+   <div class="content-container" style="width: 78%;">
+   <p align="justify"><h3>Theory: principled models in Vision Science</span></h3></p>
+   <p align="justify">This category refers to the proposition of organization laws of sensory systems that explain the empirical phenomena. These principles show that neural function has been adapted to (or is determined by) the statistics of visual stimuli. In this regard, (i) we worked on the <strong>derivation of the linear properties</strong> of the sensors, and we found that their spatio-chromatic sensitivity, the way the receptive fields change, and their phase properties, come from optimal solutions to the adaptation problem under noise constraints and manifold matching [<a href="http://isp.uv.es/papers/Gutmann_PLOS_ONE_2014.pdf">PLoS-ONE14</a>, <a href="http://isp.uv.es/papers/AdaptVQ_ieeetgars_2012.pdf">IEEE-TGRS13</a>], from statistical independence requirements [<a href="http://www.uv.es/vista/vistavalencia/papers/ICANN_2011_v7.pdf">LNCS11</a>, <a href="http://isp.uv.es/papers/SlidesNeuroImageMeeting11.pdf">NeuroImag.Meeting11</a>], and from optimal estimation of object reflectance [<a href="http://isp.uv.es/papers/manuscr_TGRS_2012_00431.pdf">IEEE TGRS14</a>].
+   (ii) We also worked on the <strong>derivation of the non-linear behavior</strong> for a variety of visual sensors (chromatic, texture, and motion sensors). We found that in all cases the nonlinearities are related to optimal information transmission (entropy maximization) and/or to error minimization in noisy systems (optimal vector quantization).
+   We studied this relation in the classical <span style="font-style: italic;">statistics-to-perception</span> direction (deriving the nonlinearity from the regularities in the scene)
+   [<a href="http://isp.uv.es/papers/V1_from_non_linear_ICA.pdf">Network06</a>, <a href="http://isp.uv.es/papers/Neco_accepted_2012.pdf">Neur.Comp.12</a>, <a href="http://isp.uv.es/after_effects">Front.Neurosci.15</a>], as well as in the (more novel) <span style="font-style: italic;">perception-to-statistics</span> direction, i.e. by looking at the statistical effect of perceptually motivated nonlinearities [<a href="http://isp.uv.es/papers/JOPT95.PS.gz">J.Opt.95</a>, <a href="http://isp.uv.es/papers/ivc99.ps.gz">Im.Vis.Comp.00</a>, <a href="http://isp.uv.es/papers/spr00.ps">LNCS00</a>, <a href="http://isp.uv.es/papers/patt_rec03.pdf">Patt.Recog.03</a>, <a href="http://isp.uv.es/papers/Malo_Laparra_Neural_10b.pdf">Neur.Comp.10</a>, <a href="http://isp.uv.es/papers/LNAI10_malo_laparra.pdf">LNCS10</a>, <a href="http://isp.uv.es/papers/SlidesNeuroImageMeeting11.pdf">NeuroImag.Meeting11</a>].
+
+
+   <div class="content-container" style="width: 80%; margin-top: -10px;">
+   <p style="font-size: 85%;"><strong><span style="color:rgb(0,160,0)">Illustrative organization principle: </strong><small>Optimal adaptation and information transmission with noise constraints (Higher Order Canonical Correlation) predicts shifts in oscillatory responses of gabor-like opponent spatio-chromatic receptive fields when adapted to visual scenes under different illumination (similarly to V1 neurons). See CODE <a href="http://isp.uv.es/HOCCA">here</a>.</small></p>
+   <img class="img-responsive" style="max-width: 100%;" src="img/estimulac.jpg" />
+   <div class="row">
+   <div class="col-md-6">
+   <img class="img-responsive" style="max-width: 100%;" src="img/resp1.jpg" />
+   </div>
+   <div class="col-md-6">
+   <img class="img-responsive" style="max-width: 100%;" src="img/resp2.jpg" />
+   </div>
+   </div>
+   </div>
+
+   <hr>
+   <br>
+
+   <p align="justify"><h3>Theory: Statistical Learning for Vision Science</span></h3></p>
+   <p align="justify">In theoretical neuroscience the derivation of properties of biological sensors from the regularities visual scenes requires novel tools for statistical learning. In this field, we developed new techniques for <strong>unsupervised manifold learning</strong>, <strong>feature extraction</strong> (or symmetry detection in datasets), <strong>dimensionality reduction</strong>, <strong>probability density estimation</strong>, <strong>multi-information estimation</strong>, <strong>distance learning</strong>, and automatic <strong>adaptation</strong> from optimal dataset matching. Given my interest in applicability in Vision Science problems, I focused on techniques that can be explicitly represented in the image domain to be compared with receptive fields of visual neurons, as opposed to the usual practice in the<span style="font-style: italic;"> Machine Learning</span> community. Techniques include Rotation-based Iterative Gaussianization -RBIG- [<a href="http://isp.uv.es/papers/Laparra11.pdf">IEEE TNN 11</a>], Sequential Principal Curves Analysis -SPCA- [<a href="http://isp.uv.es/papers/V1_from_non_linear_ICA.pdf">Network06</a>, <a href="http://isp.uv.es/papers/Neco_accepted_2012.pdf">Neur.Comp.12</a>, <a href="http://isp.uv.es/after_effects">Front. Neurosci.15</a>], Principal
+   Polynomial Analysis -PPA- [<a href="http://isp.uv.es/papers/IJNS_Laparra14_accepted_v5.pdf">Int.J.Neur.Syst.14</a>], Dimensionality Reduction based on Regression -DRR- [<a href="http://isp.uv.es/papers/drr_jstsp2014_final.pdf">IEEE JSTSP15</a>], and Graph Matching for Adaptation [<a href="http://isp.uv.es/papers/AdaptVQ_ieeetgars_2012.pdf">IEEE TGRS13</a>].
+   <p align="justify" style="width: 85%; margin-left: 5%; font-size: 88%;"><span style="color:rgb(0,160,0)"><strong>Illustrative learning technique:</strong></span><small> data induced metric and identified features using nonlinear feature extraction (in this case, the Principal Polynomial Analysis, PPA). The scatter plot (at the top) shows the training set, the 2nd row shows the features (curves in black) and the discrimination ellipsoids (in yellow) in different representation domains: the original domain (left), the data-unfolded domain after PPA (center), and the whitened PPA domain (right). Principal Polynomial Analysis looks for the intrinsic curvilinear coordinates generalizing the linear directions of PCA (principal polynomials instead of eigen directions). Similarly to Mahalanobis distance when using PCA, the Jacobian of PPA can be used to define data dependent measures. Similarly to what is done in (linear) Independent Component Analysis, the Jacobian of PPA can be used to identify intrinsic features in the input domain.
+   As opposed to the linear counterparts, metric and features are local.
+   Different sets of local features (local basis vectors) in the input domain (3rd row) or in the PPA-transformed domain (4th row) can be obtained from the Jacobian or the jacobian-related metric matrix. See available CODE for this and other feature extraction techniques <a href="http://isp.uv.es/soft_feature.htm">here</a>.</small></p>
+
+   <img class="img-responsive" style="max-width: 90%" src="img/data_metric.jpg" />
+   <div class="row">
+   <div class="col-md-6">
+   <img class="img-responsive" style="max-width: 140%;" src="img/features_1.jpg" />
+   </div>
+   <div class="col-md-6">
+   <img class="img-responsive" style="max-width: 75%; margin-left: 150px; margin-top: 10px;" src="img/features_2.jpg" />
+   </div>
+   </div>
+
+
+   <hr>
+   <br>
+
+   <p align="justify"><h3><span class="label label-warning">References</span></h3></p>
+
+   <ul>
+   <li>[<a href="http://isp.uv.es/papers/OPH97.PS.gz">Opth.Phys.Opt.97</a>].
+   <li> [<a href="http://isp.uv.es/papers/JOPT94.PS.gz">J.Opt.94</a>]
+   <li> [<a href="http://isp.uv.es/papers/malo15a-reprint.pdf">Proc.SPIE15</a>]
+   <li> [<a href="http://isp.uv.es/papers/ivc99.ps.gz">Im.Vis.Comp.00</a>]
+   <li> [<a href="http://isp.uv.es/papers/Neco_accepted_2012.pdf">Neur.Comp.12</a>]
+   <li> [<a href="http://isp.uv.es/papers/manuscr_TGRS_2012_00431.pdf">IEEE-TGRS14</a>]
+   <li>[<a href="http://isp.uv.es/papers/Gutmann_PLOS_ONE_2014.pdf">PLoS-ONE14</a>]
+   <li> [<a href="http://isp.uv.es/files/rem_sens_im_proc_12_ch02.pdf">Rem.Sens.Im.Proc.11</a>]
+   <li> [<a href="http://isp.uv.es/after_effects">Front.Neurosci.15</a>]
+   <li> [<a href="http://isp.uv.es/papers/JMO97.PS.gz">J.Mod.Opt.97</a>]
+   <li> [<a href="http://isp.uv.es/papers/Malo_Laparra_Neural_10b.pdf">Neur.Comp.10</a>]
+   <li> [<a href="http://isp.uv.es/papers/msc_jmalo.pdf">MScThesis95</a>]
+   <li> [<a href="http://isp.uv.es/papers/VISRES97.PS.gz">Vis.Res.97</a>]
+   <li> [<a href="http://isp.uv.es/papers/JOPT96.PS.gz">J.Opt.96</a>]
+   <li> [<a href="http://isp.uv.es/papers/JOPT98.PS.gz">J. Opt.98</a>]
+   <li> [<a href="http://isp.uv.es/papers/josa_04.pdf">JOSA04</a>]
+   <li> [<a href="http://isp.uv.es/papers/Malo_Alheteia_08.pdf">Alheteia08</a>]
+   <li> [<a href="http://isp.uv.es/papers/vss_poster.eps">J.Vis.01</a>]
+   <li> [<a href="http://isp.uv.es/papers/Redundancy_Reduction_Malo_99.pdf">PhDThesis99</a>],
+   <li> [<a href="http://www.uv.es/vista/vistavalencia/papers/ieeeoct01.pdf">IEEE TIP01</a>]
+   <li> [<a href="http://isp.uv.es/papers/AdaptVQ_ieeetgars_2012.pdf">IEEE-TGRS13</a>]
+   <li> [<a href="http://www.uv.es/vista/vistavalencia/papers/ICANN_2011_v7.pdf">LNCS11</a>]
+   <li> [<a href="http://isp.uv.es/papers/SlidesNeuroImageMeeting11.pdf">NeuroImag.Meeting11</a>],
+   <li> [<a href="http://isp.uv.es/papers/manuscr_TGRS_2012_00431.pdf">IEEE TGRS14</a>].
+   <li> [<a href="http://isp.uv.es/papers/V1_from_non_linear_ICA.pdf">Network06</a>]
+   <li> [<a href="http://isp.uv.es/papers/JOPT95.PS.gz">J.Opt.95</a>]
+   <li> [<a href="http://isp.uv.es/papers/ivc99.ps.gz">Im.Vis.Comp.00</a>]
+   <li> [<a href="http://isp.uv.es/papers/spr00.ps">LNCS00</a>]
+   <li> [<a href="http://isp.uv.es/papers/patt_rec03.pdf">Patt.Recog.03</a>]
+   <li> [<a href="http://isp.uv.es/papers/LNAI10_malo_laparra.pdf">LNCS10</a>]
+   <li> [<a href="http://isp.uv.es/papers/Laparra11.pdf">IEEE TNN 11</a>]
+   <li> [<a href="http://isp.uv.es/papers/IJNS_Laparra14_accepted_v5.pdf">Int.J.Neur.Syst.14</a>]
+   <li> [<a href="http://isp.uv.es/papers/drr_jstsp2014_final.pdf">IEEE JSTSP15</a>]
+   <li> [<a href="http://isp.uv.es/papers/AdaptVQ_ieeetgars_2012.pdf">IEEE TGRS13</a>].
+   <li> [<a href="http://isp.uv.es/soft_feature.htm">ML CODE</a>]
+   </ul>
+
+   </div>
+   </div>
+   </div>

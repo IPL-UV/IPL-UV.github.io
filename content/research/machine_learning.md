@@ -1,6 +1,5 @@
 ---
 title: "Research Machine Learning"
-type: research/machine_learning
 ---
 
 # Machine learning
@@ -38,7 +37,6 @@ Modeling input data, however, does not ensure that the model will adapt to chang
 ### Related projects
 
 <div class="content-container" style="font-size: 1.1em; text-align: justify; line-height: 1.1;">
-  {{ .Content }}
 
   <table class="table table-hover">
     <tr>
