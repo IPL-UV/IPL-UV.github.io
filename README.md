@@ -114,3 +114,8 @@ The open the generated file in `content/project/active/newproject.md` and edit t
 * `logo` 
 * `years`
 * 
+
+
+#### partial project layout
+
+There is a partial project layout that can be useful to add pro

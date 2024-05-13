@@ -1,12 +1,5 @@
 ---
 title: "Research Machine Learning"
-params: 
-  projects: 
-     - xaida
-     - deepcube
-     - elise
-     - usmile 
-layout: single
 ---
 
 # Machine learning
@@ -43,5 +36,7 @@ Modeling input data, however, does not ensure that the model will adapt to chang
 **Sparsity as a form of compacting information was studied in both deep architectures and kernel machines.** In all these settings, we are particularly interested in **encoding prior knowledge and invariances** in the models: signal and noise properties, spatial-temporal constraints, amd robustness to illumination changes, just to name a few. Dealing with invariances and priors inmediately call for **regularization and Bayesian inference**. While pure discriminative approaches have been developed in our group, in recent years we have payed attention to the field of Bayesian nonparametric models as a proper framework to encode such beliefs. We are active in kernel design for **Gaussian processes regression and model inversion, and in designing efficient sampling schemes with modern Markov Chain Montecarlo strategies**.
 
 
+### Related Projects 
 
 
+{{< projects "usmile" "xaida" "deepcube" "elise" >}}
