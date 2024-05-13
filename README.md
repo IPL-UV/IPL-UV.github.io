@@ -1,5 +1,33 @@
 ## ISP website
 
+### Status
+
+
+:warning:  under construction :warning:
+
+Some pages do not have a proper hugo layout yet, before editing and 
+modify those pages open an issue (if not there) and self-assign yourself.  
+
+
+| page          | hugo layout         | content            |             
+|---------------|---------------------|--------------------|
+| Landing page  | :white_check_mark:  | :white_check_mark: |
+| People page   | :white_check_mark:  | :question:         |
+| Research pages| :white_check_mark:  | :question:         |
+| Projects      | :x:                 | :x:                |
+| Facilities    | :x:                 | :x:                |
+| Publications  | :white_check_mark:  | :question:         |
+| Code          | :x:                 | :x:                |
+| Data          | :x:                 | :x:                |
+| Seminars      | :x:                 | :x:                |
+| Courses       | :x:                 | :x:                |
+| News          | :x:                 | :x:                |
+| Contact       | :x:                 | :x:                | 
+
+### How to make a change
+
+:warning: main branch is protected so all changes must be made with pull requests :warning:
+
 for all changes to the website 
 
 1. `git clone https://github.com/IPL-UV/IPL-UV.github.io` (or better fork it in your account and clone it) 
@@ -15,7 +43,7 @@ additioanlly to test locally and use hugo archetypes:
 - `hugo server` to deploy locally 
 
 
-Jump to how to sections: 
+Jump to page specific sections: 
 
 - [Single pages](#single-pages)
 - [People](#people)
