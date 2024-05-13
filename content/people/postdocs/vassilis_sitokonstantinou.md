@@ -6,7 +6,7 @@ role: postdocs
 weight: 1
 params:
   img: 06_Vassilis_sito_ISP.webp
-  scholar: 'https://scholar.google.gr/citations?user=8WCaLYQAAAAJ&hl=en'
+  googlescholar: 'https://scholar.google.gr/citations?user=8WCaLYQAAAAJ&hl=en'
   orcid: 'https://orcid.org/0000-0001-5506-2872'
   twitter: 'https://twitter.com/vassilis_sito'
   researchgate: 'https://www.researchgate.net/profile/Vasileios-Sitokonstantinou'
