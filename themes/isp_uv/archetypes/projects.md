@@ -3,7 +3,7 @@ date: '{{ .Date }}'
 draft: true
 title: '{{ replace .File.ContentBaseName `-` ` ` | title }}'
 params:
-  short: '{{ replace .File.ContentBaseName `-` ` ` | title }}'
+  short: '{{ replace .File.ContentBaseName `-` ` ` }}'
   logo: 'unknown.png'
   pi: ''
   uvpi: ''
