@@ -3,6 +3,7 @@ date: '{{ .Date }}'
 draft: true
 title: '{{ replace .File.ContentBaseName `-` ` ` | title }}'
 role: 'visitor'
+weight: 1 
 params:
   img: 'unknown.png'
   googlescholar: 'https://scholar.google.com/'

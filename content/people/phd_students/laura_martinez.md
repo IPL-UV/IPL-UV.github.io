@@ -2,7 +2,8 @@
 date: '2024-05-10T05:29:29+02:00'
 draft: false
 title: 'Laura Martínez'
-role: phd_students
+role: "phd students"
+weight: 1
 params:
   img: laura.webp
   orcid: 'https://orcid.org/0000-0002-4730-8657'
