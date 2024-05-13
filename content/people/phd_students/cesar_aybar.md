@@ -3,6 +3,7 @@ date: '2024-05-10T05:29:29+02:00'
 draft: false
 title: 'César Luis Aybar'
 role: "phd students"
+weight: 1
 params:
   img: cesar.webp
   scholar: 'https://scholar.google.com/citations?user=rfF51ocAAAAJ'

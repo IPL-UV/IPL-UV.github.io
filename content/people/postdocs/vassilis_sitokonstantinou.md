@@ -3,6 +3,7 @@ date: '2024-05-10T05:29:29+02:00'
 draft: false
 title: 'Vassilis Sitokonstantinou'
 role: postdocs
+weight: 1
 params:
   img: 06_Vassilis_sito_ISP.webp
   scholar: 'https://scholar.google.gr/citations?user=8WCaLYQAAAAJ&hl=en'

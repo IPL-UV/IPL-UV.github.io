@@ -3,6 +3,7 @@ date: '2024-05-10T05:29:29+02:00'
 draft: false
 title: 'Gherardo Varando'
 role: postdocs
+weight: 1
 params:
   img: gherardo.webp
   scholar: 'https://scholar.google.es/citations?user=ALjiTg0AAAAJ&hl=en'

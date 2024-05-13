@@ -2,7 +2,8 @@
 date: '2024-05-10T05:29:29+02:00'
 draft: false
 title: 'Eva Sevillano Marco'
-role: postdocs
+role: alumni
+weight: 1
 params:
   img: eva_profile.webp
   orcid: 'http://orcid.org/0000-0002-5684-243X'

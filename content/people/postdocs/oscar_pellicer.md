@@ -3,6 +3,7 @@ date: '2024-05-10T05:29:29+02:00'
 draft: false
 title: 'Óscar Pellicer'
 role: postdocs
+weight: 1
 params:
   img: 06_ISP_Oscar.webp
   scholar: 'https://scholar.google.com/citations?user=CCFJshwAAAAJ'
