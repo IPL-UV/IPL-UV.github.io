@@ -116,6 +116,27 @@ The open the generated file in `content/project/active/newproject.md` and edit t
 * 
 
 
-#### partial project layout
+#### adding custom projects list
 
-There is a partial project layout that can be useful to add pro
+There are a [partial template](https://gohugo.io/templates/partials/) and a [shortcode](https://gohugo.io/content-management/shortcodes/) that can be useful to add projects list in templates and content pages directly. 
+
+
+If you want to add a project list in a template, use the partial template `projects`:
+
+```
+{{ partial "projects.html" $projectsgroup }} 
+```
+
+where `$projectgroup` is a previously defined group of project pages. 
+
+
+If you want to add a project list in a content page, you need to use the shortcode `projects`:
+
+```
+{{< projects usmile deepcube xaida >}}
+```
+
+You can check an example of the shortcode in the `content/research/machine_learning` page.
+
+
+
