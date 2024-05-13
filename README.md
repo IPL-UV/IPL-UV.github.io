@@ -14,7 +14,7 @@ modify those pages open an issue (if not there) and self-assign yourself.
 | Landing page  | :white_check_mark:  | :white_check_mark: |
 | People page   | :white_check_mark:  | :question:         |
 | Research pages| :white_check_mark:  | :question:         |
-| Projects      | :x:                 | :x:                |
+| Projects      | :white_check_mark:                 | :x:                |
 | Facilities    | :x:                 | :x:                |
 | Publications  | :white_check_mark:  | :question:         |
 | Code          | :x:                 | :x:                |
@@ -47,6 +47,7 @@ Jump to page specific sections:
 
 - [Single pages](#single-pages)
 - [People](#people)
+- [Projects](#projects)
 
 ---
 
@@ -82,7 +83,7 @@ Each person in the people page is associated with a `.md` file in the `content/p
 The information to generate personal links and the name of the image is defined in the front matter of the `.md` file. 
 The (short) bio is stored in the main file content (the part after the front matter). 
 
-There is a hugo archetype to add easily people, for that you need hugo installed (otherwise copy the front matter from another person file).``
+There is a hugo archetype to add easily people, for that you need hugo installed (otherwise copy the front matter from another person file).
 
 ```
 hugo new content people/visitorname.md
@@ -93,3 +94,23 @@ the above command will generate an empty file in `content/people/visitorname.md`
 - in `role` write the role (e.g `full professors`, `associate professors`, `postdocs`, `phd students`, `visitors`, `alumni` **lowercase and plural**! ) 
 - check the `params` and modify accordingly, remove fields that you do not want 
 - add the corresponding image in the `assets/images/people` folder
+
+---
+
+### Projects
+
+Each project is a ssociated with a `.md` file in the `content/projects` folder (or a subfolder such as `active`).
+The information is stored in the fron matter, while the content is used to provide a short description fo the project. 
+
+There is na hugo archetype to add projects:
+
+```
+hugo new content porjects/active/newproject.md
+```
+
+The open the generated file in `content/project/active/newproject.md` and edit the front matter with the relatiove information:
+
+* `pi` and `uvpi` 
+* `logo` 
+* `years`
+* 

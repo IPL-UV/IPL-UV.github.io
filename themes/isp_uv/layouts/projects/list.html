@@ -1,65 +1,44 @@
 {{ define "main" }}
 
-<div class="content-container"></div>
 
-<script>
-  async function loadData(filePath) {
-    const response = await fetch(filePath);
-    return response.json();
-  }
+{{ .Content }}
 
-  async function loadAllData() {
-    const projectsData = await loadData('/isp/data/projects/current_projects.json');
-    const pastProjectsData = await loadData('/isp/data/projects/past_projects.json');
+<div class="content-container">
+	{{ range .Pages.GroupByParam "active" }} 
+	 {{ if .Key}}
+	   <h1> Current projects </h1>
+	 {{ else }}
+	   <h1> Past projects </h1>
+	 {{ end }}
+	 <table class="table table-hover">
+	 {{ range .Pages }}
+	  {{ $logo := urls.JoinPath "images/projects" .Params.logo }}
+	  {{ $flogo := urls.JoinPath "images/projects" .Params.founding.logo }}
+	  <tr>
+		<td style="width:10%;">
+	  {{ with resources.Get $logo }}
+	 	      <img src="{{ .RelPermalink }}" width="auto" height="auto" class="img-fluid" alt="Image of {{ $.Title }}">
+          {{ end }}
+	  {{ with resources.Get $flogo }}
+	 	      <img src="{{ .RelPermalink }}" width="auto" height="auto" class="img-fluid" alt="Image of {{ $.Title }}">
+          {{ end }}
+	   </td>
+	   <td style="width:90%; max-height:200px;">
+		   <a href="{{ .Params.website }}"> {{ .Title }} </a> 
+		   <br>
+		   {{ with .Params.pi }} <strong> PIs: {{ . }}  </strong> {{ end }}
+		   {{ with .Params.uvpi }} <strong> UV-PIs: {{ . }}  </strong> {{ end }}
+		   {{ with .Params.years }} <strong>  ({{ . }})  </strong> {{ end }}
+		   <br>
+	   </td>
+	  </tr>
+	{{ end }} 
+	</table>
+	{{ end }}
 
-    const container = document.querySelector('.content-container');
 
-    // Agregar subtítulo para proyectos actuales
-    const currentProjectsTitle = document.createElement('h1');
-    currentProjectsTitle.innerHTML = 'Current projects';
-    currentProjectsTitle.style.marginBottom = '20px'; // Agregar margen bottom
-    container.appendChild(currentProjectsTitle);
+</div>
 
-    // Agregar proyectos actuales a la tabla
-    const currentProjectsTable = document.createElement('table');
-    currentProjectsTable.classList.add('table', 'table-hover');
-    container.appendChild(currentProjectsTable);
 
-    projectsData.projects.forEach(project => {
-      const row = currentProjectsTable.insertRow();
-      const cell1 = row.insertCell(0);
-      const cell2 = row.insertCell(1);
 
-      cell1.style.width = '10%';
-      cell1.innerHTML = `<img src="/isp/images/projects/${project.image}" height="${project.image_size.height}" width="${project.image_size.width}">`;
-      cell2.style.width = '90%';
-      cell2.innerHTML = `<a href="${project.link}">${project.name}</a><br>${project.description}`;
-    });
-
-    // Agregar subtítulo para proyectos pasados
-    const pastProjectsTitle = document.createElement('h1');
-    pastProjectsTitle.innerHTML = 'Past projects';
-    pastProjectsTitle.style.marginBottom = '20px';
-    pastProjectsTitle.style.backgroundColor = '#5cb85c';
-    container.appendChild(pastProjectsTitle);
-
-    // Agregar proyectos pasados a la tabla
-    const pastProjectsTable = document.createElement('table');
-    pastProjectsTable.classList.add('table', 'table-hover');
-    container.appendChild(pastProjectsTable);
-
-    pastProjectsData.projects.forEach(project => {
-      const row = pastProjectsTable.insertRow();
-      const cell1 = row.insertCell(0);
-      const cell2 = row.insertCell(1);
-
-      cell1.style.width = '10%';
-      cell1.innerHTML = `<img src="/isp/images/projects/${project.image}" height="${project.image_size.height}" width="${project.image_size.width}">`;
-      cell2.style.width = '90%';
-      cell2.innerHTML = `<a href="${project.link}">${project.name}</a><br>${project.description}`;
-    });
-  }
-
-  document.addEventListener('DOMContentLoaded', loadAllData);
-</script>
 {{ end }}
