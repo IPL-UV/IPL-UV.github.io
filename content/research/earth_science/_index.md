@@ -1,5 +1,15 @@
 ---
 title: "Research Earth Science"
+params: 
+  projects: 
+     - xaida
+     - deepcube
+     - elise
+     - usmile 
+     - sedal
+     - cloud
+     - mapict
+layout: single
 ---
 
 <div class="content-container" style="font-size: 1.1em; text-align: justify; line-height: 1.1;">
@@ -38,68 +48,3 @@ Our main goal is to develop new machine learning models for the ambitious goal o
 - **Modes of variability and causal discovery.** Tackling climate change needs to understand the complex phenomena occurring on the Planet. Discovering  teleconnection patterns is an essential part of the endeavor. Nonlinearities, nonstationarities and the (ab)use of correlation analyses hamper the discovery of true causal patterns. We investigate the use of novel nonlinear methods able to extend state-of-the-art approaches. In both approaches, the idea is to find a low-dimensional mapping of the spatio-temporal data such that most of the information is retained.
 
 - **Discover knowledge and causal relations in Earth observation data.** We investigate graphical causal models and regression-based causal schemes applied to large heterogeneous EO data streams. This requires improved measures of (conditional) independence, designing experiments in controlled situations and using high-quality data. Learning the hierarchy of the relations between variables and related covariates, as well as their causal relations, may in turn allow the discovery of hidden essential variables, drivers and confounders. Moving from correlation to dependence and then to causation concepts is fundamental to advance the field of Earth Observation and the science of climate change.
-
-### Related projects
-
-<table class="table table-hover">
-<tr>
-<th style="width: 10%">
-<img src="/isp/images/research/erc.png" height="70" width="80">
-</th>
-<th style="width: 90%">
-<a href="https://www.usmile-erc.eu/">USMILE: Understanding and Modeling the Earth System with Machine
-Learning</a><br>
-ERC Synergy Grant, PIs: V. Eyring, M. Reichstein, G. Camps-Valls, P. Gentine, 2020-2026
-</th>
-</tr>
-<tr>
-<th style="width: 10%">
-<img src="/isp/images/research/erc.png" height="70" width="80">
-</th>
-<th style="width: 90%">
-<a href="http://isp.uv.es/sedal.html">SEDAL: Statistical Learning for Earth Observation Data Analysis</a><br>
-ERC Consolidator Grant, G. Camps-Valls, 01/15 - 12/19
-</th>
-</tr>
-<tr>
-<th style="width: 10%">
-<img src="/isp/images/research/h2020.jpg" height="50" width="80">
-</th>
-<th style="width: 90%">
-<a href="https://xaida.eu">XAIDA: Extreme Events - Artificial Intelligence for Detection and Attribution</a><br>
-EU H2020, UV PI: Gustau Camps-Valls, 2021-2025
-</th>
-</tr>
-<tr>
-<th style="width: 10%">
-<img src="/isp/images/research/h2020.jpg" height="50" width="80">
-</th>
-<th style="width: 90%">
-<a href="https://deepcube-h2020.eu">DeepCube: Explainable AI pipelines for big Copernicus data, UV PI: Gustau
-Camps-Valls</a><br>
-EU H2020, 2021-2024
-</th>
-</tr>
-<tr>
-<th style="width: 10%">
-<img src="/isp/images/research/h2020.jpg" height="70" width="80">
-</th>
-<th style="width: 90%">
-<a href="http://www.citizensensor-cost.eu">Mapping and the citizen sensor</a><br>
-ICT COST Action, 01/13 - 12/16
-</th>
-</tr>
-<tr>
-<th style="width: 10%">
-<img src="/isp/images/collaborators/google.png" height="70" width="80">
-</th>
-<th style="width: 90%">
-<a href="projects/cdc/GEE_cloud_detection_results.html">Cloud detection in the cloud</a><br>
-Google Earth Engine Research Award, L. Gomez-Chova, 01/16 - 12/17
-</th>
-</tr>
-</table>
-<br>
-<br>
-</div>
-

@@ -1,0 +1,24 @@
+<table class="table table-hover">
+	{{ range . }}
+	{{ $logo := urls.JoinPath "images/projects" .Params.logo }}
+	{{ $flogo := urls.JoinPath "images/projects" .Params.founding.logo }}
+	<tr>
+		<td style="width:10%;">
+			{{ with resources.Get $logo }}
+			<img src="{{ .RelPermalink }}" width="auto" height="auto" class="img-fluid" alt="Image of {{ .Title }}">
+			{{ end }}
+			{{ with resources.Get $flogo }}
+			<img src="{{ .RelPermalink }}" width="auto" height="auto" class="img-fluid" alt="Image of {{ .Title }}">
+			{{ end }}
+		</td>
+		<td style="width:90%; max-height:200px;">
+			<a href="{{ .Params.website }}"> {{ .Title }} </a> 
+			<br>
+			{{ with .Params.pi }} <strong> PIs: {{ . }}  </strong> {{ end }}
+			{{ with .Params.uvpi }} <strong> UV-PIs: {{ . }}  </strong> {{ end }}
+			{{ with .Params.years }} <strong>  ({{ . }})  </strong> {{ end }}
+			<br>
+		</td>
+	</tr>
+	{{ end }} 
+</table>

@@ -1,0 +1,17 @@
+{{ define "main" }}
+{{ .Content }}
+
+{{ with .Params.projects }} 
+{{ $projects :=  where $.Site.RegularPages "Section" "projects"  }}
+{{ $projects = where $projects "Params.short" "in" . }}
+
+<h3> Related projects </h3> 
+
+<div class="content-container" style="font-size: 1.1em; text-align: justify; line-height: 1.1;">
+
+{{ partial "projects.html"  $projects }}  
+
+</div>
+{{ end }}
+
+{{ end }}

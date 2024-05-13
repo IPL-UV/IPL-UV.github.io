@@ -1,6 +1,13 @@
 ---
 title: "Research Social Science"
 type: research/social_science
+params: 
+  projects:
+    - scale
+    - xaida
+    - deepcube
+    - mapict 
+layout: single
 ---
 
 
@@ -30,49 +37,3 @@ Our main goal is to develop new machine learning models for the efficient treatm
 - **Algorithmic Fairness.** New social and economic activities massively exploit big data and machine learning algorithms to do inference on people's lives. Applications include automatic curricula evaluation, wage determination, and risk assessment for credits and loans. Recently, many governments and institutions have raised concerns about the lack of fairness, equity and ethics in machine learning to treat these problems. It has been shown that not including sensitive features that bias fairness, such as gender or race, is not enough to mitigate the discrimination when other related features are included (SDGs 5 and 10). Instead, including fairness in the objective function has been shown to be more efficient. We develop novel fair regression and dimensionality reduction methods to tackle such problems. The proposed methods allow us to tackle pressing societal problems like predicting income using gender and/or race discrimination as sensitive variables, contraceptive method prediction under demographic and socio-economic sensitive descriptors, or predicting climate change protecting against anthropogenic factors. Neural networks, Gaussian processes, kernel machines and optimal transport are our favourite tools.
 
 - **Causality in the biosphere-anthroposphere coupled system.** The terrestrial biosphere and the anthroposphere are deeply coupled in multiple ways. Humans depend on a range of ecosystem goods and services but, at the same time, they heavily engineer and modify land ecosystems. Over the past decades, human development has generally made substantial progress in terms of education (SDG 2), health services (SDG 2), life expectancy (SDG 2) and many other aspects around the planet with very few exceptions due to e.g. warfare and in sub-Saharan Africa. The grand question is if, and how, one can identify and quantify relationships between changes in land-ecosystem states and the human development metrics at the global scale. We tackle problems of food insecurity (SDGs 1, 2), climate-induced migration (SDGs 1, 2), infants well-being (SDGs 3, 4) and conflicts (SDGs 10, 11). Our hypothesis is that we can now tackle causal discovery problems relying on both assumed relations and exploiting observational data. We rely on the science of causal inference to unravel relations between coupled variables beyond correlations even in the presence of non-linearities and non-stationarities.
-
-### Related projects
-
-  <table class="table table-hover">
-    <tr>
-        <th style="width: 10%">
-            <img src="/isp/images/research/fbbva.png" height="60" width="90">
-        </th>
-        <th style="width: 90%">
-            <a href="https://www.fbbva.es/noticias/concedidas-5-ayudas-a-equipos-de-investigacion-cientifica-en-big-data/">SCALE: Causal inference in the human-biosphere coupled system (SCALE)</a><br>
-            Fundación BBVA, G. Camps-Valls, 2020-2022
-        </th>
-    </tr>
-    <tr>
-        <th style="width: 10%">
-            <img src="/isp/images/research/h2020.jpg" height="50" width="80">
-        </th>
-        <th style="width: 90%">
-            <a href="https://xaida.eu">XAIDA: Extreme Events - Artificial Intelligence for Detection and Attribution</a><br>
-            EU H2020, UV PI: Gustau Camps-Valls, 2021-2025
-        </th>
-    </tr>
-    <tr>
-        <th style="width: 10%">
-            <img src="/isp/images/research/h2020.jpg" height="50" width="80">
-        </th>
-        <th style="width: 90%">
-            <a href="https://deepcube-h2020.eu">DeepCube: Explainable AI pipelines for big Copernicus data, UV PI: Gustau Camps-Valls</a><br>
-            EU H2020, 2021-2024
-        </th>
-    </tr>
-    <tr>
-        <th style="width: 10%">
-            <img src="/isp/images/research/h2020.jpg" height="50" width="80">
-        </th>
-        <th style="width: 90%">
-            <a href="http://www.citizensensor-cost.eu">Mapping and the citizen sensor</a><br>
-            ICT COST Action, 01/13 - 12/16
-        </th>
-    </tr>
-</table>
-
-  <br>
-  <br>
-</div>
-
