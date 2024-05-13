@@ -5,7 +5,7 @@ title: 'Álvaro Moreno Martínez'
 role: "senior research scientists"
 params:
   img: alvaro.webp
-  scholar: 'https://scholar.google.es/citations?user=vmedAiwAAAAJ&hl=es'
+  googlescholar: 'https://scholar.google.es/citations?user=vmedAiwAAAAJ&hl=es'
   orcid: 'https://orcid.org/0000-0003-2990-7768'
   researchgate: 'https://www.researchgate.net/profile/Alvaro-Moreno-2'
   linkedin: 'https://www.linkedin.com/in/alvaro-moreno-mart%C3%ADnez-bb193229/?originalSubdomain=es'

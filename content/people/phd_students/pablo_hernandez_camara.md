@@ -2,7 +2,8 @@
 date: '2024-05-10T05:29:29+02:00'
 draft: false
 title: 'Pablo Hernández Cámara'
-role: phd_students
+role: "phd students"
+weight: 1
 params:
   img: 06_Pablo_THIS.webp
   scholar: 'https://scholar.google.com/citations?user=figpQ9MAAAAJ&hl=es'

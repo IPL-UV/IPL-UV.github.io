@@ -6,7 +6,7 @@ role: postdocs
 weight: 1
 params:
   img: 06_ISP_Oscar.webp
-  scholar: 'https://scholar.google.com/citations?user=CCFJshwAAAAJ'
+  googlescholar: 'https://scholar.google.com/citations?user=CCFJshwAAAAJ'
   orcid: 'https://orcid.org/0000-0002-0104-1029'
   github: 'https://github.com/OscarPellicer'
   linkedin: 'https://www.linkedin.com/in/oscar-jos%C3%A9-pellicer-valero-9baab9128'

@@ -2,7 +2,8 @@
 date: '2024-05-10T05:29:29+02:00'
 draft: false
 title: 'Mengxue Zhang'
-role: phd_students
+role: "phd students"
+weight: 1
 params:
   img: mengxuex.webp
   scholar: 'https://scholar.google.com/citations?hl=zh-CN&user=To-g0UkAAAAJ'

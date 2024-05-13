@@ -2,7 +2,8 @@
 date: '2024-05-10T05:29:29+02:00'
 draft: false
 title: 'Simon Donike'
-role: phd_students
+role: "phd students"
+weight: 1
 params:
   img: simon.webp
   twitter: 'https://twitter.com/simon_donike'

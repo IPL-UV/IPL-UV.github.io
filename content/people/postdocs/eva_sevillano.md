@@ -10,7 +10,6 @@ params:
   twitter: 'http://twitter.com/Eva_SeviMarco'
   researchgate: 'https://www.researchgate.net/profile/Eva-Sevillano'
   linkedin: 'https://www.linkedin.com/in/eva-sevillano-marco/?originalSubdomain=es'
-  personal_website: 'https://www.google.com/maps/d/u/2/edit?mid=1DH15FL1CZ437amSOItODq4OsSBI&usp=sharing'
 ---
 
 ISP Coordination & Project Manager. Ecologist by training. My research interests lie in Remote Sensing & GIS applications: multisensor support to forestry inventories, agriculture, land cover and change detection, geospatial data quality, Earth Observation products & services, etc. Collaborations with outstanding research groups and institutions, an asset. Onboard for new challenges!
