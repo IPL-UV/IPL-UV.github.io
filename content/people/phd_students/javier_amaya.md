@@ -2,7 +2,8 @@
 date: '2024-05-10T05:29:29+02:00'
 draft: false
 title: 'Javier Martínez Amaya'
-role: phd_students
+role: "phd students"
+weight: 1
 params:
   img: javier.webp
   orcid: 'https://orcid.org/my-orcid?orcid=0000-0001-6436-3845'

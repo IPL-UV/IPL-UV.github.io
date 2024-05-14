@@ -2,7 +2,8 @@
 date: '2024-05-10T05:29:29+02:00'
 draft: false
 title: 'Tristan Williams'
-role: phd_students
+role: "phd students"
+weight: 1
 params:
   img: 06_Tristan_ISP_dark.webp
   scholar: 'https://scholar.google.com/citations?hl=en&user=yoNnOcMAAAAJ'
