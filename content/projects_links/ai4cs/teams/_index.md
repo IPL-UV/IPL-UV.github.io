@@ -8,7 +8,7 @@ subtitle1:
 
 optionsubtitle1:
   - name: "Image and Signal Processing (ISP) group - Universitat de València Gustau Camps-Valls, PI"
-    url: "/isp/"
+    url: "/"
   - name: "Image and Signal Processing (ISP) group - Universitat de València Maria Piles, PI"
     url: "https://www.uv.es/uvweb/college/en/profile-1285950309813.html?p2=piguima&idA=true"
   - name: "Image and Signal Processing (ISP) group - Universitat de València Jesús Malo"
@@ -35,27 +35,27 @@ optionsubtitle1:
     url: "https://luiguapa.webs.upv.es/"
 
 images_people:
-  - url: "/isp/images/projects/ai4cs/ai4cs_people.png"  
+  - url: "/images/projects/ai4cs/ai4cs_people.png"  
     height: "200px"
     class: "img_people_ai4cs"
 
-  - url: "/isp/images/projects/ai4cs/csic.jpg"
+  - url: "/images/projects/ai4cs/csic.jpg"
     height: "50px"
     width: "50px"
     class: "imagen-clase"
-  - url: "/isp/images/projects/ai4cs/upc.png"
+  - url: "/images/projects/ai4cs/upc.png"
     height: "50px"
     width: "50px"
     class: "imagen-clase"
-  - url: "/isp/images/projects/ai4cs/ua.png"
+  - url: "/images/projects/ai4cs/ua.png"
     height: "50px"
     width: "50px"
     class: "imagen-clase"
-  - url: "/isp/images/projects/ai4cs/upv.png"
+  - url: "/images/projects/ai4cs/upv.png"
     height: "50px"
     width: "50px"
     class: "imagen-clase"
-  - url: "/isp/images/projects/ai4cs/logo_uv.png"
+  - url: "/images/projects/ai4cs/logo_uv.png"
     height: "50px"
     width: "50px"
     class: "imagen-clase"
@@ -95,7 +95,7 @@ optionsubtitle3:
   - name: "Google Deepmind - London"
 
 img_collabs: 
-  - url: "/isp/images/projects/ai4cs/ai4cs_collabs.png"
+  - url: "/images/projects/ai4cs/ai4cs_collabs.png"
     height: "200px"
     class: "imagen-clase"
 ---

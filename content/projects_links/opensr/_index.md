@@ -10,7 +10,7 @@ News:
   - title: "Freddie Kalaitzis and Nicolas Longepe discussed about 'Demystifying Super Resolution in EO: Hype or Hope?' at the ESA Living Planet Symposium (LPS2022)."
     url: "https://lps22.eu/"
   - title: "Cesar Aybar and Simon Donike have joined the OpenSR team at the Image Processing Laboratory (ISP-UV)."
-    url: "/isp/people/"
+    url: "/people/"
   - title: "Follow us"
     url: "https://twitter.com/EOpensr"
     icon: "fa-brands fa-x-twitter"
@@ -51,13 +51,13 @@ Keywords: artificial intelligence (AI), machine learning (ML), explainable AI (x
 
 <div>
   <p class="text-center">
-    <img src="/isp/images/projects/opensr/esa.png" width="10%" alt="ESA" title="European Space Agency">
+    <img src="/images/projects/opensr/esa.png" width="10%" alt="ESA" title="European Space Agency">
     &nbsp;&nbsp;
-    <img src="/isp/images/projects/opensr/logo_oxford.png" width="8%" alt="UOX" title="University of Oxford">
+    <img src="/images/projects/opensr/logo_oxford.png" width="8%" alt="UOX" title="University of Oxford">
     &nbsp;&nbsp;&nbsp;&nbsp;
-    <img src="/isp/images/projects/opensr/logo_uv.png" width="9%" alt="UV" title="University of Valencia">
+    <img src="/images/projects/opensr/logo_uv.png" width="9%" alt="UV" title="University of Valencia">
     &nbsp;&nbsp;
-    <img src="/isp/images/projects/opensr/logo_brockmann.png" width="11%" alt="BC" title="Brockmann Consult">
+    <img src="/images/projects/opensr/logo_brockmann.png" width="11%" alt="BC" title="Brockmann Consult">
     &nbsp;&nbsp;
   </p>
 </div>

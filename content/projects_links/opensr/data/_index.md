@@ -17,7 +17,7 @@ NAIP collects data across various spectral bands, including red, green, blue, an
 For each AOI, we download two NAIP images from the period since 2010, selecting the oldest possible image and the most recent one. The low-resolution (LR) image is generated using a degradation model to mimic the Sentinel-2 data.
 
 <div style="width: 100%; overflow-x: auto; text-align:center">
-    <img src="/isp/images/projects/opensr/degradationnaip.png" style="width: 60%; display: block; margin: auto;">
+    <img src="/images/projects/opensr/degradationnaip.png" style="width: 60%; display: block; margin: auto;">
     <em>Figure: Workflow of the methodology followed to degrade NAIP to Sentinel-2</em>
 </div>
 
@@ -30,7 +30,7 @@ The date of the SPOT visit was randomly selected between 2017 and 2019 from visi
 The dataset covers approximately 10000 square kilometres and includes 3504 distinct areas of interest, curated for the highest diversity of possible uses.
 
 <div style="width: 100%; overflow-x: auto; text-align:center">
-    <img src="/isp/images/projects/opensr/worldstrat.png" style="width: 60%; display: block; margin: auto;">
+    <img src="/images/projects/opensr/worldstrat.png" style="width: 60%; display: block; margin: auto;">
     <em>Figure: Summarizing the construction and classes of the WorldStrat dataset. From [Cornebise et al. 2022]</em>
 </div>
 

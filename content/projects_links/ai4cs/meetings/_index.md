@@ -7,7 +7,7 @@ subtitle1:
   class: "label lightblue"
 
 images:
-  - url: "/isp/images/projects/gva.jpg"  
+  - url: "/images/projects/gva.webp"  
     height: "150px"
     class: "img_nm"
 ---
