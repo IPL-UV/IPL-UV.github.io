@@ -7,45 +7,46 @@
 {{ $researchgate := resources.Get "images/people/redes/rg.webp" }}
 {{ $linkedin := resources.Get "images/people/redes/linkedin.webp" }}
 <div class="content-container">
-    {{ $groups := .Pages.GroupByParam "role" }}
-    {{ $order := slice "full professors" "associate professors" "assistant professors" "senior research scientists" "postdocs" "phd students" "visitors" "alumni"}}
-    {{ range $order  }}
-    {{ with index (where $groups "Key" .) 0 }}
-      <h1><span class="label label-info">{{ .Key | title }}</span></h1>
-      <div class="card container" style="margin-left:3%;">
-         {{ range .Pages }}
-	    {{ $img := urls.JoinPath "images/people" .Params.img }}
-	    <div class="card mb-3">
-             <div class="row g-0">
-               <div class="col-md-3">
-	 	      {{ with resources.Get $img }}
-	 	      <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="img-fluid" alt="Image of {{ $.Title }}">
-                     {{ end }}
-               </div>
-               <div class="col-md-9">
-                 <div class="card-body" style="max-height: 200px;">
-	 		 <h5 class="card-title" style="font-size: 88.5%; margin-top:-10px"><b>{{ .Title }}</b></h5>
-			 <p class="card-text" style="font-size: 0.95em;">{{ .Content }}</p>
-                   <div class="card-links">
-			   {{ with .Params.googlescholar }} <a href="{{ . }}"><img src="{{ $gscholar.RelPermalink }}" height="25" width="25"></a> {{ end }}
-			   {{ with .Params.orcid }} <a href="{{ . }}"><img src="{{ $orcid.RelPermalink }}" height="25" width="25"></a> {{ end }}
-			   {{ with .Params.twitter }} <a href="{{ . }}"><img src="{{ $twitter.RelPermalink }}" height="24" width="30"></a> {{ end }}
-			   {{ with .Params.github }} <a href="{{ . }}"><img src="{{ $github.RelPermalink }}" height="25" width="25"></a> {{ end }}
-			   {{ with .Params.semanticscholar }} <a href="{{ . }}"><img src="{{ $semantic.RelPermalink }}" height="25" width="25"></a> {{ end }}
-			   {{ with .Params.researchgate }} <a href="{{ . }}"><img src="{{ $researchgate.RelPermalink }}" height="25" width="25"></a> {{ end }}
-			   {{ with .Params.uv }} <a href="{{ . }}" class="btn btn-xss btn-info" aria-label="Left Align">UV</a> {{ end }}
-			   {{ with .Params.linkedin }} <a href="{{ . }}"><img src="{{ $linkedin.RelPermalink }}" height="25" width="25"></a> {{ end }}
-			   {{ with .Params.ieee }} <a href="{{ .Params.ieee }}"><button type="button" class="btn btn-xss btn-success" aria-label="Left Align">IEEE</button></a> {{ end }}
-			   {{ with .Params.dblp }} <a href="{{ . }}"><button type="button" class="btn btn-xss btn-danger" aria-label="Left Align">dblp</button></a> {{ end }}
-			   {{ with .Params.website }} <a href="{{ . }}"><button type="button" class="btn btn-xss btn-info" aria-label="Left Align">Website</button></a> {{ end }}
-                    </div>
-                 </div>
-               </div>
-             </div>    
-	    </div>
-	    {{ end }} 
-	    {{ end }}
-      </div>
-    {{ end }}
+	{{ $groups := .Pages.GroupByParam "role" }}
+	{{ $order := slice "full professors" "associate professors" "assistant professors" "senior research scientists" "postdocs" "phd students" "visitors" "alumni"}}
+	{{ range $order  }}
+	{{ with index (where $groups "Key" .) 0 }}
+	<h1><span class="label label-info">{{ .Key | title }}</span></h1>
+	<div class="card container" style="margin-left:3%;">
+		{{ range .Pages }}
+		{{ $img := urls.JoinPath "images/people" .Params.img }}
+		{{ $name := .Title }}
+		<div class="card mb-3">
+			<div class="row g-0">
+				<div class="col-md-3">
+					{{ with resources.Get $img }}
+					<img src="{{ .RelPermalink }}" width="100px" height="100px" class="img-fluid" alt="Image of {{ $name }}">
+					{{ end }}
+				</div>
+				<div class="col-md-9">
+					<div class="card-body" style="max-height: 200px;">
+						<h5 class="card-title" style="font-size: 88.5%; margin-top:-10px"><b>{{ .Title }}</b></h5>
+						<p class="card-text" style="font-size: 0.95em;">{{ .Content }}</p>
+						<div class="card-links">
+							{{ with .Params.googlescholar }} <a href="{{ . }}"><img src="{{ $gscholar.RelPermalink }}" height="25" width="25"></a> {{ end }}
+							{{ with .Params.orcid }} <a href="{{ . }}"><img src="{{ $orcid.RelPermalink }}" height="25" width="25"></a> {{ end }}
+							{{ with .Params.twitter }} <a href="{{ . }}"><img src="{{ $twitter.RelPermalink }}" height="24" width="30"></a> {{ end }}
+							{{ with .Params.github }} <a href="{{ . }}"><img src="{{ $github.RelPermalink }}" height="25" width="25"></a> {{ end }}
+							{{ with .Params.semanticscholar }} <a href="{{ . }}"><img src="{{ $semantic.RelPermalink }}" height="25" width="25"></a> {{ end }}
+							{{ with .Params.researchgate }} <a href="{{ . }}"><img src="{{ $researchgate.RelPermalink }}" height="25" width="25"></a> {{ end }}
+							{{ with .Params.uv }} <a href="{{ . }}" class="btn btn-xss btn-info" aria-label="Left Align">UV</a> {{ end }}
+							{{ with .Params.linkedin }} <a href="{{ . }}"><img src="{{ $linkedin.RelPermalink }}" height="25" width="25"></a> {{ end }}
+							{{ with .Params.ieee }} <a href="{{ .Params.ieee }}"><button type="button" class="btn btn-xss btn-success" aria-label="Left Align">IEEE</button></a> {{ end }}
+							{{ with .Params.dblp }} <a href="{{ . }}"><button type="button" class="btn btn-xss btn-danger" aria-label="Left Align">dblp</button></a> {{ end }}
+							{{ with .Params.website }} <a href="{{ . }}"><button type="button" class="btn btn-xss btn-info" aria-label="Left Align">Website</button></a> {{ end }}
+						</div>
+					</div>
+				</div>
+			</div>    
+		</div>
+		{{ end }} 
+	</div>
+	{{ end }}
+	{{ end }}
 </div>
 {{ end }}
