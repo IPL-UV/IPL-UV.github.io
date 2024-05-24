@@ -450,3 +450,87 @@ div.bibtexout {
 div.bibtexout.closed {
 	display: none;
 }
+
+
+/********************** Estilos para contenido de code **********************/
+
+.panel-body {
+  display: flex;
+  flex-wrap: wrap; /* Esto ya está, asegurándose de que los elementos se envuelvan */
+  align-items: flex-start; /* Alinea los elementos al inicio del contenedor */
+  justify-content: space-between; /* Distribuye el espacio si es necesario */
+}
+
+
+.panel-heading {
+  padding: 5px 15px;
+  border-bottom: 1px solid #ddd;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-color: #3c657d;
+  color: #fff;
+  text-align: center;
+}
+
+.panel-heading2 {
+  text-align: center;
+}
+
+.panel-heading h2 {
+  font-size: 1.5em;
+  text-align: center;
+  background-color: #3c657d;
+}
+
+.panel-body {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.subpage-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
+}
+
+.references h3 {
+  background-color: #9b743c;
+  font-size: 1.2em;
+  padding: 0.3em 0.6em;
+  border-radius: 4px;
+  color: #fff;
+  text-align: center;
+}
+
+.references ul {
+  padding: 0;
+  text-align: left; /* Para alinear el texto de las referencias a la izquierda */
+  display: inline-block; /* Para que el ul no ocupe todo el ancho */
+}
+
+.references ul li {
+  padding: 0.5em;
+}
+
+/* Limpieza de flotación */
+.panel-body::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col-md-2, .col-md-6, .col-md-4 {
+  padding: 15px;
+}
+
+@media (max-width: 768px) {
+  .col-md-2, .col-md-6, .col-md-4 {
+    width: 100%;
+    padding: 10px;
+  }
+}
