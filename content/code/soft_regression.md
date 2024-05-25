@@ -1,7 +1,6 @@
 ---
 title: "Regression and system identification"
 image: "/images/code/lorentz.webp"
-link: "soft_regression.md"
 weight: 1
 draft: false
 ---

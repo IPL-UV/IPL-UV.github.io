@@ -5,12 +5,21 @@
   <div class="grid-container" id="grid-container" style="font-size: 0.9em;">
     {{ range .Pages }}
     <div class="grid-item">
-      <a href="{{ .RelPermalink }}" style="text-decoration: none;">
+      {{ if .Params.link }}
+      <a href="{{ .Params.link }}" style="text-decoration: none;">
         <img src="{{ .Params.image }}" alt="{{ .Title }}" style="height: 100px; width: 100px; margin-right: 10px;">
       </a>
+      {{ else }}
+      <a href="{{ .Permalink }}" style="text-decoration: none;">
+        <img src="{{ .Params.image }}" alt="{{ .Title }}" style="height: 100px; width: 100px; margin-right: 10px;">
+      </a>
+      {{ end }}
       <div class="text">
-        <a class="nameLink_a" href="{{ .RelPermalink }}">{{ .Title }}</a>
-        <!-- <p>{{ .Summary }}</p> -->
+        {{ if .Params.link }}
+        <a class="nameLink_a" href="{{ .Params.link }}">{{ .Title }}</a>
+        {{ else }}
+        <a class="nameLink_a" href="{{ .Permalink }}">{{ .Title }}</a>
+        {{ end }}
       </div>
     </div>
     {{ end }}
