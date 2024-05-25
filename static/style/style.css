@@ -211,7 +211,7 @@ h1 {
 
 h2 {
   display: inline-block;
-  padding: 0.2em 0.6em 0.3em;
+  padding: 0.2em 0.2em 0.2em;
   font-size: 1.2em;
   font-weight: 700;
   line-height: 1;
@@ -221,8 +221,8 @@ h2 {
   vertical-align: baseline;
   border-radius: 0.25em;
   background-color: #5cb85c;
-  margin-bottom: 20px;
-  margin-top: 10px;
+  /* margin-bottom: 20px; */
+  /* margin-top: 10px; */
 }
 
 h3 {
@@ -453,37 +453,31 @@ div.bibtexout.closed {
 
 
 /********************** Estilos para contenido de code **********************/
-
-.panel-body {
-  display: flex;
-  flex-wrap: wrap; /* Esto ya está, asegurándose de que los elementos se envuelvan */
-  align-items: flex-start; /* Alinea los elementos al inicio del contenedor */
-  justify-content: space-between; /* Distribuye el espacio si es necesario */
+.panel {
+  border: 1px solid #918484;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  max-width: 100%;
+  background-color: #f9f9f9;
 }
 
-
 .panel-heading {
-  padding: 5px 15px;
+  padding: 10px 0px 5px 0px;
   border-bottom: 1px solid #ddd;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
+  /* border-top-left-radius: 3px; */
+  /* border-top-right-radius: 3px; */
   background-color: #3c657d;
   color: #fff;
   text-align: center;
 }
 
-.panel-heading2 {
-  text-align: center;
-}
-
 .panel-heading h2 {
   font-size: 1.5em;
-  text-align: center;
   background-color: #3c657d;
 }
 
 .panel-body {
-  max-width: 100%;
+  padding: 15px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -498,16 +492,21 @@ div.bibtexout.closed {
   margin: 0 auto;
 }
 
+.references {
+  text-align: center;
+}
+
 .references h3 {
   background-color: #9b743c;
   font-size: 1.2em;
   padding: 0.3em 0.6em;
   border-radius: 4px;
   color: #fff;
-  text-align: center;
+  display: inline-block;
 }
 
 .references ul {
+  /* list-style: none; */
   padding: 0;
   text-align: left; /* Para alinear el texto de las referencias a la izquierda */
   display: inline-block; /* Para que el ul no ocupe todo el ancho */

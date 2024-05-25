@@ -13,7 +13,9 @@ draft: false
   </div>
   <div class="panel-body">
     <div class="col-md-2">
-      <img src="/images/code/boxplot.webp" class="subpage-image">
+      <a href="https://github.com/IPL-UV/simpleR/archive/refs/heads/master.zip">
+        <img src="/images/code/boxplot.webp" class="subpage-image">
+      </a>
     </div>
     <div class="col-md-6">
       <p>The simple Regression toolbox, simpleR, contains a set of functions in Matlab to illustrate the capabilities of several statistical regression algorithms. simpleR contains simple educational code for linear regression (LR), decision trees (TREE), neural networks (NN), support vector regression (SVR), kernel ridge regression (KRR), aka Least Squares SVM, Gaussian Process Regression (GPR), and Variational Heteroscedastic Gaussian Process Regression (VHGPR). We also include a dataset of collected spectra and associated chlorophyll content to illustrate the training/testing procedures. This is just a demo providing a default initialization. Training is not at all optimized. Other initializations, optimization techniques, and training strategies may be of course better suited to achieve improved results in this or other problems. We just did it in the standard way for illustration and educational purposes, as well as to disseminate these models.</p>
@@ -37,7 +39,9 @@ draft: false
   </div>
   <div class="panel-body">
     <div class="col-md-2">
-      <img src="/images/code/GP.webp" class="subpage-image">
+      <a href="https://github.com/jejjohnson/gp_model_zoo">
+        <img src="/images/code/GP.webp" class="subpage-image">
+      </a>
     </div>
     <div class="col-md-6">
       <p>A comprehensive repo on Gaussian processes code, literature and model zoo.</p>
@@ -59,7 +63,9 @@ draft: false
   </div>
   <div class="panel-body">
     <div class="col-md-2">
-      <img src="/images/code/GP.webp" class="subpage-image">
+      <a href="https://github.com/jejjohnson/uncertain_gps">
+        <img src="/images/code/GP.webp" class="subpage-image">
+      </a>
     </div>
     <div class="col-md-6">
       <p>Gaussian processes with input noise.</p>
@@ -78,7 +84,9 @@ draft: false
   </div>
   <div class="panel-body">
     <div class="col-md-2">
-      <img src="/images/code/jgp.webp" class="subpage-image">
+      <a href="https://dhsvendsen.github.io/blogpost/basicjgp.html">
+        <img src="/images/code/jgp.webp" class="subpage-image">
+      </a>
     </div>
     <div class="col-md-6">
       <p>We introduce a nonlinear nonparametric regression model which combines knowledge from real observations and simulated data from physical models. The inversion is performed taking into account jointly both real observations and RTM-simulated data. The proposed Joint Gaussian Process (JGP) provides a solid framework for exploiting the regularities between the two types of data. The JGP automatically detects the relative quality of the simulated and real data, and combines them accordingly. This occurs by learning an additional hyper-parameter w.r.t. a standard GP model, and fitting parameters through maximizing the pseudo-likelihood of the real observations.</p>
@@ -102,7 +110,9 @@ draft: false
   </div>
   <div class="panel-body">
     <div class="col-md-2">
-      <img src="/images/code/dgp.webp" class="subpage-image">
+      <a href="#"> <!-- ISP - Software.html -->
+        <img src="/images/code/dgp.webp" class="subpage-image">
+      </a>
     </div>
     <div class="col-md-6">
       <p>The interaction of electromagnetic radiation with a planetary atmosphere and vegetation is a complex physical process, to the extent that often a single (shallow) GP models cannot capture feature relations for inversion. This motivates the use of deeper hierarchical architectures, while still preserving the desirable properties of GPs. We therefore employ the use of deep Gaussian Processes (DGPs) for bio-geo-physical model inversion. Unlike shallow GP models, DGPs account for complicated (modular, hierarchical) processes, provide an efficient solution that scales well to big datasets, and improve prediction accuracy over their single layer counterpart.</p>
@@ -126,7 +136,9 @@ draft: false
   </div>
   <div class="panel-body">
     <div class="col-md-2">
-      <img src="/images/code/FairKernelLearning2017.webp" class="subpage-image">
+      <a href="https://isp.uv.es/code/regression/FairKernelLearning2017.zip">
+        <img src="/images/code/FairKernelLearning2017.webp" class="subpage-image">
+      </a>
     </div>
     <div class="col-md-6">
       <p>New social and economic activities massively exploit big data and machine learning algorithms to do inference on people's lives. Applications include automatic curricula evaluation, wage determination, and risk assessment for credits and loans. Recently, many governments and institutions have raised concerns about the lack of fairness, equity and ethics in machine learning to treat these problems. It has been shown that not including sensitive features that bias fairness, such as gender or race, is not enough to mitigate the discrimination when other related features are included. Instead, including fairness in the objective function has been shown to be more efficient.</p>
@@ -149,7 +161,9 @@ draft: false
   </div>
   <div class="panel-body">
     <div class="col-md-2">
-      <img src="/images/code/svm_map.webp" class="subpage-image">
+      <a href="https://isp.uv.es/code/regression/msvr-2-1.zip">
+        <img src="/images/code/svm_map.webp" class="subpage-image">
+      </a>
     </div>
     <div class="col-md-6">
       <p>Standard SVR formulation only considers the single-output problem. In the case of several output variables, other methods (neural networks, kernel ridge regression) must be deployed, but the good properties of SVR are lost: hinge-loss function and sparsity. The proposed model M-SVR extends the single-output SVR by taking into account the nonlinear relations between features but also among the output variables, which are typically inter-dependent.</p>
@@ -171,7 +185,9 @@ draft: false
   </div>
   <div class="panel-body">
     <div class="col-md-2">
-      <img src="/images/code/losses_web.webp" class="subpage-image">
+      <a href="https://isp.uv.es/code/regression/svr_e_huber.zip">
+        <img src="/images/code/losses_web.webp" class="subpage-image">
+      </a>
     </div>
     <div class="col-md-6">
       <p>The combination of the classical Vapnik's e-insensitive loss function and the Huber cost function leads to enhanced performance when different noise sources are present in the data. This cost function has been applied to system identification, gamma-filtering, and to SVR.</p>
@@ -193,7 +209,9 @@ draft: false
   </div>
   <div class="panel-body">
     <div class="col-md-2">
-      <img src="/images/code/ssvr.webp" class="subpage-image">
+      <a href="https://isp.uv.es/code/regression/demoSemiSVR.zip">
+        <img src="/images/code/ssvr.webp" class="subpage-image">
+      </a>
     </div>
     <div class="col-md-6">
       <p>It contains two kernel-based methods for semi-supervised regression. The methods rely on building a graph or hypergraph Laplacian with both the available labeled and unlabeled data, which is further used to deform the training kernel matrix. The deformed kernel is then used for support vector regression (SVR). Given the high computational burden involved, we present two alternative formulations based on the Nyström method and the Incomplete Cholesky Factorization to achieve operational processing times. The semi-supervised SVR algorithms are successfully tested in multiplatform LAI estimation and oceanic chlorophyll concentration prediction. Experiments are carried out with both multispectral and hyperspectral data, demonstrating good generalization capabilities when low number of labeled samples are available, which is usually the case in biophysical parameter estimation.</p>
@@ -215,7 +233,9 @@ draft: false
   </div>
   <div class="panel-body">
     <div class="col-md-2">
-      <img src="/images/code/artmo.webp" class="subpage-image">
+      <a href="http://ipl.uv.es/artmo/">
+        <img src="/images/code/artmo.webp" class="subpage-image">
+      </a>
     </div>
     <div class="col-md-6">
       <p>The in-house developed Automated Radiative Transfer Models Operator (ARTMO) Graphic User Interface (GUI) is a software package that provides essential tools for running and inverting a suite of plant RTMs, both at the leaf and at the canopy level. ARTMO facilitates consistent and intuitive user interaction, thereby streamlining model setup, running, storing and spectra output plotting for any kind of optical sensor operating in the visible, near-infrared and shortwave infrared range (400-2500 nm). the ARTMO package includes physical, statistical and hybrid inversion and model emulation. Some modules are pure machine learning techniques for regression, active learning, dimensionality reduction and feature ranking!</p>
@@ -237,7 +257,9 @@ draft: false
   </div>
   <div class="panel-body">
     <div class="col-md-2">
-      <img src="/images/code/lorentz.webp" class="subpage-image">
+      <a href="https://isp.uv.es/code/regression/karma.zip">
+        <img src="/images/code/lorentz.webp" class="subpage-image">
+      </a>
     </div>
     <div class="col-md-6">
       <p>Nonlinear system identification based on Support Vector Machines (SVM) has been usually addressed by means of the standard SVM regression (SVR), which can be seen as an implicit nonlinear Auto Regressive and Moving Average (ARMA) model in some Reproducing Kernel Hilbert Spaces (RKHS). The proposal here is twofold: First, the explicit consideration of an ARMA model in RKHS (SVM-ARMA2K) is originally proposed. Second, a general class of SVM-based system identification nonlinear models is presented, based on the use of composite Mercer's kernels.</p>
@@ -260,7 +282,9 @@ draft: false
   </div>
   <div class="panel-body">
     <div class="col-md-2">
-      <img src="/images/code/sbprior.webp" class="subpage-image">
+      <a href="https://isp.uv.es/code/regression/karma_rvm.zip">
+        <img src="/images/code/sbprior.webp" class="subpage-image">
+      </a>
     </div>
     <div class="col-md-6">
       <p>Nonlinear system identification based on relevance vector machines (RVMs) has been traditionally addressed by stacking the input and/or output regressors and then performing standard RVM regression. Here we introduce a full family of composite kernels to integrate the input and output information in the mapping function. An improved trade-off between accuracy and sparsity is obtained in several benchmark problems. Also, the ARX-RVM yields confidence intervals for the predictions, and it is less sensitive to free parameter selection.</p>
@@ -283,7 +307,9 @@ draft: false
   </div>
   <div class="panel-body">
     <div class="col-md-2">
-      <img src="/images/code/signal-noise.webp" class="subpage-image">
+      <a href="https://isp.uv.es/code/regression/ksnr.zip">
+        <img src="/images/code/signal-noise.webp" class="subpage-image">
+      </a>
     </div>
     <div class="col-md-6">
       <p>The kernel signal to noise ratio (KSNR) considers a least squares regression model that maximizes the signal variance while minimizes the estimated noise variance in a reproducing kernel Hilbert space (RKHS). The KSNR can be used in any kernel method to deal with correlated (possibly non-Gaussian) noise. KSNR yields more fitted solutions and extracts more noise-free features when confronted with standard approaches.</p>
