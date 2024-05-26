@@ -1,3 +1,3 @@
 ---
-title: data
+title: Data
 ---
