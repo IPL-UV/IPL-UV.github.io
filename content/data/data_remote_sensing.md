@@ -12,7 +12,7 @@ draft: false
   <div class="panel-body">
     <div class="col-md-2">
       <a href="https://isp.uv.es/code/try.html">
-        <img src="/images/code/try.webp" class="subpage-image">
+        <img src="/images/data/try.webp" class="subpage-image">
       </a>
     </div>
     <div class="col-md-6">
@@ -36,7 +36,7 @@ draft: false
   <div class="panel-body">
     <div class="col-md-2">
       <a href="https://hyperlabelme.uv.es/">
-        <img src="/images/code/hyperlabelme.webp" class="subpage-image">
+        <img src="/images/data/hyperlabelme.webp" class="subpage-image">
       </a>
     </div>
     <div class="col-md-6">
@@ -60,7 +60,7 @@ draft: false
   <div class="panel-body">
     <div class="col-md-2">
       <a href="https://isp.uv.es/lm.html">
-        <img src="/images/code/lmchips.webp" class="subpage-image">
+        <img src="/images/data/lmchips.webp" class="subpage-image">
       </a>
     </div>
     <div class="col-md-10">
@@ -76,7 +76,7 @@ draft: false
   <div class="panel-body">
     <div class="col-md-2">
       <a href="https://isp.uv.es/bioparams.html">
-        <img src="/images/code/ndvi.webp" class="subpage-image">
+        <img src="/images/data/ndvi.webp" class="subpage-image">
       </a>
     </div>
     <div class="col-md-10">
@@ -92,7 +92,7 @@ draft: false
   <div class="panel-body">
     <div class="col-md-2">
       <a href="http://vision.ucmerced.edu/datasets/landuse.html">
-        <img src="/images/code/aerial.webp" class="subpage-image">
+        <img src="/images/data/aerial.webp" class="subpage-image">
       </a>
     </div>
     <div class="col-md-10">
@@ -108,7 +108,7 @@ draft: false
   <div class="panel-body">
     <div class="col-md-2">
       <a href="https://isp.uv.es/code/remotesensing/simpleUnmixing.tar.gz">
-        <img src="/images/code/cuprite95.webp" class="subpage-image">
+        <img src="/images/data/cuprite95.webp" class="subpage-image">
       </a>
     </div>
     <div class="col-md-10">
