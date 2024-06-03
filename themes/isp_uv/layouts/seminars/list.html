@@ -1,13 +1,13 @@
 {{ define "main" }}
-<div class="content-container" style="font-size: 14px;">
+<div class="content-container" style="font-size: 14px; width: 100%;">
 
   <h1 style="margin-bottom: 20px;">Seminars</h1>
 
-  <div class="course-container" style="border-bottom: 0px solid #ccc;">
-    <div class="image-container">
-      <img src="/isp/images/talks2.jpg" height="100" width="260">
+  <div class="course-container" style="border-bottom: 0px solid #ccc; display: flex;">
+    <div class="image-container" style="flex: 0 0 260px;">
+      <img src="/images/talks2.webp" height="100" width="260" style="max-width: 100%;">
     </div>
-    <div class="text-container">
+    <div class="text-container" style="flex: 1; padding-left: 20px;">
       In the Image Processing Lab (IPL) environment, invited talks by senior researchers, postdocs and PhD students in
       meetings for informal discussion of their research are held regularly, organized by the ISP group. We call these
       talks FFT, that in this case stands for "First Friday Talk", even though they may happen at any point of the week
@@ -15,57 +15,47 @@
     </div>
   </div>
 
-  <table class="table table-hover table-condensed table-responsive" id="seminar-table">
+  <table class="table table-hover table-condensed table-responsive" id="seminar-table" style="width: 100%;">
     <thead>
       <tr>
-        <th style="background-color: #f2dede">Date</th>
-        <th style="background-color: #f2dede">Title</th>
-        <th style="background-color: #f2dede">Speaker</th>
-        <th style="background-color: #f2dede">Affiliation</th>
+        <th style="background-color: #f2dede; width: 15%;">Date</th>
+        <th style="background-color: #f2dede; width: 50%;">Title</th>
+        <th style="background-color: #f2dede; width: 20%;">Speaker</th>
+        <th style="background-color: #f2dede; width: 15%;">Affiliation</th>
       </tr>
     </thead>
-    <tbody id="seminar-list"></tbody>
+    <tbody>
+      {{ $currentYear := "" }}
+      {{ range .Site.RegularPages }}
+        {{ if eq .Section "seminars" }}
+          {{ $year := .Date.Format "2006" }}
+          {{ if ne $currentYear $year }}
+            {{ if ne $currentYear "" }}
+              </tbody>
+            {{ end }}
+            <tr>
+              <td colspan="4" style="background-color: #d9edf7; text-align: center;">
+                <strong>{{ $year }}</strong>
+              </td>
+            </tr>
+            <tbody>
+            {{ $currentYear = $year }}
+          {{ end }}
+          <tr>
+            <td>{{ .Date.Format "2006-01-02" }}</td>
+            <td>
+              {{ if .Params.link }}
+                <a href="{{ .Params.link }}">{{ .Title }}</a>
+              {{ else }}
+                {{ .Title }}
+              {{ end }}
+            </td>
+            <td>{{ .Params.speaker }}</td>
+            <td>{{ .Params.affiliation }}</td>
+          </tr>
+        {{ end }}
+      {{ end }}
+    </tbody>
   </table>
-
 </div>
-
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  fetch('/isp/data/seminars/seminars.json')
-    .then(response => response.json())
-    .then(data => {
-      const seminarTable = document.getElementById('seminar-list');
-      data.seminars.forEach(yearData => {
-        const year = yearData.year;
-        const seminars = yearData.data;
-
-        // Add year as a row
-        let row = seminarTable.insertRow();
-        let cell = row.insertCell();
-        cell.colSpan = 4;
-        cell.textContent = year;
-        cell.innerHTML = '<strong>' + year + '</strong>';
-        cell.style.backgroundColor = '#d9edf7';
-
-        // Add seminars for this year
-        seminars.forEach(seminar => {
-          row = seminarTable.insertRow();
-          cell = row.insertCell();
-          cell.textContent = seminar.date;
-          cell = row.insertCell();
-          cell.innerHTML = seminar.title;
-          cell = row.insertCell();
-          cell.textContent = seminar.speaker;
-          cell = row.insertCell();
-          cell.textContent = seminar.affiliation;
-        });
-      });
-    })
-    .catch(error => console.error('Error loading JSON file:', error));
-});
-
-
-</script>
-
-
 {{ end }}
