@@ -43,13 +43,7 @@
           {{ end }}
           <tr>
             <td>{{ .Date.Format "2006-01-02" }}</td>
-            <td>
-              {{ if .Params.link }}
-                <a href="{{ .Params.link }}">{{ .Title }}</a>
-              {{ else }}
-                {{ .Title }}
-              {{ end }}
-            </td>
+            <td>{{ .Title | safeHTML }}</td>
             <td>{{ .Params.speaker }}</td>
             <td>{{ .Params.affiliation }}</td>
           </tr>
