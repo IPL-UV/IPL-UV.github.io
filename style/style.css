@@ -493,3 +493,25 @@ body {
     margin: 0;
   }
   
+
+  /* Resaltar el enlace activo en la barra de navegación */
+.navbar-nav .nav-link.active {
+  color: #fff !important;
+  background-color: #007bff !important;
+}
+
+/* Asumimos que Hugo agrega una clase a <body> como la sección actual */
+body.section-index .navbar-nav .nav-link[href="/"],
+body.section-people .navbar-nav .nav-link[href="/people/"],
+body.section-research .navbar-nav .nav-link[href="/research/"],
+body.section-projects .navbar-nav .nav-link[href="/projects/"],
+body.section-facilities .navbar-nav .nav-link[href="/facilities/"],
+body.section-publications .navbar-nav .nav-link[href="/publications/"],
+body.section-code .navbar-nav .nav-link[href="/code/"],
+body.section-data .navbar-nav .nav-link[href="/data/"],
+body.section-seminars .navbar-nav .nav-link[href="/seminars/"],
+body.section-news .navbar-nav .nav-link[href="/news/"],
+body.section-contact .navbar-nav .nav-link[href="/contact/"] {
+  color: #fff !important;
+  background-color: #007bff !important;
+}
