@@ -10,7 +10,7 @@
         {{ range $mainMenu }}
           {{ if .HasChildren }}
             <li class="nav-item dropdown px-2 nav-item-highlight">
-              <a class="nav-link dropdown-toggle active a" href="{{ .URL }}" role="button" data-bs-toggle="dropdown"
+              <a class="nav-link dropdown-toggle a" href="{{ .URL }}" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 {{ .Name }}
               </a>
@@ -22,7 +22,7 @@
             </li>
           {{ else }}
             <li class="nav-item px-2 nav-item-highlight">
-              <a class="nav-link active a" aria-current="page" href="{{ .URL }}">{{ .Name }}</a>
+              <a class="nav-link a" aria-current="page" href="{{ .URL }}">{{ .Name }}</a>
             </li>
           {{ end }}
         {{ end }}
@@ -30,7 +30,6 @@
     </div>
   </div>
 </nav>
-
 
 <style>
   .navbar {
@@ -67,13 +66,14 @@
   }
 
   .navbar-toggler:focus {
-  outline: none;
-}
+    outline: none;
+  }
 
-  .nav-item-highlight{
+  .nav-item-highlight {
     padding: 0.4rem;
   }
-  .nav-item-highlight:hover{
+
+  .nav-item-highlight:hover {
     background-color: #2d70aa !important;
   }
 
@@ -93,27 +93,47 @@
   }
 
   .navbar-toggler:focus {
-  box-shadow: none !important;
+    box-shadow: none !important;
   }
 
+  .nav-link.active, .dropdown-item.active {
+    color: #fff !important;
+    background-color: #007bff !important;
+  }
 </style>
 
 <script>
   document.querySelectorAll('.dropdown-toggle').forEach(item => {
     item.removeAttribute('data-bs-toggle');
-});
-</script>
-<script>
+  });
+
   window.onload = function() {
     // Detectar la escala de la pantalla
     const scale = window.devicePixelRatio;
-    
+
     // Obtener la barra de navegación
     const navbar = document.querySelector('.navbar-collapse');
-    
+
     // Si la escala es mayor o igual a 1.25, agregar la clase para mostrar el menú desplegable
     if (scale >= 1.25) {
       navbar.classList.add('show');
     }
+
+    // Resaltar el enlace activo basado en la URL actual
+    const currentPath = window.location.pathname;
+    const menuItems = document.querySelectorAll('.navbar-nav .nav-link');
+    menuItems.forEach(function(item) {
+      if (item.getAttribute('href') === currentPath) {
+        item.classList.add('active');
+      }
+    });
+
+    const dropdownItems = document.querySelectorAll('.navbar-nav .dropdown-item');
+    dropdownItems.forEach(function(item) {
+      if (item.getAttribute('href') === currentPath) {
+        item.classList.add('active');
+        item.closest('.dropdown').querySelector('.dropdown-toggle').classList.add('active');
+      }
+    });
   };
 </script>
