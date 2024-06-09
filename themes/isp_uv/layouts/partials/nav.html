@@ -11,7 +11,7 @@
           {{ if .HasChildren }}
             <li class="nav-item dropdown px-2 nav-item-highlight">
               <a class="nav-link dropdown-toggle a" href="{{ .URL }}" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
+                aria-expanded="false" data-has-children="true">
                 {{ .Name }}
               </a>
               <ul class="dropdown-menu">
@@ -33,7 +33,7 @@
 
 <style>
   .navbar {
-    --bs-navbar-padding-y: 0rem !important; 
+    --bs-navbar-padding-y: 0rem !important;
     background-color: #222 !important;
   }
 
@@ -54,7 +54,7 @@
   }
 
   .dropdown-menu {
-    margin-top: 7px; 
+    margin-top: 7px;
   }
 
   .navbar-toggler-icon {
@@ -102,38 +102,104 @@
   }
 </style>
 
+
 <script>
-  document.querySelectorAll('.dropdown-toggle').forEach(item => {
-    item.removeAttribute('data-bs-toggle');
+document.addEventListener('DOMContentLoaded', function () {
+  const currentPath = window.location.pathname;
+  const menuItems = document.querySelectorAll('.navbar-nav .nav-link');
+
+  // Marcar el enlace actual como activo
+  menuItems.forEach(function (item) {
+    if (item.getAttribute('href') === currentPath) {
+      item.classList.add('active');
+    }
   });
 
-  window.onload = function() {
-    // Detectar la escala de la pantalla
-    const scale = window.devicePixelRatio;
+  const dropdownItems = document.querySelectorAll('.navbar-nav .dropdown-item');
 
-    // Obtener la barra de navegación
-    const navbar = document.querySelector('.navbar-collapse');
-
-    // Si la escala es mayor o igual a 1.25, agregar la clase para mostrar el menú desplegable
-    if (scale >= 1.25) {
-      navbar.classList.add('show');
+  // Marcar el submenú actual como activo
+  dropdownItems.forEach(function (item) {
+    if (item.getAttribute('href') === currentPath) {
+      item.classList.add('active');
+      item.closest('.dropdown').querySelector('.dropdown-toggle').classList.add('active');
     }
+  });
 
-    // Resaltar el enlace activo basado en la URL actual
-    const currentPath = window.location.pathname;
-    const menuItems = document.querySelectorAll('.navbar-nav .nav-link');
-    menuItems.forEach(function(item) {
-      if (item.getAttribute('href') === currentPath) {
-        item.classList.add('active');
+  // Manejar el clic en menús con submenús
+  document.querySelectorAll('.dropdown-toggle[data-has-children="true"]').forEach(item => {
+    let firstClick = false;  // Controlar el estado del primer clic
+    item.addEventListener('click', function (e) {
+      if (window.innerWidth < 992) {
+        e.preventDefault();
+        const dropdownMenu = this.nextElementSibling;
+        const isOpen = dropdownMenu.classList.contains('show');
+        
+        if (!isOpen) {
+          // Si el submenú no está abierto, ábrelo
+          dropdownMenu.classList.add('show');
+          this.classList.add('first-click');
+          firstClick = true;  // Marcar como primer clic
+        } else {
+          // Si el submenú ya está abierto y es el segundo clic, redirige a la URL
+          if (firstClick) {
+            window.location.href = this.getAttribute('href');
+          }
+        }
+      } else {
+        window.location.href = this.getAttribute('href');
       }
     });
 
-    const dropdownItems = document.querySelectorAll('.navbar-nav .dropdown-item');
-    dropdownItems.forEach(function(item) {
-      if (item.getAttribute('href') === currentPath) {
-        item.classList.add('active');
-        item.closest('.dropdown').querySelector('.dropdown-toggle').classList.add('active');
+    // Resetear el estado del primer clic cuando se hace clic fuera del menú
+    document.addEventListener('click', function (e) {
+      if (!e.target.closest('.navbar-nav')) {
+        firstClick = false;  // Resetear el primer clic
       }
     });
-  };
+  });
+
+  // Manejar el clic en opciones del submenú
+  document.querySelectorAll('.navbar-nav .nav-link, .navbar-nav .dropdown-item').forEach(item => {
+    item.addEventListener('click', function (e) {
+      if (window.innerWidth < 992) {
+        const dropdownMenu = this.nextElementSibling;
+        
+        if (dropdownMenu && dropdownMenu.classList.contains('dropdown-menu')) {
+          e.preventDefault();
+          if (this.classList.contains('active')) {
+            dropdownMenu.classList.remove('show');
+            this.classList.remove('active');
+            window.location.href = this.getAttribute('href');
+          } else {
+            dropdownMenu.classList.add('show');
+            this.classList.add('active');
+          }
+          return;
+        }
+
+        const navbarToggler = document.querySelector('.navbar-toggler');
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+        
+        if (navbarCollapse.classList.contains('show')) {
+          navbarToggler.click();
+        }
+      }
+    });
+  });
+
+  // Detectar clic fuera del menú para cerrarlo
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('.navbar-nav')) {
+      document.querySelectorAll('.dropdown-menu').forEach(menu => {
+        menu.classList.remove('show');
+      });
+      document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+        toggle.classList.remove('first-click');
+      });
+    }
+  });
+});
+
 </script>
+
+
