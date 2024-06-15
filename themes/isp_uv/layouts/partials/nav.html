@@ -10,11 +10,10 @@
         {{ range $mainMenu }}
           {{ if .HasChildren }}
             <li class="nav-item dropdown px-2 nav-item-highlight">
-              <a class="nav-link dropdown-toggle active a" href="{{ .URL }}" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
+              <a class="nav-link dropdown-toggle a" href="{{ .URL }}" id="navbarDropdown{{ .Name }}" role="button" aria-expanded="false">
                 {{ .Name }}
               </a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown{{ .Name }}">
                 {{ range .Children }}
                   <li><a class="dropdown-item a" href="{{ .URL }}">{{ .Name }}</a></li>
                 {{ end }}
@@ -22,7 +21,7 @@
             </li>
           {{ else }}
             <li class="nav-item px-2 nav-item-highlight">
-              <a class="nav-link active a" aria-current="page" href="{{ .URL }}">{{ .Name }}</a>
+              <a class="nav-link a" aria-current="page" href="{{ .URL }}">{{ .Name }}</a>
             </li>
           {{ end }}
         {{ end }}
@@ -31,89 +30,130 @@
   </div>
 </nav>
 
-
 <style>
   .navbar {
-    --bs-navbar-padding-y: 0rem !important; 
+    --bs-navbar-padding-y: 0rem !important;
     background-color: #222 !important;
   }
-
   .a {
     color: #949494 !important;
   }
-
   .a:hover {
     color: #fff !important;
   }
-
-  .navbar-nav .dropdown:hover .dropdown-menu {
-    display: block;
-  }
-
-  .navbar-nav .dropdown-menu:hover {
-    display: block;
-  }
-
-  .dropdown-menu {
-    margin-top: 7px; 
-  }
-
-  .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-  }
-
-  .navbar-toggler {
-    border: none;
-  }
-
-  .navbar-toggler:focus {
-  outline: none;
-}
-
-  .nav-item-highlight{
+  .nav-item-highlight {
     padding: 0.4rem;
   }
-  .nav-item-highlight:hover{
+  .nav-item-highlight:hover {
     background-color: #2d70aa !important;
   }
-
   .dropdown-menu {
-    background-color: #fff !important;
-    color: #000 !important;
+    background-color: #333 !important; 
+    color: #fff !important;
+    display: block; 
   }
-
+  .dropdown-item {
+    color: #949494 !important;
+  }
   .dropdown-item:hover {
     background-color: #2d70aa !important;
     color: #fff !important;
   }
-
   .navbar-nav li.nav-item .nav-link,
   .dropdown-menu .dropdown-item {
     transition: color 0.3s, background-color 0.3s;
   }
-
-  .navbar-toggler:focus {
-  box-shadow: none !important;
+  .nav-link.active, .dropdown-item.active {
+    color: #fff !important;
+    background-color: #007bff !important;
   }
-
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+  .navbar-toggler {
+    border: none;
+  }
+  .navbar-toggler:focus {
+    outline: none;
+  }
+  @media (min-width: 992px) {
+    .dropdown-menu {
+      display: none; /* Solo ocultar submenús en dispositivos de escritorio */
+    }
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+  }
+  @media (max-width: 991px) {
+    .navbar-nav {
+      max-height: calc(100vh - 56px);
+      overflow-y: auto; /* Habilita scroll */
+    }
+    .navbar-nav::-webkit-scrollbar {
+      width: 9px;
+    }
+    .navbar-nav::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 10px;
+    }
+    .navbar-nav::-webkit-scrollbar-thumb:hover {
+      background-color: #555;
+    }
+    .navbar-nav .nav-link {
+      font-size: 1.2rem;
+    }
+    .dropdown-menu .dropdown-item {
+      font-size: 1rem;
+    }
+    .dropdown-toggle::after {
+      display: inline-block;
+      margin-left: .255em;
+      vertical-align: .255em;
+      content: "";
+      border-top: .3em solid;
+      border-right: .3em solid transparent;
+      border-bottom: 0;
+      border-left: .3em solid transparent;
+    }
+    .navbar .dropdown-toggle::after {
+      content: none !important; /* Oculta la flecha en dispositivos móviles */
+    }
+  }
 </style>
 
 <script>
-  document.querySelectorAll('.dropdown-toggle').forEach(item => {
-    item.removeAttribute('data-bs-toggle');
-});
-</script>
-<script>
-  window.onload = function() {
-    // Detectar la escala de la pantalla
-    const scale = window.devicePixelRatio;
-    
-    // Obtener la barra de navegación
-    const navbar = document.querySelector('.navbar-collapse');
-    
-    // Si la escala es mayor o igual a 1.25, agregar la clase para mostrar el menú desplegable
-    if (scale >= 1.25) {
-      navbar.classList.add('show');
-    }
-  };
+  document.addEventListener('DOMContentLoaded', function () {
+    let dropdowns = document.querySelectorAll('.navbar .dropdown');
+
+    dropdowns.forEach(function (dropdown) {
+      let link = dropdown.querySelector('.dropdown-toggle');
+
+      // Redirige al hacer clic en el enlace principal del dropdown en dispositivos móviles
+      link.addEventListener('click', function (event) {
+        if (window.innerWidth < 992) {
+          if (event.target === link) {
+            window.location.href = link.href;
+          }
+        }
+      });
+
+      let items = dropdown.querySelectorAll('.dropdown-item');
+
+      // Redirige al hacer clic en los elementos del submenú
+      items.forEach(function (item) {
+        item.addEventListener('click', function () {
+          window.location.href = item.href;
+        });
+      });
+    });
+
+    // Cierra los dropdowns si se hace clic fuera de ellos en dispositivos móviles
+    document.addEventListener('click', function (event) {
+      if (window.innerWidth < 992 && !event.target.closest('.navbar .dropdown')) {
+        dropdowns.forEach(function (dropdown) {
+          dropdown.querySelector('.dropdown-menu').classList.remove('show');
+        });
+      }
+    });
+  });
 </script>
