@@ -260,69 +260,8 @@ h3 {
 
 /*******estilos del archivo courses/list.html********/
 
-.course-container {
-  display: flex;
-  margin-bottom: 20px;
-}
-
-.image-container {
-  margin-right: 20px;
-  text-align: center;
-}
-
-.text-container {
-  flex: 1;
-}
-
-.description-cell {
-  text-align: justify;
-}
-
-.download-link {
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.course-container {
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #ccc;
-}
-
-.image-container img {
-  display: block;
-  margin: 0 auto 10px;
-}
-
-.text-container {
-  text-align: justify;
-}
-
-.download-link {
-  text-decoration: none;
-  font-weight: bold;
-  color: #007bff;
-}
-
-@media (max-width: 768px) {
-  .course-container {
-    flex-direction: column;
-  }
-
-  .image-container {
-    width: 100% !important;
-    margin-right: 0;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-
-  .image-container img {
-    margin: 0 auto;
-  }
-
-  .text-container {
-    text-align: justify;
-  }
+.facility-title {
+  white-space:  normal;
 }
 
 
@@ -532,38 +471,3 @@ body.section-contact .navbar-nav .nav-link[href="/contact/"] {
 color: #fff !important;
 background-color: #007bff !important;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
