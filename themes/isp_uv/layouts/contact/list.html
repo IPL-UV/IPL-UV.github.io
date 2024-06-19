@@ -3,14 +3,29 @@
   <h1>Contact</h1>
   <br>
   <div class="row">
-    <div class="col-md-8">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1062.8242221223143!2d-0.4231586165974696!3d39.51581954413611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6045eca58b7db3%3A0x64edac557ef761b6!2sImage%20Processing%20Laboratory%20(IPL)!5e1!3m2!1sca!2ses!4v1630677043435!5m2!1sca!2ses"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <div class="col-md-8 col-12">
+      <!-- Small devices (mobiles) -->
+      <div class="embed-responsive embed-responsive-4by3 d-block d-md-none" id="mobile-map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1062.8242221223143!2d-0.4231586165974696!3d39.51581954413611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6045eca58b7db3%3A0x64edac557ef761b6!2sImage%20Processing%20Laboratory%20(IPL)!5e1!3m2!1sca!2ses!4v1630677043435!5m2!1sca!2ses"
+          class="embed-responsive-item" allowfullscreen="" loading="lazy" style="width: 100%; height: 100%;"></iframe>
+      </div>
+      <!-- Medium devices (tablets) -->
+      <div class="embed-responsive embed-responsive-16by9 d-none d-md-block d-lg-none" id="tablet-map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1062.8242221223143!2d-0.4231586165974696!3d39.51581954413611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6045eca58b7db3%3A0x64edac557ef761b6!2sImage%20Processing%20Laboratory%20(IPL)!5e1!3m2!1sca!2ses!4v1630677043435!5m2!1sca!2ses"
+          class="embed-responsive-item" style="height: 450px; width: 100%;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <!-- Large devices (laptops/desktops) -->
+      <div class="d-none d-lg-block">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1062.8242221223143!2d-0.4231586165974696!3d39.51581954413611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6045eca58b7db3%3A0x64edac557ef761b6!2sImage%20Processing%20Laboratory%20(IPL)!5e1!3m2!1sca!2ses!4v1630677043435!5m2!1sca!2ses"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
       <br>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-4 col-12">
       <div>
         <a
           href="https://maps.google.com/maps/dir//Image+Processing+Laboratory+(IPL)+C%2F+Catedr%C3%A0tic+Agust%C3%ADn+Escardino+Benlloch,+9+E4+building+-+4th+floor+46980+Paterna+Valencia/@39.5168236,-0.4232013,18z/data=!4m5!4m4!1m0!1m2!1m1!1s0xd6045eca58b7db3:0x64edac557ef761b6">
@@ -26,10 +41,18 @@
           gcamps@uv.es</a>
       </div>
       <div>
-        <img src="/images/IPL_logo_blanco.webp" height="45" width="150">
-        <img src="/images/uv.webp" height="105" width="80">
+        <img src="/images/IPL_logo_blanco.webp" class="img-fluid" alt="IPL Logo" height="45" width="150">
+        <img src="/images/uv.webp" class="img-fluid" alt="UV Logo" height="105" width="80">
       </div>
     </div>
-  </div> <!-- row -->
+  </div>
 </div>
+<style>
+  /* Estilos para el mapa en dispositivos móviles */
+  @media (max-width: 767.98px) {
+    #mobile-map-container {
+      height: 200px;
+    }
+  }
+</style>
 {{ end }}
