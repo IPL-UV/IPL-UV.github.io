@@ -1,124 +1,206 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
   <div class="container-fluid">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
-      aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <a href="/" class="d-lg-none d-flex align-items-center a_logonav">
+      <img src="/images/isp_logo_sinfondo.webp" alt="ISP Icon" height="30" class="logo_nav">
+      <span class="ms-2 text-isp">ISP</span>
+    </a>
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+      aria-label="Toggle navigation" style="height: 40px;">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
       <ul class="navbar-nav mx-auto mb-lg-0">
         {{ $mainMenu := .Site.Menus.main }}
         {{ range $mainMenu }}
-          {{ if .HasChildren }}
-            <li class="nav-item dropdown px-2 nav-item-highlight">
-              <a class="nav-link dropdown-toggle a" href="{{ .URL }}" id="navbarDropdown{{ .Name }}" role="button" aria-expanded="false">
-                {{ .Name }}
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown{{ .Name }}">
-                {{ range .Children }}
-                  <li><a class="dropdown-item a" href="{{ .URL }}">{{ .Name }}</a></li>
-                {{ end }}
-              </ul>
-            </li>
-          {{ else }}
-            <li class="nav-item px-2 nav-item-highlight">
-              <a class="nav-link a" aria-current="page" href="{{ .URL }}">{{ .Name }}</a>
-            </li>
-          {{ end }}
+        {{ if eq .Name "ISP" }}
+        <li class="nav-item px-2 nav-item-highlight d-none d-lg-block">
+          <a class="nav-link a" aria-current="page" href="{{ .URL }}">{{ .Name }}</a>
+        </li>
+        {{ else if .HasChildren }}
+        <li class="nav-item dropdown px-2 nav-item-highlight">
+          <a class="nav-link dropdown-toggle a" href="{{ .URL }}" id="navbarDropdown{{ .Name }}" role="button"
+            aria-expanded="false">
+            {{ .Name }}
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown{{ .Name }}">
+            {{ range .Children }}
+            <li><a class="dropdown-item a" href="{{ .URL }}">{{ .Name }}</a></li>
+            {{ end }}
+          </ul>
+        </li>
+        {{ else }}
+        <li class="nav-item px-2 nav-item-highlight">
+          <a class="nav-link a" aria-current="page" href="{{ .URL }}">{{ .Name }}</a>
+        </li>
+        {{ end }}
         {{ end }}
       </ul>
     </div>
   </div>
 </nav>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 <style>
-  .navbar {
-    --bs-navbar-padding-y: 0rem !important;
-    background-color: #222 !important;
-  }
-  .a {
-    color: #949494 !important;
-  }
-  .a:hover {
-    color: #fff !important;
-  }
-  .nav-item-highlight {
-    padding: 0.4rem;
-  }
-  .nav-item-highlight:hover {
-    background-color: #2d70aa !important;
-  }
+.navbar {
+  --bs-navbar-padding-y: 0rem !important;
+  background-color: #222 !important;
+}
+
+.a {
+  color: #949494 !important;
+}
+
+.a:hover {
+  color: #fff !important;
+}
+
+.nav-item-highlight {
+  padding: 0.4rem;
+}
+
+.nav-item-highlight:hover {
+  background-color: #2d70aa !important;
+}
+
+.dropdown-menu {
+  background-color: #333 !important;
+  color: #fff !important;
+  display: block;
+}
+
+.dropdown-item {
+  color: #949494 !important;
+}
+
+.dropdown-item:hover {
+  background-color: #2d70aa !important;
+  color: #fff !important;
+}
+
+.navbar-nav li.nav-item .nav-link,
+.dropdown-menu .dropdown-item {
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.nav-link.active,
+.dropdown-item.active {
+  color: #fff !important;
+  background-color: #007bff !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
+@media (min-width: 992px) {
   .dropdown-menu {
-    background-color: #333 !important; 
-    color: #fff !important;
-    display: block; 
+    display: none;
   }
-  .dropdown-item {
-    color: #949494 !important;
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
   }
-  .dropdown-item:hover {
-    background-color: #2d70aa !important;
-    color: #fff !important;
+}
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    max-height: calc(100vh - 56px);
+    overflow-y: auto;
   }
-  .navbar-nav li.nav-item .nav-link,
+
+  .navbar-nav::-webkit-scrollbar {
+    width: 9px;
+  }
+
+  .navbar-nav::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+  }
+
+  .navbar-nav::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1.2rem;
+  }
+
   .dropdown-menu .dropdown-item {
-    transition: color 0.3s, background-color 0.3s;
+    font-size: 1rem;
   }
-  .nav-link.active, .dropdown-item.active {
-    color: #fff !important;
-    background-color: #007bff !important;
+
+  .dropdown-toggle::after {
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
   }
+
+  .navbar .dropdown-toggle::after {
+    content: none !important;
+  }
+
   .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    width: 1.2em;
+    height: 1.2em;
   }
+
   .navbar-toggler {
-    border: none;
+    border: none !important;
   }
+
   .navbar-toggler:focus {
-    outline: none;
+    box-shadow: none !important;
   }
-  @media (min-width: 992px) {
-    .dropdown-menu {
-      display: none; /* Solo ocultar submenús en dispositivos de escritorio */
-    }
-    .dropdown:hover .dropdown-menu {
-      display: block;
-    }
+
+  .d-flex {
+    height: 45px;
   }
-  @media (max-width: 991px) {
-    .navbar-nav {
-      max-height: calc(100vh - 56px);
-      overflow-y: auto; /* Habilita scroll */
-    }
-    .navbar-nav::-webkit-scrollbar {
-      width: 9px;
-    }
-    .navbar-nav::-webkit-scrollbar-thumb {
-      background-color: #888;
-      border-radius: 10px;
-    }
-    .navbar-nav::-webkit-scrollbar-thumb:hover {
-      background-color: #555;
-    }
-    .navbar-nav .nav-link {
-      font-size: 1.2rem;
-    }
-    .dropdown-menu .dropdown-item {
-      font-size: 1rem;
-    }
-    .dropdown-toggle::after {
-      display: inline-block;
-      margin-left: .255em;
-      vertical-align: .255em;
-      content: "";
-      border-top: .3em solid;
-      border-right: .3em solid transparent;
-      border-bottom: 0;
-      border-left: .3em solid transparent;
-    }
-    .navbar .dropdown-toggle::after {
-      content: none !important; /* Oculta la flecha en dispositivos móviles */
-    }
+
+  .a_logonav{
+    text-decoration: none !important;
   }
+
+  .text-isp {
+    font-size: 1.3rem;
+    color: #9d9d9d;
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none !important;
+  }
+
+  .navbar-nav {
+        max-height: calc(50vh - 56px);
+        overflow-y: auto;
+    }
+}
+
+
 </style>
 
 <script>
