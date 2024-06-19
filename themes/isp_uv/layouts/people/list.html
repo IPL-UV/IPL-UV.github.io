@@ -26,7 +26,7 @@
 				<div class="col-md-9">
 					<div class="card-body">
 						<h5 class="card-title" style="font-size: 88.5%;"><b>{{ .Title }}</b></h5>
-						<p class="card-text" style="font-size: 0.95em;">{{ .Summary | markdownify }}</p>
+						<p class="card-text" style="font-size: 0.90em;">{{ .Summary | markdownify }}</p>
 						<div class="card-links" style="margin-top: -5px;">
 							{{ with .Params.googlescholar }} <a href="{{ . }}"><img src="{{ $gscholar.RelPermalink }}" height="25" width="25"></a> {{ end }}
 							{{ with .Params.orcid }} <a href="{{ . }}"><img src="{{ $orcid.RelPermalink }}" height="25" width="25"></a> {{ end }}
