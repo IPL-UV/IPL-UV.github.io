@@ -3,7 +3,7 @@
 	{{ $logo := urls.JoinPath "images/projects" .Params.logo }}
 	{{ $flogo := urls.JoinPath "images/projects" .Params.founding.logo }}
 	<tr>
-		<td style="width:10%;">
+		<td class="project-logo-cell">
 			{{ with resources.Get $logo }}
 			<img src="{{ .RelPermalink }}" width="auto" height="auto" class="img-fluid" alt="Image of {{ .Title }}">
 			{{ end }}
@@ -11,7 +11,7 @@
 			<img src="{{ .RelPermalink }}" width="auto" height="auto" class="img-fluid" alt="Image of {{ .Title }}">
 			{{ end }}
 		</td>
-		<td style="width:90%; max-height:200px;">
+		<td class="project-info-cell">
 			<a href="{{ .Params.website }}"> {{ .Title }} </a> 
 			<br>
 			{{ with .Params.pi }} <strong> PIs: {{ . }}  </strong> {{ end }}
@@ -22,3 +22,35 @@
 	</tr>
 	{{ end }} 
 </table>
+
+
+<style>
+	
+.project-logo-cell {
+  width: 10%;
+}
+
+.project-info-cell {
+  width: 90%;
+}
+
+@media (max-width: 991px) {
+  .project-logo-cell {
+    width: 20%;
+  }
+
+  .project-info-cell {
+    width: 80%;
+  }
+}
+
+@media (max-width: 767px) {
+  .project-logo-cell {
+    width: 30%;
+  }
+
+  .project-info-cell {
+    width: 70%;
+  }
+}
+</style>
