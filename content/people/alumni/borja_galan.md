@@ -7,4 +7,4 @@ params:
   img: borja.webp
 ---
 
-My research was tied to study feature representations that are sparse, interpretable and causal. At ISP I have been working in the Causal inference in the human-biosphere coupled system (SCALE) project funded by BBVA and the EC H2020 DeepCube project developing modules for interpretability and explainability in ML models.
+I research interpretable and causal feature representations, working on causal inference in human-biosphere systems. Developing modules for interpretability and explainability in machine learning models for enhanced understanding.

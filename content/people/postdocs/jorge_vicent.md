@@ -11,4 +11,4 @@ params:
   linkedin: 'https://www.linkedin.com/in/jorviser/'
 ---
 
-My interests are related to atmospheric radiative transfer models, statistical regression emulation methods and image processing algorithms development and optimization. The application domains are remote sensing data analysis and hyperspectral images with special focus on atmospheric correction and scene/satellite simulation.
+My work involves atmospheric radiative transfer models, statistical regression emulation, and image processing algorithms development and optimization. Focusing on remote sensing data analysis and hyperspectral images for atmospheric correction.

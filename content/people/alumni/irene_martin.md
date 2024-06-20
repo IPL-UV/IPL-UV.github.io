@@ -7,4 +7,4 @@ params:
   img: irene.webp
 ---
 
-My research interests include machine learning and signal processing, especially deep neural networks and transfer learning. Currently I am working on applying physical constraints to ML models for better generalization, consistency and extrapolation capabilities.
+My interests include machine learning and signal processing, particularly deep neural networks and transfer learning, focusing on applying physical constraints to ML models for better generalization and extrapolation capabilities.

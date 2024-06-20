@@ -13,4 +13,4 @@ params:
   linkedin: 'https://www.linkedin.com/in/vsito/'
 ---
 
-I develop machine learning methods that incorporate causality and explainability, using Earth observations, climate data, and land use information. I analyze the impact of agricultural practices on ecosystem services and attribute crop failures to climate events. My goal is to provide data-driven insights for sustainable agriculture, towards expanding the global carbon sink while addressing global food demand.
+I develop causal and explainable machine learning methods using Earth observations and environmental data to estimate the impact of agricultural decisions for sustainable agriculture and food security. 

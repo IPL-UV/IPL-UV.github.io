@@ -7,4 +7,4 @@ params:
   img: photo_thao.webp
 ---
 
-My current research interests are related to statistical methods for the detection and the attribution of climate change and especially for the attribution of extreme weather events. Attribution methods usually rely on the analysis of observations and climate model experiments.
+I research statistical methods for detecting and attributing climate change, focusing on extreme weather event attribution using observation analysis and climate model experiments to understand their impacts better.

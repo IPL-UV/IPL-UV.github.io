@@ -12,4 +12,4 @@ params:
   linkedin: 'https://www.linkedin.com/in/oscar-jos%C3%A9-pellicer-valero-9baab9128'
 ---
 
-During my PhD I employed machine learning for solving medical problems, focusing on medical image analysis for prostate cancer detection. I will now be applying the same techniques to satellite imaging, focusing on developing and explaining deep models for forecasting tasks.
+I applied machine learning to medical image analysis for prostate cancer detection during my PhD. Now focusing on deep learning for satellite imaging and developing models for forecasting tasks.

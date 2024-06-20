@@ -1,7 +1,6 @@
 ---
 date: '2024-05-10T05:29:29+02:00'
 draft: false
-weight: 2
 title: 'Álvaro Moreno Martínez'
 role: "senior research scientists"
 params:
@@ -12,4 +11,4 @@ params:
   linkedin: 'https://www.linkedin.com/in/alvaro-moreno-mart%C3%ADnez-bb193229/?originalSubdomain=es'
 ---
 
-My research has been mainly focused on remote sensing applications in vegetation. I have been actively involved in the development of physical and statistical models and the implementation of operational methodologies for the study of vegetation cover through satellite imagery at different spatial/temporal scales.
+My research focuses on remote sensing in vegetation. I develop physical and statistical models and implement methodologies for studying vegetation cover through satellite imagery at various spatial and temporal scales.

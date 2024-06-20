@@ -8,4 +8,4 @@ params:
   img: nando.webp
 ---
 
-Research Associate in the German Aerospace Center (DLR), Ph.D. in Atmospheric Science from Lancaster University, UK. He works on combining causal discovery and deep learning methods to address systematic errors in climate models and improve climate projections.
+Research Associate at DLR, Ph.D. in Atmospheric Science, combining causal discovery and deep learning methods to address systematic errors in climate models and improve projections and understanding.

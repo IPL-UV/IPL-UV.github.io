@@ -7,4 +7,4 @@ params:
   img: fatih.webp
 ---
 
-During my a year visit to IPL, I focused on processing optical images using kernel methods and variational methods, large scale anomaly change detection methods and digital terrain model (DTM) extraction. It was a joy to live in Valencia and life-time experience to work with productive and cheerful researchers in the IPL.
+During my IPL visit, I focused on processing optical images using kernel and variational methods, large-scale anomaly detection methods, and digital terrain model extraction. Enjoyed collaborating with IPL researchers.

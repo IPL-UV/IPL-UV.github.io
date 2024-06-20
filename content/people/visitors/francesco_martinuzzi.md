@@ -8,4 +8,4 @@ params:
   img: francesco.webp
 ---
 
-PhD student at the Center for Scalable Data Analytics and Artificial Intelligence (ScaDS.AI) and the Remote Sensing Center for Earth system research (RSC4Earth), Leipzig University. My research interests lie in the exploration of nonlinear dynamics with machine learning, with a focus on applications to Earth sciences.
+PhD student at  ScaDS.AI and RSC4Earth (Leipzig University), exploring nonlinear dynamics with machine learning, focusing on applications to Earth sciences.

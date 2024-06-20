@@ -11,4 +11,4 @@ params:
   linkedin: 'https://www.linkedin.com/in/anna-mateo-sanchis/'
 ---
 
-My current research focuses on developing machine learning algorithms for crop yield/production estimation using multi-scale remote sensing and climate data. Currently, I am working on anomaly detection in crop seasons and on the interpretability of the developed models.
+I develop machine learning algorithms for crop yield estimation using multi-scale remote sensing and climate data, focusing on anomaly detection in crop seasons and improving model interpretability.

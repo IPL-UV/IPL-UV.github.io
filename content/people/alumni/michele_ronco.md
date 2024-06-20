@@ -7,4 +7,4 @@ params:
   img: michele.webp
 ---
 
-My research focuses on understanding how deep neural networks work by using explainable AI (XAI) methods. In particular, I am following two complementary lines of investigation. The former consists in shortening the gap between physics-based and data-driven models by applying XAI in the context of Earth sciences and human-biosphere interaction problems. In addition, I work on the integration of prior knowledge into the learning process by either optimizing penalized losses or modifying the network architecture. I am also interested in causal inference and machine learning for remote sensing.
+I use explainable AI to understand deep neural networks, bridging physics-based and data-driven models. Also work on integrating prior knowledge into learning through optimized penalized losses or network modifications.

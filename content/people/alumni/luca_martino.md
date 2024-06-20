@@ -7,4 +7,4 @@ params:
   img: lucamartino.webp
 ---
 
-My primary research interests lie in the area of Monte Carlo methods for Bayesian inference. My specialty is focused on the random number generation problem and computational methods for stochastic quadrature, such as rejection sampling, MCMC algorithms and importance sampling techniques.
+My research interests lie in Monte Carlo methods for Bayesian inference, focusing on the random number generation problem and computational methods for stochastic quadrature, such as rejection sampling and MCMC algorithms.

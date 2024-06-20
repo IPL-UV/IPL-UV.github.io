@@ -14,4 +14,6 @@ params:
   website: 'http://www.uv.es/gonmagar/'
 ---
 
-My background is in the field of applied machine learning. I am specially interested in applications to natural sciences like remote sensing and weather and energy forecasting. Currently I am working in transfer learning with convolutional neural networks applied to cloud and flood segmentation.
+
+
+My research focuses on methane detection from multispectral and hyperspectral imagery. Previously, I researched machine learning for tasks like super-resolution, domain adaptation, change detection, cloud detection, and flood segmentation.

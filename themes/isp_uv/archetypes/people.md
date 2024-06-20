@@ -16,5 +16,7 @@ params:
   linkedin: ''
   ieee: ''
   dblp: ''
+  scopus: ''
+  academia: ''
   website: ''
 ---

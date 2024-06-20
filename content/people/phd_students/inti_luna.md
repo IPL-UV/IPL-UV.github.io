@@ -8,4 +8,4 @@ params:
   img: inti.webp
 ---
 
-I have a background in environmental sciences and experience working on remote sensing for vegetation studies (crops and forest monitoring). My research interests focus on monitoring and estimation of biophysical properties of vegetation (crop yield, crop water needs, forest biomass, and forest change detection) and soil moisture.
+My background in environmental sciences includes remote sensing for vegetation studies, focusing on monitoring and estimating crop yield, water needs, forest biomass, change detection, and soil moisture.
