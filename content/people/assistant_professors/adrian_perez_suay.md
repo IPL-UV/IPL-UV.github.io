@@ -11,6 +11,7 @@ params:
   ieee: 'https://ieeexplore.ieee.org/author/37086232804'
   dblp: 'https://dblp.org/pid/80/1517.html'
   personal_website: 'http://www.uv.es/pesuaya'
+  link_image: 'https://www.uv.es/pesuaya/'
 ---
 
 The topic of my thesis was Distance Metric Learning. Currently, I am working on kernel methods, dependence estimation and Machine Learning in general. I am interested on the applications of Machine Learning techniques to solve the Remote Sensing challenges.

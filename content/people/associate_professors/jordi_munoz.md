@@ -10,6 +10,7 @@ params:
   github: 'https://github.com/IPL-UV/'
   researchgate: 'https://www.researchgate.com/profile/Jordi-Munoz-4'
   uv: 'https://www.uv.es/jordi/'
+  link_image: 'https://www.uv.es/jordi/'
 ---
 
 At present I'm focused on kernel methods, support vector machines, semi-supervised and active learning. The main application field is on remote sensing data. I have recently worked with one-class classifiers applied to hyperspectral images.

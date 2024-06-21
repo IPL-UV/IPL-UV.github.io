@@ -13,6 +13,7 @@ params:
   researchgate: 'https://www.researchgate.net/profile/Luis-Gomez-Chova'
   uv: 'https://www.uv.es/chovago/'
   linkedin: 'https://www.linkedin.com/in/luis-gomez-chova'
+  link_image: 'https://www.uv.es/~chovago/'
 ---
 
 My interests are related to machine learning and signal and image processing. The application domains are remote sensing data analysis and hyperspectral images with special focus on cloud screening.

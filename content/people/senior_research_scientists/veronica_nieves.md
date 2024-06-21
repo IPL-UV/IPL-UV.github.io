@@ -11,6 +11,7 @@ params:
   github: 'https://github.com/IPL-UV/'
   researchgate: 'https://www.researchgate.net/profile/Veronica-Nieves-2'
   website: 'https://www.aiforoceans.org'
+  link_image: 'https://www.aiforoceans.org'
 ---
 
 My research develops advanced algorithms to understand changing oceans and assess future climate risks, bridging ocean sciences and climate informatics. Follow my research activities on [I4OCEANS](https://www.aiforoceans.org) for updates.

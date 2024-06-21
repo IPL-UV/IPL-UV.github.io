@@ -12,6 +12,7 @@ params:
   researchgate: 'https://www.researchgate.com/profile/Maria-Piles-2'
   linkedin: 'https://www.linkedin.com/in/maria-piles-33a26867/?originalSubdomain=es'
   personal_website: 'https://www.uv.es/uvweb/college/en/profile-1285950309813.html?p2=piguima&idA=true'
+  link_image: 'https://sites.google.com/site/mariapiles/'
 ---
 
 My research interests include microwave remote sensing, estimation of soil moisture and vegetation biogeophysical parameters and development of multisensor techniques for enhanced retrievals with focus on agriculture, forestry, wildfire prediction, extreme detection, and climate studies.

@@ -11,6 +11,7 @@ params:
   twitter: 'https://twitter.com/jesusmalo32'
   github: 'https://github.com/IPL-UV/'
   uv: 'https://www.uv.es/jmalo/'
+  link_image: 'https://isp.uv.es/excathedra.html'
 ---
 
 
