@@ -2,7 +2,7 @@
 date: '2024-05-10T05:29:29+02:00'
 draft: false
 title: 'Ana B. Ruescas'
-role: assistant_professors
+role: assistant professors
 params:
   img: 06_AnaBR_ISP.webp
   scholar: 'https://scholar.google.com/citations?user=G-hjVSkAAAAJ&hl=en'

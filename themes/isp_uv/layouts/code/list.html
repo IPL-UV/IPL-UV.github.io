@@ -2,59 +2,22 @@
 <div class="content-container" style="font-size: 14px;">
   <h1 style="margin-bottom: 20px;">Software</h1>
   <br>
-  <div class="grid-container" id="grid-container" style="font-size: 0.9em;"></div>
-
   <p>
-    Check also our GitHub repos at <a href="https://github.com/IPL-UV/">https://github.com/IPL-UV/</a>.
+    Check also our GitHub repos at <a href="https://github.com/IPL-UV/">https://github.com/IPL-UV/.</a>.
   </p>
+  <div class="grid-container" id="grid-container" style="font-size: 0.9em;">
+    {{ range .Pages }}
+    <div class="grid-item">
+      {{ $img := urls.JoinPath "/images/code" .Params.img }}
+      <a href="{{ .Params.link }}" style="text-decoration: none;">
+        <img src="{{ $img }}" alt="{{ .Title }}" style="height: 100px; width: 100px; margin-right: 10px;">
+      </a>
+      <div class="text">
+        <a href="{{ .Params.link }}" class="nameLink_a">{{ .Title }}</a>
+        <p>{{ .Params.description | safeHTML }}</p>
+      </div>
+    </div>
+    {{ end }}
+  </div>
 </div>
-
-
-<script>
-  async function loadCode() {
-  const response = await fetch('/isp/data/code/code.json');
-  const data = await response.json();
-
-  const gridContainer = document.getElementById('grid-container');
-  data.code.forEach(code => {
-    const gridItem = document.createElement('div');
-    gridItem.classList.add('grid-item');
-
-    const imageLink = document.createElement('a');
-    imageLink.href = code.link; // Enlaza la imagen al mismo destino
-    imageLink.style.textDecoration = 'none'; // Elimina la subrayado del enlace
-    const image = document.createElement('img');
-    image.src = '/isp/images/code/' + code.image;
-    image.alt = code.name;
-    image.style.height = '100px';
-    image.style.width = '100px';
-    image.style.marginRight = '10px';
-    imageLink.appendChild(image);
-    gridItem.appendChild(imageLink);
-
-    const text = document.createElement('div');
-    text.classList.add('text');
-    const nameLink = document.createElement('a');
-    nameLink.classList.add('nameLink_a');
-    nameLink.href = code.link;
-    nameLink.textContent = code.name;
-    text.appendChild(nameLink);
-
-    if (code.description) {
-      const description = document.createElement('p');
-      description.innerHTML = code.description;
-      text.appendChild(description);
-    }
-
-    gridItem.appendChild(text);
-
-    gridContainer.appendChild(gridItem);
-  });
-}
-
-document.addEventListener('DOMContentLoaded', loadCode);
-</script>
-
-
-
 {{ end }}

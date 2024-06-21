@@ -2,7 +2,7 @@
 date: '2024-05-10T05:29:29+02:00'
 draft: false
 title: 'Valero Laparra'
-role: assistant_professors
+role: assistant professors
 params:
   img: valero.webp
   scholar: 'https://scholar.google.com/citations?user=dNt_xikAAAAJ&hl=ca'

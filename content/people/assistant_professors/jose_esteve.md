@@ -2,7 +2,7 @@
 date: '2024-05-10T05:29:29+02:00'
 draft: false
 title: 'José J. Esteve-Taboada'
-role: assistant_professors
+role: assistant professors
 params:
   img: joseesteve.webp
 ---
