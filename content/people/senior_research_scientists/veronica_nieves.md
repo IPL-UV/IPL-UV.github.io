@@ -1,7 +1,6 @@
 ---
 date: '2024-05-10T05:29:29+02:00'
 draft: false
-weight: 1
 title: 'Veronica Nieves - Distinguished Researcher'
 role: "senior research scientists"
 params:
