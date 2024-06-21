@@ -1,30 +1,69 @@
-{{ with .Params }} 
-{{ $projects :=  where $.Site.RegularPages "Section" "projects"  }}
+{{ with .Params }}
+{{ $projects := where $.Site.RegularPages "Section" "projects" }}
 {{ $projects = where $projects "Params.short" "in" . }}
 
-
-<table class="table table-hover">
-	{{ range $projects }}
-	{{ $logo := urls.JoinPath "images/projects" .Params.logo }}
-	{{ $flogo := urls.JoinPath "images/projects" .Params.founding.logo }}
-	<tr>
-		<td style="width:10%;">
-			{{ with resources.Get $logo }}
-			<img src="{{ .RelPermalink }}" width="auto" height="auto" class="img-fluid" alt="Image of {{ .Title }}">
-			{{ end }}
-			{{ with resources.Get $flogo }}
-			<img src="{{ .RelPermalink }}" width="auto" height="auto" class="img-fluid" alt="Image of {{ .Title }}">
-			{{ end }}
-		</td>
-		<td style="width:90%; max-height:200px;">
-			<a href="{{ .Params.website }}"> {{ .Title }} </a> 
-			<br>
-			{{ with .Params.pi }} <strong> PIs: {{ . }}  </strong> {{ end }}
-			{{ with .Params.uvpi }} <strong> UV-PIs: {{ . }}  </strong> {{ end }}
-			{{ with .Params.years }} <strong>  ({{ . }})  </strong> {{ end }}
-			<br>
-		</td>
-	</tr>
-	{{ end }} 
-</table>
+<div class="content-container" style="font-size: 1.1em; text-align: justify; line-height: 1.1;">
+    {{ range $projects }}
+    {{ $logo := urls.JoinPath "images/projects" .Params.logo }}
+    {{ $flogo := urls.JoinPath "images/projects" .Params.founding.logo }}
+    <table class="table table-hover">
+        <tr>
+            <td class="project-logo-cell">
+                {{ with resources.Get $logo }}
+                <img src="{{ .RelPermalink }}" width="auto" height="auto" class="img-fluid" alt="Image of {{ .Title }}">
+                {{ end }}
+                {{ with resources.Get $flogo }}
+                <img src="{{ .RelPermalink }}" width="auto" height="auto" class="img-fluid" alt="Image of {{ .Title }}">
+                {{ end }}
+            </td>
+            <td class="project-info-cell">
+                <a href="{{ .Params.website }}"> {{ .Title }} </a>
+                <br>
+                {{ with .Params.pi }} <strong> PIs: {{ . }} </strong> {{ end }}
+                {{ with .Params.uvpi }} <strong> UV-PIs: {{ . }} </strong> {{ end }}
+                {{ with .Params.years }} <strong> ({{ . }}) </strong> {{ end }}
+                <br>
+            </td>
+        </tr>
+    </table>
+    {{ end }}
+</div>
 {{ end }}
+
+
+<style>
+	.content-container {
+    font-size: 1.1em;
+    text-align: justify;
+    line-height: 1.1;
+}
+
+.project-logo-cell {
+    width: 10%;
+}
+
+.project-info-cell {
+    width: 90%;
+}
+
+@media (max-width: 991px) {
+    .project-logo-cell {
+        width: 20%;
+    }
+
+    .project-info-cell {
+        width: 80%;
+    }
+}
+
+@media (max-width: 767px) {
+    .project-logo-cell {
+        width: 30%;
+    }
+
+    .project-info-cell {
+        width: 70%;
+    }
+}
+
+</style>

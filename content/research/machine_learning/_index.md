@@ -4,7 +4,6 @@ title: "Research Machine Learning"
 
 # Machine learning
 
-<br> </br>
 
 ## Motivation
 
