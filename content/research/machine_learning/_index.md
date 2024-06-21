@@ -5,9 +5,12 @@ title: "Research Machine Learning"
 # Machine learning
 
 
+<br>
+
+
 ## Motivation
 
-**Machines may extract knowledge from measurements by analyzing the statistical properties of the acquired signals.** The aim is to capture the structures in the experimental data. Our contributions to machine learning include algorithms for automatic classification (recognition) of objects, robust regression tools for multidimensional data, density estimation algorithms, and feature extraction and selection. We study the principled design of learning algorithms, specially neural networks and kernel methods. **Methods are designed for general purposes but also specific to the application, most of them related to image processing, computer vision tasks and Earth science data analysis, but also non-structured data in social sciences.**
+**Machines may extract knowledge from measurements by analyzing the statistical properties of the acquired signals.** The aim is to capture the structures in the experimental data. Our contributions to machine learning include algorithms for automatic classification (recognition) of objects, robust regression tools for multidimensional data, density estimation algorithms, and feature extraction and selection. We study the principled design of learning algorithms, specially neural networks and kernel methods. **Methods are designed for general purposes but also specific to the application, most of them related to image processing, computer vision tasks and Earth science data analysis, but also non-structured data in social sciences.**br
 
 ## An AI agenda
 
