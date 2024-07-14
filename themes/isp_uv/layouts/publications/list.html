@@ -1,14 +1,4 @@
 {{ define "main" }}
-
-{{ $bibfiles := slice }}
-{{ range .Params.bibfiles  }}
-	{{ with resources.Get . }}
-	{{ $bibfiles = $bibfiles | append .RelPermalink }}
-	{{ end }}
-{{ end }}
-
-
-{{ $input := dict "bibfiles" $bibfiles "search" true }}
-{{ partial "biblio.html" $input }}  
-
+  <h1>{{ .Title }}</h1>
+  {{ partial "biblio.html" . }}
 {{ end }}

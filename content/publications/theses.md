@@ -1,5 +1,5 @@
 ---
-title: "Publications - theses"
+title: "Msc and PhD Theses"
 params: 
   bibfiles: 
    - "bibfiles/theses.bib"

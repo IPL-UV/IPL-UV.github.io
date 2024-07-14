@@ -68,7 +68,7 @@ theme = "isp_uv"
 
 [[menu.main]]
   name = "Publications"
-  url = "/publications/"
+    url = "/publications/journals/"
   weight = 6
   [[menu.main]]
     parent = "Publications"
