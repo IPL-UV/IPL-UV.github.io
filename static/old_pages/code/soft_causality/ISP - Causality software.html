@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)https://isp.uv.es/soft_causality.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+ <meta name="description" content="">
+ <meta name="author" content="">
+ <link rel="icon" href="https://isp.uv.es/images/favicon.ico">
+ <title>ISP - Causality software</title>
+ <!-- Bootstrap core CSS -->
+ <link href="./ISP - Causality software_files/bootstrap.min.css" rel="stylesheet">
+ <!-- Bootstrap theme -->
+ <link href="./ISP - Causality software_files/bootstrap-theme.min.css" rel="stylesheet">
+ <!-- Custom styles for this template -->
+ <!-- <link href="theme.css" rel="stylesheet"> -->
+ <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+ <!--[if lt IE 9]>
+ <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+ <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+ <![endif]-->
+ <!-- Local styles -->
+ <link href="./ISP - Causality software_files/styles.css" rel="stylesheet">
+ </head>
+
+<body role="document" style="padding-top: 50px;">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+ <div class="container">
+ <div class="navbar-header">
+ <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+ <span class="sr-only">Toggle navigation</span>
+ <span class="icon-bar"></span>
+ <span class="icon-bar"></span>
+ <span class="icon-bar"></span>
+ </button>
+ <a class="navbar-brand" href="https://isp.uv.es/index.html">ISP</a>
+ </div>
+ <div id="navbar" class="navbar-collapse collapse">
+ <ul class="nav navbar-nav">
+ <li><a href="https://isp.uv.es/people.html">people</a></li>
+ <li class="dropdown">
+ <a href="https://isp.uv.es/research.html" class="dropdown-toggle disabled" data-toggle="dropdown">research<span class="caret"></span></a>
+ <ul class="dropdown-menu">
+            <li><a href="https://isp.uv.es/machine.html">Machine learning</a></li>
+            <li><a href="https://isp.uv.es/neuro.html">Visual neuroscience</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="https://isp.uv.es/visual.html">Visual brain</a></li>
+            <li><a href="https://isp.uv.es/earth.html">Earth science</a></li>
+            <li><a href="https://isp.uv.es/society.html">Social science</a></li>
+ </ul>
+ </li>
+ <li><a href="https://isp.uv.es/projects.html">projects</a></li>
+        <li><a href="https://isp.uv.es/facilities.html">facilities</a></li>
+ <li class="dropdown">
+ <a href="https://isp.uv.es/papers.html" class="dropdown-toggle disabled" data-toggle="dropdown">publications<span class="caret"></span></a>
+ <ul class="dropdown-menu">
+ <li><a href="https://isp.uv.es/papers.html">journals</a></li>
+ <li><a href="https://isp.uv.es/conferences.html">conferences</a></li>
+ <li><a href="https://isp.uv.es/books.html">books</a></li>
+ <li><a href="https://isp.uv.es/talks.html">talks</a></li>
+ <li role="separator" class="divider"></li>
+ <li><a href="https://isp.uv.es/techreports.html">technical reports</a></li>
+ <li><a href="https://isp.uv.es/theses.html">theses</a></li>
+ </ul>
+ </li>
+ <li class="active"><a href="https://isp.uv.es/software.html">code</a></li>
+ <li><a href="https://isp.uv.es/data.html">data</a></li>
+ <li><a href="https://isp.uv.es/seminars.html">seminars</a></li>
+ <li><a href="https://isp.uv.es/courses.html">courses</a></li>
+ <li><a href="https://isp.uv.es/collaborators.html">collaborators</a></li>
+ <li><a href="https://isp.uv.es/ispnews.html">news</a></li>
+ <li><a href="https://isp.uv.es/contact.html">contact</a></li>
+
+ </ul>
+ </div><!--/.nav-collapse -->
+ </div>
+</nav>
+
+<div class="container">
+
+<h3><b>Causal discovery</b></h3>
+
+<div class="panel panel-default">
+<div class="panel-heading">
+<h1 class="panel-title"></h1><h4><b>Additive noise model with dependence gradients</b></h4>
+</div>
+<div class="panel-body">
+<div class="col-md-2">
+<a href="http://isp.uv.es/code/shsic.zip"> <img src="./ISP - Causality software_files/shsic.png" height="121" width="160"> </a>
+</div>
+<div class="col-md-6">
+<h5><p class="text-justify">Kernel dependence measures yield accurate estimates of nonlinear relations between random variables, and they are also endorsed with solid theoretical propertie and convergence rates. Besides, the empirical estimates are easy to compute in closed form just involving linear algebraoperations. However, they are hampered by two important problems:the high computational cost involved, as two kernel matrices of the sam-ple size have to be computed and stored, and the interpretability of themeasure, which remains hidden behind the implicit feature map. We hereaddress these two issues. We introduce the Sensitivity Maps (SMs) for theHilbert-Schmidt independence criterion (HSIC). Sensitivity maps allow usto explicitly analyze and visualize the relative relevance of both examplesand features on the dependence measure. We also present the randomizedHSIC (RHSIC) and its corresponding sensitivity maps to cope with largescale problems. We build upon the framework of random features andthe Bochner's theorem to approximate the involved kernels in the canon-ical HSIC. The power of the RHSIC measure scales favourably with thenumber of samples, and it approximates HSIC and the sensitivity mapsefficiently. Convergence bounds of both the measure and the sensitivitymap are also provided. Our proposal is illustrated in synthetic examples,and challenging real problems of dependence estimation, feature selection,and causal inference from empirical data.</p>
+</h5>
+</div>
+<div class="col-md-4">
+<h6><b>References</b><br>
+<li> Sensitivity maps of the Hilbert–Schmidt independence criterion
+Adrián Pérez-Suay and Gustau Camps-Valls
+Applied Soft Computing 2017 </li>
+<li> Causal Inference in Geoscience and Remote Sensing from Observational Data
+P\'erez-Suay, A. and Camps-Valls, G.
+IEEE Transactions on Geoscience and Remote Sensing 57 (3) :1502-1513, 2019 </li>
+</h6>
+</div>
+</div>
+</div>
+
+<div class="panel panel-default">
+<div class="panel-heading">
+<h1 class="panel-title"></h1><h4><b>Fair Kernel Learning</b></h4>
+</div>
+<div class="panel-body">
+<div class="col-md-2">
+<a href="https://isp.uv.es/code/regression/FairKernelLearning2017.zip"> <img src="./ISP - Causality software_files/FairKernelLearning2017.jpg" height="121" width="140"> </a>
+</div>
+<div class="col-md-6">
+<h5>
+<p class="text-justify">New social and economic activities massively exploit big data and machine learning algorithms to do inference on people's lives. Applications include automatic curricula evaluation, wage determination, and risk assessment for credits and loans. Recently, many governments and institutions have raised concerns about the lack of fairness, equity and ethics in machine learning to treat these problems. It has been shown that not including sensitive features that bias fairness, such as gender or race, is not enough to mitigate the discrimination when other related features are included. Instead, including fairness in the objective function has been shown to be more efficient.
+
+We present novel fair regression and dimensionality reduction methods built on a previously proposed fair classification framework. Both methods rely on using the Hilbert Schmidt independence criterion as the fairness term. Unlike previous approaches, this allows us to simplify the problem and to use multiple sensitive variables simultaneously. Replacing the linear formulation by kernel functions allows the methods to deal with nonlinear problems. For both linear and nonlinear formulations the solution reduces to solving simple matrix inversions or generalized eigenvalue problems. This simplifies the evaluation of the solutions for different trade-off values between the predictive error and fairness terms. We illustrate the usefulness of the proposed methods in toy examples, and evaluate their performance on real world experiments of predicting income using gender and/or race discrimination as sensitive variables.
+</p></h5>
+</div>
+<div class="col-md-4">
+<h6><b>References</b><br>
+<li> Fair Kernel Learning. Adrián Pérez-Suay, Valero Laparra, Gonzalo Mateo-García, Jordi Muñoz-Marí, Luis Gómez-Chova and Gustau Camps-Valls. ECML PKDD 2017 (Accepted)</li>
+</h6>
+</div>
+</div>
+</div>
+
+<div class="panel panel-default">
+<div class="panel-heading">
+<h1 class="panel-title"></h1><h4><b>Structural equation heteroscedastic and warped GP models </b></h4>
+</div>
+<div class="panel-body">
+<div class="col-md-2">
+<a href="https://isp.uv.es/code/regression/msvr-2-1.zip"> <img src="./ISP - Causality software_files/warpedGP.png" height="121" width="160"> </a>
+</div>
+<div class="col-md-6">
+<h5>
+<p class="text-justify">We introduce warped Gaussian process (WGP) regression in remote sensing applications. WGP models output observations as a parametric nonlinear transformation of a GP. The parameters of such a prior model are then learned via standard maximum likelihood. We show the good performance of the proposed model for the estimation of oceanic chlorophyll content from multispectral data, vegetation parameters (chlorophyll, leaf area index, and fractional vegetation cover) from hyperspectral data, and in the detection of the causal direction in a collection of 28 bivariate geoscience and remote sensing causal problems. The model consistently performs better than the standard GP and the more advanced heteroscedastic GP model, both in terms of accuracy and more sensible confidence intervals.</p>
+</h5>
+</div>
+<div class="col-md-4">
+<h6><b>References</b><br>
+<li> Warped Gaussian Processes in Remote Sensing Parameter Estimation and Causal Inference
+Mateo, A. and Munoz-Mari, J. and Perez-Suay, A. and Camps-Valls, G.
+IEEE Geoscience and Remote Sensing Letters 15 (11) :1647-1651, 2018 </li>
+<li>A Survey on Gaussian Processes for Earth Observation Data Analysis: A Comprehensive Investigation
+Camps-Valls, G. and Verrelst, J. and Muñoz-Marí, J. and Laparra, V. and Mateo-Jimenez, F. and Gomez-Dans, J.
+IEEE Geoscience and Remote Sensing Magazine 2016 </li>
+</h6>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="panel panel-default">
+<div class="panel-heading">
+<h1 class="panel-title"></h1><h4><b>Causeme: a web platform for causal models comparison</b></h4>
+</div>
+<div class="panel-body">
+<div class="col-md-2">
+<a href="https://causeme.uv.es/"> <img src="./ISP - Causality software_files/causeme.svg" height="160" width="160"> </a>
+</div>
+<div class="col-md-6">
+<h5>
+<p class="text-justify">
+
+Detecting causal associations in time series datasets is a key challenge for novel insights into complex dynamical systems such as the Earth system or the human brain. Interactions in such systems present a number of major challenges for causal discovery techniques and it is largely unknown which methods perform best for which challenge.
+
+The CauseMe platform provides ground truth benchmark datasets featuring different real data challenges to assess and compare the performance of causal discovery methods. The available benchmark datasets are either generated from synthetic models mimicking real challenges, or are real world data sets where the causal structure is known with high confidence. The datasets vary in dimensionality, complexity and sophistication.
+</p>
+</h5>
+</div>
+<div class="col-md-4">
+<h6><b>References</b><br>
+<li> Inferring causation from time series with perspectives in Earth system sciences
+Runge, J. and Bathiany, S. and Bollt, E. and Camps-Valls, G. and Coumou, D. and Deyle, E. and Clymour, C. and Kretschmer, M. and Mahecha, M. and Muñoz-Mar\'i, J. and van Nes, E. and Peters, J. and Quax, R. and Reichstein, M. and Scheffer, M. and Sch\"olkopf, B. and Spirtes, P. and Sugihara, G. and Sun, J. and Zhang, K. and Zscheischler, J.
+Nature Communications (2553) :1-13, 2019 </li>
+<li> Causal discovery in Earth system science: State-of-the-art and a new Causality Challenge platform
+Runge, J. and Munoz-Marí, J. and Camps-Valls, G.
+AGU Fall Meeting, Washington, USA 2018 </li>
+</h6>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="panel panel-default">
+<div class="panel-heading">
+<h1 class="panel-title"></h1><h4><b>Cross-kernel Granger causality</b></h4>
+</div>
+<div class="panel-body">
+<div class="col-md-2">
+<a href="https://isp.uv.es/code/xkgc.zip"> <img src="./ISP - Causality software_files/xkgc.png" height="140" width="160"> </a>
+</div>
+<div class="col-md-6">
+<h5>
+<p class="text-justify">Among the many existing approaches, Granger causality (GC) has been perhaps the most widely used approach. Noting its strong linearity and stationarity assumptions, several nonlinear alternatives to GC have been proposed based on kernel methods. Using a family of cross-information kernel functions that account for nonlinear cross-relations between the involved variables we generalize the non-linear relations. Adding new kernel function to the cross-information we can addresses the issue of dealing with non-stationary processes.</p>
+</h5>
+</div>
+<div class="col-md-4">
+<h6><b>References</b><br>
+<li>D. Bueso, M. Piles and G. Camps-Valls, "Cross-Information Kernel Causality: Revisiting global teleconnections of ENSO over soil moisture and vegetation" (2018). Proceedings of the 9th International Workshop on Climate Informatics: CI 2019 </li>
+<li> Revisiting impacts of MJO on soil moisture: a causality perspective
+Diego Bueso, Maria Piles, Gustau Camps-Valls
+AGU Fall Meeting, San Francisco, USA 2019 </li>
+</h6>
+</div>
+</div>
+</div>
+
+
+
+<div class="panel panel-default">
+<div class="panel-heading">
+<h1 class="panel-title"></h1><h4><b>A Shiny app for SEM intercomparison</b></h4>
+</div>
+<div class="panel-body">
+<div class="col-md-2">
+<a href="https://emdiazsal.shinyapps.io/dependenceMeasures2/"> <img src="./ISP - Causality software_files/shiny.png" height="111" width="160"> </a>
+</div>
+<div class="col-md-6">
+<h5>
+<p class="text-justify">Independence and conditional independence tests are a feature of many causal discovery methods. Constraint based methods such as the PC algorithm rely on conditional independence tests while asymmetry based methods such as Additive Noise Models rely on (unconditional) independence tests. Kernel based measures such as the Hilbert-Schmidt independence criterion (HSIC) or the Kernel-based Conditional Independence test (KCI) provide a way of quantifying (possibly non-linear) dependencies. However, the robustness of these measures to kernel parameters is not always clear. Since independence testing is fundamentally an usupervised learning problem, heuristics such as the median distance for the rbf kernel lengthscale are generally prescribed in the literature. In this shiny app we explore the robustness of HSIC based independence tests to kernel parameters and to data generated according to different mechanisms (linear/non-linear, additive/non-additive, noisy/deterministic, etc).</p>
+</h5>
+</div>
+<div class="col-md-4">
+<h6><b>References</b><br>
+<li>"A Shiny app for SEM intercomparison." Emiliano Diaz, Tech rep. ISP/2019/012A. Universitat de Valencia, 2019 </li>
+</h6>
+</div>
+</div>
+</div>
+
+
+
+
+
+<div class="panel panel-default">
+<div class="panel-heading">
+<h1 class="panel-title"></h1><h4><b>Unbiased convergent cross-mapping </b></h4>
+</div>
+<div class="panel-body">
+<div class="col-md-2">
+<a href="https://isp.uv.es/code/causality/uCCM.zip"> <img src="./ISP - Causality software_files/Lorenz_attractor.svg" height="111" width="160"> </a>
+</div>
+<div class="col-md-6">
+<h5>
+<p class="text-justify">Granger causality approaches have problems in nonstationary and nonlinear scenarios, but also when the relation among variables is thought to be deterministic, especially in dynamic systems with weak to moderate coupling. This is because separability is not satisfied in such systems. Actually, in deterministic dynamic systems (even noisy ones), if X is a cause for Y, information about X will be redundantly present in $Y$ itself and cannot formally be removed from the causative variables a consequence of Takens' theorem. The convergent cross-mapping (CCM) algorithm is a nonlinear state-space method which reconstructs the variable's state spaces (M_x, M_y) using time embeddings, and concludes on X-&gt;Y if points on ${\bf M}_x$ can be predicted using nearest neighbors in M_y more accurately as more points are used. However, CCM is very sensitive to noise and time series length. We propose several techniques of bootstrap resampling, Markov chain Monte Carlo (MCMC) and adaptive importance sampling (AIS) to alleviate the problem.</p>
+</h5>
+</div>
+<div class="col-md-4">
+<h6><b>References</b><br>
+<li> Convergent cross-mapping for causal Inference in carbon and water fluxes processes. Álvaro Moreno Martínez, Emiliano Díaz, Adrian Pérez Suay, Jose Adsuara, Valero Laparra, María Piles, Jordi Muñoz Marí, Steven W Running, and Gustau Camps Valls. EGU General Assembly, Geophysical Research Abstracts, Vol. 21 2019</li>
+<li>Inferring causal graphs from observational long-term carbon and water fluxes records. Gustau Camps-Valls, Emiliano Diaz, Jose Adsuara, Maria Piles, Alvaro Moreno, Pierre Gentine, Martin Jung, Markus Reichstein and Steven W Running. AGU Fall Meeting, San Francisco, USA 2019 </li>
+</h6>
+</div>
+</div>
+</div>
+
+
+
+<div class="panel panel-default">
+<div class="panel-heading">
+<h1 class="panel-title"></h1><h4><b>Conditional independence test with Gaussianization</b></h4>
+</div>
+<div class="panel-body">
+<div class="col-md-2">
+<a href="https://isp.uv.es/code/regression/demoSemiSVR.zip"> <img src="./ISP - Causality software_files/rbig.png" height="111" width="160"> </a>
+</div>
+<div class="col-md-6">
+<h5>
+<p class="text-justify">TODO.</p>
+</h5>
+</div>
+<div class="col-md-4">
+<h6><b>References</b><br>
+<li> </li>
+<li> </li>
+<li> </li>
+</h6>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+<div class="panel panel-default">
+<div class="panel-heading">
+<h1 class="panel-title"></h1><h4><b>A family for kernel conditional independence measures</b></h4>
+</div>
+<div class="panel-body">
+<div class="col-md-2">
+<a href="https://isp.uv.es/code/causality/generalizedKCDC.zip"> <img src="./ISP - Causality software_files/conditional.png" height="121" width="140"> </a>
+</div>
+<div class="col-md-6">
+<h5>
+<p class="text-justify">TODO</p>
+</h5>
+</div>
+<div class="col-md-4">
+<h6><b>References</b><br>
+<li> </li>
+</h6>
+</div>
+</div>
+</div>
+
+
+
+
+</div><!-- /.container -->
+ <!-- Bootstrap core JavaScript
+ ================================================== -->
+ <!-- Placed at the end of the document so the pages load faster -->
+ <script src="./ISP - Causality software_files/jquery-1.12.4.min.js"></script>
+ <script src="./ISP - Causality software_files/bootstrap.min.js"></script>
+
+
+
+</body></html>
