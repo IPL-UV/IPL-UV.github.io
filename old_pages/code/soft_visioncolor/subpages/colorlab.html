@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)https://isp.uv.es/code/visioncolor/colorlab.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://isp.uv.es/images/favicon.ico">
+    <title>ISP - Software: ColorLab</title>
+    <!-- Bootstrap core CSS -->
+    <link href="./colorlab_files/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="./colorlab_files/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <!-- <link href="theme.css" rel="stylesheet"> -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Local styles -->
+    <link href="./colorlab_files/styles.css" rel="stylesheet">
+  </head>
+
+<body role="document" style="padding-top: 50px;">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://isp.uv.es/index.html">ISP</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="http://isp.uv.es/people.html">people</a></li>
+        <li class="active dropdown">
+          <a href="http://isp.uv.es/research.html" class="dropdown-toggle disabled" data-toggle="dropdown">research<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="http://isp.uv.es/machine.html">Machine learning</a></li>
+            <li class="active"><a href="http://isp.uv.es/neuro.html">Visual neuroscience</a></li>
+    <li role="separator" class="divider"></li>
+            <li><a href="http://isp.uv.es/improc.html">Image processing</a></li>
+            <li><a href="http://isp.uv.es/remote.html">Remote sensing</a></li>
+            <li><a href="http://isp.uv.es/geoscience.html">Geosciences</a></li>
+          </ul>
+        </li>
+        <li><a href="http://isp.uv.es/projects.html">projects</a></li>
+        <li class="dropdown">
+          <a href="http://isp.uv.es/papers.html" class="dropdown-toggle disabled" data-toggle="dropdown">publications<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="http://isp.uv.es/papers.html">journals</a></li>
+            <li><a href="http://isp.uv.es/conferences.html">conferences</a></li>
+            <li><a href="http://isp.uv.es/books.html">books</a></li>
+            <li><a href="http://isp.uv.es/talks.html">talks</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="http://isp.uv.es/techreports.html">technical reports</a></li>
+            <li><a href="http://isp.uv.es/theses.html">theses</a></li>
+            <li><a href="http://isp.uv.es/press.html">press</a></li>
+          </ul>
+        </li>
+        <li><a href="http://isp.uv.es/software.html">software</a></li>
+        <li><a href="http://isp.uv.es/seminars.html">seminars</a></li>
+        <li><a href="http://isp.uv.es/courses.html">courses</a></li>
+        <li><a href="http://isp.uv.es/collaborators.html">collaborators</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+<div class="row" id="Top">
+<hr>
+</div>
+
+<div class="container">
+
+<div class="row"> <!------------------------------ TITLE --------------------------------------->
+
+        <div class="col-md-2">
+
+        </div>
+
+        <div class="col-md-6">
+         <p><left></left></p><h1><span class="label label-info">ColorLab: </span></h1><p></p>
+         <p><left></left></p><h2><span class="label label-info"><span style="font-style: italic;">The Matlab toolbox for Colorimetry and Color Vision</span></span></h2><p></p><br>
+
+                        <p style="color:rgb(0,150,200)" align="center"><big><strong><span style="font-style: italic;">Jesús Malo  &amp;  Maria José Luque</span></strong><br>
+                        jesus.malo@uv.es<br>
+                        <!---------------  <a href="paper/Plos_Orient_maps_iteration2.pdf"> </a> ------------------->
+                        (c) Universitat de València 1997 - 2018</big><br><br>
+
+
+        </p></div>
+
+        <div class="col-md-3">
+
+        </div>
+ </div>
+
+<div class="row"> <!--------------------------------------- PICTURE - ABSTRACT - INDEX --------------------------------------------->
+
+
+        <div class="col-md-2">
+              <div class="container" style="width: 145%;text-align: left; margin-top: -20%; margin-left: -40%; margin-right: auto;">
+              <img alt="Jesus" class="img-responsive" src="./colorlab_files/colorlab1.JPG">
+              <p align="justify"><small>Samples of the Munsell Book of Color illuminated using CIE standard illuminants D65 (top) and A (bottom).
+               ColorLab comes with many spectral reflectances and spectral radiances of standard sources and objects.
+               These can be used as input data to solve the corresponding pair problem [<a href="http://isp.uv.es/papers/Neco_accepted_2012.pdf">Neur.Comp.12</a>, <a href="http://isp.uv.es/papers/Gutmann_PLOS_ONE_2014.pdf">PLoS ONE 14</a>].</small></p><br><br><br><br><br>
+              </div>
+        </div>
+
+        <div class="col-md-6">
+
+        <!----- <p align="justify"> <strong>Vision</strong> is the ability to interpret the surrounding environment by analyzing the measurements drawn by imaging systems.
+                                 This ability is particularly impressive in <span style="font-style: italic;">humans</span> when compared to the current state of the art in <span style="font-style: italic;">computers</span> .<br>
+                                 The study of all the phenomena related to <span style="font-style: italic;">vision in biological systems</span> (and particularly in humans) is usually referred to as <strong>Vision Science</strong>.
+                                 It addresses a variety of issues ranging from the formation of the visual signal (e.g. the Physics of the imaging process that includes Radiometry and <strong>Physiological Optics</strong>),
+                                 to the analysis of the visual signal (of interest for Neuroscience and Psychology).
+                                 This analysis involves the extraction of visual primitives through basic computations in the retina-cortex neural pathway and the information processing leading to scene descriptors of higher abstraction level (<a href="http://www.scholarpedia.org/article/Models_of_visual_cortex">see elsewhere</a>). These problems may be addressed from a <span style="font-style: italic;">mechanistic perspective</span> focused on describing the empirical behavior of the system; or from a <span style="font-style: italic;">normative perspective</span> that looks for the functional reasons (organization principles) that explain the behavior. While the mechanistic perspective is based in experimental recordings from <strong>Psychophysics</strong> and <strong>Neurophysiology</strong>, the normative perspective is based on the study of <strong>Image Statistics</strong> and the use of concepts from <strong>Information Theory</strong> and <strong>Statistical Learning</strong>.
+                                 The latter is known as the <a href="https://en.wikipedia.org/wiki/Efficient_coding_hypothesis">Efficient Coding Hypothesis</a>.<br>
+                                 Over the years we have done original work in <span style="font-style: italic;">all</span> the above subdisciplines related to (low-level) Vision Science. Now we are shifting to more abstract visual functions.</p>
+            ----------------->
+
+            <p align="justify"> <strong>ColorLab</strong>  is a color computation and visualization toolbox to be used in the MATLAB environment.  <strong>ColorLab</strong> is intended to deal with color in general-purpose quantitative colorimetric applications as color image processing and psychophysical experimentation.<br>
+
+ <strong>ColorLab</strong> uses colorimetrically meaningful representations of color and color images (tristimulus values, chromatic coordinates and luminance, or, dominant wavelength, purity and luminance), in any primaries system of the tristimulus colorimetry (including CIE standards as CIE XYZ or CIE RGB).  <strong>ColorLab</strong> relates this variety of colorimetric representations to the usual device-dependent discrete-color representation, i.e. it solves the problem of displaying a colorimetrically specified scene in the monitor within the accuracy of the VGA.<br>
+
+A number of other interesting color representations are also provided, as CIE uniform color spaces (as CIE Lab and CIE Luv, opponent color representations based on advanced color vision models, and color appearance representations (RLab, LLab, SVF and CIECAMs). All these representations are invertible, so the result of image processing made in these colorimetrically meaningful representations can always be inverted back to the tristimulus representation at hand, and be displayed.
+ <strong>ColorLab</strong> includes useful visualization routines to represent colors in the tristimulus space or in the chromatic diagram of any color basis, as well as an advanced vector quantization scheme for color palette design.
+An extensive color data base is also included, with the CIE 1931 color matching functions, reflectance data of 1250 chips from the Munsell Book of Color, McAdam ellipses, normalized spectra of a number of standard CIE illuminants, matrices to change to a number of tristimulus representations, and calibration data of an ordinary CRT monitor.<br>
+
+The standard tools in <strong>ColorLab</strong> (and in <a href="http://isp.uv.es/code/visioncolor/vistalab.html"><strong>VistaLab</strong></a>) are the necessary building blocks to develop more sophisticated vision models included in the dedicated site <a href="http://isp.uv.es/code/visioncolor/vistamodels.html"><strong>VistaModels</strong></a>.
+</p><br>
+
+
+        <div class="col-md-12" style="width: 100%;text-align: left; margin-left: -2%; margin-right: auto;">
+                 <div class="list-group">
+               <a href="https://isp.uv.es/code/visioncolor/colorlab.html#download" class="list-group-item">
+                        <h4 class="list-group-item-heading" style="color:rgb(255,50,50)"><strong>Download!</strong></h4>
+                                <ul>
+                                  <li>Toolbox</li>
+                                  <li>User Guide</li>
+                                </ul>
+                </a>
+                 <a href="https://isp.uv.es/code/visioncolor/colorlab.html#purity" class="list-group-item">
+                       <h4 class="list-group-item-heading" style="color:rgb(0,150,200)"><strong>Some ColorLab capabilities:</strong> <br> (in any tristimulus space and many color appearance spaces)</h4>
+                       <p align="justify"> Warning!: the examples below will not be quantitatively correct unless the calibration parameters of your screen match the generic parameters used in the compuations. However, you can also use ColorLab to calibrate your monitor!.
+                       </p>
+                 </a>
+                <a href="https://isp.uv.es/code/visioncolor/colorlab.html#purity" class="list-group-item">
+                        <h4 class="list-group-item-heading" style="color:rgb(0,150,200)">Colorfulness edition using the purity</h4>
+                 </a>
+                <a href="https://isp.uv.es/code/visioncolor/colorlab.html#hue" class="list-group-item">
+                        <h4 class="list-group-item-heading" style="color:rgb(0,150,200)">Hue-based segmentation and edition using the dominant wavelength</h4>
+                 </a>
+                <a href="https://isp.uv.es/code/visioncolor/colorlab.html#luminance" class="list-group-item">
+                        <h4 class="list-group-item-heading" style="color:rgb(0,150,200)">Luminance edition (in cd/m2)</h4>
+                 </a>
+                <a href="https://isp.uv.es/code/visioncolor/colorlab.html#illuminant" class="list-group-item">
+                        <h4 class="list-group-item-heading" style="color:rgb(0,150,200)">Changing spectral illumination (standard and used-defined illuminants)</h4>
+                 </a>
+                <a href="https://isp.uv.es/code/visioncolor/colorlab.html#mcadam" class="list-group-item">
+                        <h4 class="list-group-item-heading" style="color:rgb(0,150,200)">Playing with McAdam ellipses and Munsell chips</h4>
+                 </a>
+               <a href="https://isp.uv.es/code/visioncolor/colorlab.html#induction" class="list-group-item">
+                        <h4 class="list-group-item-heading" style="color:rgb(0,150,200)">Non-linear effects: induction, adaptation, and color constancy</h4>
+                 </a>
+               <a href="https://isp.uv.es/code/visioncolor/colorlab.html#download" class="list-group-item">
+                        <h4 class="list-group-item-heading" style="color:rgb(255,50,50)"><strong>Download!</strong></h4>
+                                <ul>
+                                  <li>Toolbox</li>
+                                  <li>User Guide</li>
+                                </ul>
+                </a>
+              <a href="https://isp.uv.es/code/visioncolor/colorlab.html#references" class="list-group-item">
+                        <h4 class="list-group-item-heading" style="color:rgb(0,150,200)"><strong>Citation and References</strong></h4>
+                 </a>
+        </div>
+       </div>
+
+       </div>
+
+       <div class="col-md-3">  <!--------- esta columna esta preparada para meter 2 columnas -con el container y los co-md-6 pero al final la columna derecha esta sin usar y el tama�o esta a lo cerdo- -------->
+
+               <div class="container" style="width: 120%;text-align: left; margin-left: 30%; margin-right: auto;">
+               <div class="row">
+               <div class="col-md-6">
+
+                      <div class="container" style="width: 130%;text-align: right; margin-left: -15%; margin-right: auto;">
+                         <div class="row">
+                               <div class="col-md-12" style="width: 110%;text-align: right; margin-top: -15%; margin-left: 10%; margin-right: auto;">
+
+                                       <div class="col-md-12" style="width: 250%;text-align: right; margin-left: -55%; margin-right: auto;">
+                                             <img class="img-responsive" alt="" src="./colorlab_files/colorlab2.JPG">
+                                             <p align="justify" ;style="margin-top: -0%;text-align: left; margin-left: 15%"><small>Corresponding pairs predicted with standard CIELab and CIECAM (implemented in Colorlab, left) are compared with our statistically-based algorithms: the nonlinear Sequential Principal Curves Analysis (top-right) [<a href="http://isp.uv.es/papers/Neco_accepted_2012.pdf">Neur.Comp.12</a>], and the linear Higher Order Canonical Correlation Analysis (bottom-right) [<a href="http://isp.uv.es/papers/Gutmann_PLOS_ONE_2014.pdf">PLoS ONE 14</a>].</small>.</p><br>
+                                       </div>
+
+                                             <!-- <p style="margin-top: 0%;text-align: left; margin-left: -0%"><small>Motion vision models [<a href="http://isp.uv.es/papers/vss_poster.eps">J.Vis.01</a>,  ]</small></p><br> -->
+                                        </div>
+
+                                </div>
+                         </div>
+                     </div>
+
+               </div>
+               <div class="col-md-6">
+
+
+
+               </div>
+               </div>
+               </div>
+
+       </div>
+</div>
+
+<!-- %%%%%%%%%%%%%%%%%%%%% CUANDO PASE EL CHAPARRON VUELVE A INTRODUCIR EL NIVEL <h2> EN VERDE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+<div class="row">
+
+        <div class="col-md-3">
+
+        </div>
+
+        <div class="col-md-6">
+
+       <hr id="purity"><br><br>
+       <a href="https://isp.uv.es/code/visioncolor/colorlab.html#Top"><small>Back to top</small></a>
+       <p align="justify"></p><h2><span class="label label-success">Colorfulness edition using the purity</span></h2><p></p>
+
+       <p align="justify">Colorimetric Purity and Excitation Purity are the descriptors of colorfulness in Tristimulus Colorimetry. Both of them are available in ColorLab. In the example below we analyze the colors of an image in the CIE XYZ system and reduce the excitation purity by a constant factor leaving the luminace and the dominant wavelength unaltered in order to obtain an image with reduced colorfulness. Other posibilities to obtain this effect with ColorLab include using any other tristimulus representations or changing the colorfulness descriptors in a number of available non-linear color appearance models.</p>
+
+       <table style="width: 70%; text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+       <tbody>
+       <tr align="justify">
+       <td colspan="2" rowspan="1">
+       <p align="justify"><strong><span style="color:rgb(0,160,0)">Desaturating clock: </span></strong><small>In this example the digital true-color image is converted into tristimulus values, chromatic coordinates and luminance, and finally, dominant wavelength, excitation purity and luminance. A constant factor is applied to the purity (see the contraction of chromatic coordinates in the diagram) and the palette is inverted back into digital counts so that it can be displayed.</small></p></td></tr>
+
+       <tr align="center"><td colspan="2" rowspan="1">
+       <img class="img-responsive" alt="a" src="./colorlab_files/colorfulness.JPG">
+       </td>
+       </tr>
+
+       </tbody>
+       </table>
+       <hr id="hue"><br><br>
+<a href="https://isp.uv.es/code/visioncolor/colorlab.html#Top"><small>Back to top</small></a>
+       <p align="justify"></p><h2><span class="label label-success">Hue-based segmentation and edition using the dominant wavelength</span></h2><p></p>
+
+       <p align="justify">The Dominant Wavelength is the descriptor of hue in Tristimulus Colorimetry. In the example below we first segment the flowers by selecting a range of wavelenghts (in the CIE XYZ chromatic diagram) and then, we modify their hue by applying a rotation to the chromatic coordinates. Other posibilities to obtain this effect with ColorLab include using any other tristimulus representation or changing (rotating) the hue descriptor in a number of available non-linear color appearance models.</p>
+
+       <table style="width: 70%; text-align: justify; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+       <tbody>
+       <tr align="justify">
+       <td colspan="2" rowspan="1">
+       <p align="justify"><strong><span style="color:rgb(0,160,0)">Artificial flowers: </span></strong><small>Red flowers are segmented by selecting the colors in a certain range of dominant wavelengths. Rotation of the corresponding chromatic coordinates leads to a series of artificial flowers.</small></p></td></tr>
+       <tr><td style="text-align: right;">
+       <img class="img-responsive" alt="a" src="./colorlab_files/hue1.JPG">
+       </td>
+       <td style="text-align: justify;">
+       <img class="img-responsive" alt="a" src="./colorlab_files/hue2.JPG">
+       </td>
+       </tr>
+
+       </tbody>
+       </table>
+       <hr id="luminance"><br><br>
+<a href="https://isp.uv.es/code/visioncolor/colorlab.html#Top"><small>Back to top</small></a>
+       <p align="justify"></p><h2><span class="label label-success">Luminance edition in cd/m2</span></h2><p></p>
+
+       <p align="justify">The Luminance is the descriptor of brightness in Tristimulus Colorimetry. In the example below we reduce the luminance by reducing the lenght of the tristimulus vectors by a constant factor in an arbitrary (RBG) tristimulus space (note how the chromatic diagram is twisted). Of course the chromatic coordinates remain the same (as can be seen in the figures below). Other posibilities to obtain this effect with ColorLab include using any other tristimulus representation or changing the brightness descriptor in a number of available non-linear color appearance models.</p>
+
+       <table style="width: 70%; text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+       <tbody>
+       <tr align="justify">
+       <td colspan="2" rowspan="1">
+       <p align="justify"><strong><span style="color:rgb(0,160,0)">Marilyn in dim light: </span></strong><small>The reduction in the length of the tristimulus does not change the intersection with the chromatic diagram.</small></p></td></tr>
+
+       <tr align="center"><td colspan="2" rowspan="1">
+       <img class="img-responsive" alt="a" src="./colorlab_files/luminance.JPG">
+       </td>
+       </tr>
+       </tbody>
+       </table>
+       <hr id="illuminant"><br><br>
+<a href="https://isp.uv.es/code/visioncolor/colorlab.html#Top"><small>Back to top</small></a>
+       <p align="justify"></p><h2><span class="label label-success">Changing the spectral illumination (standard and user defined illuminants)</span></h2><p></p>
+
+       <p align="justify">ColorLab is able to deal with the spectro-radiometric description of color images or estimate it from their (usual) colorimetric description by using the Munsell reflectances data set. In this way, the effect of changing the spectral radiance of the illuminant may be simulated by obtaining the new tristimulus values with the new illuminant. In the example below, each pixel of the original image is assumed to be a patch with a given (or estimated) reflectance under white light illumination. The user may define a different illuminant (in this case a purple radiation) and apply it to the reflectances, thus obtaining the new image and the new (tristimulus) colors. Of course, this can be done in any tristimulus representation. But, better than that, if non-linear color appearance models are used together with the corresponding pair procedure
+       [<a href="http://isp.uv.es/papers/josa_04.pdf">JOSA A 04</a>], color constancy may be predicted!.</p>
+
+       <table style="width: 70%; text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+       <tbody>
+       <tr align="justify">
+       <td colspan="2" rowspan="1">
+       <p align="justify"><strong><span style="color:rgb(0,160,0)">The pink room key: </span></strong><small>Digital images can be turned into spectral arrays and these can be illuminated with customized light.</small></p></td></tr>
+
+       <tr align="center"><td colspan="2" rowspan="1">
+       <img class="img-responsive" alt="a" src="./colorlab_files/irradiance.JPG">
+       </td>
+       </tr>
+
+       </tbody>
+       </table>
+       <hr id="mcadam"><br><br>
+<a href="https://isp.uv.es/code/visioncolor/colorlab.html#Top"><small>Back to top</small></a>
+       <p align="justify"></p><h2><span class="label label-success">Playing with McAdam ellipses and Munsell chips</span></h2><p></p>
+
+       <p align="justify">Now you can easily check the non-uniformity of the tristimulus space in your computer screen! As ColorLab comes with the McAdam ellipses database and the Munsell chips database, its color reproduction ability allows you to generate the right colors to prove that your discrimination is not Euclidean.<br>
+In the first example below, we distort two given colors (green and blue) in by a constant factor in the chromatic diagram in the principal directions of the ellipsoids. Despite the eventual inaccuracies introduced by the use of a generic calibration, it is clear that blues are more different each other (the ellipse is smaller!) and the distortion in every case is more noticeable when it is done in the short direction of the ellipse. <br>
+The second example shows a set of Munsell chips of different chroma which are chosen to depart each other a constant number of JNDs.</p>
+
+       <table style="width: 70%; text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+       <tbody>
+       <tr align="justify">
+       <td colspan="2" rowspan="1">
+       <p align="justify"><strong><span style="color:rgb(0,160,0)">Color discrimination (McAdam ellipses, top):  </span></strong><small>Bigger discrimination in the blue-purple region than in the green region. Anisotropic JNDs in color is an example of the MAximum Differentiation (MAD) concept [<a href="http://isp.uv.es/papers/malo15a-reprint.pdf"> Malo &amp; Simoncelli SPIE 15</a>].</small>
+       <strong><span style="color:rgb(0,160,0)">Uniformly distributed colors (Munsell chips, bottom):  </span></strong><small>Constant perceptual differences in Munsell chips imply they distribute in ellipsoids around the white point similarly to the corresponding McAdam ellipse.</small></p></td></tr>
+
+       <tr align="center"><td colspan="1" rowspan="1">
+       <img class="img-responsive" alt="a" src="./colorlab_files/mcadam.JPG">
+       </td>
+       </tr>
+
+       </tbody>
+       </table>
+       <hr id="induction"><br><br>
+<a href="https://isp.uv.es/code/visioncolor/colorlab.html#Top"><small>Back to top</small></a>
+       <p align="justify"></p><h2><span class="label label-success">Chromatic induction in LLab</span></h2><p></p>
+
+       <p align="justify">The perception of a test is modified by the stimuli in the surround. This is referred to as chromatic induction. In the example below, the (physically constant) gray test in the center changes its hue to blueish as the surround gets more yellow. Non-linear color appearance models are required to understand this effect.</p>
+
+       <table style="width: 70%; text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+       <tbody>
+       <tr align="center"><td colspan="1" rowspan="1" style="width: 70%;&gt;
+       &lt;img class=" img-responsive"="" alt="a" src="color1.JPG">
+       </td>
+       </tr>
+       </tbody>
+       </table>
+
+       <table style="width: 70%; text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+       <tbody>
+       <tr align="justify">
+       <td colspan="2" rowspan="1">
+       <p align="justify"><strong><span style="color:rgb(0,160,0)">Prediction of induced color with LLab: </span></strong><small> the Llab non-linear color representation was used to compute the corresponding colors of the central test in a gray surround. The results are shown in the CIE xy diagram. Note that as the surround increases the colorfulness, an oposite reaction is induced in the test. This numerical result was used to generate a set of different stimuli in a constant gray background giving rise to the same perception as the central test on a changing background (see below).</small></p></td></tr>
+
+       <tr align="center"><td colspan="2" rowspan="1">
+       <img class="img-responsive" alt="a" src="./colorlab_files/color_junto.JPG">
+       </td>
+
+       </tr></tbody>
+       </table>
+       <hr id="download"><br><br>
+<a href="https://isp.uv.es/code/visioncolor/colorlab.html#Top"><small>Back to top</small></a>
+      <p align="justify"></p><h2><span class="label label-danger">Download ColorLab!</span></h2><p></p>
+
+
+             <ul>
+             <li> <strong>Matlab Toolbox:  <a href="http://isp.uv.es/code/visioncolor/Colorlab.zip"> Colorlab.zip (15MB) </a></strong><a href="http://isp.uv.es/code/visioncolor/Colorlab.zip"> </a> <a href="http://isp.uv.es/code/visioncolor/Colorlab.zip"><img alt="mat" src="./colorlab_files/matlab_ico.gif" style="border: 0px solid ; width: 21px; height: 20px;"></a> (version 4.0)
+             </li><li> <strong>Colorlab User Guide:  <a href="http://isp.uv.es/code/visioncolor/COLORLAB_userguide.pdf"> ColorLab_userguide.pdf (12MB) </a></strong><a href="http://isp.uv.es/code/visioncolor/COLORLAB_userguide.pdf"> </a> <a href="http://isp.uv.es/code/visioncolor/COLORLAB_userguide.pdf"><img alt="mat" src="./colorlab_files/pdf16x16.gif" style="border: 0px solid ; width: 16px; height: 16px;"></a> <br> This user guide corresponds to version 1.0. Some functions have been updated in current version 4.0. Colorlab GUI demo has been removed since Matlab GUI changes in 2014
+             </li></ul>
+
+       <hr id="references"><br>
+       <a href="https://isp.uv.es/code/visioncolor/colorlab.html#Top"><small>Back to top</small></a>
+       <p align="justify"></p><h2><span class="label label-success">Citation and References</span></h2><p></p>
+
+       <p align="justify">ColorLab is released free of charge for the scientific community: please cite us when using the software (both the web site and first journal paper that used ColorLab)<br><br>
+
+       </p><p align="justify"><strong><span style="color:rgb(0,160,0)">WEB: </span></strong></p>
+       <strong>J. Malo &amp; M.J. Luque. <br> ColorLab: the Matlab toolbox for Colorimetry and Color Vision. Univ. Valencia 2002<br>
+       <a href="http://isp.uv.es/code/visioncolor/colorlab.html">http://isp.uv.es/code/visioncolor/colorlab.html</a></strong><p></p>
+       <br>
+
+       <p align="justify"><strong><span style="color:rgb(0,160,0)">FIRST PAPER: </span></strong></p>
+       <strong> P. Capilla, M. Diez, M.J. Luque &amp; J. Malo,<br> <a href="http://isp.uv.es/papers/josa_04.pdf">Corresponding-pair procedure: a new approach to simulation of dichromatic color perception.</a> JOSA A 21(2): 176-186 (2004)</strong> <a href="http://isp.uv.es/papers/josa_04.pdf"><img alt="mat" src="./colorlab_files/pdf16x16.gif" style="border: 0px solid ; width: 16px; height: 16px;"></a><br><br>
+
+       <p align="justify"><strong><span style="color:rgb(0,160,0)">Other papers: </span></strong></p>
+       V. Laparra, S. Jimenez, G. Camps &amp; J. Malo.<br> <a href="http://isp.uv.es/papers/Neco_accepted_2012.pdf">Nonlinearities and Adaptation of Color Vision from Sequential Principal Curves Analysis</a> Neural Computation 24(10): 2751-2788 (2012) <a href="http://isp.uv.es/papers/Neco_accepted_2012.pdf"><img alt="mat" src="./colorlab_files/pdf16x16.gif" style="border: 0px solid ; width: 16px; height: 16px;"></a><br><br>
+
+       M. Gutmann, V. Laparra, A. Hyvarinen &amp; J. Malo.<br>  <a href="http://isp.uv.es/papers/Gutmann_PLOS_ONE_2014.pdf">Spatio-Chromatic Adaptation via Higher-Order Canonical Correlation Analysis of Natural Images</a> PLoS ONE  9(2): e86481 (2014) <a href="http://isp.uv.es/papers/Gutmann_PLOS_ONE_2014.pdf"><img alt="mat" src="./colorlab_files/pdf16x16.gif" style="border: 0px solid ; width: 16px; height: 16px;"></a><br><br>
+
+       V. Laparra &amp; J. Malo.<br>  <a href="https://www.frontiersin.org/articles/10.3389/fnhum.2015.00557/full">Visual aftereffects and sensory nonlinearities from a single statistical framework</a> Frontiers in Human Neuroscience 9:557 (2015) <a href="http://isp.uv.es/papers/LaparraMalo15.pdf"><img alt="mat" src="./colorlab_files/pdf16x16.gif" style="border: 0px solid ; width: 16px; height: 16px;"></a><br><br>
+
+        M.J. Luque, et al.<br>  <a href="http://isp.uv.es/papers/Luque06.pdf">Effect of a Yellow Filter on Brightness Evaluated by Asymmetric Matching: Measurements and Predictions</a> J. Opt. A - Pure Appl. Opt. (Inst. of Physics), 8 (5): 398-408 (2006) <a href="http://isp.uv.es/papers/Luque06.pdf"><img alt="mat" src="./colorlab_files/pdf16x16.gif" style="border: 0px solid ; width: 16px; height: 16px;"></a><br><br>
+
+       E. Chorro, F.M. Martínez‐Verdú, D. de Fez, P. Capilla, and M.J. Luque<br>  <a href="http://isp.uv.es/papers/Chorro09.pdf">Analyzing the metrics of the perceptual space in a new multistage physiological colour vision model</a> Color Res. Appl., 34: 359-366 (2009) <a href="http://isp.uv.es/papers/Chorro09.pdf"><img alt="mat" src="./colorlab_files/pdf16x16.gif" style="border: 0px solid ; width: 16px; height: 16px;"></a><br><br>
+
+       M.J. Luque, et al.<br>  <a href="http://isp.uv.es/papers/Luque10.pdf">Images Perceived after Chromatic or Achromatic Contrast Sensitivity Losses</a> Optom. Vision Sci., 87 (5):313-322 (2010) <a href="http://isp.uv.es/papers/Luque10.pdf"><img alt="mat" src="./colorlab_files/pdf16x16.gif" style="border: 0px solid ; width: 16px; height: 16px;"></a><br><br>
+
+       P. Capilla, M.J. Luque, M. Diez<br>  <a href="http://isp.uv.es/papers/Capilla12.pdf">Simulating Images Seen by Patients with Inhomogeneous Sensitivity Losses</a> Optom. Vision Sci., 89 (10): 1543-1556 (2012) <a href="http://isp.uv.es/papers/Capilla12.pdf"><img alt="mat" src="./colorlab_files/pdf16x16.gif" style="border: 0px solid ; width: 16px; height: 16px;"></a><br><br>
+
+
+       M.J. Luque, D. de Fez, and P. Acevedo<br>  <a href="http://isp.uv.es/papers/Luque14.pdf">Software for simulating dichromatic perception of video streams</a> Color Res. Appl., 39: 486-491 (2014) <a href="http://isp.uv.es/papers/Luque14.pdf"><img alt="mat" src="./colorlab_files/pdf16x16.gif" style="border: 0px solid ; width: 16px; height: 16px;"></a><br><br>
+
+       <br><br><br><br><br>
+       <div class="col-md-3">
+
+       </div>
+
+</div>
+
+</div><!-- /.container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./colorlab_files/jquery-1.12.4.min.js"></script>
+    <script src="./colorlab_files/bootstrap.min.js"></script>
+
+
+
+</body></html>
