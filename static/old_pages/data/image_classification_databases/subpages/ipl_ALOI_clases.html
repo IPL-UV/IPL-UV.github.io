@@ -1,0 +1,377 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;
+      charset=windows-1252">
+    <title>Signal and Image Processing Group</title>
+    <base href="index.htm">
+    <meta name="generator" content="Plone - http://plone.org">
+    <meta content="sandra" name="DC.creator">
+    <meta content="2005-02-04 15:24:36" name="DC.date.created">
+    <meta content="2005-07-23 07:34:16" name="DC.date.modified">
+    <meta content="Document" name="DC.type">
+    <meta content="text/x-rst" name="DC.format">
+    <meta content="en" name="DC.language">
+    <!-- Basic crude style for Netscape4.x - This can be removed
+         if you don't want the special NS4 look - it will still work,
+         just be plain text instead. Column layout for Netscape4.x included -->
+    <link rel="Stylesheet" type="text/css" href="ploneNS4.css">
+    <!-- Column style sheet. -->
+    <style type="text/css" media="all">href="ploneColumns.css";</style>
+    <style type="text/css" media="screen">@import url(plone.css);</style><!-- Custom style sheet if available -->
+    <style type="text/css" media="all">@import url(css/ploneCustom.css);</style><!-- Style sheet used for printing -->
+    <link rel="stylesheet" type="text/css" media="print"
+      href="plonePrint.css">
+    <!-- Style sheet used for presentations (Opera is the only browser supporting this at the moment) -->
+    <link rel="stylesheet" type="text/css" media="projection"
+      href="plonePresentation.css">
+    <link rel="shortcut icon" href="css/favicon.ico" type="image/x-icon">
+    <link rel="search" href="css/search_form" title="Search this site">
+    <link rel="up" href="#" title="Up one level">
+    <link rel="copyright" href="copyright" title="Copyright info">
+    <link rel="author" href="author" title="Author info">
+    <!-- Disable IE6 image toolbar -->
+    <meta http-equiv="imagetoolbar" content="no">
+    <!-- A slot where you can insert CSS in the header from a template --><!-- A slot where you can insert elements in the header from a template --><!-- A slot where you can insert javascript in the header from a template --><!-- Common Plone ECMAScripts --><!-- Pull-down ECMAScript menu, only active if logged in --><!-- Define dynamic server-side variables for javascripts in this one  -->
+    <script type="text/javascript" src="plone_javascript_variables.js"> </script>
+    <script type="text/javascript" src="plone_javascripts.js"> </script><!-- Old JS from Plone 1.0, remove tal:condition="nothing" if you need to use the old pop-ups.
+           Will be removed in Plone 2.1 -->
+  </head>
+  <!--<body style="color: rgb(0, 0, 0); background-color: rgb(255, 255,
+    255);" class="section-index_html" alink="#ee0000" link="#0000ee"
+    vlink="#551a8b">
+    <div id="visual-portal-wrapper">
+      <div id="portal-top"> <a class="hiddenStructure"
+          href="css/#documentContent">Skip to
+          content
+          page</a>
+        <div id="portal-searchbox"> </div>
+        <table style="text-align: left; width: 995px; height: 46px;"
+          border="0" cellpadding="2" cellspacing="2">
+          <tbody>
+            <tr>
+              <td valign="top"><br>
+              </td>
+              <td valign="top"><br>
+              </td>
+            </tr>
+            <tr>
+              <td style="vertical-align: top; text-align: right;"><span
+                  style="font-family: verdana;" class="copyright"><small><small><font
+                        size="-1"><small><small><big><big><big><big
+                                    style="font-weight: bold; color:
+                                    rgb(102, 102, 102);"><big><small><span
+                                          style="color: rgb(0, 0, 0);">Image
+                                          and Signal Processing Group</span>
+                                        <small><small><span
+                                              style="color: rgb(255,
+                                              153, 0);">o</span><span
+                                              style="color: rgb(204, 0,
+                                              0);">o</span><span
+                                              style="color: rgb(51, 204,
+                                              0);">o</span><span
+                                              style="color: rgb(51, 102,
+                                              255);">o</span></small></small><br>
+                                      </small></big></big></big></big></big></small></small></font></small></small></span><a
+                  href="http://ipl.uv.es/"><font style="font-family:
+                    Helvetica,Arial,sans-serif;" size="-1"> </font></a><font
+                  style="font-weight: normal; font-family:
+                  Helvetica,Arial,sans-serif;" size="-1">Image
+                  Processing Laboratory (IPL). http://ipl.uv.es<br>
+                  Universitat de València, Spain<br>
+                </font></td>
+              <td style="vertical-align: top; text-align: right;"><a
+                  href="http://www.statcounter.com/"><img alt=""
+                    src="images/icono2.jpg" style="border: 0px solid ;
+                    width: 63px; height: 57px;"></a></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <div id="portal-skinswitcher"> </div>
+        <h5 class="hiddenStructure">Sections</h5>
+        <ul id="portal-globalnav">
+          <li id="portaltab-profiletab" class="plain"> <a href=""
+              accesskey="t">Home</a> </li>
+          <li id="portaltab-profiletab" class="plain"> <a
+              href="research.htm" accesskey="t">Research</a> </li>
+          <li id="portaltab-profiletab" class="plain"> <a
+              href="people.htm" accesskey="t">people</a> </li>
+          <li id="portaltab-profiletab" class="plain"> <a
+              href="projects.htm" accesskey="t">projects</a> </li>
+          <li id="portaltab-profiletab" class="plain"> <a
+              href="publications.htm" accesskey="t">publications</a> </li>
+          <li id="portaltab-profiletab" class="selected"> <a
+              href="soft.htm" accesskey="t">software/data</a> </li>
+          <li id="portaltab-profiletab" class="plain"> <a
+              href="collaborators.htm" accesskey="t">collaborators</a> </li>
+          <li id="portaltab-profiletab" class="plain"> <a
+              href="talks.htm" accesskey="t">talks</a> </li>
+        </ul>
+        <h5 class="hiddenStructure">Personal tools&nbsp; <br>
+        </h5>
+        <ul id="portal-personaltools">
+          <li><br>
+          </li>
+        </ul>
+      </div>
+      <!-- The wrapper table. It contains the three columns. There's a table-less
+           alternative in the plone_tableless skin layer that you can use if you
+           prefer layouts that don't use tables. -->
+      <table style="width: 1037px; height: 837px;" id="portal-columns">
+        <tbody>
+          <tr>
+            <!-- start of the left (by default at least) column --> <td
+              id="portal-column-one">
+              <div class="visualPadding">&nbsp; </div>
+            </td>
+            <!-- end of the left (by default at least) column --><!-- start of main content block -->
+            <td id="portal-column-content">
+              <div id="content" class="">
+                <div class="documentContent" id="region-content">
+                  <div class="documentActions">
+                    <ul>
+                      <li> <a href="javascript:this.print();"> </a> <br>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="documentByLine">
+                    <div style="text-align: center;"> </div>
+                    <center style="margin-left: 40px;">
+                      <div style="text-align: center;"> </div>
+                      <span style="font-family: verdana;"
+                        class="copyright"><small><small><font size="-1"><small><small><big><big><big><big
+                                          style="font-weight: bold;
+                                          color: rgb(102, 102, 102);"><big><small><span
+                                                style="color: rgb(0, 0,
+                                                0);">Modified Amsterdam
+                                                Library of Object
+                                                Images (ALOI)</span><br>
+                                              Classes database</small></big></big></big></big></big></small></small></font></small></small></span><br>
+                      <span style="font-family: verdana;"
+                        class="copyright"><small><small><font size="-1"><small><small><big><big><big><big
+                                          style="font-weight: bold;
+                                          color: rgb(102, 102, 102);"><big><small>
+                                              <br>
+                                            </small></big></big></big></big></big></small></small></font></small></small></span>
+                      <table style="text-align: left; width: 30%;"
+                        border="0" cellpadding="2" cellspacing="2">
+                        <tbody>
+                          <tr>
+                            <td style="vertical-align: top;"><br>
+                            </td>
+                            <td style="vertical-align: top; text-align:
+                              left;"><big><a
+                                  href="ipl_ALOI_clases.html#About">Abstract</a><br>
+                              </big></td>
+                          </tr>
+                          <tr>
+                            <td style="vertical-align: top;"><br>
+                            </td>
+                            <td style="vertical-align: top;"><big><a
+                                  href="ipl_ALOI_clases.html#Why">Related
+                                  Papers</a><br>
+                              </big></td>
+                          </tr>
+                          <tr>
+                            <td style="vertical-align: top;"><br>
+                            </td>
+                            <td style="vertical-align: top;"><big><a
+                                  href="ipl_ALOI_clases.html#Organization">Database
+                                  Organization</a><br>
+                              </big></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <span style="font-family: verdana;"
+                        class="copyright"></span><br>
+                      <table style="text-align: left; width: 100%;"
+                        border="0" cellpadding="2" cellspacing="2">
+                        <tbody>
+                          <tr style="color: rgb(0, 0, 0);">
+                            <td colspan="2" rowspan="1"
+                              style="vertical-align: top;"><font
+                                style="font-weight: normal; font-family:
+                                Helvetica,Arial,sans-serif;" size="-1"><big><span
+                                    style="font-weight: bold;"><br>
+                                    <a name="About"></a> Abstract<br>
+                                  </span></big> </font><font
+                                style="font-family:
+                                Helvetica,Arial,sans-serif;" size="-1"><br>
+                              </font>
+                              <div dir="ltr" style="font-size:
+                                13.2835px; font-family:
+                                Helvetica,Arial,sans-serif; left:
+                                93.6851px; top: 515.095px;"
+                                data-angle="0"
+                                data-font-name="g_font_104_0"
+                                data-canvas-width="265.7490275802612"><font
+                                  size="-1">We have using
+                                  the
+                                  ALOI database (collection of 1,000
+                                  objects recorded under various
+                                  imaging
+                                  circumstances) to obtain four object
+                                  classes.<br>
+                                  <br>
+                                  - Class 1: Soft circular objects.<br>
+                                  - Class 2: Texture circular objects.<br>
+                                </font><font size="-1">- Class 1: Soft
+                                  square objects.<br>
+                                  - Class 2: Texture square objects.<br>
+                                </font></div>
+                              <br>
+                              <br>
+                              <font style="font-weight: normal;
+                                font-family:
+                                Helvetica,Arial,sans-serif;" size="-1">
+                              </font></td>
+                          </tr>
+                          <tr style="color: rgb(0, 0, 0);">
+                            <td colspan="2" rowspan="1"
+                              style="vertical-align: top;"><font
+                                style="font-weight: normal; font-family:
+                                Helvetica,Arial,sans-serif;" size="-1"><big><span
+                                    style="font-weight: bold;"></span></big></font><font
+                                style="font-weight: normal; font-family:
+                                Helvetica,Arial,sans-serif;" size="-1"><big><span
+                                    style="font-weight: bold;"><br>
+                                    <a name="Why"></a>Related Papers</span></big><br>
+                              </font> <br>
+                              <font size="-1"><span style="font-family:
+                                  Helvetica,Arial,sans-serif;">The
+                                  Amsterdam library
+                                  of object images. J. M. Geusebroek, G.
+                                  J. Burghouts, and A. W. M.
+                                  Smeulders. </span><i
+                                  style="font-family:
+                                  Helvetica,Arial,sans-serif;">Int.
+                                  J.
+                                  Comput.
+                                  Vision</i><span style="font-family:
+                                  Helvetica,Arial,sans-serif;">,
+                                  61(1), 103-112,
+                                  January, 2005</span></font><font
+                                style="font-family:
+                                Helvetica,Arial,sans-serif;" size="-1">.</font><br>
+                              <br>
+                              <font style="font-weight: normal;
+                                font-family:
+                                Helvetica,Arial,sans-serif;" size="-1">&nbsp;Llink
+                                to original url: <a
+                                  href="http://aloi.science.uva.nl/"><span
+                                    style="text-decoration: underline;">http://aloi.science.uva.nl/</span></a><a
+href="http://www.kyb.tuebingen.mpg.de/?id=227"><span
+                                    style="text-decoration: underline;"></span></a><span
+                                  style="text-decoration: underline;"></span><br>
+                              </font><font style="font-weight: normal;
+                                font-family:
+                                Helvetica,Arial,sans-serif;" size="-1"><br>
+                              </font></td>
+                          </tr>
+                          <tr style="color: rgb(0, 0, 0);">
+                            <td colspan="2" rowspan="1"
+                              style="vertical-align: top;"><font
+                                style="font-weight: normal; font-family:
+                                Helvetica,Arial,sans-serif;" size="-1"><big><span
+                                    style="font-weight: bold;"><br>
+                                    <a name="Organization"></a>Organization
+                                    of the Database</span></big><br>
+                              </font><br style="font-family: Verdana;">
+                              <div style="text-align: justify;"><font
+                                  style="font-weight: normal;
+                                  font-family:
+                                  Helvetica,Arial,sans-serif;" size="-1">The
+                                  database is located in the directory:</font><font
+                                  style="font-weight: normal;
+                                  font-family:
+                                  Helvetica,Arial,sans-serif;" size="-1"><span
+                                    style="font-style: italic;">
+/media/disk/vista/BBDD/Classif_forum/ALOI</span></font><span
+                                  style="font-style: italic;">_</span><font
+                                  style="font-style: italic;" size="-1"><span
+                                    style="font-family:
+                                    Helvetica,Arial,sans-serif;">Classes</span></font><br>
+                                <br>
+                                <font style="font-weight: normal;
+                                  font-family:
+                                  Helvetica,Arial,sans-serif;" size="-1"><span
+                                    style="font-style: italic;"></span>This
+                                  database
+                                  selection is for Grey values images.
+                                  The directo</font><font
+                                  style="font-weight: normal;
+                                  font-family:
+                                  Helvetica,Arial,sans-serif;" size="-1">ry
+                                  contains:<br>
+                                  <br>
+                                  &nbsp; - Using_database: </font><font
+                                  style="font-weight: normal;
+                                  font-family:
+                                  Helvetica,Arial,sans-serif;" size="-1">Demo
+                                  to using the database.</font><br>
+                                <font style="font-weight: normal;
+                                  font-family:
+                                  Helvetica,Arial,sans-serif;" size="-1">&nbsp;
+                                  - {clase1.mat, clase1.mat, clase3.mat,
+                                  clase4.mat}: </font><font
+                                  style="font-weight: normal;
+                                  font-family:
+                                  Helvetica,Arial,sans-serif;" size="-1">The
+objects
+                                  divided into the four class described
+                                  above.</font><br>
+                                <font size="-1"><span
+                                    style="font-family:
+                                    Helvetica,Arial,sans-serif;">&nbsp;
+                                    -
+                                    seleccion_clase.m: Script to select
+                                    the object from each class.</span></font><br>
+                                <br>
+                                <font size="-1"><span
+                                    style="font-family:
+                                    Helvetica,Arial,sans-serif;">Note:
+                                    This partition
+                                    into classes also can be applied to
+                                    Full color database, since the
+                                    images are called the same in both
+                                    kind of data. You have to using
+                                    selection_clase with some easy
+                                    changes in rutes of the images and
+                                    the
+                                    dimension of color images.</span></font><font
+                                  style="font-weight: normal;
+                                  font-family:
+                                  Helvetica,Arial,sans-serif;" size="-1"><br>
+                                  <span style="font-weight: bold;"></span></font><font
+                                  style="font-weight: normal;
+                                  font-family:
+                                  Helvetica,Arial,sans-serif;" size="-1"><br>
+                                </font></div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                    </center>
+                    <!-- end T. 1 --> <strong></strong><span
+                      class="copyright"> <small><small><span
+                            style="font-family: verdana;"></span></small></small></span><span></span></div>
+                  <div class="discussion"> </div>
+                </div>
+              </div>
+            </td>
+            <!-- end of main content block --><!-- start of right (by default at least) column -->
+            <!-- end of the right (by default at least) column --> </tr>
+        </tbody>
+      </table>
+      <br>
+      <hr class="netscape4">
+      <div id="portal-colophon"> </div>
+    </div>
+    <script language="JavaScript" type="text/javascript" src="pphlogger.js"></script><noscript></noscript>
+  </body>
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)https://isp.uv.es/code/visioncolor/Video_coding.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  
+  <title>Signal and Image Processing Group</title>
+<!-- Disable IE6 image toolbar -->
+  <meta http-equiv="imagetoolbar" content="no">
+</head>
+<body style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" class="section-index_html" vlink="#551a8b" alink="#ee0000" link="#0000ee">
+<table style="width: 1063px; height: 649px;" id="portal-columns">
+  <tbody>
+    <tr>
+<!-- start of the left (by default at least) column --> <td id="portal-column-one">
+      <div class="visualPadding"> &nbsp; </div>
+      </td>
+<!-- end of the left (by default at least) column --><!-- start of main content block -->
+      <td id="portal-column-content">
+      <div id="content" class="">
+      <div class="documentContent" id="region-content">
+      <div class="documentByLine">
+      <center style="margin-left: 40px;"><span style="font-family: verdana;" class="copyright"><small><small><font size="-1"><small><small><big><big><big><big style="font-weight: bold; color: rgb(102, 102, 102);"><big><small><span style="color: rgb(0, 0, 0);"><br>
+Motion Estimation and Video Coding Toolbox</span><br>
+      </small></big></big></big></big></big></small></small></font></small></small></span><span style="font-family: verdana;" class="copyright"><small><small><font size="-1"><small><small><big><big><big><big style="font-weight: bold; color: rgb(102, 102, 102);"><big><small><br>
+      </small></big></big></big></big></big></small></small></font></small></small></span><span style="font-family: verdana;" class="copyright"></span><br>
+      <table style="text-align: left; width: 979px; height: 804px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr style="color: rgb(0, 0, 0);">
+            <td colspan="2" rowspan="1" style="vertical-align: top;"><font style="font-weight: normal; font-family: Helvetica,Arial,sans-serif;" size="-1"><big><span style="font-weight: bold;"><br>
+            <a name="About"></a> Abstract</span></big><span style="font-weight: bold;"><br>
+            </span>&nbsp; </font><big style="font-family: Helvetica,Arial,sans-serif;"><br>
+            <big style="text-decoration: underline;">Motion Estimation:</big><br>
+            </big>
+            <p><big><font face="Arial,Helvetica">Our approach to motion
+estimation
+in video
+sequences was motivated by the general scheme of the current video
+coders
+with motion compensation (such as MPEG-X or H.26X [Musmann85, LeGall91,
+Tekalp95]).<br>
+In
+motion
+compensation video coders the input sequence, A(t), is analized by a
+motion
+estimation system, <b>M</b>, that computes some description of the
+motion
+in the scene: typically the optical flow, DVF(t). In the motion
+compensation
+module, <b>P</b>, this motion information can be used to predict the
+current
+frame, A(t), from previous frames, A(t-1). As the prediction,
+Â(t),
+is not perfect, additional information is needed to reconstruct the
+sequence:
+the prediction error DFD(t). This scheme is useful for video
+compression
+because the entropy of these two sources (motion, DVF, and errors, DFD)
+is significantly smaller than the entropy of the original sequence
+A(t). <br>
+The </font></big><big><font face="Arial,Helvetica">coding gain can be
+even
+bigger if the
+error sequence is analyzed, and quantized, in an appropriate transform
+domain, as done in image
+compression
+procedures, using the transform <b>T</b> and the quantizer <b>Q</b>.<br>
+            <br>
+            </font></big></p>
+            <div style="text-align: center;"><img style="width: 720px; height: 283px;" src="./video_coding_files/coderde.JPG" alt=""><br>
+            <div style="text-align: left; font-family: Helvetica,Arial,sans-serif;">
+            <p><big><br>
+            </big></p>
+            <p><big><br>
+Conventional optical flow
+techniques (based
+in local maximization of the correlation by block matching) provide a
+motion
+description that may be redundant for a human viewer. Computational
+effort
+may be wasted describing '<span style="color: rgb(0, 0, 0);"><i>perceptually
+irrelevant
+motions</i></span>'. This inefficient behavior may also give rise
+to
+false alarms and noisy flows. To solve this problem, hierarchical
+optical
+flow techniques have been proposed (as for instance in MPEG-4 and in
+H.263).
+They start from a low resolution motion estimate and new motion
+information
+is locally added only in certain regions. However, new motion
+information
+should be added only if it is <span style="color: rgb(0, 0, 0);"><i>'perceptually
+relevant'</i></span>. <b style="color: rgb(0, 0, 0);">Our contribution
+in
+motion estimation is a definition of 'perceptually relevant motion
+information'</b><span style="color: rgb(0, 0, 0);">
+[</span><span style="color: rgb(0, 0, 0);">Malo98</span><span style="color: rgb(0, 0, 0);">, </span><span style="color: rgb(0, 0, 0);">Malo01a</span><span style="color: rgb(0, 0, 0);">, </span><span style="color: rgb(0, 0, 0);">Malo01b</span>].
+This definition is based on the entropy of the image
+representation in the human cortex (Watson JOSA 87, Daugman IEEE
+T.Biom.Eng.
+89): an increment in motion information is perceptually relevant if it
+contributes to decrease the entropy of the cortex representation of the
+prediction error. Numerical experiments (optical flow computation and
+flow-based
+segmentation) show that applying this definition to a particular
+hierarchical
+motion estimation algorithm, <b style="color: rgb(0, 0, 0);">more
+robust and
+meaningful
+flows are obtained</b><span style="color: rgb(0, 0, 0);"> [</span><span style="color: rgb(0, 0, 0);">Malo00b</span><span style="color: rgb(0, 0, 0);">, </span><span style="color: rgb(0, 0, 0);">Malo01a</span><span style="color: rgb(0, 0, 0);">, </span><span style="color: rgb(0, 0, 0);">Malo01b</span>].<br>
+            </big></p>
+            <p><big><br>
+            </big></p>
+            <p><big style="font-family: Helvetica,Arial,sans-serif;"><big style="text-decoration: underline;">Video Coding:</big></big><big></big></p>
+            <p style="color: rgb(0, 0, 0);"><big><font face="Arial,Helvetica">As stated in the above scheme,
+the basic
+ingredients of motion compensation video
+coders
+are the motion estimation module, <b>M</b>, and the transform and
+quantization
+module, <b>T+Q</b>. Given our work in motion
+estimation and in image
+representation
+for efficient quantization, the improvement of the current video
+coding
+standards is straightforward. See [Malo01b]
+for a comprehensive review, and [Malo97b, Malo00a]
+for the original formulation and specific analysis of the relative
+relevance
+of <b>M</b> and <b>T+Q</b> in the video coding process.</font> </big></p>
+            <big style="color: rgb(0, 0, 0);"><font face="Arial,Helvetica">Here is an example [Malo00a, Malo01b]
+of the relative gain in the reconstructed sequence (0.27 bits/pix)
+obtained
+from isolated improvements in motion estimation (<b>M</b>) and/or image
+representation and quantization (<b>T+Q</b>).<br>
+            <br>
+            </font></big>
+            <p>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+MPEG1
+(poor
+M,
+poor
+Q)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Poor
+M,
+Improved
+Q<br>
+            </p>
+            <div style="text-align: center;"><img src="./video_coding_files/coding.JPG" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img style="width: 288px; height: 252px;" src="./video_coding_files/distort.jpg"></div>
+            <p style="color: rgb(0, 0, 0);"><big><font face="Arial,Helvetica">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <small>MPEG-4 and H.263 (improved M, poor
+Q)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Improved M, Improved
+Q<br>
+            </small></font></big></p>
+            <p style="color: rgb(0, 0, 0);"><big><font face="Arial,Helvetica"><small><br>
+            </small>In the above distortion-per-frame
+plot, thick
+lines correspond to algorithms with poor (linear) quantization schemes
+and thin lines correspond to improved (non-linear) quantization
+schemes.
+Dashed lines correspond to algorithms with improved motion estimation
+schemes. The conclusion is that at the current
+bit rates
+an appropriate image representation and quantization is quite more
+important
+than improvements in motion estimation.<br>
+            </font></big></p>
+            <p style="color: rgb(0, 0, 0);"><big><font face="Arial,Helvetica"><br>
+            </font> </big></p>
+            </div>
+            </div>
+            </td>
+          </tr>
+          <tr style="color: rgb(0, 0, 0);">
+            <td colspan="2" rowspan="1" style="vertical-align: top;"><font style="font-weight: normal; font-family: Helvetica,Arial,sans-serif;" size="-1"><big><span style="font-weight: bold;"> <a name="Why"></a>Related
+Papers</span></big><br>
+            </font><big style="font-family: Helvetica,Arial,sans-serif;"><big style="text-decoration: underline;"><small><br>
+Motion Estimation:</small></big></big><br>
+            <br>
+            <p style="margin-top: 0pt; margin-bottom: 0pt; font-family: Helvetica,Arial,sans-serif;"><big><i>Modelos
+Corticales
+de
+Percepción
+del Movimiento <br>
+            </i></big><big>J. Malo and M. Simón.&nbsp; <br>
+Conferencia Invitada en la Jornada de Presentación de Aletheia
+Nº5, Rector Peset, Universitat de València, <i>Feb.
+2008&nbsp; </i><a href="http://www.uv.es/vista/vistavalencia/papers/Malo_motion_talk08.pdf"><span style="font-weight: bold;"><span style="font-weight: bold;"><img alt="pdf" src="./video_coding_files/pdf16x16.gif" style="border: 0px solid ; width: 16px; height: 16px;"></span></span></a></big></p>
+            <big style="font-family: Helvetica,Arial,sans-serif;"><br>
+            <i>La percepción del movimiento: parte de lo que
+pasa por tu cabeza en unos milisegundos.</i><br>
+            </big><big style="font-family: Helvetica,Arial,sans-serif;">J.
+Malo</big><br>
+            <big style="font-family: Helvetica,Arial,sans-serif;">Aletheia,
+CADE,
+Universitat
+de
+València, Nº 5, pp 11-17, <i>Dec 2007 </i></big><a href="http://www.uv.es/vista/vistavalencia/papers/Malo_Alheteia_08.pdf"><big></big></a><big><a><span style="font-weight: bold;"><span style="font-weight: bold;"></span></span></a></big><big><a href="http://www.uv.es/vista/vistavalencia/papers/Malo_Alheteia_08.pdf"><span style="font-weight: bold;"><span style="font-weight: bold;"><img alt="pdf" src="./video_coding_files/pdf16x16.gif" style="border: 0px solid ; width: 16px; height: 16px;"></span></span></a></big><br>
+            <big style="font-family: Helvetica,Arial,sans-serif;"> <font style="font-family: Helvetica,Arial,sans-serif;" size="-1"><small><br>
+            </small></font><i>What motion information is
+perceptually
+relevant?.<br>
+            </i></big><big style="font-family: Helvetica,Arial,sans-serif;">J.
+Malo, J. Gutierrez, I. Epifanio</big><br>
+            <big style="font-family: Helvetica,Arial,sans-serif;">Journal
+of
+Vision,
+1(3),
+309a,
+http://journalofvision.org/1/3/309,
+DOI 10.1167/1.3.309&nbsp; <i>(2001) </i></big><big><a><span style="font-weight: bold;"><span style="font-weight: bold;"></span></span></a></big><big style="font-family: Helvetica,Arial,sans-serif;"> </big><a href="https://isp.uv.es/code/visioncolor/papers/vss_poster.eps"><big><span style="font-weight: bold;"><span style="font-weight: bold;"><img alt="pdf" src="./video_coding_files/pdf16x16.gif" style="border: 0px solid ; width: 16px; height: 16px;"></span></span></big></a><br>
+            <big style="font-family: Helvetica,Arial,sans-serif;"> <br>
+            <i>Perceptually weighted
+optical flow
+for motion-based segmentation in MPEG-4 paradigm. <br>
+            </i></big><big style="font-family: Helvetica,Arial,sans-serif;">J.Malo,
+J.Gutierrez, I.Epifanio and F.Ferri</big><br>
+            <big style="font-family: Helvetica,Arial,sans-serif;">Electronics
+Letters
+,
+Vol.36,
+20,
+pp.1693-94,
+            <i>(2000) </i></big><big><a><span style="font-weight: bold;"><span style="font-weight: bold;"></span></span></a></big><big style="font-family: Helvetica,Arial,sans-serif;"> </big><a href="https://isp.uv.es/code/visioncolor/papers/seg_ade2.ps"><big><span style="font-weight: bold;"><span style="font-weight: bold;"><img alt="pdf" src="./video_coding_files/pdf16x16.gif" style="border: 0px solid ; width: 16px; height: 16px;"></span></span></big></a><br>
+            <big style="font-family: Helvetica,Arial,sans-serif;"> <br>
+            <i>Splitting criterion for
+hierarchical
+motion estimation based on perceptual coding.<br>
+            </i></big><big style="font-family: Helvetica,Arial,sans-serif;">J.Malo,
+F.Ferri, J.Albert, J.M.Artigas</big><br>
+            <big style="font-family: Helvetica,Arial,sans-serif;">Electronics
+Letters
+,
+Vol.
+34,
+6,
+pp.541-543. <i>(1998) </i></big><big><a><span style="font-weight: bold;"><span style="font-weight: bold;"></span></span></a></big><big style="font-family: Helvetica,Arial,sans-serif;"> </big><a href="https://isp.uv.es/code/visioncolor/papers/ELECT98.PS.gz"><big><span style="font-weight: bold;"><span style="font-weight: bold;"><img alt="pdf" src="./video_coding_files/pdf16x16.gif" style="border: 0px solid ; width: 16px; height: 16px;"></span></span></big></a><br>
+            <big style="font-family: Helvetica,Arial,sans-serif;"> <font style="font-family: Helvetica,Arial,sans-serif;" size="-1"><small>&nbsp;<br>
+            </small></font><i>Variable-size BMA for
+motion estimation
+using a perceptual-based splitting criterion.<br>
+            </i></big><big style="font-family: Helvetica,Arial,sans-serif;">F.Ferri,
+J.Malo, J.Albert, J.Soret</big><br>
+            <font face="Arial,Helvetica"><big style="font-family: Helvetica,Arial,sans-serif;">Proc. IEEE Int. Conf.
+Pat.
+Recog. 98.
+Vol. I, pp. 286-288. </big><i><big style="font-family: Helvetica,Arial,sans-serif;">(1998) </big><br>
+            <br>
+            <br>
+            <br>
+            <br>
+            </i></font><big style="font-family: Helvetica,Arial,sans-serif;"><big style="text-decoration: underline;"><small>Video Coding:<br>
+            <br>
+            </small></big><i style="font-family: Helvetica,Arial,sans-serif;">Perceptual feed-back
+in
+multigrid motion
+estimation using an improved DCT quantization.</i><br>
+            </big><big style="font-family: Helvetica,Arial,sans-serif;"><font style="font-family: Helvetica,Arial,sans-serif;" face="Arial,Helvetica">J.Malo,
+J.Gutierrez,
+I.Epifanio,
+F.Ferri,
+J.M.Artigas</font></big><br style="font-family: Helvetica,Arial,sans-serif;">
+            <big style="font-family: Helvetica,Arial,sans-serif;"><font style="font-family: Helvetica,Arial,sans-serif;" face="Arial,Helvetica">IEEE
+Transactions
+on
+Image
+Processing.
+Vol.
+10, 10, pp. 1411-1427 <i>(2001) </i></font></big><a href="http://www.uv.es/vista/vistavalencia/papers/ieeeoct01.pdf"><big><span style="font-weight: bold;"><span style="font-weight: bold;"><img alt="pdf" src="./video_coding_files/pdf16x16.gif" style="border: 0px solid ; width: 16px; height: 16px;"></span></span></big></a><big style="font-family: Helvetica,Arial,sans-serif;"><br style="font-family: Helvetica,Arial,sans-serif;">
+            <big style="font-family: Helvetica,Arial,sans-serif;"><big style="text-decoration: underline;"><small><br>
+            </small></big></big></big><big style="font-family: Helvetica,Arial,sans-serif;"><i style="font-family: Helvetica,Arial,sans-serif;">Importance of
+quantizer
+design compared
+to optimal multigrid motion estimation in video coding.</i></big><br>
+            <big style="font-family: Helvetica,Arial,sans-serif;"><font style="font-family: Helvetica,Arial,sans-serif;" face="Arial,Helvetica">J.Malo,
+F.Ferri,
+J.Gutierrez,
+I.Epifanio</font><br style="font-family: Helvetica,Arial,sans-serif;">
+            <font style="font-family: Helvetica,Arial,sans-serif;" face="Arial,Helvetica">Electronics Letters , Vol. 36, 9, pp. 807-809 <i>(2000)
+            </i></font></big><big><a><span style="font-weight: bold;"><span style="font-weight: bold;"></span></span></a></big><a href="https://isp.uv.es/code/visioncolor/papers/elect00.ps"><big><span style="font-weight: bold;"><span style="font-weight: bold;"><img alt="pdf" src="./video_coding_files/pdf16x16.gif" style="border: 0px solid ; width: 16px; height: 16px;"></span></span></big></a><br style="font-family: Helvetica,Arial,sans-serif;">
+            <big style="font-family: Helvetica,Arial,sans-serif;"> <br style="font-family: Helvetica,Arial,sans-serif;">
+            <i style="font-family: Helvetica,Arial,sans-serif;">Adaptive
+motion
+estimation
+and
+video
+vector
+quantization based on spatio-temporal non-linearities of human
+perception.</i><br>
+            </big><big style="font-family: Helvetica,Arial,sans-serif;"><font style="font-family: Helvetica,Arial,sans-serif;" face="Arial,Helvetica">J.Malo,
+F.Ferri,
+J.Albert,
+J.M.Artigas</font></big><br style="font-family: Helvetica,Arial,sans-serif;">
+            <font face="Arial,Helvetica"><big style="font-family: Helvetica,Arial,sans-serif;">Lecture Notes in
+Computer
+Science,
+Springer Verlag. Vol.1310, pp.454-461 </big><i><big style="font-family: Helvetica,Arial,sans-serif;">(1997) </big></i></font><big><a><span style="font-weight: bold;"><span style="font-weight: bold;"></span></span></a></big><a href="https://isp.uv.es/code/visioncolor/papers/LNCS97.PS.gz"><big><span style="font-weight: bold;"><span style="font-weight: bold;"><img alt="pdf" src="./video_coding_files/pdf16x16.gif" style="border: 0px solid ; width: 16px; height: 16px;"></span></span></big></a><br>
+            <font face="Arial,Helvetica"><i><br>
+            <br>
+            <br>
+            </i></font><a href="https://isp.uv.es/papers/Gutmann_PLOS_ONE_2014.pdf"><big><span style="font-family: Helvetica,Arial,sans-serif;"></span></big><span style="font-weight: bold;"></span></a><font style="font-weight: normal; font-family: Helvetica,Arial,sans-serif;" size="-1"> </font></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><font style="font-weight: normal; font-family: Helvetica,Arial,sans-serif;" size="-1"><big><span style="font-weight: bold;"><br>
+            <a style="color: rgb(0, 0, 0);" name="Why"></a><span style="color: rgb(0, 0, 0);">Download Code</span></span></big></font>&nbsp;
+            <small><small><small><small></small></small></small></small><a href="http://www.uv.es/vista/vistavalencia/papers/icip02.pdf"><br>
+            </a>
+            <p style="margin-bottom: 0cm;"><a href="https://isp.uv.es/code/visioncolor/video_metric_sso.zip"><big></big></a><big><a><font face="Arial, sans-serif"><br>
+            </font></a><a href="https://isp.uv.es/code/visioncolor/Motion_estimation_and_Video%20coding_code.zip"><font face="Arial, sans-serif">Motion_estimation_and_Video coding_code.zip</font></a></big><a href="https://isp.uv.es/code/visioncolor/code/HOCCA_code.zip"> <img alt="mat" src="./video_coding_files/matlab_ico.gif" style="border: 0px solid ; width: 21px; height: 20px;"></a></p>
+            </td>
+            <td style="vertical-align: top;"><br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <br>
+      <br>
+      <br>
+      </center>
+<!-- end T. 1 --> <strong></strong><span class="copyright"> <small><small><span style="font-family: verdana;"></span></small></small></span><span></span></div>
+      <br>
+      <div class="discussion"> </div>
+      </div>
+      </div>
+      </td>
+<!-- end of main content block --><!-- start of right (by default at least) column -->
+<!-- end of the right (by default at least) column --> </tr>
+  </tbody>
+</table>
+
+
+</body></html>

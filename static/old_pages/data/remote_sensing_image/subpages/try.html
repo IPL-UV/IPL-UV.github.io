@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)https://isp.uv.es/code/try.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Upscaling Leaf Traits Globally with Machine Learning">
+    <!-- <link rel="icon" href="../../favicon.ico"> -->
+
+    <title>Global maps of leaf traits using remote sensing, climatological data, the TRY traits database, and machine learning</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./try_files/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="./try_files/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="./try_files/theme.css" rel="stylesheet">
+
+    <style>
+    body {
+      padding-top: 50px;
+      padding-bottom: 30px;
+    }
+    </style>
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body role="document">
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+          </button>
+          <a class="navbar-brand" href="https://isp.uv.es/code/index.html">Leaf traits upscaling</a>
+        </div>
+      </div>
+    </nav>
+
+<div class="container">
+
+<h1>Global maps of leaf traits using remote sensing, climatological data, the TRY traits database, and machine learning<br>
+</h1>
+
+<div class="container">
+
+We provide global high-resolution maps of leaf traits. In particular, we present global maps of specific leaf area, leaf dry matter content, leaf nitrogen and phosphorus content per dry mass. The methodology combines MODIS and Landsat data, climatological data, the TRY database and machine learning algorithms.
+
+
+<h2><span class="label label-info">What is this about?</span></h2>
+
+We&nbsp;introduce a modular processing chain to derive global high-resolution maps of leaf traits. In particular, we present global maps&nbsp;specific leaf area, leaf dry matter content, leaf nitrogen and phosphorus content per dry mass. The processing chain exploits machine-learning techniques along with optical remote sensing data (MODIS/Landsat) and climate data for gap filling and up-scaling of in-situ measured leaf traits. The chain first uses random forests regression with surrogates to fill gaps in the database (&gt; 45% of missing entries) and maximizes the global representativeness of the trait dataset. Plant species are then aggregated to Plant Functional Types (PFTs). Next, the spatial abundance of PFTs at MODIS resolution (1 km) is calculated using Landsat data (30 m). Based on these PFT abundances, representative trait values are calculated for MODIS pixels with nearby trait data. Finally, different regression&nbsp;algorithms are applied to globally predict trait estimates from these MODIS pixels using remote sensing and climate data. The methods were compared in terms of precision, robustness and efficiency. The best model (random forests regression) shows good precision (normalized RMSE≤ 20%) and goodness of fit (averaged Pearson's correlation R = 0.78) in any considered trait. Along with the estimated global maps of leaf traits, we provide associated uncertainty estimates derived from the regression models. The process chain is modular, and can easily accommodate new traits, data streams (traits databases and remote sensing data), and methods. The machine learning techniques applied allow attribution of information gain to data input and thus provide the opportunity to understand trait-environment relationships at the plant and ecosystem scales. The new data products – the gap-filled trait matrix, a global map of PFT abundance per MODIS grid-cells and the high-resolution global leaf trait maps – are complementary to existing large-scale observations of the land surface and we, therefore, anticipate substantial contributions to advances in quantifying, understanding and prediction of the Earth system.
+
+
+<img style="width: 900px; height: 487px;" alt="flowchart" src="./try_files/Scheme.PNG"><br>
+<h2><span class="label label-success">Processed traits<br></span></h2>
+
+<h3><span class="label label-danger">Specific Leaf Area (SLA)</span></h3>
+
+SLA is a key trait of the leaf economics spectrum reflecting the trade-off between leaf longevity and carbon gain (Wright et al. 2004, Nature). SLA is thus indicative for different plant life strategies with respect to fast versus slow return of carbon investments.
+
+<h3><img style="width: 600px; height: 275px;" alt="SLA" src="./try_files/SLA_map.png"><img style="width: 600px; height: 275px;" alt="SLAerr" src="./try_files/SLA_maperr.png"></h3>
+
+<h3><span class="label label-danger">Leaf Dry Matter Content (LDMC)</span></h3>
+
+
+LDMC and SLA are directly correlated with relative growth rate, which is a predictor of plant response to resource availability and disturbance.
+
+<br>
+<img style="width: 600px; height: 275px;" alt="LDMC" src="./try_files/LDMC_map.png"><img style="width: 600px; height: 275px;" alt="LDMCerr" src="./try_files/LDMC_maperr.png"><br>
+<br>
+
+<h3><span class="label label-danger">Leaf Nitrogen Concentration (LNC) &amp; Leaf Phosphorus Concentration (LPC)</span></h3>
+
+LNC relates to the amount of proteins involved in the photosynthetic machinery, while phosphorus is a key constituent of nucleic acids, lipid membranes and bioenergetic molecules (e.g. ATP) directly involved in cell metabolism. Leaf Nitrogen Concentration (LNC) and Leaf Phosphorus Concentration (LPC) correlate with SLA and are therefore considered part of the leaf economics spectrum.
+
+<br>
+<img style="width: 600px; height: 275px;" alt="LNC" src="./try_files/LNC_map.png"><img style="width: 600px; height: 275px;" alt="LNCerr" src="./try_files/LNC_maperr.png"><br>
+<br>
+
+<br>
+<img style="width: 600px; height: 275px;" alt="LPC" src="./try_files/LPC_map.png"><img style="width: 600px; height: 275px;" alt="LPCerr" src="./try_files/LPC_maperr.png"><br>
+<br>
+
+<br>
+
+<h2><span class="label label-warning">Updates since the published version:</span></h2>
+
+Version 2.0 of the processing chain prevents extrapolation and uses an updated categorical trait table. To prevent extrapolations, this updated version of the processing chain uses the random forest algorithm (RF) with surrogates for the estimation of trait values. RF with surrogates allows to obtain an ensemble of models inside the convex hull of the input data for the predictions. Additionally, the use of an updated and more extensive categorical trait table allowed increasing the amount of training samples to produce the maps.
+
+
+<h2><span class="label label-info">
+Where to access the data?</span></h2>
+The data is available at two spatial resolutions 3km and 1km. It can be downloaded from:<br>
+<a href="https://www.try-db.org/TryWeb/Data.php#59">https://www.try-db.org/TryWeb/Data.php#59</a> 
+and 
+<a href="https://www.try-db.org/TryWeb/Data.php#60">https://www.try-db.org/TryWeb/Data.php#60</a> 
+<br>
+
+<h2><span class="label label-info">Reference for publication</span></h2>
+
+Moreno-Martínez, Á., Camps-Valls, G., Kattge, J., Robinson, N., Reichstein, M., Bodegom, 
+P. V., Kramer, K., Cornelissen, J. H. C., Reich, P. B., Bahn, M.,
+Niinemets, Ü., Peñuelas, J., Craine, J., Cerabolini, B., Minden, V.,
+Laughlin, D. C., Sack, L., Allred, B., Baraloto, C., Byun, C.,
+Soudzilovskaia, N. A., Running, S. W. (2018). A methodology to derive
+global maps of leaf traits using remote sensing and climate data.
+Remote Sensing of Environment, 218, 69-88. <a href="https://doi.org/10.1016/j.rse.2018.09.006">https://doi.org/10.1016/j.rse.2018.09.006</a> 
+
+<!-- -->
+<h2><span class="label label-success">Contact</span></h2>
+<a name="contact" href="mailto:alvaro.moreno@uv.es">
+<p>If you have any question about, please, do not hesitate to write an email to Alvaro Moreno (alvaro.moreno@uv.es).</p>
+</a>
+
+</div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./try_files/jquery-1.12.4.min.js"></script>
+    <script src="./try_files/bootstrap.min.js"></script>
+  
+
+</div></body></html>
