@@ -1,170 +1,129 @@
 <!DOCTYPE html>
-<!-- saved from url=(0048)https://isp.uv.es/code/RKS2017/videos/index.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="Webpage paper: Randomized Kernels for Large Scale Earth Observation Applications">
-    <meta name="ISP" content="Research information about the paper: Randomized Kernels for Large Scale Earth Observation Applications">
-    <!-- <link rel="icon" href="../../favicon.ico"> -->
 
-    <title>Randomized Kernels for Large Scale Earth Observation Applications</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="./video_files/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap theme -->
-    <link href="./video_files/bootstrap-theme.min.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="./video_files/theme.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
+<html lang="en"><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<meta content="Webpage paper: Randomized Kernels for Large Scale Earth Observation Applications" name="description"/>
+<meta content="Research information about the paper: Randomized Kernels for Large Scale Earth Observation Applications" name="ISP"/>
+<!-- <link rel="icon" href="../../favicon.ico"> -->
+<title>Randomized Kernels for Large Scale Earth Observation Applications</title>
+<!-- Bootstrap core CSS -->
+<link href="./video_files/bootstrap.min.css" rel="stylesheet"/>
+<!-- Bootstrap theme -->
+<link href="./video_files/bootstrap-theme.min.css" rel="stylesheet"/>
+<!-- Custom styles for this template -->
+<link href="./video_files/theme.css" rel="stylesheet"/>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-
-  <body role="document">
-
-    <!-- Fixed navbar -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="https://isp.uv.es/code/rks2017.html">RKS</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="https://isp.uv.es/code/rks2017.html">Home</a></li>
-            <li><a href="https://isp.uv.es/code/RKS2017/videos/index.html">Videos</a></li>
-            <li><a href="https://isp.uv.es/code/RKS2017/RKS2017.zip">Code</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
-
+</head>
+<body role="document">
+<!-- Fixed navbar -->
 <div class="container">
-
 <h2>Cloud detection over landmarks from MSG SEVIRI images</h2>
 
-We cast the problem of cloud identification over landmarks on Meteosat Second Generation (MSG) SEVIRI data. This satellite mission constitutes a fundamental tool for weather forecasting, providing images of the full Earth disc every 15 minutes. Matching the landmarks accurately is of paramount importance in image navigation and registration (INR) models and geometric quality assessment (GQA) in the Level 1 instrument processing chain. Cloud contamination detection over landmarks is an essential step in the MSG processing chain, as undetected clouds are one of the most significant sources of error in landmark matching.<br><br>
+We cast the problem of cloud identification over landmarks on Meteosat Second Generation (MSG) SEVIRI data. This satellite mission constitutes a fundamental tool for weather forecasting, providing images of the full Earth disc every 15 minutes. Matching the landmarks accurately is of paramount importance in image navigation and registration (INR) models and geometric quality assessment (GQA) in the Level 1 instrument processing chain. Cloud contamination detection over landmarks is an essential step in the MSG processing chain, as undetected clouds are one of the most significant sources of error in landmark matching.<br/><br/>
 
-The landmark matching application requires only a binary detection. Furthermore, the cloud detection has to be carried out in real-time to be included in the landmark matching MSG processing chain, which implies efficient and robust detection schemes. Therefore, the proposed classification scheme is designed evaluating the complexity, the scalability, and parallelization of computations.<br><br>
+The landmark matching application requires only a binary detection. Furthermore, the cloud detection has to be carried out in real-time to be included in the landmark matching MSG processing chain, which implies efficient and robust detection schemes. Therefore, the proposed classification scheme is designed evaluating the complexity, the scalability, and parallelization of computations.<br/><br/>
 
-The dataset provided by EUMETSAT contains MSG/SEVIRI Level 1.5 acquisitions for 200 landmarks of variable size for a whole year, which are mainly located over the coastline, islands, or inland waters. A full Earth disk image is acquired every 15 minutes, which produces 96 images per day and results in 35040 images (or chips) per landmark in 2010. Additionally, Level 2 cloud products were provided for each landmark observation so the  Level 2 cloud mask is used as the best available `ground truth' to validate the results. Summarizing, in this problem, we have to deal with near 7 million MSG/SEVIRI multispectral images acquired during 2010. <br><br>
+The dataset provided by EUMETSAT contains MSG/SEVIRI Level 1.5 acquisitions for 200 landmarks of variable size for a whole year, which are mainly located over the coastline, islands, or inland waters. A full Earth disk image is acquired every 15 minutes, which produces 96 images per day and results in 35040 images (or chips) per landmark in 2010. Additionally, Level 2 cloud products were provided for each landmark observation so the  Level 2 cloud mask is used as the best available `ground truth' to validate the results. Summarizing, in this problem, we have to deal with near 7 million MSG/SEVIRI multispectral images acquired during 2010. <br/><br/>
 
-The RKS method was used for cloud identification over landmarks. This was done in the context of a project titled <a href="http://www.eumetsat.int/">Study on pattern recognition based cloud detection over landmarks</a> in collaboration with EUMETSAT European Organisation for the Exploitation of Meteorological Satellites, 01/15 - 11/15. Below we show a set of illustrative videos where the best classifier results are show for particular landmarks. We show the L2 cloud mask and our classifier predictions, along with the cumulative accuracy per acquisition. <br><br>
-
-  <div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8">
-      <h2>Landmark: Ad Dakhla</h2>
-        <div class="embed-responsive embed-responsive-4by3">
-          <iframe class="embed-responsive-item" src="./video_files/example_ISP_0.html"></iframe>
-        </div>
-    </div>
-  </div>
-
-    <div class="col-sm-3">
-      <h2>Aqaba</h2>
-        <div class="embed-responsive embed-responsive-4by3">
-          <iframe class="embed-responsive-item" src="./video_files/example_ISP_14.html"></iframe>
-        </div>
-    </div>
-    <div class="col-sm-3">
-      <h2>Azores</h2>
-        <div class="embed-responsive embed-responsive-4by3">
-          <iframe class="embed-responsive-item" src="./video_files/example_ISP_17.html"></iframe>
-        </div>
-    </div>
-    <div class="col-sm-3">
-      <h2>Chad</h2>
-        <div class="embed-responsive embed-responsive-4by3">
-          <iframe class="embed-responsive-item" src="./video_files/example_ISP_48.html"></iframe>
-        </div>
-    </div>
-    <div class="col-sm-3">
-      <h2>Chad</h2>
-        <div class="embed-responsive embed-responsive-4by3">
-          <iframe class="embed-responsive-item" src="./video_files/example_ISP_63.html"></iframe>
-        </div>
-    </div>
-
-    <div class="col-sm-3">
-      <h2>Grampian</h2>
-        <div class="embed-responsive embed-responsive-4by3">
-          <iframe class="embed-responsive-item" src="./video_files/example_ISP_83.html"></iframe>
-        </div>
-    </div>
-
-    <div class="col-sm-3">
-      <h2>Libreville</h2>
-        <div class="embed-responsive embed-responsive-4by3">
-          <iframe class="embed-responsive-item" src="./video_files/example_ISP_107.html"></iframe>
-        </div>
-    </div>
-
-    <div class="col-sm-3">
-      <h2>Messina</h2>
-        <div class="embed-responsive embed-responsive-4by3">
-          <iframe class="embed-responsive-item" src="./video_files/example_ISP_120.html"></iframe>
-        </div>
-    </div>
-
-    <div class="col-sm-3">
-      <h2>Nasser</h2>
-        <div class="embed-responsive embed-responsive-4by3">
-          <iframe class="embed-responsive-item" src="./video_files/example_ISP_131.html"></iframe>
-        </div>
-    </div>
-
-    <div class="col-sm-3">
-      <h2>Rhodes</h2>
-        <div class="embed-responsive embed-responsive-4by3">
-          <iframe class="embed-responsive-item" src="./video_files/example_ISP_154.html"></iframe>
-        </div>
-    </div>
-
-    <div class="col-sm-3">
-      <h2>Tenerife</h2>
-        <div class="embed-responsive embed-responsive-4by3">
-          <iframe class="embed-responsive-item" src="./video_files/example_ISP_177.html"></iframe>
-        </div>
-    </div>
-
-    <div class="col-sm-3">
-      <h2>Uruguay</h2>
-        <div class="embed-responsive embed-responsive-4by3">
-          <iframe class="embed-responsive-item" src="./video_files/example_ISP_189.html"></iframe>
-        </div>
-    </div>
-
-    <div class="col-sm-3">
-      <h2>Valencia</h2>
-        <div class="embed-responsive embed-responsive-4by3">
-          <iframe class="embed-responsive-item" src="./video_files/example_ISP_190.html"></iframe>
-        </div>
-    </div>
+The RKS method was used for cloud identification over landmarks. This was done in the context of a project titled <a href="http://www.eumetsat.int/">Study on pattern recognition based cloud detection over landmarks</a> in collaboration with EUMETSAT European Organisation for the Exploitation of Meteorological Satellites, 01/15 - 11/15. Below we show a set of illustrative videos where the best classifier results are show for particular landmarks. We show the L2 cloud mask and our classifier predictions, along with the cumulative accuracy per acquisition. <br/><br/>
+<div class="row">
+<div class="col-sm-2"></div>
+<div class="col-sm-8">
+<h2>Landmark: Ad Dakhla</h2>
+<div class="embed-responsive embed-responsive-4by3">
+<iframe class="embed-responsive-item" src="./video_files/example_ISP_0.html"></iframe>
+</div>
+</div>
+</div>
+<div class="col-sm-3">
+<h2>Aqaba</h2>
+<div class="embed-responsive embed-responsive-4by3">
+<iframe class="embed-responsive-item" src="./video_files/example_ISP_14.html"></iframe>
+</div>
+</div>
+<div class="col-sm-3">
+<h2>Azores</h2>
+<div class="embed-responsive embed-responsive-4by3">
+<iframe class="embed-responsive-item" src="./video_files/example_ISP_17.html"></iframe>
+</div>
+</div>
+<div class="col-sm-3">
+<h2>Chad</h2>
+<div class="embed-responsive embed-responsive-4by3">
+<iframe class="embed-responsive-item" src="./video_files/example_ISP_48.html"></iframe>
+</div>
+</div>
+<div class="col-sm-3">
+<h2>Chad</h2>
+<div class="embed-responsive embed-responsive-4by3">
+<iframe class="embed-responsive-item" src="./video_files/example_ISP_63.html"></iframe>
+</div>
+</div>
+<div class="col-sm-3">
+<h2>Grampian</h2>
+<div class="embed-responsive embed-responsive-4by3">
+<iframe class="embed-responsive-item" src="./video_files/example_ISP_83.html"></iframe>
+</div>
+</div>
+<div class="col-sm-3">
+<h2>Libreville</h2>
+<div class="embed-responsive embed-responsive-4by3">
+<iframe class="embed-responsive-item" src="./video_files/example_ISP_107.html"></iframe>
+</div>
+</div>
+<div class="col-sm-3">
+<h2>Messina</h2>
+<div class="embed-responsive embed-responsive-4by3">
+<iframe class="embed-responsive-item" src="./video_files/example_ISP_120.html"></iframe>
+</div>
+</div>
+<div class="col-sm-3">
+<h2>Nasser</h2>
+<div class="embed-responsive embed-responsive-4by3">
+<iframe class="embed-responsive-item" src="./video_files/example_ISP_131.html"></iframe>
+</div>
+</div>
+<div class="col-sm-3">
+<h2>Rhodes</h2>
+<div class="embed-responsive embed-responsive-4by3">
+<iframe class="embed-responsive-item" src="./video_files/example_ISP_154.html"></iframe>
+</div>
+</div>
+<div class="col-sm-3">
+<h2>Tenerife</h2>
+<div class="embed-responsive embed-responsive-4by3">
+<iframe class="embed-responsive-item" src="./video_files/example_ISP_177.html"></iframe>
+</div>
+</div>
+<div class="col-sm-3">
+<h2>Uruguay</h2>
+<div class="embed-responsive embed-responsive-4by3">
+<iframe class="embed-responsive-item" src="./video_files/example_ISP_189.html"></iframe>
+</div>
+</div>
+<div class="col-sm-3">
+<h2>Valencia</h2>
+<div class="embed-responsive embed-responsive-4by3">
+<iframe class="embed-responsive-item" src="./video_files/example_ISP_190.html"></iframe>
+</div>
+</div>
 <!-- -->
-<br>
+<br/>
 <h2>Contact</h2>
-<a name="contact" href="mailto:adrian.perez@uv.es">
-<p>If you have any question about, please, do not hesitate to write an email to Adrián Pérez-Suay (Adrian.Perez&nbsp;at&nbsp;uv&nbsp;dot&nbsp;es).</p>
-<img src="./video_files/IPL_logo_blanco.png" align="right" alt="IPL logo" width="200">
+<a href="mailto:adrian.perez@uv.es" name="contact">
+<p>If you have any question about, please, do not hesitate to write an email to Adrián Pérez-Suay (Adrian.Perez at uv dot es).</p>
+<img align="right" alt="IPL logo" src="/images/projects/sedal/IPL_logo_blanco.webp" width="200"/>
 </a>
-  </div>
-
-    <!-- Bootstrap core JavaScript
+</div>
+<!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="./video_files/jquery-1.12.4.min.js"></script>
-    <script src="./video_files/bootstrap.min.js"></script>
-  
-
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./video_files/jquery-1.12.4.min.js"></script>
+<script src="./video_files/bootstrap.min.js"></script>
 </body></html>
