@@ -7,16 +7,16 @@ title: "Research Social Science"
 
 # AI for sustainability and social sciences
 
-<br>
+<br/>
 
 ## Motivation
 
 **The Earth is a highly complex, dynamic, and networked system where very different physical, chemical and biological processes interact, to form the world we know. The description of such a complex system needs of the integration of different disciplines such as Physics, Chemistry, Mathematics and other applied sciences, leading to what has been coined as Earth System Science (ESS). The analysis of the Earth system involves studying interacting processes occurring in several spheres (atmosphere, hydrosphere, cryosphere, geosphere, pedosphere, biosphere, and magnetosphere) as well as the anthroposphere where the Society acts.**
 
 <div class="cimage_s">
-<img src="img/SDGs.webp"  style="display: block; margin: auto" class="image_s"></img>
+<img class="image_s" src="/images/adicionales/SDGs.webp" style="display: block; margin: auto"/>
 </div>
-<br>
+<br/>
 
 Earth system science provides the physical basis of the world we live in, with the final objective of obtaining a sustainable development of our society, see the United Nations [Sustainable Development Goals](https://sustainabledevelopment.un.org/). We develop AI models for tackling pressing questions in the climate-society interplay. We tackle problems where the human is in the middle (both a cause and an effect); where SDGs, fairness and ethics are implied, and where elusive concepts like wealth, well-being and development are involved. Our unique approach involves exploiting massive amount of data and machine learning algorithms to model and understand the environment-human interactions.
 
@@ -52,4 +52,4 @@ Our main goal is to develop new machine learning models for the efficient treatm
   }
 }
 
-</style>
+</style></div>

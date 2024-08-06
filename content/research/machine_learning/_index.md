@@ -5,21 +5,22 @@ title: "Research Machine Learning"
 # Machine learning
 
 
-<br>
+<br/>
 
 
 ## Motivation
 
-**Machines may extract knowledge from measurements by analyzing the statistical properties of the acquired signals.** The aim is to capture the structures in the experimental data. Our contributions to machine learning include algorithms for automatic classification (recognition) of objects, robust regression tools for multidimensional data, density estimation algorithms, and feature extraction and selection. We study the principled design of learning algorithms, specially neural networks and kernel methods. **Methods are designed for general purposes but also specific to the application, most of them related to image processing, computer vision tasks and Earth science data analysis, but also non-structured data in social sciences.**br
+**Machines may extract knowledge from measurements by analyzing the statistical properties of the acquired signals.** The aim is to capture the structures in the experimental data. Our contributions to machine learning include algorithms for automatic classification (recognition) of objects, robust regression tools for multidimensional data, density estimation algorithms, and feature extraction and selection. We study the principled design of learning algorithms, specially neural networks and kernel methods. **Methods are designed for general purposes but also specific to the application, most of them related to image processing, computer vision tasks and Earth science data analysis, but also non-structured data in social sciences.**
 
 ## An AI agenda
 
 **The main research hypothesis of our research agenda is that current AI models are limited to tackle fitting problems only, and do not have a clear notion of space, time and causal relations.** We need to aboard the more ambitious questions of understanding through machine learning, going beyond mere model fitting. This goal needs to develop (i) targeted ML that respects data characteristics, (ii) hybrid physics-aware ML that incorporates domain knowledge and inductive priors, and more importantly (3) moving from fitting to understanding through AI models that are explainable and grasp causal relations from observational data.
 
 <div class="image_ml_c">
-<img src="img/philosophy_balls.webp" style=" display: block; margin: auto" class="image_ml"></img>
+<img class="image_ml" src="/images/research/philosophy_balls.webp" style=" display: block; margin: auto"/>
 </div>
-<br>
+
+<br/>
 
 **In order to advance in the previous AI agenda, we base our research in 3 fundamental research pillars:**
 
@@ -29,7 +30,7 @@ title: "Research Machine Learning"
 
 ## Challenges and approaches
 
-**The group has a relatively long tradition in machine learning, particularly focused on the study and development of neural networks and kernel machines.** Recently, the fields of manifold, semisupervised and active learning have captured our attention. The study of the intrinsic coordinates and representations where data in general, and images in particular, live is interesting for many applications. Regression and classification methods must be modified to deal with changes in data/image statistics efficiently. **In many signal and image processing problems, such as change detection or multitemporal data classification, adaptation is a must. We currently model shifts, twists and wrappings of image distributions by designing semisupervised learning methods. The fields of manifold alignment and domain adaptation has also important information-theoretic implications which we analyzed through kernel entropy component analyis, multivariate Gaussianization transforms and extensions of principal curves and surfaces. And yes, deep learning is of interest to us; what has the networked learned? and why?** Follow our works in [Papers](papers.html).
+**The group has a relatively long tradition in machine learning, particularly focused on the study and development of neural networks and kernel machines.** Recently, the fields of manifold, semisupervised and active learning have captured our attention. The study of the intrinsic coordinates and representations where data in general, and images in particular, live is interesting for many applications. Regression and classification methods must be modified to deal with changes in data/image statistics efficiently. **In many signal and image processing problems, such as change detection or multitemporal data classification, adaptation is a must. We currently model shifts, twists and wrappings of image distributions by designing semisupervised learning methods. The fields of manifold alignment and domain adaptation has also important information-theoretic implications which we analyzed through kernel entropy component analyis, multivariate Gaussianization transforms and extensions of principal curves and surfaces. And yes, deep learning is of interest to us; what has the networked learned? and why?** Follow our works in [Papers](../../publications/journals/).
 
 Purely supervised methods work very well in static environments and when representative experimental data are observed. If this does not happen, algorithms may fail because data structured has not been accurately captured and modeled. We are also interested in complementary fields that arise under such circumstances: **active learning**, which tries to select the most informative samples to improve algorithm's performance, and semisupervised learning, which is focused on exploiting the wealth of unlabeled data to improve performance. Semisupervised learning typically resorts to modeling data distributions whose characteristics are then imposed to the signal model. This is a very challenging problem that is directly related to **density estimation** (since one ultimately seeks for a proper model of the marginal data density) and **manifold learning** (since the intrinsic data coordinates need to be found for data characterization).
 
