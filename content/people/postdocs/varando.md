@@ -9,7 +9,6 @@ params:
   googlescholar: 'https://scholar.google.com/citations?user=ALjiTg0AAAAJ&hl'
   orcid: 'https://orcid.org/0000-0002-6708-1103'
   github: 'https://github.com/gherardovarando/'
-  researchgate: 'https://www.researchgate.net/profile/Gherardo-Varando'
   website: 'https://gherardovarando.github.io/'
 ---
 
