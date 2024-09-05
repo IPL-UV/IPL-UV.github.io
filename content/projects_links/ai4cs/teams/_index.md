@@ -18,7 +18,7 @@ optionsubtitle1:
   - name: "Image and Signal Processing (ISP) group - Universitat de València Jordi Muñoz"
     url: "https://www.uv.es/jordi/"
   - name: "Image and Signal Processing (ISP) group - Universitat de València Julia Amorós"
-    url: "https://isp.uv.es/people.html"
+    url: "people/"
   - name: "Instituto de Óptica, CSIC - Marcelo Bertalmio"
     url: "https://www.io.csic.es/marcelo-bertalmio/"
   - name: "Image and Signal Processing (ISP) group - Universitat de València Ana B. Ruescas"

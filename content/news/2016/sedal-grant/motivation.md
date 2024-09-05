@@ -13,7 +13,7 @@ We advocate that machine learning algorithms for EO applications need to be guid
 ## Cloud Detection in the Cloud
 - **Google Earth Engine Research Award, L. Gomez-Chova**
 - 01/16 - 12/17
-- [Cloud detection in the cloud](https://isp.uv.es/projects/cdc/GEE_cloud_detection_results.html)
+- [Cloud detection in the cloud](/old_pages/other/cloud_detection.html)
 
 ## LIFE-VISION: Learning Image Features to Encode Visual Information
 - **Spanish Ministry of Economy and Competitiveness, 2012. TIN2012-38102-C03-01**
@@ -23,7 +23,7 @@ We advocate that machine learning algorithms for EO applications need to be guid
 ## GEOLEARN
 - **Spanish Ministry of Economy and Competitiveness**
 - 2016
-- [GEOLEARN](https://isp.uv.es/motivation_sd.html)
+- [GEOLEARN](/old_pages/other/motivation_sd.html)
 
 ## ESA CCI Soil Moisture
 - **European Space Agency**
