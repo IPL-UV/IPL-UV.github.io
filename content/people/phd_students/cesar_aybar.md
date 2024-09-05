@@ -7,7 +7,6 @@ weight: 1
 params:
   img: cesar.webp
   scholar: 'https://scholar.google.com/citations?user=rfF51ocAAAAJ'
-  twitter: 'https://twitter.com/csaybar'
   github: 'https://github.com/csaybar'
 ---
 
