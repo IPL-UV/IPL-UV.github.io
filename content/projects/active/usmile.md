@@ -10,7 +10,7 @@ params:
   founding: 
     name : 'ERC Synergy Grant'
     logo : 'erc.webp'
-  logo: 'usmile.webp'
+  logo: 'erc.webp'
   website: 'https://www.usmile-erc.eu/'
   partners: 
    - '' 
