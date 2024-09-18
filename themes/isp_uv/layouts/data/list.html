@@ -1,23 +1,25 @@
 {{ define "main" }}
-<div class="content-container" style="font-size: 14px;">
-  <h1 style="margin-bottom: 20px;">Databases</h1>
-  <br>
-  <p>
-    Check also our GitHub repos at <a href="https://github.com/IPL-UV/">https://github.com/IPL-UV/</a>.
-  </p>
-  <div class="grid-container" id="grid-container" style="font-size: 0.9em;">
+<div class="content-container">
+  <div class="grid-container" id="grid-container">
+    <div class="title-container">
+      <h1> {{ .Params.title }} </h1>
+    </div>
     {{ range .Pages }}
+    {{ $img := urls.JoinPath "/images/data" .Params.img }}
     <div class="grid-item">
-      {{ $img := urls.JoinPath "/images/data" .Params.img }}
-      <a href="{{ .Params.link }}" style="text-decoration: none;">
-        <img src="{{ $img }}" alt="{{ .Title }}" style="height: 100px; width: 100px; margin-right: 10px;">
+      <a href="{{ .Params.link }}">
+        <img src="{{ $img }}" alt="{{ .Title }}">
       </a>
       <div class="text">
-        <a href="{{ .Params.link }}" class="nameLink_a">{{ .Title }}</a>
-        <p>{{ .Params.description }}</p>
+        <a href="{{ .Params.link }}" class="nameLink_a"> {{ .Params.title }} </a>
+        <p>{{ .Params.description | safeHTML }}</p>
+        <p>{{ .RawContent | safeHTML }}</p>
       </div>
     </div>
     {{ end }}
   </div>
+  <p>
+    {{ .RawContent | markdownify }}
+  </p>
 </div>
 {{ end }}
