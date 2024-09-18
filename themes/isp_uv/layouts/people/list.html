@@ -12,13 +12,13 @@
         {{ $img := printf "/images/people/%s" .Params.img }}
         {{ $name := .Title }}
         {{ $link_image := .Params.link_image }}
-        <div class="card mb-3">
+        <div class="card">
             <div class="row g-0">
                 <div class="col-md-3">
                     {{ if $link_image }}
                     <a href="{{ $link_image }}">
                     {{ end }}
-                    <img src="{{ $img }}" width="100px" height="100px" class="img-fluid" alt="Image of {{ $name }}">
+                    <img src="{{ $img }}" class="img-fluid" alt="Image of {{ $name }}">
                     {{ if $link_image }}
                     </a>
                     {{ end }}
