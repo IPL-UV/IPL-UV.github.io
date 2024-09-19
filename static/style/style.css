@@ -715,3 +715,153 @@ body.section-contact .navbar-nav .nav-link[href="/contact/"] {
 }
 
 
+/* sfsfsdf */
+/* Panel general */
+.panel-grid-container {
+  display: grid;
+  grid-template-columns: 1fr; /* Para móviles (1 columna) */
+  gap: 1rem;
+}
+
+.panel-item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 0.625rem;
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); /* Suave sombra */
+}
+
+.panel-header {
+  background-color: #f5f5f5; /* Fondo suave para el título */
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #ddd;
+  border-radius: 0.625rem 0.625rem 0 0;
+  text-align: center; /* Centra el título */
+}
+
+.panel-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+  color: #333; /* Color del título */
+}
+
+.panel-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.panel-image {
+  flex-basis: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel-image img {
+  max-width: 100%;
+  max-height: 100%; /* Ajuste para que no desborde */
+  border-radius: 0.3125rem;
+  object-fit: cover;
+}
+
+.panel-description {
+  flex-basis: 55%;
+  text-align: justify;
+}
+
+.panel-description h5 {
+  font-size: 0.9rem;
+  color: #333; /* Ajuste de color */
+  line-height: 1.5;
+}
+
+.panel-references {
+  flex-basis: 25%;
+}
+
+.panel-references h6 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+.references-list {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.references-list li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+/* Ajustes para pantallas intermedias (769px a 943px) */
+@media (max-width: 1201px) and (min-width: 769px) {
+  .panel-body {
+    flex-direction: column; /* Cambia a diseño vertical */
+  }
+
+  .panel-image, .panel-description, .panel-references {
+    flex-basis: 100%; /* Ocupan todo el ancho */
+    text-align: center; /* Centra el contenido */
+  }
+
+  .panel-image img {
+    width: 270px; 
+    margin: 0 auto; /* Centra horizontalmente la imagen */
+    margin: 1rem 0; /* Ajuste de margen */
+  }
+
+  /* Reducción de fuente y márgenes */
+  .panel-description h5, .references-list {
+    font-size: 0.85rem; /* Reducción del tamaño de fuente */
+  }
+
+  .panel-references h6 {
+    font-size: 1rem;
+  }
+}
+
+/* Media Query para ancho máximo de 768px */
+@media (max-width: 768px) {
+  .panel-body {
+    flex-direction: column; /* Cambia a diseño vertical */
+  }
+
+  .panel-image, .panel-description, .panel-references {
+    flex-basis: 100%;
+    text-align: center; /* Centra el contenido */
+  }
+
+  .panel-image img {
+    max-width: 270px; /* Ajuste para la imagen en pantallas medianas */
+    margin: 0 auto; /* Centra horizontalmente la imagen */
+    margin: 1rem 0; /* Ajuste de margen */
+  }
+}
+
+/* Media Query para ancho máximo de 480px */
+@media (max-width: 480px) {
+  .panel-body {
+    flex-direction: column; /* Cambia a diseño vertical */
+  }
+
+  .panel-image, .panel-description, .panel-references {
+    flex-basis: 100%; /* Ocupan todo el ancho */
+    text-align: center; /* Centra el contenido */
+  }
+
+  .panel-image img {
+    max-width: 80%; /* Ajuste para la imagen en pantallas pequeñas */
+    margin: 0 auto; /* Centra horizontalmente la imagen */
+    margin: 1rem 0; /* Ajuste de margen */
+  }
+}

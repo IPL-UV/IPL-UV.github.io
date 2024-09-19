@@ -1,0 +1,48 @@
+
+<!-- Layout usado: causal_inference/list.html -->
+{{ define "main" }}
+<div class="content-container">
+  <div class="panel-grid-container" id="panel-grid-container">
+    <div class="title-container">
+      <h1> {{ .Params.title }} </h1>
+    </div>
+    {{ range .Pages }}
+    {{ $img := urls.JoinPath "/images/adicionales" .Params.img }}
+    <!-- Cada panel en el grid -->
+    <div class="panel-item">
+    <!-- Encabezado del panel -->
+      <div class="panel-header">
+        <h4 class="panel-title"><b>{{ .Title }}</b></h4>
+      </div>
+      <!-- Cuerpo del panel -->
+      <div class="panel-body">
+        <div class="panel-content row">
+          <!-- Imagen del panel -->
+          <div class="panel-image col-md-2">
+            <a href="{{ .Params.link }}">
+              <img src="{{ $img }}" alt="{{ .Params.image_alt }}">
+            </a>
+          </div>  
+          <!-- Descripción del panel -->
+          <div class="panel-description col-md-6">
+            <h5>
+              <p class="text-justify">{{ .Params.description | markdownify }}</p>
+            </h5>
+          </div>  
+          <!-- Referencias del panel -->
+          <div class="panel-references col-md-4">
+            <h6><b>References</b></h6>
+            <ul class="references-list">
+              {{ range .Params.references }}
+                <li>{{ . }}</li>
+              {{ end }}
+            </ul>
+          </div>
+        </div> <!-- Fin de panel-content -->
+      </div> <!-- Fin de panel-body -->
+    </div> <!-- Fin de panel-item --> 
+    {{ end }}
+  </div> <!-- Fin de panel-grid-container -->
+    <p>{{ .RawContent | markdownify }}</p>
+</div> <!-- Fin de content-container -->
+{{ end }}
