@@ -1,40 +1,60 @@
 {{ define "main" }}
-<div class="content-container">
-  <div class="panel-grid-container" id="panel-grid-container">
-    <div class="title-container">
-      <h1> {{ .Params.title }} </h1>
+<div class="content-container grid-layout">
+    <div class="box-header">
+        <h1> {{ .Title }} </h1>
     </div>
-    {{ range .Pages }}
-    {{ $img := urls.JoinPath "/images/adicionales" .Params.img }}
-    <div class="panel-item">
-      <div class="panel-header">
-        <h4 class="panel-title"><b>{{ .Title }}</b></h4>
-      </div>
-      <div class="panel-body">
-        <div class="panel-content row">
-          <div class="panel-image col-md-2">
-            <a href="{{ .Params.link }}">
-              <img src="{{ $img }}" alt="{{ .Params.image_alt }}">
-            </a>
-          </div>  
-          <div class="panel-description col-md-6">
-            <h5>
-              <p class="text-justify">{{ .Params.description | markdownify }}</p>
-            </h5>
-          </div>  
-          <div class="panel-references col-md-4">
-            <h6><b>References</b></h6>
-            <ul class="references-list">
-              {{ range .Params.references }}
-                <li>{{ . }}</li>
-              {{ end }}
-            </ul>
-          </div>
+
+    <div class="box-abstract">
+        <p>{{ .Params.abstract }}</p>
+    </div>
+
+    {{ if .Params.imagenes }}
+    <aside class="box-gallery">
+        <div class="gallery-grid">
+            {{ range .Params.imagenes }}
+            <div class="gallery-item">
+                <a href="{{ .ruta }}" class="gallery-thumbnail">
+                    <img src="{{ .ruta }}" alt="{{ .titulo | default "" }}">
+                </a>
+                {{ if .titulo }}
+                <p class="gallery-title">{{ .titulo }}</p>
+                {{ end }}
+                {{ if .descripcion }}
+                <div class="gallery-description">
+                    <p>{{ .descripcion }}</p>
+                </div>
+                {{ end }}
+            </div>
+            {{ end }}
         </div>
-      </div>
-    </div> 
+    </aside>
     {{ end }}
-  </div>
-    <p>{{ .RawContent | markdownify }}</p>
+
+    <section class="box-references title2">
+        <h2>References</h2>
+        <ul class="references-list">
+            {{ range .Params.referencias }}
+            <li>
+                {{ if .url }}
+                <strong><a href="{{ .url }}" target="_blank" class="references-name">{{ .nombre }}</a></strong>
+                {{ else }}
+                <strong>{{ .nombre }}</strong>
+                {{ end }}<br>
+                <span>{{ .autores }}</span><br>
+                <em>{{ .publicacion | markdownify }}</em>
+            </li>
+            {{ end }}
+        </ul>
+    </section>
+
+    <section class="box-enlaces title2">
+        <h2>Download</h2>
+        <ul class="enlaces-list">
+            {{ range .Params.enlaces }}
+            <li><a href="{{ .url }}">{{ .nombre }}</a></li>
+            {{ end }}
+        </ul>
+    </section>
 </div>
+
 {{ end }}
