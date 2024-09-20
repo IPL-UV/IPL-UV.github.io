@@ -413,10 +413,8 @@ body.section-contact .navbar-nav .nav-link[href="/contact/"] {
 
 /* CODE - DATA - PEOPLE */
 .content-container {
-  margin-top: 2rem; 
+  margin: 2rem auto; 
   max-width: 70%;
-  margin-left: auto;
-  margin-right: auto; 
   font-size: 0.8rem;
 }
 
@@ -865,7 +863,7 @@ body.section-contact .navbar-nav .nav-link[href="/contact/"] {
 }
 
 
-/* single */
+/* CODE sigles*/
 
 
 .grid-layout {
@@ -900,7 +898,6 @@ body.section-contact .navbar-nav .nav-link[href="/contact/"] {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   text-align: center;
   border:1px solid #ddd;
-  margin-top: 2rem;
   grid-column: 1 / -1;
 }
 
