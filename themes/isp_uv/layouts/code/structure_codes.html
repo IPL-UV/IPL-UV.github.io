@@ -25,7 +25,7 @@
                     <h6><b>References</b></h6>
                     <ul class="references-list">
                         {{ range .Params.references }}
-                        <li>{{ . }}</li>
+                        <li>{{ . | markdownify }}</li>
                         {{ end }}
                     </ul>
                 </div>

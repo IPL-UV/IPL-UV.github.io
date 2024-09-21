@@ -49,6 +49,11 @@
 
     <section class="box-enlaces title2">
         <h2>Download</h2>
+        {{ if .Params.desc_download }}
+        <div class="enlaces-description">
+            <p>{{ .Params.desc_download | markdownify }}</p>
+        </div>
+        {{ end }}
         <ul class="enlaces-list">
             {{ range .Params.enlaces }}
             <li><a href="{{ .url }}">{{ .nombre }}</a></li>
