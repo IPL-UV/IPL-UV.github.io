@@ -791,7 +791,7 @@ body.section-contact .navbar-nav .nav-link[href="/contact/"] {
 }
 
 .panel-description {
-  flex: 1 1 45%;
+  flex-basis: 55%;
   text-align: justify;
   margin: auto;
   
