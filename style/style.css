@@ -791,8 +791,7 @@ body.section-contact .navbar-nav .nav-link[href="/contact/"] {
 }
 
 .panel-description {
-  flex: 1 1 45%;
-  max-width: 45%;
+  flex-basis: 55%;
   text-align: justify;
   margin: auto;
   
@@ -912,8 +911,7 @@ body.section-contact .navbar-nav .nav-link[href="/contact/"] {
 }
 
 
-/* CODE sigles*/
-
+/* CODE single*/
 
 .grid-layout {
   display: grid;
@@ -985,7 +983,15 @@ body.section-contact .navbar-nav .nav-link[href="/contact/"] {
   font-size: clamp(0.5rem, 2.5vw, 0.9rem);
   line-height: 1.6;
   margin: 0;
+
 }
+
+.box-abstract p a {
+  color: #337ab7;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
 
 /* Galery */
 .box-gallery {
@@ -1000,11 +1006,10 @@ body.section-contact .navbar-nav .nav-link[href="/contact/"] {
 }
 
 .gallery-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  justify-content: center; 
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual ancho */
+  gap: 15px; /* Espacio entre las imágenes */
+  justify-content: center;
 }
 
 .gallery-item {
@@ -1013,13 +1018,26 @@ body.section-contact .navbar-nav .nav-link[href="/contact/"] {
   border-radius: 0.625rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 100%;
+  /* center verticalmente */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
+.gallery-item img {
+  width: 100%; /* Ocupa todo el ancho disponible en su contenedor */
+  max-width: 100%; /* No se ensancha más allá de su contenedor */
+  height: auto;
+  border-radius: 0.3125rem;
+  object-fit: cover; /* Asegura que la imagen se ajuste bien */
+}
+
 
 .gallery-title {
   font-size: clamp(0.3rem, 2.5vw, 0.6rem);
   line-height: 1.6;
   margin: 0;
+  font-weight: bold;
 }
 
 .gallery-description {
@@ -1027,9 +1045,25 @@ body.section-contact .navbar-nav .nav-link[href="/contact/"] {
 }
 
 .gallery-item img {
-  max-width: 150px;
+  max-width: 60%;
   height: auto;
   border-radius: 0.3125rem;
+  margin: auto;
+}
+
+.gallery-item video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.3125rem;
+  margin: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item video:hover,
+.gallery-item video:focus {
+  transform: scale(1.05);
+  z-index: 10;
 }
 
 /* References */
@@ -1075,8 +1109,6 @@ body.section-contact .navbar-nav .nav-link[href="/contact/"] {
   text-decoration: none;
 }
 
-/* Responsividad para pantallas pequeñas */
-
 @media (max-width: 1200px) {
   .grid-layout {
     grid-template-areas:
@@ -1098,5 +1130,11 @@ body.section-contact .navbar-nav .nav-link[href="/contact/"] {
       "references"
       "enlaces";
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
   }
 }
