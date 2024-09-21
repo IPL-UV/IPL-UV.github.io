@@ -5,7 +5,7 @@
     </div>
 
     <div class="box-abstract">
-        <p>{{ .Params.abstract }}</p>
+        <p>{{ .Params.abstract | markdownify }}</p>
     </div>
 
     {{ if .Params.imagenes }}
@@ -13,9 +13,19 @@
         <div class="gallery-grid">
             {{ range .Params.imagenes }}
             <div class="gallery-item">
+                {{ if or (strings.HasSuffix .ruta ".webp") (strings.HasSuffix .ruta ".jpg") (strings.HasSuffix .ruta ".png") }}
+                <!-- Renderiza una imagen -->
                 <a href="{{ .ruta }}" class="gallery-thumbnail">
                     <img src="{{ .ruta }}" alt="{{ .titulo | default "" }}">
                 </a>
+                {{ else if or (strings.HasSuffix .ruta ".mp4") (strings.HasSuffix .ruta ".webm") }}
+                <!-- Renderiza un video -->
+                <video controls>
+                    <source src="{{ .ruta }}" type="video/{{ index (split .ruta ".") 1 }}">
+                    Your browser does not support the video tag.
+                </video>
+                {{ end }}
+
                 {{ if .titulo }}
                 <p class="gallery-title">{{ .titulo }}</p>
                 {{ end }}
@@ -46,7 +56,7 @@
             {{ end }}
         </ul>
     </section>
-
+    {{ if .Params.enlaces }}
     <section class="box-enlaces title2">
         <h2>Download</h2>
         {{ if .Params.desc_download }}
@@ -60,6 +70,7 @@
             {{ end }}
         </ul>
     </section>
+    {{ end }}
 </div>
 
 {{ end }}
