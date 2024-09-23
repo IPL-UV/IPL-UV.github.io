@@ -827,10 +827,10 @@ body.section-contact .navbar-nav .nav-link[href="/contact/"] {
   font-style: italic;
   font-size: clamp(0.4rem, 2.5vw, 0.7rem);
   padding: 0;
-  
   list-style-position: inside;
   word-wrap: break-word;
 }
+
 
 .references-list li a {
   color: #337ab7;
@@ -935,6 +935,22 @@ body.section-contact .navbar-nav .nav-link[href="/contact/"] {
   grid-template-columns: 1fr;
 }
 
+.grid-layout:not(:has(.box-enlaces)) {
+  grid-template-areas:
+    "header header"
+    "abstract gallery"
+    "references references";
+  grid-template-columns: 2fr 1fr;
+}
+
+.grid-layout:not(:has(.box-gallery)):not(:has(.box-enlaces)) {
+  grid-template-areas:
+  "header header"
+  "abstract abstract"
+  "references references";
+  grid-template-columns: 1fr;
+}
+
 
 /* Title one */
 .box-header {
@@ -954,7 +970,8 @@ body.section-contact .navbar-nav .nav-link[href="/contact/"] {
   margin: auto;
   background-color: transparent;
   font-size: clamp(0.6rem, 2.5vw, 1.2rem);
-  font-weight: 700
+  font-weight: 700;
+  text-shadow: 0.05rem 0.05rem 0.05rem  #7c7b7b;
 }
 
 .title2 h2 {
@@ -977,19 +994,50 @@ body.section-contact .navbar-nav .nav-link[href="/contact/"] {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   text-align: justify;
   border:1px solid #ddd;
+  max-height: 35.2rem;
+  overflow-y: auto;
 }
 
 .box-abstract p {
-  font-size: clamp(0.5rem, 2.5vw, 0.9rem);
+  font-size: clamp(0.45rem, 2.5vw, 0.9rem);
   line-height: 1.6;
   margin: 0;
-
 }
 
-.box-abstract p a {
+.box-abstract ul {
+  font-size: clamp(0.45rem, 2.5vw, 0.9rem);
+  line-height: 1.6;
+  margin: 0;
+  text-align: left;
+}
+
+.box-abstract h1 {
+  color: #000000;
+  font-size: clamp(0.55rem, 2.5vw, 1.1rem);
+  text-align: center;
+  display: block;
+  margin: auto;
+  background-color: transparent;
+  text-shadow: 0.05rem 0.05rem 0.05rem  #7c7b7b;
+  margin: 0.3rem auto;
+}
+
+.box-abstract h2 {
+  color: #000000;
+  font-size: clamp(0.5rem, 2.5vw, 0.96rem);
+  text-align: left;
+  background-color: transparent;
+  text-shadow: 0.05rem 0.05rem 0.05rem  #7c7b7b;
+  margin: 0.5rem auto;
+  padding: 0;
+  font-style: italic;
+}
+
+.box-abstract p a, .box-abstract ul li a {
   color: #337ab7;
   text-decoration: none;
   transition: color 0.3s ease;
+  font-size: clamp(0.45rem, 2.5vw, 0.9rem);
 }
 
 
@@ -1000,16 +1048,22 @@ body.section-contact .navbar-nav .nav-link[href="/contact/"] {
   padding: 1.5rem;
   border-radius: 0.625rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  border:1px solid #ddd;
+  border: 1px solid #ddd;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
+  max-height: 35.2rem; 
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual ancho */
+  grid-template-columns: 1fr; /* Dos columnas de igual ancho */
   gap: 15px; /* Espacio entre las imágenes */
   justify-content: center;
+  justify-items: center;
+  max-height: none; /* Permite que el contenedor ajuste su altura según el contenido */
+  margin: 0 auto;
 }
 
 .gallery-item {
@@ -1018,10 +1072,11 @@ body.section-contact .navbar-nav .nav-link[href="/contact/"] {
   border-radius: 0.625rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   text-align: center;
-  /* center verticalmente */
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 80%;
+  
 }
 
 .gallery-item img {
@@ -1032,7 +1087,6 @@ body.section-contact .navbar-nav .nav-link[href="/contact/"] {
   object-fit: cover; /* Asegura que la imagen se ajuste bien */
 }
 
-
 .gallery-title {
   font-size: clamp(0.3rem, 2.5vw, 0.6rem);
   line-height: 1.6;
@@ -1040,16 +1094,28 @@ body.section-contact .navbar-nav .nav-link[href="/contact/"] {
   font-weight: bold;
 }
 
+.gallery-title a {
+  color: #337ab7;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+
 .gallery-description {
   font-size: clamp(0.4rem, 2.5vw, 0.7rem);
 }
 
-.gallery-item img {
-  max-width: 60%;
-  height: auto;
-  border-radius: 0.3125rem;
-  margin: auto;
+.gallery-description p {
+  text-align: justify;
 }
+
+.gallery-description p a {
+  color: #337ab7;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+
 
 .gallery-item video {
   max-width: 100%;
@@ -1076,6 +1142,10 @@ body.section-contact .navbar-nav .nav-link[href="/contact/"] {
   border:1px solid #ddd;
 }
 
+.box-references h2 {
+  text-shadow: 0.05rem 0.05rem 0.05rem  #7c7b7b;
+}
+
 /* Links */
 .box-enlaces {
   grid-area: enlaces;
@@ -1084,6 +1154,10 @@ body.section-contact .navbar-nav .nav-link[href="/contact/"] {
   border-radius: 0.625rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   border:1px solid #ddd;
+}
+
+.box-enlaces h2 {
+  text-shadow: 0.05rem 0.05rem 0.05rem  #7c7b7b;
 }
 
 .enlaces-list {
@@ -1129,6 +1203,22 @@ body.section-contact .navbar-nav .nav-link[href="/contact/"] {
       "abstract"
       "references"
       "enlaces";
+    grid-template-columns: 1fr;
+  }
+  .grid-layout:not(:has(.box-enlaces)) {
+    grid-template-areas:
+      "header"
+      "abstract" 
+      "gallery"
+      "references";
+    grid-template-columns: 1fr;
+  }
+  
+  .grid-layout:not(:has(.box-gallery)):not(:has(.box-enlaces)) {
+    grid-template-areas:
+    "header"
+    "abstract"
+    "references";
     grid-template-columns: 1fr;
   }
 }
