@@ -1,5 +1,5 @@
 ---
-title: "Vision and color science"
+title: "Vision and color science old"
 img: "color.webp"
 link: "/old_pages/code/soft_visioncolor/ISP - Vision and color processing software.html"
 description: ""

@@ -2,10 +2,10 @@
 title: "Dimensionality Reduction via Regression (DRR)"
 abstract: "This paper introduces a new unsupervised method for dimensionality reduction via regression (DRR). The algorithm belongs to the family of invertible transforms that generalize Principal Component Analysis (PCA) by using curvilinear instead of linear features. DRR identifies the nonlinear features through multivariate regression to ensure the reduction in redundancy between the PCA coefficients, the reduction of the variance of the scores, and the reduction in the reconstruction error. More importantly, unlike other nonlinear dimensionality reduction methods, the invertibility, volume-preservation, and straightforward out-of-sample extension, makes DRR interpretable and easy to apply. Properties of DRR enable learning a broader class of data manifolds than recently proposed Non-linear Principal Components Analysis (NLPCA) and Principal Polynomial Analysis (PPA). The figure below illustrates the behavior of different algorithms in this family: from the rigid (linear) PCA to the flexible Sequential Principal Curves Analysis (SPCA). In the paper, we illustrate the performance of the representation in reducing the dimensionality of hyperspectral images. In particular, we tackle two common problems: processing very high dimensional spectral information such as in image sounding data, and dealing with spatial-spectral image patches of multispectral images. Both settings pose collinearity and ill-determination problems. Evaluation of the expressive power of the features is assessed in terms of truncation error, estimating atmospheric variables, and surface land cover classification error. Results show that DRR outperforms linear PCA and recently proposed invertible extensions based on neural networks (NLPCA) and univariate regressions (PPA)."
 imagenes:
-  - ruta: "/images/adicionales/drr_image1.webp"
+  - ruta: "drr_image1.webp"
     # titulo: "Image 1"
     descripcion: "The behavior of DRR and other dimensionality reduction algorithms."
-  - ruta: "/images/adicionales/drr_image2.webp"
+  - ruta: "drr_image2.webp"
     # titulo: "Image 2"
     descripcion: "Performance comparison of DRR with NLPCA, PPA, and SPCA."
 referencias:
