@@ -951,6 +951,14 @@ body.section-contact .navbar-nav .nav-link[href="/contact/"] {
   grid-template-columns: 1fr;
 }
 
+.grid-layout:not(:has(.box-gallery)):not(:has(.box-enlaces)):not(:has(.box-references)) {
+  grid-template-areas:
+  "header header"
+  "abstract abstract"
+  "abstract abstract";
+  grid-template-columns: 1fr;
+}
+
 
 /* Title one */
 .box-header {
@@ -1183,6 +1191,71 @@ body.section-contact .navbar-nav .nav-link[href="/contact/"] {
   text-decoration: none;
 }
 
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8); /* Black with opacity */
+  margin: auto;
+}
+
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: auto;
+  max-height: 80%;
+  padding: auto;
+}
+
+/* Caption of Modal Image */
+.modal-caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+}
+
+/* Add Animation */
+.modal-content, .modal-caption { 
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* The Close Button */
+.modal-close {
+  position: absolute;
+  top: 40px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 @media (max-width: 1200px) {
   .grid-layout {
     grid-template-areas:
@@ -1219,6 +1292,14 @@ body.section-contact .navbar-nav .nav-link[href="/contact/"] {
     "header"
     "abstract"
     "references";
+    grid-template-columns: 1fr;
+  }
+
+  .grid-layout:not(:has(.box-gallery)):not(:has(.box-enlaces)):not(:has(.box-references)) {
+    grid-template-areas:
+    "header"
+    "abstract"
+    "abstract";
     grid-template-columns: 1fr;
   }
 }

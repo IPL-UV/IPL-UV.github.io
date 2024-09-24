@@ -2,7 +2,7 @@
 title: "VideoCodingTools"
 img: "cubo.webp"
 image_alt: "VideoCodingTools Image"
-link: "../soft_visioncolor/subpages/video_coding.html"
+link: "./videocodingtools/content"
 description: |
   VideoCodingTools is a Matlab Toolbox for motion estimation/compensation and video compression. Optical flow computation is done with perceptually meaningful hierarchical block matching, and residual quantization is done according to non-linear Human Visual System models.
 references:

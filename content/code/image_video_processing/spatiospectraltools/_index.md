@@ -2,7 +2,7 @@
 title: "SpatioSpectralTools"
 img: "constancy.webp"
 image_alt: "SpatioSpectralTools Image"
-link: "./subpages/spatiospectral.html"
+link: "./spatiospectraltools/content"
 description: |
   SpatioSpectralTools is a Matlab Toolbox for reflectance and illuminant estimation that uses spatial information to simplify the (otherwise ill-conditioned) inverse problem. The proposed analysis is useful to derive the spatio-spectral resolution required to solve a retrieval problem.
 references:

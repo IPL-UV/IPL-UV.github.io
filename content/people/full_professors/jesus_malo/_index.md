@@ -10,11 +10,13 @@ params:
   orcid: 'https://orcid.org/0000-0002-5684-8591'
   twitter: 'https://twitter.com/jesusmalo32'
   github: 'https://github.com/IPL-UV/'
-  uv: '/old_pages/people/malo.html'
-  link_image: '/old_pages/people/excathedra.html'
+  uv: 'https://www.uv.es/jmalo/'
+  link_image: './full_professors/jesus_malo/ex_cathedra'
+type: "people"
+layout: "single"
 ---
 
 
 
-I'm interested in understanding human vision from information theoretic principles. This statistical view has implications in experimental and computational neuroscience. [See the ex-cathedra statement](/old_pages/people/excathedra.html)
+I'm interested in understanding human vision from information theoretic principles. This statistical view has implications in experimental and computational neuroscience. [See the ex-cathedra statement]./jesus_malo/excathedra)
 

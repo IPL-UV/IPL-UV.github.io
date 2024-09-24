@@ -2,7 +2,7 @@
 title: "VistaQualityTools"
 img: "barbara_a_medias.webp"
 image_alt: "VistaQualityTools Image"
-link: "./subpages/vista_toolbox.html"
+link: "./vistaqualitytools/content"
 description: |
   VistaQualityTools is a Matlab Toolbox for full reference color (and also achromatic) image quality assessment based on divisive normalization Human Vision models in the DCT and the Wavelet domains.
 references:

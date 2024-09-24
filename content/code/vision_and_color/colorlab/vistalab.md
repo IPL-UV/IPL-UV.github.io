@@ -42,7 +42,14 @@ abstract: |
 
   # Controlled spatio-temporal stimuli
   
-  The movies below illustrate the abilities of VistaLab for accurate motion control. First row: includes sequences of the motion of a lambertian rigid body evolving in a gravitatory field with inelastic restrictions recorded from different points of view, this example allows arbitrary locations of the illumination and camera. In this case the actual motion in 3D world and the optical flow (motion in the retinal plane) are known. Second row: includes an example of random dots moving according to arbitrary optical flow fields. Third row: shows how static pictures can be animated using spatially uniform flows of arbitrary speed leading to interesting shape-from-motion effects in the case of noise patterns. Fourth row: shows different movies of the same periodic pattern moving at progressively increasing speeds. Aliasing introduces speed reversal at the expected place, as demonstrated by the Fourier diagrams below.
+  The movies below illustrate the abilities of VistaLab for accurate motion control. 
+  - **First row:** includes sequences of the motion of a lambertian rigid body evolving in a gravitatory field with inelastic restrictions recorded from different points of view, this example allows arbitrary locations of the illumination and camera. In this case the actual motion in 3D world and the optical flow (motion in the retinal plane) are known. 
+  
+  - **Second row:** includes an example of random dots moving according to arbitrary optical flow fields. 
+  
+  - **Third row:** shows how static pictures can be animated using spatially uniform flows of arbitrary speed leading to interesting shape-from-motion effects in the case of noise patterns. 
+  
+  - **Fourth row:** shows different movies of the same periodic pattern moving at progressively increasing speeds. Aliasing introduces speed reversal at the expected place, as demonstrated by the Fourier diagrams below.
 
   # Extensions of VistaLab
   VistaLab only addresses the linear part of the neural mechanisms that mediate the preattentive perception of spatio-temporal patterns. However, it doesnt combine these mechanisms to compute motion (optical flow), it doesnt include the nonlinear interactions between the linear mechanisms, and it doesnt include color.
@@ -55,9 +62,6 @@ abstract: |
   - **Video Synthesis**: Create controlled video sequences with specific spatio-temporal properties.
   - **Fourier Domain Tools**: Visualize spatio-temporal frequency response of neural models.
 
-  ## Download VistaLab
-  - **Toolbox**: [Vistalab.zip (30MB)](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/Vistalab.zip)
-  - **User Guide**: [VistaLab_userguide.pdf (12MB)](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/Vistalab_userguide.pdf)
 
 imagenes:
   - ruta: "noise.gif"
@@ -163,8 +167,6 @@ referencias:
 enlaces:
   - nombre: "Matlab Toolbox (version 4.0)"
     url: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/Vistalab.zip"
-  - nombre: "VistaLab User Guide"
-    url: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/Vistalab_userguide.pdf"
   - nombre: "Extensions of VistaLab I: VistaVideoCoding"
     url: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/VistaVideoCoding.zip"
   - nombre: "Extensions of VistaLab II: BioMultiLayer_L_NL_color"
