@@ -959,7 +959,10 @@ body.section-contact .navbar-nav .nav-link[href="/contact/"] {
   grid-template-columns: 1fr;
 }
 
-
+/* .box-abstract:not(:has(.box-gallery)):not(:has(.box-enlaces)):not(:has(.box-references)) {
+  max-height: 100%;
+} */
+ 
 /* Title one */
 .box-header {
   grid-area: header;
