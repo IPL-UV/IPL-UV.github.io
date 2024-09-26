@@ -1,7 +1,7 @@
 body {
   padding-top: 56px;
   font-family: sans-serif;
-  }
+}
 
 
 /****estilos del archivo list.html que se encuentra en layouts/facilities******/
@@ -189,11 +189,11 @@ h3 {
     flex-direction: column;
     align-items: center;
   }
-
+  
   .image-container {
     margin: 0 auto;
   }
-
+  
   .text-container {
     margin-left: 0;
     margin-top: 10px;
@@ -463,6 +463,12 @@ body.section-contact .navbar-nav .nav-link[href="/contact/"] {
   flex-grow: 1;
 }
 
+.grid-item div p a {
+  color: #337ab7;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
 .grid-item:hover {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   transform: translateY(-0.3125rem);
@@ -620,7 +626,7 @@ body.section-contact .navbar-nav .nav-link[href="/contact/"] {
     align-items: center; /* Centramos el contenido */
     text-align: center;
   }
-
+  
   .col-md-3 img {
     display: block;
     width: 80px;
@@ -629,42 +635,42 @@ body.section-contact .navbar-nav .nav-link[href="/contact/"] {
     object-fit: cover;
     margin-top: 1rem;
   }
-
+  
   .card .card-body {
     align-items: center;
     text-align: center;
     width: 100%;
   }
-
+  
   .card-links {
     justify-content: center;
     align-items: center;
     margin-top: 1rem;
     flex-wrap: wrap;
   }
-
+  
   .card-links img {
     width: 20px;
     height: 20px;
     margin: 0.5rem;
   }
-
+  
   .card-links .btn {
     font-size: 0.7rem;
     padding: 0.3rem 0.5rem;
     margin-right: 0.3rem;
   }
-
+  
   .card .card-title {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
   }
-
+  
   .card .card-text {
     font-size: 0.85rem;
     line-height: 1.4;
   }
-
+  
 }
 
 @media (max-width: 480px) {
@@ -679,7 +685,7 @@ body.section-contact .navbar-nav .nav-link[href="/contact/"] {
     max-width: 100%;
     box-sizing: border-box;
   }
-
+  
   .card img {
     width: 60px;
     height: 60px;
@@ -687,31 +693,31 @@ body.section-contact .navbar-nav .nav-link[href="/contact/"] {
     margin-left: auto;
     margin-right: auto;
   }
-
+  
   .card-links {
     margin-top: 1rem;
     justify-content: center;
     flex-wrap: wrap;
     padding: 0.5rem;
   }
-
+  
   .card-links img {
     width: 18px;
     height: 18px;
     margin: 0.2rem;
   }
-
+  
   .card-links .btn {
     font-size: 0.65rem;
     padding: 0.25rem 0.4rem;
     margin: 0.3rem 0.2rem;
   }
-
+  
   .card .card-title {
     font-size: 1rem;
     margin-bottom: 0.3rem;
   }
-
+  
   .card .card-text {
     font-size: 0.8rem;
     padding: 0 0.5rem;
@@ -857,23 +863,23 @@ body.section-contact .navbar-nav .nav-link[href="/contact/"] {
   .content-container {
     max-width: 85%;
   }
-
+  
 }
 @media (max-width: 768px) {
   .content-container {
     max-width: 100%;
   }
-
+  
   .panel-body {
     flex-direction: column;
   }
-
+  
   .panel-image, .panel-description, .panel-references {
     flex-basis: 100%; /* Ocupan el 100% del ancho */
     max-width: 100%;
     /* text-align: center; */
   }
-
+  
   .panel-image img {
     width: 100%; /* Ajusta la imagen para que ocupe el 100% del contenedor */
     max-width: 270px; /* Limita el ancho máximo de la imagen */
@@ -884,27 +890,27 @@ body.section-contact .navbar-nav .nav-link[href="/contact/"] {
 
 
 @media (max-width: 480px) {
-
+  
   .panel-body {
     flex-direction: column;
     padding: 0;
     justify-content: center;
     align-items: center ;
   }
-
+  
   .panel-image, .panel-description, .panel-references {
     flex-basis: 100%; 
     max-width: 100%;
     margin-top: 0.5rem;
     text-align: center;
   }
-
+  
   .panel-image img {
     max-width: 60%; /* Asegura que la imagen se mantenga dentro de los márgenes */
     margin: 0 auto;
     margin-bottom: 1rem;
   }
-
+  
   .panel-item {
     padding: 0;
   }
@@ -916,9 +922,9 @@ body.section-contact .navbar-nav .nav-link[href="/contact/"] {
 .grid-layout {
   display: grid;
   grid-template-areas:
-    "header header"
-    "abstract gallery"
-    "references enlaces";
+  "header header"
+  "abstract gallery"
+  "references enlaces";
   grid-template-columns: 2fr 1fr;
   grid-gap: 7px;
 }
@@ -929,17 +935,17 @@ body.section-contact .navbar-nav .nav-link[href="/contact/"] {
 
 .grid-layout:not(:has(.box-gallery)) {
   grid-template-areas:
-    "header header"
-    "abstract abstract"
-    "references enlaces";
+  "header header"
+  "abstract abstract"
+  "references enlaces";
   grid-template-columns: 1fr;
 }
 
 .grid-layout:not(:has(.box-enlaces)) {
   grid-template-areas:
-    "header header"
-    "abstract gallery"
-    "references references";
+  "header header"
+  "abstract gallery"
+  "references references";
   grid-template-columns: 2fr 1fr;
 }
 
@@ -960,9 +966,9 @@ body.section-contact .navbar-nav .nav-link[href="/contact/"] {
 }
 
 /* .box-abstract:not(:has(.box-gallery)):not(:has(.box-enlaces)):not(:has(.box-references)) {
-  max-height: 100%;
+max-height: 100%;
 } */
- 
+
 /* Title one */
 .box-header {
   grid-area: header;
@@ -1201,33 +1207,50 @@ body.section-contact .navbar-nav .nav-link[href="/contact/"] {
   position: fixed;
   z-index: 1000;
   padding-top: 100px;
-  left: 0;
-  top: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.8); /* Black with opacity */
   margin: auto;
+  
 }
-
 
 /* Modal Content (image) */
 .modal-content {
   margin: auto;
   display: block;
   width: auto;
-  max-height: 80%;
   padding: auto;
+  max-width: 100%;
+  height: 90%;
 }
 
 /* Caption of Modal Image */
 .modal-caption {
   margin: auto;
   display: block;
-  width: 80%;
   text-align: center;
   color: #ccc;
-  padding: 10px 0;
+}
+
+.modal-caption p a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.modal-caption strong {
+  display: flex;
+}
+
+.modal-caption strong p {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-caption strong p a {
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 /* Add Animation */
@@ -1262,11 +1285,11 @@ body.section-contact .navbar-nav .nav-link[href="/contact/"] {
 @media (max-width: 1200px) {
   .grid-layout {
     grid-template-areas:
-      "header"
-      "abstract"
-      "gallery"
-      "references"
-      "enlaces";
+    "header"
+    "abstract"
+    "gallery"
+    "references"
+    "enlaces";
     grid-template-columns: 1fr;
   }
   .box-gallery:empty {
@@ -1275,18 +1298,18 @@ body.section-contact .navbar-nav .nav-link[href="/contact/"] {
   
   .grid-layout:not(:has(.box-gallery)) {
     grid-template-areas:
-      "header"
-      "abstract"
-      "references"
-      "enlaces";
+    "header"
+    "abstract"
+    "references"
+    "enlaces";
     grid-template-columns: 1fr;
   }
   .grid-layout:not(:has(.box-enlaces)) {
     grid-template-areas:
-      "header"
-      "abstract" 
-      "gallery"
-      "references";
+    "header"
+    "abstract" 
+    "gallery"
+    "references";
     grid-template-columns: 1fr;
   }
   
@@ -1297,7 +1320,7 @@ body.section-contact .navbar-nav .nav-link[href="/contact/"] {
     "references";
     grid-template-columns: 1fr;
   }
-
+  
   .grid-layout:not(:has(.box-gallery)):not(:has(.box-enlaces)):not(:has(.box-references)) {
     grid-template-areas:
     "header"

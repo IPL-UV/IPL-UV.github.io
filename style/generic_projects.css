@@ -36,7 +36,7 @@ h2,h3{
 }
 
 .navbar-toggler:focus {
-outline: none;
+  outline: none;
 }
 
 .nav-item-highlight{
@@ -62,7 +62,7 @@ outline: none;
 }
 
 .navbar-toggler:focus {
-box-shadow: none !important;
+  box-shadow: none !important;
 }
 
 
@@ -94,7 +94,7 @@ a{
 }
 
 a:hover{
-
+  
   text-decoration: underline !important;
   color: #2e343a;
 }
@@ -239,7 +239,7 @@ a:hover{
   .imgs-people img{
     margin-top: 0%;
   }
-
+  
   .img-collabs{
     overflow: auto;
   }
