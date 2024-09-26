@@ -1,8 +1,8 @@
 ---
 title: 'ELLIS - European Laboratory for Learning and Intelligent Systems'
 logo: 'ellis.webp'
-pi: 'Gustau Camps-Valls, Markus Reichstein'
-uvpi: ''
+pi: 'Markus Reichstein'
+uvpi: 'Gustau Camps-Valls'
 years: '2019-'
 website: 'https://ellis.eu/programs/machine-learning-for-earth-and-climate-sciences'
 funding_source: ''
