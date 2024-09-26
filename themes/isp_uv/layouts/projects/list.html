@@ -2,18 +2,15 @@
     {{ .Content }}
 
     <div class="content-container">
-        <!-- Filtra las páginas que están en la carpeta "active" -->
         {{ $activePages := where .Pages "File.Dir" "projects/current/" }}
         {{ $pastPages := where .Pages "File.Dir" "projects/past/" }}
 
-        <!-- Mostrar proyectos activos -->
         <h1>Current projects</h1>
         {{ if gt (len $activePages) 0 }}
             {{ partial "projects.html" $activePages }}
         {{ else }}
             <p>No current projects available.</p>
         {{ end }}
-
         <!-- Mostrar proyectos pasados -->
         <h1>Past projects</h1>
         {{ if gt (len $pastPages) 0 }}
