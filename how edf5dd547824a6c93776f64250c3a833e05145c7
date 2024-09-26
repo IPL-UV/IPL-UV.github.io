@@ -1,0 +1,17 @@
+[33mcommit e7168d304d90a6d0307c0fa8e6073b5b40af072f[m
+Author: Julio Cesar Contreras Huerta <julio.contreras1@unmsm.edu.pe>
+Date:   Thu Sep 26 12:23:48 2024 +0200
+
+    up
+
+[1mdiff --git a/content/data/aesthetics_databases.md b/content/data/aesthetics_databases.md[m
+[1mindex f504ec9..607852c 100644[m
+[1m--- a/content/data/aesthetics_databases.md[m
+[1m+++ b/content/data/aesthetics_databases.md[m
+[36m@@ -1,5 +1,5 @@[m
+ ---[m
+[31m-title: "Aesthetics database"[m
+[32m+[m[32mtitle: "Aesthetics databae"[m
+ img: "aesthetics.webp"[m
+ link: "/old_pages/data/aesthetics_database/ISP - Calibrated color images database.html"[m
+ description: "(not from ISP)"[m

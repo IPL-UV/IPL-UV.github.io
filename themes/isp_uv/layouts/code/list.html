@@ -12,7 +12,7 @@
       </a>
       <div class="text">
         <a href="{{ .Params.link }}" class="nameLink_a"> {{ .Params.title }} </a>
-        <p>{{ .Params.description | safeHTML }}</p>
+        <p>{{ .Params.description | markdownify }}</p>
         <p>{{ .RawContent | safeHTML }}</p>
       </div>
     </div>
