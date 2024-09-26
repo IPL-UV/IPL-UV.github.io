@@ -1,56 +1,48 @@
 <table class="table table-hover">
-	{{ range . }}
-	{{ $logo := urls.JoinPath "images/projects" .Params.logo }}
-	{{ $flogo := urls.JoinPath "images/projects" .Params.founding.logo }}
-	<tr>
-		<td class="project-logo-cell">
-			{{ with resources.Get $logo }}
-			<img src="{{ .RelPermalink }}" width="auto" height="auto" class="img-fluid" alt="Image of {{ .Title }}">
-			{{ end }}
-			{{ with resources.Get $flogo }}
-			<img src="{{ .RelPermalink }}" width="auto" height="auto" class="img-fluid" alt="Image of {{ .Title }}">
-			{{ end }}
-		</td>
-		<td class="project-info-cell">
-			<a href="{{ .Params.website }}"> {{ .Title }} </a> 
-			<br>
-			{{ with .Params.pi }} <strong> PIs: {{ . }}  </strong> {{ end }}
-			{{ with .Params.uvpi }} <strong> UV-PIs: {{ . }}  </strong> {{ end }}
-			{{ with .Params.years }} <strong>  ({{ . }})  </strong> {{ end }}
-			<br>
-		</td>
-	</tr>
-	{{ end }} 
+    {{ range . }}
+    {{ $logo := urls.JoinPath "/images/projects" .Params.logo }}
+    <tr>
+        <td class="project-logo-cell">
+            <img src="{{ $logo }}" class="img-fluid" alt="Image of {{ .Title }}">
+        </td>
+        <td class="project-info-cell">
+            <a href="{{ .Params.website }}"> {{ .Title }} </a> 
+            <br>
+            {{ with .Params.uvpi }} 
+                <strong> UV-PIs: {{ . }}  </strong> 
+                <br>
+            {{ end }}
+
+            {{ with .Params.pi }} 
+                <strong> PIs: {{ . }}  </strong> 
+                <br>
+            {{ end }}
+            
+            {{ with .Params.years }} 
+                <strong> Duration: ({{ . }})  </strong> 
+                <br>
+            {{ end }}
+
+            {{ with .Params.funding_source }} 
+                <strong> Funding Source: {{ . }}  </strong> 
+                <br>
+            {{ end }}
+            
+            {{ with .Params.role }} 
+                <strong> Role: {{ . }}  </strong> 
+                <br>
+            {{ end }}
+            
+            {{ with .Params.project_type }} 
+                <strong> Project Type: {{ . }}  </strong> 
+                <br>
+            {{ end }}
+            
+            {{ with .Params.partners }} 
+                <strong> Partners: {{ delimit . ", " }}  </strong> 
+                <br>
+            {{ end }}
+        </td>
+    </tr>
+    {{ end }}
 </table>
-
-
-<style>
-	
-.project-logo-cell {
-  width: 10%;
-}
-
-.project-info-cell {
-  width: 90%;
-}
-
-@media (max-width: 991px) {
-  .project-logo-cell {
-    width: 20%;
-  }
-
-  .project-info-cell {
-    width: 80%;
-  }
-}
-
-@media (max-width: 767px) {
-  .project-logo-cell {
-    width: 30%;
-  }
-
-  .project-info-cell {
-    width: 70%;
-  }
-}
-</style>

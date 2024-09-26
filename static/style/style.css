@@ -1335,3 +1335,34 @@ max-height: 100%;
     grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
   }
 }
+
+
+/* Projects */
+
+.project-logo-cell {
+  width: 10%;
+}
+
+.project-info-cell {
+  width: 90%;
+}
+
+@media (max-width: 991px) {
+  .project-logo-cell {
+    width: 20%;
+  }
+
+  .project-info-cell {
+    width: 80%;
+  }
+}
+
+@media (max-width: 767px) {
+  .project-logo-cell {
+    width: 30%;
+  }
+
+  .project-info-cell {
+    width: 70%;
+  }
+}
