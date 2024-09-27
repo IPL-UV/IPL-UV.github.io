@@ -9,14 +9,14 @@ abstract: |
   
   The results show that SSO-based models with local masking obtain the same degree of accuracy as the best metric considered by VQEG (P5), and significantly better correlations than the other VQEG models. The results suggest that local masking is a key feature to improve the correlation of the basic SSO model.
 
-referencias:
-  - nombre: "Video Quality Measures based on the Standar Spatial Observer"
-    autores: "A. B. Watson and J. Malo"
-    publicacion: "Proc. IEEE Intl. Conf. Im. Proc., Vol. 3,  pp 41-44 (2002)"
-    url: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/icip02.pdf"
+references:
+  - title: "Video Quality Measures based on the Standar Spatial Observer"
+    authors: "A. B. Watson and J. Malo"
+    publication: "Proc. IEEE Intl. Conf. Im. Proc., Vol. 3,  pp 41-44 (2002)"
+    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/icip02.pdf"
   
-enlaces:
-  - nombre: "video_metric_sso.zip"
-    url: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/video_metric_sso.zip"
+links:
+  - title: "video_metric_sso.zip"
+    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/video_metric_sso.zip"
 ---
 

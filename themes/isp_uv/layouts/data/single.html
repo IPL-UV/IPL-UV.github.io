@@ -6,36 +6,36 @@
     <div class="box-abstract">
         <p>{{ .Params.abstract | markdownify }}</p>
     </div>
-    {{ if .Params.imagenes }}
+    {{ if .Params.images }}
     <aside class="box-gallery">
         <div class="gallery-grid">
-            {{ range .Params.imagenes }}
-            {{ $img := urls.JoinPath "/images/adicionales" .ruta }}
+            {{ range .Params.images }}
+            {{ $img := urls.JoinPath "/images/adicionales" .link }}
             <div class="gallery-item">
-                {{ if or (strings.HasSuffix .ruta ".webp") (strings.HasSuffix .ruta ".jpg") (strings.HasSuffix .ruta ".png") (strings.HasSuffix .ruta ".gif") }}
+                {{ if or (strings.HasSuffix .link ".webp") (strings.HasSuffix .link ".jpg") (strings.HasSuffix .link ".png") (strings.HasSuffix .link ".gif") }}
                 <!-- Renderiza una imagen -->
-                <a href="javascript:void(0);" class="gallery-thumbnail" onclick="openModal('{{ $img }}', '{{ .titulo | default "" }}', '{{ .descripcion | default "" }}')">
-                    <img src="{{ $img }}" alt="{{ .titulo | default "" }}">
+                <a href="javascript:void(0);" class="gallery-thumbnail" onclick="openModal('{{ $img }}', '{{ .title | default "" }}', '{{ .description | default "" }}')">
+                    <img src="{{ $img }}" alt="{{ .title | default "" }}">
                 </a>
-                {{ else if or (strings.HasSuffix .ruta ".mp4") (strings.HasSuffix .ruta ".webm") }}
+                {{ else if or (strings.HasSuffix .link ".mp4") (strings.HasSuffix .link ".webm") }}
                 <!-- Renderiza un video local -->
                 <video controls>
-                    <source src="{{ $img }}" type="video/{{ index (split .ruta ".") 1 }}">
+                    <source src="{{ $img }}" type="video/{{ index (split .link ".") 1 }}">
                     Your browser does not support the video tag.
                 </video>
 
-                {{ else if (strings.Contains .ruta "https://") }}
+                {{ else if (strings.Contains .link "https://") }}
                 <!-- Renderiza un video de YouTube -->
-                <iframe src="{{ .ruta }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="{{ .link }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
                 {{ end }}
 
-                {{ if .titulo }}
-                <p class="gallery-title">{{ .titulo | markdownify }}</p>
+                {{ if .title }}
+                <p class="gallery-title">{{ .title | markdownify }}</p>
                 {{ end }}
-                {{ if .descripcion }}
+                {{ if .description }}
                 <div class="gallery-description">
-                    <p>{{ .descripcion | markdownify }}</p>
+                    <p>{{ .description | markdownify }}</p>
                 </div>
                 {{ end }}
             </div>
@@ -48,25 +48,25 @@
         </div>
     </aside>
     {{ end }}
-    {{ if .Params.referencias }}
+    {{ if .Params.references }}
     <section class="box-references title2">
         <h2>References</h2>
         <ul class="references-list">
-            {{ range .Params.referencias }}
+            {{ range .Params.references }}
             <li>
-                {{ if .url }}
-                <strong><a href="{{ .url }}" target="_blank" class="references-name">{{ .nombre }}</a></strong>
+                {{ if .link }}
+                <strong><a href="{{ .link }}" target="_blank" class="references-name">{{ .title }}</a></strong>
                 {{ else }}
-                <strong>{{ .nombre }}</strong>
+                <strong>{{ .title }}</strong>
                 {{ end }}<br>
-                <span>{{ .autores | markdownify }}</span><br>
-                <em>{{ .publicacion | markdownify }}</em>
+                <span>{{ .authors }}</span><br>
+                <em>{{ .publication | markdownify }}</em>
             </li>
             {{ end }}
         </ul>
     </section>
     {{ end }}
-    {{ if .Params.enlaces }}
+    {{ if .Params.links }}
     <section class="box-enlaces title2">
         <h2>Download</h2>
         {{ if .Params.desc_download }}
@@ -75,8 +75,8 @@
         </div>
         {{ end }}
         <ul class="enlaces-list">
-            {{ range .Params.enlaces }}
-            <li><a href="{{ .url }}">{{ .nombre }}</a></li>
+            {{ range .Params.links }}
+            <li><a href="{{ .link }}">{{ .title }}</a></li>
             {{ end }}
         </ul>
     </section>

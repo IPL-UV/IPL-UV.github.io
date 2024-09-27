@@ -17,36 +17,36 @@ abstract: |
   
   In the above distortion-per-frame plot, thick lines correspond to algorithms with poor (linear) quantization schemes and thin lines correspond to improved (non-linear) quantization schemes. Dashed lines correspond to algorithms with improved motion estimation schemes. The conclusion is that at the current bit rates an appropriate image representation and quantization is quite more important than improvements in motion estimation.
 
-referencias:
-  - nombre: "Perceptually weighted optical flow for motion-based segmentation in MPEG-4 paradigm"
-    autores: "J. Malo, J. Gutierrez, I. Epifanio, F. Ferri"
-    publicacion: "Electronics Letters, Vol. 36, 20, pp. 1693-1694 (2000)"
-    url: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/seg_ade2.ps"
+references:
+  - title: "Perceptually weighted optical flow for motion-based segmentation in MPEG-4 paradigm"
+    authors: "J. Malo, J. Gutierrez, I. Epifanio, F. Ferri"
+    publication: "Electronics Letters, Vol. 36, 20, pp. 1693-1694 (2000)"
+    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/seg_ade2.ps"
   
-  - nombre: "Perceptual feed-back in multigrid motion estimation using an improved DCT quantization"
-    autores: "J. Malo, J. Gutierrez, I. Epifanio, F. Ferri, J.M. Artigas"
-    publicacion: "IEEE Transactions on Image Processing, Vol. 10, 10, pp. 1411-1427 (2001)"
-    url: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/ieeeoct01.pdf"
+  - title: "Perceptual feed-back in multigrid motion estimation using an improved DCT quantization"
+    authors: "J. Malo, J. Gutierrez, I. Epifanio, F. Ferri, J.M. Artigas"
+    publication: "IEEE Transactions on Image Processing, Vol. 10, 10, pp. 1411-1427 (2001)"
+    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/ieeeoct01.pdf"
 
-  - nombre: "Importance of quantizer design compared to optimal multigrid motion estimation in video coding"
-    autores: "J. Malo, F. Ferri, J. Gutierrez, I. Epifanio"
-    publicacion: "Electronics Letters, Vol. 36, 9, pp. 807-809 (2000)"
-    url: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/elect00.ps"
+  - title: "Importance of quantizer design compared to optimal multigrid motion estimation in video coding"
+    authors: "J. Malo, F. Ferri, J. Gutierrez, I. Epifanio"
+    publication: "Electronics Letters, Vol. 36, 9, pp. 807-809 (2000)"
+    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/elect00.ps"
 
-enlaces:
-  - nombre: "Motion_estimation_and_Video coding_code.zip"
-    url: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/Motion_estimation_and_Video%20coding_code.zip"
+links:
+  - title: "Motion_estimation_and_Video coding_code.zip"
+    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/Motion_estimation_and_Video%20coding_code.zip"
 
-imagenes:
-  - ruta: "coderde.webp"
-    titulo: "[Motion Estimation Scheme](#motion-estimation)"
-    descripcion: "Illustration of the video coder scheme with motion estimation and prediction error quantization."
+images:
+  - link: "coderde.webp"
+    title: "[Motion Estimation Scheme](#motion-estimation)"
+    description: "Illustration of the video coder scheme with motion estimation and prediction error quantization."
 
-  - ruta: "coding.webp"
-    titulo: "[Video Coding Example](#video-coding)"
-    descripcion: "Comparison of video coding schemes with different levels of motion estimation and quantization efficiency."
+  - link: "coding.webp"
+    title: "[Video Coding Example](#video-coding)"
+    description: "Comparison of video coding schemes with different levels of motion estimation and quantization efficiency."
 
-  - ruta: "distort.webp"
-    titulo: "[Distortion per Frame](#video-coding)"
-    descripcion: "Distortion per frame plot comparing algorithms with improved motion estimation and non-linear quantization schemes."
+  - link: "distort.webp"
+    title: "[Distortion per Frame](#video-coding)"
+    description: "Distortion per frame plot comparing algorithms with improved motion estimation and non-linear quantization schemes."
 ---

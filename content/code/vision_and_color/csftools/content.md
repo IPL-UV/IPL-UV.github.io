@@ -6,18 +6,18 @@ abstract: |
 
   This sofware computes the CSF filter of the Standard Spatial Observer.
 
-imagenes:
-  - ruta: "csf1.webp"
-  - ruta: "csf2.webp"
+images:
+  - link: "csf1.webp"
+  - link: "csf2.webp"
 
-referencias:
-  - nombre: "Video Quality Measures based on the Standard Spatial Observer"
-    autores: "A. B. Watson and Jesus Malo."
-    publicacion: "Proc. IEEE Intl. Conf. Im. Proc. Vol. 3, pp. 41-44, 2002."
-    url: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/icip02.pdf"
+references:
+  - title: "Video Quality Measures based on the Standard Spatial Observer"
+    authors: "A. B. Watson and Jesus Malo."
+    publication: "Proc. IEEE Intl. Conf. Im. Proc. Vol. 3, pp. 41-44, 2002."
+    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/icip02.pdf"
 
-enlaces:
-  - nombre: "CSFs_SSO.rar"
-    url: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/CSFs_SSO.rar"
+links:
+  - title: "CSFs_SSO.rar"
+    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/CSFs_SSO.rar"
 ---
 
