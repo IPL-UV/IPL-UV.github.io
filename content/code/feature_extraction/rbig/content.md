@@ -5,15 +5,14 @@ abstract: "Most signal processing problems involve the challenging task of multi
 RBIG is formally similar to classical iterative Projection Pursuit (PP) algorithms. However, we show that, unlike in PP methods, the particular class of rotation used has no special qualitative relevance in this context, since looking for 'interestingness' is not a critical issue for PDF estimation. The key difference is that our approach focuses on the univariate part of the problem rather than on the multivariate part, which is related to interesting projections. This difference implies that one may select the most convenient rotation suited to each practical application.
 
 The differentiability, invertibility, and convergence of RBIG are theoretically and experimentally analyzed. Relation to other methods, such as Radial Gaussianization (RG), one-class support vector domain description (SVDD), and deep neural networks (DNN) is also pointed out. The practical performance of RBIG is successfully illustrated in a number of multidimensional problems such as image synthesis, classification, denoising, and multi-information estimation."
-
-references:
-  - title: "Iterative Gaussianization: from ICA to Random Rotation"
-    authors: "V. Laparra, G. Camps, J. Malo"
-    publication: "IEEE Transactions on Neural Networks, 2010"
-    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_feature/Laparra11.pdf"
-links:
-  - title: "RBIG Toolbox"
-    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_feature/RBIG_toolbox.zip"
-    description: "The provided software is an implementation of the proposed RBIG approach. See the file 'using_RBIG_example.m' included in the *.zip file for details."
+referencias:
+  - nombre: "Iterative Gaussianization: from ICA to Random Rotation"
+    autores: "V. Laparra, G. Camps, J. Malo"
+    publicacion: "IEEE Transactions on Neural Networks, 2010"
+    url: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_feature/Laparra11.pdf"
+enlaces:
+  - nombre: "RBIG Toolbox"
+    url: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_feature/RBIG_toolbox.zip"
+    descripcion: "The provided software is an implementation of the proposed RBIG approach. See the file 'using_RBIG_example.m' included in the *.zip file for details."
 ---
 

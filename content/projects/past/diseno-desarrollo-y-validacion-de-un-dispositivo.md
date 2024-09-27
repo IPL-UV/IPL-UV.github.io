@@ -1,18 +1,12 @@
 ---
-date: '2023-05-14'
-draft: false
-title: 'Diseño desarrollo y validación de un dispositivo para la detección temprana de anomalías visuales'
-params:
-  short: 'diseno-desarrollo-y-validacion-de-un-dispositivo'
-  logo: 'mineco.webp'
-  pi: ''
-  uvpi: ''
-  years: '2001-2003'
-  founding:
-    name: 'CICYT Ministerio de Ciencia y Tecnología'
-    logo: 'unknown.webp'
-  website: ''
-  partners:
-    - ''
-  active: false
+title: 'Design, Development, and Validation of a Device for the Early Detection of Visual Anomalies'
+logo: 'mineco.webp'
+pi: ''
+uvpi: ''
+years: '2001-2003'
+website: ''
+funding_source: 'CICYT Ministry of Science and Technology'
+role: ''
+project_type: ''
+partners: []
 ---

@@ -8,20 +8,20 @@ abstract: |
   We demonstrate the feasibility of kernel regression and classification on datasets with millions of samples. Examples include atmospheric parameter retrieval from IASI/Metop hyperspectral infrared sounders, large-scale inversion of the PROSAIL model on Sentinel-2 data, and cloud identification over landmarks in time series from MSG/Seviri images.
 
   This webpage includes supplementary material to the paper Randomized Kernels for large scale Earth Observation applications by Pérez-Suay et al. in [Remote Sensing of Environment, 2017](http://www.sciencedirect.com/science/article/pii/S0034425717300615). We include MATLAB illustrative code and videos showing operational performance of the proposed method in the particular case of cloud identification over landmarks. If you find the paper or provided MATLAB code below interesting and useful, please cite the work.
-references:
-  - title: "Randomized Kernels for Large Scale Earth Observation Applications"
-    authors: "Adrián Pérez-Suay, Julia Amorós-López, Luis Gómez-Chova, Valero Laparra, Jordi Muñoz-Marí, Gustau Camps-Valls"
-    publication: "Remote Sensing of Environment, 202, 54-63, 2017"
-    link: "http://www.sciencedirect.com/science/article/pii/S0034425717300615"
-links:
-  - title: "RKS Regression Code"
-    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_rs/RKS_regression.m"
-  - title: "RKS Classification Code"
-    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_rs/RKS_classification.m"
-  - title: "Cloud Classification Application"
-    link: "../videos"
-  - title: "PROSAIL Model Inversion Application"
-    link: "./rks2017/prosail.html"
-  - title: "Atmospheric Parameter Retrieval from IASI/Metop"
-    link: "./rks2017/iasi.html"
+referencias:
+  - nombre: "Randomized Kernels for Large Scale Earth Observation Applications"
+    autores: "Adrián Pérez-Suay, Julia Amorós-López, Luis Gómez-Chova, Valero Laparra, Jordi Muñoz-Marí, Gustau Camps-Valls"
+    publicacion: "Remote Sensing of Environment, 202, 54-63, 2017"
+    url: "http://www.sciencedirect.com/science/article/pii/S0034425717300615"
+enlaces:
+  - nombre: "RKS Regression Code"
+    url: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_rs/RKS_regression.m"
+  - nombre: "RKS Classification Code"
+    url: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_rs/RKS_classification.m"
+  - nombre: "Cloud Classification Application"
+    url: "../videos"
+  - nombre: "PROSAIL Model Inversion Application"
+    url: "./rks2017/prosail.html"
+  - nombre: "Atmospheric Parameter Retrieval from IASI/Metop"
+    url: "./rks2017/iasi.html"
 ---

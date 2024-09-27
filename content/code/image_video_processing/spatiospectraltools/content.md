@@ -25,44 +25,44 @@ abstract: |
   The retrieval procedure used to check the accuracy of the theoretical predictions involves a series of search loops that require an initialization of the variables S, A, and T. Since we searched in the decorrelated PCA domains, each coefficient of these sources was independently initialized using a random value drawn from the empirical marginal PDFs (histograms) learned at the training stage. Below we show examples of the marginal PDFs for some AC coefficients of these sources. The strong peak at zero makes zero initialization reasonable as well.
 
 
-references:
-  - title: "The role of spatial information in disentangling the irradiance-reflectance-transmitance ambiguity"
-    authors: "Sandra Jiménez and Jesús Malo"
-    publication: "Accepted to IEEE Trans. Geosci. Rem. Sens."
-    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_imvideo/spatiospectral/manuscr_TGRS_2012_00431.pdf"
+referencias:
+  - nombre: "The role of spatial information in disentangling the irradiance-reflectance-transmitance ambiguity"
+    autores: "Sandra Jiménez and Jesús Malo"
+    publicacion: "Accepted to IEEE Trans. Geosci. Rem. Sens."
+    url: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_imvideo/spatiospectral/manuscr_TGRS_2012_00431.pdf"
 
-links:
-  - title: "Download Data and Code"
-    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_imvideo/spatiospectral/code_retrieval_and_data.zip"
-    description: "(*.zip file with data and Matlab toolbox. For running the examples, read and execute the demo_retrieval.m file)."
+enlaces:
+  - nombre: "Download Data and Code"
+    url: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_imvideo/spatiospectral/code_retrieval_and_data.zip"
+    descripcion: "(*.zip file with data and Matlab toolbox. For running the examples, read and execute the demo_retrieval.m file)."
 
-images:
-  - link: "org_contex.webp"
-    title: "[Original and Estimated Reflectance - Urban Context](#1-effect-of-the-spatial-structure)"
-    description: "Reflectance images for urban, forest, and open field sites using spectral-only and spatio-spectral retrieval approaches."
+imagenes:
+  - ruta: "org_contex.webp"
+    titulo: "[Original and Estimated Reflectance - Urban Context](#1-effect-of-the-spatial-structure)"
+    descripcion: "Reflectance images for urban, forest, and open field sites using spectral-only and spatio-spectral retrieval approaches."
 
-  - link: "reco_contex.webp"
-    title: "[Reconstructed Reflectance for Different Contexts](#1-effect-of-the-spatial-structure)"
-    description: "Reconstructed reflectance images from different contexts, highlighting the difference between spectral-only and spatio-spectral retrieval."
+  - ruta: "reco_contex.webp"
+    titulo: "[Reconstructed Reflectance for Different Contexts](#1-effect-of-the-spatial-structure)"
+    descripcion: "Reconstructed reflectance images from different contexts, highlighting the difference between spectral-only and spatio-spectral retrieval."
 
-  - link: "errores.webp"
-    title: "[Error Maps for Reflectance Estimation](#2-effect-of-wavelength-range-and-spatio-spectral-resolution)"
-    description: "Error maps showing the differences in reflectance estimation using spectral-only and spatio-spectral methods."
+  - ruta: "errores.webp"
+    titulo: "[Error Maps for Reflectance Estimation](#2-effect-of-wavelength-range-and-spatio-spectral-resolution)"
+    descripcion: "Error maps showing the differences in reflectance estimation using spectral-only and spatio-spectral methods."
 
-  - link: "IR_example.webp"
-    title: "[Infrared Example - Different Wavelengths and Resolutions](#2-effect-of-wavelength-range-and-spatio-spectral-resolution)"
-    description: "Example using different wavelength ranges and spatio-spectral resolutions in reflectance retrieval."
+  - ruta: "IR_example.webp"
+    titulo: "[Infrared Example - Different Wavelengths and Resolutions](#2-effect-of-wavelength-range-and-spatio-spectral-resolution)"
+    descripcion: "Example using different wavelength ranges and spatio-spectral resolutions in reflectance retrieval."
 
-  - link: "marginales_S.webp"
-    title: "[Marginal Distributions for Surface Reflectance](#3-initialization-of-the-sources-surface-reflectance-atmosphere-radiance-and-transmittance)"
-    description: "Marginal PDFs for surface reflectance coefficients in the PCA domain."
+  - ruta: "marginales_S.webp"
+    titulo: "[Marginal Distributions for Surface Reflectance](#3-initialization-of-the-sources-surface-reflectance-atmosphere-radiance-and-transmittance)"
+    descripcion: "Marginal PDFs for surface reflectance coefficients in the PCA domain."
 
-  - link: "marginales_A.webp"
-    title: "[Marginal Distributions for Atmosphere Radiance](#3-initialization-of-the-sources-surface-reflectance-atmosphere-radiance-and-transmittance)"
-    description: "Marginal PDFs for atmospheric radiance coefficients in the PCA domain."
+  - ruta: "marginales_A.webp"
+    titulo: "[Marginal Distributions for Atmosphere Radiance](#3-initialization-of-the-sources-surface-reflectance-atmosphere-radiance-and-transmittance)"
+    descripcion: "Marginal PDFs for atmospheric radiance coefficients in the PCA domain."
 
-  - link: "marginales_T.webp"
-    title: "[Marginal Distributions for Atmosphere Transmittance](#3-initialization-of-the-sources-surface-reflectance-atmosphere-radiance-and-transmittance)"
-    description: "Marginal PDFs for atmospheric transmittance coefficients in the PCA domain."
+  - ruta: "marginales_T.webp"
+    titulo: "[Marginal Distributions for Atmosphere Transmittance](#3-initialization-of-the-sources-surface-reflectance-atmosphere-radiance-and-transmittance)"
+    descripcion: "Marginal PDFs for atmospheric transmittance coefficients in the PCA domain."
 ---
 

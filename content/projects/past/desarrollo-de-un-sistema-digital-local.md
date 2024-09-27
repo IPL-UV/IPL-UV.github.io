@@ -1,18 +1,12 @@
 ---
-date: '2023-05-14'
-draft: false
-title: 'Desarrollo de un sistema digital local de video comunicación para comunidades residenciales'
-params:
-  short: 'desarrollo-de-un-sistema-digital-local'
-  logo: 'mineco.webp'
-  pi: ''
-  uvpi: ''
-  years: '2000-2001'
-  founding:
-    name: 'CICYT-FEDER Ministerio de Ciencia y Tecnología'
-    logo: 'unknown.webp'
-  website: ''
-  partners:
-    - ''
-  active: false
+title: 'Development of a Local Digital Video Communication System for Residential Communities'
+logo: 'mineco.webp'
+pi: ''
+uvpi: ''
+years: '2000-2001'
+website: ''
+funding_source: 'CICYT-FEDER Ministry of Science and Technology'
+role: ''
+project_type: ''
+partners: []
 ---
