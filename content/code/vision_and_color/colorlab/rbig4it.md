@@ -42,57 +42,57 @@ abstract: |
 
   Mutual information quantifies the amount of information obtained about one random variable through another. The RBIG methodology demonstrates superior performance in estimating mutual information, especially in datasets with nonlinear dependencies, making it a valuable tool for feature selection and data analysis.
 
-imagenes:
-  - ruta: "fig_1.webp"
-    titulo: "[Information Theory Measures](#paper-summary)"
-    descripcion: "This figure illustrates the key measures of Information Theory that can be estimated using the RBIG methodology, including total correlation, entropy, mutual information, and Kullback-Leibler divergence."
+images:
+  - link: "fig_1.webp"
+    title: "[Information Theory Measures](#paper-summary)"
+    description: "This figure illustrates the key measures of Information Theory that can be estimated using the RBIG methodology, including total correlation, entropy, mutual information, and Kullback-Leibler divergence."
 
-  - ruta: "Table_T.webp"
-    titulo: "[Total Correlation Estimation](#extended-results)"
-    descripcion: "This table shows the total correlation estimation results in relative mean absolute error for different distributions: Gaussian, uniform, and Student PDFs (μ = 3, 5, 20 for each row). Each column corresponds to experiments with varying dimensions D."
+  - link: "Table_T.webp"
+    title: "[Total Correlation Estimation](#extended-results)"
+    description: "This table shows the total correlation estimation results in relative mean absolute error for different distributions: Gaussian, uniform, and Student PDFs (μ = 3, 5, 20 for each row). Each column corresponds to experiments with varying dimensions D."
 
-  - ruta: "Figure_T.webp"
-    titulo: "[Total Correlation Results](#total-correlation)"
-    descripcion: "Graphical representation of total correlation estimation results. This figure compares the performance of different estimators for various multivariate distributions and dimensions."
+  - link: "Figure_T.webp"
+    title: "[Total Correlation Results](#total-correlation)"
+    description: "Graphical representation of total correlation estimation results. This figure compares the performance of different estimators for various multivariate distributions and dimensions."
 
-  - ruta: "Table_H.webp"
-    titulo: "[Entropy Estimation](#entropy)"
-    descripcion: "This table presents the entropy estimation results for different data distributions and dimensional settings, showcasing the performance of the RBIG estimator."
+  - link: "Table_H.webp"
+    title: "[Entropy Estimation](#entropy)"
+    description: "This table presents the entropy estimation results for different data distributions and dimensional settings, showcasing the performance of the RBIG estimator."
 
-  - ruta: "Figure_H.webp"
-    titulo: "[Entropy Results](#entropy)"
-    descripcion: "A figure showing the entropy estimation results, comparing the RBIG approach with other methods across various distributions and dimensionalities."
+  - link: "Figure_H.webp"
+    title: "[Entropy Results](#entropy)"
+    description: "A figure showing the entropy estimation results, comparing the RBIG approach with other methods across various distributions and dimensionalities."
 
-  - ruta: "Table_KL.webp"
-    titulo: "[Kullback-Leibler Divergence Estimation](#entropy)"
-    descripcion: "This table summarizes the results of Kullback-Leibler divergence estimations for synthetic datasets, illustrating the performance of RBIG in different high-dimensional settings."
+  - link: "Table_KL.webp"
+    title: "[Kullback-Leibler Divergence Estimation](#entropy)"
+    description: "This table summarizes the results of Kullback-Leibler divergence estimations for synthetic datasets, illustrating the performance of RBIG in different high-dimensional settings."
 
-  - ruta: "Figure_KL1.webp"
-    titulo: "[KLD Estimation Results](#kld)"
-    descripcion: "A visual comparison of Kullback-Leibler divergence estimators. The RBIG estimator is shown to perform well in a range of complex, high-dimensional scenarios."
+  - link: "Figure_KL1.webp"
+    title: "[KLD Estimation Results](#kld)"
+    description: "A visual comparison of Kullback-Leibler divergence estimators. The RBIG estimator is shown to perform well in a range of complex, high-dimensional scenarios."
 
-  - ruta: "Table_I.webp"
-    titulo: "[Mutual Information Estimation](#kld)"
-    descripcion: "This table presents the mutual information estimation results. The performance of RBIG is compared to other estimators for various distributions."
+  - link: "Table_I.webp"
+    title: "[Mutual Information Estimation](#kld)"
+    description: "This table presents the mutual information estimation results. The performance of RBIG is compared to other estimators for various distributions."
 
-  - ruta: "Figure_MI.webp"
-    titulo: "[Mutual Information Results](#mutual-information)"
-    descripcion: "Graphical results of mutual information estimation comparing RBIG with recent methods across several distributions and dimensions."
+  - link: "Figure_MI.webp"
+    title: "[Mutual Information Results](#mutual-information)"
+    description: "Graphical results of mutual information estimation comparing RBIG with recent methods across several distributions and dimensions."
 
 
 
-referencias:
-  - nombre: "Information Theory Measures via Multidimensional Gaussianization [RBIG4IT2020]"
-    autores: "V. Laparra, E. Johnson, G. Camps-Valls, R. Santos-Rodriguez, J. Malo."
-  - nombre: "Iterative Gaussianization: from ICA to Random Rotations [TNN2011]"
-    autores: "V. Laparra, G. Camps & J. Malo."
-    publicacion: "IEEE Transactions on Neural Networks."
+references:
+  - title: "Information Theory Measures via Multidimensional Gaussianization [RBIG4IT2020]"
+    authors: "V. Laparra, E. Johnson, G. Camps-Valls, R. Santos-Rodriguez, J. Malo."
+  - title: "Iterative Gaussianization: from ICA to Random Rotations [TNN2011]"
+    authors: "V. Laparra, G. Camps & J. Malo."
+    publication: "IEEE Transactions on Neural Networks."
 
-enlaces:
-  - nombre: "RBIG Python toolbox"
-    url: "https://github.com/IPL-UV/rbig"
-  - nombre: "Demo in Google Colab"
-    url: "https://colab.research.google.com/github/IPL-UV/rbig/blob/master/notebooks/information_theory_colab.ipynb"
-  - nombre: "RBIG Matlab toolbox"
-    url: "https://github.com/IPL-UV/rbig_matlab"
+links:
+  - title: "RBIG Python toolbox"
+    link: "https://github.com/IPL-UV/rbig"
+  - title: "Demo in Google Colab"
+    link: "https://colab.research.google.com/github/IPL-UV/rbig/blob/master/notebooks/information_theory_colab.ipynb"
+  - title: "RBIG Matlab toolbox"
+    link: "https://github.com/IPL-UV/rbig_matlab"
 ---
