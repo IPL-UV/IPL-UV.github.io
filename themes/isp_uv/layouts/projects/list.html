@@ -1,22 +1,110 @@
 {{ define "main" }}
-    {{ .Content }}
+{{ .Content }}
+<div class="content-container">
+  <!-- Current Projects Section -->
+  {{ $activePages := where .Pages "File.Dir" "projects/current/" }}
+  <div class="title-container">
+      <h1>Current projects</h1>
+  </div>
+  {{ if gt (len $activePages) 0 }}
+  <div class="grid-container" id="grid-container">
+      {{ range $activePages }}
+      {{ $logo := urls.JoinPath "/images/projects" .Params.logo }}
+      <div class="grid-item project-item">
+        <div class="project-logo-cell">
+          <a href="{{ .Params.website }}">
+            <img src="{{ $logo }}" alt="Image of {{ .Title }}">
+          </a>
+        </div>
+        <div class="text">
+          <a href="{{ .Params.website }}" class="nameLink_a"> {{ .Title }} </a>
+          
+          {{ with .Params.uvpi }} 
+          <p><strong>UV-PIs:</strong> {{ . }}</p>
+          {{ end }}
 
-    <div class="content-container">
-        {{ $activePages := where .Pages "File.Dir" "projects/current/" }}
-        {{ $pastPages := where .Pages "File.Dir" "projects/past/" }}
+          {{ with .Params.pi }} 
+          <p><strong>PIs:</strong> {{ . }}</p>
+          {{ end }}
 
-        <h1>Current projects</h1>
-        {{ if gt (len $activePages) 0 }}
-            {{ partial "projects.html" $activePages }}
-        {{ else }}
-            <p>No current projects available.</p>
-        {{ end }}
-        <!-- Mostrar proyectos pasados -->
-        <h1>Past projects</h1>
-        {{ if gt (len $pastPages) 0 }}
-            {{ partial "projects.html" $pastPages }}
-        {{ else }}
-            <p>No past projects available.</p>
-        {{ end }}
-    </div>
+          {{ with .Params.years }} 
+          <p><strong>Duration:</strong> ({{ . }})</p>
+          {{ end }}
+
+          {{ with .Params.funding_source }} 
+          <p><strong>Funding Source:</strong> {{ . }}</p>
+          {{ end }}
+
+          {{ with .Params.role }} 
+          <p><strong>Role:</strong> {{ . }}</p>
+          {{ end }}
+
+          {{ with .Params.project_type }} 
+          <p><strong>Project Type:</strong> {{ . }}</p>
+          {{ end }}
+
+          {{ with .Params.partners }} 
+          <p><strong>Partners:</strong> {{ delimit . ", " }}</p>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+  </div>
+  {{ else }}
+  <p>No current projects available.</p>
+  {{ end }}
+
+  <!-- Past Projects Section -->
+  {{ $pastPages := where .Pages "File.Dir" "projects/past/" }}
+  <div class="title-container">
+      <h1>Past projects</h1>
+  </div>
+  {{ if gt (len $pastPages) 0 }}
+  <div class="grid-container" id="grid-container">
+      {{ range $pastPages }}
+      {{ $logo := urls.JoinPath "/images/projects" .Params.logo }}
+      <div class="grid-item project-item">
+        <div class="project-logo-cell">
+          <a href="{{ .Params.website }}">
+            <img src="{{ $logo }}" alt="Image of {{ .Title }}">
+          </a>
+        </div>
+        <div class="text">
+          <a href="{{ .Params.website }}" class="nameLink_a"> {{ .Title }} </a>
+
+          {{ with .Params.uvpi }} 
+          <p><strong>UV-PIs:</strong> {{ . }}</p>
+          {{ end }}
+
+          {{ with .Params.pi }} 
+          <p><strong>PIs:</strong> {{ . }}</p>
+          {{ end }}
+
+          {{ with .Params.years }} 
+          <p><strong>Duration:</strong> ({{ . }})</p>
+          {{ end }}
+
+          {{ with .Params.funding_source }} 
+          <p><strong>Funding Source:</strong> {{ . }}</p>
+          {{ end }}
+
+          {{ with .Params.role }} 
+          <p><strong>Role:</strong> {{ . }}</p>
+          {{ end }}
+
+          {{ with .Params.project_type }} 
+          <p><strong>Project Type:</strong> {{ . }}</p>
+          {{ end }}
+
+          {{ with .Params.partners }} 
+          <p><strong>Partners:</strong> {{ delimit . ", " }}</p>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+  </div>
+  {{ else }}
+  <p>No past projects available.</p>
+  {{ end }}
+</div>
 {{ end }}

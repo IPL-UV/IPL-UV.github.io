@@ -1,48 +1,34 @@
 <table class="table table-hover">
     {{ range . }}
     {{ $logo := urls.JoinPath "/images/projects" .Params.logo }}
-    <tr>
-        <td class="project-logo-cell">
-            <img src="{{ $logo }}" class="img-fluid" alt="Image of {{ .Title }}">
-        </td>
-        <td class="project-info-cell">
-            <a href="{{ .Params.website }}"> {{ .Title }} </a> 
-            <br>
-            {{ with .Params.uvpi }} 
-                <strong> UV-PIs: {{ . }}  </strong> 
-                <br>
-            {{ end }}
-
-            {{ with .Params.pi }} 
-                <strong> PIs: {{ . }}  </strong> 
-                <br>
-            {{ end }}
-            
-            {{ with .Params.years }} 
-                <strong> Duration: ({{ . }})  </strong> 
-                <br>
-            {{ end }}
-
-            {{ with .Params.funding_source }} 
-                <strong> Funding Source: {{ . }}  </strong> 
-                <br>
-            {{ end }}
-            
-            {{ with .Params.role }} 
-                <strong> Role: {{ . }}  </strong> 
-                <br>
-            {{ end }}
-            
-            {{ with .Params.project_type }} 
-                <strong> Project Type: {{ . }}  </strong> 
-                <br>
-            {{ end }}
-            
-            {{ with .Params.partners }} 
-                <strong> Partners: {{ delimit . ", " }}  </strong> 
-                <br>
-            {{ end }}
-        </td>
-    </tr>
+        <tr class="table-item">
+            <td class="project-logo-cell">
+                <img src="{{ $logo }}" class="img-fluid" alt="Image of {{ .Title }}">
+            </td>
+            <td class="project-info-cell">
+                <a href="{{ .Params.website }}"> {{ .Title }} </a> 
+                {{ with .Params.uvpi }} 
+                    <p> <strong>UV-PIs:</strong> {{ . }}  </p> 
+                {{ end }}
+                {{ with .Params.pi }} 
+                    <p> <strong>PIs:</strong> {{ . }}  </p> 
+                {{ end }}
+                {{ with .Params.years }} 
+                    <p> <strong>Duration:</strong> ({{ . }})  </p> 
+                {{ end }}
+                {{ with .Params.funding_source }} 
+                    <p> <strong>Funding Source:</strong> {{ . }}  </p> 
+                {{ end }}
+                {{ with .Params.role }} 
+                    <p> <strong>Role:</strong> {{ . }}  </p> 
+                {{ end }}
+                {{ with .Params.project_type }} 
+                    <p> <strong>Project Type:</strong> {{ . }}  </p> 
+                {{ end }}
+                {{ with .Params.partners }} 
+                    <p> <strong>Partners:</strong> {{ delimit . ", " }}  </p> 
+                {{ end }}
+            </td>
+        </tr>
     {{ end }}
 </table>

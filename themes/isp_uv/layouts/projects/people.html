@@ -1,0 +1,55 @@
+{{ define "main" }}
+<div class="content-container">
+    {{ $groups := .Pages.GroupByParam "role" }}
+    {{ $order := slice "university of oxford" "university of valencia" "brockmann consult"}}
+    {{ range $order }}
+    {{ with index (where $groups "Key" .) 0 }}
+    <div class="title-container">
+        <h1> {{ .Key | title }} </h1>
+    </div>
+    <div class="card container">
+        {{ range .Pages }}
+        {{ $img := printf "/images/people/%s" .Params.img }}
+        {{ $name := .Title }}
+        {{ $link_image := .Params.link_image }}
+        <div class="card">
+            <div class="row g-0">
+                <div class="col-md-3">
+                    {{ if $link_image }}
+                    <a href="{{ $link_image }}">
+                    {{ end }}
+                    <img src="{{ $img }}" class="img-fluid" alt="Image of {{ $name }}">
+                    {{ if $link_image }}
+                    </a>
+                    {{ end }}
+                </div>
+                <div class="col-md-9">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>{{ .Title }}</b></h5>
+                        <p class="card-text">{{ .Content | markdownify }}</p>
+                        <div class="card-links">
+                            {{ with .Params.googlescholar }} <a href="{{ . }}"><img src="/images/people/redes/gscholar.webp" ></a> {{ end }}
+                            {{ with .Params.orcid }} <a href="{{ . }}"><img src="/images/people/redes/orcid.webp"></a> {{ end }}
+                            {{ with .Params.twitter }} <a href="{{ . }}"><img src="/images/people/redes/twitter.webp"></a> {{ end }}
+                            {{ with .Params.github }} <a href="{{ . }}"><img src="/images/people/redes/github.webp" ></a> {{ end }}
+                            {{ with .Params.semanticscholar }} <a href="{{ . }}"><img src="/images/people/redes/semantic.webp"></a> {{ end }}
+                            {{ with .Params.researchgate }} <a href="{{ . }}"><img src="/images/people/redes/rg.webp"></a> {{ end }}
+                            {{ with .Params.uv }} <a href="{{ . }}" class="btn btn-xss btn-info" aria-label="Left Align">UV</a> {{ end }}
+                            {{ with .Params.linkedin }} <a href="{{ . }}"><img src="/images/people/redes/linkedin.webp"></a> {{ end }}
+                            {{ with .Params.ieee }} <a href="{{ . }}"><button type="button" class="btn btn-xss btn-success">IEEE</button></a> {{ end }}
+                            {{ with .Params.dblp }} <a href="{{ . }}"><button type="button" class="btn btn-xss btn-danger">dblp</button></a> {{ end }}
+                            {{ with .Params.academia }} <a href="{{ . }}"><img src="/images/people/redes/academia.webp"></a> {{ end }}
+                            {{ with .Params.scopus }} <a href="{{ . }}"><img src="/images/people/redes/scopus.webp"></a> {{ end }}
+                            {{ with .Params.website }} <a href="{{ . }}"><button type="button" class="btn btn-xss btn-info">Website</button></a> {{ end }}
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        {{ end }}
+    </div>
+    {{ end }}
+    {{ end }}
+{{ .Content }}
+</div>
+{{ end }}
