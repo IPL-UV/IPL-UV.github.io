@@ -1,27 +1,25 @@
 ---
-title: "Research Earth Science"
+title: "Earth and climate sciences"
+type: "research"
+layout: "single"
 ---
 
-<div class="content-container" style="font-size: 1.1em; text-align: justify; line-height: 1.1;">
-
-# Earth and climate sciences
-
-<br/>
-
-## Motivation
+# Motivation
 
 **Machine learning has yielded many successful results and developments in remote sensing, geosciences and climate sciences. However, there are still strong limitations for the general adoption of machine learning algorithms for predicting and understanding the Earth and climate systems.**
 
-<div class="image_e">
-<img class="image_e" src="/images/research/AI_earth_pic.webp" style="width:300px; display: block; margin: auto"/>
-</div>
-<br/>
+<br>
+<p align="center">
+  <img src="/images/research/AI_earth_pic.webp" width="40%">
+</p>
+<br>
+
 
 The current statistical treatment of biophysical parameters is strongly limited by the quantity and quality of EO data, as well as because of the abuse of standard off-the-shelf methods, which in general are not well-adapted to the particular EO data characteristics. Specifically, current regression models used for EO applications are still deficient because they rely on limited amount of meteorological and remote sensing data, do not observe the particular data characteristics, and often make strong assumptions of linearity, homoscedasticity or Gaussianity. These limitations translate into certain risks of overfitting and unreasonably large uncertainties for the predictions, suggesting a lack of explanatory variables and deficiencies in model specification. Graphical models have been seldom used in EO data analysis. The few works restrict to local studies, use limited amount of data and explanatory variables, consider remote sensing input features only, apply standard structure learning algorithms driven by univariate (often unconditioned) dependence estimates, and do not extract causal relations or identify new drivers in the problem.
 
 We advocate that machine learning algorithms for EO applications need to be guided both by data and by prior physical knowledge. This combination is the way to restrict the family of possible solutions and thus obtain nonparametric flexible models that respect the physical rules governing the Earth climate system. We are equally concerned about the ‘black-box' criticism to statistical learning algorithms, for which we aim to design self-explanatory models and take a leap towards the relevant concept of causal inference from empirical EO data.
 
-## Challenges and approaches
+# Challenges and approaches
 
 Our main goal is to develop new machine learning models for the ambitious goal of modeling and understanding the Earth and climate systems with data, models and machine learning. This main scientific goal translates into the following objectives:
 
@@ -41,19 +39,7 @@ Our main goal is to develop new machine learning models for the ambitious goal o
 
 - **Discover knowledge and causal relations in Earth observation data.** We investigate graphical causal models and regression-based causal schemes applied to large heterogeneous EO data streams. This requires improved measures of (conditional) independence, designing experiments in controlled situations and using high-quality data. Learning the hierarchy of the relations between variables and related covariates, as well as their causal relations, may in turn allow the discovery of hidden essential variables, drivers and confounders. Moving from correlation to dependence and then to causation concepts is fundamental to advance the field of Earth Observation and the science of climate change.
 
-### Related Projects 
+
 
 {{< projects "usmile" "xaida" "deepcube" "elise" "sedal" "cloud" "mapict" >}}
 
-
-<style>
-@media (max-width: 767px) {
-  .image_e {
-    max-width: 100%;
-    height: auto;
-    overflow-x: auto;
-  }
-}
-
-</style>
-</div>

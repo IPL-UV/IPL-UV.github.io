@@ -1,5 +1,5 @@
 ---
-title: facilities
+title: Facilities
+type: "facilities"
+layout: "list2"
 ---
-
-asasdfsadfdsafdsafs

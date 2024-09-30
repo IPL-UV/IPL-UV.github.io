@@ -1,26 +1,24 @@
 ---
-title: "Research Social Science"
+title: "AI for sustainability and social sciences"
+type: "research"
+layout: "single"
 ---
 
 
-<div class="content-container" style="font-size: 1.1em; text-align: justify; line-height: 1.1;">
-
-# AI for sustainability and social sciences
-
-<br/>
-
-## Motivation
+# Motivation
 
 **The Earth is a highly complex, dynamic, and networked system where very different physical, chemical and biological processes interact, to form the world we know. The description of such a complex system needs of the integration of different disciplines such as Physics, Chemistry, Mathematics and other applied sciences, leading to what has been coined as Earth System Science (ESS). The analysis of the Earth system involves studying interacting processes occurring in several spheres (atmosphere, hydrosphere, cryosphere, geosphere, pedosphere, biosphere, and magnetosphere) as well as the anthroposphere where the Society acts.**
 
-<div class="cimage_s">
-<img class="image_s" src="/images/adicionales/SDGs.webp" style="display: block; margin: auto"/>
-</div>
-<br/>
+<br>
+<p align="center">
+  <img src="/images/research/SDGs.webp" width="80%">
+</p>
+<br>
+
 
 Earth system science provides the physical basis of the world we live in, with the final objective of obtaining a sustainable development of our society, see the United Nations [Sustainable Development Goals](https://sustainabledevelopment.un.org/). We develop AI models for tackling pressing questions in the climate-society interplay. We tackle problems where the human is in the middle (both a cause and an effect); where SDGs, fairness and ethics are implied, and where elusive concepts like wealth, well-being and development are involved. Our unique approach involves exploiting massive amount of data and machine learning algorithms to model and understand the environment-human interactions.
 
-## Challenges and approaches
+# Challenges and approaches
 
 Our main goal is to develop new machine learning models for the efficient treatment of biophysical land parameters and related covariates at local and global scales. This main scientific goal translates into the following objectives:
 
@@ -31,25 +29,3 @@ Our main goal is to develop new machine learning models for the efficient treatm
 - **Algorithmic Fairness.** New social and economic activities massively exploit big data and machine learning algorithms to do inference on people's lives. Applications include automatic curricula evaluation, wage determination, and risk assessment for credits and loans. Recently, many governments and institutions have raised concerns about the lack of fairness, equity and ethics in machine learning to treat these problems. It has been shown that not including sensitive features that bias fairness, such as gender or race, is not enough to mitigate the discrimination when other related features are included (SDGs 5 and 10). Instead, including fairness in the objective function has been shown to be more efficient. We develop novel fair regression and dimensionality reduction methods to tackle such problems. The proposed methods allow us to tackle pressing societal problems like predicting income using gender and/or race discrimination as sensitive variables, contraceptive method prediction under demographic and socio-economic sensitive descriptors, or predicting climate change protecting against anthropogenic factors. Neural networks, Gaussian processes, kernel machines and optimal transport are our favourite tools.
 
 - **Causality in the biosphere-anthroposphere coupled system.** The terrestrial biosphere and the anthroposphere are deeply coupled in multiple ways. Humans depend on a range of ecosystem goods and services but, at the same time, they heavily engineer and modify land ecosystems. Over the past decades, human development has generally made substantial progress in terms of education (SDG 2), health services (SDG 2), life expectancy (SDG 2) and many other aspects around the planet with very few exceptions due to e.g. warfare and in sub-Saharan Africa. The grand question is if, and how, one can identify and quantify relationships between changes in land-ecosystem states and the human development metrics at the global scale. We tackle problems of food insecurity (SDGs 1, 2), climate-induced migration (SDGs 1, 2), infants well-being (SDGs 3, 4) and conflicts (SDGs 10, 11). Our hypothesis is that we can now tackle causal discovery problems relying on both assumed relations and exploiting observational data. We rely on the science of causal inference to unravel relations between coupled variables beyond correlations even in the presence of non-linearities and non-stationarities.
-
-
-### Releted Projects
-
-{{< projects deepcube xaida scale mapict >}}
-
-
-<style>
-  .image_s{
-    width:800px;
-  }
-@media (max-width: 767px) {
-  .cimage_s {
-    height: auto;
-    overflow-x: auto;
-  }
-  .image_s{
-    width:500px;
-  }
-}
-
-</style></div>

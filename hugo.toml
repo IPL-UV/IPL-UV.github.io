@@ -1,5 +1,5 @@
-#baseURL = "https://ipl-uv.github.io/" 
-baseURL = "https://isp.uv.es/github/"
+baseURL = "https://ipl-uv.github.io/" 
+#baseURL = "https://isp.uv.es/github/"
 publishDir = "docs"
 
 #baseURL = "http://127.0.0.1/isp/"
@@ -29,7 +29,7 @@ theme = "isp_uv"
 
 [[menu.main]]
   name = "Research"
-  url = "/research/"
+  url = "/research/philosophy"
   weight = 3
   [[menu.main]]
     parent = "Research"

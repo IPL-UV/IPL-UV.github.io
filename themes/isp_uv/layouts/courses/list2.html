@@ -1,0 +1,41 @@
+{{ define "main" }}
+<div class="content-container">
+    <div class="title-container">
+        <h1>{{ .Params.title }}</h1>
+    </div>
+    {{ range .Pages }}
+    {{ $img := urls.JoinPath "/images/courses" .Params.img }}
+    <div class="panel-item">
+        <div class="panel-header">
+            <h4 class="panel-title"><b>{{ .Title }}</b></h4>
+        </div>
+        <div class="panel-body">
+            <div class="panel-content row">
+                <div class="panel-image col-md-2">
+                    <a href="{{ .Params.link }}">
+                        <img src="{{ $img }}" alt="{{ .Params.image_alt }}">
+                    </a>
+                </div>  
+                <div class="panel-description col-md-{{ if .Params.references }}6{{ else }}10{{ end }}">
+                    <h5>
+                        <p class="text-justify">{{ .Params.description | markdownify }}</p>
+                    </h5>
+                    
+                </div>  
+                {{ if .Params.references }}
+                <div class="panel-references col-md-4">
+                    <h6><b>References</b></h6>
+                    <ul class="references-list">
+                        {{ range .Params.references }}
+                        <li>{{ . | markdownify }}</li>
+                        {{ end }}
+                    </ul>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div> 
+    {{ end }}
+    <p>{{ .RawContent | markdownify }}</p>
+</div>
+{{ end }}

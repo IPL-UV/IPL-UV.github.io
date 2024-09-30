@@ -1,26 +1,26 @@
 ---
 title: "Research Machine Learning"
+type: "research"
+layout: "single"
 ---
 
-# Machine learning
 
-
-<br/>
-
-
-## Motivation
+# Motivation
 
 **Machines may extract knowledge from measurements by analyzing the statistical properties of the acquired signals.** The aim is to capture the structures in the experimental data. Our contributions to machine learning include algorithms for automatic classification (recognition) of objects, robust regression tools for multidimensional data, density estimation algorithms, and feature extraction and selection. We study the principled design of learning algorithms, specially neural networks and kernel methods. **Methods are designed for general purposes but also specific to the application, most of them related to image processing, computer vision tasks and Earth science data analysis, but also non-structured data in social sciences.**
 
-## An AI agenda
+# An AI agenda
 
 **The main research hypothesis of our research agenda is that current AI models are limited to tackle fitting problems only, and do not have a clear notion of space, time and causal relations.** We need to aboard the more ambitious questions of understanding through machine learning, going beyond mere model fitting. This goal needs to develop (i) targeted ML that respects data characteristics, (ii) hybrid physics-aware ML that incorporates domain knowledge and inductive priors, and more importantly (3) moving from fitting to understanding through AI models that are explainable and grasp causal relations from observational data.
 
-<div class="image_ml_c">
-<img class="image_ml" src="/images/research/philosophy_balls.webp" style=" display: block; margin: auto"/>
-</div>
 
-<br/>
+<br>
+<p align="center">
+  <img src="/images/research/philosophy_balls.webp" width="80%">
+</p>
+<br>
+
+
 
 **In order to advance in the previous AI agenda, we base our research in 3 fundamental research pillars:**
 
@@ -28,7 +28,7 @@ title: "Research Machine Learning"
 - **Pillar 2. Physics-aware modeling, inductive biases and domain knowledge in machine learning.** Our activities here encompass developing algorithms that live in the Physics and machine learning interplay: both through encoding (hybrid machine learning models) and decoding (discovery principles and physical laws from data).
 - **Pillar 3. Explainable AI and Causality.** Scientific consistency, reliability, and explainability of obtained results are of paramount importance in complex systems. A prerequisite to achieve those is to design ML models that cannot be challenged, or whose inner functioning can be visualized, queried or interpreted. We aim to achieve transparency, interpretability and explainability of models to achieve a wider adoption and confidence by domain scientists. Yet, ML model interpretability is not enough because model development already assumes a causal relation, the real far-end goal of learning with machines.
 
-## Challenges and approaches
+# Challenges and approaches
 
 **The group has a relatively long tradition in machine learning, particularly focused on the study and development of neural networks and kernel machines.** Recently, the fields of manifold, semisupervised and active learning have captured our attention. The study of the intrinsic coordinates and representations where data in general, and images in particular, live is interesting for many applications. Regression and classification methods must be modified to deal with changes in data/image statistics efficiently. **In many signal and image processing problems, such as change detection or multitemporal data classification, adaptation is a must. We currently model shifts, twists and wrappings of image distributions by designing semisupervised learning methods. The fields of manifold alignment and domain adaptation has also important information-theoretic implications which we analyzed through kernel entropy component analyis, multivariate Gaussianization transforms and extensions of principal curves and surfaces. And yes, deep learning is of interest to us; what has the networked learned? and why?** Follow our works in [Papers](../../publications/journals/).
 
@@ -41,29 +41,3 @@ Modeling input data, however, does not ensure that the model will adapt to chang
 **Sparsity as a form of compacting information was studied in both deep architectures and kernel machines.** In all these settings, we are particularly interested in **encoding prior knowledge and invariances** in the models: signal and noise properties, spatial-temporal constraints, amd robustness to illumination changes, just to name a few. Dealing with invariances and priors inmediately call for **regularization and Bayesian inference**. While pure discriminative approaches have been developed in our group, in recent years we have payed attention to the field of Bayesian nonparametric models as a proper framework to encode such beliefs. We are active in kernel design for **Gaussian processes regression and model inversion, and in designing efficient sampling schemes with modern Markov Chain Montecarlo strategies**.
 
 
-### Related Projects 
-
-
-{{< projects "usmile" "xaida" "deepcube" "elise" >}}
-
-
-<style>
-  .image_ml{
-    width:800px;
-  }
-
-@media (max-width: 767px) {
-  .image_ml_c {
-    max-width: 100%;
-    height: auto;
-    overflow-x: auto;
-  }
-
-  .image_ml{
-    width:500px;
-  }
-
-
-}
-
-</style>

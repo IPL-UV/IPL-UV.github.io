@@ -3,8 +3,6 @@ title: "Collaborators"
 type: "collaborators"
 ---
 
-# Collaborators
-
 <br>
 
 ## Research labs

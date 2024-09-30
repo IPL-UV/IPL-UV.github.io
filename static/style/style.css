@@ -404,13 +404,6 @@ body.section-contact .navbar-nav .nav-link[href="/contact/"] {
 
 
 
-
-
-
-
-
-
-
 /* CODE - DATA - PEOPLE */
 .content-container {
   margin: 2rem auto; 
@@ -449,15 +442,20 @@ body.section-contact .navbar-nav .nav-link[href="/contact/"] {
   margin-bottom: 0.4rem; 
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease, transform 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .grid-item img {
+  display: flex;
   border-radius: 0.3125rem;
   height: 4.5rem; 
   width: 4.5rem;
   margin-right: 1.25rem; 
   object-fit: contain;
   transition: transform 0.5s ease;
+  justify-content: center;
 }
 
 .grid-item .text {
@@ -810,6 +808,12 @@ body.section-contact .navbar-nav .nav-link[href="/contact/"] {
 
 .panel-description h5 p {
   margin: auto;
+}
+
+.panel-description h5 p a {
+  color: #337ab7;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .panel-description h5 {
@@ -1392,6 +1396,12 @@ max-height: 100%;
   margin: 0;
 }
 
+.box-content p a {
+  color: #337ab7;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
 
 .box-content ul li a {
   color: #337ab7;
@@ -1447,9 +1457,7 @@ max-height: 100%;
   font-size: clamp(0.45rem, 2.5vw, 0.9rem);
 }
 
-/* sadfasf */
-
-
+/* 
 .gallery-item {
   background-color: #fff;
   padding: 1rem;
@@ -1462,7 +1470,6 @@ max-height: 100%;
   width: 80%;
   
 }
-
 .gallery-item img {
   width: 100%; 
   max-width: 100%;
@@ -1470,35 +1477,48 @@ max-height: 100%;
   border-radius: 0.3125rem;
   object-fit: cover;
 }
-
 .gallery-title {
   font-size: clamp(0.3rem, 2.5vw, 0.6rem);
   line-height: 1.6;
   margin: 0;
   font-weight: bold;
 }
-
 .gallery-title a {
   color: #337ab7;
   text-decoration: none;
   transition: color 0.3s ease;
 }
-
-
 .gallery-description {
   font-size: clamp(0.4rem, 2.5vw, 0.7rem);
 }
-
 .gallery-description p {
   text-align: justify;
 }
-
 .gallery-description p a {
   color: #337ab7;
   text-decoration: none;
   transition: color 0.3s ease;
+} */
+
+
+/* Contact */
+.col-md-8 {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 0;
+}
+.map-iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.map-container {
+  width: 100%;
 }
 
 
+.grid-item img {}
 
 
