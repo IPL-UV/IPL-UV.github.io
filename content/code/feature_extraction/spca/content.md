@@ -24,6 +24,7 @@ imagenes:
   - ruta: "spca_im_coding2.webp"
     titulo: "Image Coding Example 2"
     descripcion: "Further results of image coding with different metrics."
+    
 referencias:
   - nombre: "V1 non-linear properties emerge from local-to-global non-linear ICA"
     autores: "J. Malo, J. Gutiérrez"
@@ -31,7 +32,7 @@ referencias:
     url: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_feature/V1_from_non_linear_ICA.pdf"
   - nombre: "Visual Aftereffects and Sensory Nonlinearities from a Single Statistical Framework"
     autores: "V. Laparra, J. Malo"
-    publicacion: "Frontiers in Human Neuroscience. [Special Issue on Perceptual Illusions](http://journal.frontiersin.org/researchtopic/the-future-of-perceptual-illusions-from-phenomenology-to-neuroscience-2381) 2015. [A guide to the full supplementary material (description of the code, data, experiments and results)](https://ipl-uv.github.io/old_pages/data/after_effects/index.html)."
+    publicacion: "Frontiers in Human Neuroscience. [Special Issue on Perceptual Illusions](http://journal.frontiersin.org/researchtopic/the-future-of-perceptual-illusions-from-phenomenology-to-neuroscience-2381) 2015. [A guide to the full supplementary material (description of the code, data, experiments and results)](../../../vision_and_color/aftereffects/content/)."
     url: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_feature/frontiers_laparra_malo_Accepted_15.pdf"
   - nombre: "Nonlinearities and Adaptation of Color Vision from Sequential Principal Curves Analysis"
     autores: "V. Laparra, S. Jiménez, G. Camps, J. Malo"

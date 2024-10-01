@@ -1,27 +1,30 @@
-# SEDAL Project
+---
+title: "SEDAL Project"
+type: "news"
+layout: "single"
+---
 
-<br>
-
-## Proposals
+# Proposals
 
 - **B1 Proposal**
 - **B2 Proposal**
 
-## Interview Slides
+# Interview Slides
 
-<br>
 
-### Reporting
+## Reporting
 
 - **Continuous Reporting:** 01/09/2015 - 28/02/2017
 - **Mid-term Report:** 01/09/2015 - 28/02/2018
 
-### Outreach Presentations
+## Outreach Presentations
 
 - **Advanced Applications in AI (AAA)**
 - **Algorithms and Analysis (AAA)**
 - **Applied Analytics for Agriculture (AAA)**
 - **Atmospheric and Aerial Analysis (AAA)**
+
+<br>
 
 The SEDAL project is an interdisciplinary effort to develop novel statistical learning methods to analyze Earth Observation (EO) satellite data. The project focuses on improving prediction models, discovering knowledge and causal relations in EO data, and contributing to various remote sensing applications.
 

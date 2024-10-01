@@ -22,7 +22,7 @@ abstract: |
 
     2. In **Psychophysics**, we proposed simplified methods to measure the Contrast Sensitivity Function across the entire frequency domain [J.Opt.94](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/JOPT94.PS.gz), and developed a fast and accurate method to measure the parameters of multi-stage linear+nonlinear vision models [Proc.SPIE15](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/malo15a-reprint.pdf).
 
-    3. In **Image Statistics**, we gathered spatially and spectrally calibrated image samples to determine the properties of these signals and their variations under changes in illumination, contrast, and motion [Im.Vis.Comp.00](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/ivc99.ps.gz), [Neur.Comp.12](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/Neco_accepted_2012.pdf), [IEEE-TGRS14](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/manuscr_TGRS_2012_00431.pdf), [PLoS-ONE14](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/Gutmann_PLOS_ONE_2014.pdf), [Rem.Sens.Im.Proc.11](http://isp.uv.es/files/rem_sens_im_proc_12_ch02.pdf), [Front.Neurosci.15](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/after_effects).
+    3. In **Image Statistics**, we gathered spatially and spectrally calibrated image samples to determine the properties of these signals and their variations under changes in illumination, contrast, and motion [Im.Vis.Comp.00](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/ivc99.ps.gz), [Neur.Comp.12](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/Neco_accepted_2012.pdf), [IEEE-TGRS14](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/manuscr_TGRS_2012_00431.pdf), [PLoS-ONE14](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/Gutmann_PLOS_ONE_2014.pdf), [Rem.Sens.Im.Proc.11](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/people/malo/rem_sens_im_proc_12_ch02.pdf), [Front.Neurosci.15](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/after_effects).
 
     # Theory: empirical models in Vision Science
 
@@ -138,7 +138,7 @@ referencias:
   - nombre: "PLoS-ONE14"
     url: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/Gutmann_PLOS_ONE_2014.pdf"
   - nombre: "Rem.Sens.Im.Proc.11"
-    url: "http://isp.uv.es/files/rem_sens_im_proc_12_ch02.pdf"
+    url: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/people/malo/rem_sens_im_proc_12_ch02.pdf"
   - nombre: "Front.Neurosci.15"
     url: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/after_effects"
   - nombre: "J.Mod.Opt.97"
@@ -186,7 +186,7 @@ referencias:
   - nombre: "IEEE JSTSP15"
     url: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/drr_jstsp2014_final.pdf"
   - nombre: "ML CODE"
-    url: "/old_pages/code/soft_feature/ISP - Feature extraction software.html"
+    url: "../../code/feature_extraction/"
 
 enlaces:
   - nombre: "Scholarpedia: Models of Visual Cortex"
@@ -196,9 +196,9 @@ enlaces:
   - nombre: "NeuroImage Unit"
     url: "https://www.acim.lafe.san.gva.es/acim/?page_id=1229"
   - nombre: "Texture Vision Dataset"
-    url: "/old_pages/data/after_effects/"
+    url: "../../code/vision_and_color/aftereffects/content/"
   - nombre: "Vision and Color Processing Software"
-    url: "/old_pages/code/soft_visioncolor/ISP - Vision and color processing software.html"
+    url: "../../code/vision_and_color/"
 
 type: "research"
 layout: "single2"

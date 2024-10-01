@@ -4,12 +4,12 @@ type: "projects"
 layout: "single"
 ---
 
-- [Image and Signal Processing (ISP) group - Universitat de València [Gustau Camps-Valls, PI]](http://isp.uv.es/)
+- [Image and Signal Processing (ISP) group - Universitat de València [Gustau Camps-Valls, PI]](/)
 - [Image and Signal Processing (ISP) group - Universitat de València [Maria Piles, PI]](https://www.uv.es/uvweb/college/en/profile-1285950309813.html?p2=piguima&idA=true)
 - [Image and Signal Processing (ISP) group - Universitat de València [Jesús Malo]](https://www.uv.es/jmalo/)
 - [Image and Signal Processing (ISP) group - Universitat de València [Luis Gómez Chova]](https://www.uv.es/chovago/)
 - [Image and Signal Processing (ISP) group - Universitat de València [Jordi Muñoz]](https://www.uv.es/jordi/)
-- [Image and Signal Processing (ISP) group - Universitat de València [Julia Amorós]](https://isp.uv.es/people.html)
+- [Image and Signal Processing (ISP) group - Universitat de València [Julia Amorós]](../../../../people/)
 - [Instituto de Óptica, CSIC - [Marcelo Bertalmio]](https://www.io.csic.es/marcelo-bertalmio/)
 - [Image and Signal Processing (ISP) group - Universitat de València [Ana B. Ruescas]](https://www.uv.es/uvweb/universidad/es/ficha-persona-1285950309813.html?p2=bruescas)
 - [Universitat de València - [Javier García-Haro]](https://www.uv.es/uvweb/college/en/profile-1285950309813.html?p2=garciaja&idA=true)

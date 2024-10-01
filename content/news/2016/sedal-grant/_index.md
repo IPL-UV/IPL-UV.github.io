@@ -1,7 +1,6 @@
 ---
 title: "SEDAL Grant"
 date: 2016-01-01
-draft: false
 externalLink: "./2016/sedal-grant/sedal/index.html"
 ---
 
