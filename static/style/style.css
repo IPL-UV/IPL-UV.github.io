@@ -1457,50 +1457,6 @@ max-height: 100%;
   font-size: clamp(0.45rem, 2.5vw, 0.9rem);
 }
 
-/* 
-.gallery-item {
-  background-color: #fff;
-  padding: 1rem;
-  border-radius: 0.625rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 80%;
-  
-}
-.gallery-item img {
-  width: 100%; 
-  max-width: 100%;
-  height: auto;
-  border-radius: 0.3125rem;
-  object-fit: cover;
-}
-.gallery-title {
-  font-size: clamp(0.3rem, 2.5vw, 0.6rem);
-  line-height: 1.6;
-  margin: 0;
-  font-weight: bold;
-}
-.gallery-title a {
-  color: #337ab7;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-.gallery-description {
-  font-size: clamp(0.4rem, 2.5vw, 0.7rem);
-}
-.gallery-description p {
-  text-align: justify;
-}
-.gallery-description p a {
-  color: #337ab7;
-  text-decoration: none;
-  transition: color 0.3s ease;
-} */
-
-
 /* Contact */
 .col-md-8 {
   display: flex;
@@ -1519,6 +1475,25 @@ max-height: 100%;
 }
 
 
-.grid-item img {}
+/* sdfsg */
 
+.seminar-image img {
+  border-radius: 0.3125rem;
+  height: 6rem;
+  width: 6rem;
+  margin-right: 1.5rem;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
 
+.seminar-text {
+  flex-grow: 1;
+}
+
+.seminar-date {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #666;
+  font-size: 0.9rem;
+}

@@ -1,56 +1,84 @@
 {{ define "main" }}
-<h1 style="margin-bottom: 20px;">Seminars</h1>
-
-<div class="course-container" id="seminars_container">
-  <div class="image-container">
-    <img src="/images/talks2.webp" alt="Talks Image">
+<div class="content-container">
+  <div class="title-container">
+    <h1> {{ .Params.title }} </h1>
   </div>
-  <div class="text-container">
-    In the Image Processing Lab (IPL) environment, invited talks by senior researchers, postdocs and PhD students in
-    meetings for informal discussion of their research are held regularly, organized by the ISP group. We call these
-    talks FFT, that in this case stands for "First Friday Talk", even though they may happen at any point of the week
-    ;-) Below you may find a (non-exhaustive) list of the talks done so far to get a flavour of our interests...
-  </div>
-</div>
-
-
-<div class="table-responsive">
-  <table class="table table-hover table-responsive" id="seminar-table">
-    <thead>
-      <tr>
-        <th style="background-color: #f2dede;">Date</th>
-        <th style="background-color: #f2dede;">Title</th>
-        <th style="background-color: #f2dede;">Speaker</th>
-        <th style="background-color: #f2dede;">Affiliation</th>
-      </tr>
-    </thead>
-    <tbody>
-      {{ $currentYear := "" }}
+  <div class="filter-container">
+    <label for="year-filter">Filter by Year:</label>
+    <select id="year-filter" onchange="filterSeminars()">
+      <option value="">All Years</option>
+      {{ $years := slice }}
       {{ range sort .Site.RegularPages "Date" "desc" }}
       {{ if eq .Section "seminars" }}
       {{ $year := .Date.Format "2006" }}
-      {{ if ne $currentYear $year }}
-      {{ if ne $currentYear "" }}
-    </tbody>
+      {{ if not (in $years $year) }}
+      <option value="{{ $year }}">{{ $year }}</option>
+      {{ $years = $years | append $year }}
+      {{ end }}
+      {{ end }}
+      {{ end }}
+    </select>
+  </div>
+
+  <div class="grid-container" id="seminar-grid-container">
+    {{ range sort .Site.RegularPages "Date" "desc" }}
+    {{ if eq .Section "seminars" }}
+    {{ $img := (urls.JoinPath "/images/seminars" (.Params.img | default "uv.webp")) }}
+    <div class="grid-item seminar-item project-item" data-year="{{ .Date.Format "2006" }}">
+      <div class="image-container seminar-image">
+        {{ with .Params.link }}
+          <a href="{{ . }}">
+            <img src="{{ $img }}" alt="{{ .Params.image_alt | default "Default Seminar Image" }}">
+          </a>
+        {{ else }}
+          <img src="{{ $img }}" alt="{{ .Params.image_alt | default "Default Seminar Image" }}">
+        {{ end }}
+      </div>
+      <div class="text-container seminar-text">
+        {{ with .Params.link }}
+          <a href="{{ . }}" class="nameLink_a seminar-title">{{ .Params.title | markdownify }}</a>
+        {{ else }}
+          <p class="nameLink_a seminar-title">{{ .Params.title | markdownify }}</p>
+        {{ end }}
+        {{ with .Params.speaker }} 
+        <p><strong>Speaker:</strong> {{ . }} </p>
+        {{ end }}
+        {{ with .Params.affiliation }}
+        <p><strong>Affiliation:</strong> {{ . }}</p>
+        {{ end }}
+
+        <div class="date-container seminar-date">
+          <span class="day">{{ .Date.Format "02" }}</span>
+          <span class="month">{{ .Date.Format "January" }}</span>
+          <span class="year">{{ .Date.Format "2006" }}</span>
+        </div>
+
+      </div>
+    </div>
     {{ end }}
-    <tr>
-      <td colspan="4" style="background-color: #d9edf7; text-align: center;">
-        <strong>{{ $year }}</strong>
-      </td>
-    </tr>
-    <tbody>
-      {{ $currentYear = $year }}
-      {{ end }}
-      <tr>
-        <td>{{ .Date.Format "2006-01-02" }}</td>
-        <td>{{ .Title | safeHTML }}</td>
-        <td>{{ .Params.speaker }}</td>
-        <td>{{ .Params.affiliation }}</td>
-      </tr>
-      {{ end }}
-      {{ end }}
-    </tbody>
-  </table>
+    {{ end }}
+  </div>
 </div>
 
+{{ with .Params.uvpi }} 
+  <p><strong>UV-PIs:</strong> {{ . }}</p>
+{{ end }}
+
+{{ with .Params.pi }} 
+  <p><strong>PIs:</strong> {{ . }}</p>
+{{ end }}
+
+<script>
+  function filterSeminars() {
+    const year = document.getElementById('year-filter').value;
+    const items = document.querySelectorAll('.seminar-item');
+    items.forEach(item => {
+      if (year === "" || item.getAttribute('data-year') === year) {
+        item.style.display = 'flex';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  }
+</script>
 {{ end }}
