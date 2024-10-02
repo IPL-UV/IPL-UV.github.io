@@ -5,5 +5,5 @@ link: "./calibrated_color_image"
 description: "Measured at ISP to explain spatiochromatic adaptation"
 weight: 1
 type: "data"
-layout: "structure_codes"
+layout: "list2"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "SEDAL: Statistical Learning for Earth Observation Data Analysis"
 type: "news"
-layout: "single"
+layout: "single_four"
 
 images:
   - title: "[Motivation](/news/2016/sedal-grant/motivation/index.html)"

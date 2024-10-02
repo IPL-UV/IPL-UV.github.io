@@ -1,85 +1,53 @@
 {{ define "main" }}
 <div class="content-container grid-layout">
-    <div class="box-header">
+    <div class="box-single">
         <h1> {{ .Title }} </h1>
     </div>
-    <div class="box-abstract">
-        <p>{{ .Params.abstract | markdownify }}</p>
-    </div>
-    {{ if .Params.imagenes }}
-    <aside class="box-gallery">
-        <div class="gallery-grid">
-            {{ range .Params.imagenes }}
-            {{ $img := urls.JoinPath "/images/research" .ruta }}
-            <div class="gallery-item">
-                {{ if or (strings.HasSuffix .ruta ".webp") (strings.HasSuffix .ruta ".jpg") (strings.HasSuffix .ruta ".png") (strings.HasSuffix .ruta ".gif") }}
-                <!-- Renderiza una imagen -->
-                <a href="javascript:void(0);" class="gallery-thumbnail" onclick="openModal('{{ $img }}', '{{ .titulo | default "" }}', '{{ .descripcion | default "" }}')">
-                    <img src="{{ $img }}" alt="{{ .titulo | default "" }}">
+    <div class="box-content">
+        <p>{{ .Content | markdownify }}</p>
+        {{ $currentDir := .File.Dir }}
+        {{ $activePages := where .Pages "File.Dir" $currentDir }}
+        {{ if gt (len $activePages) 0 }}
+        <h1>Related Projects </h1>
+        <div class="grid-container" id="grid-container">
+            {{ range $activePages }}
+            {{ $logo := urls.JoinPath "/images/projects" .Params.logo }}
+            <div class="grid-item project-item">
+            <div class="project-logo-cell">
+                <a href="{{ .Params.website }}">
+                <img src="{{ $logo }}" alt="Image of {{ .Title }}">
                 </a>
-                {{ else if or (strings.HasSuffix .ruta ".mp4") (strings.HasSuffix .ruta ".webm") }}
-                <!-- Renderiza un video local -->
-                <video controls>
-                    <source src="{{ $img }}" type="video/{{ index (split .ruta ".") 1 }}">
-                    Your browser does not support the video tag.
-                </video>
-
-                {{ else if (strings.Contains .ruta "https://") }}
-                <!-- Renderiza un video de YouTube -->
-                <iframe src="{{ .ruta }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+            </div>
+            <div class="text">
+                <a href="{{ .Params.website }}" class="nameLink_a"> {{ .Title }} </a>
+                {{ with .Params.uvpi }} 
+                <p><strong>UV-PIs:</strong> {{ . }}</p>
                 {{ end }}
-
-                {{ if .titulo }}
-                <p class="gallery-title">{{ .titulo | markdownify }}</p>
+                {{ with .Params.pi }} 
+                <p><strong>PIs:</strong> {{ . }}</p>
                 {{ end }}
-                {{ if .descripcion }}
-                <div class="gallery-description">
-                    <p>{{ .descripcion | markdownify }}</p>
-                </div>
+                {{ with .Params.years }} 
+                <p><strong>Duration:</strong> ({{ . }})</p>
+                {{ end }}
+                {{ with .Params.funding_source }} 
+                <p><strong>Funding Source:</strong> {{ . }}</p>
+                {{ end }}
+                {{ with .Params.role }} 
+                <p><strong>Role:</strong> {{ . }}</p>
+                {{ end }}
+                {{ with .Params.project_type }} 
+                <p><strong>Project Type:</strong> {{ . }}</p>
+                {{ end }}
+                {{ with .Params.partners }} 
+                <p><strong>Partners:</strong> {{ delimit . ", " }}</p>
                 {{ end }}
             </div>
-            {{ end }}
-            <div id="imageModal" class="modal">
-                <span class="modal-close" onclick="closeModal()">&times;</span>
-                <img class="modal-content" id="modalImage">
-                <div id="modalCaption" class="modal-caption"></div>
             </div>
-        </div>
-    </aside>
-    {{ end }}
-    {{ if .Params.referencias }}
-    <section class="box-references title2">
-        <h2>References</h2>
-        <ul class="references-list">
-            {{ range .Params.referencias }}
-            <li>
-                {{ if .url }}
-                <strong><a href="{{ .url }}" target="_blank" class="references-name">{{ .nombre }}</a></strong>
-                {{ else }}
-                <strong>{{ .nombre }}</strong>
-                {{ end }}<br>
-                <span>{{ .autores | markdownify }}</span><br>
-                <em>{{ .publicacion | markdownify }}</em>
-            </li>
             {{ end }}
-        </ul>
-    </section>
-    {{ end }}
-    {{ if .Params.enlaces }}
-    <section class="box-enlaces title2">
-        <h2>Download</h2>
-        {{ if .Params.desc_download }}
-        <div class="enlaces-description">
-            <p>{{ .Params.desc_download | markdownify }}</p>
         </div>
+        {{ else }}
+        <p>No current projects available.</p>
         {{ end }}
-        <ul class="enlaces-list">
-            {{ range .Params.enlaces }}
-            <li><a href="{{ .url }}">{{ .nombre }}</a></li>
-            {{ end }}
-        </ul>
-    </section>
-    {{ end }}
+    </div>
 </div>
 {{ end }}

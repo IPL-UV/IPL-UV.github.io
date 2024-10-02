@@ -1,0 +1,85 @@
+{{ define "main" }}
+<div class="content-container grid-layout">
+    <div class="box-header">
+        <h1> {{ .Title }} </h1>
+    </div>
+    <div class="box-abstract">
+        <p>{{ .Content | markdownify }}</p>
+    </div>
+    {{ if .Params.images }}
+    <aside class="box-gallery">
+        <div class="gallery-grid">
+            {{ range .Params.images }}
+            {{ $img := urls.JoinPath "/images/data" .link }}
+            <div class="gallery-item">
+                {{ if or (strings.HasSuffix .link ".webp") (strings.HasSuffix .link ".jpg") (strings.HasSuffix .link ".png") (strings.HasSuffix .link ".gif") }}
+
+                <a href="javascript:void(0);" class="gallery-thumbnail" onclick="openModal('{{ $img }}', '{{ .title | default "" }}', '{{ .description | default "" }}')">
+                    <img src="{{ $img }}" alt="{{ .title | default "" }}">
+                </a>
+                {{ else if or (strings.HasSuffix .link ".mp4") (strings.HasSuffix .link ".webm") }}
+
+                <video controls>
+                    <source src="{{ $img }}" type="video/{{ index (split .link ".") 1 }}">
+                    Your browser does not support the video tag.
+                </video>
+
+                {{ else if (strings.Contains .link "https://") }}
+
+                <iframe src="{{ .link }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                {{ end }}
+
+                {{ if .title }}
+                <p class="gallery-title">{{ .title | markdownify }}</p>
+                {{ end }}
+                {{ if .description }}
+                <div class="gallery-description">
+                    <p>{{ .description | markdownify }}</p>
+                </div>
+                {{ end }}
+            </div>
+            {{ end }}
+            <div id="imageModal" class="modal">
+                <span class="modal-close" onclick="closeModal()">&times;</span>
+                <img class="modal-content" id="modalImage">
+                <div id="modalCaption" class="modal-caption"></div>
+            </div>
+        </div>
+    </aside>
+    {{ end }}
+    {{ if .Params.references }}
+    <section class="box-references title2">
+        <h2>References</h2>
+        <ul class="references-list">
+            {{ range .Params.references }}
+            <li>
+                {{ if .link }}
+                <strong><a href="{{ .link }}" target="_blank" class="references-name">{{ .title }}</a></strong>
+                {{ else }}
+                <strong>{{ .title }}</strong>
+                {{ end }}<br>
+                <span>{{ .authors | markdownify }}</span><br>
+                <em>{{ .publication | markdownify }}</em>
+            </li>
+            {{ end }}
+        </ul>
+    </section>
+    {{ end }}
+    {{ if .Params.links }}
+    <section class="box-enlaces title2">
+        <h2>Download</h2>
+        {{ if .Params.desc_download }}
+        <div class="enlaces-description">
+            <p>{{ .Params.desc_download | markdownify }}</p>
+        </div>
+        {{ end }}
+        <ul class="enlaces-list">
+            {{ range .Params.links }}
+            <li><a href="{{ .link }}">{{ .title }}</a></li>
+            {{ end }}
+        </ul>
+    </section>
+    {{ end }}
+</div>
+{{ end }}

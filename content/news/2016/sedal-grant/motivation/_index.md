@@ -1,7 +1,7 @@
 ---
 title: "Motivation"
-type: "research"
-layout: "single"
+type: "news"
+layout: "single_projects"
 ---
 
 Despite the many successful results and developments, there are still strong limitations for the general adoption of machine learning algorithms for predicting and understanding EO data. Machine learning and signal processing have advanced enormously in the last decade (both at theoretical and applied levels) but have not moved forward the field of EO data analysis to its full potential.

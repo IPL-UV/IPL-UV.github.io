@@ -4,7 +4,7 @@
         <h1>{{ .Params.title }}</h1>
     </div>
     {{ range .Pages }}
-    {{ $img := urls.JoinPath "/images/adicionales" .Params.img }}
+    {{ $img := urls.JoinPath "/images/data" .Params.img }}
     <div class="panel-item">
         <div class="panel-header">
             <h4 class="panel-title"><b>{{ .Title }}</b></h4>
