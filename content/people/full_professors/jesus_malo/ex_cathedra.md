@@ -131,8 +131,6 @@ Now (after the positive outcome in July 2015), I upload the version with uncenso
 - [My research contributions](#3-my-research-contributions)
 - [My teaching activities: like Richard Dawkins in a Republican Convention](#4-my-teaching-activities-like-richard-dawkins-in-a-republican-convention)
 - [Economic constraints of science in Spain](#5-economic-constraints-of-science-in-spain)
-
-
 ---
 
 # 1. Why a physicist would ever care about Human Vision?

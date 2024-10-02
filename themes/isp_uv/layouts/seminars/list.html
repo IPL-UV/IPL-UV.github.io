@@ -26,7 +26,7 @@
     </thead>
     <tbody>
       {{ $currentYear := "" }}
-      {{ range .Site.RegularPages }}
+      {{ range sort .Site.RegularPages "Date" "desc" }}
       {{ if eq .Section "seminars" }}
       {{ $year := .Date.Format "2006" }}
       {{ if ne $currentYear $year }}
