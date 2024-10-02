@@ -1,7 +1,7 @@
 ---
 title: "AI for sustainability and social sciences"
 type: "research"
-layout: "single"
+layout: "single_projects"
 ---
 
 

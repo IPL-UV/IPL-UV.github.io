@@ -1,7 +1,7 @@
 ---
 title: "Research Machine Learning"
 type: "research"
-layout: "single"
+layout: "single_projects"
 ---
 
 

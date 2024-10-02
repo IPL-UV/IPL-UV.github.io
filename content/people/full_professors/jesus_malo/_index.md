@@ -13,7 +13,7 @@ params:
   uv: 'https://www.uv.es/jmalo/'
   link_image: './full_professors/jesus_malo/ex_cathedra'
 type: "people"
-layout: "single"
+layout: "single_four"
 ---
 
 

@@ -10,7 +10,7 @@
     <aside class="box-gallery">
         <div class="gallery-grid">
             {{ range .Params.images }}
-            {{ $img := urls.JoinPath "/images/people" .link }}
+            {{ $img := urls.JoinPath "/images/research" .link }}
             <div class="gallery-item">
                 {{ if or (strings.HasSuffix .link ".webp") (strings.HasSuffix .link ".jpg") (strings.HasSuffix .link ".png") (strings.HasSuffix .link ".gif") }}
 

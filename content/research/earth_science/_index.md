@@ -1,7 +1,7 @@
 ---
 title: "Earth and climate sciences"
 type: "research"
-layout: "single"
+layout: "single_projects"
 ---
 
 # Motivation
