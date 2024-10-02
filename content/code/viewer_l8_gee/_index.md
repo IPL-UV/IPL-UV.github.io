@@ -4,7 +4,5 @@ img: "viewer_l8_GEE.webp"
 link: "https://isp.uv.es/projects/cdc/viewer_l8_GEE.html"
 description: ""
 weight: 0
-type: "code"
-layout: "structure_codes"
 ---
 

@@ -8,6 +8,4 @@ description: |
 references:
   - "Hyvärinen, A. and Hoyer, P. (2001). Topographic Independent Component Analysis."
   - "Ma, L. et al. (2008). Neurocomputing: An application of TICA in visual representation."
-type: "code"
-layout: "single"
 ---

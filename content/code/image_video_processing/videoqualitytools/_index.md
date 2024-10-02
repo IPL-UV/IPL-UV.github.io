@@ -8,6 +8,4 @@ description: |
 references:
   - "Importance of quantiser design compared to optimal multigrid motion estimation in video coding. Malo, J., Ferri, F.J., Gutierrez, J., and Epifanio, I. Electronics Letters, 36(9):807-809, 2000."
   - "Video quality measures based on the standard spatial observer. Watson, A.B., and Malo, J. ICIP, 2002."
-type: "code"
-layout: "single"
 ---

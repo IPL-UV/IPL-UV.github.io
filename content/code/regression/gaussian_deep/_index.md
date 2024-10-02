@@ -8,6 +8,4 @@ description: |
 references:
   - "Deep Gaussian Processes for Parameter Retrieval and Model Inversion. Daniel H. Svendsen, Pablo M. Alvarez, Ana Belen Ruescas, Rafael Molina, and Gustau Camps-Valls, Submitted, 2020."
   - "Svendsen, Daniel H. et al. Deep Gaussian Processes for Geophysical Parameter Retrieval. IGARSS 2018, IEEE, 2018."
-type: "code"
-layout: "single"
 ---

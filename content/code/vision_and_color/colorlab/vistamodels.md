@@ -1,6 +1,105 @@
 ---
 title: "VistaModels: Computational models of Visual Neuroscience"
-abstract: |
+
+type: "code"
+layout: "single_four"
+
+references:
+  - title: "VistaLab: The Matlab Toolbox for Spatio-Temporal Vision. Univ. Valencia 1997"
+    authors: "J. Malo & J. Gutierrez"
+    link: "#"
+  - title: "Perceptually Weighted Optical Flow for Motion-based Segmentation in MPEG-4"
+    authors: "J. Malo, et al."
+    publication: "Electronics Letters 36(20): 1693-1694 (2000)"
+    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/ELECT98.PS.gz"
+  - title: "Visual aftereffects and sensory nonlinearities from a single statistical framework"
+    authors: "V. Laparra & J. Malo"
+    link: "https://www.frontiersin.org/articles/10.3389/fnhum.2015.00557/full"
+
+images:
+  - link: "VistaModels1.webp"
+    title: "Mechanistic Models"
+    description: "Following Hubel-Wiesel and McCulloch-Pitts, our models are cascades of two basic elements: (a) a linear transform (not necessarily convolutional set of receptive fields), and (b) a nonlinear saturation (either divisive or subtractive) describing the interactions between the linear units. We have played with different versions of such elements. For the linear part we explored center-surround units, local-DCTs, Orthonormal Wavelets, Overcomplete Wavelets and Laplacian Pyramids. For the nonlinear part played with different adaptive nonlinearities such as the Divisive Normalization and the subtractive Wilson-Cowan equations. See [[PLoS 2018](https://arxiv.org/abs/1711.00526)] for a comprehensive account of the maths, and [[ArXiV 2018](https://arxiv.org/abs/1804.05964)] for the equivalence between the considered nonlinear models. These models have been tuned to reproduce basic psychophysics such as contrast response curves and subjective image distortion."
+
+  - link: "VistaModels2.webp"
+    title: "Statistical Principles"
+    description: "The emergence of (a) specific sensors (e.g. the red and green curves), or (b) specific discrimination properties (ellipsoids in gray) may be understood as an adaptation to the statistics of natural input (samples in blue). We have used these [Barlow-style information-theoretic priciples](https://www.youtube.com/watch?v=cv9hje42i_E) in two ways: unfolding the data manifolds [[Front. Human Neurosci. 15](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/LaparraMalo15.pdf)], and Gaussianizing the data manifolds [IEEE Trans. Neur. Nets. 11]. Interestingly, nonlinearities of the Human Visual System (from retina [[J.Opt.95](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/JOPT95.PS.gz)] to cortex [[Im.Vis.Comp.00](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/ivc99.ps.gz), [Neural Comp.10](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/Malo_Laparra_Neural_10b.pdf)]) have remarkable statistical effects too!."
+
+  - link: "modelB.webp"
+    title: "[Multi-Layer Network Model](#2013---2018-multi-layer-network-with-nonlinear-opponent-color-overcomplete-wavelet-and-divisive-normalization)"
+    description: "Multilayer network model that includes nonlinear chromatic processing and overcomplete wavelets."
+
+  - link: "facts1.webp"
+    title: "[Facts of Vision - Achromatic and Chromatic Bandwidths](#psychophysical-test-bed-for-model-tuning-and-comparison)"
+    description: "Ilustración de características distintivas de la visión temprana, como las diferentes bandas de frecuencia para los canales acromáticos y cromáticos."
+
+  - link: "visib_noise.webp"
+    title: "[Noise Visibility on Natural Images](#psychophysical-test-bed-for-model-tuning-and-comparison)"
+    description: "Visualization of noise visibility in natural images, showing lower visibility in high contrast regions."
+
+  - link: "compCSFs.webp"
+    title: "[Model Comparison - CSFs](#b-principled-models)"
+    description: "Comparison of Contrast Sensitivity Functions (CSF) between different mechanistic models."
+
+  - link: "compResponses.webp"
+    title: "[Model Comparison - Response Curves](#b-principled-models)"
+    description: "Response curves of different vision models, adjusted to reproduce psychophysical phenomena."
+
+  - link: "compNoise.webp"
+    title: "[Model Comparison - Noise Visibility](#b-principled-models)"
+    description: "Comparison of noise visibility in images across various vision models."
+
+  - link: "principled.webp"
+    title: "[Principled Models - Efficient Coding](#efficient-coding-in-mechanistic-models)"
+    description: "Example of how mechanistic models are adapted to natural image statistics for redundancy reduction."
+
+  - link: "autoencoder.webp"
+    title: "[Autoencoder for Optimal Representation](#efficient-coding-in-mechanistic-models)"
+    description: "Representation of an autoencoder optimized for unprecedented performance in image coding."
+
+  - link: "LinearStats.webp"
+    title: "[Statistically-based Linear Receptive Fields](#statistically-based-linear-receptive-fields)"
+    description: "Linear receptive fields derived from statistical techniques such as PCA and ICA trained on natural scenes."
+
+  - link: "ResponsesSPCA1.webp"
+    title: "[SPCA Responses 1](#statistically-based-nonlinearities)"
+    description: "Sensory response based on Sequential Principal Curves Analysis (SPCA), showing sensors adapted to the nonlinear properties of the visual system."
+
+  - link: "ResponsesSPCA2.webp"
+    title: "[SPCA Responses 2](#statistically-based-nonlinearities)"
+    description: "Another illustration of sensory responses using SPCA techniques."
+
+  - link: "neuro_rbig.webp"
+    title: "[Gaussianization of Nonlinear Manifolds](#statistically-based-nonlinearities)"
+    description: "Use of Gaussianization to define optimal discrimination regions based on information maximization or error minimization."
+
+  - link: "metricFisher.webp"
+    title: "[Fisher Information Metric for Vision Models](#statistically-based-nonlinearities)"
+    description: "Representation of the Fisher information concept and its application in evaluating nonlinear perception systems."
+
+  - link: "flow_800_10_excel.gif"
+    title: "[Optical Flow for Video Coding](#perceptually-weighted-motion-estimation-vistavideocoding)"
+    description: "Perceptually enhanced optical flow used for predictive coding in video compression."
+
+  - link: "coding.webp"
+    title: "[Image Coding and Restoration](#image-coding-vistacore)"
+    description: "Image coding using vision models based on DCT and Divisive Normalization to improve the quality of compressed images."
+
+links:
+  - title: "Updated Matlab Toolbox (VISTALAB 4.0)"
+    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/Vistalab.zip"
+  - title: "Outdated toolbox (VISTALAB 1.0)"
+    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/BasicVideoTools_code.zip"
+  - title: "Front. Human Neurosci. 15 paper"
+    link: "https://www.frontiersin.org/articles/10.3389/fnhum.2015.00557/full"
+  - title: "Extensions of VISTALAB I: VistaVideoCoding"
+    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/VistaVideoCoding.zip"
+  - title: "Extensions of VISTALAB II: VistaModels"
+    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/BioMultiLayer_L_NL_color.zip"
+  - title: "Extensions of VISTALAB III: ColorLab"
+    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/Colorlab.zip"
+---
+
   The Toolboxes in the VistaModels site are organized in three categories of different nature: [**(a) Empirical-mechanistic Models**](#a-empirical-mechanistic-models), tuned to reproduce basic phenomena of color and texture perception, [**(b) Principled Models**](#b-efficient-coding-in-mechanistic-models), derived from information theoretic arguments, and [**(c) Engineering-motivated Models**](#c-engineering-motivated-models), developed to address applied problems in image and video processing.
   
   The algorithms in **VistaModels** require the standard building blocks provided in the (more basic) toolboxes VistaLab and ColorLab. However, the necessary functions from these more basic toolboxes are included in the packages listed below for the user convenience.
@@ -124,99 +223,3 @@ abstract: |
   Computing perceptual distances between images requires vision models that identify relevant and negligible visual features. Distortions in features that will be neglected by the observers should induce no effect in the distance. And the other way around for visually relevant features. The different models can be quantitatively compared by their accuracy in reproducing the opinion of viewers in subjectively rated databases.
   
   The three vision models considered above (based on DCTs, orthonormal wavelets, and overcomplete wavelets) have been used to propose distortion metrics that overperform SSIM. See [VistaQualityTools](./../../../image_video_processing/vistaqualitytools/content), and the references [Im.Vis.Comp.97, Displays99, Patt.Recog.03, IEEE Trans.Im.Proc.06] for the DCT metric, [JOSA 10, Neur.Comp.10] for the orthogonal wavelet metric, and [PLoS 18, Frontiers Neurosci.18] for the metric based on overcomplete wavelets.
-
-referencias:
-  - nombre: "VistaLab: The Matlab Toolbox for Spatio-Temporal Vision. Univ. Valencia 1997"
-    autores: "J. Malo & J. Gutierrez"
-    url: "#"
-  - nombre: "Perceptually Weighted Optical Flow for Motion-based Segmentation in MPEG-4"
-    autores: "J. Malo, et al."
-    publicacion: "Electronics Letters 36(20): 1693-1694 (2000)"
-    url: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/ELECT98.PS.gz"
-  - nombre: "Visual aftereffects and sensory nonlinearities from a single statistical framework"
-    autores: "V. Laparra & J. Malo"
-    url: "https://www.frontiersin.org/articles/10.3389/fnhum.2015.00557/full"
-
-imagenes:
-  - ruta: "VistaModels1.webp"
-    titulo: "Mechanistic Models"
-    descripcion: "Following Hubel-Wiesel and McCulloch-Pitts, our models are cascades of two basic elements: (a) a linear transform (not necessarily convolutional set of receptive fields), and (b) a nonlinear saturation (either divisive or subtractive) describing the interactions between the linear units. We have played with different versions of such elements. For the linear part we explored center-surround units, local-DCTs, Orthonormal Wavelets, Overcomplete Wavelets and Laplacian Pyramids. For the nonlinear part played with different adaptive nonlinearities such as the Divisive Normalization and the subtractive Wilson-Cowan equations. See [[PLoS 2018](https://arxiv.org/abs/1711.00526)] for a comprehensive account of the maths, and [[ArXiV 2018](https://arxiv.org/abs/1804.05964)] for the equivalence between the considered nonlinear models. These models have been tuned to reproduce basic psychophysics such as contrast response curves and subjective image distortion."
-
-  - ruta: "VistaModels2.webp"
-    titulo: "Statistical Principles"
-    descripcion: "The emergence of (a) specific sensors (e.g. the red and green curves), or (b) specific discrimination properties (ellipsoids in gray) may be understood as an adaptation to the statistics of natural input (samples in blue). We have used these [Barlow-style information-theoretic priciples](https://www.youtube.com/watch?v=cv9hje42i_E) in two ways: unfolding the data manifolds [[Front. Human Neurosci. 15](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/LaparraMalo15.pdf)], and Gaussianizing the data manifolds [IEEE Trans. Neur. Nets. 11]. Interestingly, nonlinearities of the Human Visual System (from retina [[J.Opt.95](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/JOPT95.PS.gz)] to cortex [[Im.Vis.Comp.00](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/ivc99.ps.gz), [Neural Comp.10](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/Malo_Laparra_Neural_10b.pdf)]) have remarkable statistical effects too!."
-
-  - ruta: "modelB.webp"
-    titulo: "[Multi-Layer Network Model](#2013---2018-multi-layer-network-with-nonlinear-opponent-color-overcomplete-wavelet-and-divisive-normalization)"
-    descripcion: "Multilayer network model that includes nonlinear chromatic processing and overcomplete wavelets."
-
-  - ruta: "facts1.webp"
-    titulo: "[Facts of Vision - Achromatic and Chromatic Bandwidths](#psychophysical-test-bed-for-model-tuning-and-comparison)"
-    descripcion: "Ilustración de características distintivas de la visión temprana, como las diferentes bandas de frecuencia para los canales acromáticos y cromáticos."
-
-  - ruta: "visib_noise.webp"
-    titulo: "[Noise Visibility on Natural Images](#psychophysical-test-bed-for-model-tuning-and-comparison)"
-    descripcion: "Visualization of noise visibility in natural images, showing lower visibility in high contrast regions."
-
-  - ruta: "compCSFs.webp"
-    titulo: "[Model Comparison - CSFs](#b-principled-models)"
-    descripcion: "Comparison of Contrast Sensitivity Functions (CSF) between different mechanistic models."
-
-  - ruta: "compResponses.webp"
-    titulo: "[Model Comparison - Response Curves](#b-principled-models)"
-    descripcion: "Response curves of different vision models, adjusted to reproduce psychophysical phenomena."
-
-  - ruta: "compNoise.webp"
-    titulo: "[Model Comparison - Noise Visibility](#b-principled-models)"
-    descripcion: "Comparison of noise visibility in images across various vision models."
-
-  - ruta: "principled.webp"
-    titulo: "[Principled Models - Efficient Coding](#efficient-coding-in-mechanistic-models)"
-    descripcion: "Example of how mechanistic models are adapted to natural image statistics for redundancy reduction."
-
-  - ruta: "autoencoder.webp"
-    titulo: "[Autoencoder for Optimal Representation](#efficient-coding-in-mechanistic-models)"
-    descripcion: "Representation of an autoencoder optimized for unprecedented performance in image coding."
-
-  - ruta: "LinearStats.webp"
-    titulo: "[Statistically-based Linear Receptive Fields](#statistically-based-linear-receptive-fields)"
-    descripcion: "Linear receptive fields derived from statistical techniques such as PCA and ICA trained on natural scenes."
-
-  - ruta: "ResponsesSPCA1.webp"
-    titulo: "[SPCA Responses 1](#statistically-based-nonlinearities)"
-    descripcion: "Sensory response based on Sequential Principal Curves Analysis (SPCA), showing sensors adapted to the nonlinear properties of the visual system."
-
-  - ruta: "ResponsesSPCA2.webp"
-    titulo: "[SPCA Responses 2](#statistically-based-nonlinearities)"
-    descripcion: "Another illustration of sensory responses using SPCA techniques."
-
-  - ruta: "neuro_rbig.webp"
-    titulo: "[Gaussianization of Nonlinear Manifolds](#statistically-based-nonlinearities)"
-    descripcion: "Use of Gaussianization to define optimal discrimination regions based on information maximization or error minimization."
-
-  - ruta: "metricFisher.webp"
-    titulo: "[Fisher Information Metric for Vision Models](#statistically-based-nonlinearities)"
-    descripcion: "Representation of the Fisher information concept and its application in evaluating nonlinear perception systems."
-
-  - ruta: "flow_800_10_excel.gif"
-    titulo: "[Optical Flow for Video Coding](#perceptually-weighted-motion-estimation-vistavideocoding)"
-    descripcion: "Perceptually enhanced optical flow used for predictive coding in video compression."
-
-  - ruta: "coding.webp"
-    titulo: "[Image Coding and Restoration](#image-coding-vistacore)"
-    descripcion: "Image coding using vision models based on DCT and Divisive Normalization to improve the quality of compressed images."
-
-enlaces:
-  - nombre: "Updated Matlab Toolbox (VISTALAB 4.0)"
-    url: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/Vistalab.zip"
-  - nombre: "Outdated toolbox (VISTALAB 1.0)"
-    url: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/BasicVideoTools_code.zip"
-  - nombre: "Front. Human Neurosci. 15 paper"
-    url: "https://www.frontiersin.org/articles/10.3389/fnhum.2015.00557/full"
-  - nombre: "Extensions of VISTALAB I: VistaVideoCoding"
-    url: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/VistaVideoCoding.zip"
-  - nombre: "Extensions of VISTALAB II: VistaModels"
-    url: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/BioMultiLayer_L_NL_color.zip"
-  - nombre: "Extensions of VISTALAB III: ColorLab"
-    url: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/Colorlab.zip"
----

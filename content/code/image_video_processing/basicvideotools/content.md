@@ -1,6 +1,8 @@
 ---
 title: "Basic Video Tools: A Matlab Toolbox for Video Data and Spatio-Temporal Vision Models (J. Malo, J. Gutirrez and V. Laparra (c) Universitat de Valncia 1996 - 2014)"
-abstract: |
+type: "code"
+layout: "single"
+---
   # What is in BasicVideoTools?
   BasicVideoTools is a Matlab/Octave Toolbox intendend to deal with video data and spatio-temporal vision models. In particular, it includes convenient *.m files to:
   - Read standard (VQEG and LIVE) video data
@@ -53,4 +55,3 @@ abstract: |
   - **demo_motion_programs**, demo on how to use most functions (except random dots and newtonian sequences).
   - **example_random_dots_sequence**, demo on random dots sequences with controlled flow.
   - **example_newtonian_sequence**, demo on physics-controlled sequences.
----

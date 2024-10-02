@@ -1,6 +1,40 @@
 ---
 title: "VistaQualityTools: The Image and Video Quality Toolbox based on Vision Models"
-abstract: |
+type: "code"
+layout: "single_four"
+images:
+  - link: "BasesDist.webp"
+    title: "The problem"
+    description: "Given an original image (top) distortions of different nature appear to have different perceptual effect (bottom). The challenge is computing a descriptor of distortion which is correlated with the opinion of observers collected in [subjectively rated databases](http://www.ponomarenko.info/tid2013.htm). The complexity of human vision implies that the Euclidean distance (or Mean Squared Error) is not a good proxy for subjective distortion. Nevertheless, the image quality problem goes beyond fitting any flexible model to maximize the correlation with subjective opinion (see [[Front. Neurosci. 2018](https://arxiv.org/abs/1801.09632)])."
+  - link: "metricas2.webp"
+    title: "Our solution"
+    description: "The scatter plots show the performance of two perceptual metrics in reproducing subjective opinion. On the one hand (in red) the widely acclaimed Structural SIMilarity index (SSIM) that received the [EMMY Award of the American TV Industry in 2015](https://youtu.be/e5-LCFGdgMA), and, on the other hand (in blue), our metric based on a cascade of L+NL layers [[PLoS 2018](https://arxiv.org/abs/1711.00526)]."
+  - link: "metricas3.webp"
+  - link: "ieee02.webp"
+
+references:
+  - title: "Perceptually weighted optical flow for motion-based segmentation in MPEG-4 paradigm"
+    authors: "Malo, Gutiérrez, Epifanio, Ferri."
+    publication: "Electr. Lett. 36 (20):1693-1694 (2000)"
+    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_imvideo/ELECT98.PS.gz"
+  - title: "Visual aftereffects and sensory nonlinearities from a single statistical framework"
+    authors: "V. Laparra & J. Malo."
+    publication: "Frontiers in Human Neuroscience 9:557 (2015)"
+    link: "https://www.frontiersin.org/articles/10.3389/fnhum.2015.00557/full"
+  
+links:
+  - title: "Updated Matlab Toolbox (VISTALAB 4.0)"
+    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_imvideo/vista_toolbox/Vistalab.zip"
+  - title: "Outdated toolbox (VISTALAB 1.0)"
+    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_imvideo/vista_toolbox/BasicVideoTools_code.zip"
+  - title: "Extensions of VISTALAB I: VistaVideoCoding"
+    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_imvideo/vista_toolbox/VistaVideoCoding.zip"
+  - title: "Extensions of VISTALAB II: VistaModels"
+    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_imvideo/vista_toolbox/BioMultiLayer_L_NL_color.zip"
+  - title: "Extensions of VISTALAB III: COLORLAB"
+    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_imvideo/vista_toolbox/Colorlab.zip"
+---
+
   **Contributors:** 
   - Image: J. Malo, V. Laparra, J. Muñoz, I. Epifanio, A.M. Pons, M. Martinez and E. Simoncelli
   - Video: J. Malo, J. Gutiérrez and A.B. Watson
@@ -53,37 +87,3 @@ abstract: |
   Download the Toolbox!: [video_metric_sso.zip (34kB)](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_imvideo/vista_toolbox/video_metric_sso.zip)
 
   Performance of the different versions of the vision model as a function of its elements in terms of regression error. **SSO** stands for the CSF of the Standard Spatial Observer, **m** stands for masking, **t** stands for temporal filtering, **p** stands for post-summaton temporal filtering, and h stands for field doubling compensation.
-
-
-imagenes:
-  - ruta: "BasesDist.webp"
-    titulo: "The problem"
-    descripcion: "Given an original image (top) distortions of different nature appear to have different perceptual effect (bottom). The challenge is computing a descriptor of distortion which is correlated with the opinion of observers collected in [subjectively rated databases](http://www.ponomarenko.info/tid2013.htm). The complexity of human vision implies that the Euclidean distance (or Mean Squared Error) is not a good proxy for subjective distortion. Nevertheless, the image quality problem goes beyond fitting any flexible model to maximize the correlation with subjective opinion (see [[Front. Neurosci. 2018](https://arxiv.org/abs/1801.09632)])."
-  - ruta: "metricas2.webp"
-    titulo: "Our solution"
-    descripcion: "The scatter plots show the performance of two perceptual metrics in reproducing subjective opinion. On the one hand (in red) the widely acclaimed Structural SIMilarity index (SSIM) that received the [EMMY Award of the American TV Industry in 2015](https://youtu.be/e5-LCFGdgMA), and, on the other hand (in blue), our metric based on a cascade of L+NL layers [[PLoS 2018](https://arxiv.org/abs/1711.00526)]."
-  - ruta: "metricas3.webp"
-  - ruta: "ieee02.webp"
-
-referencias:
-  - nombre: "Perceptually weighted optical flow for motion-based segmentation in MPEG-4 paradigm"
-    autores: "Malo, Gutiérrez, Epifanio, Ferri."
-    publicacion: "Electr. Lett. 36 (20):1693-1694 (2000)"
-    url: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_imvideo/ELECT98.PS.gz"
-  - nombre: "Visual aftereffects and sensory nonlinearities from a single statistical framework"
-    autores: "V. Laparra & J. Malo."
-    publicacion: "Frontiers in Human Neuroscience 9:557 (2015)"
-    url: "https://www.frontiersin.org/articles/10.3389/fnhum.2015.00557/full"
-  
-enlaces:
-  - nombre: "Updated Matlab Toolbox (VISTALAB 4.0)"
-    url: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_imvideo/vista_toolbox/Vistalab.zip"
-  - nombre: "Outdated toolbox (VISTALAB 1.0)"
-    url: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_imvideo/vista_toolbox/BasicVideoTools_code.zip"
-  - nombre: "Extensions of VISTALAB I: VistaVideoCoding"
-    url: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_imvideo/vista_toolbox/VistaVideoCoding.zip"
-  - nombre: "Extensions of VISTALAB II: VistaModels"
-    url: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_imvideo/vista_toolbox/BioMultiLayer_L_NL_color.zip"
-  - nombre: "Extensions of VISTALAB III: COLORLAB"
-    url: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_imvideo/vista_toolbox/Colorlab.zip"
----

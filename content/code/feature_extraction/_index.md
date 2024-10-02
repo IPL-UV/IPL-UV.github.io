@@ -5,5 +5,5 @@ link: "./feature_extraction"
 description: ""
 weight: 3
 type: "code"
-layout: "structure_codes"
+layout: "list2"
 ---

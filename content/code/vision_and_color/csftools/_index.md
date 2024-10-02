@@ -8,6 +8,4 @@ description: |
 references:
   - "ModelFest Standard Spatial Observer. Watson, A. & Malo, J., 2002."
   - "Spatio-Temporal CSFs and Contrast Sensitivity. Mullen, R., 1985."
-type: "code"
-layout: "single"
 ---

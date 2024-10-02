@@ -5,5 +5,5 @@ link: "./image_video_processing"
 description: ""
 weight: 4
 type: "code"
-layout: "structure_codes"
+layout: "list2"
 ---

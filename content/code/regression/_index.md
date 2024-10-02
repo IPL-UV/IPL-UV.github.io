@@ -5,5 +5,5 @@ link: "./regression"
 description: ""
 weight: 1
 type: "code"
-layout: "structure_codes"
+layout: "list2"
 ---

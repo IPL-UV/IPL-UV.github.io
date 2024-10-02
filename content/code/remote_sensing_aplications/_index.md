@@ -5,6 +5,6 @@ link: "./remote_sensing_aplications"
 description: ""
 weight: 5
 type: "code"
-layout: "structure_codes"
+layout: "list2"
 ---
 

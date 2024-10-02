@@ -5,5 +5,5 @@ link: "./vision_and_color"
 description: ""
 weight: 6
 type: "code"
-layout: "structure_codes"
+layout: "list2"
 ---
