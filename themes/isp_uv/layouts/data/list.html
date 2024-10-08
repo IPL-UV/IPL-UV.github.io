@@ -2,7 +2,7 @@
 <div class="content-container">
   <div class="grid-container" id="grid-container">
     {{ range .Pages }}
-    {{ $img := urls.JoinPath "/images/data" .Params.img }}
+    {{ $img := relURL (urls.JoinPath "images/data" .Params.img) }}
     <div class="grid-item">
       <a href="{{ .Params.link }}">
         <img src="{{ $img }}" alt="{{ .Title }}">

@@ -4,6 +4,8 @@
         <h1> {{ .Title }} </h1>
     </div>
     <div class="box-content">
-        <p>{{ .Content | markdownify }}</p>
+        {{ $content := .Content }}
+        {{ $content = replace $content "src=\"" (printf "src=\"%s" (relURL "images/projects/")) }}
+        <p>{{ $content | markdownify }}</p>
     </div>
 {{ end }}

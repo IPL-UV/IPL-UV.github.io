@@ -16,7 +16,7 @@ layout: "single_projects"
 
 <br>
 <p align="center">
-  <img src="/images/research/philosophy_balls.webp" width="80%">
+  <img src="philosophy_balls.webp" width="80%">
 </p>
 <br>
 

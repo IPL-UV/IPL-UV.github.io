@@ -4,13 +4,15 @@
         <h1> {{ .Title }} </h1>
     </div>
     <div class="box-abstract">
-        <p>{{ .Content | markdownify }}</p>
+        {{ $content := .Content }}
+        {{ $content = replace $content "src=\"" (printf "src=\"%s" (relURL "images/news/")) }}
+        <p>{{ $content | markdownify }}</p>
     </div>
     {{ if .Params.images }}
     <aside class="box-gallery">
         <div class="gallery-grid">
             {{ range .Params.images }}
-            {{ $img := urls.JoinPath "/images/projects" .link }}
+            {{ $img := relURL (urls.JoinPath "images/projects" .link) }}
             <div class="gallery-item">
                 {{ if or (strings.HasSuffix .link ".webp") (strings.HasSuffix .link ".jpg") (strings.HasSuffix .link ".png") (strings.HasSuffix .link ".gif") }}
 

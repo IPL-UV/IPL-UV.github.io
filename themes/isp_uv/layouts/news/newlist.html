@@ -28,7 +28,10 @@
 
   <div class="grid-container" id="seminar-grid-container">
     {{ range sort .Pages "Date" "desc" }}
-      {{ $img := (urls.JoinPath "/images/news" (.Params.img | default "uv.webp")) }}
+      {{ $img := .Params.img }}
+      {{ if not (hasPrefix $img "http") }}
+        {{ $img = relURL (urls.JoinPath "images/news" ($img | default "uv.webp")) }}
+      {{ end }}
       {{ $current := . }}
       <div class="grid-item seminar-item project-item" data-year="{{ .Date.Format "2006" }}" data-month="{{ .Date.Format "January" }}">
         <div class="image-container seminar-image">
@@ -59,8 +62,8 @@
     {{ end }}
   </div>
   
-  
 </div>
+
 <script>
   function updateFilters() {
     const year = document.getElementById('year-filter').value;

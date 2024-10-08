@@ -9,7 +9,7 @@ Diffusion models have recently overtaken GAN models in the state-of-the-art of g
 
 <br>
 <p align="center">
-  <img src="/images/projects/lat_px_dif.webp" width="100%">
+  <img src="lat_px_dif.webp" width="100%">
   <p align="center"><em>Figure: Pixel-space vs latent-space diffusion models</em></p>
 </p>
 <br>
@@ -21,7 +21,7 @@ Regarding the quality metrics and uncertainty estimation for remote sensing supe
 
 <br>
 <p align="center">
-  <img src="/images/projects/qualitymetrics.webp" width="50%">
+  <img src="qualitymetrics.webp" width="50%">
   <p align="center"><em>Figure: Quality metrics proposed to benchmark super-resolution algorithms</em></p>
 </p>
 <br>
@@ -32,10 +32,10 @@ Defining 'high-quality' results in SR methodologies remains a controversial issu
 
 <br>
 <p align="center">
-  <img src="/images/projects/opnsr-test.webp" width="60%">
+  <img src="opnsr-test.webp" width="60%">
   <p align="center"><em>Figure: OpenSR-test benchmark for real-world Sentinel-2 imagery super-resolution.</em></p>
 </p>
 <br>
 <p align="center">
-  <img src="/images/projects/groups_2.webp" width="50%">
+  <img src="groups_2.webp" width="50%">
 </p>

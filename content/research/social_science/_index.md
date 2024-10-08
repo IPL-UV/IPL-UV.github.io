@@ -11,7 +11,7 @@ layout: "single_projects"
 
 <br>
 <p align="center">
-  <img src="/images/research/SDGs.webp" width="80%">
+  <img src="SDGs.webp" width="80%">
 </p>
 <br>
 

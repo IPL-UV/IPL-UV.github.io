@@ -4,14 +4,16 @@
         <h1> {{ .Title }} </h1>
     </div>
     <div class="box-content">
-        <p>{{ .Content | markdownify }}</p>
+        {{ $content := .Content }}
+        {{ $content = replace $content "src=\"" (printf "src=\"%s" (relURL "images/research/")) }}
+        <p>{{ $content | markdownify }}</p>
         {{ $currentDir := .File.Dir }}
         {{ $activePages := where .Pages "File.Dir" $currentDir }}
         {{ if gt (len $activePages) 0 }}
         <h1>Related Projects </h1>
         <div class="grid-container" id="grid-container">
             {{ range $activePages }}
-            {{ $logo := urls.JoinPath "/images/projects" .Params.logo }}
+            {{ $logo := relURL (urls.JoinPath "images/projects" .Params.logo) }}
             <div class="grid-item project-item">
             <div class="project-logo-cell">
                 <a href="{{ .Params.website }}">

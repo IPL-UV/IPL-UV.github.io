@@ -1,6 +1,6 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 draft: false
-image: "/images/facilities/default.jpg"
+image: ""
 description: "Descripción breve de la instalación."
 ---

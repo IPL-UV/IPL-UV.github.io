@@ -7,7 +7,10 @@
   <div class="collaborators-grid">
     <!-- Renderizar el contenido directamente desde el archivo Markdown, modificando las rutas de las imágenes -->
     {{ $content := .Content }}
-    {{ $content = replace $content "src=\"" "src=\"/images/collaborators/" }}
+    <!-- Reemplazar las rutas que no tienen "http" ni "/" al inicio -->
+    {{ $content = replace $content "src=\"" (printf "src=\"%s" (relURL "images/collaborators/")) }}
+    <!-- Corregir las URLs que comienzan con "http" o "https" para que no se modifiquen -->
+    {{ $content = replace $content (printf "src=\"%s" (relURL "images/collaborators/http")) "src=\"http" }}
     {{ $content | markdownify | safeHTML }}
   </div>
   {{ end }}

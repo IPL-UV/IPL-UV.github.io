@@ -16,7 +16,7 @@ For each AOI, we download two NAIP images from the period since 2010, selecting 
 
 <br>
 <p align="center">
-  <img src="/images/projects/degradationnaip.webp" width="70%">
+  <img src="degradationnaip.webp" width="70%">
   <p align="center"><em>Figure: Workflow of the methodology followed to degrade NAIP to Sentinel-2</em></p>
 </p>
 <br>
@@ -31,12 +31,12 @@ The dataset covers approximately 10000 square kilometres and includes 3504 disti
 
 <br>
 <p align="center">
-  <img src="/images/projects/worldstrat.webp" width="80%">
+  <img src="worldstrat.webp" width="80%">
   <p align="center"><em>Figure: Summarizing the construction and classes of the WorldStrat dataset. From [Cornebise et al. 2022]</em></p>
 </p>
 
 <br>
 
 <p align="center">
-  <img src="/images/projects/groups_2.webp" width="50%">
+  <img src="groups_2.webp" width="50%">
 </p>

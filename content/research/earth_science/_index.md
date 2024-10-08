@@ -10,7 +10,7 @@ layout: "single_projects"
 
 <br>
 <p align="center">
-  <img src="/images/research/AI_earth_pic.webp" width="40%">
+  <img src="AI_earth_pic.webp" width="40%">
 </p>
 <br>
 

@@ -1,7 +1,5 @@
 ---
 title: "Research labs"
-type: "collaborators"
-layout: "list"
 ---
 
 [![Unitn](unitn.webp)](http://dit.unitn.it/%7Erslab)

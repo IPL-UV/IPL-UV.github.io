@@ -1,28 +1,38 @@
 {{ define "main" }}
-<div class="container">
-    <h1><span class="label label-info">Courses</span></h1>
-    <div class="row mb-4">
-      <div class="col-md-3">
-          <img src="/images/courses/math.webp" alt="Courses Intro" class="img-fluid" style="width: 100%">
-      </div>
-      <div class="col-md-9">
-          <p>
-              Another formative experience in our group includes courses on Vision Science, Machine Learning and Image Processing for the PhD students in the IPL. These courses are closely related to our research, and the lectures are typically given at our university (<a href="http://www.uv.es/uvweb/master-remote-sensing/en/master-s-degree-remote-sensing-1285883190980.html">Remote sensing Master</a>, and <a href="http://www.uv.es/uvweb/master-electronic-engineering/en/master-s-degree-electronic-engineering-1285905409621.html">Electrical Engineering Master</a>, and the <a href="https://www.uv.es/uvweb/college/en/postgraduate-courses/official-master-s-degrees/official-master-s-degrees-offered/master-s-degree-basic-applied-neurosciences-1285848941532/Titulacio.html?id=1285859342470">Neuroscience Master</a>), as well as PhD and Master Programs in <a href="https://www.ioba.es/formacion/master-universitario-en-investigacion-en-ciencias-de-la-vision/">Vision Sciences (IOBA)</a> and <a href="http://pagines.uab.cat/mcv/">Computer Vision Master at Universitat Autònoma de Barcelona</a>. Nevertheless, the courses below have readily evolved as a convenient introduction for PhD students to advanced issues not covered in conventional curricula.
-          </p>
-      </div>
-    </div>
+<div class="content-container">
     {{ range .Pages }}
-    <div class="row facility mb-4">
-        <div class="col-md-4">
-            <img src="{{ .Params.image }}" alt="{{ .Title }}" class="img-fluid" style="width: 100%">
+    {{ $img := relURL (urls.JoinPath "images/courses" .Params.img) }}
+    <div class="panel-item">
+        <div class="panel-header">
+            <h4 class="panel-title"><b>{{ .Title }}</b></h4>
         </div>
-        <div class="col-md-8 align-items-center">
-            <div>
-                <h3 class="facility-title">{{ .Title }}</h3>
-                <p class="facility-description">{{ .Content | safeHTML }}</p>
+        <div class="panel-body">
+            <div class="panel-content row">
+                <div class="panel-image col-md-2">
+                    <a href="{{ .Params.link }}">
+                        <img src="{{ $img }}" alt="{{ .Params.image_alt }}">
+                    </a>
+                </div>  
+                <div class="panel-description col-md-{{ if .Params.references }}6{{ else }}10{{ end }}">
+                    <h5>
+                        <p class="text-justify">{{ .Content | markdownify }}</p>
+                    </h5>
+                    
+                </div>  
+                {{ if .Params.references }}
+                <div class="panel-references col-md-4">
+                    <h6><b>References</b></h6>
+                    <ul class="references-list">
+                        {{ range .Params.references }}
+                        <li>{{ . | markdownify }}</li>
+                        {{ end }}
+                    </ul>
+                </div>
+                {{ end }}
             </div>
         </div>
-    </div>
+    </div> 
     {{ end }}
+    <p>{{ .RawContent | markdownify }}</p>
 </div>
 {{ end }}

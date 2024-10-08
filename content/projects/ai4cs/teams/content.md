@@ -20,13 +20,13 @@ layout: "single"
 
 <br>
 <p align="center">
-  <img src="/images/projects/ai4cs_people.webp" width="80%">
+  <img src="ai4cs_people.webp" width="80%">
 </p>
 Research team of AI4CS and their information in parentheses \((h, s)\): \(h\)-index and number of recognized research periods ('sexennis', \(s\)). Affiliations: <sup>1</sup> Universitat de València, <sup>2</sup> CSIC, Barcelona, <sup>3</sup> Universidad de Alcalá, <sup>4</sup> Universitat Politècnica de Catalunya, <sup>5</sup> Universitat Politècnica de València.
 
 
 <p align="center">
-  <img src="/images/projects/groups.webp" width="80%">
+  <img src="groups.webp" width="80%">
 </p>
 
 <br>
@@ -60,5 +60,5 @@ Research team of AI4CS and their information in parentheses \((h, s)\): \(h\)-in
 - Google Deepmind - London
 
 <p align="center">
-  <img src="/images/projects/ai4cs_collabs.webp" width="75%">
+  <img src="ai4cs_collabs.webp" width="75%">
 </p>

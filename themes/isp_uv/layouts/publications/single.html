@@ -1,6 +1,6 @@
 {{ define "main" }}
 <div id="loading-spinner" style="text-align: center; margin-top: 50px;">
-  <img src="/images/spinner.gif" alt="" width="50" height="50">
+  <img src={{ relURL "images/spinner.gif" }} alt="" width="50" height="50">
 </div>
 
 <div class="content-container" style="display: none;" id="content-container">
@@ -8,7 +8,6 @@
     <h1>{{ .Title }}</h1>
   </div>
 
-  <!-- Input BibTeX Oculto -->
   <textarea id="bibtex_input" style="display:none;">
     {{- range .Params.bibfiles }}
     {{- $path := printf "assets/%s" . }}
@@ -17,7 +16,6 @@
     {{- end }}
   </textarea>
 
-  <!-- Filtros -->
   <div class="grid-item grid-filter">
     <div class="filter-container">
       <label for="year-filter">Filter by:</label>
@@ -32,10 +30,8 @@
     </div>
   </div>
 
-  <!-- Contenedor de las entradas de BibTeX -->
   <div class="grid-container" id="bibtex_display"></div>
 
-  <!-- Plantilla de BibTeX -->
   <div class="bibtex_template">
     <div class="grid-item bib-item seminar-item project-item">
       <span class="title" style="font-weight: bold;"></span><br>
@@ -52,7 +48,6 @@
       <span class="year"></span><br>
       <span class="project" style="display: none;"></span>
 
-      <!-- Botones para enlaces adicionales -->
       <span class="if bibtex">
         <button type="button" class="btn btn-xss btn-success bibtex-toggle" onclick="toggleBibtex(this)">BibTeX</button>
       </span>
@@ -101,7 +96,6 @@
           data-link-target='_blank'></div>
       </span>
       
-      <!-- Contenedor del contenido BibTeX -->
       <div class="bibtexdata alert alert-success" style="display: none;">
         <span class="bibtex"></span>
       </div>
@@ -109,23 +103,21 @@
   </div>
 </div>
 
-<script type="text/javascript" src="/js/jquery-1.12.4.min.js" defer></script>
-<script type="text/javascript" src="/js/bibtex_js.js" defer></script>
-<script type="text/javascript" src="/js/bibtex_functions.js" defer></script>
+<script type="text/javascript" src={{ relURL "js/jquery-1.12.4.min.js" }} defer></script>
+<script type="text/javascript" src={{ relURL "js/bibtex_js.js" }} defer></script>
+<script type="text/javascript" src={{ relURL "js/bibtex_functions.js" }} defer></script>
 <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <!-- Altmetric script -->
 <script>
-  // Función para mostrar/ocultar el contenido BibTeX
   function toggleBibtex(button) {
     const container = $(button).closest('.bib-item');
     const bibtexElement = container.find('.bibtexdata');
-    bibtexElement.slideToggle(); // Usar jQuery para hacer el toggle más suave
+    bibtexElement.slideToggle();
   }
 
   document.addEventListener("DOMContentLoaded", function() {
     let bibtexDisplay = new BibtexDisplay();
     let bibtexData = document.getElementById('bibtex_input').value;
 
-    // Inicializar la visualización de BibTeX
     function initializeBibtex() {
       requestAnimationFrame(() => {
         bibtexDisplay.displayBibtex(bibtexData, $("#bibtex_display"), {});
@@ -136,12 +128,10 @@
       });
     }
 
-    // Función para agregar los años y proyectos a los filtros
     function addYearsAndProjects() {
       let yearSet = new Set();
       let projectSet = new Set();
 
-      // Iterar sobre los elementos generados de BibTeX para extraer los años y proyectos
       $(".year").each(function() {
         let year = $(this).text().trim();
         if (year !== "" && year !== "All Years") {
@@ -158,27 +148,22 @@
         }
       });
 
-      // Convertir yearSet a un array, filtrar y ordenar de manera adecuada
       let yearArray = Array.from(yearSet);
 
-      // Filtrar y ordenar adecuadamente para que "Submitted" e "In preparation" estén al final
       yearArray = yearArray.filter(year => year !== "Submitted" && year !== "In preparation")
-                          .sort((a, b) => b - a); // Ordenar de mayor a menor para años numéricos
+                          .sort((a, b) => b - a);
       if (yearSet.has("Submitted")) yearArray.push("Submitted");
       if (yearSet.has("In preparation")) yearArray.push("In preparation");
 
-      // Añadir los años únicos al filtro de años
       yearArray.forEach(year => {
         $('#year-filter').append(`<option value="${year}">${year}</option>`);
       });
 
-      // Añadir los proyectos únicos al filtro de proyectos
       projectSet.forEach(project => {
         $('#project-filter').append(`<option value="${project}">${project}</option>`);
       });
     }
 
-    // Actualizar los proyectos según el año seleccionado
     function updateProjectFilter() {
       const selectedYear = document.getElementById('year-filter').value;
       let projectSet = new Set();
@@ -194,7 +179,6 @@
         }
       });
 
-      // Limpiar las opciones de proyecto y agregar las nuevas opciones correspondientes
       $('#project-filter').empty();
       $('#project-filter').append('<option value="">All Projects</option>');
 
@@ -203,7 +187,6 @@
       });
     }
 
-    // Actualizar las visualizaciones según los filtros
     function updateFilters() {
       const year = document.getElementById('year-filter').value;
       const project = document.getElementById('project-filter').value;
@@ -223,14 +206,11 @@
         }
       });
 
-      // Actualizar el filtro de proyectos cuando se actualizan las visualizaciones
       updateProjectFilter();
     }
 
-    // Inicializar el contenido BibTeX y configurar los filtros
     initializeBibtex();
 
-    // Adjuntar evento para actualizar los filtros cuando cambian
     document.getElementById('year-filter').addEventListener('change', updateFilters);
     document.getElementById('project-filter').addEventListener('change', updateFilters);
   });

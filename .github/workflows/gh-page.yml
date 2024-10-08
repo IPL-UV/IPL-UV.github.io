@@ -23,12 +23,25 @@ jobs:
           hugo-version: '0.125.7'
           # extended: true
 
-      - name: Build
-        run: hugo --minify
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Build for gh-pages
         if: github.ref == 'refs/heads/main'
+        run: hugo --minify --config hugo.toml
+
+      - name: Deploy to gh-pages
+        if: github.ref == 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs
+
+      - name: Build for gh-isp
+        if: github.ref == 'refs/heads/main'
+        run: hugo --minify --config config-isp.toml
+
+      - name: Deploy to gh-isp
+        if: github.ref == 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          destination_branch: gh-isp

@@ -1,7 +1,6 @@
 ---
 title: "Organizations & Networks"
-type: "collaborators"
-layout: "list"
+
 ---
 
 [![ELLIS](ellis.webp)](https://www.ellis.eu/)

@@ -27,5 +27,5 @@ v1 – 2023-07
 
 <br>
 <p align="center">
-  <img src="/images/projects/groups_2.webp" width="50%">
+  <img src="groups_2.webp" width="50%">
 </p>
