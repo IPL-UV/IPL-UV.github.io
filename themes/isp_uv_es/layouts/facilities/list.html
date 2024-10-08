@@ -1,0 +1,44 @@
+{{ define "main" }}
+<div class="content-container" style="font-size: 14px;">
+  <h1 style="margin-bottom: 20px;">Facilities</h1>
+  <br> 
+
+  <div id="facilities-container"></div>
+</div>
+<script>
+  async function loadFacilities() {
+    const response = await fetch('/isp/data/facilities/facilities.json');
+    const data = await response.json();
+
+    const facilitiesContainer = document.getElementById('facilities-container');
+    data.facilities.forEach(facility => {
+      const facilityContainer = document.createElement('div');
+      facilityContainer.classList.add('facility-container');
+
+      const image = document.createElement('img');
+      image.src = '/isp/images/facilities/' + facility.image;
+      image.style.height = facility.image_size.height + 'px';
+      image.style.width = facility.image_size.width + 'px';
+      facilityContainer.appendChild(image);
+
+      const textContainer = document.createElement('div');
+      textContainer.classList.add('text-container');
+
+      if (facility.name) {
+        const boldName = document.createElement('b');
+        boldName.textContent = facility.name;
+        textContainer.appendChild(boldName);
+      }
+
+      textContainer.innerHTML += facility.description;
+
+      facilityContainer.appendChild(textContainer);
+      facilitiesContainer.appendChild(facilityContainer);
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', loadFacilities);
+</script>
+
+{{ end }}
+

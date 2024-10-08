@@ -1,0 +1,119 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+      aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <ul class="navbar-nav mx-auto mb-lg-0">
+        {{ $mainMenu := .Site.Menus.main }}
+        {{ range $mainMenu }}
+          {{ if .HasChildren }}
+            <li class="nav-item dropdown px-2 nav-item-highlight">
+              <a class="nav-link dropdown-toggle active a" href="{{ .URL }}" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                {{ .Name }}
+              </a>
+              <ul class="dropdown-menu">
+                {{ range .Children }}
+                  <li><a class="dropdown-item a" href="{{ .URL }}">{{ .Name }}</a></li>
+                {{ end }}
+              </ul>
+            </li>
+          {{ else }}
+            <li class="nav-item px-2 nav-item-highlight">
+              <a class="nav-link active a" aria-current="page" href="{{ .URL }}">{{ .Name }}</a>
+            </li>
+          {{ end }}
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<style>
+  .navbar {
+    --bs-navbar-padding-y: 0rem !important; 
+    background-color: #222 !important;
+  }
+
+  .a {
+    color: #949494 !important;
+  }
+
+  .a:hover {
+    color: #fff !important;
+  }
+
+  .navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+  .navbar-nav .dropdown-menu:hover {
+    display: block;
+  }
+
+  .dropdown-menu {
+    margin-top: 7px; 
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+
+  .navbar-toggler {
+    border: none;
+  }
+
+  .navbar-toggler:focus {
+  outline: none;
+}
+
+  .nav-item-highlight{
+    padding: 0.4rem;
+  }
+  .nav-item-highlight:hover{
+    background-color: #2d70aa !important;
+  }
+
+  .dropdown-menu {
+    background-color: #fff !important;
+    color: #000 !important;
+  }
+
+  .dropdown-item:hover {
+    background-color: #2d70aa !important;
+    color: #fff !important;
+  }
+
+  .navbar-nav li.nav-item .nav-link,
+  .dropdown-menu .dropdown-item {
+    transition: color 0.3s, background-color 0.3s;
+  }
+
+  .navbar-toggler:focus {
+  box-shadow: none !important;
+  }
+
+</style>
+
+<script>
+  document.querySelectorAll('.dropdown-toggle').forEach(item => {
+    item.removeAttribute('data-bs-toggle');
+});
+</script>
+<script>
+  window.onload = function() {
+    // Detectar la escala de la pantalla
+    const scale = window.devicePixelRatio;
+    
+    // Obtener la barra de navegación
+    const navbar = document.querySelector('.navbar-collapse');
+    
+    // Si la escala es mayor o igual a 1.25, agregar la clase para mostrar el menú desplegable
+    if (scale >= 1.25) {
+      navbar.classList.add('show');
+    }
+  };
+</script>

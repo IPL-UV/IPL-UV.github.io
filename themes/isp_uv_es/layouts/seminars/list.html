@@ -1,0 +1,71 @@
+{{ define "main" }}
+<div class="content-container" style="font-size: 14px;">
+
+  <h1 style="margin-bottom: 20px;">Seminars</h1>
+
+  <div class="course-container" style="border-bottom: 0px solid #ccc;">
+    <div class="image-container">
+      <img src="/isp/images/talks2.jpg" height="100" width="260">
+    </div>
+    <div class="text-container">
+      In the Image Processing Lab (IPL) environment, invited talks by senior researchers, postdocs and PhD students in
+      meetings for informal discussion of their research are held regularly, organized by the ISP group. We call these
+      talks FFT, that in this case stands for "First Friday Talk", even though they may happen at any point of the week
+      ;-) Below you may find a (non-exhaustive) list of the talks done so far to get a flavour of our interests...
+    </div>
+  </div>
+
+  <table class="table table-hover table-condensed table-responsive" id="seminar-table">
+    <thead>
+      <tr>
+        <th style="background-color: #f2dede">Date</th>
+        <th style="background-color: #f2dede">Title</th>
+        <th style="background-color: #f2dede">Speaker</th>
+        <th style="background-color: #f2dede">Affiliation</th>
+      </tr>
+    </thead>
+    <tbody id="seminar-list"></tbody>
+  </table>
+
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  fetch('/isp/data/seminars/seminars.json')
+    .then(response => response.json())
+    .then(data => {
+      const seminarTable = document.getElementById('seminar-list');
+      data.seminars.forEach(yearData => {
+        const year = yearData.year;
+        const seminars = yearData.data;
+
+        // Add year as a row
+        let row = seminarTable.insertRow();
+        let cell = row.insertCell();
+        cell.colSpan = 4;
+        cell.textContent = year;
+        cell.innerHTML = '<strong>' + year + '</strong>';
+        cell.style.backgroundColor = '#d9edf7';
+
+        // Add seminars for this year
+        seminars.forEach(seminar => {
+          row = seminarTable.insertRow();
+          cell = row.insertCell();
+          cell.textContent = seminar.date;
+          cell = row.insertCell();
+          cell.innerHTML = seminar.title;
+          cell = row.insertCell();
+          cell.textContent = seminar.speaker;
+          cell = row.insertCell();
+          cell.textContent = seminar.affiliation;
+        });
+      });
+    })
+    .catch(error => console.error('Error loading JSON file:', error));
+});
+
+
+</script>
+
+
+{{ end }}
