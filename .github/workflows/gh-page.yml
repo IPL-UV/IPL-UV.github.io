@@ -12,45 +12,40 @@ jobs:
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
         with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+          submodules: true  # Obtén los submódulos de Hugo
+          fetch-depth: 0    # Descarga todo el historial de commits
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: '0.125.7'
-          # extended: true
+          extended: true  # Usa la versión extendida de Hugo si es necesario (para SCSS, etc.)
 
-      - name: Set baseURL for gh-pages
+      # Paso para construir y desplegar en gh-pages
+      - name: Build and deploy to gh-pages
         if: github.ref == 'refs/heads/main'
-        run: echo "baseURL = 'https://ipl-uv.github.io/'" > hugo.toml
-
-      - name: Build for gh-pages
-        if: github.ref == 'refs/heads/main'
-        run: hugo --minify --config hugo.toml  # Usa el archivo hugo.toml para gh-pages
-
-      - name: Deploy to gh-pages
-        if: github.ref == 'refs/heads/main'
+        run: |
+          # Cambiar el baseURL para gh-pages
+          echo "baseURL = 'https://ipl-uv.github.io/'" > hugo.toml
+          hugo --minify --config hugo.toml  # Construir el sitio con la configuración modificada
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs  # Publica en el directorio docs
-          destination_branch: gh-pages  # Asegúrate de que se despliega a gh-pages
+          publish_dir: ./docs  # Directorio a publicar
+          publish_branch: gh-pages  # Publicar en gh-pages
 
-      - name: Set baseURL for gh-isp
+      # Paso para construir y desplegar en gh-isp
+      - name: Build and deploy to gh-isp
         if: github.ref == 'refs/heads/main'
-        run: echo "baseURL = 'https://isp.uv.es/github'" > hugo.toml
-
-      - name: Build for gh-isp
-        if: github.ref == 'refs/heads/main'
-        run: hugo --minify --config hugo.toml  # Usa el archivo hugo.toml para gh-isp
-
-      - name: Deploy to gh-isp
-        if: github.ref == 'refs/heads/main'
+        run: |
+          # Cambiar el baseURL para gh-isp
+          echo "baseURL = 'https://isp.uv.es/github'" > hugo.toml
+          hugo --minify --config hugo.toml  # Construir el sitio con la configuración modificada
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs  # Publica en el directorio docs
-          destination_branch: gh-isp  # Asegúrate de que se despliega a gh-isp
+          publish_dir: ./docs  # Directorio a publicar
+          publish_branch: gh-isp  # Publicar en gh-isp
