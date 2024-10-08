@@ -25,7 +25,6 @@ jobs:
 
       - name: Build
         run: |
-          echo "baseURL = 'https://ipl-uv.github.io/'" > hugo.toml
           hugo --minify
 
       - name: Deploy
