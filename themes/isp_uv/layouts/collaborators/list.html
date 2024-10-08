@@ -1,12 +1,15 @@
 {{ define "main" }}
-<div class="container">
-    <h1><span class="label label-info">{{ .Title }}</span></h1>
-    {{ range .Pages }}
-    <div class="row collaborator mb-4">
-        <div class="col-md-12">
-            {{ .Content | safeHTML }}
-        </div>
-    </div>
-    {{ end }}
+<div class="content-container">
+  {{ range .Pages }}
+  <div class="title-container">
+    <h1>{{ .Title }}</h1>
+  </div>
+  <div class="collaborators-grid">
+    <!-- Renderizar el contenido directamente desde el archivo Markdown, modificando las rutas de las imágenes -->
+    {{ $content := .Content }}
+    {{ $content = replace $content "src=\"" "src=\"/images/collaborators/" }}
+    {{ $content | markdownify | safeHTML }}
+  </div>
+  {{ end }}
 </div>
 {{ end }}

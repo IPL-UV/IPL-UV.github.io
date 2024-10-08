@@ -2,16 +2,22 @@
 <div class="content-container">
     {{ $groups := .Pages.GroupByParam "role" }}
     {{ $order := slice "full professors" "associate professors" "assistant professors" "senior research scientists" "postdocs" "phd students" "visitors" "alumni"}}
+
+    <!-- Definimos la ruta base aquí -->
+    {{ $basePath := "/images/people/redes/" }}
+
     {{ range $order }}
     {{ with index (where $groups "Key" .) 0 }}
     <div class="title-container">
-        <h1> {{ .Key | title }} </h1>
+        <h1>{{ .Key | title }}</h1>
     </div>
+
     <div class="card container">
         {{ range .Pages }}
         {{ $img := printf "/images/people/%s" .Params.img }}
         {{ $name := .Title }}
         {{ $link_image := .Params.link_image }}
+
         <div class="card">
             <div class="row g-0">
                 <div class="col-md-3">
@@ -23,24 +29,34 @@
                     </a>
                     {{ end }}
                 </div>
+
                 <div class="col-md-9">
                     <div class="card-body">
                         <h5 class="card-title"><b>{{ .Title }}</b></h5>
                         <p class="card-text">{{ .Content | markdownify }}</p>
+
                         <div class="card-links">
-                            {{ with .Params.googlescholar }} <a href="{{ . }}"><img src="/images/people/redes/gscholar.webp" ></a> {{ end }}
-                            {{ with .Params.orcid }} <a href="{{ . }}"><img src="/images/people/redes/orcid.webp"></a> {{ end }}
-                            {{ with .Params.twitter }} <a href="{{ . }}"><img src="/images/people/redes/twitter.webp"></a> {{ end }}
-                            {{ with .Params.github }} <a href="{{ . }}"><img src="/images/people/redes/github.webp" ></a> {{ end }}
-                            {{ with .Params.semanticscholar }} <a href="{{ . }}"><img src="/images/people/redes/semantic.webp"></a> {{ end }}
-                            {{ with .Params.researchgate }} <a href="{{ . }}"><img src="/images/people/redes/rg.webp"></a> {{ end }}
+                            <!-- Solo especificas el nombre de la imagen -->
+                            {{ $links := "" }}
+                            {{ with .Params.googlescholar }} {{ $links = print $links "<a href=\"" . "\"><img src=\"gscholar.webp\" alt=\"Google Scholar\"></a>" }} {{ end }}
+                            {{ with .Params.orcid }} {{ $links = print $links "<a href=\"" . "\"><img src=\"orcid.webp\" alt=\"ORCID\"></a>" }} {{ end }}
+                            {{ with .Params.twitter }} {{ $links = print $links "<a href=\"" . "\"><img src=\"twitter.webp\" alt=\"Twitter\"></a>" }} {{ end }}
+                            {{ with .Params.github }} {{ $links = print $links "<a href=\"" . "\"><img src=\"github.webp\" alt=\"GitHub\"></a>" }} {{ end }}
+                            {{ with .Params.semanticscholar }} {{ $links = print $links "<a href=\"" . "\"><img src=\"semantic.webp\" alt=\"Semantic Scholar\"></a>" }} {{ end }}
+                            {{ with .Params.researchgate }} {{ $links = print $links "<a href=\"" . "\"><img src=\"rg.webp\" alt=\"ResearchGate\"></a>" }} {{ end }}
+                            {{ with .Params.linkedin }} {{ $links = print $links "<a href=\"" . "\"><img src=\"linkedin.webp\" alt=\"LinkedIn\"></a>" }} {{ end }}
+                            {{ with .Params.academia }} {{ $links = print $links "<a href=\"" . "\"><img src=\"academia.webp\" alt=\"Academia\"></a>" }} {{ end }}
+                            {{ with .Params.scopus }} {{ $links = print $links "<a href=\"" . "\"><img src=\"scopus.webp\" alt=\"Scopus\"></a>" }} {{ end }}
+
+                            <!-- Reemplazo dinámico para agregar la ruta base a cada imagen -->
+                            {{ $links = replace $links "src=\"" (print "src=\"" $basePath) }}
+                            {{ $links | safeHTML }}
+
+                            <!-- Botones adicionales -->
+                            {{ with .Params.website }} <a href="{{ . }}"><button type="button" class="btn btn-xss btn-info">Website</button></a> {{ end }}
                             {{ with .Params.uv }} <a href="{{ . }}" class="btn btn-xss btn-info" aria-label="Left Align">UV</a> {{ end }}
-                            {{ with .Params.linkedin }} <a href="{{ . }}"><img src="/images/people/redes/linkedin.webp"></a> {{ end }}
                             {{ with .Params.ieee }} <a href="{{ . }}"><button type="button" class="btn btn-xss btn-success">IEEE</button></a> {{ end }}
                             {{ with .Params.dblp }} <a href="{{ . }}"><button type="button" class="btn btn-xss btn-danger">dblp</button></a> {{ end }}
-                            {{ with .Params.academia }} <a href="{{ . }}"><img src="/images/people/redes/academia.webp"></a> {{ end }}
-                            {{ with .Params.scopus }} <a href="{{ . }}"><img src="/images/people/redes/scopus.webp"></a> {{ end }}
-                            {{ with .Params.website }} <a href="{{ . }}"><button type="button" class="btn btn-xss btn-info">Website</button></a> {{ end }}
                         </div>
                     </div>
                 </div>

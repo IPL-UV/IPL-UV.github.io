@@ -1,4 +1,80 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
-  {{ partial "biblio.html" . }}
+<div class="content-container">
+  <div class="title-container">
+    <h1>{{ .Title }}</h1>
+  </div>
+  <div class="grid-item grid-filter ">
+    <div class="filter-container">
+      <label for="year-filter">Filter by:</label>
+      <select id="year-filter" onchange="updateFilters()">
+        <option value="">Year</option>
+        {{ $years := slice }}
+        {{ range sort .Pages "Date" "desc" }}
+        {{ $year := .Date.Format "2006" }}
+        {{ if not (in $years $year) }}
+        <option value="{{ $year }}">{{ $year }}</option>
+        {{ $years = $years | append $year }}
+        {{ end }}
+        {{ end }}
+      </select>
+      <label for="project-filter"></label>
+      <select id="project-filter" onchange="updateFilters()">
+        <option value="">Project</option>
+        {{ $projects := slice }}
+        {{ range sort .Pages "Date" "desc" }}
+        {{ if .Params.project }}
+        {{ $project := .Params.project }}
+        {{ if not (in $projects $project) }}
+        <option value="{{ $project }}">{{ $project }}</option>
+        {{ $projects = $projects | append $project }}
+        {{ end }}
+        {{ end }}
+        {{ end }}
+      </select>
+    </div>
+  </div>
+  <div class="grid-container" id="list-grid-container">
+    {{ range sort .Pages "Date" "desc" }}
+    {{ $current := . }}
+    <div class="grid-item list-item" data-year="{{ .Date.Format "2006" }}" data-project="{{ .Params.project }}">
+      <div class="text-container list-text">
+        <h2>{{ $current.Title }}</h2>
+        <p>{{ .Params.description | markdownify }}</p>
+
+        <div class="details-container">
+          {{ with .Params.link }}
+          <a href="{{ . }}" class="btn btn-info">View Details</a>
+          {{ end }}
+        </div>
+
+        <div class="date-container list-date">
+          <span class="year">{{ .Date.Format "2006" }}</span>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>
+
+<script>
+  function updateFilters() {
+    const year = document.getElementById('year-filter').value;
+    const project = document.getElementById('project-filter').value;
+    const items = document.querySelectorAll('.list-item');
+
+    items.forEach(item => {
+      const itemYear = item.getAttribute('data-year');
+      const itemProject = item.getAttribute('data-project');
+
+      const yearMatch = (year === "" || itemYear === year);
+      const projectMatch = (project === "" || itemProject === project);
+
+      if (yearMatch && projectMatch) {
+        item.style.display = 'flex';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  }
+</script>
 {{ end }}

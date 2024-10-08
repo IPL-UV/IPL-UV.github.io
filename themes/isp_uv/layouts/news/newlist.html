@@ -6,7 +6,7 @@
       <select id="year-filter" onchange="updateFilters()">
         <option value="">All Years</option>
         {{ $years := slice }}
-        {{ range sort (where .Site.RegularPages "Section" "seminars") "Date" "desc" }}
+        {{ range sort (where .Site.RegularPages "Section" "news") "Date" "desc" }}
           {{ $year := .Date.Format "2006" }}
           {{ if and (not (in $years $year)) (ne $year "0001") }}
             <option value="{{ $year }}">{{ $year }}</option>
@@ -23,28 +23,14 @@
         <option value="{{ $month }}">{{ $month }}</option>
         {{ end }}
       </select>
-
-      <label for="speaker-filter"></label>
-      <select id="speaker-filter" onchange="updateFilters()">
-        <option value="">All Speakers</option>
-        {{ $speakers := slice }}
-        {{ range sort (where .Site.RegularPages "Section" "seminars") "Date" "desc" }}
-          {{ with .Params.speaker }}
-            {{ if not (in $speakers .) }}
-              <option value="{{ . }}">{{ . }}</option>
-              {{ $speakers = $speakers | append . }}
-            {{ end }}
-          {{ end }}
-        {{ end }}
-      </select>
     </div>
   </div>
 
   <div class="grid-container" id="seminar-grid-container">
-    {{ range sort (where .Site.RegularPages "Section" "seminars") "Date" "desc" }}
-      {{ $img := (urls.JoinPath "/images/seminars" (.Params.img | default "uv.webp")) }}
+    {{ range sort .Pages "Date" "desc" }}
+      {{ $img := (urls.JoinPath "/images/news" (.Params.img | default "uv.webp")) }}
       {{ $current := . }}
-      <div class="grid-item seminar-item project-item" data-year="{{ .Date.Format "2006" }}" data-month="{{ .Date.Format "January" }}" data-speaker="{{ .Params.speaker }}">
+      <div class="grid-item seminar-item project-item" data-year="{{ .Date.Format "2006" }}" data-month="{{ .Date.Format "January" }}">
         <div class="image-container seminar-image">
           {{ with .Params.link }}
             <a href="{{ . }}">
@@ -60,11 +46,8 @@
           {{ else }}
             <p class="nameLink_a seminar-title">{{ .Params.title | markdownify }}</p>
           {{ end }}
-          {{ with .Params.speaker }} 
-          <p><strong>Speaker:</strong> {{ . }} </p>
-          {{ end }}
-          {{ with .Params.affiliation }}
-          <p><strong>Affiliation:</strong> {{ . }}</p>
+          {{ with .Content }} 
+          <p> {{ . | markdownify }} </p>
           {{ end }}
           <p>
             <span class="day">{{ .Date.Format "02" }}</span>
@@ -75,34 +58,30 @@
       </div>
     {{ end }}
   </div>
+  
+  
 </div>
-
 <script>
   function updateFilters() {
     const year = document.getElementById('year-filter').value;
     const month = document.getElementById('month-filter').value;
-    const speaker = document.getElementById('speaker-filter').value;
     const items = document.querySelectorAll('.seminar-item');
 
     // Gather available options based on current filter selection
     let availableMonths = new Set();
-    let availableSpeakers = new Set();
 
     items.forEach(item => {
       const itemYear = item.getAttribute('data-year');
       const itemMonth = item.getAttribute('data-month');
-      const itemSpeaker = item.getAttribute('data-speaker');
 
       const yearMatch = (year === "" || itemYear === year);
       const monthMatch = (month === "" || itemMonth === month);
-      const speakerMatch = (speaker === "" || itemSpeaker === speaker);
 
       // Display or hide items based on selected filters
-      if (yearMatch && monthMatch && speakerMatch) {
+      if (yearMatch && monthMatch) {
         item.style.display = 'flex';
-        if (year === "" || yearMatch) {
+        if (yearMatch) {
           availableMonths.add(itemMonth);
-          availableSpeakers.add(itemSpeaker);
         }
       } else {
         item.style.display = 'none';
@@ -119,16 +98,6 @@
     const monthFilter = document.getElementById('month-filter');
     Array.from(monthFilter.options).forEach(option => {
       if (option.value === "" || availableMonths.has(option.value)) {
-        option.style.display = 'block';
-      } else {
-        option.style.display = 'none';
-      }
-    });
-
-    // Update Speaker Filter
-    const speakerFilter = document.getElementById('speaker-filter');
-    Array.from(speakerFilter.options).forEach(option => {
-      if (option.value === "" || availableSpeakers.has(option.value)) {
         option.style.display = 'block';
       } else {
         option.style.display = 'none';

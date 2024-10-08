@@ -1,8 +1,5 @@
 {{ define "main" }}
 <div class="content-container">
-    <div class="title-container">
-        <h1>{{ .Params.title }}</h1>
-    </div>
     {{ range .Pages }}
     {{ $img := urls.JoinPath "/images/facilities" .Params.img }}
     <div class="panel-item">
@@ -18,20 +15,11 @@
                 </div>  
                 <div class="panel-description col-md-{{ if .Params.references }}6{{ else }}10{{ end }}">
                     <h5>
-                        <p class="text-justify">{{ .Params.description | markdownify }}</p>
+                        <p class="text-justify">{{ .Content | markdownify }}</p>
                     </h5>
                     
                 </div>  
-                {{ if .Params.references }}
-                <div class="panel-references col-md-4">
-                    <h6><b>References</b></h6>
-                    <ul class="references-list">
-                        {{ range .Params.references }}
-                        <li>{{ . | markdownify }}</li>
-                        {{ end }}
-                    </ul>
-                </div>
-                {{ end }}
+
             </div>
         </div>
     </div> 

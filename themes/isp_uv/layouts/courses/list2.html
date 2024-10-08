@@ -1,8 +1,5 @@
 {{ define "main" }}
 <div class="content-container">
-    <div class="title-container">
-        <h1>{{ .Params.title }}</h1>
-    </div>
     {{ range .Pages }}
     {{ $img := urls.JoinPath "/images/courses" .Params.img }}
     <div class="panel-item">

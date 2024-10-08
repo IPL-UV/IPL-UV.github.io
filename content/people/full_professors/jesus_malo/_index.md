@@ -18,5 +18,5 @@ layout: "single_four"
 
 
 
-I'm interested in understanding human vision from information theoretic principles. This statistical view has implications in experimental and computational neuroscience. [See the ex-cathedra statement]./jesus_malo/excathedra)
+I'm interested in understanding human vision from information theoretic principles. This statistical view has implications in experimental and computational neuroscience. [See the ex-cathedra statement](./full_professors/jesus_malo/ex_cathedra)
 
