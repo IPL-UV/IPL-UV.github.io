@@ -3,7 +3,7 @@ name: GitHub Pages
 on:
   push:
     branches:
-      - main  # Set a branch to deploy
+      - main  # Ejecutar el flujo de trabajo cuando haya un push en la rama main
   pull_request:
 
 jobs:
@@ -25,23 +25,24 @@ jobs:
 
       - name: Build for gh-pages
         if: github.ref == 'refs/heads/main'
-        run: hugo --minify --config hugo.toml
+        run: hugo --minify --config config.toml  # Usa el archivo config.toml para gh-pages
 
       - name: Deploy to gh-pages
         if: github.ref == 'refs/heads/main'
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs
+          publish_dir: ./docs  # Publica en el directorio docs
+          destination_branch: gh-pages  # Asegúrate de que se despliega a gh-pages
 
       - name: Build for gh-isp
         if: github.ref == 'refs/heads/main'
-        run: hugo --minify --config config-isp.toml
+        run: hugo --minify --config config-isp.toml  # Usa el archivo config-isp.toml para gh-isp
 
       - name: Deploy to gh-isp
         if: github.ref == 'refs/heads/main'
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs
-          destination_branch: gh-isp
+          publish_dir: ./docs  # Publica en el directorio docs
+          destination_branch: gh-isp  # Asegúrate de que se despliega a gh-isp
