@@ -25,7 +25,7 @@ jobs:
 
       - name: Build for gh-pages
         if: github.ref == 'refs/heads/main'
-        run: hugo --minify --config config.toml  # Usa el archivo config.toml para gh-pages
+        run: hugo --minify --config hugo.toml  # Usa el archivo config.toml para gh-pages
 
       - name: Deploy to gh-pages
         if: github.ref == 'refs/heads/main'
