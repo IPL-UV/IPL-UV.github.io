@@ -23,9 +23,13 @@ jobs:
           hugo-version: '0.125.7'
           # extended: true
 
+      - name: Set baseURL for gh-pages
+        if: github.ref == 'refs/heads/main'
+        run: echo "baseURL = 'https://ipl-uv.github.io/'" > hugo.toml
+
       - name: Build for gh-pages
         if: github.ref == 'refs/heads/main'
-        run: hugo --minify --config hugo.toml  # Usa el archivo config.toml para gh-pages
+        run: hugo --minify --config hugo.toml  # Usa el archivo hugo.toml para gh-pages
 
       - name: Deploy to gh-pages
         if: github.ref == 'refs/heads/main'
@@ -35,9 +39,13 @@ jobs:
           publish_dir: ./docs  # Publica en el directorio docs
           destination_branch: gh-pages  # Asegúrate de que se despliega a gh-pages
 
+      - name: Set baseURL for gh-isp
+        if: github.ref == 'refs/heads/main'
+        run: echo "baseURL = 'https://isp.uv.es/github'" > hugo.toml
+
       - name: Build for gh-isp
         if: github.ref == 'refs/heads/main'
-        run: hugo --minify --config config-isp.toml  # Usa el archivo config-isp.toml para gh-isp
+        run: hugo --minify --config hugo.toml  # Usa el archivo hugo.toml para gh-isp
 
       - name: Deploy to gh-isp
         if: github.ref == 'refs/heads/main'
