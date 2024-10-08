@@ -3,7 +3,7 @@ name: GitHub Pages
 on:
   push:
     branches:
-      - main  # Ejecutar el flujo de trabajo cuando haya un push en la rama main
+      - main  # Set a branch to deploy
   pull_request:
 
 jobs:
@@ -12,40 +12,25 @@ jobs:
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
-          submodules: true  # Obtén los submódulos de Hugo
-          fetch-depth: 0    # Descarga todo el historial de commits
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: '0.125.7'
-          extended: true  # Usa la versión extendida de Hugo si es necesario (para SCSS, etc.)
+          # extended: true
 
-      # Paso para construir y desplegar en gh-pages
-      - name: Build and deploy to gh-pages
-        if: github.ref == 'refs/heads/main'
+      - name: Build
         run: |
-          # Cambiar el baseURL para gh-pages
           echo "baseURL = 'https://ipl-uv.github.io/'" > hugo.toml
-          hugo --minify --config hugo.toml  # Construir el sitio con la configuración modificada
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs  # Directorio a publicar
-          publish_branch: gh-pages  # Publicar en gh-pages
+          hugo --minify
 
-      # Paso para construir y desplegar en gh-isp
-      - name: Build and deploy to gh-isp
-        if: github.ref == 'refs/heads/main'
-        run: |
-          # Cambiar el baseURL para gh-isp
-          echo "baseURL = 'https://isp.uv.es/github'" > hugo.toml
-          hugo --minify --config hugo.toml  # Construir el sitio con la configuración modificada
+      - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs  # Directorio a publicar
-          publish_branch: gh-isp  # Publicar en gh-isp
+          publish_dir: ./docs
