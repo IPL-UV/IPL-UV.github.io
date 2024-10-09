@@ -21,14 +21,31 @@ jobs:
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: '0.125.7'
-          # extended: true
 
       - name: Build
         run: hugo --minify
 
-      - name: Deploy
+      # Deploy to gh-pages
+      - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs
+
+      # Modify the hugo.toml file for gh-isp deployment
+      - name: Modify baseURL for gh-isp
+        run: |
+          sed -i 's|baseURL = "https://ipl-uv.github.io/"|baseURL = "https://isp.uv/github"|' hugo.toml
+
+      - name: Build for gh-isp
+        run: hugo --minify
+
+      # Deploy to gh-isp
+      - name: Deploy to gh-isp
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          publish_branch: gh-isp
