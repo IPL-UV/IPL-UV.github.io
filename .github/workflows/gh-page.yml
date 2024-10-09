@@ -36,7 +36,7 @@ jobs:
       # Modify the hugo.toml file for gh-isp deployment
       - name: Modify baseURL for gh-isp
         run: |
-          sed -i 's|baseURL = "https://ipl-uv.github.io/"|baseURL = "https://isp.uv/github"|' hugo.toml
+          sed -i 's|baseURL = "https://ipl-uv.github.io/"|baseURL = "https://isp.uv.es/github"|' hugo.toml
 
       - name: Build for gh-isp
         run: hugo --minify
