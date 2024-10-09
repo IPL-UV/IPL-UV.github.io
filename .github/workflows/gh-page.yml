@@ -21,14 +21,26 @@ jobs:
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: '0.125.7'
-          # extended: true
 
-      - name: Build
-        run: hugo --minify
+      # Build for gh-pages
+      - name: Build for gh-pages
+        run: hugo --minify -b "https://ipl-uv.github.io/" -d ./docs
 
-      - name: Deploy
+      - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs
+
+      # Build for gh-isp
+      - name: Build for gh-isp
+        run: hugo --minify -b "https://isp.uv.es/github" -d ./docs
+
+      - name: Deploy to gh-isp
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          publish_branch: gh-isp
