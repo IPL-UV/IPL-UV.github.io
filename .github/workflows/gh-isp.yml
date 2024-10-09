@@ -1,4 +1,4 @@
-name: Deploy to gh-pages
+name: Deploy to gh-isp
 
 on:
   push:
@@ -22,12 +22,13 @@ jobs:
         with:
           hugo-version: '0.125.7'
 
-      - name: Build for gh-pages
-        run: hugo --minify -b "https://ipl-uv.github.io/" -d ./docs
+      - name: Build for gh-isp
+        run: hugo --minify -b "https://isp.uv.es/github" -d ./docs
 
-      - name: Deploy to gh-pages
+      - name: Deploy to gh-isp
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs
+          publish_branch: gh-isp
