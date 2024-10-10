@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BasicVideoTools on ISP - Image and Signal Processing group</title>
+    <link>http://localhost:1313/code/image_video_processing/basicvideotools/</link>
+    <description>Recent content in BasicVideoTools on ISP - Image and Signal Processing group</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/code/image_video_processing/basicvideotools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Basic Video Tools: A Matlab Toolbox for Video Data and Spatio-Temporal Vision Models (J. Malo, J. Gutirrez and V. Laparra (c) Universitat de Valncia 1996 - 2014)</title>
+      <link>http://localhost:1313/code/image_video_processing/basicvideotools/content/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/code/image_video_processing/basicvideotools/content/</guid>
+      <description>What is in BasicVideoTools? BasicVideoTools is a Matlab/Octave Toolbox intendend to deal with video data and spatio-temporal vision models. In particular, it includes convenient *.m files to:&#xA;Read standard (VQEG and LIVE) video data Rearrange video data (as for instance to perform statistical analysis) Generate controlled sequences (controlled contrast, texture, and 2d and 3d speed) Compute 3D Fourier transforms Play with motion perception models (spatial texture and motion-sensitive cells of LGN, V1 and MT, and spatio-temporal CSF) Visualize movies (achromatic only) What is not in BasicVideoTools?</description>
+    </item>
+  </channel>
+</rss>

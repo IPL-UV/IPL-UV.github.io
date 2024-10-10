@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Earth and climate sciences on ISP - Image and Signal Processing group</title>
+    <link>http://localhost:1313/research/earth_science/</link>
+    <description>Recent content in Earth and climate sciences on ISP - Image and Signal Processing group</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/research/earth_science/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cloud Detection in the Cloud</title>
+      <link>http://localhost:1313/research/earth_science/cloud-detection-in-the-cloud/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/earth_science/cloud-detection-in-the-cloud/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DeepCube: Explainable AI pipelines for big Copernicus data</title>
+      <link>http://localhost:1313/research/earth_science/deepcube/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/earth_science/deepcube/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ELISE: European Learning And Intelligent Systems Excellence</title>
+      <link>http://localhost:1313/research/earth_science/elise/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/earth_science/elise/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mapping and the citizen sensor</title>
+      <link>http://localhost:1313/research/earth_science/mapping-and-the-citizen-sensor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/earth_science/mapping-and-the-citizen-sensor/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>USMILE: Understanding and Modeling the Earth System with Machine Learning</title>
+      <link>http://localhost:1313/research/earth_science/usmile/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/earth_science/usmile/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>XAIDA: Extreme Events - Artificial Intelligence for Detection and Attribution</title>
+      <link>http://localhost:1313/research/earth_science/xaida/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/earth_science/xaida/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
