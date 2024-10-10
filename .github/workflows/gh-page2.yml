@@ -23,12 +23,14 @@ jobs:
           hugo-version: '0.125.7'
           # extended: true
 
-      - name: Build
-        run: hugo --minify
+      - name: Build for gh-isp
+        run: hugo --minify --config config-isp.toml
 
-      - name: Deploy
+      # Deploy to gh-isp
+      - name: Deploy to gh-isp
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs
+          publish_dir: ./docs4
+          publish_branch: gh-isp4
