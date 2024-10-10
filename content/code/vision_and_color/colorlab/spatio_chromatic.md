@@ -1,9 +1,8 @@
 ---
-title: "Spatio-Chromatic Information available from different Neural Layers (J. Malo, Journal of Mathematical Neuroscience 2020)"
-
 type: "code"
 layout: "single_four"
 
+title: "Spatio-Chromatic Information available from different Neural Layers (J. Malo, Journal of Mathematical Neuroscience 2020)"
 references:
   - title: "Spatio-Chromatic Information available from different Neural Layers via Gaussianization"
     authors: "J. Malo."
@@ -21,8 +20,6 @@ references:
     authors: "[J. Malo and Q. Li](https://docs.google.com/document/d/14LvHeix6zE92e-T4w7e9ZmBqS6uVd4uOJ22N6-NFCc0/edit)"
     publication: "Notebook (as of July 2021) Evolving Google Notebook"
     link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/NOTES_info_flow_psycho_models.pdf"
-
-
 links:
   - title: "Data and Code infoDivisiveNormalization.zip (17GB)"
     link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/infoDivisiveNormalization.zip"

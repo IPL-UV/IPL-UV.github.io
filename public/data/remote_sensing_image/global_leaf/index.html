@@ -3,8 +3,7 @@
   dir="ltr">
 
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-  <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ISP - Image and Signal Processing group</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -16,8 +15,6 @@
   
   <script src=/js/mode.js></script>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-</head>
-
 </head>
   <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
   <div class="container-fluid">
@@ -355,32 +352,24 @@
       </a>
       <div class="text">
         <a href="" class="nameLink_a"> Global maps of leaf traits using remote sensing, climatological data, the TRY traits database, and machine learning </a>
-        <p></p>
-        <p>
-
-
-# What is this about?
-We introduce a modular processing chain to derive global high-resolution maps of leaf traits. In particular, we present global maps specific leaf area, leaf dry matter content, leaf nitrogen and phosphorus content per dry mass. The processing chain exploits machine-learning techniques along with optical remote sensing data (MODIS/Landsat) and climate data for gap filling and up-scaling of in-situ measured leaf traits. The chain first uses random forests regression with surrogates to fill gaps in the database (> 45% of missing entries) and maximizes the global representativeness of the trait dataset. Plant species are then aggregated to Plant Functional Types (PFTs). Next, the spatial abundance of PFTs at MODIS resolution (1 km) is calculated using Landsat data (30 m). Based on these PFT abundances, representative trait values are calculated for MODIS pixels with nearby trait data. Finally, different regression algorithms are applied to globally predict trait estimates from these MODIS pixels using remote sensing and climate data. The methods were compared in terms of precision, robustness and efficiency. The best model (random forests regression) shows good precision (normalized RMSE≤ 20%) and goodness of fit (averaged Pearson's correlation R = 0.78) in any considered trait. Along with the estimated global maps of leaf traits, we provide associated uncertainty estimates derived from the regression models. The process chain is modular, and can easily accommodate new traits, data streams (traits databases and remote sensing data), and methods. The machine learning techniques applied allow attribution of information gain to data input and thus provide the opportunity to understand trait-environment relationships at the plant and ecosystem scales. The new data products – the gap-filled trait matrix, a global map of PFT abundance per MODIS grid-cells and the high-resolution global leaf trait maps – are complementary to existing large-scale observations of the land surface and we, therefore, anticipate substantial contributions to advances in quantifying, understanding and prediction of the Earth system.
-
-# Processed traits
-
-## Specific Leaf Area (SLA)
-SLA is a key trait of the leaf economics spectrum reflecting the trade-off between leaf longevity and carbon gain (Wright et al. 2004, Nature). SLA is thus indicativefor different plant life strategies with respect to fast versus slow return of carbon investments.
-
-## Leaf Dry Matter Content (LDMC)
-LDMC and SLA are directly correlated with relative growth rate, which is a predictor of plant response to resource availability and disturbance.
-
-## Leaf Nitrogen Concentration (LNC) & Leaf Phosphorus Concentration (LPC)
-LNC relates to the amount of proteins involved in the photosynthetic machinery, while phosphorus is a key constituent of nucleic acids, lipid membranes and bioenergeticmolecules (e.g. ATP) directly involved in cell metabolism. Leaf Nitrogen Concentration (LNC) and Leaf Phosphorus Concentration (LPC) correlate with SLA and aretherefore considered part of the leaf economics spectrum.
-
-# Updates since the published version
-Version 2.0 of the processing chain prevents extrapolation and uses an updated categorical trait table. To prevent extrapolations, this updated version of theprocessing chain uses the random forest algorithm (RF) with surrogates for the estimation of trait values. RF with surrogates allows to obtain an ensemble of modelsinside the convex hull of the input data for the predictions. Additionally, the use of an updated and more extensive categorical trait table allowed increasing theamount of training samples to produce the maps.</p>
+        <p><h1 id="what-is-this-about">What is this about?</h1>
+<p>We introduce a modular processing chain to derive global high-resolution maps of leaf traits. In particular, we present global maps specific leaf area, leaf dry matter content, leaf nitrogen and phosphorus content per dry mass. The processing chain exploits machine-learning techniques along with optical remote sensing data (MODIS/Landsat) and climate data for gap filling and up-scaling of in-situ measured leaf traits. The chain first uses random forests regression with surrogates to fill gaps in the database (&gt; 45% of missing entries) and maximizes the global representativeness of the trait dataset. Plant species are then aggregated to Plant Functional Types (PFTs). Next, the spatial abundance of PFTs at MODIS resolution (1 km) is calculated using Landsat data (30 m). Based on these PFT abundances, representative trait values are calculated for MODIS pixels with nearby trait data. Finally, different regression algorithms are applied to globally predict trait estimates from these MODIS pixels using remote sensing and climate data. The methods were compared in terms of precision, robustness and efficiency. The best model (random forests regression) shows good precision (normalized RMSE≤ 20%) and goodness of fit (averaged Pearson&rsquo;s correlation R = 0.78) in any considered trait. Along with the estimated global maps of leaf traits, we provide associated uncertainty estimates derived from the regression models. The process chain is modular, and can easily accommodate new traits, data streams (traits databases and remote sensing data), and methods. The machine learning techniques applied allow attribution of information gain to data input and thus provide the opportunity to understand trait-environment relationships at the plant and ecosystem scales. The new data products – the gap-filled trait matrix, a global map of PFT abundance per MODIS grid-cells and the high-resolution global leaf trait maps – are complementary to existing large-scale observations of the land surface and we, therefore, anticipate substantial contributions to advances in quantifying, understanding and prediction of the Earth system.</p>
+<h1 id="processed-traits">Processed traits</h1>
+<h2 id="specific-leaf-area-sla">Specific Leaf Area (SLA)</h2>
+<p>SLA is a key trait of the leaf economics spectrum reflecting the trade-off between leaf longevity and carbon gain (Wright et al. 2004, Nature). SLA is thus indicativefor different plant life strategies with respect to fast versus slow return of carbon investments.</p>
+<h2 id="leaf-dry-matter-content-ldmc">Leaf Dry Matter Content (LDMC)</h2>
+<p>LDMC and SLA are directly correlated with relative growth rate, which is a predictor of plant response to resource availability and disturbance.</p>
+<h2 id="leaf-nitrogen-concentration-lnc--leaf-phosphorus-concentration-lpc">Leaf Nitrogen Concentration (LNC) &amp; Leaf Phosphorus Concentration (LPC)</h2>
+<p>LNC relates to the amount of proteins involved in the photosynthetic machinery, while phosphorus is a key constituent of nucleic acids, lipid membranes and bioenergeticmolecules (e.g. ATP) directly involved in cell metabolism. Leaf Nitrogen Concentration (LNC) and Leaf Phosphorus Concentration (LPC) correlate with SLA and aretherefore considered part of the leaf economics spectrum.</p>
+<h1 id="updates-since-the-published-version">Updates since the published version</h1>
+<p>Version 2.0 of the processing chain prevents extrapolation and uses an updated categorical trait table. To prevent extrapolations, this updated version of theprocessing chain uses the random forest algorithm (RF) with surrogates for the estimation of trait values. RF with surrogates allows to obtain an ensemble of modelsinside the convex hull of the input data for the predictions. Additionally, the use of an updated and more extensive categorical trait table allowed increasing theamount of training samples to produce the maps.</p>
+</p>
       </div>
     </div>
     
   </div>
   <p>
-    
+    We provide global high-resolution maps of leaf traits. In particular, we present global maps of specific leaf area, leaf dry matter content, leaf nitrogen and phosphorus content per dry mass. The methodology combines MODIS and Landsat data, climatological data, the TRY database and machine learning algorithms.
   </p>
 </div>
 

@@ -1,7 +1,8 @@
 ---
-title: "Randomized Kernels for Large Scale Earth Observation Applications"
 type: "code"
 layout: "single_four"
+
+title: "Randomized Kernels for Large Scale Earth Observation Applications"
 references:
   - title: "Randomized Kernels for Large Scale Earth Observation Applications"
     authors: "Adrián Pérez-Suay, Julia Amorós-López, Luis Gómez-Chova, Valero Laparra, Jordi Muñoz-Marí, Gustau Camps-Valls"
@@ -17,7 +18,7 @@ links:
   - title: "PROSAIL Model Inversion Application"
     link: "./rks2017/prosail.html"
   - title: "Atmospheric Parameter Retrieval from IASI/Metop"
-    link: "./rks2017/iasi.html"
+    link: "#"
 ---
 
 Current remote sensing applications for bio-geophysical parameter estimation and image classification handle unprecedented amounts of heterogeneous and complex data. New satellite sensors with higher time, space, and wavelength resolutions present computational challenges. Standard inversion techniques struggle to keep up with these new data sources, and classifying land cover from these new images requires substantial memory and processing power. Statistical learning has aided in developing models that can process large-scale Earth observation data.

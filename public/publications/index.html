@@ -3,8 +3,7 @@
   dir="ltr">
 
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-  <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ISP - Image and Signal Processing group</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -16,8 +15,6 @@
   
   <script src=/js/mode.js></script>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-</head>
-
 </head>
   <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
   <div class="container-fluid">
@@ -345,181 +342,26 @@
   <main>
     <div class="container">
       
-<div class="content-container">
-  <div class="title-container">
-    <h1>Publications</h1>
-  </div>
-  <div class="grid-item grid-filter ">
-    <div class="filter-container">
-      <label for="year-filter">Filter by:</label>
-      <select id="year-filter" onchange="updateFilters()">
-        <option value="">Year</option>
-        
-        
-        
-        
-        <option value="0001">0001</option>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-      </select>
-      <label for="project-filter"></label>
-      <select id="project-filter" onchange="updateFilters()">
-        <option value="">Project</option>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-      </select>
-    </div>
-  </div>
-  <div class="grid-container" id="list-grid-container">
-    
-    
-    <div class="grid-item list-item" data-year="0001" data-project="">
-      <div class="text-container list-text">
-        <h2>Books and book chapters</h2>
-        <p></p>
 
-        <div class="details-container">
-          
-        </div>
 
-        <div class="date-container list-date">
-          <span class="year">0001</span>
-        </div>
-      </div>
-    </div>
-    
-    
-    <div class="grid-item list-item" data-year="0001" data-project="">
-      <div class="text-container list-text">
-        <h2>Conference papers</h2>
-        <p></p>
+<h2><a href="/publications/books/">Books and book chapters</a></h2>
 
-        <div class="details-container">
-          
-        </div>
 
-        <div class="date-container list-date">
-          <span class="year">0001</span>
-        </div>
-      </div>
-    </div>
-    
-    
-    <div class="grid-item list-item" data-year="0001" data-project="">
-      <div class="text-container list-text">
-        <h2>Invited talks</h2>
-        <p></p>
+<h2><a href="/publications/conferences/">Conference papers</a></h2>
 
-        <div class="details-container">
-          
-        </div>
 
-        <div class="date-container list-date">
-          <span class="year">0001</span>
-        </div>
-      </div>
-    </div>
-    
-    
-    <div class="grid-item list-item" data-year="0001" data-project="">
-      <div class="text-container list-text">
-        <h2>Journal papers</h2>
-        <p></p>
+<h2><a href="/publications/talks/">Invited talks</a></h2>
 
-        <div class="details-container">
-          
-        </div>
 
-        <div class="date-container list-date">
-          <span class="year">0001</span>
-        </div>
-      </div>
-    </div>
-    
-    
-    <div class="grid-item list-item" data-year="0001" data-project="">
-      <div class="text-container list-text">
-        <h2>Msc and PhD Theses</h2>
-        <p></p>
+<h2><a href="/publications/journals/">Journal papers</a></h2>
 
-        <div class="details-container">
-          
-        </div>
 
-        <div class="date-container list-date">
-          <span class="year">0001</span>
-        </div>
-      </div>
-    </div>
-    
-    
-    <div class="grid-item list-item" data-year="0001" data-project="">
-      <div class="text-container list-text">
-        <h2>Technical reports</h2>
-        <p></p>
+<h2><a href="/publications/theses/">Msc and PhD Theses</a></h2>
 
-        <div class="details-container">
-          
-        </div>
 
-        <div class="date-container list-date">
-          <span class="year">0001</span>
-        </div>
-      </div>
-    </div>
-    
-  </div>
-</div>
+<h2><a href="/publications/technical_reports/">Technical reports</a></h2>
 
-<script>
-  function updateFilters() {
-    const year = document.getElementById('year-filter').value;
-    const project = document.getElementById('project-filter').value;
-    const items = document.querySelectorAll('.list-item');
 
-    items.forEach(item => {
-      const itemYear = item.getAttribute('data-year');
-      const itemProject = item.getAttribute('data-project');
-
-      const yearMatch = (year === "" || itemYear === year);
-      const projectMatch = (project === "" || itemProject === project);
-
-      if (yearMatch && projectMatch) {
-        item.style.display = 'flex';
-      } else {
-        item.style.display = 'none';
-      }
-    });
-  }
-</script>
 
     </div>
   </main>

@@ -1,7 +1,7 @@
 ---
-title: "ViStaCoRe: Visual Statistics Coding and Restoration"
 type: "code"
 layout: "single_four"
+title: "ViStaCoRe: Visual Statistics Coding and Restoration"
 references:
   - title: "Non-linear image representation for efficient perceptual coding"
     authors: "J. Malo, I. Epifanio, R. Navarro, E. Simoncelli"

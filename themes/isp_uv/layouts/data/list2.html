@@ -18,7 +18,7 @@
                 </div>  
                 <div class="panel-description col-md-{{ if .Params.references }}6{{ else }}10{{ end }}">
                     <h5>
-                        <p class="text-justify">{{ .Params.description | markdownify }}</p>
+                        <p class="text-justify">{{ .Content | markdownify }}</p>
                     </h5>
                     
                 </div>  
@@ -36,6 +36,5 @@
         </div>
     </div> 
     {{ end }}
-    <p>{{ .RawContent | markdownify }}</p>
 </div>
 {{ end }}

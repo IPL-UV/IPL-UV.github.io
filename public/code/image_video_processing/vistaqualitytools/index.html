@@ -3,8 +3,7 @@
   dir="ltr">
 
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-  <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ISP - Image and Signal Processing group</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -16,8 +15,6 @@
   
   <script src=/js/mode.js></script>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-</head>
-
 </head>
   <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
   <div class="container-fluid">
@@ -355,66 +352,51 @@
       </a>
       <div class="text">
         <a href="" class="nameLink_a"> VistaQualityTools: The Image and Video Quality Toolbox based on Vision Models </a>
-        <p></p>
-        <p>
-  **Contributors:** 
-  - Image: J. Malo, V. Laparra, J. Muñoz, I. Epifanio, A.M. Pons, M. Martinez and E. Simoncelli
-  - Video: J. Malo, J. Gutiérrez and A.B. Watson
-
-  The image distortion measures in VistaQualityTools are based on distances between the original and the distorted scenes in the visual response domain. Therefore, they rely on the cortical descriptions in [**VistaModels**](./../../../vision_and_color/colorlab/vistamodels), including metrics based on (a) normalized DCTs, (b) normalized orthonormal wavelets, and (c) multi-layer models with normalized overcomplete wavelets. All these measures substantially overperform the widely acclaimed SSIM.
-  
-  Our video quality measure developed at the NASA Ames Research Center is based on the same visual response principle. It achieved the 2nd best performance in the VQEG evaluation phase II.
-
-
-  # Table of contents
-
-  - [**(A) Image Quality Metrics**](#a-image-quality-metrics)
-  - [**Models and Distortion measures**](#models-and-distortion-measures)
-  - [**(B) Principled Models**](#b-principled-models)
-
-
-  # (A) Image Quality Metrics
-
-  The distortion metrics in VistaQualityTools rely on the three cortical models we have developed over the years (a) DCT transform and Divisive Normalization [IVC 1997, Displays 00, Patt.Rec.03, IEEE Trans.Im.Proc. 06], (b) Orthonormal Wavelets and Divisive Normalization [JOSA A 10, Neur.Comp. 10], and (c) Cascades of linear transforms and nonlinear saturations [PLoS 18, Front. Neurosci. 18].
-  
-  ## Performance in subjectively rated-databases
-
-  ## Saturation of the distortion and perceptual differences in constant-MSE series
-
-  # Models and Distortion measures
-
-  ## 1995 - 2008: Metric based on linear opponent channels, local-DCT and Div. Norm.
-
-  This metric is based on an invertible representation originally tuned to reproduce contrast response curves [Pons PhD Thesis, 1997]. It was applied to reproduce subjective distortion opinion [Im.Vis.Comp.97, Displays99] and to improve the perceptual quality of JPEG and MPEG through (a) transform coding of the achromatic channel [Eletr.Lett95, Eletr.Lett99, Im.Vis.Comp.00 Patt.Recog.03, IEEE TNN 05, IEEE TIP 06a, IEEE TIP 06b, JMLR08], (b) the color channels [RPSP12], and (c) by improving the motion estimation [LNCS97, Eletr.Lett98, Eletr.Lett00a, Eletr.Lett00b, IEEE TIP 01].
-
-  - **Download the Toolbox!:** [V1_model_DCT_DN_color.zip (74MB)](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_imvideo/vista_toolbox/V1_model_DCT_DN_color.zip)
-
-  ## 2009 - 2010: Metric based on linear opponent channels, Orthogonal Wavelets and Div. Norm.
-
-  In this metric the parameters of the divisive normalization (linear weights, interaction kernel, semisaturation, excitation and summation exponents) were fitted to reproduce subjective image distortion opinion [JOSA A 10] following exhaustive grid search as in [IEEE ICIP 02]. This model (which relies on the orthogonal wavelets of the MatlabPyrTools) was found to have excellent redundancy reduction properties [LNCS10, Neur.Comp.10].
-
-  - **Download the Toolbox!:** [V1_model_wavelet_DN_color.zip (14MB)](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_imvideo/vista_toolbox/V1_model_wavelet_DN_color.zip)
-
-  ## 2013 - 2018: Metric based on a Multi-Layer network with nonlinear opponent channels, Overcomplete Wavelets and Div. Norm.
-  This metric is based on a multi-layer model (or biologically-plausible deep network) that performs the a chain of perceptually meaningful operations: nonlinear opponent chromatic channels, contrast computation, frequency selectivity and energy masking, and wavelet analysis + cross-subband masking [PLoS 18].
-  
-  The parameters of the different layers were fitted in different ways: while the 2nd and 3rd layers (contrast and CSF+masking) were determined using MAximum Differentiation [Malo and Simoncelli SPIE.13], layers 1st and 4th (chromatic front-end and wavelet layer) were fitted to reproduce subjective image distortion data [PLoS 18, Front. Neurosci. 18a, Front. Neurosci. 18b].
-
-  - **Download the Toolbox!:** [BioMultiLayer_L_NL_color.zip (49MB)](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_imvideo/vista_toolbox/BioMultiLayer_L_NL_color.zip)
-
-  # (B) Video Quality Measure
-
-  Our distortion metric is based on weighting the contrast difference between the original and the distorted sequences. This adaptive weighting boosts perceptually visible features and attenuates negligible features. Once the background has been taken into account to consider masking, we compute the energy of the weighted difference using non-quadratic exponents. The parameters of these elements (widths of the filters and the masking kernels, summation exponents) were fitted to maximize the correlation with the subjective opinion. Then, we played with different versions of the model by considering subsets of the elements. We found that masking is as important as the CSF in reproducing the opinion of the observers [IEEE ICIP 02].
-
-  Download the Toolbox!: [video_metric_sso.zip (34kB)](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_imvideo/vista_toolbox/video_metric_sso.zip)
-
-  Performance of the different versions of the vision model as a function of its elements in terms of regression error. **SSO** stands for the CSF of the Standard Spatial Observer, **m** stands for masking, **t** stands for temporal filtering, **p** stands for post-summaton temporal filtering, and h stands for field doubling compensation.</p>
+        <p><p><strong>Contributors:</strong></p>
+<ul>
+<li>Image: J. Malo, V. Laparra, J. Muñoz, I. Epifanio, A.M. Pons, M. Martinez and E. Simoncelli</li>
+<li>Video: J. Malo, J. Gutiérrez and A.B. Watson</li>
+</ul>
+<p>The image distortion measures in VistaQualityTools are based on distances between the original and the distorted scenes in the visual response domain. Therefore, they rely on the cortical descriptions in <a href="./../../../vision_and_color/colorlab/vistamodels"><strong>VistaModels</strong></a>, including metrics based on (a) normalized DCTs, (b) normalized orthonormal wavelets, and (c) multi-layer models with normalized overcomplete wavelets. All these measures substantially overperform the widely acclaimed SSIM.</p>
+<p>Our video quality measure developed at the NASA Ames Research Center is based on the same visual response principle. It achieved the 2nd best performance in the VQEG evaluation phase II.</p>
+<h1 id="table-of-contents">Table of contents</h1>
+<ul>
+<li><a href="#a-image-quality-metrics"><strong>(A) Image Quality Metrics</strong></a></li>
+<li><a href="#models-and-distortion-measures"><strong>Models and Distortion measures</strong></a></li>
+<li><a href="#b-principled-models"><strong>(B) Principled Models</strong></a></li>
+</ul>
+<h1 id="a-image-quality-metrics">(A) Image Quality Metrics</h1>
+<p>The distortion metrics in VistaQualityTools rely on the three cortical models we have developed over the years (a) DCT transform and Divisive Normalization [IVC 1997, Displays 00, Patt.Rec.03, IEEE Trans.Im.Proc. 06], (b) Orthonormal Wavelets and Divisive Normalization [JOSA A 10, Neur.Comp. 10], and (c) Cascades of linear transforms and nonlinear saturations [PLoS 18, Front. Neurosci. 18].</p>
+<h2 id="performance-in-subjectively-rated-databases">Performance in subjectively rated-databases</h2>
+<h2 id="saturation-of-the-distortion-and-perceptual-differences-in-constant-mse-series">Saturation of the distortion and perceptual differences in constant-MSE series</h2>
+<h1 id="models-and-distortion-measures">Models and Distortion measures</h1>
+<h2 id="1995---2008-metric-based-on-linear-opponent-channels-local-dct-and-div-norm">1995 - 2008: Metric based on linear opponent channels, local-DCT and Div. Norm.</h2>
+<p>This metric is based on an invertible representation originally tuned to reproduce contrast response curves [Pons PhD Thesis, 1997]. It was applied to reproduce subjective distortion opinion [Im.Vis.Comp.97, Displays99] and to improve the perceptual quality of JPEG and MPEG through (a) transform coding of the achromatic channel [Eletr.Lett95, Eletr.Lett99, Im.Vis.Comp.00 Patt.Recog.03, IEEE TNN 05, IEEE TIP 06a, IEEE TIP 06b, JMLR08], (b) the color channels [RPSP12], and (c) by improving the motion estimation [LNCS97, Eletr.Lett98, Eletr.Lett00a, Eletr.Lett00b, IEEE TIP 01].</p>
+<ul>
+<li><strong>Download the Toolbox!:</strong> <a href="https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_imvideo/vista_toolbox/V1_model_DCT_DN_color.zip">V1_model_DCT_DN_color.zip (74MB)</a></li>
+</ul>
+<h2 id="2009---2010-metric-based-on-linear-opponent-channels-orthogonal-wavelets-and-div-norm">2009 - 2010: Metric based on linear opponent channels, Orthogonal Wavelets and Div. Norm.</h2>
+<p>In this metric the parameters of the divisive normalization (linear weights, interaction kernel, semisaturation, excitation and summation exponents) were fitted to reproduce subjective image distortion opinion [JOSA A 10] following exhaustive grid search as in [IEEE ICIP 02]. This model (which relies on the orthogonal wavelets of the MatlabPyrTools) was found to have excellent redundancy reduction properties [LNCS10, Neur.Comp.10].</p>
+<ul>
+<li><strong>Download the Toolbox!:</strong> <a href="https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_imvideo/vista_toolbox/V1_model_wavelet_DN_color.zip">V1_model_wavelet_DN_color.zip (14MB)</a></li>
+</ul>
+<h2 id="2013---2018-metric-based-on-a-multi-layer-network-with-nonlinear-opponent-channels-overcomplete-wavelets-and-div-norm">2013 - 2018: Metric based on a Multi-Layer network with nonlinear opponent channels, Overcomplete Wavelets and Div. Norm.</h2>
+<p>This metric is based on a multi-layer model (or biologically-plausible deep network) that performs the a chain of perceptually meaningful operations: nonlinear opponent chromatic channels, contrast computation, frequency selectivity and energy masking, and wavelet analysis + cross-subband masking [PLoS 18].</p>
+<p>The parameters of the different layers were fitted in different ways: while the 2nd and 3rd layers (contrast and CSF+masking) were determined using MAximum Differentiation [Malo and Simoncelli SPIE.13], layers 1st and 4th (chromatic front-end and wavelet layer) were fitted to reproduce subjective image distortion data [PLoS 18, Front. Neurosci. 18a, Front. Neurosci. 18b].</p>
+<ul>
+<li><strong>Download the Toolbox!:</strong> <a href="https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_imvideo/vista_toolbox/BioMultiLayer_L_NL_color.zip">BioMultiLayer_L_NL_color.zip (49MB)</a></li>
+</ul>
+<h1 id="b-video-quality-measure">(B) Video Quality Measure</h1>
+<p>Our distortion metric is based on weighting the contrast difference between the original and the distorted sequences. This adaptive weighting boosts perceptually visible features and attenuates negligible features. Once the background has been taken into account to consider masking, we compute the energy of the weighted difference using non-quadratic exponents. The parameters of these elements (widths of the filters and the masking kernels, summation exponents) were fitted to maximize the correlation with the subjective opinion. Then, we played with different versions of the model by considering subsets of the elements. We found that masking is as important as the CSF in reproducing the opinion of the observers [IEEE ICIP 02].</p>
+<p>Download the Toolbox!: <a href="https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_imvideo/vista_toolbox/video_metric_sso.zip">video_metric_sso.zip (34kB)</a></p>
+<p>Performance of the different versions of the vision model as a function of its elements in terms of regression error. <strong>SSO</strong> stands for the CSF of the Standard Spatial Observer, <strong>m</strong> stands for masking, <strong>t</strong> stands for temporal filtering, <strong>p</strong> stands for post-summaton temporal filtering, and h stands for field doubling compensation.</p>
+</p>
       </div>
     </div>
     
   </div>
   <p>
-    
+    VistaQualityTools is a Matlab Toolbox for full reference color (and also achromatic) image quality assessment based on divisive normalization Human Vision models in the DCT and the Wavelet domains.
   </p>
 </div>
 

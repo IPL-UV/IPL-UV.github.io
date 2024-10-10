@@ -1,7 +1,8 @@
 ---
-title: "Cloud detection over landmarks from MSG SEVIRI images"
 type: "code"
 layout: "single_four"
+
+title: "Cloud detection over landmarks from MSG SEVIRI images"
 images:
   - link: "Ad_Dakhla.mp4"
     title: "Ad Dakhla"
@@ -29,7 +30,6 @@ images:
     title: "Uruguay"
   - link: "Valencia.mp4"
     title: "Valencia"
-
 references:
   - title: "If you have any question about, please, do not hesitate to write an email to Adrián Pérez-Suay (Adrian.Perez at uv dot es)."
     link: "adrian.perez@uv.es"

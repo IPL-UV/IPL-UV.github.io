@@ -4,6 +4,4 @@ img: "gva.webp"
 link: "#"
 description: "ALL"
 weight: 2
-type: "projects"
-layout: "list2"
 ---

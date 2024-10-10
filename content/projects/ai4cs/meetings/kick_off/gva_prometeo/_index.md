@@ -4,6 +4,4 @@ img: "logo_uv.webp"
 link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/projects/ISP_and_PROMETEO.pptx"
 description: "Gustau Camps-Valls, ISP-UV"
 weight: 2
-type: "projects"
-layout: "list2"
 ---

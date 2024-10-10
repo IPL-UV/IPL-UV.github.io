@@ -1,17 +1,16 @@
 ---
-title: "CSFs of the Standard Spatial Observer"
 type: "code"
 layout: "single_four"
+
+title: "CSFs of the Standard Spatial Observer"
 images:
   - link: "csf1.webp"
   - link: "csf2.webp"
-
 references:
   - title: "Video Quality Measures based on the Standard Spatial Observer"
     authors: "A. B. Watson and Jesus Malo."
     publication: "Proc. IEEE Intl. Conf. Im. Proc. Vol. 3, pp. 41-44, 2002."
     link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/icip02.pdf"
-
 links:
   - title: "CSFs_SSO.rar"
     link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/CSFs_SSO.rar"

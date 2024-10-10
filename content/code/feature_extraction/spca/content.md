@@ -1,7 +1,8 @@
 ---
-title: "Sequential Principal Curves Analysis Toolbox (SPCA)"
 type: "code"
 layout: "single_four"
+
+title: "Sequential Principal Curves Analysis Toolbox (SPCA)"
 images:
   - link: "Cuerno_crit_1_ori_dom.webp"
     title: "SPCA (Euclidean Metric)"

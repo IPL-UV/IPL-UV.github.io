@@ -2571,13 +2571,6 @@
       <description></description>
     </item>
     <item>
-      <title>Cloud detection over landmarks from MSG SEVIRI images</title>
-      <link>http://localhost:1313/code/remote_sensing_aplications/randomized_kernels/videos/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/code/remote_sensing_aplications/randomized_kernels/videos/</guid>
-      <description>We cast the problem of cloud identification over landmarks on Meteosat Second Generation (MSG) SEVIRI data. This satellite mission constitutes a fundamental tool for weather forecasting, providing images of the full Earth disc every 15 minutes. Matching the landmarks accurately is of paramount importance in image navigation and registration (INR) models and geometric quality assessment (GQA) in the Level 1 instrument processing chain. Cloud contamination detection over landmarks is an essential step in the MSG processing chain, as undetected clouds are one of the most significant sources of error in landmark matching.</description>
-    </item>
-    <item>
       <title>CLOUDSAT: Machine Learning in Earth Observation: Cloud Screening of Satellite Images</title>
       <link>http://localhost:1313/projects/past/cloudsat/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3227,13 +3220,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/past/quantifying-visual-beauty/</guid>
       <description></description>
-    </item>
-    <item>
-      <title>Randomized Kernels for Large Scale Earth Observation Applications</title>
-      <link>http://localhost:1313/code/remote_sensing_aplications/randomized_kernels/content/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/code/remote_sensing_aplications/randomized_kernels/content/</guid>
-      <description>Current remote sensing applications for bio-geophysical parameter estimation and image classification handle unprecedented amounts of heterogeneous and complex data. New satellite sensors with higher time, space, and wavelength resolutions present computational challenges. Standard inversion techniques struggle to keep up with these new data sources, and classifying land cover from these new images requires substantial memory and processing power. Statistical learning has aided in developing models that can process large-scale Earth observation data.</description>
     </item>
     <item>
       <title>RBIG4IT: Information Theory Measures via Multidimensional Gaussianization</title>

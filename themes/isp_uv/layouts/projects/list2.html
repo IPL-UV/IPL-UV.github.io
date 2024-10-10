@@ -12,8 +12,7 @@
       </a>
       <div class="text">
         <a href="{{ .Params.link }}" class="nameLink_a"> {{ .Params.title }} </a>
-        <p>{{ .Params.description | markdownify }}</p>
-        <p>{{ .RawContent | safeHTML }}</p>
+        <p>{{ .Content | markdownify }}</p>
       </div>
     </div>
     {{ end }}

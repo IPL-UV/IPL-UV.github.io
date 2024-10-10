@@ -4,6 +4,4 @@ img: "csic.webp"
 link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/projects/03_PRO_INRF_Valencia2023_MARCELO_CSIC.pdf"
 description: "Actividades CSIC. Marcelo Bertalmío, CSIC "
 weight: 2
-type: "projects"
-layout: "list2"
 ---
