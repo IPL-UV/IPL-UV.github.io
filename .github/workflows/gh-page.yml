@@ -24,7 +24,7 @@ jobs:
           # extended: true
 
       - name: Build
-        run: hugo --minify ./docs --baseURL=https://ipl-uv.github.io/
+        run: hugo server -d ./docs --baseURL=https://ipl-uv.github.io/ --appendPort=false
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
