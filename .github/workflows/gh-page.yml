@@ -29,14 +29,9 @@ jobs:
       - name: Build Hugo site
         run: hugo --minify --config hugo-alt.toml
 
-      # Paso opcional: Listar contenido de la carpeta `public` para verificación
-      - name: List content of public
-        run: ls -la ./public
-
       # Paso 4: Despliegue en GitHub Pages
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
           publish_branch: ispages3  # La rama de publicación en GitHub Pages
