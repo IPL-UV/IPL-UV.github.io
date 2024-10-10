@@ -34,14 +34,14 @@ jobs:
           publish_dir: ./docs
 
 
-      - name: Build for gh-isp
-        run: hugo --minify --config config-isp.toml
-
-      # Deploy to gh-isp
-      - name: Deploy to gh-isp
-        uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main'
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs
-          publish_branch: gh-isp
+          - name: Build for gh-isp
+          run: hugo --minify --config config-isp.toml
+  
+        # Deploy to gh-isp
+        - name: Deploy to gh-isp
+          uses: peaceiris/actions-gh-pages@v3
+          if: github.ref == 'refs/heads/main'
+          with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            publish_dir: ./docs
+            publish_branch: gh-isp
