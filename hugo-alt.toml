@@ -1,6 +1,6 @@
 #baseURL = "https://ipl-uv.github.io/" 
 baseURL = "https://isp.uv.es/github/"
-publishDir = "docs"
+publishDir = "public"
 
 #baseURL = "http://127.0.0.1/isp/"
 #publishDir = "isp"
