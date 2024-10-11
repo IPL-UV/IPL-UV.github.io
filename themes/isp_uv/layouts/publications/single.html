@@ -92,7 +92,7 @@
       </span>
 
       <span class="if doi">
-        <div style="display: inline-block;" class='doi altmetric-embed'data-hide-no-mentions='true'  data-link-target='_blank'></div>
+        <div style="display: inline-block;" class="altmetric-embed" data-badge-popover="right" data-badge-type="donut" data-hide-no-mentions="true" ></div>
       </span>
       
       <div class="bibtexdata alert alert-success" style="display: none;">
@@ -105,7 +105,7 @@
 <script type="text/javascript" src={{ relURL "js/jquery-1.12.4.min.js" }} defer></script>
 <script type="text/javascript" src={{ relURL "js/bibtex_js.js" }} defer></script>
 <script type="text/javascript" src={{ relURL "js/bibtex_functions.js" }} defer></script>
-<script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <!-- Altmetric script -->
+<script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
 <script>
 function toggleBibtex(button) {
   const container = $(button).closest('.bib-item');
@@ -154,6 +154,16 @@ document.addEventListener("DOMContentLoaded", function() {
         });
       }
     });
+
+    function updateDOILinks() {
+      $(".bib-item .doi .doi").each(function() {
+        const doiLink = $(this).text().trim();
+        if (doiLink) {
+          const doiValue = doiLink.replace(/^https?:\/\/(www\.)?doi\.org\//, '');
+          $(this).attr("href", `https://${doiValue}`);
+        }
+      });
+    }
 
     // Populate year filter
     let yearArray = Array.from(yearSet);

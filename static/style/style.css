@@ -61,14 +61,13 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 .title-container  h1 {
-  /* color of title 1 */
-  
-  /* color: #000000; */
   background-color: #c5c5c5;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -150,11 +149,6 @@ h3 {
   font-size: 0.75rem;
 }
 
-.text a {
-  color: #337ab7;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
 
 @media (max-width: 768px) {
   .grid-item {
@@ -405,6 +399,12 @@ h3 {
 .panel-item:hover {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   transform: translateY(-0.3125rem);
+}
+
+.panel-item .text a {
+  color: #337ab7;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .panel-header {
@@ -1278,4 +1278,18 @@ h3 {
   height: 10rem;
   object-fit: contain;
   border-radius: 100%;
+}
+
+
+@media (min-width: 10px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: var(--bs-navbar-nav-link-padding-x) !important;
+    padding-left: var(--bs-navbar-nav-link-padding-x) !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-nav .nav-link {
+    font-size: 1.2rem;
+  }
 }

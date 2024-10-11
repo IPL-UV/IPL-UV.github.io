@@ -16,130 +16,125 @@
   <script src=/js/mode.js></script>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-  <div class="container-fluid">
-    <a href="./" class="d-lg-none d-flex align-items-center a_logonav">
-      <img src=/images/isp_logo_sinfondo.webp alt="ISP Icon" height="30" class="logo_nav">
-      <span class="ms-2 text-isp">ISP</span>
-    </a>
-    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
-      data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
-      aria-label="Toggle navigation" style="height: 40px;">
+  <nav class="custom-navbars">
+  <div class="custom-container">
+    <a href="/" class="custom-logo custom-hide-on-large">
+      <img src=/images/isp_logo_sinfondo.webp alt="ISP Icon" class="custom-logo_nav">
+      <span class="custom-text-isp">ISP</span>
+    </a>    
+    <button class="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <ul class="navbar-nav mx-auto mb-lg-0">
+    <div class="custom-navbar-collapse">
+      <ul class="custom-navbar-nav">
         
         
         
-        <li class="nav-item px-2 nav-item-highlight d-none d-lg-block">
-          <a class="nav-link a" aria-current="page" href="/">ISP</a>
+        
+        <li class="custom-nav-item custom-desktop-only">
+          <a class="custom-nav-link" href="/">ISP</a>
         </li>
         
         
         
-        <li class="nav-item px-2 nav-item-highlight">
-          <a class="nav-link a" aria-current="page" href="/people/">People</a>
+        <li class="custom-nav-item">
+          <a class="custom-nav-link" href="/people/">People</a>
         </li>
         
         
         
-        <li class="nav-item dropdown px-2 nav-item-highlight">
-          <a class="nav-link dropdown-toggle a" href="/research/philosophy" id="navbarDropdownResearch" role="button"
-            aria-expanded="false">
-            Research
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownResearch">
+        <li class="custom-nav-item custom-dropdown">
+          <a class="custom-nav-link custom-dropdown-toggle" href="/research/philosophy/">Research</a>
+          <ul class="custom-dropdown-menu">
             
-            <li><a class="dropdown-item a" href="/research/machine_learning/">Machine learning</a></li>
+            <li><a class="custom-dropdown-item" href="/research/philosophy/">Philosophy</a></li>
             
-            <li><a class="dropdown-item a" href="/research/visual_neuroscience/">Visual neuroscience</a></li>
+            <li><a class="custom-dropdown-item" href="/research/machine_learning/">Machine learning</a></li>
             
-            <li><a class="dropdown-item a" href="/research/visual_brain/">Visual brain</a></li>
+            <li><a class="custom-dropdown-item" href="/research/visual_neuroscience/">Visual neuroscience</a></li>
             
-            <li><a class="dropdown-item a" href="/research/earth_science/">Earth science</a></li>
+            <li><a class="custom-dropdown-item" href="/research/visual_brain/">Visual brain</a></li>
             
-            <li><a class="dropdown-item a" href="/research/social_science">Social science</a></li>
+            <li><a class="custom-dropdown-item" href="/research/earth_science/">Earth science</a></li>
+            
+            <li><a class="custom-dropdown-item" href="/research/social_science">Social science</a></li>
             
           </ul>
         </li>
         
         
         
-        <li class="nav-item px-2 nav-item-highlight">
-          <a class="nav-link a" aria-current="page" href="/projects/">Projects</a>
+        <li class="custom-nav-item">
+          <a class="custom-nav-link" href="/projects/">Projects</a>
         </li>
         
         
         
-        <li class="nav-item px-2 nav-item-highlight">
-          <a class="nav-link a" aria-current="page" href="/facilities/">Facilities</a>
+        <li class="custom-nav-item">
+          <a class="custom-nav-link" href="/facilities/">Facilities</a>
         </li>
         
         
         
-        <li class="nav-item dropdown px-2 nav-item-highlight">
-          <a class="nav-link dropdown-toggle a" href="/publications/journals/" id="navbarDropdownPublications" role="button"
-            aria-expanded="false">
-            Publications
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownPublications">
+        <li class="custom-nav-item custom-dropdown">
+          <a class="custom-nav-link custom-dropdown-toggle" href="/publications/journals/">Publications</a>
+          <ul class="custom-dropdown-menu">
             
-            <li><a class="dropdown-item a" href="/publications/journals/">Journals</a></li>
+            <li><a class="custom-dropdown-item" href="/publications/journals/">Journals</a></li>
             
-            <li><a class="dropdown-item a" href="/publications/conferences/">Conferences</a></li>
+            <li><a class="custom-dropdown-item" href="/publications/conferences/">Conferences</a></li>
             
-            <li><a class="dropdown-item a" href="/publications/books/">Books</a></li>
+            <li><a class="custom-dropdown-item" href="/publications/books/">Books</a></li>
             
-            <li><a class="dropdown-item a" href="/publications/talks/">Talks</a></li>
+            <li><a class="custom-dropdown-item" href="/publications/talks/">Talks</a></li>
             
-            <li><a class="dropdown-item a" href="/publications/technical_reports/">Technical Reports</a></li>
+            <li><a class="custom-dropdown-item" href="/publications/technical_reports/">Technical Reports</a></li>
             
-            <li><a class="dropdown-item a" href="/publications/theses/">Theses</a></li>
+            <li><a class="custom-dropdown-item" href="/publications/theses/">Theses</a></li>
             
           </ul>
         </li>
         
         
         
-        <li class="nav-item px-2 nav-item-highlight">
-          <a class="nav-link a" aria-current="page" href="/code/">Code</a>
+        <li class="custom-nav-item">
+          <a class="custom-nav-link" href="/code/">Code</a>
         </li>
         
         
         
-        <li class="nav-item px-2 nav-item-highlight">
-          <a class="nav-link a" aria-current="page" href="/data/">Data</a>
+        <li class="custom-nav-item">
+          <a class="custom-nav-link" href="/data/">Data</a>
         </li>
         
         
         
-        <li class="nav-item px-2 nav-item-highlight">
-          <a class="nav-link a" aria-current="page" href="/seminars/">Seminars</a>
+        <li class="custom-nav-item">
+          <a class="custom-nav-link" href="/seminars/">Seminars</a>
         </li>
         
         
         
-        <li class="nav-item px-2 nav-item-highlight">
-          <a class="nav-link a" aria-current="page" href="/courses/">Courses</a>
+        <li class="custom-nav-item">
+          <a class="custom-nav-link" href="/courses/">Courses</a>
         </li>
         
         
         
-        <li class="nav-item px-2 nav-item-highlight">
-          <a class="nav-link a" aria-current="page" href="/collaborators/">Collaborators</a>
+        <li class="custom-nav-item">
+          <a class="custom-nav-link" href="/collaborators/">Collaborators</a>
         </li>
         
         
         
-        <li class="nav-item px-2 nav-item-highlight">
-          <a class="nav-link a" aria-current="page" href="/news/">News</a>
+        <li class="custom-nav-item">
+          <a class="custom-nav-link" href="/news/">News</a>
         </li>
         
         
         
-        <li class="nav-item px-2 nav-item-highlight">
-          <a class="nav-link a" aria-current="page" href="/contact/">Contact</a>
+        <li class="custom-nav-item">
+          <a class="custom-nav-link" href="/contact/">Contact</a>
         </li>
         
         
@@ -149,196 +144,296 @@
 </nav>
 
 
-
-
-
-
 <style>
-.navbar {
-  --bs-navbar-padding-y: 0rem !important;
-  background-color: #222 !important;
+.custom-navbars {
+  background-color: #222;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  z-index: 1000;
+  height: 3rem;
 }
 
-.a {
-  color: #949494 !important;
+.custom-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
-.a:hover {
-  color: #fff !important;
+ 
+.custom-logo {
+  display: flex;
+  align-items: center;
 }
 
-.nav-item-highlight {
-  padding: 0.4rem;
+.custom-logo_nav {
+  height: 30px;
 }
 
-.nav-item-highlight:hover {
-  background-color: #2d70aa !important;
+ 
+.custom-hide-on-large {
+  display: none;
 }
 
-.dropdown-menu {
-  background-color: #333 !important;
-  color: #fff !important;
-  display: block;
-}
-
-.dropdown-item {
-  color: #949494 !important;
-}
-
-.dropdown-item:hover {
-  background-color: #2d70aa !important;
-  color: #fff !important;
-}
-
-.navbar-nav li.nav-item .nav-link,
-.dropdown-menu .dropdown-item {
-  transition: color 0.3s, background-color 0.3s;
-}
-
-.nav-link.active,
-.dropdown-item.active {
-  color: #fff !important;
-  background-color: #007bff !important;
+.navbar-toggler {
+  display: none;
 }
 
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-.navbar-toggler {
-  border: none;
+ 
+.custom-navbar-collapse {
+  flex-grow: 0.95;
+  height: 100%;
+  align-content: center;
 }
 
-.navbar-toggler:focus {
-  outline: none;
+.custom-navbar-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  height: 100%;
 }
 
-@media (min-width: 992px) {
-  .dropdown-menu {
-    display: none;
-  }
-
-  .dropdown:hover .dropdown-menu {
-    display: block;
-  }
+.custom-nav-item {
+  flex: 1 1 auto;
+  text-align: center;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  height: 100%;
+  display: flex;
+  align-items: center;  
+  justify-content: center;  
 }
 
-@media (max-width: 991px) {
-  .navbar-nav {
-    max-height: calc(100vh - 56px);
-    overflow-y: auto;
-  }
+.custom-nav-item:hover {
+  background-color: #a0a0a0;
+  border-color: #fff;
+}
 
-  .navbar-nav::-webkit-scrollbar {
-    width: 9px;
-  }
+.custom-nav-link {
+  text-decoration: none;
+  color: #f8f8f8;
+  font-size: clamp(1rem, 1.1vw, 1.1rem);
+  position: relative;
+  display: block;
+}
 
-  .navbar-nav::-webkit-scrollbar-thumb {
-    background-color: #888;
-    border-radius: 10px;
-  }
+ 
+.custom-dropdown-menu {
+  position: absolute;
+  background-color: rgba(46, 46, 46, 0.9);  
+  text-decoration: none;
+  display: none;
+  list-style: none;
+  padding: 0.5rem 0;
+  margin: 0;
+  border-radius: 5px;
+  font-size: clamp(1rem, 1.1vw, 1.1rem);
+  top: 3rem;
+}
 
-  .navbar-nav::-webkit-scrollbar-thumb:hover {
-    background-color: #555;
-  }
+.custom-dropdown-toggle::after {
+  content: "▼";  
+  font-size: 0.5rem;
+  margin-left: 0.3rem;
+  color: #f8f8f8;
+  display: inline-block;
+  vertical-align: middle;
+}
 
-  .navbar-nav .nav-link {
-    font-size: 1.2rem;
-  }
+.custom-dropdown-item {
+  padding: 0rem 1rem;
+  color: #f8f8f8;
+  text-decoration: none;
+  margin: 0;
+  display: block;
+  border: 2px solid transparent;
+  border-radius: 8px;
+}
 
-  .dropdown-menu .dropdown-item {
-    font-size: 1rem;
-  }
+.custom-dropdown-item:hover {
+  background-color: #a0a0a0;
+  border-color: #fff;
+}
 
-  .dropdown-toggle::after {
-    display: inline-block;
-    margin-left: .255em;
-    vertical-align: .255em;
-    content: "";
-    border-top: .3em solid;
-    border-right: .3em solid transparent;
-    border-bottom: 0;
-    border-left: .3em solid transparent;
-  }
+.custom-dropdown:hover .custom-dropdown-menu {
+  display: block;
+}
 
-  .navbar .dropdown-toggle::after {
-    content: none !important;
-  }
+.custom-nav-item.active {
+  background-color: #464646;  
+}
 
-  .navbar-toggler-icon {
-    width: 1.2em;
-    height: 1.2em;
+.custom-dropdown-item.active {
+  background-color: #535353;
+}
+
+ 
+@media (max-width: 1070px) {
+  .custom-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
   }
 
   .navbar-toggler {
-    border: none !important;
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
   }
 
-  .navbar-toggler:focus {
-    box-shadow: none !important;
+  .custom-hide-on-large {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
   }
 
-  .d-flex {
-    height: 45px;
+  .custom-navbar-collapse {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(46, 46, 46, 0.9);  
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    z-index: 999;
+    height: auto;  
+    overflow: hidden;
+    max-height: 0;  
+    transition: max-height 0.3s ease-out;
+    padding: 0.5rem 0;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
   }
 
-  .a_logonav{
-    text-decoration: none !important;
+  .custom-navbar-collapse.show {
+    display: flex;
+    max-height: 100vh;  
+    overflow-y: auto;  
   }
 
-  .text-isp {
-    font-size: 1.3rem;
-    color: #9d9d9d;
-    display: inline-block;
-    vertical-align: middle;
-    text-decoration: none !important;
+  .custom-navbar-nav {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
 
-  .navbar-nav {
-        max-height: calc(50vh - 56px);
-        overflow-y: auto;
-    }
+  .custom-nav-item {
+    width: 100%;
+    margin: 0;
+    display: block;
+  }
+
+  .custom-nav-item a {
+    text-align: left;
+    margin-left: 10%;
+  }
+
+  .custom-text-isp {
+    margin-left: 0.5rem;
+    font-size: 1rem;  
+    text-decoration: none;
+    color: #f8f8f8;
+  }
+
+  .custom-nav-link {
+    width: 100%;
+    text-align: center;
+  }
+
+  .custom-dropdown-menu {
+    position: static;
+    display: none;
+    width: 100%;
+    background-color: #333;
+  }
+
+  .custom-dropdown:hover .custom-dropdown-menu,
+  .custom-dropdown .custom-dropdown-menu.show {
+    display: block;
+  }
 }
 
 
 </style>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    let dropdowns = document.querySelectorAll('.navbar .dropdown');
+document.addEventListener('DOMContentLoaded', function () {
+  const toggler = document.querySelector('.navbar-toggler');
+  const navbarCollapse = document.querySelector('.custom-navbar-collapse');
+  const currentPath = window.location.pathname;
 
-    dropdowns.forEach(function (dropdown) {
-      let link = dropdown.querySelector('.dropdown-toggle');
+  toggler.addEventListener('click', function () {
+    navbarCollapse.classList.toggle('show');
+  });
 
-      
-      link.addEventListener('click', function (event) {
-        if (window.innerWidth < 992) {
-          if (event.target === link) {
-            window.location.href = link.href;
-          }
-        }
-      });
+  
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('.custom-navbars')) {
+      navbarCollapse.classList.remove('show');
+    }
+  });
 
-      let items = dropdown.querySelectorAll('.dropdown-item');
-
-      
-      items.forEach(function (item) {
-        item.addEventListener('click', function () {
-          window.location.href = item.href;
-        });
-      });
-    });
+  
+  const navLinks = document.querySelectorAll('.custom-nav-link');
+  navLinks.forEach(link => {
+    const linkPath = new URL(link.href).pathname;
 
     
-    document.addEventListener('click', function (event) {
-      if (window.innerWidth < 992 && !event.target.closest('.navbar .dropdown')) {
-        dropdowns.forEach(function (dropdown) {
-          dropdown.querySelector('.dropdown-menu').classList.remove('show');
-        });
+    if (linkPath === currentPath && currentPath !== '/') {
+      link.closest('.custom-nav-item').classList.add('active');
+    }
+  });
+
+  
+  const dropdownItems = document.querySelectorAll('.custom-dropdown-item');
+  dropdownItems.forEach(item => {
+    const itemPath = new URL(item.href).pathname;
+
+    
+    if (itemPath === currentPath) {
+      item.classList.add('active');
+
+      
+      const parentDropdown = item.closest('.custom-dropdown');
+      if (parentDropdown) {
+        parentDropdown.classList.add('active');
+      }
+    }
+  });
+
+  
+  const dropdownParents = document.querySelectorAll('.custom-dropdown');
+  dropdownParents.forEach(parent => {
+    const childLinks = parent.querySelectorAll('.custom-dropdown-item');
+    childLinks.forEach(child => {
+      const childPath = new URL(child.href).pathname;
+
+      
+      if (childPath === currentPath) {
+        parent.classList.add('active');
       }
     });
   });
+});
+
 </script>
+
+
+
+
   <main>
     <div class="container">
       
