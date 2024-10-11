@@ -807,7 +807,7 @@
         </a>
       </span>
       <span class="if doi">
-        <a class="doi">
+        <a class="doi" >
           <button type="button" class="btn btn-xss btn-warning">DOI</button>
         </a>
       </span>
@@ -875,10 +875,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
   function updateDOILinks() {
     $(".bib-item .doi").each(function() {
-      const doiText = $(this).text().trim();
-      if (doiText) {
-        const fullDOILink = `https://doi.org/${doiText.replace(/^https?:\/\/(www\.)?doi\.org\//, '')}`;
-        $(this).attr("href", fullDOILink);
+      const doiLink = $(this).text().trim();
+      if (doiLink) {
+        $(this).attr("href", `https://${doiLink}`);
       }
     });
   }
@@ -1009,6 +1008,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   initializeBibtex();
 });
+
 
 </script>
 
