@@ -359,7 +359,7 @@
 	pages         = {1-11},
 	volume = {62},
 	journal      = {IEEE Transactions on Geoscience and Remote Sensing},
-	doi = {doi.org/10.1109/TGRS.2024.3358231},
+	doi = {/doi.org/10.1109/TGRS.2024.3358231},
 	project = {usmile}
 }
 
@@ -4627,7 +4627,7 @@ project      = {xaida,usmile},
         </a>
       </span>
       <span class="if doi">
-        <a class="doi">
+        <a class="doi" href="" target="_blank" >
           <button type="button" class="btn btn-xss btn-warning">DOI</button>
         </a>
       </span>
@@ -4687,8 +4687,19 @@ document.addEventListener("DOMContentLoaded", function() {
       bibtexDisplay.displayBibtex(bibtexData, $("#bibtex_display"), {});
       addYearsAndProjects();
       updateFilters();
+      updateDOILinks(); 
       document.getElementById('content-container').style.display = 'block';
       document.getElementById('loading-spinner').style.display = 'none';
+    });
+  }
+
+  function updateDOILinks() {
+    $(".bib-item .doi").each(function() {
+      const doiLink = $(this).text().trim();
+      if (doiText) {
+        const fullDOILink = `https://${doiLink}`;
+        $(this).attr("href", fullDOILink);
+      }
     });
   }
 
@@ -4818,6 +4829,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   initializeBibtex();
 });
+
 </script>
 
 

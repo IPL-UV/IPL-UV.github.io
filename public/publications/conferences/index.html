@@ -5578,8 +5578,7 @@
       </span>
 
       <span class="if doi">
-        <div style="display: inline-block;" class='doi altmetric-embed' data-hide-no-mentions='true'
-          data-link-target='_blank'></div>
+        <div style="display: inline-block;" class='doi altmetric-embed'data-hide-no-mentions='true'  data-link-target='_blank'></div>
       </span>
       
       <div class="bibtexdata alert alert-success" style="display: none;">
@@ -5609,8 +5608,19 @@ document.addEventListener("DOMContentLoaded", function() {
       bibtexDisplay.displayBibtex(bibtexData, $("#bibtex_display"), {});
       addYearsAndProjects();
       updateFilters();
+      updateDOILinks(); 
       document.getElementById('content-container').style.display = 'block';
       document.getElementById('loading-spinner').style.display = 'none';
+    });
+  }
+
+  function updateDOILinks() {
+    $(".bib-item .doi").each(function() {
+      const doiText = $(this).text().trim();
+      if (doiText) {
+        const fullDOILink = `https://doi.org/${doiText.replace(/^https?:\/\/(www\.)?doi\.org\//, '')}`;
+        $(this).attr("href", fullDOILink);
+      }
     });
   }
 
@@ -5740,6 +5750,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   initializeBibtex();
 });
+
 </script>
 
 

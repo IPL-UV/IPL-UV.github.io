@@ -4,7 +4,7 @@
     <title>Remote sensing image databases on ISP - Image and Signal Processing group</title>
     <link>http://localhost:1313/data/remote_sensing_image/</link>
     <description>Recent content in Remote sensing image databases on ISP - Image and Signal Processing group</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <atom:link href="http://localhost:1313/data/remote_sensing_image/index.xml" rel="self" type="application/rss+xml" />
   </channel>
