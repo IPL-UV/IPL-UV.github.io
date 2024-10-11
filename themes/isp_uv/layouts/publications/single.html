@@ -62,7 +62,7 @@
         </a>
       </span>
       <span class="if doi">
-        <a class="doi" >
+        <a class="doi">
           <button type="button" class="btn btn-xss btn-warning">DOI</button>
         </a>
       </span>
@@ -122,18 +122,8 @@ document.addEventListener("DOMContentLoaded", function() {
       bibtexDisplay.displayBibtex(bibtexData, $("#bibtex_display"), {});
       addYearsAndProjects();
       updateFilters();
-      updateDOILinks(); // Actualizar los enlaces DOI
       document.getElementById('content-container').style.display = 'block';
       document.getElementById('loading-spinner').style.display = 'none';
-    });
-  }
-
-  function updateDOILinks() {
-    $(".bib-item .doi").each(function() {
-      const doiLink = $(this).text().trim();
-      if (doiLink) {
-        $(this).attr("href", `https://${doiLink}`);
-      }
     });
   }
 
@@ -263,8 +253,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
   initializeBibtex();
 });
-
-
 </script>
 
 {{ end }}

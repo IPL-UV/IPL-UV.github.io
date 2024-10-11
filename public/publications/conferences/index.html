@@ -5548,7 +5548,7 @@
         </a>
       </span>
       <span class="if doi">
-        <a class="doi" >
+        <a class="doi">
           <button type="button" class="btn btn-xss btn-warning">DOI</button>
         </a>
       </span>
@@ -5614,14 +5614,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 
-  function updateDOILinks() {
-    $(".bib-item .doi").each(function() {
-      const doiLink = $(this).text().trim();
-      if (doiLink) {
-        $(this).attr("href", `https://${doiLink}`);
-      }
-    });
-  }
 
   function addYearsAndProjects() {
     let yearSet = new Set();
