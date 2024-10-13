@@ -326,14 +326,7 @@ img: ""                                       # Image file name or URL (Optional
 
 Whenever you want to add new images to the site, place them in the appropriate directory under `assets/images/`. The folder structure in `assets/images/` should match the name of the main sections of the website (e.g., people, projects, etc.). Images should preferably be in `.webp` format for better performance.
 
-You don’t need to provide the full path when referencing images in the content. Just specify the image file name and its extension:
-
-```bash
-img: "imagename.webp" 
-img: imagename.webp
-```
-
-
+You don’t need to provide the full path when referencing images in the content. Just specify the image file name and its extension.
 
 ## **Step 4: 👀 Testing Your Changes Locally**
 
