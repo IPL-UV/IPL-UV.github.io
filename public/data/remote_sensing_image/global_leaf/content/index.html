@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="shortcut icon" href=/images/favicon.ico type="image/x-icon">
+  <link rel="shortcut icon" href=/images/isp_ico.webp type="image/x-icon">
   <link rel="stylesheet" href=/style/style.css>
   
   <script src=/js/mode.js></script>
@@ -142,301 +142,6 @@
     </div>
   </div>
 </nav>
-
-<style>
-
-.custom-navbars {
-  background-color: #222;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 1rem;
-  z-index: 1000;
-  height: 3rem;
-}
-
-.custom-container {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
- 
-.custom-logo {
-  display: flex;
-  align-items: center;
-}
-
-.custom-logo_nav {
-  height: 30px;
-}
-
-
- 
-.custom-hide-on-large {
-  display: none;
-}
-
-.navbar-toggler {
-  display: none;
-}
-
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
- 
-.custom-navbar-collapse {
-  flex-grow: 0.95;
-  height: 100%;
-  align-content: center;
-}
-
-.custom-navbar-nav {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  padding: 0;
-  margin: 0;
-  height: 100%;
-}
-
-.custom-nav-item {
-  flex: 1 1 auto;
-  text-align: center;
-  border: 2px solid transparent;
-  border-radius: 8px;
-  height: 100%;
-
-  display: flex;
-  align-items: center;  
-  justify-content: center;  
-}
-.custom-nav-item:hover {
-  background-color: #a0a0a0;
-  border-color: #fff;
-}
-
-.custom-nav-link{
-  text-decoration: none;
-  color: #f8f8f8;
-  font-size: clamp(1rem, 1.1vw, 1.1rem);
-  position: relative;
-  display: block;
-}
-
- 
-.custom-dropdown-menu {
-  position: absolute;
-  background-color: rgba(46, 46, 46, 0.9);  
-  text-decoration: none;
-  display: none;
-  list-style: none;
-  padding: 0.5rem 0;
-  margin: 0;
-  border-radius: 5px;
-  font-size: clamp(1rem, 1.1vw, 1.1rem);
-  top: 3rem;
-}
-
-.custom-dropdown-toggle::after {
-  content: "▼";  
-  font-size: 0.5rem;
-  margin-left: 0.3rem;
-  color: #f8f8f8;
-  display: inline-block;
-  vertical-align: middle;
-}
-.custom-dropdown-item {
-  padding: 0rem 1rem;
-  color: #f8f8f8;
-  text-decoration: none;
-  margin: 0;
-  display: block;
-  border: 2px solid transparent;
-  border-radius: 8px;
-}
-
-.custom-dropdown-item:hover {
-  background-color: #a0a0a0;
-  border-color: #fff;
-}
-
-.custom-dropdown:hover .custom-dropdown-menu {
-  display: block;
-}
-
-
-.custom-nav-link.active {
-  background-color: #007bff;  
-  color: #fff !important;     
-  border-color: #007bff;
-}
-
-.custom-dropdown-item.active {
-  background-color: #007bff;
-  color: #fff !important;
-}
-
- 
-@media (max-width: 1070px) {
-  .custom-container {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  .navbar-toggler {
-    display: block;
-    position: absolute;
-    right: 1rem;
-    top: 0.5rem;
-  }
-
-  .custom-hide-on-large {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-  }
-
-  .custom-navbar-collapse {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: rgba(46, 46, 46, 0.9);  
-    position: absolute;
-    top: 3rem;
-    left: 0;
-    z-index: 999;
-    height: auto;  
-    overflow: hidden;
-    max-height: 0;  
-    transition: max-height 0.3s ease-out;
-    padding: 0.5rem 0;
-    border-bottom-left-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
-  }
-
-  .custom-navbar-collapse.show {
-    display: flex;
-    max-height: 100vh;  
-    overflow-y: auto;  
-  }
-  .custom-navbar-nav {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-
-  .custom-nav-item {
-    width: 100%;
-    margin: 0;
-    display: block;
-  }
-  .custom-nav-item a {
-    text-align: left;
-    margin-left: 10%;
-  }
-  .custom-text-isp {
-      margin-left: 0.5rem;
-      font-size: 1rem;  
-      text-decoration: none;
-      color: #f8f8f8;
-    }
-
-  .custom-nav-link {
-    width: 100%;
-    text-align: center;
-  }
-
-  .custom-dropdown-menu {
-    position: static;
-    display: none;
-    width: 100%;
-    background-color: #333;
-  }
-
-  .custom-dropdown:hover .custom-dropdown-menu,
-  .custom-dropdown .custom-dropdown-menu.show {
-    display: block;
-  }
-}
-
-
-</style>
-
-<script>
-
-document.addEventListener('DOMContentLoaded', function () {
-  const toggler = document.querySelector('.navbar-toggler');
-  const navbarCollapse = document.querySelector('.custom-navbar-collapse');
-  const currentPath = window.location.pathname;
-
-  toggler.addEventListener('click', function () {
-    navbarCollapse.classList.toggle('show');
-  });
-
-  
-  document.addEventListener('click', function (e) {
-    if (!e.target.closest('.custom-navbars')) {
-      navbarCollapse.classList.remove('show');
-    }
-  });
-
-  
-  const navLinks = document.querySelectorAll('.custom-nav-link');
-  navLinks.forEach(link => {
-    const linkPath = new URL(link.href).pathname;
-
-    
-    if (linkPath === currentPath && currentPath !== '/') {
-      link.classList.add('active');
-    }
-  });
-
-  
-  const dropdownItems = document.querySelectorAll('.custom-dropdown-item');
-  dropdownItems.forEach(item => {
-    const itemPath = new URL(item.href).pathname;
-
-    
-    if (itemPath === currentPath) {
-      item.classList.add('active');
-
-      
-      const parentDropdown = item.closest('.custom-dropdown');
-      if (parentDropdown) {
-        parentDropdown.querySelector('.custom-nav-link').classList.add('active');
-      }
-    }
-  });
-
-  
-  const dropdownParents = document.querySelectorAll('.custom-dropdown');
-  dropdownParents.forEach(parent => {
-    const childLinks = parent.querySelectorAll('.custom-dropdown-item');
-    childLinks.forEach(child => {
-      const childPath = new URL(child.href).pathname;
-
-      
-      if (childPath === currentPath) {
-        parent.querySelector('.custom-nav-link').classList.add('active');
-      }
-    });
-  });
-});
-
-
-</script>
-
-
-
-
   <main>
     <div class="container">
       
@@ -465,12 +170,10 @@ document.addEventListener('DOMContentLoaded', function () {
             
             <div class="gallery-item">
                 
-
                 <a href="javascript:void(0);" class="gallery-thumbnail" onclick="openModal('\/images\/data\/Scheme.webp', '[Flowchart of the Processing Chain](#what-is-this-about)', 'A schematic representation of the modular processing chain used for deriving global leaf trait maps.')">
                     <img src="/images/data/Scheme.webp" alt="[Flowchart of the Processing Chain](#what-is-this-about)">
                 </a>
                 
-
                 
                 <p class="gallery-title"><a href="#what-is-this-about">Flowchart of the Processing Chain</a></p>
                 
@@ -484,12 +187,10 @@ document.addEventListener('DOMContentLoaded', function () {
             
             <div class="gallery-item">
                 
-
                 <a href="javascript:void(0);" class="gallery-thumbnail" onclick="openModal('\/images\/data\/SLA_map.webp', '[Specific Leaf Area (SLA) Map](#specific-leaf-area-sla)', 'Global map of specific leaf area showing variations in plant leaf traits across the globe.')">
                     <img src="/images/data/SLA_map.webp" alt="[Specific Leaf Area (SLA) Map](#specific-leaf-area-sla)">
                 </a>
                 
-
                 
                 <p class="gallery-title"><a href="#specific-leaf-area-sla">Specific Leaf Area (SLA) Map</a></p>
                 
@@ -503,12 +204,10 @@ document.addEventListener('DOMContentLoaded', function () {
             
             <div class="gallery-item">
                 
-
                 <a href="javascript:void(0);" class="gallery-thumbnail" onclick="openModal('\/images\/data\/SLA_maperr.webp', '[SLA Uncertainty Map](#specific-leaf-area-sla)', 'Uncertainty estimates for the global specific leaf area (SLA) map.')">
                     <img src="/images/data/SLA_maperr.webp" alt="[SLA Uncertainty Map](#specific-leaf-area-sla)">
                 </a>
                 
-
                 
                 <p class="gallery-title"><a href="#specific-leaf-area-sla">SLA Uncertainty Map</a></p>
                 
@@ -522,12 +221,10 @@ document.addEventListener('DOMContentLoaded', function () {
             
             <div class="gallery-item">
                 
-
                 <a href="javascript:void(0);" class="gallery-thumbnail" onclick="openModal('\/images\/data\/LDMC_map.webp', '[Leaf Dry Matter Content (LDMC) Map](#leaf-dry-matter-content-ldmc)', 'Global map of leaf dry matter content reflecting plant growth strategies.')">
                     <img src="/images/data/LDMC_map.webp" alt="[Leaf Dry Matter Content (LDMC) Map](#leaf-dry-matter-content-ldmc)">
                 </a>
                 
-
                 
                 <p class="gallery-title"><a href="#leaf-dry-matter-content-ldmc">Leaf Dry Matter Content (LDMC) Map</a></p>
                 
@@ -541,12 +238,10 @@ document.addEventListener('DOMContentLoaded', function () {
             
             <div class="gallery-item">
                 
-
                 <a href="javascript:void(0);" class="gallery-thumbnail" onclick="openModal('\/images\/data\/LDMC_maperr.webp', '[LDMC Uncertainty Map](#leaf-dry-matter-content-ldmc)', 'Uncertainty estimates for the global leaf dry matter content (LDMC) map.')">
                     <img src="/images/data/LDMC_maperr.webp" alt="[LDMC Uncertainty Map](#leaf-dry-matter-content-ldmc)">
                 </a>
                 
-
                 
                 <p class="gallery-title"><a href="#leaf-dry-matter-content-ldmc">LDMC Uncertainty Map</a></p>
                 
@@ -560,12 +255,10 @@ document.addEventListener('DOMContentLoaded', function () {
             
             <div class="gallery-item">
                 
-
                 <a href="javascript:void(0);" class="gallery-thumbnail" onclick="openModal('\/images\/data\/LNC_map.webp', '[Leaf Nitrogen Concentration (LNC) Map](#leaf-nitrogen-concentration-lnc--leaf-phosphorus-concentration-lpc)', 'Global map of leaf nitrogen concentration, a key factor in photosynthesis.')">
                     <img src="/images/data/LNC_map.webp" alt="[Leaf Nitrogen Concentration (LNC) Map](#leaf-nitrogen-concentration-lnc--leaf-phosphorus-concentration-lpc)">
                 </a>
                 
-
                 
                 <p class="gallery-title"><a href="#leaf-nitrogen-concentration-lnc--leaf-phosphorus-concentration-lpc">Leaf Nitrogen Concentration (LNC) Map</a></p>
                 
@@ -579,12 +272,10 @@ document.addEventListener('DOMContentLoaded', function () {
             
             <div class="gallery-item">
                 
-
                 <a href="javascript:void(0);" class="gallery-thumbnail" onclick="openModal('\/images\/data\/LNC_maperr.webp', '[LNC Uncertainty Map](#leaf-nitrogen-concentration-lnc--leaf-phosphorus-concentration-lpc)', 'Uncertainty estimates for the global leaf nitrogen concentration (LNC) map.')">
                     <img src="/images/data/LNC_maperr.webp" alt="[LNC Uncertainty Map](#leaf-nitrogen-concentration-lnc--leaf-phosphorus-concentration-lpc)">
                 </a>
                 
-
                 
                 <p class="gallery-title"><a href="#leaf-nitrogen-concentration-lnc--leaf-phosphorus-concentration-lpc">LNC Uncertainty Map</a></p>
                 
@@ -598,12 +289,10 @@ document.addEventListener('DOMContentLoaded', function () {
             
             <div class="gallery-item">
                 
-
                 <a href="javascript:void(0);" class="gallery-thumbnail" onclick="openModal('\/images\/data\/LPC_map.webp', '[Leaf Phosphorus Concentration (LPC) Map](#leaf-nitrogen-concentration-lnc--leaf-phosphorus-concentration-lpc)', 'Global map of leaf phosphorus concentration, important for cellular metabolism.')">
                     <img src="/images/data/LPC_map.webp" alt="[Leaf Phosphorus Concentration (LPC) Map](#leaf-nitrogen-concentration-lnc--leaf-phosphorus-concentration-lpc)">
                 </a>
                 
-
                 
                 <p class="gallery-title"><a href="#leaf-nitrogen-concentration-lnc--leaf-phosphorus-concentration-lpc">Leaf Phosphorus Concentration (LPC) Map</a></p>
                 
@@ -617,12 +306,10 @@ document.addEventListener('DOMContentLoaded', function () {
             
             <div class="gallery-item">
                 
-
                 <a href="javascript:void(0);" class="gallery-thumbnail" onclick="openModal('\/images\/data\/LPC_maperr.webp', '[LPC Uncertainty Map](#leaf-nitrogen-concentration-lnc--leaf-phosphorus-concentration-lpc)', 'Uncertainty estimates for the global leaf phosphorus concentration (LPC) map.')">
                     <img src="/images/data/LPC_maperr.webp" alt="[LPC Uncertainty Map](#leaf-nitrogen-concentration-lnc--leaf-phosphorus-concentration-lpc)">
                 </a>
                 
-
                 
                 <p class="gallery-title"><a href="#leaf-nitrogen-concentration-lnc--leaf-phosphorus-concentration-lpc">LPC Uncertainty Map</a></p>
                 

@@ -13,23 +13,17 @@
             {{ $img := relURL (urls.JoinPath "images/data" .link) }}
             <div class="gallery-item">
                 {{ if or (strings.HasSuffix .link ".webp") (strings.HasSuffix .link ".jpg") (strings.HasSuffix .link ".png") (strings.HasSuffix .link ".gif") }}
-
                 <a href="javascript:void(0);" class="gallery-thumbnail" onclick="openModal('{{ $img }}', '{{ .title | default "" }}', '{{ .description | default "" }}')">
                     <img src="{{ $img }}" alt="{{ .title | default "" }}">
                 </a>
                 {{ else if or (strings.HasSuffix .link ".mp4") (strings.HasSuffix .link ".webm") }}
-
                 <video controls>
                     <source src="{{ $img }}" type="video/{{ index (split .link ".") 1 }}">
                     Your browser does not support the video tag.
                 </video>
-
                 {{ else if (strings.Contains .link "https://") }}
-
                 <iframe src="{{ .link }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
                 {{ end }}
-
                 {{ if .title }}
                 <p class="gallery-title">{{ .title | markdownify }}</p>
                 {{ end }}

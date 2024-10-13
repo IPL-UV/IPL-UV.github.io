@@ -2,6 +2,8 @@
 <div class="content-container">
     {{ range .Pages }}
     {{ $img := relURL (urls.JoinPath "images/courses" .Params.img) }}
+    {{ $imgBase := path.Base .Params.img }}
+    {{ $altText := strings.TrimSuffix $imgBase (path.Ext $imgBase) }} <!-- Esto genera el nombre sin la extensión -->
     <div class="panel-item">
         <div class="panel-header">
             <h4 class="panel-title"><b>{{ .Title }}</b></h4>
@@ -10,12 +12,20 @@
             <div class="panel-content row">
                 <div class="panel-image col-md-2">
                     <a href="{{ .Params.link }}">
-                        <img src="{{ $img }}" alt="{{ .Params.image_alt }}">
+                        <img src="{{ $img }}" alt="{{ if .Params.img }}{{ $altText }}{{ else }}Image{{ end }}">
                     </a>
                 </div>  
-                <div class="panel-description col-md-{{ if .Params.references }}6{{ else }}10{{ end }}">
+                <div class="panel-description">
                     <h5>
-                        <p class="text-justify">{{ .Content | markdownify }}</p>
+                        {{ if .Params.course_duration }}
+                        <p><strong>Course Duration:</strong> {{ .Params.course_duration }}</p>
+                        {{ end }}
+                        {{ if .Params.instructor }}
+                        <p><strong>Instructors:</strong> {{ .Params.instructor }}</p>
+                        {{ end }}
+                        <p class="text-justify">
+                            {{ .Content | markdownify }}
+                        </p>
                     </h5>
                     
                 </div>  

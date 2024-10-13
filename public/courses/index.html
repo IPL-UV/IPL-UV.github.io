@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="shortcut icon" href=/images/favicon.ico type="image/x-icon">
+  <link rel="shortcut icon" href=/images/isp_ico.webp type="image/x-icon">
   <link rel="stylesheet" href=/style/style.css>
   
   <script src=/js/mode.js></script>
@@ -142,304 +142,14 @@
     </div>
   </div>
 </nav>
-
-
-<style>
-.custom-navbars {
-  background-color: #222;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 1rem;
-  z-index: 1000;
-  height: 3rem;
-}
-
-.custom-container {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
- 
-.custom-logo {
-  display: flex;
-  align-items: center;
-}
-
-.custom-logo_nav {
-  height: 30px;
-}
-
- 
-.custom-hide-on-large {
-  display: none;
-}
-
-.navbar-toggler {
-  display: none;
-}
-
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
- 
-.custom-navbar-collapse {
-  flex-grow: 0.95;
-  height: 100%;
-  align-content: center;
-}
-
-.custom-navbar-nav {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  padding: 0;
-  margin: 0;
-  height: 100%;
-}
-
-.custom-nav-item {
-  flex: 1 1 auto;
-  text-align: center;
-  border: 2px solid transparent;
-  border-radius: 8px;
-  height: 100%;
-  display: flex;
-  align-items: center;  
-  justify-content: center;  
-}
-
-.custom-nav-item:hover {
-  background-color: #a0a0a0;
-  border-color: #fff;
-}
-
-.custom-nav-link {
-  text-decoration: none;
-  color: #f8f8f8;
-  font-size: clamp(1rem, 1.1vw, 1.1rem);
-  position: relative;
-  display: block;
-}
-
- 
-.custom-dropdown-menu {
-  position: absolute;
-  background-color: rgba(46, 46, 46, 0.9);  
-  text-decoration: none;
-  display: none;
-  list-style: none;
-  padding: 0.5rem 0;
-  margin: 0;
-  border-radius: 5px;
-  font-size: clamp(1rem, 1.1vw, 1.1rem);
-  top: 3rem;
-}
-
-.custom-dropdown-toggle::after {
-  content: "▼";  
-  font-size: 0.5rem;
-  margin-left: 0.3rem;
-  color: #f8f8f8;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.custom-dropdown-item {
-  padding: 0rem 1rem;
-  color: #f8f8f8;
-  text-decoration: none;
-  margin: 0;
-  display: block;
-  border: 2px solid transparent;
-  border-radius: 8px;
-}
-
-.custom-dropdown-item:hover {
-  background-color: #a0a0a0;
-  border-color: #fff;
-}
-
-.custom-dropdown:hover .custom-dropdown-menu {
-  display: block;
-}
-
-.custom-nav-item.active {
-  background-color: #464646;  
-}
-
-.custom-dropdown-item.active {
-  background-color: #535353;
-}
-
- 
-@media (max-width: 1070px) {
-  .custom-container {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  .navbar-toggler {
-    display: block;
-    position: absolute;
-    right: 1rem;
-    top: 0.5rem;
-  }
-
-  .custom-hide-on-large {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-  }
-
-  .custom-navbar-collapse {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: rgba(46, 46, 46, 0.9);  
-    position: absolute;
-    top: 3rem;
-    left: 0;
-    z-index: 999;
-    height: auto;  
-    overflow: hidden;
-    max-height: 0;  
-    transition: max-height 0.3s ease-out;
-    padding: 0.5rem 0;
-    border-bottom-left-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
-  }
-
-  .custom-navbar-collapse.show {
-    display: flex;
-    max-height: 100vh;  
-    overflow-y: auto;  
-  }
-
-  .custom-navbar-nav {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-
-  .custom-nav-item {
-    width: 100%;
-    margin: 0;
-    display: block;
-  }
-
-  .custom-nav-item a {
-    text-align: left;
-    margin-left: 10%;
-  }
-
-  .custom-text-isp {
-    margin-left: 0.5rem;
-    font-size: 1rem;  
-    text-decoration: none;
-    color: #f8f8f8;
-  }
-
-  .custom-nav-link {
-    width: 100%;
-    text-align: center;
-  }
-
-  .custom-dropdown-menu {
-    position: static;
-    display: none;
-    width: 100%;
-    background-color: #333;
-  }
-
-  .custom-dropdown:hover .custom-dropdown-menu,
-  .custom-dropdown .custom-dropdown-menu.show {
-    display: block;
-  }
-}
-
-
-</style>
-
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  const toggler = document.querySelector('.navbar-toggler');
-  const navbarCollapse = document.querySelector('.custom-navbar-collapse');
-  const currentPath = window.location.pathname;
-
-  toggler.addEventListener('click', function () {
-    navbarCollapse.classList.toggle('show');
-  });
-
-  
-  document.addEventListener('click', function (e) {
-    if (!e.target.closest('.custom-navbars')) {
-      navbarCollapse.classList.remove('show');
-    }
-  });
-
-  
-  const navLinks = document.querySelectorAll('.custom-nav-link');
-  navLinks.forEach(link => {
-    const linkPath = new URL(link.href).pathname;
-
-    
-    if (linkPath === currentPath && currentPath !== '/') {
-      link.closest('.custom-nav-item').classList.add('active');
-    }
-  });
-
-  
-  const dropdownItems = document.querySelectorAll('.custom-dropdown-item');
-  dropdownItems.forEach(item => {
-    const itemPath = new URL(item.href).pathname;
-
-    
-    if (itemPath === currentPath) {
-      item.classList.add('active');
-
-      
-      const parentDropdown = item.closest('.custom-dropdown');
-      if (parentDropdown) {
-        parentDropdown.classList.add('active');
-      }
-    }
-  });
-
-  
-  const dropdownParents = document.querySelectorAll('.custom-dropdown');
-  dropdownParents.forEach(parent => {
-    const childLinks = parent.querySelectorAll('.custom-dropdown-item');
-    childLinks.forEach(child => {
-      const childPath = new URL(child.href).pathname;
-
-      
-      if (childPath === currentPath) {
-        parent.classList.add('active');
-      }
-    });
-  });
-});
-
-</script>
-
-
-
-
   <main>
     <div class="container">
       
 <div class="content-container">
     
     
+    
+     
     <div class="panel-item">
         <div class="panel-header">
             <h4 class="panel-title"><b>Color Vision and Colorimetry</b></h4>
@@ -448,15 +158,20 @@ document.addEventListener('DOMContentLoaded', function () {
             <div class="panel-content row">
                 <div class="panel-image col-md-2">
                     <a href="https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/courses/Color_Vision.zip">
-                        <img src="/images/courses/color.webp" alt="color">
+                        <img src="/images/courses/color.webp" alt=".webp">
                     </a>
                 </div>  
-                <div class="panel-description col-md-10">
+                <div class="panel-description">
                     <h5>
-                        <p class="text-justify"><p><strong>Course Duration:</strong> 30 hours<br>
-<strong>Instructor:</strong> J. Malo</p>
-<p>Color is a 5-dimensional perception that is not only related to the spectrum coming from an object, but also strongly related to its spatio-temporal context. It is a powerful feature that allows humans to make reliable inferences about objects that would be nice to understand and mimic in artificial vision. In this course, we derive the linear CIE tristimulus theory from its experimental color matching foundations. We derive the relations between spectrum and tristimulus vectors through the color matching functions, the chromatic coordinates, chromatic purity and luminance. Phenomenology of color discrimination and adaptation reveals the limitations of the linear description and sets the foundations of color appearance models. In addition, we link the above perceptual representations of color with the conventional representation of color in computers.</p>
-</p>
+                        
+                        <p><strong>Course Duration:</strong> 30 hours</p>
+                        
+                        
+                        <p><strong>Instructors:</strong> J. Malo</p>
+                        
+                        <p class="text-justify">
+                            Color is a 5-dimensional perception that is not only related to the spectrum coming from an object, but also strongly related to its spatio-temporal context. It is a powerful feature that allows humans to make reliable inferences about objects that would be nice to understand and mimic in artificial vision. In this course, we derive the linear CIE tristimulus theory from its experimental color matching foundations. We derive the relations between spectrum and tristimulus vectors through the color matching functions, the chromatic coordinates, chromatic purity and luminance. Phenomenology of color discrimination and adaptation reveals the limitations of the linear description and sets the foundations of color appearance models. In addition, we link the above perceptual representations of color with the conventional representation of color in computers.
+                        </p>
                     </h5>
                     
                 </div>  
@@ -466,6 +181,8 @@ document.addEventListener('DOMContentLoaded', function () {
     </div> 
     
     
+    
+     
     <div class="panel-item">
         <div class="panel-header">
             <h4 class="panel-title"><b>Google Earth Engine Introduction</b></h4>
@@ -474,15 +191,18 @@ document.addEventListener('DOMContentLoaded', function () {
             <div class="panel-content row">
                 <div class="panel-image col-md-2">
                     <a href="google-earth-engine-introduction/material">
-                        <img src="/images/courses/gee_screenshot.webp" alt="gee_screenshot">
+                        <img src="/images/courses/gee_screenshot.webp" alt=".webp">
                     </a>
                 </div>  
-                <div class="panel-description col-md-10">
+                <div class="panel-description">
                     <h5>
-                        <p class="text-justify"><p><strong>Course Duration:</strong> N/A<br>
-<strong>Instructors:</strong> Emma Izquierdo &amp; Jordi Muñoz-Marí</p>
-<p>A short introduction to Google Earth Engine.</p>
-</p>
+                        
+                        
+                        <p><strong>Instructors:</strong> Emma Izquierdo &amp; Jordi Muñoz-Marí</p>
+                        
+                        <p class="text-justify">
+                            A short introduction to Google Earth Engine.
+                        </p>
                     </h5>
                     
                 </div>  
@@ -492,6 +212,8 @@ document.addEventListener('DOMContentLoaded', function () {
     </div> 
     
     
+    
+     
     <div class="panel-item">
         <div class="panel-header">
             <h4 class="panel-title"><b>Human Vision: Facts, Mechanistic Models, and Principled Theories</b></h4>
@@ -500,15 +222,20 @@ document.addEventListener('DOMContentLoaded', function () {
             <div class="panel-content row">
                 <div class="panel-image col-md-2">
                     <a href="https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/courses/visual_percept.pptx">
-                        <img src="/images/courses/human.webp" alt="human">
+                        <img src="/images/courses/human.webp" alt=".webp">
                     </a>
                 </div>  
-                <div class="panel-description col-md-10">
+                <div class="panel-description">
                     <h5>
-                        <p class="text-justify"><p><strong>Course Duration:</strong> 30 hours<br>
-<strong>Instructor:</strong> J. Malo</p>
-<p>In this course, I introduce the facts on color vision from radiometry and photometry, the vision of spatio-temporal textures, the models of mechanisms and circuits that (kind of) reproduce these facts, and the statistical elements of theories that explain the facts.</p>
-</p>
+                        
+                        <p><strong>Course Duration:</strong> 30 hours</p>
+                        
+                        
+                        <p><strong>Instructors:</strong> J. Malo</p>
+                        
+                        <p class="text-justify">
+                            In this course, I introduce the facts on color vision from radiometry and photometry, the vision of spatio-temporal textures, the models of mechanisms and circuits that (kind of) reproduce these facts, and the statistical elements of theories that explain the facts.
+                        </p>
                     </h5>
                     
                 </div>  
@@ -518,6 +245,8 @@ document.addEventListener('DOMContentLoaded', function () {
     </div> 
     
     
+    
+     
     <div class="panel-item">
         <div class="panel-header">
             <h4 class="panel-title"><b>Hyperspectral Image Processing</b></h4>
@@ -526,15 +255,20 @@ document.addEventListener('DOMContentLoaded', function () {
             <div class="panel-content row">
                 <div class="panel-image col-md-2">
                     <a href="https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/courses/esa_course.zip">
-                        <img src="/images/courses/hyper.webp" alt="hyper">
+                        <img src="/images/courses/hyper.webp" alt=".webp">
                     </a>
                 </div>  
-                <div class="panel-description col-md-10">
+                <div class="panel-description">
                     <h5>
-                        <p class="text-justify"><p><strong>Course Duration:</strong> 60 hours<br>
-<strong>Instructor:</strong> G. Camps-Valls</p>
-<p>We introduce the main concepts of hyperspectral image processing. We start by a soft introduction to hyperspectral image processing, the standard processing chain, and the current challenges in the field. Then we analyze the current state of the art in several topics: feature extraction, supervised classification, unmixing and abundance estimation, and retrieval of biophysical parameters. All the methods and techniques studied are reviewed both theoretically and through MATLAB exercises.</p>
-</p>
+                        
+                        <p><strong>Course Duration:</strong> 60 hours</p>
+                        
+                        
+                        <p><strong>Instructors:</strong> G. Camps-Valls</p>
+                        
+                        <p class="text-justify">
+                            We introduce the main concepts of hyperspectral image processing. We start by a soft introduction to hyperspectral image processing, the standard processing chain, and the current challenges in the field. Then we analyze the current state of the art in several topics: feature extraction, supervised classification, unmixing and abundance estimation, and retrieval of biophysical parameters. All the methods and techniques studied are reviewed both theoretically and through MATLAB exercises.
+                        </p>
                     </h5>
                     
                 </div>  
@@ -544,6 +278,8 @@ document.addEventListener('DOMContentLoaded', function () {
     </div> 
     
     
+    
+     
     <div class="panel-item">
         <div class="panel-header">
             <h4 class="panel-title"><b>Information Theory for Visual Communication</b></h4>
@@ -552,15 +288,20 @@ document.addEventListener('DOMContentLoaded', function () {
             <div class="panel-content row">
                 <div class="panel-image col-md-2">
                     <a href="https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/courses/Info_theory_for_Neurosci_RBIG_infomax_DN_SPCA_PPA_DDR.zip">
-                        <img src="/images/courses/Info_Theory2.webp" alt="Info_Theory2">
+                        <img src="/images/courses/Info_Theory2.webp" alt=".webp">
                     </a>
                 </div>  
-                <div class="panel-description col-md-10">
+                <div class="panel-description">
                     <h5>
-                        <p class="text-justify"><p><strong>Course Duration:</strong> 30 hours<br>
-<strong>Instructor:</strong> J. Malo</p>
-<p>In this course, I introduce the elements of information theory required to understand why Uniformization or Gaussianization of density functions and noise in the system are key for the transmission of visual information. This knowledge is the basis of our long-standing agenda on developing invertible transforms for uniformization (SPCA, PPA, DRR) and Gaussianization (RBIG), and our research to calibrate neural noise in the visual system and Divisive Normalization models.</p>
-</p>
+                        
+                        <p><strong>Course Duration:</strong> 30 hours</p>
+                        
+                        
+                        <p><strong>Instructors:</strong> J. Malo</p>
+                        
+                        <p class="text-justify">
+                            In this course, I introduce the elements of information theory required to understand why Uniformization or Gaussianization of density functions and noise in the system are key for the transmission of visual information. This knowledge is the basis of our long-standing agenda on developing invertible transforms for uniformization (SPCA, PPA, DRR) and Gaussianization (RBIG), and our research to calibrate neural noise in the visual system and Divisive Normalization models.
+                        </p>
                     </h5>
                     
                 </div>  
@@ -570,6 +311,8 @@ document.addEventListener('DOMContentLoaded', function () {
     </div> 
     
     
+    
+     
     <div class="panel-item">
         <div class="panel-header">
             <h4 class="panel-title"><b>Kernel Methods in Machine Learning</b></h4>
@@ -578,15 +321,20 @@ document.addEventListener('DOMContentLoaded', function () {
             <div class="panel-content row">
                 <div class="panel-image col-md-2">
                     <a href="https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/courses/kernel_course.zip">
-                        <img src="/images/courses/sskpls.webp" alt="sskpls">
+                        <img src="/images/courses/sskpls.webp" alt=".webp">
                     </a>
                 </div>  
-                <div class="panel-description col-md-10">
+                <div class="panel-description">
                     <h5>
-                        <p class="text-justify"><p><strong>Course Duration:</strong> 30 hours<br>
-<strong>Instructor:</strong> G. Camps-Valls</p>
-<p>Two fundamental operations in Machine Learning such as regression and classification involve drawing nonlinear boundaries or functions through a set of (labeled or unlabeled) training samples. These boundaries or functions at certain (test) samples can be deduced from the similarities between the test sample and the training samples. These similarities can be encoded in Kernels, and the representer theorem can be used to obtain expressions for the functions at any test sample. In this course, we will also review the application of the kernelization of scalar products (e.g., as in the covariance matrix) to obtain nonlinear generalizations of classical feature extraction methods.</p>
-</p>
+                        
+                        <p><strong>Course Duration:</strong> 30 hours</p>
+                        
+                        
+                        <p><strong>Instructors:</strong> G. Camps-Valls</p>
+                        
+                        <p class="text-justify">
+                            Two fundamental operations in Machine Learning such as regression and classification involve drawing nonlinear boundaries or functions through a set of (labeled or unlabeled) training samples. These boundaries or functions at certain (test) samples can be deduced from the similarities between the test sample and the training samples. These similarities can be encoded in Kernels, and the representer theorem can be used to obtain expressions for the functions at any test sample. In this course, we will also review the application of the kernelization of scalar products (e.g., as in the covariance matrix) to obtain nonlinear generalizations of classical feature extraction methods.
+                        </p>
                     </h5>
                     
                 </div>  
@@ -596,6 +344,8 @@ document.addEventListener('DOMContentLoaded', function () {
     </div> 
     
     
+    
+     
     <div class="panel-item">
         <div class="panel-header">
             <h4 class="panel-title"><b>Machine Learning and Signal Processing for Remote Sensing Data Analysis (IGARSS&#39;14 tutorial)</b></h4>
@@ -604,15 +354,18 @@ document.addEventListener('DOMContentLoaded', function () {
             <div class="panel-content row">
                 <div class="panel-image col-md-2">
                     <a href="https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/courses/tutorial_igarss15.tar.gz">
-                        <img src="/images/courses/remote_sensing.webp" alt="remote_sensing">
+                        <img src="/images/courses/remote_sensing.webp" alt=".webp">
                     </a>
                 </div>  
-                <div class="panel-description col-md-10">
+                <div class="panel-description">
                     <h5>
-                        <p class="text-justify"><p><strong>Course Duration:</strong> N/A<br>
-<strong>Instructors:</strong> G. Camps-Valls and D. Tuia</p>
-<p>In this tutorial, we will present the remote sensing image processing chain, and take the attendants on a tour of different strategies for feature extraction, classification, unmixing, retrieval, and pattern analysis for data understanding. On the one hand, we will present powerful methodologies for remote sensing data classification: extracting knowledge from data, including interactive approaches via active learning, classifiers that encode prior knowledge and invariances, semi-supervised learning that exploits the information of unlabeled data, and domain adaptation to compensate for shifts in the ever-changing data distributions. On the other hand, we will pay attention to recent advances in bio-geophysical parameter estimation that incorporate heteroscedasticity, online adaptation, and problem understanding. From there, we will take a leap towards the more challenging step of understanding the geoscience problems from data by reviewing the latest advances in (directed) graphical models, structure learning, and empirical causal inference. Beyond theory, we will also present results of recent studies illustrating all the covered issues. Finally, we will provide code to the attendees to try the different methodologies and provide a solid ground for their future experimentations.</p>
-</p>
+                        
+                        
+                        <p><strong>Instructors:</strong> G. Camps-Valls and D. Tuia</p>
+                        
+                        <p class="text-justify">
+                            In this tutorial, we will present the remote sensing image processing chain, and take the attendants on a tour of different strategies for feature extraction, classification, unmixing, retrieval, and pattern analysis for data understanding. On the one hand, we will present powerful methodologies for remote sensing data classification: extracting knowledge from data, including interactive approaches via active learning, classifiers that encode prior knowledge and invariances, semi-supervised learning that exploits the information of unlabeled data, and domain adaptation to compensate for shifts in the ever-changing data distributions. On the other hand, we will pay attention to recent advances in bio-geophysical parameter estimation that incorporate heteroscedasticity, online adaptation, and problem understanding. From there, we will take a leap towards the more challenging step of understanding the geoscience problems from data by reviewing the latest advances in (directed) graphical models, structure learning, and empirical causal inference. Beyond theory, we will also present results of recent studies illustrating all the covered issues. Finally, we will provide code to the attendees to try the different methodologies and provide a solid ground for their future experimentations.
+                        </p>
                     </h5>
                     
                 </div>  
@@ -622,6 +375,8 @@ document.addEventListener('DOMContentLoaded', function () {
     </div> 
     
     
+    
+     
     <div class="panel-item">
         <div class="panel-header">
             <h4 class="panel-title"><b>Remote Sensing for Water Quality</b></h4>
@@ -630,15 +385,18 @@ document.addEventListener('DOMContentLoaded', function () {
             <div class="panel-content row">
                 <div class="panel-image col-md-2">
                     <a href="https://www.youtube.com/watch?v=d67aO2z06dI">
-                        <img src="/images/courses/EO_AnnaB_2023.webp" alt="EO_AnnaB_2023">
+                        <img src="/images/courses/EO_AnnaB_2023.webp" alt=".webp">
                     </a>
                 </div>  
-                <div class="panel-description col-md-10">
+                <div class="panel-description">
                     <h5>
-                        <p class="text-justify"><p><strong>Course Duration:</strong> N/A<br>
-<strong>Instructor:</strong> Anna B. Ruescas</p>
-<p>Anna B. Ruescas leads this session on remote sensing for water quality, as part of the 2023 ESA Earth Observation Advanced Training Course at the Wroclaw University of Environmental and Life Sciences.</p>
-</p>
+                        
+                        
+                        <p><strong>Instructors:</strong> Anna B. Ruescas</p>
+                        
+                        <p class="text-justify">
+                            Anna B. Ruescas leads this session on remote sensing for water quality, as part of the 2023 ESA Earth Observation Advanced Training Course at the Wroclaw University of Environmental and Life Sciences.
+                        </p>
                     </h5>
                     
                 </div>  
@@ -648,6 +406,8 @@ document.addEventListener('DOMContentLoaded', function () {
     </div> 
     
     
+    
+     
     <div class="panel-item">
         <div class="panel-header">
             <h4 class="panel-title"><b>Representation of Spatial Information</b></h4>
@@ -656,15 +416,20 @@ document.addEventListener('DOMContentLoaded', function () {
             <div class="panel-content row">
                 <div class="panel-image col-md-2">
                     <a href="https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/courses/Represent_Spatial_Information.zip">
-                        <img src="/images/courses/base.webp" alt="base">
+                        <img src="/images/courses/base.webp" alt=".webp">
                     </a>
                 </div>  
-                <div class="panel-description col-md-10">
+                <div class="panel-description">
                     <h5>
-                        <p class="text-justify"><p><strong>Course Duration:</strong> 30 hours<br>
-<strong>Instructor:</strong> J. Malo</p>
-<p>Statistical regularities in photographic images imply that certain representations of spatial information are better than others in terms of coding efficiency. In this course, we present the information theory concepts (entropy, multi-information, correlation and negentropy) for unsupervised feature extraction or dictionary learning required in image coding. Redundancy in images and sequences is reviewed, and basic techniques for compact information representation are introduced such as vector quantization, predictive coding, and transform coding. Application of these concepts in images is the basis of DCT and Wavelet representations, which are the core of JPEG and JPEG2000.</p>
-</p>
+                        
+                        <p><strong>Course Duration:</strong> 30 hours</p>
+                        
+                        
+                        <p><strong>Instructors:</strong> J. Malo</p>
+                        
+                        <p class="text-justify">
+                            Statistical regularities in photographic images imply that certain representations of spatial information are better than others in terms of coding efficiency. In this course, we present the information theory concepts (entropy, multi-information, correlation and negentropy) for unsupervised feature extraction or dictionary learning required in image coding. Redundancy in images and sequences is reviewed, and basic techniques for compact information representation are introduced such as vector quantization, predictive coding, and transform coding. Application of these concepts in images is the basis of DCT and Wavelet representations, which are the core of JPEG and JPEG2000.
+                        </p>
                     </h5>
                     
                 </div>  
@@ -674,6 +439,8 @@ document.addEventListener('DOMContentLoaded', function () {
     </div> 
     
     
+    
+     
     <div class="panel-item">
         <div class="panel-header">
             <h4 class="panel-title"><b>Satellite-based Tools for Investigating Aquatic Ecosystems</b></h4>
@@ -682,15 +449,18 @@ document.addEventListener('DOMContentLoaded', function () {
             <div class="panel-content row">
                 <div class="panel-image col-md-2">
                     <a href="https://www.youtube.com/watch?v=pknYqAAtxRE">
-                        <img src="/images/courses/annaB_SNAP23.webp" alt="annaB_SNAP23">
+                        <img src="/images/courses/annaB_SNAP23.webp" alt=".webp">
                     </a>
                 </div>  
-                <div class="panel-description col-md-10">
+                <div class="panel-description">
                     <h5>
-                        <p class="text-justify"><p><strong>Course Duration:</strong> N/A<br>
-<strong>Instructor:</strong> Anna B. Ruescas</p>
-<p>Anna B. Ruescas participates in this session on the use of Sentinel Constellation SNAP Tools, as part of the 2023 Satellite-based Tools for Investigating Aquatic Ecosystems Training at the Trevor Platt Science Foundation.</p>
-</p>
+                        
+                        
+                        <p><strong>Instructors:</strong> Anna B. Ruescas</p>
+                        
+                        <p class="text-justify">
+                            Anna B. Ruescas participates in this session on the use of Sentinel Constellation SNAP Tools, as part of the 2023 Satellite-based Tools for Investigating Aquatic Ecosystems Training at the Trevor Platt Science Foundation.
+                        </p>
                     </h5>
                     
                 </div>  
@@ -700,6 +470,8 @@ document.addEventListener('DOMContentLoaded', function () {
     </div> 
     
     
+    
+     
     <div class="panel-item">
         <div class="panel-header">
             <h4 class="panel-title"><b>Statistical Signal Processing</b></h4>
@@ -708,15 +480,20 @@ document.addEventListener('DOMContentLoaded', function () {
             <div class="panel-content row">
                 <div class="panel-image col-md-2">
                     <a href="https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/courses/ps_2014.pdf">
-                        <img src="/images/courses/signal_theme.webp" alt="signal_theme">
+                        <img src="/images/courses/signal_theme.webp" alt=".webp">
                     </a>
                 </div>  
-                <div class="panel-description col-md-10">
+                <div class="panel-description">
                     <h5>
-                        <p class="text-justify"><p><strong>Course Duration:</strong> 60 hours<br>
-<strong>Instructor:</strong> G. Camps-Valls</p>
-<p>Material for a master course on (statistical) signal processing. I cover the essential background for engineers and physicists interested in signal processing: Probability and random variables, discrete time random processes, spectral estimation, signal decomposition and transforms, and an introduction to information theory.</p>
-</p>
+                        
+                        <p><strong>Course Duration:</strong> 60 hours</p>
+                        
+                        
+                        <p><strong>Instructors:</strong> G. Camps-Valls</p>
+                        
+                        <p class="text-justify">
+                            Material for a master course on (statistical) signal processing. I cover the essential background for engineers and physicists interested in signal processing: Probability and random variables, discrete time random processes, spectral estimation, signal decomposition and transforms, and an introduction to information theory.
+                        </p>
                     </h5>
                     
                 </div>  
@@ -726,6 +503,8 @@ document.addEventListener('DOMContentLoaded', function () {
     </div> 
     
     
+    
+     
     <div class="panel-item">
         <div class="panel-header">
             <h4 class="panel-title"><b>Texture and Motion in the Visual Cortex</b></h4>
@@ -734,15 +513,20 @@ document.addEventListener('DOMContentLoaded', function () {
             <div class="panel-content row">
                 <div class="panel-image col-md-2">
                     <a href="https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/courses/Color_Vision.zip">
-                        <img src="/images/courses/mt_theoret_sensit.webp" alt="mt_theoret_sensit">
+                        <img src="/images/courses/mt_theoret_sensit.webp" alt=".webp">
                     </a>
                 </div>  
-                <div class="panel-description col-md-10">
+                <div class="panel-description">
                     <h5>
-                        <p class="text-justify"><p><strong>Course Duration:</strong> 40 hours<br>
-<strong>Instructor:</strong> J. Malo</p>
-<p>Neurons in V1 and MT cortex play a determinant role in the analysis of the shape of objects, their spatial texture, and the estimation of retinal motion. In this course, we describe the basic psychophysical and physiological phenomena related to low-level spatio-temporal vision: the contrast sensitivity functions, masking, adaptation, and aftereffects. These facts are mediated by the context-dependent nonlinearities of the response of neurons with specific receptive fields. We analyze the geometric properties of the standard model of V1 and their consequences in image discrimination. We introduce the concept of optical flow, its properties, and how this description of motion can be estimated from the 3D wavelet sensors in V1 and the aggregated sensors in MT.</p>
-</p>
+                        
+                        <p><strong>Course Duration:</strong> 40 hours</p>
+                        
+                        
+                        <p><strong>Instructors:</strong> J. Malo</p>
+                        
+                        <p class="text-justify">
+                            Neurons in V1 and MT cortex play a determinant role in the analysis of the shape of objects, their spatial texture, and the estimation of retinal motion. In this course, we describe the basic psychophysical and physiological phenomena related to low-level spatio-temporal vision: the contrast sensitivity functions, masking, adaptation, and aftereffects. These facts are mediated by the context-dependent nonlinearities of the response of neurons with specific receptive fields. We analyze the geometric properties of the standard model of V1 and their consequences in image discrimination. We introduce the concept of optical flow, its properties, and how this description of motion can be estimated from the 3D wavelet sensors in V1 and the aggregated sensors in MT.
+                        </p>
                     </h5>
                     
                 </div>  
@@ -752,6 +536,8 @@ document.addEventListener('DOMContentLoaded', function () {
     </div> 
     
     
+    
+     
     <div class="panel-item">
         <div class="panel-header">
             <h4 class="panel-title"><b>The GLaSS Training Material Builds on the Global Lakes Use Cases</b></h4>
@@ -760,15 +546,18 @@ document.addEventListener('DOMContentLoaded', function () {
             <div class="panel-content row">
                 <div class="panel-image col-md-2">
                     <a href="https://www.learn-eo.org/lessons_glass.php">
-                        <img src="/images/courses/CarwH7tWIAAn2ry.jpg-large.webp" alt="CarwH7tWIAAn2ry.jpg-large">
+                        <img src="/images/courses/CarwH7tWIAAn2ry.jpg-large.webp" alt=".webp">
                     </a>
                 </div>  
-                <div class="panel-description col-md-10">
+                <div class="panel-description">
                     <h5>
-                        <p class="text-justify"><p><strong>Course Duration:</strong> N/A<br>
-<strong>Instructor:</strong> Ana B. Ruescas &amp; GLaSS team</p>
-<p>The GLaSS training material builds on the global lakes use cases of GLaSS. It allows students and professionals in fields such as aquatic ecology, environmental technology, remote sensing, and GIS to learn about the possibilities of optical remote sensing of water quality, by using the Sentinel-2 and Sentinel-3 satellites and Landsat 8.</p>
-</p>
+                        
+                        
+                        <p><strong>Instructors:</strong> Ana B. Ruescas &amp; GLaSS team</p>
+                        
+                        <p class="text-justify">
+                            The GLaSS training material builds on the global lakes use cases of GLaSS. It allows students and professionals in fields such as aquatic ecology, environmental technology, remote sensing, and GIS to learn about the possibilities of optical remote sensing of water quality, by using the Sentinel-2 and Sentinel-3 satellites and Landsat 8.
+                        </p>
                     </h5>
                     
                 </div>  
