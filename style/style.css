@@ -154,7 +154,11 @@ h3 {
   color: #f8f8f8;
   font-size: clamp(1rem, 1.1vw, 1.1rem);
   position: relative;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
 /* Dropdown menu styles */
