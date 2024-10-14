@@ -115,7 +115,7 @@ If you're looking for a quick and easy way to add or edit `.md` files without us
 </p>
 
 <p align="center">
-  <img src="./static/images/git1.png" width="100%">
+  <img src="./static/images/git3.png" width="45%">
 </p>
 
 
