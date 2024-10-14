@@ -8,6 +8,7 @@ You are now part of the ISP team! Here's a quick journey to help you understand 
 - [**Step 1: 🚀 Getting Started with the Repository**](#step-1--getting-started-with-the-repository)
   - [**Option 1: Terminal Approach**](#option-1-terminal-approach)
   - [**Option 2: Using GitKraken 🐙**](#option-2-using-gitkraken-)
+  - [**Option 3: Using GitHub Web Interface 🖥️**](#option-3-using-github-web-interface-)
 - [**Step 2: 🔧 Making Your Changes**](#step-2--making-your-changes)
   - [**Adding a New Person (People page) 🧑‍🏫**](#adding-a-new-person-people-page-)
   - [**Adding a New Project (Project page) 📝**](#adding-a-new-project-project-page-)
@@ -26,6 +27,8 @@ You are now part of the ISP team! Here's a quick journey to help you understand 
 ## **Step 1: 🚀 Getting Started with the Repository**
 
 Before you dive into the code, it's important to know that there are **multiple ways to manage Git repositories**. The most common approach is using Git commands in the terminal, but you can also use **Git GUI tools** like **GitKraken**, which makes it easier to manage repositories visually. GitKraken is a Git client that helps you work with repositories on **GitHub**, **GitLab**, and other platforms. 
+
+
 
 
 ### **Option 1: Terminal Approach**
@@ -65,6 +68,72 @@ With GitKraken, you can:
 - Visualize the entire Git history and manage conflicts easily.
 
 Using GitKraken or similar tools can make Git operations more beginner-friendly and less prone to mistakes.
+
+
+### **Option 3: Using GitHub Web Interface 🖥️**
+
+If you're looking for a quick and easy way to add or edit `.md` files without using the terminal or a Git GUI tool, you can do it directly on GitHub. This method is especially useful for minor changes or additions.
+
+**Step 1: Navigate to the Repository**
+
+1. Go to the [ISP-UV GitHub Repo](https://github.com/IPL-UV/IPL-UV.github.io).
+2. Use the directory structure to find the folder where you want to add or edit the `.md` file. For example, if you're adding a seminar for 2024, navigate to the `content/seminars/2024` folder.
+
+
+**Step 2: Adding or Editing Files**
+
+- **Adding a New File**:
+    1. Once you're in the desired folder, click the `Add File` button in the top-right corner.
+    2. Choose `Create new file` to start writing a new `.md` file.
+    3. Give the file a descriptive name, such as `seminar2024.md`.
+    4. Write the content for your file following the necessary format (e.g., the seminar template).
+    5. Once finished, scroll down to the "Commit changes" section.
+    6. You can commit directly to the `main` branch or create a new branch for review (recommended for larger changes).
+
+<p align="center">
+  <img src="./static/images/git2.png" width="90%">
+</p>
+
+<p align="center">
+  <img src="./static/images/git4.png" width="90%">
+</p>
+
+- **Uploading a New File**:
+    1. Once you're in the desired folder, click the `Add File` button in the top-right corner.
+    2. Choose `Upload files` from the dropdown menu.
+    3. In the next screen, drag and drop your `.md` file into the designated area or click "choose your files" to browse and upload the file from your computer.
+    4. After uploading, you'll see the "Commit changes" section at the bottom of the screen.
+    5. Add a descriptive commit message explaining what the new file is about.
+    6. Choose whether to:
+       - **Commit directly** to the `main` branch (if it's a minor change or if you're confident with it).
+       - **Create a new branch** for the changes and open a pull request for review (recommended for larger changes).
+    7. Click `Commit changes` or `Propose changes` depending on your selection.
+
+
+<p align="center">
+  <img src="./static/images/git1.png" width="90%">
+</p>
+
+<p align="center">
+  <img src="./static/images/git1.png" width="90%">
+</p>
+
+
+**Step 3: Committing Your Changes**
+
+1. Add a descriptive commit message to explain what you've changed or added.
+2. Choose whether to:
+   - **Commit directly** to the `main` branch (if you're confident in your changes and they are minor).
+   - **Create a new branch** and open a pull request for review (recommended for larger changes or new content).
+
+3. Once the changes are committed, they will be reflected in the repository. If you've created a pull request, wait for it to be reviewed and merged into the main branch.
+
+This method is simple and doesn't require any local setup, making it perfect for quick edits or minor content additions directly through the GitHub interface!
+
+<p align="center">
+  <img src="./static/images/git5.png" width="25%">
+</p>
+
 
 
 ## **Step 2: 🔧 Making Your Changes**
