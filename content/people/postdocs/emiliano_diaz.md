@@ -12,4 +12,4 @@ params:
   website: "https://emdiazsal83.github.io/"          
 ---
 
-My research interests include kernel methods, graphical models and causality, with the focus on Earth science applications.
+My background is in statistics, machine learning and causal inference. My research interests include kernel methods, graphical models, deep learning and causal discovery with a focus on Earth system science applications.
