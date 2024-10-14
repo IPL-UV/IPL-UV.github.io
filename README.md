@@ -2,6 +2,27 @@
 
 You are now part of the ISP team! Here's a quick journey to help you understand how to contribute to the ISP website.
 
+# **Table of Contents**
+
+- [**Welcome to the ISP Web Development Guide** 👨‍💻🌐](#welcome-to-the-isp-web-development-guide-)
+- [**Step 1: 🚀 Getting Started with the Repository**](#step-1-🚀-getting-started-with-the-repository)
+  - [**Option 1: Terminal Approach**](#option-1-terminal-approach)
+  - [**Option 2: Using GitKraken 🐙**](#option-2-using-gitkraken-)
+- [**Step 2: 🔧 Making Your Changes**](#step-2-🔧-making-your-changes)
+  - [**Adding a New Person (People page) 🧑‍🏫**](#adding-a-new-person-people-page-)
+  - [**Adding a New Project (Project page) 📝**](#adding-a-new-project-project-page-)
+  - [**Adding a New Course (Courses page) 📚**](#adding-a-new-course-courses-page-)
+  - [**Adding a New Facility (Facilities page) 🏢**](#adding-a-new-facility-facilities-page-)
+  - [**Adding a New News Article (News page) 📰**](#adding-a-new-news-article-news-page-)
+  - [**Adding a New Seminar (Seminars page) 🎤**](#adding-a-new-seminar-seminars-page-)
+- [**Step 3: Adding Images to Assets**](#step-3-adding-images-to-assets)
+- [**Step 4: 👀 Testing Your Changes Locally**](#step-4-👀-testing-your-changes-locally)
+- [**Step 5: ✅ Pushing Your Changes**](#step-5-✅-pushing-your-changes)
+- [**Final Words 🌟**](#final-words-🌟)
+- [**Working Directly on GitHub**](#working-directly-on-github)
+- [**Pull Requests: Why They're Important 💡**](#pull-requests-why-theyre-important-💡)
+
+
 ## **Step 1: 🚀 Getting Started with the Repository**
 
 Before you dive into the code, it's important to know that there are **multiple ways to manage Git repositories**. The most common approach is using Git commands in the terminal, but you can also use **Git GUI tools** like **GitKraken**, which makes it easier to manage repositories visually. GitKraken is a Git client that helps you work with repositories on **GitHub**, **GitLab**, and other platforms. 
@@ -315,11 +336,6 @@ link: ""                                      # Link to seminar materials or ext
 img: ""                                       # Image file name or URL (Optional)
 ---
 ```
-
-
-
-
-
 
 
 ### **Step 3: Adding Images to Assets**
