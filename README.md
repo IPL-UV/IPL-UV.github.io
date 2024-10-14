@@ -8,7 +8,7 @@ You are now part of the ISP team! Here's a quick journey to help you understand 
 - [**Step 1: 🚀 Getting Started with the Repository**](#step-1--getting-started-with-the-repository)
   - [**Option 1: Terminal Approach**](#option-1-terminal-approach)
   - [**Option 2: Using GitKraken 🐙**](#option-2-using-gitkraken-)
-  - [**Option 3: Using GitHub Web Interface 🖥️**](#option-3-using-github-web-interface-)
+  - [**Option 3: Using GitHub Web Interface 🖥️**](#option-3-using-github-web-interface-%EF%B8%8F)
 - [**Step 2: 🔧 Making Your Changes**](#step-2--making-your-changes)
   - [**Adding a New Person (People page) 🧑‍🏫**](#adding-a-new-person-people-page-)
   - [**Adding a New Project (Project page) 📝**](#adding-a-new-project-project-page-)
