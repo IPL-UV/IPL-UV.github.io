@@ -6,6 +6,10 @@ role: postdocs
 weight: 1
 params:
   img: emiliano.webp
+  googlescholar: "https://scholar.google.com/citations?user=w2Bf-1sAAAAJ"                      
+  github: "https://github.com/emdiazsal83"                                  
+  linkedin: "www.linkedin.com/in/emiliano-díaz-salas-porras"                         
+  website: "https://emdiazsal83.github.io/"          
 ---
 
 My research interests include kernel methods, graphical models and causality, with the focus on Earth science applications.
