@@ -5,10 +5,10 @@ You are now part of the ISP team! Here's a quick journey to help you understand 
 # **Table of Contents**
 
 - [**Welcome to the ISP Web Development Guide** 👨‍💻🌐](#welcome-to-the-isp-web-development-guide-)
-- [**Step 1: 🚀 Getting Started with the Repository**](#step-1-🚀-getting-started-with-the-repository)
+- [**Step 1: 🚀 Getting Started with the Repository**](#step-1--getting-started-with-the-repository)
   - [**Option 1: Terminal Approach**](#option-1-terminal-approach)
   - [**Option 2: Using GitKraken 🐙**](#option-2-using-gitkraken-)
-- [**Step 2: 🔧 Making Your Changes**](#step-2-🔧-making-your-changes)
+- [**Step 2: 🔧 Making Your Changes**](#step-2--making-your-changes)
   - [**Adding a New Person (People page) 🧑‍🏫**](#adding-a-new-person-people-page-)
   - [**Adding a New Project (Project page) 📝**](#adding-a-new-project-project-page-)
   - [**Adding a New Course (Courses page) 📚**](#adding-a-new-course-courses-page-)
@@ -17,10 +17,10 @@ You are now part of the ISP team! Here's a quick journey to help you understand 
   - [**Adding a New Seminar (Seminars page) 🎤**](#adding-a-new-seminar-seminars-page-)
 - [**Step 3: Adding Images to Assets**](#step-3-adding-images-to-assets)
 - [**Step 4: 👀 Testing Your Changes Locally**](#step-4-👀-testing-your-changes-locally)
-- [**Step 5: ✅ Pushing Your Changes**](#step-5-✅-pushing-your-changes)
-- [**Final Words 🌟**](#final-words-🌟)
+- [**Step 5: ✅ Pushing Your Changes**](#step-5--pushing-your-changes)
+- [**Final Words 🌟**](#final-words-)
 - [**Working Directly on GitHub**](#working-directly-on-github)
-- [**Pull Requests: Why They're Important 💡**](#pull-requests-why-theyre-important-💡)
+- [**Pull Requests: Why They're Important 💡**](#pull-requests-why-theyre-important-)
 
 
 ## **Step 1: 🚀 Getting Started with the Repository**
