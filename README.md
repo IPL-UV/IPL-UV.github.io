@@ -91,11 +91,11 @@ If you're looking for a quick and easy way to add or edit `.md` files without us
     6. You can commit directly to the `main` branch or create a new branch for review (recommended for larger changes).
 
 <p align="center">
-  <img src="./static/images/git2.png" width="90%">
+  <img src="./static/images/git2.png" width="100%">
 </p>
 
 <p align="center">
-  <img src="./static/images/git4.png" width="90%">
+  <img src="./static/images/git4.png" width="100%">
 </p>
 
 - **Uploading a New File**:
@@ -111,11 +111,11 @@ If you're looking for a quick and easy way to add or edit `.md` files without us
 
 
 <p align="center">
-  <img src="./static/images/git1.png" width="90%">
+  <img src="./static/images/git1.png" width="100%">
 </p>
 
 <p align="center">
-  <img src="./static/images/git1.png" width="90%">
+  <img src="./static/images/git1.png" width="100%">
 </p>
 
 
