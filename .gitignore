@@ -1,3 +1,6 @@
 docs
+.vscode
 .DS_Store
+*.lock
 public
+main
