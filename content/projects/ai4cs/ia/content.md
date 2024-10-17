@@ -10,7 +10,7 @@ Our vision in AI4CS is to develop novel artificial intelligence methods to model
 
 <br>
 <p align="center">
-  <img src="/images/projects/ai4cs_agenda.webp" width="80%">
+  <img src="ai4cs_agenda.webp" width="80%">
 </p>
 <br>
 
@@ -23,7 +23,7 @@ The researchers teamed up in AI4CS are led by the Image and Signal Processing (I
 <br>
 
 <p align="center">
-  <img src="/images/projects/groups.webp" width="80%">
+  <img src="groups.webp" width="80%">
 </p>
 
 <br>    

@@ -1,5 +1,5 @@
 ---
-title: "<p><q>Causality and interpretable in Earth sciences</q> ESA BIDs</p>"
+title: "Causality and interpretable in Earth sciences ESA BIDs"
 date: "2021-06-01"
 speaker: "Gustau Camps-Valls"
 affiliation: "ISP/UV"

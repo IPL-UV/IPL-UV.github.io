@@ -1,0 +1,4 @@
+---
+type: "collaborators"
+layout: "list"
+---

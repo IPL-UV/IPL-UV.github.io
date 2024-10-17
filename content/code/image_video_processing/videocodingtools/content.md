@@ -1,36 +1,30 @@
 ---
-title: "Motion Estimation and Video Coding Toolbox"
 type: "code"
 layout: "single_four"
+title: "Motion Estimation and Video Coding Toolbox"
 references:
   - title: "Perceptually weighted optical flow for motion-based segmentation in MPEG-4 paradigm"
     authors: "J. Malo, J. Gutierrez, I. Epifanio, F. Ferri"
     publication: "Electronics Letters, Vol. 36, 20, pp. 1693-1694 (2000)"
     link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/seg_ade2.ps"
-  
   - title: "Perceptual feed-back in multigrid motion estimation using an improved DCT quantization"
     authors: "J. Malo, J. Gutierrez, I. Epifanio, F. Ferri, J.M. Artigas"
     publication: "IEEE Transactions on Image Processing, Vol. 10, 10, pp. 1411-1427 (2001)"
     link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/ieeeoct01.pdf"
-
   - title: "Importance of quantizer design compared to optimal multigrid motion estimation in video coding"
     authors: "J. Malo, F. Ferri, J. Gutierrez, I. Epifanio"
     publication: "Electronics Letters, Vol. 36, 9, pp. 807-809 (2000)"
     link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/elect00.ps"
-
 links:
   - title: "Motion_estimation_and_Video coding_code.zip"
     link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/Motion_estimation_and_Video%20coding_code.zip"
-
 images:
   - link: "coderde.webp"
     title: "[Motion Estimation Scheme](#motion-estimation)"
     description: "Illustration of the video coder scheme with motion estimation and prediction error quantization."
-
   - link: "coding.webp"
     title: "[Video Coding Example](#video-coding)"
     description: "Comparison of video coding schemes with different levels of motion estimation and quantization efficiency."
-
   - link: "distort.webp"
     title: "[Distortion per Frame](#video-coding)"
     description: "Distortion per frame plot comparing algorithms with improved motion estimation and non-linear quantization schemes."

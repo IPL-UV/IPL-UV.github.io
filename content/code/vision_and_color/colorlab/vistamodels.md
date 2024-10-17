@@ -1,9 +1,8 @@
 ---
-title: "VistaModels: Computational models of Visual Neuroscience"
-
 type: "code"
 layout: "single_four"
 
+title: "VistaModels: Computational models of Visual Neuroscience"
 references:
   - title: "VistaLab: The Matlab Toolbox for Spatio-Temporal Vision. Univ. Valencia 1997"
     authors: "J. Malo & J. Gutierrez"
@@ -15,76 +14,58 @@ references:
   - title: "Visual aftereffects and sensory nonlinearities from a single statistical framework"
     authors: "V. Laparra & J. Malo"
     link: "https://www.frontiersin.org/articles/10.3389/fnhum.2015.00557/full"
-
 images:
   - link: "VistaModels1.webp"
     title: "Mechanistic Models"
     description: "Following Hubel-Wiesel and McCulloch-Pitts, our models are cascades of two basic elements: (a) a linear transform (not necessarily convolutional set of receptive fields), and (b) a nonlinear saturation (either divisive or subtractive) describing the interactions between the linear units. We have played with different versions of such elements. For the linear part we explored center-surround units, local-DCTs, Orthonormal Wavelets, Overcomplete Wavelets and Laplacian Pyramids. For the nonlinear part played with different adaptive nonlinearities such as the Divisive Normalization and the subtractive Wilson-Cowan equations. See [[PLoS 2018](https://arxiv.org/abs/1711.00526)] for a comprehensive account of the maths, and [[ArXiV 2018](https://arxiv.org/abs/1804.05964)] for the equivalence between the considered nonlinear models. These models have been tuned to reproduce basic psychophysics such as contrast response curves and subjective image distortion."
-
   - link: "VistaModels2.webp"
     title: "Statistical Principles"
     description: "The emergence of (a) specific sensors (e.g. the red and green curves), or (b) specific discrimination properties (ellipsoids in gray) may be understood as an adaptation to the statistics of natural input (samples in blue). We have used these [Barlow-style information-theoretic priciples](https://www.youtube.com/watch?v=cv9hje42i_E) in two ways: unfolding the data manifolds [[Front. Human Neurosci. 15](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/LaparraMalo15.pdf)], and Gaussianizing the data manifolds [IEEE Trans. Neur. Nets. 11]. Interestingly, nonlinearities of the Human Visual System (from retina [[J.Opt.95](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/JOPT95.PS.gz)] to cortex [[Im.Vis.Comp.00](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/ivc99.ps.gz), [Neural Comp.10](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/Malo_Laparra_Neural_10b.pdf)]) have remarkable statistical effects too!."
-
   - link: "modelB.webp"
     title: "[Multi-Layer Network Model](#2013---2018-multi-layer-network-with-nonlinear-opponent-color-overcomplete-wavelet-and-divisive-normalization)"
     description: "Multilayer network model that includes nonlinear chromatic processing and overcomplete wavelets."
-
   - link: "facts1.webp"
     title: "[Facts of Vision - Achromatic and Chromatic Bandwidths](#psychophysical-test-bed-for-model-tuning-and-comparison)"
     description: "Ilustración de características distintivas de la visión temprana, como las diferentes bandas de frecuencia para los canales acromáticos y cromáticos."
-
   - link: "visib_noise.webp"
     title: "[Noise Visibility on Natural Images](#psychophysical-test-bed-for-model-tuning-and-comparison)"
     description: "Visualization of noise visibility in natural images, showing lower visibility in high contrast regions."
-
   - link: "compCSFs.webp"
     title: "[Model Comparison - CSFs](#b-principled-models)"
     description: "Comparison of Contrast Sensitivity Functions (CSF) between different mechanistic models."
-
   - link: "compResponses.webp"
     title: "[Model Comparison - Response Curves](#b-principled-models)"
     description: "Response curves of different vision models, adjusted to reproduce psychophysical phenomena."
-
   - link: "compNoise.webp"
     title: "[Model Comparison - Noise Visibility](#b-principled-models)"
     description: "Comparison of noise visibility in images across various vision models."
-
   - link: "principled.webp"
     title: "[Principled Models - Efficient Coding](#efficient-coding-in-mechanistic-models)"
     description: "Example of how mechanistic models are adapted to natural image statistics for redundancy reduction."
-
   - link: "autoencoder.webp"
     title: "[Autoencoder for Optimal Representation](#efficient-coding-in-mechanistic-models)"
     description: "Representation of an autoencoder optimized for unprecedented performance in image coding."
-
   - link: "LinearStats.webp"
     title: "[Statistically-based Linear Receptive Fields](#statistically-based-linear-receptive-fields)"
     description: "Linear receptive fields derived from statistical techniques such as PCA and ICA trained on natural scenes."
-
   - link: "ResponsesSPCA1.webp"
     title: "[SPCA Responses 1](#statistically-based-nonlinearities)"
     description: "Sensory response based on Sequential Principal Curves Analysis (SPCA), showing sensors adapted to the nonlinear properties of the visual system."
-
   - link: "ResponsesSPCA2.webp"
     title: "[SPCA Responses 2](#statistically-based-nonlinearities)"
     description: "Another illustration of sensory responses using SPCA techniques."
-
   - link: "neuro_rbig.webp"
     title: "[Gaussianization of Nonlinear Manifolds](#statistically-based-nonlinearities)"
     description: "Use of Gaussianization to define optimal discrimination regions based on information maximization or error minimization."
-
   - link: "metricFisher.webp"
     title: "[Fisher Information Metric for Vision Models](#statistically-based-nonlinearities)"
     description: "Representation of the Fisher information concept and its application in evaluating nonlinear perception systems."
-
   - link: "flow_800_10_excel.gif"
     title: "[Optical Flow for Video Coding](#perceptually-weighted-motion-estimation-vistavideocoding)"
     description: "Perceptually enhanced optical flow used for predictive coding in video compression."
-
   - link: "coding.webp"
     title: "[Image Coding and Restoration](#image-coding-vistacore)"
     description: "Image coding using vision models based on DCT and Divisive Normalization to improve the quality of compressed images."
-
 links:
   - title: "Updated Matlab Toolbox (VISTALAB 4.0)"
     link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/Vistalab.zip"

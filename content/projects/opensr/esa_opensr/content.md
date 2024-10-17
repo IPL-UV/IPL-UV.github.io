@@ -12,7 +12,7 @@ OpenSR aims to bring robust, accountable, and scalable multi-spectral super-reso
 <br>
 
 <p align="center">
-  <img src="/images/projects/low_hr.webp" width="80%">
+  <img src="low_hr.webp" width="80%">
 </p>
 
 <br>
@@ -34,7 +34,7 @@ The project will push the boundaries of excellence science and technological dev
 <br>
 
 <p align="center">
-  <img src="/images/projects/groups_2.webp" width="50%">
+  <img src="groups_2.webp" width="50%">
 </p>
 
 

@@ -1,7 +1,7 @@
 ---
-title: "VistaQualityTools: The Image and Video Quality Toolbox based on Vision Models"
 type: "code"
 layout: "single_four"
+title: "VistaQualityTools: The Image and Video Quality Toolbox based on Vision Models"
 images:
   - link: "BasesDist.webp"
     title: "The problem"

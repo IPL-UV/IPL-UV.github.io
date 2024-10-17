@@ -11,4 +11,5 @@ project_type: ''
 partners: []
 type: "news"
 layout: "single_projects"
+draft: false
 ---

@@ -1,4 +1,5 @@
 ---
 title: "News"
 ---
-Las últimas noticias y actualizaciones.
+
+The latest news and updates.

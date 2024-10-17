@@ -1,7 +1,8 @@
 ---
-title: "Principal Polynomial Analysis (PPA)"
 type: "code"
 layout: "single_four"
+
+title: "Principal Polynomial Analysis (PPA)"
 images:
   - link: "ppa1.webp"
     title: "First Principal Curve and generalized curvatures using PPA in 3D Helix"

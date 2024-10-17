@@ -1,26 +1,21 @@
 ---
-title: "RBIG4IT: Information Theory Measures via Multidimensional Gaussianization"
-
 type: "code"
 layout: "single_four"
 
+title: "RBIG4IT: Information Theory Measures via Multidimensional Gaussianization"
 images:
   - link: "fig_1.webp"
     title: "[Information Theory Measures](#paper-summary)"
     description: "This figure illustrates the key measures of Information Theory that can be estimated using the RBIG methodology, including total correlation, entropy, mutual information, and Kullback-Leibler divergence."
-
   - link: "Table_T.webp"
     title: "[Total Correlation Estimation](#extended-results)"
     description: "This table shows the total correlation estimation results in relative mean absolute error for different distributions: Gaussian, uniform, and Student PDFs (μ = 3, 5, 20 for each row). Each column corresponds to experiments with varying dimensions D."
-
   - link: "Figure_T.webp"
     title: "[Total Correlation Results](#total-correlation)"
     description: "Graphical representation of total correlation estimation results. This figure compares the performance of different estimators for various multivariate distributions and dimensions."
-
   - link: "Table_H.webp"
     title: "[Entropy Estimation](#entropy)"
     description: "This table presents the entropy estimation results for different data distributions and dimensional settings, showcasing the performance of the RBIG estimator."
-
   - link: "Figure_H.webp"
     title: "[Entropy Results](#entropy)"
     description: "A figure showing the entropy estimation results, comparing the RBIG approach with other methods across various distributions and dimensionalities."
@@ -28,28 +23,21 @@ images:
   - link: "Table_KL.webp"
     title: "[Kullback-Leibler Divergence Estimation](#entropy)"
     description: "This table summarizes the results of Kullback-Leibler divergence estimations for synthetic datasets, illustrating the performance of RBIG in different high-dimensional settings."
-
   - link: "Figure_KL1.webp"
     title: "[KLD Estimation Results](#kld)"
     description: "A visual comparison of Kullback-Leibler divergence estimators. The RBIG estimator is shown to perform well in a range of complex, high-dimensional scenarios."
-
   - link: "Table_I.webp"
     title: "[Mutual Information Estimation](#kld)"
     description: "This table presents the mutual information estimation results. The performance of RBIG is compared to other estimators for various distributions."
-
   - link: "Figure_MI.webp"
     title: "[Mutual Information Results](#mutual-information)"
     description: "Graphical results of mutual information estimation comparing RBIG with recent methods across several distributions and dimensions."
-
-
-
 references:
   - title: "Information Theory Measures via Multidimensional Gaussianization [RBIG4IT2020]"
     authors: "V. Laparra, E. Johnson, G. Camps-Valls, R. Santos-Rodriguez, J. Malo."
   - title: "Iterative Gaussianization: from ICA to Random Rotations [TNN2011]"
     authors: "V. Laparra, G. Camps & J. Malo."
     publication: "IEEE Transactions on Neural Networks."
-
 links:
   - title: "RBIG Python toolbox"
     link: "https://github.com/IPL-UV/rbig"

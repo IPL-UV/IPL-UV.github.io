@@ -1,7 +1,8 @@
 ---
-title: "Deep Gaussian Processes for Parameter Retrieval and Model Inversion"
 type: "code"
 layout: "single_four"
+
+title: "Deep Gaussian Processes for Parameter Retrieval and Model Inversion"
 references:
   - title: "Deep Gaussian Processes for Parameter Retrieval and Model Inversion"
     authors: "Daniel H. Svendsen, Pablo M. Alvarez, Ana Belen Ruescas, Rafael Molina and Gustau Camps-Valls"

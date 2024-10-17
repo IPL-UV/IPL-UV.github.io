@@ -4,11 +4,11 @@ type: "news"
 layout: "single_four"
 
 images:
-  - title: "[Motivation](/news/2016/sedal-grant/motivation/index.html)"
+  - title: "[Motivation](../motivation/)"
     link: "fig1b.webp"
-  - title: "[Main Objectives](/news/2016/sedal-grant/main_objetives/index.html)"
+  - title: "[Main Objectives](../main_objetives/)"
     link: "fig3.webp"
-  - title: "[Project Structure](/news/2016/sedal-grant/project_structure/index.html)"
+  - title: "[Project Structure](../project_structure/)"
     link: "fig0.webp"
 
 references:
@@ -50,9 +50,9 @@ Fax: +34 963543261
 ---
 
 <div align="center">
-    <img src="/images/LOGO-ERC.webp" alt="ERC Logo" width="30%">
-    <img src="/images/uv.webp" alt="Universitat de València Logo" width="20%">
-    <img src="/images/IPL_logo_blanco.webp" alt="IPL Logo" width="30%">
+    <img src="LOGO-ERC.webp" alt="ERC Logo" width="30%">
+    <img src="uv.webp" alt="Universitat de València Logo" width="20%">
+    <img src="IPL_logo_blanco.webp" alt="IPL Logo" width="30%">
 </div>
 
 ---

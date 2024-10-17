@@ -1,6 +1,6 @@
 <table class="table table-hover">
     {{ range . }}
-    {{ $logo := urls.JoinPath "/images/projects" .Params.logo }}
+    {{ $logo := relURL (urls.JoinPath "images/projects" .Params.logo) }}
         <tr class="table-item">
             <td class="project-logo-cell">
                 <img src="{{ $logo }}" class="img-fluid" alt="Image of {{ .Title }}">

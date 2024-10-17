@@ -1,6 +1,6 @@
-#baseURL = "https://ipl-uv.github.io/" 
-baseURL = "https://isp.uv.es/github"
-publishDir = "docs"
+baseURL = "https://ipl-uv.github.io/"
+#baseURL = "https://isp.uv.es/github"
+publishDir = "public"
 
 #baseURL = "http://127.0.0.1/isp/"
 #publishDir = "isp"
@@ -29,33 +29,38 @@ theme = "isp_uv"
 
 [[menu.main]]
   name = "Research"
-  url = "/research/philosophy"
+    url = "/research/philosophy/"
   weight = 3
+  [[menu.main]]
+    parent = "Research"
+    name = "Philosophy"
+    url = "/research/philosophy/"
+    weight = 1
   [[menu.main]]
     parent = "Research"
     name = "Machine learning"
     url = "/research/machine_learning/"
-    weight = 1
+    weight = 2
   [[menu.main]]
     parent = "Research"
     name = "Visual neuroscience"
     url = "/research/visual_neuroscience/"
-    weight = 2
+    weight = 3
   [[menu.main]]
     parent = "Research"
     name = "Visual brain"
     url = "/research/visual_brain/"
-    weight = 3
+    weight = 4
   [[menu.main]]
     parent = "Research"
     name = "Earth science"
     url = "/research/earth_science/"
-    weight = 4
+    weight = 5
   [[menu.main]]
     parent = "Research"
     name = "Social science"
     url = "/research/social_science"
-    weight = 5
+    weight = 6
 
 [[menu.main]]
   name = "Projects"

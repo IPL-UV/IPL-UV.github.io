@@ -1,43 +1,36 @@
 ---
-title: "The role of spatial information in disentangling the irradiance-reflectance-transmitance ambiguity"
 type: "code"
 layout: "single_four"
+
+title: "The role of spatial information in disentangling the irradiance-reflectance-transmitance ambiguity"
 references:
   - title: "The role of spatial information in disentangling the irradiance-reflectance-transmitance ambiguity"
     authors: "Sandra Jiménez and Jesús Malo"
     publication: "Accepted to IEEE Trans. Geosci. Rem. Sens."
     link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_imvideo/spatiospectral/manuscr_TGRS_2012_00431.pdf"
-
 links:
   - title: "Download Data and Code"
     link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_imvideo/spatiospectral/code_retrieval_and_data.zip"
     description: "(*.zip file with data and Matlab toolbox. For running the examples, read and execute the demo_retrieval.m file)."
-
 images:
   - link: "org_contex.webp"
     title: "[Original and Estimated Reflectance - Urban Context](#1-effect-of-the-spatial-structure)"
     description: "Reflectance images for urban, forest, and open field sites using spectral-only and spatio-spectral retrieval approaches."
-
   - link: "reco_contex.webp"
     title: "[Reconstructed Reflectance for Different Contexts](#1-effect-of-the-spatial-structure)"
     description: "Reconstructed reflectance images from different contexts, highlighting the difference between spectral-only and spatio-spectral retrieval."
-
   - link: "errores.webp"
     title: "[Error Maps for Reflectance Estimation](#2-effect-of-wavelength-range-and-spatio-spectral-resolution)"
     description: "Error maps showing the differences in reflectance estimation using spectral-only and spatio-spectral methods."
-
   - link: "IR_example.webp"
     title: "[Infrared Example - Different Wavelengths and Resolutions](#2-effect-of-wavelength-range-and-spatio-spectral-resolution)"
     description: "Example using different wavelength ranges and spatio-spectral resolutions in reflectance retrieval."
-
   - link: "marginales_S.webp"
     title: "[Marginal Distributions for Surface Reflectance](#3-initialization-of-the-sources-surface-reflectance-atmosphere-radiance-and-transmittance)"
     description: "Marginal PDFs for surface reflectance coefficients in the PCA domain."
-
   - link: "marginales_A.webp"
     title: "[Marginal Distributions for Atmosphere Radiance](#3-initialization-of-the-sources-surface-reflectance-atmosphere-radiance-and-transmittance)"
     description: "Marginal PDFs for atmospheric radiance coefficients in the PCA domain."
-
   - link: "marginales_T.webp"
     title: "[Marginal Distributions for Atmosphere Transmittance](#3-initialization-of-the-sources-surface-reflectance-atmosphere-radiance-and-transmittance)"
     description: "Marginal PDFs for atmospheric transmittance coefficients in the PCA domain."

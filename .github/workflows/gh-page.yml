@@ -3,7 +3,7 @@ name: GitHub Pages
 on:
   push:
     branches:
-      - main  # Set a branch to deploy
+      - main  # La rama principal desde la que se hará el push
   pull_request:
 
 jobs:
@@ -12,23 +12,26 @@ jobs:
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
+      # Paso 1: Checkout del repositorio
       - uses: actions/checkout@v4
         with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+          submodules: true  # Descargar submódulos (temas de Hugo)
+          fetch-depth: 0    # Descargar todo el historial
 
+      # Paso 2: Configuración de Hugo
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: '0.125.7'
-          # extended: true
+          # extended: true  # Habilita esto si necesitas soporte SCSS/SASS
 
-      - name: Build
-        run: hugo --minify
+      # Paso 3: Construcción del sitio
+      - name: Build Hugo site
+        run: hugo --minify --config hugo-alt.toml
 
+      # Paso 4: Despliegue en GitHub Pages
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs

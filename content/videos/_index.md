@@ -1,0 +1,4 @@
+---
+type: "videos"
+layout: "list"
+---

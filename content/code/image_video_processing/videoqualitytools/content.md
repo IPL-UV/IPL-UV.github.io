@@ -1,13 +1,12 @@
 ---
-title: "Video Quality Measures based on the Standar Spatial Observer (A. B. Watson and J. Malo)"
 type: "code"
 layout: "single_four"
+title: "Video Quality Measures based on the Standar Spatial Observer (A. B. Watson and J. Malo)"
 references:
   - title: "Video Quality Measures based on the Standar Spatial Observer"
     authors: "A. B. Watson and J. Malo"
     publication: "Proc. IEEE Intl. Conf. Im. Proc., Vol. 3,  pp 41-44 (2002)"
     link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/icip02.pdf"
-  
 links:
   - title: "video_metric_sso.zip"
     link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/video_metric_sso.zip"

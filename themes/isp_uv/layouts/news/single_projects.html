@@ -11,7 +11,7 @@
         <h1>Related Projects </h1>
         <div class="grid-container" id="grid-container">
             {{ range $activePages }}
-            {{ $logo := urls.JoinPath "/images/projects" .Params.logo }}
+            {{ $logo := relURL (urls.JoinPath "images/projects" .Params.logo) }}
             <div class="grid-item project-item">
             <div class="project-logo-cell">
                 <a href="{{ .Params.website }}">

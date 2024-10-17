@@ -1,7 +1,8 @@
 ---
-title: "Spatio-Chromatic Adaptation via Higher-Order Canonical Correlation Analysis of Natural Images"
 type: "code"
 layout: "single_four"
+
+title: "Spatio-Chromatic Adaptation via Higher-Order Canonical Correlation Analysis of Natural Images"
 references:
   - title: "Spatio-Chromatic Adaptation via Higher-Order Canonical Correlation Analysis of Natural Images"
     authors: "M. U. Gutmann, V. Laparra, A. Hyvärinen, J. Malo"

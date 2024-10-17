@@ -1,7 +1,8 @@
 ---
-title: "Rotation-based Iterative Gaussianization (RBIG)"
 type: "code"
 layout: "single_four"
+
+title: "Rotation-based Iterative Gaussianization (RBIG)"
 references:
   - title: "Iterative Gaussianization: from ICA to Random Rotation"
     authors: "V. Laparra, G. Camps, J. Malo"

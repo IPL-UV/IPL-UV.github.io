@@ -1,37 +1,33 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-  <div class="container-fluid">
-    <a href="/" class="d-lg-none d-flex align-items-center a_logonav">
-      <img src="/images/isp_logo_sinfondo.webp" alt="ISP Icon" height="30" class="logo_nav">
-      <span class="ms-2 text-isp">ISP</span>
-    </a>
-    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
-      data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
-      aria-label="Toggle navigation" style="height: 40px;">
+<nav class="custom-navbars">
+  <div class="custom-container">
+    <a href="/" class="custom-logo custom-hide-on-large">
+      <img src={{ relURL "images/isp_logo_sinfondo.webp" }} alt="ISP Icon" class="custom-logo_nav">
+      <span class="custom-text-isp">ISP</span>
+    </a>    
+    <button class="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <ul class="navbar-nav mx-auto mb-lg-0">
+    <div class="custom-navbar-collapse">
+      <ul class="custom-navbar-nav">
         {{ $mainMenu := .Site.Menus.main }}
         {{ range $mainMenu }}
         {{ if eq .Name "ISP" }}
-        <li class="nav-item px-2 nav-item-highlight d-none d-lg-block">
-          <a class="nav-link a" aria-current="page" href="{{ .URL }}">{{ .Name }}</a>
+        <!-- Show "ISP" on large screens, hide in dropdown -->
+        <li class="custom-nav-item custom-desktop-only">
+          <a class="custom-nav-link" href="{{ .URL }}">{{ .Name }}</a>
         </li>
         {{ else if .HasChildren }}
-        <li class="nav-item dropdown px-2 nav-item-highlight">
-          <a class="nav-link dropdown-toggle a" href="{{ .URL }}" id="navbarDropdown{{ .Name }}" role="button"
-            aria-expanded="false">
-            {{ .Name }}
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown{{ .Name }}">
+        <li class="custom-nav-item custom-dropdown">
+          <a class="custom-nav-link custom-dropdown-toggle" href="{{ .URL }}">{{ .Name }}</a>
+          <ul class="custom-dropdown-menu">
             {{ range .Children }}
-            <li><a class="dropdown-item a" href="{{ .URL }}">{{ .Name }}</a></li>
+            <li><a class="custom-dropdown-item" href="{{ .URL }}">{{ .Name }}</a></li>
             {{ end }}
           </ul>
         </li>
         {{ else }}
-        <li class="nav-item px-2 nav-item-highlight">
-          <a class="nav-link a" aria-current="page" href="{{ .URL }}">{{ .Name }}</a>
+        <li class="custom-nav-item">
+          <a class="custom-nav-link" href="{{ .URL }}">{{ .Name }}</a>
         </li>
         {{ end }}
         {{ end }}
@@ -39,203 +35,3 @@
     </div>
   </div>
 </nav>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<style>
-.navbar {
-  --bs-navbar-padding-y: 0rem !important;
-  background-color: #222 !important;
-}
-
-.a {
-  color: #949494 !important;
-}
-
-.a:hover {
-  color: #fff !important;
-}
-
-.nav-item-highlight {
-  padding: 0.4rem;
-}
-
-.nav-item-highlight:hover {
-  background-color: #2d70aa !important;
-}
-
-.dropdown-menu {
-  background-color: #333 !important;
-  color: #fff !important;
-  display: block;
-}
-
-.dropdown-item {
-  color: #949494 !important;
-}
-
-.dropdown-item:hover {
-  background-color: #2d70aa !important;
-  color: #fff !important;
-}
-
-.navbar-nav li.nav-item .nav-link,
-.dropdown-menu .dropdown-item {
-  transition: color 0.3s, background-color 0.3s;
-}
-
-.nav-link.active,
-.dropdown-item.active {
-  color: #fff !important;
-  background-color: #007bff !important;
-}
-
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
-.navbar-toggler {
-  border: none;
-}
-
-.navbar-toggler:focus {
-  outline: none;
-}
-
-@media (min-width: 992px) {
-  .dropdown-menu {
-    display: none;
-  }
-
-  .dropdown:hover .dropdown-menu {
-    display: block;
-  }
-}
-
-@media (max-width: 991px) {
-  .navbar-nav {
-    max-height: calc(100vh - 56px);
-    overflow-y: auto;
-  }
-
-  .navbar-nav::-webkit-scrollbar {
-    width: 9px;
-  }
-
-  .navbar-nav::-webkit-scrollbar-thumb {
-    background-color: #888;
-    border-radius: 10px;
-  }
-
-  .navbar-nav::-webkit-scrollbar-thumb:hover {
-    background-color: #555;
-  }
-
-  .navbar-nav .nav-link {
-    font-size: 1.2rem;
-  }
-
-  .dropdown-menu .dropdown-item {
-    font-size: 1rem;
-  }
-
-  .dropdown-toggle::after {
-    display: inline-block;
-    margin-left: .255em;
-    vertical-align: .255em;
-    content: "";
-    border-top: .3em solid;
-    border-right: .3em solid transparent;
-    border-bottom: 0;
-    border-left: .3em solid transparent;
-  }
-
-  .navbar .dropdown-toggle::after {
-    content: none !important;
-  }
-
-  .navbar-toggler-icon {
-    width: 1.2em;
-    height: 1.2em;
-  }
-
-  .navbar-toggler {
-    border: none !important;
-  }
-
-  .navbar-toggler:focus {
-    box-shadow: none !important;
-  }
-
-  .d-flex {
-    height: 45px;
-  }
-
-  .a_logonav{
-    text-decoration: none !important;
-  }
-
-  .text-isp {
-    font-size: 1.3rem;
-    color: #9d9d9d;
-    display: inline-block;
-    vertical-align: middle;
-    text-decoration: none !important;
-  }
-
-  .navbar-nav {
-        max-height: calc(50vh - 56px);
-        overflow-y: auto;
-    }
-}
-
-
-</style>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    let dropdowns = document.querySelectorAll('.navbar .dropdown');
-
-    dropdowns.forEach(function (dropdown) {
-      let link = dropdown.querySelector('.dropdown-toggle');
-
-      // Redirige al hacer clic en el enlace principal del dropdown en dispositivos móviles
-      link.addEventListener('click', function (event) {
-        if (window.innerWidth < 992) {
-          if (event.target === link) {
-            window.location.href = link.href;
-          }
-        }
-      });
-
-      let items = dropdown.querySelectorAll('.dropdown-item');
-
-      // Redirige al hacer clic en los elementos del submenú
-      items.forEach(function (item) {
-        item.addEventListener('click', function () {
-          window.location.href = item.href;
-        });
-      });
-    });
-
-    // Cierra los dropdowns si se hace clic fuera de ellos en dispositivos móviles
-    document.addEventListener('click', function (event) {
-      if (window.innerWidth < 992 && !event.target.closest('.navbar .dropdown')) {
-        dropdowns.forEach(function (dropdown) {
-          dropdown.querySelector('.dropdown-menu').classList.remove('show');
-        });
-      }
-    });
-  });
-</script>

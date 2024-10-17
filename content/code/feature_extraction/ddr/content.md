@@ -1,7 +1,8 @@
 ---
-title: "Dimensionality Reduction via Regression (DRR)"
 type: "code"
 layout: "single_four"
+
+title: "Dimensionality Reduction via Regression (DRR)"
 images:
   - link: "drr_image1.webp"
     description: "The behavior of DRR and other dimensionality reduction algorithms."

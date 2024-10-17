@@ -1,20 +1,30 @@
 {{ define "main" }}
-  <div style="text-align:center;">
-    <img src="{{ .Params.banner }}" alt="ISP Banner" style="width:75%; margin:auto; margin-top:20px;"/>
-  </div>
-
-  <div class="row justify-content-center" style="margin-top:40px;">
-    <div class="col-md-3 text-center">
-      <iframe src="https://player.vimeo.com/video/869866902" width="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <div class="custom-wrapper">
+        <div class="custom-banner">
+            <img src="{{ .Params.banner }}" alt="ISP Banner">
+        </div>
+        <div class="custom-content">
+            <div class="custom-video">
+              <iframe src="https://player.vimeo.com/video/869866902?title=0&byline=0&portrait=0" 
+              frameborder="0" 
+              allow="autoplay; fullscreen; picture-in-picture" 
+              allowfullscreen></iframe>
+            </div>
+            <div class="custom-text">
+                {{ .Content }}
+                <div class="custom-social-links">
+                    <a href="https://scholar.google.es/citations?hl=en&user=MsMYu-IAAAAJ"><i class="fab fa-google"></i></a>
+                    <a href="https://www.researchgate.net/lab/ISP-Image-and-Signal-Processing-Gustau-Camps-Valls"><i class="fab fa-researchgate"></i></a>
+                    <a href="https://twitter.com/isp_uv_es"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://github.com/IPL-UV"><i class="fab fa-github"></i></a>
+                    <a href="./../../../../videos/"><i class="fab fa-youtube"></i></a>
+                    <a href="mailto:gustau.camps@uv.es"><i class="fa fa-envelope"></i></a>
+                    <a href="https://bsky.app/profile/isp-uv-es.bsky.social"><i class="fa fa-bug"></i></a>
+                </div>
+                <div class="custom-copyright">
+                    <p>&copy; ISP, 2024</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-md-7" style="text-align: justify;">
-      {{ .Content }}
-      <a href="https://scholar.google.es/citations?hl=en&user=MsMYu-IAAAAJ"><i class="fab fa-google"></i></a>  <a href="https://twitter.com/isp_uv_es"><i class="fab fa-twitter"></i></a> 
-      <a href="https://github.com/IPL-UV/"><i class="fab fa-github"></i></a> 
-      <a href="/home/videos/index.html"><i class="fab fa-youtube"></i></a>   
-      <a href="/news"><i class="fas fa-newspaper"></i></a>
-      <a href="mailto:gustau.camps@uv.es"><i class="fa fa-envelope"></i></a> 
-      <div style="text-align:right">&#169; ISP, 2024</div>
-    </div>
-  </div>
 {{ end }}

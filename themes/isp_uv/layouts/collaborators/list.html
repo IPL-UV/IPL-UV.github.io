@@ -1,12 +1,15 @@
 {{ define "main" }}
-<div class="container">
-    <h1><span class="label label-info">{{ .Title }}</span></h1>
-    {{ range .Pages }}
-    <div class="row collaborator mb-4">
-        <div class="col-md-12">
-            {{ .Content | safeHTML }}
-        </div>
-    </div>
-    {{ end }}
+<div class="content-container">
+  {{ range .Pages }}
+  <div class="title-container">
+    <h1>{{ .Title }}</h1>
+  </div>
+  <div class="collaborators-grid">
+    {{ $content := .Content }}
+    {{ $content = replace $content "src=\"" (printf "src=\"%s" (relURL "images/collaborators/")) }}
+    {{ $content = replace $content (printf "src=\"%s" (relURL "images/collaborators/http")) "src=\"http" }}
+    {{ $content | markdownify | safeHTML }}
+  </div>
+  {{ end }}
 </div>
 {{ end }}

@@ -10,7 +10,7 @@ layout: "single_projects"
 
 <br>
 <p align="center">
-  <img src="/images/research/AI_earth_pic.webp" width="40%">
+  <img src="AI_earth_pic.webp" width="40%">
 </p>
 <br>
 
@@ -38,8 +38,3 @@ Our main goal is to develop new machine learning models for the ambitious goal o
 - **Modes of variability and causal discovery.** Tackling climate change needs to understand the complex phenomena occurring on the Planet. Discovering  teleconnection patterns is an essential part of the endeavor. Nonlinearities, nonstationarities and the (ab)use of correlation analyses hamper the discovery of true causal patterns. We investigate the use of novel nonlinear methods able to extend state-of-the-art approaches. In both approaches, the idea is to find a low-dimensional mapping of the spatio-temporal data such that most of the information is retained.
 
 - **Discover knowledge and causal relations in Earth observation data.** We investigate graphical causal models and regression-based causal schemes applied to large heterogeneous EO data streams. This requires improved measures of (conditional) independence, designing experiments in controlled situations and using high-quality data. Learning the hierarchy of the relations between variables and related covariates, as well as their causal relations, may in turn allow the discovery of hidden essential variables, drivers and confounders. Moving from correlation to dependence and then to causation concepts is fundamental to advance the field of Earth Observation and the science of climate change.
-
-
-
-{{< projects "usmile" "xaida" "deepcube" "elise" "sedal" "cloud" "mapict" >}}
-

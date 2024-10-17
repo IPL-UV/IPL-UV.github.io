@@ -31,7 +31,7 @@ The activities in ISP involve strong interactions between the theoretical and th
 
 <br>
 <p align="center">
-  <img src="/images/research/ai4cs_agenda.webp" width="80%">
+  <img src="ai4cs_agenda.webp" width="80%">
 </p>
 <br>
 

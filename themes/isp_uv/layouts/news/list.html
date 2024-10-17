@@ -1,25 +1,111 @@
 {{ define "main" }}
-<div class="content-container" style="font-size: 14px;">
-  <h1 style="margin-bottom: 20px;">News</h1>
-  <br>
-  <div id="news-container">
-    {{ $years := .Pages.GroupByDate "2006" }}
-    {{ range $years }}
-      <h2 class="news-year">{{ .Key }}</h2>
-      <ul class="news-list">
-        {{ range .Pages }}
-          <li class="news-item">
-            {{ if .Params.externalLink }}
-              <a href="{{ .Params.externalLink }}" target="_blank" rel="noopener noreferrer">
-            {{ else }}
-              <a href="{{ .RelPermalink }}">
-            {{ end }}
-              <p class="news-summary">{{ .Summary }}</p>
-            </a>
-          </li>
+<div class="content-container">
+  <div class="grid-item grid-filter">
+    <div class="filter-container">
+      <label for="year-filter">Filter by:</label>
+      <select id="year-filter" onchange="updateFilters()">
+        <option value="">All Years</option>
+        {{ $years := slice }}
+        {{ range sort (where .Site.RegularPages "Section" "news") "Date" "desc" }}
+          {{ $year := .Date.Format "2006" }}
+          {{ if and (not (in $years $year)) (ne $year "0001") }}
+            <option value="{{ $year }}">{{ $year }}</option>
+            {{ $years = $years | append $year }}
+          {{ end }}
         {{ end }}
-      </ul>
+      </select>      
+
+      <label for="month-filter"></label>
+      <select id="month-filter" onchange="updateFilters()">
+        <option value="">All Months</option>
+        {{ $months := slice "January" "February" "March" "April" "May" "June" "July" "August" "September" "October" "November" "December" }}
+        {{ range $index, $month := $months }}
+        <option value="{{ $month }}">{{ $month }}</option>
+        {{ end }}
+      </select>
+    </div>
+  </div>
+
+  <div class="grid-container" id="seminar-grid-container">
+    {{ range sort .Pages "Date" "desc" }}
+      {{ $img := .Params.img }}
+      {{ if not (hasPrefix $img "http") }}
+        {{ $img = relURL (urls.JoinPath "images/news" ($img | default "uv.webp")) }}
+      {{ end }}
+      {{ $current := . }}
+      <div class="grid-item seminar-item project-item" data-year="{{ .Date.Format "2006" }}" data-month="{{ .Date.Format "January" }}">
+        <div class="image-container seminar-image">
+          {{ with .Params.link }}
+            <a href="{{ . }}">
+              <img src="{{ $img }}" alt="{{ $current.Params.image_alt | default "Default Seminar Image" }}">
+            </a>
+          {{ else }}
+            <img src="{{ $img }}" alt="{{ .Params.image_alt | default "Default Seminar Image" }}">
+          {{ end }}
+        </div>
+        <div class="text-container seminar-text">
+          {{ with .Params.link }}
+            <a href="{{ . }}" class="nameLink_a seminar-title">{{ $current.Params.title | markdownify }}</a>
+          {{ else }}
+            <p class="nameLink_a seminar-title">{{ .Params.title | markdownify }}</p>
+          {{ end }}
+          {{ with .Content }} 
+          <p> {{ . | markdownify }} </p>
+          {{ end }}
+          <p>
+            <span class="day">{{ .Date.Format "02" }}</span>
+            <span class="month">{{ .Date.Format "January" }}</span>
+            <span class="year">{{ .Date.Format "2006" }}</span>
+          </p>
+        </div>
+      </div>
     {{ end }}
   </div>
+  
 </div>
+
+<script>
+  function updateFilters() {
+    const year = document.getElementById('year-filter').value;
+    const month = document.getElementById('month-filter').value;
+    const items = document.querySelectorAll('.seminar-item');
+
+    // Gather available options based on current filter selection
+    let availableMonths = new Set();
+
+    items.forEach(item => {
+      const itemYear = item.getAttribute('data-year');
+      const itemMonth = item.getAttribute('data-month');
+
+      const yearMatch = (year === "" || itemYear === year);
+      const monthMatch = (month === "" || itemMonth === month);
+
+      // Display or hide items based on selected filters
+      if (yearMatch && monthMatch) {
+        item.style.display = 'flex';
+        if (yearMatch) {
+          availableMonths.add(itemMonth);
+        }
+      } else {
+        item.style.display = 'none';
+      }
+    });
+
+    // Keep Year Filter always visible
+    const yearFilter = document.getElementById('year-filter');
+    Array.from(yearFilter.options).forEach(option => {
+      option.style.display = 'block';
+    });
+
+    // Update Month Filter
+    const monthFilter = document.getElementById('month-filter');
+    Array.from(monthFilter.options).forEach(option => {
+      if (option.value === "" || availableMonths.has(option.value)) {
+        option.style.display = 'block';
+      } else {
+        option.style.display = 'none';
+      }
+    });
+  }
+</script>
 {{ end }}
