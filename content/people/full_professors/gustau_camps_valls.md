@@ -12,7 +12,8 @@ params:
   github: 'https://github.com/IPL-UV/'
   semanticscholar: 'https://www.semanticscholar.org/author/1397959153'
   uv: 'https://www.uv.es/gcamps/'
-  link_image: 'https://www.uv.es/gcamps/'
+  link_image: 'https://www.youtube.com/watch?v=VfBersY5OHw'
+  youtube: https://www.youtube.com/watch?v=VfBersY5OHw
 ---
 
 My research is related to statistical learning for modeling and understanding the Earth system.

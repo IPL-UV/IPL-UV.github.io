@@ -19,9 +19,7 @@
                     <a href="{{ $link_image }}">
                     {{ end }}
                     <img src="{{ $img }}" class="img-fluid" alt="Image of {{ $name }}">
-                    {{ if $link_image }}
                     </a>
-                    {{ end }}
                 </div>
                 <div class="col-md-9">
                     <div class="card-body">
@@ -34,13 +32,14 @@
                             {{ with .Params.github }} <a href="{{ . }}"><img src={{ relURL "images/people/redes/github.webp" }}></a> {{ end }}
                             {{ with .Params.semanticscholar }} <a href="{{ . }}"><img src={{ relURL "images/people/redes/semantic.webp" }}></a> {{ end }}
                             {{ with .Params.researchgate }} <a href="{{ . }}"><img src={{ relURL "images/people/redes/rg.webp" }}></a> {{ end }}
-                            {{ with .Params.uv }} <a href="{{ . }}" class="btn btn-xss btn-info" aria-label="Left Align">UV</a> {{ end }}
+                            {{ with .Params.uv }} <a href="{{ . }}"><img src={{ relURL "images/people/redes/uv.webp" }}></a> {{ end }}
                             {{ with .Params.linkedin }} <a href="{{ . }}"><img src={{ relURL "images/people/redes/linkedin.webp" }}></a> {{ end }}
-                            {{ with .Params.ieee }} <a href="{{ . }}"><button type="button" class="btn btn-xss btn-success">IEEE</button></a> {{ end }}
-                            {{ with .Params.dblp }} <a href="{{ . }}"><button type="button" class="btn btn-xss btn-danger">dblp</button></a> {{ end }}
+                            {{ with .Params.ieee }} <a href="{{ . }}"><img src={{ relURL "images/people/redes/ieee.webp" }}></a> {{ end }}
+                            {{ with .Params.dblp }} <a href="{{ . }}"><img src={{ relURL "images/people/redes/dblp.webp" }}></a> {{ end }}
                             {{ with .Params.academia }} <a href="{{ . }}"><img src={{ relURL "images/people/redes/academia.webp" }}></a> {{ end }}
                             {{ with .Params.scopus }} <a href="{{ . }}"><img src={{ relURL "images/people/redes/scopus.webp" }}></a> {{ end }}
-                            {{ with .Params.website }} <a href="{{ . }}"><button type="button" class="btn btn-xss btn-info">Website</button></a> {{ end }}                            
+                            {{ with .Params.website }} <a href="{{ . }}"><img src={{ relURL "images/people/redes/website.webp" }}></a> {{ end }}
+                            {{ with .Params.youtube }} <a href="{{ . }}"><img src={{ relURL "images/people/redes/youtube.webp" }}></a> {{ end }}                              
                         </div>
                     </div>
                 </div>
