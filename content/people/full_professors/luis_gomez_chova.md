@@ -14,6 +14,7 @@ params:
   uv: 'https://www.uv.es/chovago/'
   linkedin: 'https://www.linkedin.com/in/luis-gomez-chova'
   link_image: 'https://www.uv.es/~chovago/'
+  youtube: https://www.youtube.com/watch?v=W6KW9ofdCwY
 ---
 
 My interests are related to machine learning and signal and image processing. The application domains are remote sensing data analysis and hyperspectral images with special focus on cloud screening.
