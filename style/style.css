@@ -440,7 +440,7 @@ h3 {
   /* object-fit: inside; */
 }
 
-.card:hover img {
+.card img:hover  {
   transform: scale(1.05);
 }
 
@@ -483,10 +483,11 @@ h3 {
   height: 25px;
   width: 25px;
   transition: transform 0.3s ease;
+  object-fit: contain;
 }
 
 .card-links img:hover {
-  transform: scale(1.1);
+  transform: scale(1.3);
 }
 
 .card-links .btn {
