@@ -4,7 +4,7 @@ draft: false
 title: 'José Enrique Adsuara'
 role: assistant professors
 params:
-  img: jose.webp
+  img: jose_enrique.webp
   scholar: 'https://scholar.google.es/citations?user=emaUK3AAAAAJ&hl=es'
   orcid: 'https://orcid.org/0000-0002-3842-965X'
   researchgate: 'https://www.researchgate.com/profile/Jose-Adsuara'
