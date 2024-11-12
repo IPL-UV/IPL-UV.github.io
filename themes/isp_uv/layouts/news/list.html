@@ -30,7 +30,7 @@
     {{ range sort .Pages "Date" "desc" }}
       {{ $img := .Params.img }}
       {{ if not (hasPrefix $img "http") }}
-        {{ $img = relURL (urls.JoinPath "images/news" ($img | default "uv.webp")) }}
+        {{ $img = relURL (urls.JoinPath "images/news" ($img | default "isp_ico.webp")) }}
       {{ end }}
       {{ $current := . }}
       <div class="grid-item seminar-item project-item" data-year="{{ .Date.Format "2006" }}" data-month="{{ .Date.Format "January" }}">
