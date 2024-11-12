@@ -1,5 +1,4 @@
 ---
-date: '2024-05-10T05:29:29+02:00'
 draft: false
 title: 'Paolo Pelucchi'
 role: "phd students"

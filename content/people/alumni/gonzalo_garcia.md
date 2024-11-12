@@ -2,7 +2,7 @@
 date: '2024-05-10T05:29:29+02:00'
 draft: false
 title: 'Gonzalo Mateo-García'
-role: postdocs
+role: alumni
 weight: 1
 params:
   img: gonzalo.webp
