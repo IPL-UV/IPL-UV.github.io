@@ -4,4 +4,5 @@ date: "2021-07-03"
 speaker: "A. Martin, V. Laparra"
 affiliation: "ISP/UV, UPF"
 link: https://youtu.be/7sWFrngGzZ0?si=mOeO3Z_Icetbz6CN
+img: valero.webp
 ---

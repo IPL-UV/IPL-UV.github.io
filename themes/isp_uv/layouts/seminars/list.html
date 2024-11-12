@@ -42,7 +42,14 @@
 
   <div class="grid-container" id="seminar-grid-container">
     {{ range sort (where .Site.RegularPages "Section" "seminars") "Date" "desc" }}
-      {{ $img := relURL (urls.JoinPath "images/seminars" (.Params.img | default "uv.webp")) }}
+    {{ $ruta := .Params.img | default "uv.webp" }}
+    {{ $img := "" }}
+    {{ if hasPrefix $ruta "http" }}
+      {{ $img = $ruta }} <!-- Si es un enlace externo, úsalo directamente -->
+    {{ else }}
+      {{ $img = relURL (urls.JoinPath "images/people" $ruta) }} <!-- Si es una ruta relativa, úsala con la carpeta local -->
+    {{ end }}
+    
       {{ $current := . }}
       <div class="grid-item seminar-item project-item" data-year="{{ .Date.Format "2006" }}" data-month="{{ .Date.Format "January" }}" data-speaker="{{ .Params.speaker }}">
         <div class="image-container seminar-image">

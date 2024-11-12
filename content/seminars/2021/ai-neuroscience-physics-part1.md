@@ -3,4 +3,5 @@ title: "<p><q>Artificial Intelligence, Neuroscience and Physics: are these relat
 date: "2021-07-02"
 speaker: "J. Malo, M. Martínez, A. Gómez, E. Díaz, G. Mateo, A. Martin"
 affiliation: "ISP/UV, UJI, UAB, UPF"
+img: jesus.webp
 ---

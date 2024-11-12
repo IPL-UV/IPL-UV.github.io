@@ -4,5 +4,5 @@ date: "2024-05-31"         # Automatically generated current date in format YYYY
 speaker: "Ivan + Gustau"                                   # Speaker name (Mandatory)
 affiliation: "University of Valencia"                               # Speaker's affiliation (Optional)
 link: ""                                      # Link to seminar materials or external resource (Optional)
-img: ""                                       # Image file name or URL (Optional)
+img: "ivan.webp"                                       # Image file name or URL (Optional)
 ---

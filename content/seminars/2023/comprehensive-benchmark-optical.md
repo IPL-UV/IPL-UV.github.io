@@ -3,4 +3,5 @@ title: "A comprehensive benchmark for optical remote sensing image super-resolut
 date: "2023-10-27"
 speaker: "César Aybar"
 affiliation: "ISP/UV"
+img: cesar.webp
 ---

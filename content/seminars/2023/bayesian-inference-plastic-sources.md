@@ -3,4 +3,5 @@ title: "Bayesian inference of plastic sources by back-tracking particles in the 
 date: "2023-02-02"
 speaker: "Deborah Basotto"
 affiliation: "Uni Lausanne, Switzerland"
+img: deborah.webp
 ---
