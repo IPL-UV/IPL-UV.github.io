@@ -483,6 +483,7 @@ h3 {
   width: 25px;
   transition: transform 0.3s ease;
   object-fit: contain;
+  border-radius: 100%;
 }
 
 .card-links img:hover {
@@ -534,6 +535,8 @@ h3 {
     width: 20px;
     height: 20px;
     margin: 0.5rem;
+    
+    
   }
   
   .card-links .btn {
