@@ -372,6 +372,10 @@ h3 {
 
 
 @media (max-width: 768px) {
+  .seminar-item .seminar-image img {
+    margin-right: 0rem;
+
+  }
   .grid-item {
     flex-direction: column;
     text-align: center;
