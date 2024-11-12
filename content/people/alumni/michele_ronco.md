@@ -7,4 +7,4 @@ params:
   img: michele.webp
 ---
 
-I use explainable AI to understand deep neural networks, bridging physics-based and data-driven models. Also work on integrating prior knowledge into learning through optimized penalized losses or network modifications.
+While I was at ISP, I used explainable AI to understand deep neural networks, bridging physics-based and data-driven models. I also worked on integrating prior knowledge into learning through optimized penalized losses or network modifications.

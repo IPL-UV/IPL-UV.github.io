@@ -7,4 +7,4 @@ params:
   img: Qiang_Li.webp
 ---
 
-I worked on computational neuroscience via combined fMRI and image processing techniques to better understand the mechanism of the human vision system, which efficiently processes and extracts the information from the natural world.
+While I was at ISP, I worked on computational neuroscience via combined fMRI and image processing techniques to better understand the mechanisms of the human vision system, which efficiently processes and extracts information from the natural world.

@@ -7,4 +7,4 @@ params:
   img: Benyamin.webp
 ---
 
-I am working on convolutional versions of linear + nonlinear models of visual neuroscience and using those in visual prosthesis and image quality metrics.
+When I was at ISP, I worked on convolutional versions of linear and nonlinear models of visual neuroscience and used those in visual prosthesis and image quality metrics.

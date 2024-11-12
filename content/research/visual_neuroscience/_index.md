@@ -63,72 +63,6 @@ images:
     description: "Local features visualized in the PPA-transformed domain"
 
 
-references:
-  - title: "Opth.Phys.Opt.97"
-    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/OPH97.PS.gz"
-  - title: "J.Opt.94"
-    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/JOPT94.PS.gz"
-  - title: "Proc.SPIE15"
-    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/malo15a-reprint.pdf"
-  - title: "Im.Vis.Comp.00"
-    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/ivc99.ps.gz"
-  - title: "Neur.Comp.12"
-    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/Neco_accepted_2012.pdf"
-  - title: "IEEE-TGRS14"
-    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/manuscr_TGRS_2012_00431.pdf"
-  - title: "PLoS-ONE14"
-    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/Gutmann_PLOS_ONE_2014.pdf"
-  - title: "Rem.Sens.Im.Proc.11"
-    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/people/malo/rem_sens_im_proc_12_ch02.pdf"
-  - title: "Front.Neurosci.15"
-    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/after_effects"
-  - title: "J.Mod.Opt.97"
-    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/JMO97.PS.gz"
-  - title: "Neur.Comp.10"
-    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/Malo_Laparra_Neural_10b.pdf"
-  - title: "MScThesis95"
-    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/msc_jmalo.pdf"
-  - title: "Vis.Res.97"
-    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/VISRES97.PS.gz"
-  - title: "J.Opt.96"
-    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/JOPT96.PS.gz"
-  - title: "J.Opt.98"
-    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/JOPT98.PS.gz"
-  - title: "JOSA04"
-    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/josa_04.pdf"
-  - title: "Alheteia08"
-    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/Malo_Alheteia_08.pdf"
-  - title: "J.Vis.01"
-    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/vss_poster.eps"
-  - title: "PhDThesis99"
-    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/Redundancy_Reduction_Malo_99.pdf"
-  - title: "IEEE TIP01"
-    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/ieeeoct01.pdf"
-  - title: "IEEE-TGRS13"
-    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/AdaptVQ_ieeetgars_2012.pdf"
-  - title: "LNCS11"
-    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/ICANN_2011_v7.pdf"
-  - title: "NeuroImag.Meeting11"
-    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/SlidesNeuroImageMeeting11.pdf"
-  - title: "Network06"
-    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/V1_from_non_linear_ICA.pdf"
-  - title: "J.Opt.95"
-    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/JOPT95.PS.gz"
-  - title: "LNCS00"
-    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/spr00.ps"
-  - title: "Patt.Recog.03"
-    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/patt_rec03.pdf"
-  - title: "LNCS10"
-    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/LNAI10_malo_laparra.pdf"
-  - title: "IEEE TNN 11"
-    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/Laparra11.pdf"
-  - title: "Int.J.Neur.Syst.14"
-    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/IJNS_Laparra14_accepted_v5.pdf"
-  - title: "IEEE JSTSP15"
-    link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/drr_jstsp2014_final.pdf"
-  - title: "ML CODE"
-    link: "../../code/feature_extraction/"
-
 links:
   - title: "Scholarpedia: Models of Visual Cortex"
     link: "http://www.scholarpedia.org/article/Models_of_visual_cortex"
@@ -144,14 +78,14 @@ links:
 
 **Vision** is the ability to interpret the surrounding environment by analyzing the measurements drawn by imaging systems. This ability is particularly impressive in *humans* compared to the current state of the art in *computers*.
 
-The study of all phenomena related to *vision in biological systems* (particularly in humans) is usually referred to as **Vision Science**. It addresses a variety of issues ranging from the formation of the visual signal—such as the physics of the imaging process, which includes Radiometry and **Physiological Optics**—to the analysis of the visual signal, which is of interest for Neuroscience and Psychology.
+The study of all phenomena related to *vision in biological systems* (particularly in humans) is usually referred to as **Vision Science**. It addresses a variety of issues ranging from the formation of the visual signal, such as the physics of the imaging process, which includes Radiometry and **Physiological Optics**—to the analysis of the visual signal, which is of interest for Neuroscience and Psychology.
 
 This analysis involves the extraction of visual primitives through basic computations in the retina-cortex neural pathway and the subsequent information processing that leads to scene descriptors of higher abstraction levels ([see elsewhere](http://www.scholarpedia.org/article/Models_of_visual_cortex)). These problems can be approached from different perspectives:
 
 - A *mechanistic perspective*, which focuses on describing the empirical behavior of the system, based on experimental recordings from **Psychophysics** and **Neurophysiology**.
 - A *normative perspective*, which looks for the functional reasons (organization principles) that explain the behavior. This perspective relies on the study of **Image Statistics** and the use of concepts from **Information Theory** and **Statistical Learning**.
 
-The latter is known as the [Efficient Coding Hypothesis](https://en.wikipedia.org/wiki/Efficient_coding_hypothesis).
+The latter is known as the [[Efficient Coding Hypothesis](https://en.wikipedia.org/wiki/Efficient_coding_hypothesis)].
 
 Over the years, we have made original contributions in *all* of the above subdisciplines related to (low-level) Vision Science. Currently, we are shifting our focus to more abstract visual functions.
 
@@ -159,21 +93,21 @@ Over the years, we have made original contributions in *all* of the above subdis
 
 I made experimental contributions in three aspects: *Physiological Optics, Psychophysics*, and *Image Statistics*.
 
-1. In the field of **Physiological Optics**, we measured the optical transfer function of the lens+cornea system in-vivo [Opth.Phys.Opt.97](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/OPH97.PS.gz). This work received the European Vistakon Research Award in 1994.
+1. In the field of **Physiological Optics**, we measured the optical transfer function of the lens+cornea system in-vivo [[Opth.Phys.Opt.97](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/OPH97.PS.gz)]. This work received the European Vistakon Research Award in 1994.
 
-2. In **Psychophysics**, we proposed simplified methods to measure the Contrast Sensitivity Function across the entire frequency domain [J.Opt.94](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/JOPT94.PS.gz), and developed a fast and accurate method to measure the parameters of multi-stage linear+nonlinear vision models [Proc.SPIE15](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/malo15a-reprint.pdf).
+2. In **Psychophysics**, we proposed simplified methods to measure the Contrast Sensitivity Function across the entire frequency domain [[J.Opt.94](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/JOPT94.PS.gz)], and developed a fast and accurate method to measure the parameters of multi-stage linear+nonlinear vision models [[Proc.SPIE15](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/malo15a-reprint.pdf)].
 
-3. In **Image Statistics**, we gathered spatially and spectrally calibrated image samples to determine the properties of these signals and their variations under changes in illumination, contrast, and motion [Im.Vis.Comp.00](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/ivc99.ps.gz), [Neur.Comp.12](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/Neco_accepted_2012.pdf), [IEEE-TGRS14](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/manuscr_TGRS_2012_00431.pdf), [PLoS-ONE14](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/Gutmann_PLOS_ONE_2014.pdf), [Rem.Sens.Im.Proc.11](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/people/malo/rem_sens_im_proc_12_ch02.pdf), [Front.Neurosci.15](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/after_effects).
+3. In **Image Statistics**, we gathered spatially and spectrally calibrated image samples to determine the properties of these signals and their variations under changes in illumination, contrast, and motion [[Im.Vis.Comp.00](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/ivc99.ps.gz), [Neur.Comp.12](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/Neco_accepted_2012.pdf), [IEEE-TGRS14](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/manuscr_TGRS_2012_00431.pdf), [PLoS-ONE14](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/Gutmann_PLOS_ONE_2014.pdf), [Rem.Sens.Im.Proc.11](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/people/malo/rem_sens_im_proc_12_ch02.pdf), [Front.Neurosci.15](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/after_effects)].
 
 # Theory: empirical models in Vision Science
 
 We proposed mathematical descriptions of different visual dimensions: *Texture*, *Color*, and *Motion*.
 
-1. We used wavelet representations to propose nonstationary **Texture Vision** models [J.Mod.Opt.97](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/JMO97.PS.gz), [MScThesis95](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/msc_jmalo.pdf).
+1. We used wavelet representations to propose nonstationary **Texture Vision** models [[J.Mod.Opt.97](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/JMO97.PS.gz), [MScThesis95](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/msc_jmalo.pdf)].
 
-2. We developed **Color Vision** models with illumination invariance, which allow for the reproduction of chromatic anomalies, adaptation, and aftereffects [Vis.Res.97](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/VISRES97.PS.gz), [J.Opt.96](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/JOPT96.PS.gz), [J.Opt.98](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/JOPT98.PS.gz), [JOSA04](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/josa_04.pdf), [Neur.Comp.12](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/Neco_accepted_2012.pdf).
+2. We developed **Color Vision** models with illumination invariance, which allow for the reproduction of chromatic anomalies, adaptation, and aftereffects [[Vis.Res.97](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/VISRES97.PS.gz), [J.Opt.96](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/JOPT96.PS.gz), [J.Opt.98](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/JOPT98.PS.gz), [JOSA04](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/josa_04.pdf), [Neur.Comp.12](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/Neco_accepted_2012.pdf)].
 
-3. We created **Motion Vision** models [Alheteia08](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/Malo_Alheteia_08.pdf) that focus on optical flow computation in perceptually relevant moving regions [J.Vis.01](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/vss_poster.eps), [PhDThesis99](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/Redundancy_Reduction_Malo_99.pdf), and explain the *static motion aftereffect* [Front.Neurosci.15](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/after_effects).
+3. We created **Motion Vision** models [[Alheteia08](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/Malo_Alheteia_08.pdf)] that focus on optical flow computation in perceptually relevant moving regions [[J.Vis.01](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/vss_poster.eps), [PhDThesis99](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/Redundancy_Reduction_Malo_99.pdf)], and explain the *static motion aftereffect* [[Front.Neurosci.15](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/after_effects)].
 
 All these psychophysical and physiological models have a parallel *linear+nonlinear* structure where **receptive fields** and **surround-dependent normalization** play an important role.
 
@@ -181,13 +115,13 @@ All these psychophysical and physiological models have a parallel *linear+nonlin
 
 This category refers to the proposition of organizational laws of sensory systems that explain empirical phenomena. These principles demonstrate that neural function has been adapted to (or is determined by) the statistics of visual stimuli.
 
-1. **Derivation of Linear Properties**: We worked on deriving the linear properties of the sensors and found that their spatio-chromatic sensitivity, changes in receptive fields, and phase properties arise from optimal solutions to the adaptation problem under noise constraints and manifold matching [PLoS-ONE14](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/Gutmann_PLOS_ONE_2014.pdf), [IEEE-TGRS13](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/AdaptVQ_ieeetgars_2012.pdf). These properties are also derived from statistical independence requirements [LNCS11](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/ICANN_2011_v7.pdf), [NeuroImag.Meeting11](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/SlidesNeuroImageMeeting11.pdf), and from optimal estimation of object reflectance [IEEE TGRS14](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/manuscr_TGRS_2012_00431.pdf).
+1. **Derivation of Linear Properties**: We worked on deriving the linear properties of the sensors and found that their spatio-chromatic sensitivity, changes in receptive fields, and phase properties arise from optimal solutions to the adaptation problem under noise constraints and manifold matching [[PLoS-ONE14](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/Gutmann_PLOS_ONE_2014.pdf), [IEEE-TGRS13](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/AdaptVQ_ieeetgars_2012.pdf)]. These properties are also derived from statistical independence requirements [[LNCS11](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/ICANN_2011_v7.pdf), [NeuroImag.Meeting11](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/SlidesNeuroImageMeeting11.pdf)], and from optimal estimation of object reflectance [[IEEE TGRS14](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/manuscr_TGRS_2012_00431.pdf)].
 
 2. **Derivation of Non-Linear Behavior**: We also derived the non-linear behavior for a variety of visual sensors (chromatic, texture, and motion sensors). We found that these nonlinearities are linked to optimal information transmission (entropy maximization) and/or error minimization in noisy systems (optimal vector quantization).
 
-- We studied this relationship in the traditional *statistics-to-perception* direction, deriving the nonlinearity from regularities in the scene [Network06](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/V1_from_non_linear_ICA.pdf), [Neur.Comp.12](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/Neco_accepted_2012.pdf), [Front.Neurosci.15](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/after_effects).
+- We studied this relationship in the traditional *statistics-to-perception* direction, deriving the nonlinearity from regularities in the scene [[Network06](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/V1_from_non_linear_ICA.pdf), [Neur.Comp.12](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/Neco_accepted_2012.pdf), [Front.Neurosci.15](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/after_effects)].
 
-- We also explored the (more novel) *perception-to-statistics* direction, examining the statistical effects of perceptually motivated nonlinearities [J.Opt.95](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/JOPT95.PS.gz), [Im.Vis.Comp.00](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/ivc99.ps.gz), [LNCS00](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/spr00.ps), [Patt.Recog.03](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/patt_rec03.pdf), [Neur.Comp.10](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/Malo_Laparra_Neural_10b.pdf), [LNCS10](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/LNAI10_malo_laparra.pdf), [NeuroImag.Meeting11](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/SlidesNeuroImageMeeting11.pdf).
+- We also explored the (more novel) *perception-to-statistics* direction, examining the statistical effects of perceptually motivated nonlinearities [[J.Opt.95](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/JOPT95.PS.gz), [Im.Vis.Comp.00](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/ivc99.ps.gz), [LNCS00](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/spr00.ps), [Patt.Recog.03](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/patt_rec03.pdf), [Neur.Comp.10](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/Malo_Laparra_Neural_10b.pdf), [LNCS10](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/LNAI10_malo_laparra.pdf), [NeuroImag.Meeting11](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/SlidesNeuroImageMeeting11.pdf)].
 
 # Theory: Statistical Learning for Vision Science
 
@@ -195,8 +129,8 @@ In theoretical neuroscience, deriving properties of biological sensors from the 
 
 Given my interest in applicability to Vision Science problems, I focused on techniques that can be explicitly represented in the image domain, to be compared with receptive fields of visual neurons, as opposed to the usual practice in the *Machine Learning* community. Techniques include:
 
-- **Rotation-based Iterative Gaussianization (RBIG)** [IEEE TNN 11](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/Laparra11.pdf)
-- **Sequential Principal Curves Analysis (SPCA)** [Network06](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/V1_from_non_linear_ICA.pdf), [Neur.Comp.12](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/Neco_accepted_2012.pdf), [Front. Neurosci.15](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/after_effects)
+- **Rotation-based Iterative Gaussianization (RBIG)** [[IEEE TNN 11](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/Laparra11.pdf)].
+- **Sequential Principal Curves Analysis (SPCA)** [[Network06](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/V1_from_non_linear_ICA.pdf), [Neur.Comp.12](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/Neco_accepted_2012.pdf), [Front. Neurosci.15](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/after_effects)].
 - **Principal Polynomial Analysis (PPA)** [Int.J.Neur.Syst.14](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/IJNS_Laparra14_accepted_v5.pdf)
-- **Dimensionality Reduction based on Regression (DRR)** [IEEE JSTSP15](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/drr_jstsp2014_final.pdf)
-- **Graph Matching for Adaptation** [IEEE TGRS13](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/AdaptVQ_ieeetgars_2012.pdf)
+- **Dimensionality Reduction based on Regression (DRR)** [[IEEE JSTSP15](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/drr_jstsp2014_final.pdf)].
+- **Graph Matching for Adaptation** [[IEEE TGRS13](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/research/visual_neuroscience/AdaptVQ_ieeetgars_2012.pdf).]

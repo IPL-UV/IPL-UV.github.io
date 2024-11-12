@@ -9,4 +9,4 @@ params:
   youtube: https://www.youtube.com/watch?v=tWAKzcRY5YQ
 ---
 
-PhD student in Harbin Institute of Technology, now visiting ISP. My research focuses on large foundation models and the processing of hyper/multi-spectral imagery.
+As a PhD student at Harbin Institute of Technology, I visited ISP, where my research focused on large foundation models and the processing of hyper/multi-spectral imagery.

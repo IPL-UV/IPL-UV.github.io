@@ -7,4 +7,4 @@ params:
   img: manu.webp
 ---
 
-I'm with the UVERS group, doing my PhD thesis on biophysical parameter retrieval for crop monitoring, in particular in the FP7 ERMES project, and collaborating with ISP people on GP retrieval algorithms.
+I worked with the UVERS group, conducting my PhD thesis on biophysical parameter retrieval for crop monitoring, particularly in the FP7 ERMES project, and collaborated with ISP people on GP retrieval algorithms.

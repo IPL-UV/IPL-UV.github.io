@@ -8,4 +8,4 @@ params:
   img: alice.webp
 ---
 
-I am a PhD student at Politecnico di Torino, Italy. My research focuses on preventive coastal flood assessment and mapping. During my research visit I will work on coastal flood susceptibility integrating remote sensing, GIS and ML.
+During my PhD studies at Politecnico di Torino, Italy, my research focused on preventive coastal flood assessment and mapping. While visiting ISP, I worked on coastal flood susceptibility by integrating remote sensing, GIS, and ML.

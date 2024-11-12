@@ -7,4 +7,4 @@ params:
   img: qiangwang.webp
 ---
 
-My background and expertise is on microwave remote sensing for soil moisture estimation, and agricultural applications, from estimating crop health and soil properties.
+When I was at ISP, my background and expertise were in microwave remote sensing for soil moisture estimation and agricultural applications, including estimating crop health and soil properties.

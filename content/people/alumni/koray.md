@@ -7,4 +7,4 @@ params:
   img: koray2.webp
 ---
 
-In my stay at IPL I addressed the problem of decoding the visual signals from simulated and real neural responses.
+During my stay at ISP, I addressed the problem of decoding the visual signals from simulated and real neural responses.

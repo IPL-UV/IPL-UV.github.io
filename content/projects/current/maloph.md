@@ -9,4 +9,5 @@ funding_source: 'European Space Agency - Open Discovery Ideas Channel'
 role: ''
 project_type: ''
 partners: []
+weight: 6
 ---

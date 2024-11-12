@@ -7,4 +7,4 @@ params:
   img: irene.webp
 ---
 
-My interests include machine learning and signal processing, particularly deep neural networks and transfer learning, focusing on applying physical constraints to ML models for better generalization and extrapolation capabilities.
+When I was at ISP, my interests included machine learning and signal processing, particularly deep neural networks and transfer learning, focusing on applying physical constraints to ML models for better generalization and extrapolation capabilities.

@@ -7,4 +7,4 @@ params:
   img: yolanda.webp
 ---
 
-In my MSc thesis I applied nonlinear models of chromatic contrast perception in wavelet domains to improve png2000.
+When I was at ISP, in my MSc thesis, I applied nonlinear models of chromatic contrast perception in wavelet domains to improve png2000.

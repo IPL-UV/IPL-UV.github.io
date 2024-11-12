@@ -10,8 +10,4 @@ params:
   github: 'https://github.com/DiegoBueso'
 ---
 
-
-
-
-
-My research work is about machine learning and its application on remote sensing specifically in feature extraction and climate dynamics analysis. I am especially interested in soil moisture data analysis and climate teleconnections.
+When I was at ISP, my research work was about machine learning and its application to remote sensing, specifically in feature extraction and climate dynamics analysis. I was especially interested in soil moisture data analysis and climate teleconnections.

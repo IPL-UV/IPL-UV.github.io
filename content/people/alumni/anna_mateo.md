@@ -11,4 +11,4 @@ params:
   linkedin: 'https://www.linkedin.com/in/anna-mateo-sanchis/'
 ---
 
-I develop machine learning algorithms for crop yield estimation using multi-scale remote sensing and climate data, focusing on anomaly detection in crop seasons and improving model interpretability.
+When I was at ISP, I developed machine learning algorithms for crop yield estimation using multi-scale remote sensing and climate data, focusing on anomaly detection in crop seasons and improving model interpretability.

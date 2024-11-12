@@ -9,4 +9,5 @@ funding_source: 'ESA ITT'
 role: ''
 project_type: ''
 partners: ['Norwegian Meteorological Institute']
+weight: 6
 ---

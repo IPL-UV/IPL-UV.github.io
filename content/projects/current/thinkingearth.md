@@ -9,4 +9,5 @@ funding_source: ''
 role: ''
 project_type: 'Research Project'
 partners: []
+weight: 2
 ---

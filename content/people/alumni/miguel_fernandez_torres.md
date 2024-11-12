@@ -13,5 +13,5 @@ params:
   linkedin: 'https://www.linkedin.com/in/miguelangelft/?originalSubdomain=es'
   website: 'https://miguelangelft.github.io/'
 ---
-My research is related to the design of deep learning models and machine attention mechanisms to be deployed in anomaly and extreme event detection in the Earth sciences.
 
+While I was at ISP, my research focused on the design of deep learning models and machine attention mechanisms to be deployed in anomaly and extreme event detection in the Earth sciences.

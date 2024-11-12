@@ -8,4 +8,4 @@ params:
   img: ioannis.webp
 ---
 
-I'm a researcher at the Orion Lab, National Observatory of Athens and the University of Valencia. I am interested in Deep Learning for the Earth System sciences, aiming to improve fire prediction systems.
+As a researcher at the Orion Lab, National Observatory of Athens, and the University of Valencia, I worked on Deep Learning for the Earth System sciences. During my time at ISP, I aimed to improve fire prediction systems through innovative ML techniques.

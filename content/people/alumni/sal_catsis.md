@@ -7,5 +7,4 @@ params:
   img: sal.webp
 ---
 
-I'm working on causal discovery from observational data, and in particular to study climate-induced human migrations.
-
+When I was at ISP, I worked on causal discovery from observational data, particularly studying climate-induced human migrations.

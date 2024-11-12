@@ -7,4 +7,4 @@ params:
   img: daniel.webp
 ---
 
-I am working on machine learning methods for remote sensing and earth observation data. My current focus is on kernel methods, and the incorporation of physical knowledge in statistical methods.
+when I was at ISP, I worked on machine learning methods for remote sensing and earth observation data. My focus was on kernel methods and the incorporation of physical knowledge into statistical methods.

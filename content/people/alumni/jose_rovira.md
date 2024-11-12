@@ -7,4 +7,4 @@ params:
   img: jose.webp
 ---
 
-During my MSc work I contributed to develop nonlinear local-to-global Independent Component Analysis.
+When I was at ISP, during my MSc work, I contributed to the development of nonlinear local-to-global Independent Component Analysis.

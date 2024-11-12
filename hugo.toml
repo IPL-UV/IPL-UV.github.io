@@ -43,12 +43,12 @@ theme = "isp_uv"
     weight = 2
   [[menu.main]]
     parent = "Research"
-    name = "Visual neuroscience"
+    name = "Visual science"
     url = "/research/visual_neuroscience/"
     weight = 3
   [[menu.main]]
     parent = "Research"
-    name = "Visual brain"
+    name = "Image processing"
     url = "/research/visual_brain/"
     weight = 4
   [[menu.main]]

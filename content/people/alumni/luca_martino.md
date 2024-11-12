@@ -7,4 +7,4 @@ params:
   img: lucamartino.webp
 ---
 
-My research interests lie in Monte Carlo methods for Bayesian inference, focusing on the random number generation problem and computational methods for stochastic quadrature, such as rejection sampling and MCMC algorithms.
+While I was at ISP, my research interests lay in Monte Carlo methods for Bayesian inference, focusing on the random number generation problem and computational methods for stochastic quadrature, such as rejection sampling and MCMC algorithms.

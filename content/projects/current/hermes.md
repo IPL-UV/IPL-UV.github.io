@@ -9,4 +9,5 @@ funding_source: 'BELSPO Stereo IV Research program'
 role: ''
 project_type: ''
 partners: ['Uni Ghent', 'Uni Leipzig']
+weight: 7
 ---

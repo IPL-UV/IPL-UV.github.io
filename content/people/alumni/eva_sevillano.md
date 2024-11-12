@@ -12,4 +12,4 @@ params:
   linkedin: 'https://www.linkedin.com/in/eva-sevillano-marco/?originalSubdomain=es'
 ---
 
-ISP Coordination & Project Manager, specializing in Remote Sensing & GIS applications for forestry, agriculture, land cover, and geospatial data quality. Collaborates with outstanding research groups. Ready for new challenges!
+As ISP Coordination & Project Manager, I specialized in Remote Sensing & GIS applications for forestry, agriculture, land cover, and geospatial data quality. I collaborated with outstanding research groups and was ready for new challenges.

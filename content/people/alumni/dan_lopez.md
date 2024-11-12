@@ -14,4 +14,4 @@ params:
   linkedin: 'https://www.linkedin.com/in/dan-lópez-puigdollers-601630129/'
 ---
 
-The main goal of my research is to develop automatic algorithms for the detection of clouds from remote sensing images. I mainly focus on the inclusion of prior knowledge and (spatial, temporal, angular) constraints in machine learning classifiers.
+When I was at ISP, the main goal of my research was to develop automatic algorithms for the detection of clouds from remote sensing images. I mainly focused on the inclusion of prior knowledge and (spatial, temporal, angular) constraints in machine learning classifiers.

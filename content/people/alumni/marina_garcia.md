@@ -7,4 +7,4 @@ params:
   img: marina.webp
 ---
 
-At IPL I've been working on computational visual neuroscience, modelling the processes that take place in the brain from the retinal images until we get information out of them.
+At ISP, I worked on computational visual neuroscience, modeling the processes that take place in the brain from retinal images to extracting information from them.

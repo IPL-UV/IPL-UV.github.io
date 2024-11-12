@@ -14,6 +14,4 @@ params:
   website: 'http://www.uv.es/gonmagar/'
 ---
 
-
-
-My research focuses on methane detection from multispectral and hyperspectral imagery. Previously, I researched machine learning for tasks like super-resolution, domain adaptation, change detection, cloud detection, and flood segmentation.
+When I was at ISP, my research focused on methane detection from multispectral and hyperspectral imagery. Previously, I researched machine learning for tasks such as super-resolution, domain adaptation, change detection, cloud detection, and flood segmentation.
