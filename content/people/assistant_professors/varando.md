@@ -2,8 +2,8 @@
 date: '2024-05-10T05:29:29+02:00'
 draft: false
 title: 'Gherardo Varando'
-role: "assistant professors"
-weight: 1
+role: assistant professors
+weight: 3
 params:
   img: gherardo.webp
   googlescholar: 'https://scholar.google.com/citations?user=ALjiTg0AAAAJ&hl'

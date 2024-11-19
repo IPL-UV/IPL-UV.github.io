@@ -3,6 +3,7 @@ date: '2024-05-10T05:29:29+02:00'
 draft: false
 title: 'Adrián Pérez-Suay'
 role: assistant professors
+weight: 2
 params:
   img: Adrian2018.webp
   scholar: 'https://scholar.google.es/citations?user=9GfwpZ4AAAAJ&hl=es&authuser=1&oi=ao'

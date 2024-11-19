@@ -2,8 +2,8 @@
 date: '2024-05-10T05:29:29+02:00'
 draft: false
 title: 'Óscar Pellicer'
-role: postdocs
-weight: 1
+role: assistant professors
+weight: 3
 params:
   img: 06_ISP_Oscar.webp
   googlescholar: 'https://scholar.google.com/citations?user=CCFJshwAAAAJ'

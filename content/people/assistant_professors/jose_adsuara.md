@@ -3,6 +3,7 @@ date: '2024-05-10T05:29:29+02:00'
 draft: false
 title: 'José Enrique Adsuara'
 role: assistant professors
+weight: 2
 params:
   img: jose_enrique.webp
   scholar: 'https://scholar.google.es/citations?user=emaUK3AAAAAJ&hl=es'
