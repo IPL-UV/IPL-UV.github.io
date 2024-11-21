@@ -27,7 +27,7 @@ jobs:
 
       # Paso 3: Construcción del sitio
       - name: Build Hugo site
-        run: hugo --minify --config hugo_new.toml
+        run: hugo --minify --config hugo-alt.toml
 
       # Paso 4: Despliegue en GitHub Pages
       - name: Deploy
