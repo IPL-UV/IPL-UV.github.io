@@ -1,6 +1,8 @@
-baseURL = "https://ipl-uv.github.io/"
+baseURL = "https://juliocontrerash.github.io/try-isp-page/"
 #baseURL = "https://isp.uv.es/github"
 publishDir = "public"
+
+
 
 #baseURL = "http://127.0.0.1/isp/"
 #publishDir = "isp"
@@ -142,75 +144,3 @@ theme = "isp_uv"
   name = "Contact"
   url = "/contact/"
   weight = 13
-
-
-
-
-
-# # Configuración del nav para los links de projects
-# [params]
-#   [params.projects]
-#     [params.projects.kermes]
-#       title = "Kermes"
-#       nav_options = [
-#         { label = "KERMES", url = "/isp/projects/projects_links/kermes/" },
-#         { label = "Teams", url = "/isp/projects/projects_links/kermes/teams" },
-#         { label = "Meetings", url = "/isp/projects/projects_links/kermes/meetings" },
-#         { label = "Soft+Data", url = "/isp/projects/projects_links/kermes/soft+data" },
-#         { label = "Stays", url = "/isp/projects/projects_links/kermes/stays" }
-#       ]
-
-#     [params.projects.sedal]
-#       title = "Sedal"
-#       nav_options = [
-#         { label = "SEDAL", url = "/isp/projects/projects_links/sedal/" },
-#         { label = "People", url = "/isp/projects/projects_links/sedal/people" },
-#         { label = "Publications", url = "/isp/projects/projects_links/sedal/publications/journals", sub_options = [
-#           { label = "Journals", url = "/isp/projects/projects_links/sedal/publications/journals" },
-#           { label = "Conferences", url = "/isp/projects/projects_links/sedal/publications/conferences" },
-#           { label = "Books", url = "/isp/projects/projects_links/sedal/publications/books" },
-#           { label = "Talks", url = "/isp/projects/projects_links/sedal/publications/talks" }
-#       ]},
-#         { label = "Activities", url = "/isp/projects/projects_links/sedal/", sub_options = [
-#           { label = "Seminars", url = "/isp/seminars/" },
-#           { label = "Courses", url = "/isp/courses/" },
-#           { label = "Software", url = "/isp/data/" }
-#         ]},
-#         { label = "Documents", url = "/isp/projects/projects_links/sedal/documents" }
-#       ]
-
-#     [params.projects.ai4cs]
-#       title = "ai4cs"
-#       nav_options = [
-#         { label = "AI4CS", url = "/isp/projects/projects_links/ai4cs/" },
-#         { label = "Teams", url = "/isp/projects/projects_links/ai4cs/teams" },
-#         { label = "Meetings", url = "/isp/projects/projects_links/ai4cs/meetings" },
-#         { label = "Soft+Data", url = "/isp/projects/projects_links/ai4cs/soft+data" },
-#         { label = "Stays", url = "/isp/projects/projects_links/ai4cs/stays" }
-#       ]
-
-#     [params.projects.opensr]
-#       title = "OpenSR"
-#       nav_options = [
-#         { label = "OpenSR", url = "/isp/projects/projects_links/opensr/" },
-#         { label = "Data", url = "/isp/projects/projects_links/opensr/data", sub_options = [
-#           { label = "OpenSR", url = "/isp/projects/projects_links/opensr/data/#opensr" },
-#           { label = "Worldstrat", url = "/isp/projects/projects_links/opensr/data/#worldstrat" } 
-#         ]},
-#         { label = "Methods", url = "/isp/projects/projects_links/opensr/methods", sub_options = [
-#           { label = "Super Resolution", url = "/isp/projects/projects_links/opensr/methods/#super_resolution" },
-#           { label = "Explainability", url = "/isp/projects/projects_links/opensr/methods/#explainability" },
-#           { label = "Benchmarking", url = "/isp/projects/projects_links/opensr/methods/#benchmarking" }
-#         ]},
-#         { label = "Use Cases", url = "/isp/projects/projects_links/opensr/use_cases", sub_options = [
-#           { label = "Building Delineation", url = "/isp/projects/projects_links/opensr/use_cases/#building_delineation" },
-#           { label = "Solar Panels", url = "/isp/projects/projects_links/opensr/use_cases/#solar_panels" },
-#           { label = "Tree Density", url = "/isp/projects/projects_links/opensr/use_cases/#tree_density" },
-#           { label = "Coastal Biodiversity", url = "/isp/projects/projects_links/opensr/use_cases/#coastal_biodiversity" }
-#         ]},
-#         { label = "Publications", url = "/isp/projects/projects_links/opensr/publication" },
-#         { label = "Teams", url = "/isp/projects/projects_links/opensr/teams" }
-#       ]
-    
-
-

@@ -1,0 +1,12 @@
+[
+  {{- $pages := where .Site.RegularPages "Type" "!=" "index" -}}
+  {{- range $index, $page := $pages -}}
+    {{- if gt $index 0 }},{{ end }}
+    {
+      "title": {{ $page.Title | jsonify }},
+      "permalink": {{ $page.Permalink | jsonify }},
+      "summary": {{ $page.Summary | default "" | jsonify }},
+      "content": {{ $page.Plain | jsonify }}
+    }
+  {{- end }}
+]
