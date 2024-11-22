@@ -122,10 +122,9 @@ jobs:
           publish_branch: gh-prometeo_ipl  # La rama de publicación en GitHub Pages
 
   copy_isp_uv:
-    needs: deploy_prometeo_isp
     name: Copy content from source branch to target folder
     runs-on: ubuntu-latest
-    needs: deploy_prometeo
+    needs: deploy_prometeo_isp
     steps:
       - uses: actions/checkout@v2
       - name: Copy files to target branch
