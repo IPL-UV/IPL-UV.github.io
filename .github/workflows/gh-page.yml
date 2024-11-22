@@ -33,6 +33,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
+          publish_branch: gh-pages
 
   deploy_github:
     needs: deploy_isp_uv
@@ -62,6 +63,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           publish_branch: gh-ipl-pages  # La rama de publicación en GitHub Pages
+
 
   deploy_prometeo_isp:
     needs: deploy_isp_uv
