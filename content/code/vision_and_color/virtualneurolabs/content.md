@@ -12,7 +12,7 @@ links:
   - title: "video_metric_sso.zip"
     link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/video_metric_sso.zip"
 ---
-  Video quality metrics are intended to replace human evaluation with evaluation by machine. To accurately simulate human judgement, they must include some aspects of the human visual system.
+  Video quality metrics are intended to replace human evaluation with evaluation by machine. To accurately simulate human judgement, they must include some aspects of the human visual system
   
   In this paper we present a class of low-complexity video quality metrics based on the Standard Spatial Observer (SSO). In these metrics, the basic SSO model is improved with several additional features from the current human vision models.
   
