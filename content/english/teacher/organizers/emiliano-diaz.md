@@ -2,53 +2,38 @@
 title: "Emiliano Díaz"
 draft: false
 # page title background image
-bg_image: "images/backgrounds/page-title.jpg"
+bg_image: "images/backgrounds/page-title.webp"
 # meta description
-description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
+description : "My background is in statistics, machine learning and causal inference. My research interests include kernel methods, graphical models, deep learning and causal discovery with a focus on Earth system science applications."
 # teacher portrait
-image: "images/teachers/gustau.jpg"
+image: "images/people/emiliano.webp"
 # course
-course: "Vlogging"
+# course: "Vlogging"
 # biography
-bio: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque accusamus tenetur ea harum delectus ab consequatur excepturi, odit qui in quo quia voluptate nam optio, culpa aspernatur. Error placeat iusto officia voluptas quae."
+bio: "My background is in statistics, machine learning and causal inference. My research interests include kernel methods, graphical models, deep learning and causal discovery with a focus on Earth system science applications."
 # interest
-interest: ["Computer Networking","Computer Security","Human Computer Interfacing"]
+interest: ["Statistics", "Machine Learning", "Causal Inference", "Kernel Methods", "Graphical Models", "Deep Learning", "Causal Discovery", "Earth System Science Applications"]
 # contact info
 contact:
   # contact item loop
-  - name : "clarkmalik@email.com"
-    icon : "ti-email" # icon pack : https://themify.me/themify-icons
-    link : "mailto:clarkmalik@email.com"
+  - name : "Emiliano Díaz"
+    icon : "ti-google" # icon pack : https://themify.me/themify-icons
+    link : "https://scholar.google.com/citations?user=w2Bf-1sAAAAJ"
 
   # contact item loop
-  - name : "+12 034 5876"
-    icon : "ti-mobile" # icon pack : https://themify.me/themify-icons
-    link : "tel:+120345876"
+  - name : "Emiliano Díaz"
+    icon : "ti-github" # icon pack : https://themify.me/themify-icons
+    link : "https://github.com/emdiazsal83"
 
   # contact item loop
-  - name : "Clark Malik"
-    icon : "ti-facebook" # icon pack : https://themify.me/themify-icons
-    link : "#"
+  - name : "Emiliano Díaz"
+    icon : "ti-linkedin" # icon pack : https://themify.me/themify-icons
+    link : "https://www.linkedin.com/in/emiliano-d%C3%ADaz-salas-porras"
 
   # contact item loop
-  - name : "Clark Malik"
-    icon : "ti-twitter-alt" # icon pack : https://themify.me/themify-icons
-    link : "#"
-
-  # contact item loop
-  - name : "Clark Malik"
-    icon : "ti-skype" # icon pack : https://themify.me/themify-icons
-    link : "#"
-
-  # contact item loop
-  - name : "clarkmalik.com"
+  - name : "ISP"
     icon : "ti-world" # icon pack : https://themify.me/themify-icons
-    link : "#"
-
-  # contact item loop
-  - name : "1313 Boulevard Cremazie,Quebec"
-    icon : "ti-location-pin" # icon pack : https://themify.me/themify-icons
-    link : "#"
+    link : "https://isp.uv.es/people/www.linkedin.com/in/emiliano-d%c3%adaz-salas-porras"
 
 # type
 type: "teacher"
@@ -56,9 +41,4 @@ type: "teacher"
 
 ### About Me
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.
-
-nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.
+My background is in statistics, machine learning and causal inference. My research interests include kernel methods, graphical models, deep learning and causal discovery with a focus on Earth system science applications.

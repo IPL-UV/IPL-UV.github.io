@@ -4,51 +4,71 @@ draft: false
 # page title background image
 bg_image: "images/backgrounds/page-title.jpg"
 # meta description
-description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
+description : "My research is related to statistical learning for modeling and understanding the Earth system."
 # teacher portrait
 image: "images/teachers/gustau.jpg"
 # course
-course: "Vlogging"
+# course: "Vlogging"
 # biography
-bio: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque accusamus tenetur ea harum delectus ab consequatur excepturi, odit qui in quo quia voluptate nam optio, culpa aspernatur. Error placeat iusto officia voluptas quae."
+bio: "My research is related to statistical learning for modeling and understanding the Earth system."
 # interest
-interest: ["Computer Networking","Computer Security","Human Computer Interfacing"]
+interest: ["Statistical Learning", "Earth System Modeling", "Understanding Complex Systems"]
 # contact info
 contact:
   # contact item loop
-  - name : "clarkmalik@email.com"
+  - name : "Gustau Camps-Valls"
+    icon : "ti-google" # icon pack : https://themify.me/themify-icons
+    link : "https://scholar.google.com/citations?user=6mgnauMAAAAJ"
+
+  # contact item loop
+  - name : "Gustau Camps-Valls"
     icon : "ti-email" # icon pack : https://themify.me/themify-icons
-    link : "mailto:clarkmalik@email.com"
+    link : "gustau.camps@uv.es"
 
   # contact item loop
-  - name : "+12 034 5876"
+  - name : "+34 963 544 064"
     icon : "ti-mobile" # icon pack : https://themify.me/themify-icons
-    link : "tel:+120345876"
+    link : "tel:+34 963 544 064"
+
+  # # contact item loop
+  # - name : "Gustau Camps-Valls"
+  #   icon : "ti-facebook" # icon pack : https://themify.me/themify-icons
+  #   link : "#"
 
   # contact item loop
-  - name : "Clark Malik"
-    icon : "ti-facebook" # icon pack : https://themify.me/themify-icons
-    link : "#"
-
-  # contact item loop
-  - name : "Clark Malik"
+  - name : "Gustau Camps-Valls"
     icon : "ti-twitter-alt" # icon pack : https://themify.me/themify-icons
-    link : "#"
+    link : "http://twitter.com/isp_uv_es"
 
   # contact item loop
-  - name : "Clark Malik"
-    icon : "ti-skype" # icon pack : https://themify.me/themify-icons
-    link : "#"
+  - name : "Gustau Camps-Valls"
+    icon : "ti-youtube" # icon pack : https://themify.me/themify-icons
+    link : "https://www.youtube.com/watch?v=VfBersY5OHw"
+
+  # # contact item loop
+  # - name : "Gustau Camps-Valls"
+  #   icon : "ti-skype" # icon pack : https://themify.me/themify-icons
+  #   link : "#"
+
+  # # contact item loop
+  # - name : "clarkmalik.com"
+  #   icon : "ti-world" # icon pack : https://themify.me/themify-icons
+  #   link : "#"
 
   # contact item loop
-  - name : "clarkmalik.com"
+  - name : "ISP"
+    icon : "ti-github" # icon pack : https://themify.me/themify-icons
+    link : "https://github.com/IPL-UV/"
+
+  # # contact item loop
+  # - name : "1313 Boulevard Cremazie,Quebec"
+  #   icon : "ti-location-pin" # icon pack : https://themify.me/themify-icons
+  #   link : "#"
+
+  # contact item loop
+  - name : "UV"
     icon : "ti-world" # icon pack : https://themify.me/themify-icons
-    link : "#"
-
-  # contact item loop
-  - name : "1313 Boulevard Cremazie,Quebec"
-    icon : "ti-location-pin" # icon pack : https://themify.me/themify-icons
-    link : "#"
+    link : "https://www.uv.es/gcamps/"
 
 # type
 type: "teacher"
@@ -56,9 +76,4 @@ type: "teacher"
 
 ### About Me
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.
-
-nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.
+My research is related to statistical learning for modeling and understanding the Earth system.

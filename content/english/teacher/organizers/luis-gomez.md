@@ -4,51 +4,51 @@ draft: false
 # page title background image
 bg_image: "images/backgrounds/page-title.jpg"
 # meta description
-description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
+description : "My interests are related to machine learning and signal and image processing. The application domains are remote sensing data analysis and hyperspectral images with special focus on cloud screening."
 # teacher portrait
-image: "images/teachers/gustau.jpg"
+image: "images/people/luis.webp"
 # course
-course: "Vlogging"
+# course: "Vlogging"
 # biography
-bio: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque accusamus tenetur ea harum delectus ab consequatur excepturi, odit qui in quo quia voluptate nam optio, culpa aspernatur. Error placeat iusto officia voluptas quae."
+bio: "My interests are related to machine learning and signal and image processing. The application domains are remote sensing data analysis and hyperspectral images with special focus on cloud screening."
 # interest
 interest: ["Computer Networking","Computer Security","Human Computer Interfacing"]
 # contact info
 contact:
   # contact item loop
-  - name : "clarkmalik@email.com"
-    icon : "ti-email" # icon pack : https://themify.me/themify-icons
-    link : "mailto:clarkmalik@email.com"
+  - name : "Luis Gómez-Chova"
+    icon : "ti-google" # icon pack : https://themify.me/themify-icons
+    link : "https://scholar.google.com/citations?user=7LQsYOcAAAAJ&hl=en"
 
   # contact item loop
-  - name : "+12 034 5876"
-    icon : "ti-mobile" # icon pack : https://themify.me/themify-icons
-    link : "tel:+120345876"
-
-  # contact item loop
-  - name : "Clark Malik"
-    icon : "ti-facebook" # icon pack : https://themify.me/themify-icons
-    link : "#"
-
-  # contact item loop
-  - name : "Clark Malik"
+  - name : "Luis Gómez-Chova"
     icon : "ti-twitter-alt" # icon pack : https://themify.me/themify-icons
-    link : "#"
+    link : "http://twitter.com/isp_uv_es"
 
   # contact item loop
-  - name : "Clark Malik"
-    icon : "ti-skype" # icon pack : https://themify.me/themify-icons
-    link : "#"
+  - name : "Luis Gómez-Chova"
+    icon : "ti-github" # icon pack : https://themify.me/themify-icons
+    link : "https://github.com/IPL-UV/"
 
   # contact item loop
-  - name : "clarkmalik.com"
+  - name : "Luis Gómez-Chova"
+    icon : "ti-researchgate" # icon pack : https://themify.me/themify-icons
+    link : "https://www.researchgate.net/profile/Luis-Gomez-Chova"
+
+  # contact item loop
+  - name : "Luis Gómez-Chova"
     icon : "ti-world" # icon pack : https://themify.me/themify-icons
-    link : "#"
+    link : "https://www.uv.es/chovago/"
 
   # contact item loop
-  - name : "1313 Boulevard Cremazie,Quebec"
-    icon : "ti-location-pin" # icon pack : https://themify.me/themify-icons
-    link : "#"
+  - name : "Luis Gómez-Chova"
+    icon : "ti-linkedin" # icon pack : https://themify.me/themify-icons
+    link : "https://www.linkedin.com/in/luis-gomez-chova"
+
+  # contact item loop
+  - name : "Luis Gómez-Chova"
+    icon : "ti-youtube" # icon pack : https://themify.me/themify-icons
+    link : "https://www.youtube.com/watch?v=W6KW9ofdCwY"
 
 # type
 type: "teacher"
@@ -56,9 +56,4 @@ type: "teacher"
 
 ### About Me
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.
-
-nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.
+My interests are related to machine learning and signal and image processing. The application domains are remote sensing data analysis and hyperspectral images with special focus on cloud screening.

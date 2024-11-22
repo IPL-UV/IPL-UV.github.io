@@ -4,51 +4,41 @@ draft: false
 # page title background image
 bg_image: "images/backgrounds/page-title.jpg"
 # meta description
-description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
+description : "I’m interested in understanding human vision from information theoretic principles. This statistical view has implications in experimental and computational neuroscience."
 # teacher portrait
-image: "images/teachers/gustau.jpg"
+image: "images/people/jesus.webp"
 # course
-course: "Vlogging"
+# course: "Vlogging"
 # biography
-bio: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque accusamus tenetur ea harum delectus ab consequatur excepturi, odit qui in quo quia voluptate nam optio, culpa aspernatur. Error placeat iusto officia voluptas quae."
+bio: "I’m interested in understanding human vision from information theoretic principles. This statistical view has implications in experimental and computational neuroscience."
 # interest
-interest: ["Computer Networking","Computer Security","Human Computer Interfacing"]
+interest: ["Human Vision", "Information Theoretic Principles", "Experimental Neuroscience", "Computational Neuroscience"]
 # contact info
 contact:
   # contact item loop
-  - name : "clarkmalik@email.com"
-    icon : "ti-email" # icon pack : https://themify.me/themify-icons
-    link : "mailto:clarkmalik@email.com"
+  - name : "Jesús Malo"
+    icon : "ti-google" # icon pack : https://themify.me/themify-icons
+    link : "https://scholar.google.es/citations?user=0pgrklEAAAAJ&hl=es"
+
+  # # contact item loop
+  # - name : "Jesús Malo"
+  #   icon : "ti-world" # icon pack : https://themify.me/themify-icons
+  #   link : "https://orcid.org/0000-0002-5684-8591"
 
   # contact item loop
-  - name : "+12 034 5876"
-    icon : "ti-mobile" # icon pack : https://themify.me/themify-icons
-    link : "tel:+120345876"
-
-  # contact item loop
-  - name : "Clark Malik"
-    icon : "ti-facebook" # icon pack : https://themify.me/themify-icons
-    link : "#"
-
-  # contact item loop
-  - name : "Clark Malik"
+  - name : "Jesús Malo"
     icon : "ti-twitter-alt" # icon pack : https://themify.me/themify-icons
-    link : "#"
+    link : "https://twitter.com/jesusmalo32"
 
   # contact item loop
-  - name : "Clark Malik"
-    icon : "ti-skype" # icon pack : https://themify.me/themify-icons
-    link : "#"
+  - name : "Jesús Malo"
+    icon : "ti-github" # icon pack : https://themify.me/themify-icons
+    link : "https://github.com/IPL-UV/"
 
   # contact item loop
-  - name : "clarkmalik.com"
+  - name : "Jesús Malo"
     icon : "ti-world" # icon pack : https://themify.me/themify-icons
-    link : "#"
-
-  # contact item loop
-  - name : "1313 Boulevard Cremazie,Quebec"
-    icon : "ti-location-pin" # icon pack : https://themify.me/themify-icons
-    link : "#"
+    link : "https://www.uv.es/jmalo/"
 
 # type
 type: "teacher"
@@ -56,9 +46,4 @@ type: "teacher"
 
 ### About Me
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.
-
-nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.
+I’m interested in understanding human vision from information theoretic principles. This statistical view has implications in experimental and computational neuroscience.
