@@ -166,3 +166,47 @@ jobs:
           
           # Push los cambios a la rama destino
           git push origin $TARGET_BRANCH
+
+  copy_github:
+    name: Copy content from source branch to target folder
+    runs-on: ubuntu-latest
+    needs: deploy_prometeo_ipl
+    steps:
+      - uses: actions/checkout@v2
+      - name: Copy files to target branch
+        env:
+          SOURCE_BRANCH: 'gh-prometeo_ipl'
+          TARGET_BRANCH: 'gh-ipl-pages'
+          TARGET_FOLDER: 'projects/prometeo'
+        run: |
+          # Configurar git
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          
+          # Check out la rama fuente
+          git fetch origin $SOURCE_BRANCH
+          git checkout $SOURCE_BRANCH
+          
+          # Crear un directorio temporal para copiar los archivos
+          TMP_DIR=$(mktemp -d)
+          cp -R ./* $TMP_DIR/
+          
+          # Check out la rama destino
+          git fetch origin $TARGET_BRANCH
+          git checkout $TARGET_BRANCH
+          
+          # Crear la carpeta de destino si no existe
+          mkdir -p $TARGET_FOLDER
+          
+          # Limpiar la carpeta de destino (opcional: solo si quieres sobrescribir todo)
+          rm -rf $TARGET_FOLDER/*
+          
+          # Copiar los archivos desde el directorio temporal a la carpeta de destino
+          cp -R $TMP_DIR/* $TARGET_FOLDER/
+          
+          # Añadir y confirmar cambios si los hay
+          git add -A
+          git diff-index --quiet HEAD || git commit -m "Sync files from $SOURCE_BRANCH to $TARGET_FOLDER"
+          
+          # Push los cambios a la rama destino
+          git push origin $TARGET_BRANCH
