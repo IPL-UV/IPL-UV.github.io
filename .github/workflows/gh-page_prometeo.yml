@@ -1,0 +1,37 @@
+name: GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # La rama principal desde la que se hará el push
+  pull_request:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-22.04
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+    steps:
+      # Paso 1: Checkout del repositorio
+      - uses: actions/checkout@v4
+        with:
+          submodules: true  # Descargar submódulos (temas de Hugo)
+          fetch-depth: 0    # Descargar todo el historial
+
+      # Paso 2: Configuración de Hugo
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.125.7'
+          # extended: true  # Habilita esto si necesitas soporte SCSS/SASS
+
+      # Paso 3: Construcción del sitio
+      - name: Build Hugo site
+        run: hugo --minify --config hugo-alt_prometeo.toml
+
+      # Paso 4: Despliegue en GitHub Pages
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs

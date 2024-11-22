@@ -1,0 +1,211 @@
+#baseURL = "https://ipl-uv.github.io/" 
+baseURL = "https://isp.uv.es/projects/prometeo/"
+publishDir = "docs"
+
+#baseURL = "http://127.0.0.1/isp/"
+#publishDir = "isp"
+
+languageCode = "en-us"
+title = "ISP - Image and Signal Processing group"
+
+theme = "isp_uv"
+
+
+### configuracion para leer html en archivos .md
+[markup.goldmark.renderer]
+  unsafe = true
+
+# ////////////////////// Configuración del menú de navegación principal ////////////////////// #
+
+[[menu.main]]
+  name = "ISP"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "People"
+  url = "/people/"
+  weight = 2
+
+[[menu.main]]
+  name = "Research"
+  url = "/research/philosophy"
+  weight = 3
+  [[menu.main]]
+    parent = "Research"
+    name = "Machine learning"
+    url = "/research/machine_learning/"
+    weight = 1
+  [[menu.main]]
+    parent = "Research"
+    name = "Visual science"
+    url = "/research/visual_neuroscience/"
+    weight = 2
+  [[menu.main]]
+    parent = "Research"
+    name = "Image processing"
+    url = "/research/visual_brain/"
+    weight = 3
+  [[menu.main]]
+    parent = "Research"
+    name = "Earth science"
+    url = "/research/earth_science/"
+    weight = 4
+  [[menu.main]]
+    parent = "Research"
+    name = "Social science"
+    url = "/research/social_science"
+    weight = 5
+
+[[menu.main]]
+  name = "Projects"
+  url = "/projects/"
+  weight = 4
+
+[[menu.main]]
+  name = "Facilities"
+  url = "/facilities/"
+  weight = 5
+
+[[menu.main]]
+  name = "Publications"
+    url = "/publications/journals/"
+  weight = 6
+  [[menu.main]]
+    parent = "Publications"
+    name = "Journals"
+    url = "/publications/journals/"
+    weight = 1
+  [[menu.main]]
+    parent = "Publications"
+    name = "Conferences"
+    url = "/publications/conferences/"
+    weight = 2
+  [[menu.main]]
+    parent = "Publications"
+    name = "Books"
+    url = "/publications/books/"
+    weight = 3
+  [[menu.main]]
+    parent = "Publications"
+    name = "Talks"
+    url = "/publications/talks/"
+    weight = 4
+  [[menu.main]]
+    parent = "Publications"
+    name = "Technical Reports"
+    url = "/publications/technical_reports/"
+    weight = 5
+  [[menu.main]]
+    parent = "Publications"
+    name = "Theses"
+    url = "/publications/theses/"
+    weight = 6
+
+[[menu.main]]
+  name = "Code"
+  url = "/code/"
+  weight = 7
+  
+
+[[menu.main]]
+  name = "Data"
+  url = "/data/"
+  weight = 8
+
+[[menu.main]]
+  name = "Seminars"
+  url = "/seminars/"
+  weight = 9
+
+[[menu.main]]
+  name = "Courses"
+  url = "/courses/"
+  weight = 10
+
+[[menu.main]]
+  name = "Collaborators"
+  url = "/collaborators/"
+  weight = 11
+
+[[menu.main]]
+  name = "News"
+  url = "/news/"
+  weight = 12
+
+[[menu.main]]
+  name = "Contact"
+  url = "/contact/"
+  weight = 13
+
+
+
+
+
+# # Configuración del nav para los links de projects
+# [params]
+#   [params.projects]
+#     [params.projects.kermes]
+#       title = "Kermes"
+#       nav_options = [
+#         { label = "KERMES", url = "/isp/projects/projects_links/kermes/" },
+#         { label = "Teams", url = "/isp/projects/projects_links/kermes/teams" },
+#         { label = "Meetings", url = "/isp/projects/projects_links/kermes/meetings" },
+#         { label = "Soft+Data", url = "/isp/projects/projects_links/kermes/soft+data" },
+#         { label = "Stays", url = "/isp/projects/projects_links/kermes/stays" }
+#       ]
+
+#     [params.projects.sedal]
+#       title = "Sedal"
+#       nav_options = [
+#         { label = "SEDAL", url = "/isp/projects/projects_links/sedal/" },
+#         { label = "People", url = "/isp/projects/projects_links/sedal/people" },
+#         { label = "Publications", url = "/isp/projects/projects_links/sedal/publications/journals", sub_options = [
+#           { label = "Journals", url = "/isp/projects/projects_links/sedal/publications/journals" },
+#           { label = "Conferences", url = "/isp/projects/projects_links/sedal/publications/conferences" },
+#           { label = "Books", url = "/isp/projects/projects_links/sedal/publications/books" },
+#           { label = "Talks", url = "/isp/projects/projects_links/sedal/publications/talks" }
+#       ]},
+#         { label = "Activities", url = "/isp/projects/projects_links/sedal/", sub_options = [
+#           { label = "Seminars", url = "/isp/seminars/" },
+#           { label = "Courses", url = "/isp/courses/" },
+#           { label = "Software", url = "/isp/data/" }
+#         ]},
+#         { label = "Documents", url = "/isp/projects/projects_links/sedal/documents" }
+#       ]
+
+#     [params.projects.ai4cs]
+#       title = "ai4cs"
+#       nav_options = [
+#         { label = "AI4CS", url = "/isp/projects/projects_links/ai4cs/" },
+#         { label = "Teams", url = "/isp/projects/projects_links/ai4cs/teams" },
+#         { label = "Meetings", url = "/isp/projects/projects_links/ai4cs/meetings" },
+#         { label = "Soft+Data", url = "/isp/projects/projects_links/ai4cs/soft+data" },
+#         { label = "Stays", url = "/isp/projects/projects_links/ai4cs/stays" }
+#       ]
+
+#     [params.projects.opensr]
+#       title = "OpenSR"
+#       nav_options = [
+#         { label = "OpenSR", url = "/isp/projects/projects_links/opensr/" },
+#         { label = "Data", url = "/isp/projects/projects_links/opensr/data", sub_options = [
+#           { label = "OpenSR", url = "/isp/projects/projects_links/opensr/data/#opensr" },
+#           { label = "Worldstrat", url = "/isp/projects/projects_links/opensr/data/#worldstrat" } 
+#         ]},
+#         { label = "Methods", url = "/isp/projects/projects_links/opensr/methods", sub_options = [
+#           { label = "Super Resolution", url = "/isp/projects/projects_links/opensr/methods/#super_resolution" },
+#           { label = "Explainability", url = "/isp/projects/projects_links/opensr/methods/#explainability" },
+#           { label = "Benchmarking", url = "/isp/projects/projects_links/opensr/methods/#benchmarking" }
+#         ]},
+#         { label = "Use Cases", url = "/isp/projects/projects_links/opensr/use_cases", sub_options = [
+#           { label = "Building Delineation", url = "/isp/projects/projects_links/opensr/use_cases/#building_delineation" },
+#           { label = "Solar Panels", url = "/isp/projects/projects_links/opensr/use_cases/#solar_panels" },
+#           { label = "Tree Density", url = "/isp/projects/projects_links/opensr/use_cases/#tree_density" },
+#           { label = "Coastal Biodiversity", url = "/isp/projects/projects_links/opensr/use_cases/#coastal_biodiversity" }
+#         ]},
+#         { label = "Publications", url = "/isp/projects/projects_links/opensr/publication" },
+#         { label = "Teams", url = "/isp/projects/projects_links/opensr/teams" }
+#       ]
+    
+
+
