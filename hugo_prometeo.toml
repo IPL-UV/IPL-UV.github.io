@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://isp.uv.es/try-isp-page/projects/prometeo/"
+baseURL = "https://ipl-uv.github.io/projects/prometeo/"
 publishDir = "public/"
 title = "Educenter | hugo education template"
 theme = "educenter-hugo"
