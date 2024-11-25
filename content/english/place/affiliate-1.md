@@ -1,17 +1,18 @@
 ---
-title: "Geography"
+title: "AENA"
 date: 2019-07-06T15:27:17+06:00
 draft: false
 # page title background image
 bg_image: "images/backgrounds/page-title.jpg"
 # meta description
-description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
+
 # Research image
-image: "images/research/research-1.jpg"
+image: "images/place/aena.webp"
 # type
-type: "research"
+type: "place"
 ---
-### Valencia Airport Summary
+
+### Valencia Airport
 
 Valencia International Airport (IATA: VLC, ICAO: LEVC) is located 8 km west of Valencia, between Manises and Cuart de Poblet. It supports regional business and tourism, with a strong focus on international traffic (69% in 2013).
 

@@ -6,7 +6,7 @@ bg_image: "images/backgrounds/page-title.jpg"
 # meta description
 description : "My research focuses on narrative within the digital communication framework, with a specific focus on three primary dimensions: mediations and formats, empowerment and creativity."
 # teacher portrait
-image: "images/people/ivan.webp"
+image: "images/people/ivan2.webp"
 # course
 # course: "Vlogging"
 # biography

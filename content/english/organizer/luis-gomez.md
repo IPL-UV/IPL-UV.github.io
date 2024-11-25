@@ -2,7 +2,7 @@
 title: "Luis Gómez-Chova"
 draft: false
 # page title background image
-bg_image: "images/backgrounds/page-title.jpg"
+bg_image: "images/people/fondo_organizers.webp"
 # meta description
 description : "My interests are related to machine learning and signal and image processing. The application domains are remote sensing data analysis and hyperspectral images with special focus on cloud screening."
 # teacher portrait
@@ -51,7 +51,7 @@ contact:
     link : "https://www.youtube.com/watch?v=W6KW9ofdCwY"
 
 # type
-type: "teacher"
+type: "organizer"
 ---
 
 ### About Me

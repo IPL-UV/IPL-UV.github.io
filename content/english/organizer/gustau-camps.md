@@ -2,7 +2,7 @@
 title: "Gustau Camps-Valls"
 draft: false
 # page title background image
-bg_image: "images/backgrounds/page-title.jpg"
+bg_image: "images/people/fondo_organizers.webp"
 # meta description
 description : "My research is related to statistical learning for modeling and understanding the Earth system."
 # teacher portrait
@@ -71,7 +71,7 @@ contact:
     link : "https://www.uv.es/gcamps/"
 
 # type
-type: "teacher"
+type: "organizer"
 ---
 
 ### About Me

@@ -1,0 +1,21 @@
+{{ define "main" }}
+<!-- affiliates -->
+<section class="section">
+  <div class="container">
+    <!-- New content starts here -->
+    <div class="content-before-list">
+      {{ .Content | markdownify }}
+    </div>
+    <!-- New content ends here -->
+    <div class="row">
+      {{ range .Data.Pages}}
+      <!-- recharch item -->
+      <div class="col-lg-4 col-sm-6 mb-4">
+        {{ .Render "place" }}</div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+<!-- /affiliates -->
+{{ end }}
+

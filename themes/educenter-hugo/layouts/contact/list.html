@@ -27,6 +27,29 @@
 </section>
 <!-- /contact -->  */}}
 
+<!-- places -->
+<section class="section">
+    <div class="container">
+      <div class="col-12">
+            <!-- New content starts here -->
+            <div class="content-before-list">
+                {{ .Content | markdownify }}
+            </div>
+            <br>
+        <h2 class="section-title">Valencia places</h2>
+      </div>
+      <div class="row">
+        {{ range first 3 (where site.RegularPages "File.Dir" "place/") }}
+        <!-- recharch item -->
+        <div class="col-lg-4 col-sm-6 mb-4 places">
+          {{ .Render "place" }}
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  <!-- /places -->
+  
 <!-- gmap -->
 
 <div id="map">
@@ -383,13 +406,6 @@
           weight: 2,
           dashArray: '2, 5'
       }).addTo(miniMap);
-
-      L.marker(stationCoords, {
-          icon: L.divIcon({
-              className: 'station-label',
-              html: ''
-          })
-      }).addTo(map);
   });
 </script>
 {{ end }}

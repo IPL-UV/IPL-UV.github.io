@@ -2,7 +2,7 @@
 title: "Maria Piles"
 draft: false
 # page title background image
-bg_image: "images/backgrounds/page-title.jpg"
+bg_image: "images/people/fondo_organizers.webp"
 # meta description
 description : "My research interests include microwave remote sensing, estimation of soil moisture and vegetation biogeophysical parameters and development of multisensor techniques for enhanced retrievals with focus on agriculture, forestry, wildfire prediction, extreme detection, and climate studies."
 # teacher portrait
@@ -36,7 +36,7 @@ contact:
     link : "https://www.youtube.com/watch?v=hixyfRVcSm8"
 
 # type
-type: "teacher"
+type: "organizer"
 ---
 
 ### About Me

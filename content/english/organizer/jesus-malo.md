@@ -2,7 +2,7 @@
 title: "Jesús Malo"
 draft: false
 # page title background image
-bg_image: "images/backgrounds/page-title.jpg"
+bg_image: "images/people/fondo_organizers.webp"
 # meta description
 description : "I’m interested in understanding human vision from information theoretic principles. This statistical view has implications in experimental and computational neuroscience."
 # teacher portrait
@@ -41,7 +41,7 @@ contact:
     link : "https://www.uv.es/jmalo/"
 
 # type
-type: "teacher"
+type: "organizer"
 ---
 
 ### About Me

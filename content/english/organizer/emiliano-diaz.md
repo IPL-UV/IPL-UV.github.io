@@ -2,7 +2,7 @@
 title: "Emiliano Díaz"
 draft: false
 # page title background image
-bg_image: "images/backgrounds/page-title.webp"
+bg_image: "images/people/fondo_organizers.webp"
 # meta description
 description : "My background is in statistics, machine learning and causal inference. My research interests include kernel methods, graphical models, deep learning and causal discovery with a focus on Earth system science applications."
 # teacher portrait
@@ -36,7 +36,7 @@ contact:
     link : "https://isp.uv.es/people/www.linkedin.com/in/emiliano-d%c3%adaz-salas-porras"
 
 # type
-type: "teacher"
+type: "organizer"
 ---
 
 ### About Me

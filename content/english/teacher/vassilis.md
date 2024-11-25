@@ -4,61 +4,41 @@ draft: false
 # page title background image
 bg_image: "images/backgrounds/page-title.jpg"
 # meta description
-description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
+description : "I develop causal and explainable machine learning methods using Earth observations and environmental data to estimate the impact of agricultural decisions for sustainable agriculture and food security."
 # teacher portrait
-image: "images/teachers/gustau.jpg"
+image: "images/people/06_Vassilis_sito_ISP.webp"
 # course
-course: "Vlogging"
+# course: "Vlogging"
 # biography
-bio: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque accusamus tenetur ea harum delectus ab consequatur excepturi, odit qui in quo quia voluptate nam optio, culpa aspernatur. Error placeat iusto officia voluptas quae."
+bio: "I develop causal and explainable machine learning methods using Earth observations and environmental data to estimate the impact of agricultural decisions for sustainable agriculture and food security."
 # interest
-interest: ["Computer Networking","Computer Security","Human Computer Interfacing"]
+interest: ["Causal Machine Learning", "Explainable Machine Learning", "Earth Observations", "Environmental Data", "Agricultural Decisions", "Sustainable Agriculture", "Food Security"]
 # contact info
 contact:
   # contact item loop
-  - name : "clarkmalik@email.com"
-    icon : "ti-email" # icon pack : https://themify.me/themify-icons
-    link : "mailto:clarkmalik@email.com"
+  - name : "Vassilis Sitokonstantinou"
+    icon : "ti-google" # icon pack : https://themify.me/themify-icons
+    link : "https://scholar.google.gr/citations?user=8WCaLYQAAAAJ&hl=en"
 
   # contact item loop
-  - name : "+12 034 5876"
-    icon : "ti-mobile" # icon pack : https://themify.me/themify-icons
-    link : "tel:+120345876"
-
-  # contact item loop
-  - name : "Clark Malik"
-    icon : "ti-facebook" # icon pack : https://themify.me/themify-icons
-    link : "#"
-
-  # contact item loop
-  - name : "Clark Malik"
+  - name : "Vassilis Sitokonstantinou"
     icon : "ti-twitter-alt" # icon pack : https://themify.me/themify-icons
-    link : "#"
+    link : "https://twitter.com/vassilis_sito"
 
   # contact item loop
-  - name : "Clark Malik"
-    icon : "ti-skype" # icon pack : https://themify.me/themify-icons
-    link : "#"
-
-  # contact item loop
-  - name : "clarkmalik.com"
+  - name : "Vassilis Sitokonstantinou"
     icon : "ti-world" # icon pack : https://themify.me/themify-icons
-    link : "#"
+    link : "https://www.researchgate.net/profile/Vasileios-Sitokonstantinou"
 
   # contact item loop
-  - name : "1313 Boulevard Cremazie,Quebec"
-    icon : "ti-location-pin" # icon pack : https://themify.me/themify-icons
-    link : "#"
+  - name : "Vassilis Sitokonstantinou"
+    icon : "ti-linkedin" # icon pack : https://themify.me/themify-icons
+    link : "https://www.linkedin.com/in/vsito/"
 
 # type
-type: "teacher"
+type: "organizer"
 ---
 
 ### About Me
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.
-
-nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.
+I develop causal and explainable machine learning methods using Earth observations and environmental data to estimate the impact of agricultural decisions for sustainable agriculture and food security.

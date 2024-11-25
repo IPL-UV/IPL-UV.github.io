@@ -2,11 +2,11 @@
 title: "Iván Sánchez-López"
 draft: false
 # page title background image
-bg_image: "images/backgrounds/page-title.jpg"
+bg_image: "images/people/fondo_organizers.webp"
 # meta description
 description : "My research focuses on narrative within the digital communication framework, with a specific focus on three primary dimensions: mediations and formats, empowerment and creativity."
 # teacher portrait
-image: "images/people/ivan.webp"
+image: "images/people/ivan2.webp"
 # course
 # course: "Vlogging"
 # biography
@@ -46,7 +46,7 @@ contact:
   #   link : "https://www.webofscience.com/wos/author/record/196189"
 
 # type
-type: "teacher"
+type: "organizer"
 ---
 
 ### About Me

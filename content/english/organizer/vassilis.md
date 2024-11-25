@@ -2,7 +2,7 @@
 title: "Vassilis Sitokonstantinou"
 draft: false
 # page title background image
-bg_image: "images/backgrounds/page-title.jpg"
+bg_image: "images/people/fondo_organizers.webp"
 # meta description
 description : "I develop causal and explainable machine learning methods using Earth observations and environmental data to estimate the impact of agricultural decisions for sustainable agriculture and food security."
 # teacher portrait
@@ -36,7 +36,7 @@ contact:
     link : "https://www.linkedin.com/in/vsito/"
 
 # type
-type: "teacher"
+type: "organizer"
 ---
 
 ### About Me

@@ -34,16 +34,33 @@
               </div>
             </div>
           </li>
+
+          {{ $initv := printf "%sT%s:00+01:00" ((time .Date).Format "2006-01-02") .Params.init }}
+          {{ with .Params.init }}
           <li class="list-inline-item mr-xl-5 mr-4 mb-3 mb-lg-0">
             <div class="d-flex align-items-center">
               <i class="ti-time text-primary icon-md mr-2"></i>
               <div class="text-left">
-                <h6 class="mb-0">{{ i18n "time" | upper }}</h6>
-                <p class="mb-0">{{ .Date.Format "15:04 MST"}}</p>
+                <h6 class="mb-0">{{ i18n "init" | upper }}</h6>
+                <p class="mb-0">{{ (time $initv ).Format "15:04 MST" }}</p>
               </div>
             </div>
           </li>
+          {{ end }}
+
+          {{ $endv := printf "%sT%s:00+01:00" ((time .Date).Format "2006-01-02") .Params.end }}
+          {{ with .Params.end }}
           <li class="list-inline-item mr-xl-5 mr-4 mb-3 mb-lg-0">
+            <div class="d-flex align-items-center">
+              <i class="ti-time text-primary icon-md mr-2"></i>
+              <div class="text-left">
+                <h6 class="mb-0">{{ i18n "end" | upper }}</h6>
+                <p class="mb-0">{{ (time $endv).Format "15:04 MST" }}</p>
+              </div>
+            </div>
+          </li>
+          {{ end }}
+          {{/*  <li class="list-inline-item mr-xl-5 mr-4 mb-3 mb-lg-0">
             <div class="d-flex align-items-center">
               <i class="ti-wallet text-primary icon-md mr-2"></i>
               <div class="text-left">
@@ -51,7 +68,7 @@
                 <p class="mb-0">{{ .Params.Fee | markdownify }}</p>
               </div>
             </div>
-          </li>
+          </li>  */}}
         </ul>
       </div>
       <div class="col-lg-3 text-lg-right text-left">

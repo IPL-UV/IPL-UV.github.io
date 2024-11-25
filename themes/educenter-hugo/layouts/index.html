@@ -61,9 +61,9 @@
 </section>
 {{ end }}
 {{ end }}
-<!-- /banner-feature -->  */}}
-
-{{/*  <!-- topics -->
+<!-- /banner-feature -->   */}}
+{{/*  
+<!-- topics -->
 <section class="section">
   <div class="container">
     <div class="row">
@@ -75,7 +75,8 @@
     </div>
   </div>
 </section>
-<!-- /topics -->  */}}
+<!-- /topics -->   */}}
+
 
 
 <!-- organizers -->
@@ -86,12 +87,12 @@
       <div class="col-12">
         <h2 class="section-title">{{ i18n "our_organizers" }}</h2>
       </div>
-    </div>  
+    </div>
     <div class="row justify-content-center">
       <!-- teacher -->
-      {{ range first 8 (where site.RegularPages "File.Dir" "teacher/organizers/") }}
+      {{ range first 9 (where site.RegularPages "File.Dir" "organizer/") }}
       <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0 orgspea">
-        {{ .Render "teacher" }}
+        {{ .Render "organizer" }}
       </div>
       {{ end }}
     </div>
@@ -111,7 +112,7 @@
     </div>
     <div class="row justify-content-center">
       <!-- teacher -->
-      {{ range first 4   (where site.Pages "Type" "speaker")}}  
+      {{ range first 4 (where site.RegularPages "File.Dir" "speaker/") }}
       <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0 orgspea">
         {{ .Render "speaker" }}
       </div>

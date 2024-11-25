@@ -11,8 +11,8 @@ slider:
       # available animation : left, right, up, down
       button:
         enable : true
-        label : "See Details"
-        link : "contact/"
+        label : "Register for Event"
+        link : "https://forms.gle/bq4a6XDGp8zMDtGu6"
 
 # slider item loop
     - title : "Explore the ISP Group"

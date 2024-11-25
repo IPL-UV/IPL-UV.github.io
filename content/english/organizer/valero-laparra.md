@@ -2,7 +2,7 @@
 title: "Valero Laparra"
 draft: false
 # page title background image
-bg_image: "images/backgrounds/page-title.jpg"
+bg_image: "images/people/fondo_organizers.webp"
 # meta description
 description : "I’m working in image statistics and vision science. I have developed several methods for density estimation, measure independence, manifold learning and visual quality assessment."
 # teacher portrait
@@ -20,7 +20,7 @@ contact:
     icon : "ti-world" # icon pack : https://themify.me/themify-icons
     link : "https://orcid.org/0000-0001-7531-9890"
 # type
-type: "teacher"
+type: "organizer"
 ---
 
 ### About Me

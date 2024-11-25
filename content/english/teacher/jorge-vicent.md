@@ -4,61 +4,37 @@ draft: false
 # page title background image
 bg_image: "images/backgrounds/page-title.jpg"
 # meta description
-description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
+description : "My work involves atmospheric radiative transfer models, statistical regression emulation, and image processing algorithms development and optimization. Focusing on remote sensing data analysis and hyperspectral images for atmospheric correction."
 # teacher portrait
-image: "images/teachers/gustau.jpg"
+image: "images/people/06_vicen_ISP.webp"
 # course
-course: "Vlogging"
+# course: "Vlogging"
 # biography
 bio: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque accusamus tenetur ea harum delectus ab consequatur excepturi, odit qui in quo quia voluptate nam optio, culpa aspernatur. Error placeat iusto officia voluptas quae."
 # interest
-interest: ["Computer Networking","Computer Security","Human Computer Interfacing"]
+interest: ["Atmospheric Radiative Transfer Models", "Statistical Regression Emulation", "Image Processing Algorithms", "Remote Sensing Data Analysis", "Hyperspectral Images", "Atmospheric Correction"]
 # contact info
 contact:
   # contact item loop
-  - name : "clarkmalik@email.com"
-    icon : "ti-email" # icon pack : https://themify.me/themify-icons
-    link : "mailto:clarkmalik@email.com"
+  - name : "Jorge Vicent"
+    icon : "ti-github" # icon pack : https://themify.me/themify-icons
+    link : "https://gitlab.com/jorge.vicent/"
 
   # contact item loop
-  - name : "+12 034 5876"
-    icon : "ti-mobile" # icon pack : https://themify.me/themify-icons
-    link : "tel:+120345876"
-
-  # contact item loop
-  - name : "Clark Malik"
-    icon : "ti-facebook" # icon pack : https://themify.me/themify-icons
-    link : "#"
-
-  # contact item loop
-  - name : "Clark Malik"
-    icon : "ti-twitter-alt" # icon pack : https://themify.me/themify-icons
-    link : "#"
-
-  # contact item loop
-  - name : "Clark Malik"
-    icon : "ti-skype" # icon pack : https://themify.me/themify-icons
-    link : "#"
-
-  # contact item loop
-  - name : "clarkmalik.com"
+  - name : "Jorge Vicent"
     icon : "ti-world" # icon pack : https://themify.me/themify-icons
-    link : "#"
+    link : "https://www.researchgate.net/profile/Jorge-Vicent"
 
   # contact item loop
-  - name : "1313 Boulevard Cremazie,Quebec"
-    icon : "ti-location-pin" # icon pack : https://themify.me/themify-icons
-    link : "#"
+  - name : "Jorge Vicent"
+    icon : "ti-linkedin" # icon pack : https://themify.me/themify-icons
+    link : "https://www.linkedin.com/in/jorviser/"
+
 
 # type
-type: "teacher"
+type: "organizer"
 ---
 
 ### About Me
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.
-
-nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.
+My work involves atmospheric radiative transfer models, statistical regression emulation, and image processing algorithms development and optimization. Focusing on remote sensing data analysis and hyperspectral images for atmospheric correction.

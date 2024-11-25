@@ -2,7 +2,7 @@
 title: "Jorge Vila Tomás"
 draft: false
 # page title background image
-bg_image: "images/backgrounds/page-title.jpg"
+bg_image: "images/people/fondo_organizers.webp"
 # meta description
 description : "My work involves atmospheric radiative transfer models, statistical regression emulation, and image processing algorithms development and optimization. Focusing on remote sensing data analysis and hyperspectral images for atmospheric correction."
 # teacher portrait
@@ -32,7 +32,7 @@ contact:
 
 
 # type
-type: "teacher"
+type: "organizer"
 ---
 
 ### About Me

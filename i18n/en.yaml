@@ -43,6 +43,12 @@
 - id: time
   translation: time
 
+- id: init
+  translation: Start
+
+- id: end
+  translation: End
+
 - id: category
   translation: Category
 
