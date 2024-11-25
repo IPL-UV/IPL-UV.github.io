@@ -3,7 +3,7 @@
   <!-- newsletter -->
   {{ if site.Params.subscription.enable }}
   {{ with site.Params.subscription }}
-  <div class="newsletter">
+  {{/*  <div class="newsletter">
     <div class="container">
       <div class="row">
         <div class="col-md-9 ml-auto bg-primary py-5 newsletter-block">
@@ -20,9 +20,26 @@
         </div>
       </div>
     </div>
+  </div>  */}}
+  <div class="newsletter">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9 ml-auto bg-primary py-5 newsletter-block">
+                <h3 class="text-white mb-4">{{ i18n "subscribe_newsletter" }}</h3>
+                <form id="newsletter-form" onsubmit="redirectToGoogleForm(event)">
+                    <div class="input-wrapper">
+                        <input type="email" class="form-control border-0" id="newsletter" name="newsletter" placeholder="{{ i18n "enter_email" }}" required>
+                        <button type="submit" class="btn btn-primary">{{ i18n "join" }}</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
   </div>
+
   {{ end }}
   {{ end }}
+  
   <!-- footer content -->
   <div class="footer bg-footer section border-bottom">
     <div class="container">
@@ -57,27 +74,35 @@
           </ul>
         </div>
         <!-- support -->
-        <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-md-0">
+        {{/*  <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-md-0">
           <h4 class="text-white mb-5 text-uppercase">{{ i18n "courses" }}</h4>
           <ul class="list-unstyled">
             {{ range first 5 (where site.RegularPages "Type" "course")}}
             <li class="mb-3"><a class="text-color" href="{{ .Permalink }}">{{ .Title }}</a></li>
             {{ end }}
           </ul>
-        </div>
+        </div>  */}}
         <!-- support -->
-        <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-md-0">
+        {{/*  <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-md-0">
           <h4 class="text-white mb-5 text-uppercase">{{ i18n "new_notice" }}</h4>
           <ul class="list-unstyled">
             {{ range first 3 (where site.RegularPages "Type" "notice")}}
             <li class="mb-3"><a class="text-color" href="{{ .Permalink }}">{{ .Title }}</a></li>
             {{ end }}
           </ul>
+        </div>  */}}
+        <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5 text-uppercase">{{ i18n "new_notice" }}</h4>
+          <ul class="list-unstyled">
+            <li class="mb-3"><a class="text-color" href="https://www.uv.es/uvweb/uv-noticias/es/noticias/estudio-internacional-reclama-alianza-equilibrada-ia-ciencias-tierra-retos-ambientales-1285973304159/Novetat.html?id=1286401478590&plantilla=UV_Noticies/Page/TPGDetaillNews" target="_blank">Estudio Internacional sobre IA y Ciencias de la Tierra</a></li>
+            <li class="mb-3"><a class="text-color" href="https://www.eldiario.es/comunitat-valenciana/medio_ambiente/inteligencia-artificial-herramienta-lucha-cambio-climatico-predicciones-seran-rapidas-precisas_1_11684006.html" target="_blank">IA como herramienta en la lucha contra el cambio climático</a></li>
+            <li class="mb-3"><a class="text-color" href="https://www.europapress.es/comunitat-valenciana/noticia-expertos-ia-clima-analizan-valencia-revolucion-tecnologica-aplicada-prediccion-meteorologica-20240719113248.html" target="_blank">Expertos en IA y clima analizan en Valencia</a></li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
-  <!-- copyright -->
+  {{/*  <!-- copyright -->
   <div class="copyright py-4 bg-footer">
     <div class="container">
       <div class="row">
@@ -93,10 +118,19 @@
         </div>
       </div>
     </div>
-  </div>
+  </div>  */}}
 </footer>
 <!-- /footer -->
-
+<script>
+  function redirectToGoogleForm(event) {
+      event.preventDefault();
+      const email = document.getElementById('newsletter').value;
+      const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLScSGoveGo7B2fWv3MPtApGEqtTIXkAM0ROHfgKbl-Henj83Fw/viewform?usp=sf_link';
+      const emailFieldName = 'entry.YPqjbf'; // Reemplaza con el nombre del campo de correo electrónico en tu formulario de Google Forms
+      const redirectUrl = `${googleFormUrl}&${emailFieldName}=${encodeURIComponent(email)}`;
+      window.location.href = redirectUrl;
+  }
+</script>
 {{ "<!-- Google Map API -->" | safeHTML }}
 {{ with site.Params.map.gmap_api }}
 <script src="{{ . | safeURL }}"></script>

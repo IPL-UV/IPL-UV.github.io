@@ -91,3 +91,45 @@
   /* Cambia el color del texto a blanco */
   z-index: 1;
   /* Asegura que el texto se superponga sobre la imagen */ }
+
+.orgspea .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 25px 0px rgba(27, 39, 71, 0.15);
+  min-height: 22rem;
+  border-radius: 5% !important; }
+
+.orgspea .card .card-img-top {
+  object-fit: cover;
+  height: 13rem;
+  width: 13rem;
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+  border-radius: 50% !important; }
+
+.orgspea .card .card-body {
+  padding-bottom: 0;
+  align-content: center;
+  max-height: 7rem; }
+
+.affiliate {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.affiliate .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10rem !important;
+  width: 100%;
+  max-width: 15rem; }
+
+.affiliate .card .card-img-top {
+  object-fit: contain;
+  height: 10rem;
+  padding: 1rem 0;
+  width: 100%;
+  transform: scale(0.9);
+  transition: transform 0.3s ease; }

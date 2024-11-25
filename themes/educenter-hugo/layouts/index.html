@@ -86,11 +86,11 @@
       <div class="col-12">
         <h2 class="section-title">{{ i18n "our_organizers" }}</h2>
       </div>
-    </div>
+    </div>  
     <div class="row justify-content-center">
       <!-- teacher -->
-      {{ range first 9 (where site.RegularPages "File.Dir" "teacher/organizers/") }}
-      <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+      {{ range first 8 (where site.RegularPages "File.Dir" "teacher/organizers/") }}
+      <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0 orgspea">
         {{ .Render "teacher" }}
       </div>
       {{ end }}
@@ -100,22 +100,20 @@
 {{ end }}
 <!-- /organizers -->
 
-
-
 <!-- speakers -->
 {{ if $data.homepage.blog.enable }}
 <section class="section">
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h2 class="section-title">{{ i18n "our_teachers" }}</h2>
+        <h2 class="section-title">{{ i18n "our_speakers" }}</h2>
       </div>
     </div>
     <div class="row justify-content-center">
       <!-- teacher -->
-      {{ range first 3 (where site.RegularPages "File.Dir" "teacher/speakers/") }}
-      <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-        {{ .Render "teacher" }}
+      {{ range first 4   (where site.Pages "Type" "speaker")}}  
+      <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0 orgspea">
+        {{ .Render "speaker" }}
       </div>
       {{ end }}
     </div>
@@ -124,22 +122,24 @@
 {{ end }}
 <!-- /speakers -->
 
-<!-- sponsors -->
+<!-- affiliates -->
 <section class="section">
   <div class="container">
     <div class="col-12">
       <h2 class="section-title">Our Affiliates</h2>
     </div>
     <div class="row">
-      {{ range first 3 (where site.Pages "Type" "research")}}
+      {{ range first 7   (where site.Pages "Type" "affiliate")}}  
       <!-- recharch item -->
-      <div class="col-lg-4 col-sm-6 mb-4">
-        {{ .Render "research" }}</div>
+      <div class="col-lg-3 col-sm-6 mb-4 affiliate">
+        {{ .Render "affiliate" }}
+      </div>
       {{ end }}
     </div>
   </div>
 </section>
-<!-- /sponsors -->
+<!-- /affiliates -->
+
 
 
 {{/*  <!-- about us -->

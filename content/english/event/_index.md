@@ -1,8 +1,8 @@
 ---
-title: "Our Courses"
+title: "AI Workshop"
 draft: false
 # page title background image
-bg_image: "images/backgrounds/page-title.jpg"
+bg_image: "images/events/event1.jpeg"
 # meta description
-description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
+description : "Workshop on AI for complex systems, featuring technical sessions, presentations, group interaction, and exploration of advanced methodologies."
 ---
