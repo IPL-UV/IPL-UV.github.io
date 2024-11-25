@@ -1,7 +1,7 @@
 ######################## default configuration ####################
 baseURL = "https://isp.uv.es/projects/prometeo/"
 publishDir = "public/"
-title = "Educenter | hugo education template"
+title = "ISP - PROMETEO"
 theme = "educenter-hugo"
 # Default time zone for time stamps; use any valid tz database name: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
 timeZone = "America/New_York"
@@ -97,7 +97,7 @@ logo = "images/logo_isp_cn_fondo-modified.png"
 description = "This is meta description"
 author = "Themefisher"
 # contact info
-address = "9567 Turner Trace Apt. BC C3G8A4"
+address = "Parc Científic Universitat de València C/ Cat. Agustín Escardino Benlloch, 9"
 # contact form action
 contact_form_action = "#" # contact form works with https://formspree.io
 # Google Analitycs
@@ -109,7 +109,7 @@ search_index = "index.json"
 
 # Preloader
 [params.preloader]
-enable = true
+enable = false
 preloader = "images/preloader.gif" # use jpg, png, svg or gif format.
 
 # Subscription
@@ -236,24 +236,26 @@ weight = 5
 # footer menu
 
 [[Languages.en.menu.footer]]
-name = "teacher"
-url = "teacher/"
+name = "people"
+url = "https://isp.uv.es/people/"
 
 [[Languages.en.menu.footer]]
 name = "notice"
-url = "notice/"
+# url = "notice/"
+url = "https://isp.uv.es/news/"
 
 [[Languages.en.menu.footer]]
 name = "event"
 url = "event/"
 
-[[Languages.en.menu.footer]]
-name = "scholarship"
-url = "scholarship/"
+# [[Languages.en.menu.footer]]
+# name = "scholarship"
+# url = "scholarship/"
 
 [[Languages.en.menu.footer]]
 name = "research"
-url = "research/"
+# url = "research/"
+url = "https://isp.uv.es/research/earth_science/"
 
 
 
