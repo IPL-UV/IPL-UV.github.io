@@ -122,6 +122,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           publish_branch: gh-prometeo_ipl  # La rama de publicación en GitHub Pages
+          clean: true
 
   copy_isp_uv:
     name: Copy content from source branch to target folder
