@@ -33,7 +33,7 @@ contact:
   # contact item loop
   - name : "ISP"
     icon : "ti-world" # icon pack : https://themify.me/themify-icons
-    link : "https://isp.uv.es/people/www.linkedin.com/in/emiliano-d%c3%adaz-salas-porras"
+    link : "https://emdiazsal83.github.io/"
 
 # type
 type: "organizer"

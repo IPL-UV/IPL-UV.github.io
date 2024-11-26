@@ -18,7 +18,7 @@ C/ Cat. Agustín Escardino Benlloch, 9
 
 **Phone:** +34 963543229  
 **Fax:** +34 963543261  
-**Email:** gcamps@uv.es  
+**Email:** emdiazsal@gmail.com 
 
 [Image and Signal Processing Group Map](https://isp.uv.es/contact/)  
 

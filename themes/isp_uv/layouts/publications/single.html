@@ -104,22 +104,27 @@
   </div>
 </div>
 
+
 <script type="text/javascript" src={{ relURL "js/jquery-1.12.4.min.js" }} defer></script>
 <script type="text/javascript" src={{ relURL "js/bibtex_js.js" }} defer></script>
 <script type="text/javascript" src={{ relURL "js/bibtex_functions.js" }} defer></script>
 <script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
 <script>
 function toggleBibtex(button) {
+  console.log("Toggle BibTeX button clicked");
   const container = $(button).closest('.bib-item');
   const bibtexElement = container.find('.bibtexdata');
   bibtexElement.slideToggle();
 }
 
 document.addEventListener("DOMContentLoaded", function() {
+  console.log("DOM fully loaded and parsed");
   let bibtexDisplay = new BibtexDisplay();
   let bibtexData = document.getElementById('bibtex_input').value;
+  console.log("Bibtex data loaded:", bibtexData);
 
   function initializeBibtex() {
+    console.log("Initializing Bibtex display");
     requestAnimationFrame(() => {
       bibtexDisplay.displayBibtex(bibtexData, $("#bibtex_display"), {});
       addYearsAndProjects();
@@ -130,6 +135,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   function addYearsAndProjects() {
+    console.log("Adding years and projects");
     let yearSet = new Set();
     let projectSet = new Set();
 
@@ -140,6 +146,7 @@ document.addEventListener("DOMContentLoaded", function() {
         yearSet.add(year);
       }
     });
+    console.log("Collected years:", Array.from(yearSet));
 
     // Collect unique projects
     $(".bib-item").each(function() {
@@ -156,16 +163,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
       }
     });
-
-    function updateDOILinks() {
-      $(".bib-item .doi .doi").each(function() {
-        const doiLink = $(this).text().trim();
-        if (doiLink) {
-          const doiValue = doiLink.replace(/^https?:\/\/(www\.)?doi\.org\//, '');
-          $(this).attr("href", `https://${doiValue}`);
-        }
-      });
-    }
+    console.log("Collected projects:", Array.from(projectSet));
 
     // Populate year filter
     let yearArray = Array.from(yearSet);
@@ -185,9 +183,11 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   function updateFilters() {
+    console.log("Updating filters");
     const year = document.getElementById('year-filter').value;
     const project = document.getElementById('project-filter').value;
     const items = document.querySelectorAll('.bib-item');
+    console.log("Filtering by year:", year, "and project:", project);
 
     // Show or hide items based on filters
     items.forEach(item => {
@@ -206,6 +206,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   function updateProjectFilter() {
+    console.log("Updating project filter");
     const selectedYear = document.getElementById('year-filter').value;
     let projectSet = new Set();
 
@@ -246,12 +247,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Handle changes in year filter
   document.getElementById('year-filter').addEventListener('change', () => {
+    console.log("Year filter changed");
     updateFilters();
     document.getElementById('project-filter').value = "";
   });
 
   // Handle changes in project filter
   document.getElementById('project-filter').addEventListener('change', () => {
+    console.log("Project filter changed");
     const selectedProject = document.getElementById('project-filter').value;
     updateFilters();
 
@@ -266,5 +269,4 @@ document.addEventListener("DOMContentLoaded", function() {
   initializeBibtex();
 });
 </script>
-
 {{ end }}
