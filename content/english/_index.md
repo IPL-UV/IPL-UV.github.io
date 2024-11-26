@@ -25,4 +25,4 @@ Current approaches, however, face three important challenges:
 
 AI4CS aims to address these challenges with innovative, physics-aware, and causality-driven AI solutions to advance our understanding of these interconnected systems.
 
-This workshop will address these goals, bringing together researchers to share progress, brainstorm new ideas, and foster interdisciplinary collaboration.
+This workshop will address these goals, bringing together researchers to share progress, brainstorm new ideas, and foster interdisciplinary collaboration
