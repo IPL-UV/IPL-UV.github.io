@@ -1,6 +1,8 @@
 ---
 type: "code"
 layout: "single_four"
+aliases:
+  - /code/visioncolor/vistalab.html
 
 title: "VistaLab: The Matlab Toolbox for Linear Spatio-Temporal Vision Models"
 images:
