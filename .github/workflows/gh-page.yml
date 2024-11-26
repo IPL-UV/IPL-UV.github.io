@@ -125,7 +125,7 @@ jobs:
             }
       
   deploy_prometeo_ipl:
-    needs: deploy_github
+    needs: delete_branch
     runs-on: ubuntu-22.04
     steps:
       # Paso 1: Checkout del repositorio
