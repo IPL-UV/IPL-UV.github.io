@@ -2,6 +2,7 @@
 title: "First words ex-cathedra"
 type: "people"
 layout: "single_four"
+url: "/excathedra.html"
 images:
   - link: "jesus.webp"
     title: "[More about Jesus Malo and his academic career](#1-why-a-physicist-would-ever-care-about-human-vision)"
