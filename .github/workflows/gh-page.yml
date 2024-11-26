@@ -93,39 +93,9 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           publish_branch: gh-prometeo_isp  # La rama de publicación en GitHub Pages
-
-
-  delete_branch:
-    needs: deploy_github
-    runs-on: ubuntu-22.04
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Delete branch if exists
-        uses: actions/github-script@v6
-        with:
-          script: |
-            const branch = 'gh-prometeo_ipl';
-            try {
-              await github.rest.git.deleteRef({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                ref: `heads/${branch}`,
-              });
-              console.log(`Branch ${branch} deleted`);
-            } catch (error) {
-              if (error.status === 422) {
-                console.log(`Branch ${branch} does not exist`);
-              } else {
-                throw error;
-              }
-            }
       
   deploy_prometeo_ipl:
-    needs: delete_branch
+    needs: deploy_github
     runs-on: ubuntu-22.04
     steps:
       # Paso 1: Checkout del repositorio
