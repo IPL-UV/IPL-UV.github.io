@@ -45,9 +45,9 @@
     {{ $ruta := .Params.img | default "uv.webp" }}
     {{ $img := "" }}
     {{ if hasPrefix $ruta "http" }}
-      {{ $img = $ruta }} <!-- Si es un enlace externo, úsalo directamente -->
+      {{ $img = $ruta }}
     {{ else }}
-      {{ $img = relURL (urls.JoinPath "images/people" $ruta) }} <!-- Si es una ruta relativa, úsala con la carpeta local -->
+      {{ $img = relURL (urls.JoinPath "images/people" $ruta) }}
     {{ end }}
     
       {{ $current := . }}

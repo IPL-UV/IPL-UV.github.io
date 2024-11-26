@@ -1,4 +1,5 @@
 ---
 title: Seminars
-url: "/seminars.html"
+aliases:
+  - /seminars.html
 ---

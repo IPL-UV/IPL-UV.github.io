@@ -1,4 +1,7 @@
 ---
-title: courses
-url: "/courses.html"
+title: Courses
+type: "courses"
+layout: "list"
+aliases:
+  - /courses.html
 ---
