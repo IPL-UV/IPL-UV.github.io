@@ -2,6 +2,8 @@
 title: "Research Machine Learning"
 type: "research"
 layout: "single_projects"
+aliases:
+  - /machine.html
 ---
 
 
