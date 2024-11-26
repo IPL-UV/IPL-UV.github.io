@@ -479,6 +479,7 @@ h3 {
   flex-wrap: wrap;
   align-items: center;
   margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .card-links img {
