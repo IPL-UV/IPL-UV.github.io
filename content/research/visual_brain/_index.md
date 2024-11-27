@@ -2,6 +2,8 @@
 title: "Image and Video Processing: Scene Statistics and Visual Neuroscience at work!"
 type: "research"
 layout: "single_four"
+aliases:
+  - /improc.html
 images:
   - link: 'image_processing.webp'
     title: "Image Processing"

@@ -2,6 +2,8 @@
 title: "Philosophy, Goal, Vision"
 type: "research"
 layout: "single"
+aliases:
+  - /research.html
 ---
 
 # Context

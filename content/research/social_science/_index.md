@@ -2,6 +2,8 @@
 title: "AI for sustainability and social sciences"
 type: "research"
 layout: "single_projects"
+aliases:
+  - /geoscience.html
 ---
 
 

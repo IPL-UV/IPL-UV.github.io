@@ -2,6 +2,8 @@
 title: "Vision Science: from Optics to Neuroscience and Statistical Learning"
 type: "research"
 layout: "single_four"
+aliases:
+  - /neuro.html
 images:
   - link: 'vision_science.webp'
     title: "Vision Science"

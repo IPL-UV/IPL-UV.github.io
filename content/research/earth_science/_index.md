@@ -2,6 +2,8 @@
 title: "Earth and climate sciences"
 type: "research"
 layout: "single_projects"
+aliases:
+  - /remote.html
 ---
 
 # Motivation
