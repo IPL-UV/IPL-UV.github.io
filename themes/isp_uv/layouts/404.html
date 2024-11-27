@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirecting...</title>
+    <script>
+        // Obtén la URL actual
+        const currentPath = window.location.pathname;
+
+        // Verifica si la ruta empieza con "/slides/"
+        if (currentPath.startsWith("/slides/")) {
+            // Extrae la subruta después de "/slides/"
+            const subpath = currentPath.replace("/slides/", "");
+
+            // Construye la nueva URL dinámica
+            const redirectUrl = "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/courses/slides/" + subpath;
+
+            // Redirige a la URL de Hugging Face
+            window.location.href = redirectUrl;
+        } else {
+            // Para cualquier otra ruta, muestra un mensaje 404 normal
+            document.write("<h1>Page Not Found</h1>");
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
