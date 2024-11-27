@@ -27,15 +27,24 @@
 </section>
 <!-- /contact -->  */}}
 
+<!-- banner-information -->
+<section class="section-sm">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mb-50 content">
+          {{ .Content }}
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /banner-information -->
+  
+
+
 <!-- places -->
 <section class="section">
     <div class="container">
       <div class="col-12">
-            <!-- New content starts here -->
-            <div class="content-before-list">
-                {{ .Content | markdownify }}
-            </div>
-            <br>
         <h2 class="section-title">Valencia places</h2>
       </div>
       <div class="row">
@@ -66,6 +75,7 @@
     margin-bottom: 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
     background: white;
+    z-index: 1;
 }
 #mini-map-container {
     position: absolute;
@@ -106,306 +116,318 @@
     }
 }
 </style>
+
+
 <script>
-  // Create the main map
-  const map = L.map('map').setView([39.4852509, -0.410766], 13);
+    // Create the main map
+    const map = L.map('map').setView([39.4852509, -0.360766], 13);
 
-  // Base map layer for the main map
-  const mainLayer = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
-      maxZoom: 25,
-      attribution: '© OpenStreetMap contributors'
-  }).addTo(map);
+    // Base map layer for the main map
+    const mainLayer = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+        maxZoom: 25,
+        attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
 
-  // Route coordinates
-  const routes = [
-      {
-          name: "Parc Científic to ADEIT",
-          mode: "car",
-          color: "blue",
-          origin: [39.5152483, -0.4250513],
-          destination: [39.4742509, -0.376766],
-          stops: [
-              [39.503, -0.412], // Stop 1
-              [39.490, -0.390]  // Stop 2
-          ]
-      },
-      {
-          name: "Airport to ADEIT",
-          mode: "car",
-          color: "black",
-          origin: [39.4892612, -0.4844362], // Airport
-          destination: [39.4742509, -0.376766],
-          stops: []
-      },
-  ];
+    // Route coordinates
+    const routes = [
+        {
+            name: "Parc Científic to ADEIT",
+            mode: "car",
+            color: "blue",
+            origin: [39.5152483, -0.4250513],
+            destination: [39.4742509, -0.376766],
+            stops: [
+                [39.503, -0.412], // Stop 1
+                [39.490, -0.390]  // Stop 2
+            ]
+        },
+        {
+            name: "Airport to ADEIT",
+            mode: "car",
+            color: "black",
+            origin: [39.4892612, -0.4844362], // Airport
+            destination: [39.4742509, -0.376766],
+            stops: []
+        },
+    ];
 
-  // Create the minimap container
-  const miniMap = L.map('mini-map', {
-      zoomControl: false,
-      attributionControl: false,
-  }).setView([39.4742509, -0.376766], 19);
+    // Create the minimap container
+    const miniMap = L.map('mini-map', {
+        zoomControl: false,
+        attributionControl: false,
+    }).setView([39.4742509, -0.376766], 19);
 
-  // Add the same base layer to the minimap
-  const miniLayer = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
-      maxZoom: 19
-  }).addTo(miniMap);
+    // Add the same base layer to the minimap
+    const miniLayer = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+        maxZoom: 19
+    }).addTo(miniMap);
 
-  // Create a rectangle indicating the minimap bounds on the main map
-  const miniMapBounds = L.rectangle(miniMap.getBounds(), {
-      color: "#3388ff",
-      weight: 2,
-      fillOpacity: 0.1,
-      className: 'mini-map-bounds'
-  }).addTo(map);
+    // Create a rectangle indicating the minimap bounds on the main map
+    const miniMapBounds = L.rectangle(miniMap.getBounds(), {
+        color: "#3388ff",
+        weight: 2,
+        fillOpacity: 0.1,
+        className: 'mini-map-bounds'
+    }).addTo(map);
 
-  miniMap.on("move", () => {
-      miniMapBounds.setBounds(miniMap.getBounds());
-  });
+    miniMap.on("move", () => {
+        miniMapBounds.setBounds(miniMap.getBounds());
+    });
 
+    // Create custom icons
+    const ispIcon = L.icon({
+        iconUrl: '/images/isp_logo_sinfondo.webp',
+        iconSize: [32, 32],
+        iconAnchor: [16, 32],
+        popupAnchor: [0, -32]
+    });
 
+    const airportIcon = L.icon({
+        iconUrl: 'https://static.thenounproject.com/png/1661267-200.png',
+        iconSize: [32, 32],
+        iconAnchor: [16, 32],
+        popupAnchor: [0, -32]
+    });
 
-  // Create custom icons
-  const ispIcon = L.icon({
-      iconUrl: '/images/isp_logo_sinfondo.webp',
-      iconSize: [32, 32],
-      iconAnchor: [16, 32],
-      popupAnchor: [0, -32]
-  });
+    const bluePinIcon = L.icon({
+        iconUrl: 'https://png.pngtree.com/png-clipart/20230629/original/pngtree-star-location-pin-in-yellow-gradation-color-vector-png-image_9237006.png',
+        iconSize: [32, 32],
+        iconAnchor: [16, 32],
+        popupAnchor: [0, -32]
+    });
 
-  const airportIcon = L.icon({
-      iconUrl: 'https://static.thenounproject.com/png/1661267-200.png',
-      iconSize: [32, 32],
-      iconAnchor: [16, 32],
-      popupAnchor: [0, -32]
-  });
+    // Add legend
+    const legend = document.getElementById("legend");
+    legend.innerHTML = "<b>Routes:</b><br>";
+    routes.forEach(route => {
+        const lineStyle = route.color === "black" ? "border-bottom: 3px dashed;" : "border-bottom: 3px solid;";
+        legend.innerHTML += `<span style="color:${route.color}; ${lineStyle} display: inline-block; width: 20px;"></span> ${route.name} (${route.mode})<br>`;
+    });
 
-  const bluePinIcon = L.icon({
-      iconUrl: 'https://png.pngtree.com/png-clipart/20230629/original/pngtree-star-location-pin-in-yellow-gradation-color-vector-png-image_9237006.png',
-      iconSize: [32, 32],
-      iconAnchor: [16, 32],
-      popupAnchor: [0, -32]
-  });
+    // Add dotted green line legend entry
+    legend.innerHTML += "<br><span style='color:green; border-bottom: 3px dashed; display: inline-block; width: 20px;'></span> Nearest metro station to ADEIT<br>";
 
-  // Add legend
-  const legend = document.getElementById("legend");
-  legend.innerHTML = "<b>Routes in car:</b><br>";
-  routes.forEach(route => {
-      const lineStyle = route.color === "black" ? "border-bottom: 3px dashed;" : "border-bottom: 3px solid;";
-      legend.innerHTML += `<span style="color:${route.color}; ${lineStyle} display: inline-block; width: 20px;"></span> ${route.name} <br>`;
-  });
+    // Add a section for station points
+    legend.innerHTML += "<br><b>Metro Valencia Stations:</b><br>";
+    const stationColors = ["#e9b347", "#bb4580", "#be2635", "#1c4e8b", "#268e68", "#735ea1", "#da8b48", "#3cb7d1", "#8d6e52", "#b0c977"];
+    legend.innerHTML += "<div style='display: flex; align-items: center;'>";
+    legend.innerHTML += "<div>";
+    stationColors.slice(0, 5).forEach(color => {
+        legend.innerHTML += `<span style="background-color:${color}; display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 2px;"></span>`;
+    });
 
-  // Add dotted green line legend entry
-  legend.innerHTML += "<br><span style='color:green; border-bottom: 3px dashed; display: inline-block; width: 20px;'></span> Nearest metro station to ADEIT<br>";
+    stationColors.slice(5).forEach(color => {
+        legend.innerHTML += `<span style="background-color:${color}; display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 2px;"></span>`;
+    });
+    legend.innerHTML += "</div>";
+    legend.innerHTML += "</div>";
 
-  // Add a section for station points
-  legend.innerHTML += "<br><b>Metro Valencia Stations:</b><br>";
-  const stationColors = ["#e9b347", "#bb4580", "#be2635", "#1c4e8b", "#268e68", "#735ea1", "#da8b48", "#3cb7d1", "#8d6e52", "#b0c977"];
-  legend.innerHTML += "<div style='display: flex; align-items: center;'>";
-  legend.innerHTML += "<div>";
-  stationColors.slice(0, 5).forEach(color => {
-      legend.innerHTML += `<span style="background-color:${color}; display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 2px;"></span>`;
-  });
+    // Function to draw a route
+    async function drawRoute(route) {
+        const waypoints = [route.origin, ...route.stops, route.destination];
+        const waypointsStr = waypoints.map(point => `${point[1]},${point[0]}`).join(";");
 
-  stationColors.slice(5).forEach(color => {
-      legend.innerHTML += `<span style="background-color:${color}; display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 2px;"></span>`;
-  });
-  legend.innerHTML += "</div>";
-  legend.innerHTML += "</div>";
+        try {
+            const osrmUrl = `https://router.project-osrm.org/route/v1/${route.mode}/${waypointsStr}?overview=full&geometries=geojson`;
+            const response = await fetch(osrmUrl);
+            const data = await response.json();
 
-  // Function to draw a route
-  async function drawRoute(route) {
-      const waypoints = [route.origin, ...route.stops, route.destination];
-      const waypointsStr = waypoints.map(point => `${point[1]},${point[0]}`).join(";");
+            if (data.routes && data.routes.length > 0) {
+                const lineStyle = route.name === "Airport to ADEIT" ? { color: route.color, weight: 4, dashArray: '5, 10' } : { color: route.color, weight: 4 };
 
-      try {
-          const osrmUrl = `https://router.project-osrm.org/route/v1/${route.mode}/${waypointsStr}?overview=full&geometries=geojson`;
-          const response = await fetch(osrmUrl);
-          const data = await response.json();
+                const routeLine = L.polyline(
+                    data.routes[0].geometry.coordinates.map(coord => [coord[1], coord[0]]),
+                    lineStyle
+                ).addTo(map);
 
-          if (data.routes && data.routes.length > 0) {
-              const lineStyle = route.name === "Airport to ADEIT" ? { color: route.color, weight: 4, dashArray: '5, 10' } : { color: route.color, weight: 4 };
+                L.polyline(
+                    data.routes[0].geometry.coordinates.map(coord => [coord[1], coord[0]]),
+                    lineStyle
+                ).addTo(miniMap);
 
-              const routeLine = L.polyline(
-                  data.routes[0].geometry.coordinates.map(coord => [coord[1], coord[0]]),
-                  lineStyle
-              ).addTo(map);
+                L.marker(route.origin, { icon: route.name === "Airport to ADEIT" ? airportIcon : ispIcon })
+                    .addTo(map)
+                    .bindPopup(route.name === "Airport to ADEIT" ? `<b>Airport</b>` : `<b>Parc Científic</b>`);
+                L.marker(route.destination, { icon: bluePinIcon })
+                    .addTo(map)
+                    .bindPopup(`<b>ADEIT</b>`);
 
-              L.polyline(
-                  data.routes[0].geometry.coordinates.map(coord => [coord[1], coord[0]]),
-                  lineStyle
-              ).addTo(miniMap);
+                // Add to minimap
+                L.marker(route.origin, { icon: route.name === "Airport to ADEIT" ? airportIcon : ispIcon })
+                    .addTo(miniMap)
+                    .bindPopup(route.name === "Airport to ADEIT" ? `<b>Airport</b>` : `<b>Parc Científic</b>`);
+                L.marker(route.destination, { icon: bluePinIcon })
+                    .addTo(miniMap)
+                    .bindPopup(`<b>ADEIT</b>`);
+            }
+        } catch (error) {
+            console.error(`Error drawing route: ${route.name}`, error);
+        }
+    }
 
-              L.marker(route.origin, { icon: route.name === "Airport to ADEIT" ? airportIcon : ispIcon })
-                  .addTo(map)
-                  .bindPopup(`<b>Airport</b>`);
-              L.marker(route.destination, { icon: bluePinIcon })
-                  .addTo(map)
-                  .bindPopup(`<b>ADEIT</b>`);
+    routes.forEach(route => drawRoute(route));
 
-              // Add to minimap
-              L.marker(route.origin, { icon: route.name === "Airport to ADEIT" ? airportIcon : ispIcon })
-                  .addTo(miniMap)
-                  .bindPopup(`<b>Airport</b>`);
-              L.marker(route.destination, { icon: bluePinIcon })
-                  .addTo(miniMap)
-                  .bindPopup(`<b>ADEIT</b>`);
-          }
-      } catch (error) {
-          console.error(`Error drawing route: ${route.name}`, error);
-      }
-  }
+    // Add points
+    
+    // Map colors for 10 lines
+    const colors = {
+        "1": "#e9b347",
+        "2": "#bb4580",
+        "3": "#be2635",
+        "4": "#1c4e8b",
+        "5": "#268e68",
+        "6": "#735ea1",
+        "7": "#da8b48",
+        "8": "#3cb7d1",
+        "9": "#8d6e52",
+        "10": "#b0c977"
+    };
+    
+    // Dictionary to convert types to names
+    const stationType = {
+        "1": "Metro",
+        "2": "Tram"
+    };
 
-  routes.forEach(route => drawRoute(route));
+    // Function to load metro lines
+    async function loadMetroLines() {
+        try {
+            const response = await fetch('/json/fgv-estacions-estaciones.json');
+            const data = await response.json();
 
-  // Add points
-  
-  // Map colors for 10 lines
-  const colors = {
-      "1": "#e9b347",
-      "2": "#bb4580",
-      "3": "#be2635",
-      "4": "#1c4e8b",
-      "5": "#268e68",
-      "6": "#735ea1",
-      "7": "#da8b48",
-      "8": "#3cb7d1",
-      "9": "#8d6e52",
-      "10": "#b0c977"
-  };
-  
-  // Dictionary to convert types to names
-  const stationType = {
-      "1": "Metro",
-      "2": "Tram"
-  };
+            data.forEach(station => {
+                const { lat, lon } = station.geo_point_2d;
+                const lines = station.linea.split(",");
+                const lineColors = lines.map(line => colors[line.trim()] || "gray");
+                const type = stationType[station.tipo] || "Unknown";
 
-  // Function to load metro lines
-  async function loadMetroLines() {
-      try {
-          const response = await fetch('/json/fgv-estacions-estaciones.json');
-          const data = await response.json();
+                const marker = L.circleMarker([lat, lon], {
+                    color: lineColors[0], // Use the first color if there are multiple lines
+                    radius: 4,
+                    fillOpacity: 1,
+                    zIndexOffset: 100000 // Asegura que los marcadores estén por encima de las líneas
+                }).addTo(map);
 
-          data.forEach(station => {
-              const { lat, lon } = station.geo_point_2d;
-              const lines = station.linea.split(",");
-              const lineColors = lines.map(line => colors[line.trim()] || "gray");
-              const type = stationType[station.tipo] || "Unknown";
+                marker.bindPopup(`
+                    <b>Station:</b> ${station.nombre}<br>
+                    <b>Lines:</b> ${lines.join(", ")}<br>
+                    <b>Type:</b> ${type}<br>
+                    <b>Next Arrivals:</b> <a href="${station.proximas_llegadas}" target="_blank">See more</a>
+                `);
 
-              const marker = L.circleMarker([lat, lon], {
-                  color: lineColors[0], // Use the first color if there are multiple lines
-                  radius: 4,
-                  fillOpacity: 1
-              }).addTo(map);
+                // Add to minimap
+                L.circleMarker([lat, lon], {
+                    color: lineColors[0],
+                    radius: 3,
+                    fillOpacity: 0.9,
+                    zIndexOffset: 1000 // Asegura que los marcadores estén por encima de las líneas
+                }).addTo(miniMap);
+            });
+        } catch (error) {
+            console.error("Error loading metro lines:", error);
+        }
+    }
 
-              marker.bindPopup(`
-                  <b>Station:</b> ${station.nombre}<br>
-                  <b>Lines:</b> ${lines.join(", ")}<br>
-                  <b>Type:</b> ${type}<br>
-                  <b>Next Arrivals:</b> <a href="${station.proximas_llegadas}" target="_blank">See more</a>
-              `);
+    // Call the function to load metro lines
+    loadMetroLines();
+    const additionalStations = [
+        {
+            "nombre": "Xàtiva",
+            "geo_point_2d": {
+                "lon": -0.377375006091083,
+                "lat": 39.46718601400712
+            }
+        },
+        {
+            "nombre": "Av. del Cid",
+            "geo_point_2d": {
+                "lon": -0.39757499129375784,
+                "lat": 39.468219796211656
+            }
+        },
+        {
+            "nombre": "Nou d'Octubre",
+            "geo_point_2d": {
+                "lon": -0.4076305632336302,
+                "lat": 39.47065738808727
+            }
+        },
+        {
+            "nombre": "Colón",
+            "geo_point_2d": {
+                "lon": -0.3709277814305924,
+                "lat": 39.47014621855607
+            }
+        },
+        {
+            "nombre": "Alameda",
+            "geo_point_2d": {
+                "lon": -0.36531665913727224,
+                "lat": 39.47315601519005
+            }
+        },
+        {
+            "nombre": "Facultats - Manuel Broseta",
+            "geo_point_2d": {
+                "lon": -0.3619055444301701,
+                "lat": 39.47800449481189
+            }
+        },
+        {
+            "nombre": "Pont de Fusta",
+            "geo_point_2d": {
+                "lon": -0.37318056860230847,
+                "lat": 39.481781045417804
+            }
+        },
+        {
+            "nombre": "Reus",
+            "geo_point_2d": {
+                "lon": -0.3817070127981355,
+                "lat": 39.4859657684198
+            }
+        },
+        {
+            "nombre": "Túria",
+            "geo_point_2d": {
+                "lon": -0.39120554874775504,
+                "lat": 39.47886661649007
+            }
+        },
+        {
+            "nombre": "Àngel Guimerà",
+            "geo_point_2d": {
+                "lon": -0.3850361106717916,
+                "lat": 39.4703026212431
+            }
+        }
+    ];
 
-              // Add to minimap
-              L.circleMarker([lat, lon], {
-                  color: lineColors[0],
-                  radius: 3,
-                  fillOpacity: 0.9
-              }).addTo(miniMap);
-          });
-      } catch (error) {
-          console.error("Error loading metro lines:", error);
-      }
-  }
+    const adeitCoords = [39.4742509, -0.376766];
 
-  // Call the function to load metro lines
-  loadMetroLines();
-  const additionalStations = [
-      {
-          "nombre": "Xàtiva",
-          "geo_point_2d": {
-              "lon": -0.377375006091083,
-              "lat": 39.46718601400712
-          }
-      },
-      {
-          "nombre": "Av. del Cid",
-          "geo_point_2d": {
-              "lon": -0.39757499129375784,
-              "lat": 39.468219796211656
-          }
-      },
-      {
-          "nombre": "Nou d'Octubre",
-          "geo_point_2d": {
-              "lon": -0.4076305632336302,
-              "lat": 39.47065738808727
-          }
-      },
-      {
-          "nombre": "Colón",
-          "geo_point_2d": {
-              "lon": -0.3709277814305924,
-              "lat": 39.47014621855607
-          }
-      },
-      {
-          "nombre": "Alameda",
-          "geo_point_2d": {
-              "lon": -0.36531665913727224,
-              "lat": 39.47315601519005
-          }
-      },
-      {
-          "nombre": "Facultats - Manuel Broseta",
-          "geo_point_2d": {
-              "lon": -0.3619055444301701,
-              "lat": 39.47800449481189
-          }
-      },
-      {
-          "nombre": "Pont de Fusta",
-          "geo_point_2d": {
-              "lon": -0.37318056860230847,
-              "lat": 39.481781045417804
-          }
-      },
-      {
-          "nombre": "Reus",
-          "geo_point_2d": {
-              "lon": -0.3817070127981355,
-              "lat": 39.4859657684198
-          }
-      },
-      {
-          "nombre": "Túria",
-          "geo_point_2d": {
-              "lon": -0.39120554874775504,
-              "lat": 39.47886661649007
-          }
-      },
-      {
-          "nombre": "Àngel Guimerà",
-          "geo_point_2d": {
-              "lon": -0.3850361106717916,
-              "lat": 39.4703026212431
-          }
-      }
-  ];
+    additionalStations.forEach(station => {
+        const stationCoords = [station.geo_point_2d.lat, station.geo_point_2d.lon];
+        const line = L.polyline([stationCoords, adeitCoords], {
+            color: 'green',
+            weight: 2,
+            dashArray: '2, 5'
+        }).addTo(map);
 
-  const adeitCoords = [39.4742509, -0.376766];
+        L.polyline([stationCoords, adeitCoords], {
+            color: 'green',
+            weight: 2,
+            dashArray: '2, 5'
+        }).addTo(miniMap);
 
-  additionalStations.forEach(station => {
-      const stationCoords = [station.geo_point_2d.lat, station.geo_point_2d.lon];
-      const line = L.polyline([stationCoords, adeitCoords], {
-          color: 'green',
-          weight: 2,
-          dashArray: '2, 5'
-      }).addTo(map);
-
-      L.polyline([stationCoords, adeitCoords], {
-          color: 'green',
-          weight: 2,
-          dashArray: '2, 5'
-      }).addTo(miniMap);
-  });
+        {{/*  L.marker(stationCoords, {
+            icon: L.divIcon({
+                className: 'station-label',
+                html: ''
+            }),
+            zIndexOffset: 1000, // Asegura que los marcadores estén por encima de las líneas
+            weight: 5
+        }).addTo(map);  */}}
+    });
 </script>
+
 {{ end }}
