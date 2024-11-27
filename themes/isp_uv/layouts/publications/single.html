@@ -109,6 +109,9 @@
 <script type="text/javascript" src={{ relURL "js/bibtex_js.js" }} defer></script>
 <script type="text/javascript" src={{ relURL "js/bibtex_functions.js" }} defer></script>
 <script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/he/he.js"></script>
+<script src="https://unpkg.com/bibtex-js-parser@1.1.6/umd/bibtex-js-parser.js"></script>
+
 <script>
 function toggleBibtex(button) {
   console.log("Toggle BibTeX button clicked");
@@ -126,6 +129,7 @@ document.addEventListener("DOMContentLoaded", function() {
   function initializeBibtex() {
     console.log("Initializing Bibtex display");
     requestAnimationFrame(() => {
+      bibtexData = he.decode(bibtexData); // Decodifica los caracteres escapados en BibTeX
       bibtexDisplay.displayBibtex(bibtexData, $("#bibtex_display"), {});
       addYearsAndProjects();
       updateFilters();

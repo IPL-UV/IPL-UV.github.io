@@ -6,30 +6,16 @@
         // Obtén la URL actual
         const currentPath = window.location.pathname;
 
-        // Base URLs
-        const baseISP = "https://isp.uv.es";
-        const baseHuggingFace = "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/courses/slides/";
+        // Verifica si la ruta empieza con "/ppt/"
+        if (currentPath.startsWith("/ppt/")) {
+            // Extrae la subruta después de "/ppt/"
+            const subpath = currentPath.replace("/ppt/", "");
 
-        // Verifica si la ruta empieza con "/slides/"
-        if (currentPath.startsWith("/slides/")) {
-            // Extrae la subruta después de "/slides/"
-            const subpath = currentPath.replace("/slides/", "");
+            // Construye la nueva URL dinámica
+            const redirectUrl = "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/courses/ppt/" + subpath;
 
-            // Verifica si la URL en ISP existe
-            fetch(baseISP + currentPath, { method: "HEAD" })
-                .then(response => {
-                    if (response.ok) {
-                        // Si la URL existe en ISP, redirige a esa URL
-                        window.location.href = baseISP + currentPath;
-                    } else {
-                        // Si no existe, redirige a Hugging Face
-                        window.location.href = baseHuggingFace + subpath;
-                    }
-                })
-                .catch(() => {
-                    // En caso de error, redirige directamente a Hugging Face
-                    window.location.href = baseHuggingFace + subpath;
-                });
+            // Redirige a la URL de Hugging Face
+            window.location.href = redirectUrl;
         } else {
             // Para cualquier otra ruta, muestra un mensaje 404 normal
             document.write("<h1>Page Not Found</h1>");
