@@ -137,3 +137,6 @@ theme = "isp_uv"
   name = "Contact"
   url = "/contact/"
   weight = 13
+
+[permalinks]
+slides = "/slides/"
