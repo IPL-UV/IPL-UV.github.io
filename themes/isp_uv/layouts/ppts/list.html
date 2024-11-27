@@ -4,9 +4,9 @@
     <title>Redirecting...</title>
     <script>
         // Captura todo lo que venga después de "/ppts/"
-        const subpath = window.location.pathname.replace("/ppts/", "");
+        const subpath = window.location.pathname;
         // Construye la URL de redirección dinámica
-        const redirectUrl = "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/courses/ppts/" + subpath;
+        const redirectUrl = "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/courses" + subpath;
         // Realiza la redirección
         window.location.href = redirectUrl;
     </script>
