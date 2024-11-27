@@ -146,4 +146,4 @@ theme = "isp_uv"
   weight = 13
 
 [permalinks]
-slides = "/slides/"
+slides = "/slides/:slug/"
