@@ -36,10 +36,8 @@
         </div>
       </div>
     </div>
-  </section>
-  <!-- /banner-information -->
-  
-
+</section>
+<!-- /banner-information -->
 
 <!-- places -->
 <section class="section">
@@ -56,8 +54,8 @@
         {{ end }}
       </div>
     </div>
-  </section>
-  <!-- /places -->
+</section>
+<!-- /places -->
   
 <!-- gmap -->
 
@@ -67,6 +65,21 @@
     <div id="mini-map"></div>
   </div>
 </div>
+
+
+
+  
+<section class="section-sm">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mb-50 content">
+          {{ with .Site.GetPage "section" "contact/event-map" }}
+            {{ .Content | markdownify }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+</section>
 
 <style>
   #map {
