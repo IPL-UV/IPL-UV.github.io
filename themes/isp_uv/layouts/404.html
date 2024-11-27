@@ -7,12 +7,9 @@
         const currentPath = window.location.pathname;
 
         // Verifica si la ruta empieza con "/ppts/"
-        if (currentPath.startsWith("/ppts/")) {
-            // Extrae la subruta después de "/ppts/"
-            const subpath = currentPath.replace("/ppts/", "");
-
+        if (currentPath.startsWith("/ppts")) {
             // Construye la nueva URL dinámica
-            const redirectUrl = "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/courses/ppts/" + subpath;
+            const redirectUrl = "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main" + currentPath;
 
             // Redirige a la URL de Hugging Face
             window.location.href = redirectUrl;
