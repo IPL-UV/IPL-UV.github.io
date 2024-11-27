@@ -4,12 +4,12 @@
     <title>Redirecting...</title>
     <script>
         // Obtén la URL actual
-        const currentPath = window.location.pathname;
+        const currentPath = document.location.pathname;
 
         // Verifica si la ruta empieza con "/ppts/"
         if (currentPath.startsWith("/ppts")) {
             // Construye la nueva URL dinámica
-            const redirectUrl = "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main" + currentPath;
+            const redirectUrl = "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/courses" + currentPath;
 
             // Redirige a la URL de Hugging Face
             window.location.href = redirectUrl;
