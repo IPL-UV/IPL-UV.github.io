@@ -1,27 +1,2 @@
-<!DOCTYPE html>
-<html>
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <title>Redirecting...</title>
-    <script>
-        
-        const currentPath = window.location.pathname;
-
-        
-        if (currentPath.startsWith("/slides/")) {
-            
-            const subpath = currentPath.replace("/slides/", "");
-
-            
-            const redirectUrl = "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/courses/slides/" + subpath;
-
-            
-            window.location.href = redirectUrl;
-        } else {
-            
-            document.write("<h1>Page Not Found</h1>");
-        }
-    </script>
-</head>
-<body>
-</body>
-</html>
+<!doctype html><html><head><title>Redirecting...</title>
+<script>const currentPath=window.location.pathname;if(currentPath.startsWith("/slides/")){const e=currentPath.replace("/slides/",""),t="https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/courses/slides/"+e;window.location.href=t}else document.write("<h1>Page Not Found</h1>")</script></head><body></body></html>
