@@ -192,6 +192,8 @@ Introduce the related research content here.
 To visualize the new content on this page, you first need to make a commit and, if necessary, create a pull request. Once these steps are completed, you can access the content at [isp.uv.es/research/artificial_intelligence](https://isp.uv.es/research/artificial_intelligence/), following the given example.
 
 
+![research7](images/research-7.png)
+
 #### **Adding an image**
 
 Images for research pages should be placed in the directory `content/assets/images/research/`. Each main page has its own specific folder within this directory.
