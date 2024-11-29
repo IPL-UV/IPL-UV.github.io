@@ -30,8 +30,6 @@ You are now part of the ISP team! Here's a quick journey to help you understand 
 Before you dive into the code, it's important to know that there are **multiple ways to manage Git repositories**. The most common approach is using Git commands in the terminal, but you can also use **Git GUI tools** like **GitKraken**, which makes it easier to manage repositories visually. GitKraken is a Git client that helps you work with repositories on **GitHub**, **GitLab**, and other platforms. 
 
 
-
-
 ### **Option 1: Terminal Approach**
 
 If you prefer working with the command line, follow these steps to clone the repository and create a new branch:
@@ -137,24 +135,23 @@ This method is simple and doesn't require any local setup, making it perfect for
 
 
 
-## **Step 2: 🔧 Making Your Changes**
+## **Step 2: 🔧 Making your changes**
 
 Great! Now you're ready to make changes. Here’s how you can add new content to the website. Whether it's for people, projects, or courses, the process is similar.
 
-
-
-
 ### **Adding or edit a new Research page (Research section) 🧠**
-``
+
 Research pages are located in the `content/research/` directory and are organized by topics.
-
-
 
 #### **Creating a new Research page**
 
-1. Navigate to the `content/research/` directory.
+1. Navigate to the [`content/research/`](https://github.com/IPL-UV/IPL-UV.github.io/tree/main/content/research) directory.
 2. Create a new folder with the topic name, e.g., `artificial_intelligence`.
 3. Inside this folder, create an `_index.md` file to define the main content.
+
+![research1](images/research-1.png)
+![research2](images/research-2.png)
+![research3](images/research-3.png)
 
 Each file, whether `_index.md` or others, must follow the rules of the models or layouts defined with HUGO. This involves starting with a YAML header. The minimum required is to include a title (`title`), but depending on the layout or section, additional parameters may be necessary. For example:
 
@@ -183,10 +180,14 @@ Introduce the related research content here.
 - Detail 1
 - Detail 2
 
-### **Current Projects**
+### **Current projects**
 1. Project A
 2. Project B
 ```
+![research4](images/research-4.png)
+![research5](images/research-5.png)
+![research6](images/research-6.png)
+
 
 To visualize the new content on this page, you first need to make a commit and, if necessary, create a pull request. Once these steps are completed, you can access the content at [isp.uv.es/research/artificial_intelligence](isp.uv.es/research/artificial_intelligence), following the given example.
 
@@ -198,7 +199,7 @@ Images for research pages should be placed in the directory `content/assets/imag
 To insert an image into the page, use the following Markdown syntax:
 
 ```markdown
-![Image Description](path_to_your_image.webp)
+![Image description](path_to_your_image.webp)
 ```
 
 By default:
@@ -209,7 +210,7 @@ By default:
 If you need a customized style, use an HTML structure like the example below:
 
 ```html
-<img src="name_image.webp" style="width: 50%;">
+<img src="path_to_your_image.webp" style="width: 50%;">
 ```
 
 In this example:
@@ -224,9 +225,9 @@ To display several images in a single row, use an HTML structure with flexbox. F
 
 ```html
 <div style="display: flex; gap: 1rem;">
-  <img src="image1.webp" style="width: 30%;">
-  <img src="image2.webp" style="width: 30%;">
-  <img src="image3.webp" style="width: 30%;">
+  <img src="path_to_your_image1.webp" style="width: 30%;">
+  <img src="path_to_your_image.webp" style="width: 30%;">
+  <img src="path_to_your_image3.webp" style="width: 30%;">
 </div>
 ```
 
