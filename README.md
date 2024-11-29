@@ -189,7 +189,7 @@ Introduce the related research content here.
 ![research6](images/research-6.png)
 
 
-To visualize the new content on this page, you first need to make a commit and, if necessary, create a pull request. Once these steps are completed, you can access the content at [isp.uv.es/research/artificial_intelligence](isp.uv.es/research/artificial_intelligence), following the given example.
+To visualize the new content on this page, you first need to make a commit and, if necessary, create a pull request. Once these steps are completed, you can access the content at [isp.uv.es/research/artificial_intelligence](https://isp.uv.es/research/artificial_intelligence/), following the given example.
 
 
 #### **Adding an image**
