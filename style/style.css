@@ -1654,3 +1654,27 @@ h3 {
       max-width: 100%;
   }
 }
+
+
+/* Images for simple single layout, ie, research */
+.box-content {
+  overflow: hidden;
+}
+
+.box-content img {
+  margin: 2rem auto;
+  display: block; /* Hace que la imagen sea un bloque para que text-align funcione */
+  margin: auto; 
+  width: 80%; /* Ajusta el ancho según sea necesario */
+  /* border-radius: 0.3125rem; Aplica un borde redondeado a la imagen */
+  object-fit: contain; /* Asegura que la imagen se ajuste dentro del contenedor */
+}
+
+.box-content p:has(img) {
+  text-align: center;
+}
+.box-content p img {
+  margin: 2rem auto;
+  width: 80%;
+  border-radius: 0.3125rem;
+}
