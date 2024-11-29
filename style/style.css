@@ -1264,7 +1264,7 @@ h3 {
   background-color: transparent;
   font-size: clamp(1rem, 2.5vw, 1.2rem);
   font-weight: 700;
-  text-shadow: 0.05rem 0.05rem 0.05rem  #7c7b7b;
+  /* text-shadow: 0.05rem 0.05rem 0.05rem  #7c7b7b; */
 }
 
 .box-content {
@@ -1311,7 +1311,7 @@ h3 {
   display: block;
   margin: auto;
   background-color: transparent;
-  text-shadow: 0.05rem 0.05rem 0.05rem  #7c7b7b;
+  /* text-shadow: 0.05rem 0.05rem 0.05rem  #7c7b7b; */
   margin: 0.3rem auto;
 }
 
@@ -1320,7 +1320,18 @@ h3 {
   font-size: clamp(0.9rem, 2.5vw, 1.1rem);
   text-align: left;
   background-color: transparent;
-  text-shadow: 0.05rem 0.05rem 0.05rem  #7c7b7b;
+  /* text-shadow: 0.05rem 0.05rem 0.05rem  #7c7b7b; */
+  margin: 0.5rem auto;
+  padding: 0;
+  font-style: italic;
+}
+
+.box-content h3 {
+  color: #000000;
+  font-size: clamp(0.75rem, 2.5vw, 0.95rem);
+  text-align: left;
+  background-color: transparent;
+  /* text-shadow: 0.05rem 0.05rem 0.05rem  #7c7b7b; */
   margin: 0.5rem auto;
   padding: 0;
   font-style: italic;
