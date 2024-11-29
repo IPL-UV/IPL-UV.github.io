@@ -10,6 +10,7 @@ You are now part of the ISP team! Here's a quick journey to help you understand 
   - [**Option 2: Using GitKraken 🐙**](#option-2-using-gitkraken-)
   - [**Option 3: Using GitHub Web Interface 🖥️**](#option-3-using-github-web-interface-%EF%B8%8F)
 - [**Step 2: 🔧 Making Your Changes**](#step-2--making-your-changes)
+  - [**Adding or edit a new Research page (Research section) 🧠**](#adding-or-edit-a-new-research-page-research-section-)
   - [**Adding a New Person (People page) 🧑‍🏫**](#adding-a-new-person-people-page-)
   - [**Adding a New Project (Project page) 📝**](#adding-a-new-project-project-page-)
   - [**Adding a New Course (Courses page) 📚**](#adding-a-new-course-courses-page-)
@@ -141,12 +142,141 @@ This method is simple and doesn't require any local setup, making it perfect for
 Great! Now you're ready to make changes. Here’s how you can add new content to the website. Whether it's for people, projects, or courses, the process is similar.
 
 
+
+
+### **Adding or edit a new Research page (Research section) 🧠**
+``
+Research pages are located in the `content/research/` directory and are organized by topics.
+
+
+
+#### **Creating a new Research page**
+
+1. Navigate to the `content/research/` directory.
+2. Create a new folder with the topic name, e.g., `artificial_intelligence`.
+3. Inside this folder, create an `_index.md` file to define the main content.
+
+Each file, whether `_index.md` or others, must follow the rules of the models or layouts defined with HUGO. This involves starting with a YAML header. The minimum required is to include a title (`title`), but depending on the layout or section, additional parameters may be necessary. For example:
+
+```yaml
+---
+title: "Page title"
+param1: ""
+param2: ""
+---
+```
+
+**_index.md File Format:**
+
+The file begins with a title, which serves as the main heading. Afterward, you can add your content in Markdown. If you need to review Markdown rules, you can check this [page](https://docs.github.com/es/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax). Additionally, you can combine Markdown with HTML structures if necessary. Below is an example for the page created as `artificial_intelligence`.
+
+```yaml
+---
+title: "Artificial Intelligence"
+---
+
+## 🌟 **Research on Artificial Intelligence**
+
+Introduce the related research content here. 
+
+### **Objectives**
+- Detail 1
+- Detail 2
+
+### **Current Projects**
+1. Project A
+2. Project B
+```
+
+To visualize the new content on this page, you first need to make a commit and, if necessary, create a pull request. Once these steps are completed, you can access the content at [isp.uv.es/research/artificial_intelligence](isp.uv.es/research/artificial_intelligence), following the given example.
+
+
+#### **Adding an image**
+
+Images for research pages should be placed in the directory `content/assets/images/research/`. Each main page has its own specific folder within this directory.
+
+To insert an image into the page, use the following Markdown syntax:
+
+```markdown
+![Image Description](path_to_your_image.webp)
+```
+
+By default:
+
+- The image will occupy 80% of the container's width.
+- It will be centered on the page.
+
+If you need a customized style, use an HTML structure like the example below:
+
+```html
+<img src="name_image.webp" style="width: 50%;">
+```
+
+In this example:
+
+- The image's width will be set to 50%.
+- You can add additional styles in the style attribute, such as rounded borders, margins, or specific alignment.
+
+
+#### **Adding multiple images**
+
+To display several images in a single row, use an HTML structure with flexbox. For example:
+
+```html
+<div style="display: flex; gap: 1rem;">
+  <img src="image1.webp" style="width: 30%;">
+  <img src="image2.webp" style="width: 30%;">
+  <img src="image3.webp" style="width: 30%;">
+</div>
+```
+
+In this example:
+- Each image will occupy 30% of the container's width.
+- The images will be spaced evenly with a 1rem gap.
+
+If you need to add more images or further customize the layout:
+- Adjust the CSS styles as needed.
+- Consult your team if additional support is required.
+
+#### **Editing an existing Research page**
+
+1. Navigate to the corresponding directory, e.g., `content/research/philosophy/`.
+2. Open the _index.md file.
+3. Make the necessary adjustments to the content, such as:
+  - Updating text.
+  - Adding new images.
+  - Modifying parameters in the YAML header.
+
+Since the page structure is already in place, you’ll only need to update or add the desired content. Be sure to:
+- Follow Markdown or HTML formatting rules as appropriate.
+- Verify the correct location of images and their paths.
+- Test the changes locally before pushing them to the production environment.
+
+
+**Adding Subdirectories for Specific Content**
+
+If you want to create additional routes like [isp.uv.es/research/philosophy/contenido_1](isp.uv.es/research/philosophy/contenido_1) or [isp.uv.es/research/philosophy/contenido_2](isp.uv.es/research/philosophy/contenido_1), you can simply:
+
+1. Navigate to `content/research/philosophy/`.
+2. Create a new folder with the desired subdirectory name, e.g., contenido_1 or contenido_2.
+3. Inside each newly created folder, add an _index.md file.
+4. Follow the steps in Creating a New Research Page to structure and populate the content for each new page.
+
+Example directory structure:
+
+```bash
+content/research/philosophy/contenido_1/_index.md
+content/research/philosophy/contenido_2/_index.md
+```
+
+This allows you to create a hierarchy of pages and organize content in a more granular way.
+
+
 ### **Adding a New Person (People page) 🧑‍🏫**
 
 Let's start with adding a new person to the People section.
 
 First, use Hugo’s archetype to generate the necessary markdown file:
-
 
 ```bash
 hugo new content/people/dir_role/nameofperson.md  # Be sure to choose the correct role for dir_role!
