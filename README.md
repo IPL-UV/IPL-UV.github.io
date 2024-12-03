@@ -246,9 +246,9 @@ If you need to add more images or further customize the layout:
 1. Navigate to the corresponding directory, e.g., `content/research/philosophy/`.
 2. Open the _index.md file.
 3. Make the necessary adjustments to the content, such as:
-  - Updating text.
-  - Adding new images.
-  - Modifying parameters in the YAML header.
+    - Updating text.
+    - Adding new images.
+    - Modifying parameters in the YAML header.
 
 Since the page structure is already in place, you’ll only need to update or add the desired content. Be sure to:
 - Follow Markdown or HTML formatting rules as appropriate.
@@ -256,7 +256,7 @@ Since the page structure is already in place, you’ll only need to update or ad
 - Test the changes locally before pushing them to the production environment.
 
 
-**Adding Subdirectories for Specific Content**
+**Adding subdirectories for specific content**
 
 If you want to create additional routes like [isp.uv.es/research/philosophy/contenido_1](isp.uv.es/research/philosophy/contenido_1) or [isp.uv.es/research/philosophy/contenido_2](isp.uv.es/research/philosophy/contenido_1), you can simply:
 
