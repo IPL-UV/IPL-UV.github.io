@@ -158,7 +158,7 @@ document.addEventListener("DOMContentLoaded", function() {
       if (projectText) {
         projectText.split(",").forEach(project => {
           let cleanProject = project.trim();
-          if (cleanProject.endsWith(" Project")) {
+          if (cleanProject.endsWith("")) {
             cleanProject = cleanProject.slice(0, -8).trim();
           }
           if (cleanProject.toLowerCase() !== "project") {
