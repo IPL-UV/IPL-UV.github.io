@@ -32,7 +32,7 @@
 
   <div class="grid-container" id="bibtex_display"></div>
 
-  <div class="bibtex_template">
+  <div class="bibtex_template" style="display: none;">
     <div class="grid-item bib-item seminar-item project-item">
       <span class="title" style="font-weight: bold;"></span><br>
       <span class="author"></span><br>
@@ -87,11 +87,9 @@
         </span>
 
         <span class="if project">
-          <a class="project">
-            <button type="button" class="btn btn-xss btn-primary">Project</button>
-          </a>
+          <button type="button" class="btn btn-xss btn-primary project-btn">Project</button>
         </span>
-
+        
       </div>
       <span class="if doi">
         <div style="display: inline-block;" class="altmetric-embed" data-badge-popover="right" data-badge-type="donut"
