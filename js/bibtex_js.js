@@ -2,6 +2,50 @@
 //  no comment handling within strings
 //  no string concatenation
 //  no variable values yet
+function addYearsAndProjects() {
+  console.log("Adding years and projects");
+  let yearSet = new Set();
+  let projectSet = new Set();
+
+  // Collect unique years
+  $(".year").each(function () {
+      let year = $(this).text().trim();
+      if (year !== "" && year !== "All Years") {
+          yearSet.add(year);
+      }
+  });
+  console.log("Collected years:", Array.from(yearSet));
+
+  // Collect unique projects
+  $(".bib-item").each(function () {
+      const projectText = $(this).find(".project").text().trim();
+      if (projectText && projectText !== "Project") { // Verifica que no esté vacío ni sea inválido
+          const formattedProjects = (new BibtexDisplay()).formatProjects(projectText); // Limpieza
+          formattedProjects.split(',').forEach(project => {
+              if (project.trim()) { // Asegúrate de que no es vacío
+                  projectSet.add(project.trim());
+              }
+          });
+      }
+  });
+
+  // Populate year filter
+  let yearArray = Array.from(yearSet);
+  yearArray = yearArray.filter(year => year !== "Submitted" && year !== "In preparation")
+      .sort((a, b) => b - a);
+  if (yearSet.has("Submitted")) yearArray.push("Submitted");
+  if (yearSet.has("In preparation")) yearArray.push("In preparation");
+
+  yearArray.forEach(year => {
+      $('#year-filter').append(`<option value="${year}">${year}</option>`);
+  });
+
+  // Populate project filter
+  const sortedProjects = Array.from(projectSet).sort(); // Ordenar alfabéticamente
+  sortedProjects.forEach(project => {
+      $('#project-filter').append(`<option value="${project}">${project}</option>`);
+  });
+}
 
 // Grammar implemented here:
 //  bibtex -> (string | preamble | comment | entry)*;
@@ -607,7 +651,9 @@ document.addEventListener("DOMContentLoaded", function () {
       $('#project-filter').append('<option value="">All Projects</option>');
   
       projectSet.forEach(project => {
-          $('#project-filter').append(`<option value="${project}">${project}</option>`);
+          if (project && project.trim() !== "" && project !== "Project") {
+              $('#project-filter').append(`<option value="${project}">${project}</option>`);
+          }
       });
   
       // Restore current selection
