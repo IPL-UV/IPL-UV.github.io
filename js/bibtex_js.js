@@ -47,6 +47,7 @@ class BibtexParser {
       DEC: "December"
     };
 
+    this.currentKey = "";
     this.currentEntry = "";
 
     this.setInput = function (t) {
@@ -80,7 +81,6 @@ class BibtexParser {
       else {
         return false;
       }
-      this.skipWhitespace();
     };
 
     this.skipWhitespace = function () {
@@ -196,7 +196,6 @@ class BibtexParser {
     };
 
     this.key_value_list = function () {
-      // this.entries[this.currentEntry]['bibtex'] = this. ????????;
       var kv = this.key_equals_value();
       this.entries[this.currentEntry][kv[0]] = kv[1];
       while (this.tryMatch(",")) {
@@ -215,6 +214,10 @@ class BibtexParser {
       this.entries[this.currentEntry] = new Object();
       this.match(",");
       this.key_value_list();
+        // Verificar si la entrada está vacía después de procesarla
+      if (!Object.keys(this.entries[this.currentEntry]).length) {
+        delete this.entries[this.currentEntry]; // Eliminar entradas vacías
+      }
     };
 
     this.directive = function () {
@@ -259,17 +262,13 @@ class BibtexParser {
           is_entry = true;
         }
         this.match("}");
-        // if (is_entry == true) {
-        // this.entries[this.currentEntry]['BIBTEX'] = "<pre>" + this.input.substring(this.pos, lastpos).trim() + "</pre>";
         this.entries[this.currentEntry]['BIBTEX'] = this.input.substring(this.pos, lastpos).trim().
           replace(/\n/g, "<br /> &#160;&#160;").replace(/\}/g, "&#125;").replace(/\{/g, "&#123;");
-        // is_entry = false;
-        // }
       }
     };
   }
 }
-    
+  
 class BibtexDisplay {
   constructor() {
     this.fixValue = function (value) {
@@ -339,36 +338,28 @@ class BibtexDisplay {
     };
 
     this.formatProjects = function(projects) {
-        // Paso 1: Separar proyectos por coma
-        let projectArray = projects.split(',').map(project => project.trim());
-
-        // Paso 2: Eliminar sufijo "Project" si está presente
-        projectArray = projectArray.map(project => {
+        let projectArray = projects.split(',').map(project => project.trim()); // Paso 1: Separar proyectos por coma        
+        projectArray = projectArray.map(project => { // Paso 2: Eliminar sufijo "Project" si está presente
             return project.endsWith(" Project") ? project.slice(0, -8).trim() : project;
         });
-
-        // Paso 3: Eliminar duplicados
-        projectArray = [...new Set(projectArray)];
-
-        // Paso 4: Ordenar proyectos alfabéticamente
-        projectArray.sort();
-
-        // Paso 5: Unir los proyectos con ", "
-        return projectArray.join(', ');
+        projectArray = [...new Set(projectArray)]; // Paso 3: Eliminar duplicados        
+        projectArray.sort(); // Paso 4: Ordenar proyectos alfabéticamente
+        return projectArray.join(', '); // Paso 5: Unir los proyectos con ", "
     };
 
     this.displayBibtex = function (input, output, constraints) {
       this.prepare_parser(input);
       var old = output.find("*");
       var entries = this.bibtexParser.getEntries();
+      
       for (var entryKey in entries) {
         var entry = entries[entryKey];
         var tpl = $(".bibtex_template").clone().removeClass('bibtex_template');
         var keys = [];
+
         for (var key in entry) {
           keys.push(key.toUpperCase());
         }
-        var removed = false;
         do {
           var conds = tpl.find(".if");
           if (conds.size() == 0) {
@@ -409,18 +400,64 @@ class BibtexDisplay {
           if (key === "journal") {
               value = this.fixValue(value)
           }
-          if (key === "project") { // Aplica formatProjects / *** ver si es necesario o es un por las puras
-              value = this.formatProjects(value); // Limpieza y formato
+          if (key === "project") {
+              if (!value || !value.trim() || value === "{}") {
+                  tpl.find("button.project-btn").hide(); // Si no hay contenido válido, oculta el botón y termina
+              }
+              value = this.formatProjects(value);
               value = this.fixValue(value); // Patrones adicionales
+              const projectText = value.includes(',') // Si hay varios proyectos, únelos con guiones, si no, usa el único proyecto
+                  ? value.split(',').map(p => p.trim()).join(' - ')
+                  : value.trim();
+              tpl.find("button.project-btn").text("Project"); // Asigna el texto inicial del botón como "Project"
+              // Asigna un evento de clic para alternar entre "Project" y los proyectos
+              tpl.find("button.project-btn").on('click', function () {
+                  const isExpanded = $(this).data('expanded') || false; // Estado actual
+                  if (isExpanded) {
+                      // Contraer: Cambiar texto a "Project"
+                      $(this).text("Project");
+                      $(this).data('expanded', false);
+                  } else {
+                      // Expandir: Cambiar texto a los proyectos
+                      $(this).text(projectText);
+                      $(this).data('expanded', true);
+                  }
+              });
           }
           tpl.find("span:not(a)." + key).html(value);
           tpl.find("a." + key).attr('href', value);
-          // tpl.find("button:not(a)." + key).attr('data-content', value);
-          // if (key == "doi") {
-          //   tpl.find("div:not(a)." + key).attr('data-doi', value);
-          // }
-
         }
+        
+        // // Validar si el contenedor tiene contenido antes de anexarlo al DOM
+        // const hasContent = tpl.find(".bibtexdata, .title, .author").text().trim() !== "";
+        // if (hasContent) {
+        //   if (constraints == null) {
+        //     output.append(tpl);
+        //   } else {
+        //     var approved = true;
+        //     for (var constraint in constraints) {
+        //       var key = constraint;
+        //       var value = constraints[constraint];
+        //       if (key === 'YEAR') {
+        //         if (entry['YEAR'] != value) {
+        //           approved = false;
+        //         }
+        //       } else if (key === 'PROJECT') {
+        //         if (entry['PROJECT'] != undefined && entry['PROJECT'].indexOf(value) > -1) {
+        //         } else {
+        //           approved = false;
+        //         }
+        //       }
+        //     }
+        //     if (approved) {
+        //       output.append(tpl);
+        //     }
+        //   }
+        //   tpl.show();
+        // }
+
+
+
         if (constraints == null) {
           output.append(tpl);
         }
@@ -453,6 +490,15 @@ class BibtexDisplay {
   }
 }
   
+
+
+function toggleBibtex(button) { // Función que permite ver el BibTeX
+  console.log("Toggle BibTeX button clicked");
+  const container = $(button).closest('.bib-item');
+  const bibtexElement = container.find('.bibtexdata');
+  bibtexElement.slideToggle();
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   console.log("DOM fully loaded and parsed");
   let bibtexDisplay = new BibtexDisplay();
