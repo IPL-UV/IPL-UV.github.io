@@ -309,89 +309,31 @@ function author_tex_reformat(input) {
           this.bibtexParser.bibtex();
         }
       }
-      this.get_projects = function (input, constraints) {
-        var dic = {};
-        this.prepare_parser(input);
-        var entries = this.bibtexParser.getEntries();
-        for (var entryKey in entries) {
-          var entry = entries[entryKey];
-          var approved = true;
-          if (entry['PROJECT'] == undefined || entry['PROJECT'].trim() == "") {
-            continue;
-          }
-          var projects = entry['PROJECT'];
-          projects = projects.split(',').map(function(item) { return item.trim() });
-  
-          projects.forEach(function (project) {
-            if (dic[project] != null) {
-              dic[project]++;
-            }
-            else {
-              dic[project] = 1;
-            }
-          });
-  
-        }
-        return dic;
-      };
-  
-      this.get_years = function (input, constraints) {
-        var dic = {};
-        this.prepare_parser(input);
-        var entries = this.bibtexParser.getEntries();
-        for (var entryKey in entries) {
-          var entry = entries[entryKey];
-          var approved = true;
-          for (var constraint in constraints) {
-            var key = constraint;
-            var value = constraints[constraint];
-            if (key == 'YEAR') {
-              if (entry['YEAR'] != value) {
-                approved = false;
-              }
-            }
-            else if (key == 'AUTHOR') {
-              var author_found = false;
-              if (entry['AUTHOR'].indexOf(' and ') > -1) {
-                entry['AUTHOR'].split(' and ').forEach(function (item) {
-                  item = item.replace(/^\s\s*/, '').replace(/\s\s*$/, '');
-                  item = author_tex_reformat(item).replace(/^\s\s*/, '').replace(/\s\s*$/, '');
-                  if (item.indexOf(value) > -1) {
-                    author_found = true;
-                  }
-                });
-              }
-              else {
-                item = entry['AUTHOR'].replace(/^\s\s*/, '').replace(/\s\s*$/, '');
-                item = author_tex_reformat(item).replace(/^\s\s*/, '').replace(/\s\s*$/, '');
-                if (item.indexOf(value) > -1) {
-                  author_found = true;
-                }
-              }
-              if (author_found == false) {
-                approved = false;
-              }
-            }
-          }
-          if (approved == true) {
-            if (dic[entry['YEAR']] != null) {
-              dic[entry['YEAR']] = dic[entry['YEAR']] + 1;
-            }
-            else {
-              dic[entry['YEAR']] = 1;
-            }
-          }
-        }
-        return dic;
-      };
+   
 
-      this.formatAuthors = function(authors) { // *
+      this.formatAuthors = function(authors) {
+          const MAX_AUTHORS = 12; // Máximo número de autores a mostrar
           let cleanAuthors = authors.replace(/,/g, ''); // Reemplazar comas dentro de los nombres con espacios
-          let authorArray = cleanAuthors.split(' and ').map(author => author.trim()); // Dividir por ' and ' y limpiar los espacios alrededor
-          if (authorArray.length > 1) {
-              return authorArray.slice(0, -1).join(', ') + ' and ' + authorArray[authorArray.length - 1]; // Unir authors con ', ' y el último con ' and '
+          let authorArray = cleanAuthors.split(' and ').map(author => { // Dividir por ' and ' y limpiar los espacios alrededor
+              let words = author.trim().split(' '); // Dividir el autor en palabra
+              if (words.length > 1) {
+                  // Tomar la primera palabra y la inicial de la segunda palabra con un punto
+                  let firstName = words[0]; // Primera palabra
+                  let lastNameInitial = words[1].charAt(0).toUpperCase() + '.'; // Inicial con punto
+                  return `${firstName} ${lastNameInitial}`; // Formatear
+              } else {
+                  return words[0]; // Si solo hay un nombre, devolverlo como está
+              }
+          });
+          if (authorArray.length > MAX_AUTHORS) { //  Limitar el número de autores a MAX_AUTHORS
+              authorArray = authorArray.slice(0, MAX_AUTHORS); // Tomar solo los primeros MAX_AUTHORS
+              authorArray.push('others'); // Añadir "et al." al final
           }
-          return cleanAuthors; // Retorna como está si solo hay un autor
+          if (authorArray.length > 1) { // Si hay más de un autor, unirlos con ', ' y el último con ' and '
+              return authorArray.slice(0, -1).join(', ') + ' and ' + authorArray[authorArray.length - 1];
+          }
+          // Si solo hay un autor, retornarlo directamente
+          return authorArray[0];
       };
 
       this.cleanTitle = function(title) { // **
@@ -444,7 +386,12 @@ function author_tex_reformat(input) {
 
             if (key === "title") {
                 value = this.cleanTitle(value); // Limpiar llaves del título
+                value = this.fixValue(value)
             }
+            
+            if (key === "journal") {
+                value = this.fixValue(value)
+          }
 
 
             tpl.find("span:not(a)." + key).html(value);
