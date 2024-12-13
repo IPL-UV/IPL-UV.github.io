@@ -1695,3 +1695,21 @@ h3 {
   width: 80%;
   border-radius: 0.3125rem;
 }
+
+/* Altmetric */
+
+.altmetric-embed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.altmetric-embed a {
+  height: 100%;
+  width: 39px;
+}
+
+.altmetric-embed a img {
+  height: 100%;
+  width: 100%;
+}
