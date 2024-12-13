@@ -100,14 +100,9 @@ theme = "isp_uv"
     weight = 4
   [[menu.main]]
     parent = "Publications"
-    name = "Technical Reports"
-    url = "/publications/technical_reports/"
-    weight = 5
-  [[menu.main]]
-    parent = "Publications"
     name = "Theses"
     url = "/publications/theses/"
-    weight = 6
+    weight = 5
 
 [[menu.main]]
   name = "Code"

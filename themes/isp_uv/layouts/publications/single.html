@@ -89,12 +89,12 @@
         <span class="if project">
           <button type="button" class="btn btn-xss btn-primary project-btn">Project</button>
         </span>
-        
+
+        <div class="altmetric-embed" data-badge-popover="right" data-badge-type="donut" data-hide-no-mentions="true"></div>
+
       </div>
-      <span class="if doi">
-        <div style="display: inline-block;" class="altmetric-embed" data-badge-popover="right" data-badge-type="donut"
-          data-hide-no-mentions="true"></div>
-      </span>
+
+      
 
       <div class="bibtexdata alert alert-success" style="display: none;">
         <span class="bibtex"></span>
@@ -106,5 +106,5 @@
 
 <script type="text/javascript" src={{ relURL "js/jquery-1.12.4.min.js" }} defer></script>
 <script type="text/javascript" src={{ relURL "js/bibtex_js.js" }} defer></script>
-<!-- <script type="text/javascript" src={{ relURL "js/bibtex_functions.js" }} defer></script> -->
+<script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
 {{ end }}
