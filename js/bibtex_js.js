@@ -1,52 +1,3 @@
-// Issues:
-//  no comment handling within strings
-//  no string concatenation
-//  no variable values yet
-function addYearsAndProjects() {
-  console.log("Adding years and projects");
-  let yearSet = new Set();
-  let projectSet = new Set();
-
-  // Collect unique years
-  $(".year").each(function () {
-      let year = $(this).text().trim();
-      if (year !== "" && year !== "All Years") {
-          yearSet.add(year);
-      }
-  });
-  console.log("Collected years:", Array.from(yearSet));
-
-  // Collect unique projects
-  $(".bib-item").each(function () {
-      const projectText = $(this).find(".project").text().trim();
-      if (projectText && projectText !== "Project") { // Verifica que no esté vacío ni sea inválido
-          const formattedProjects = (new BibtexDisplay()).formatProjects(projectText); // Limpieza
-          formattedProjects.split(',').forEach(project => {
-              if (project.trim()) { // Asegúrate de que no es vacío
-                  projectSet.add(project.trim());
-              }
-          });
-      }
-  });
-
-  // Populate year filter
-  let yearArray = Array.from(yearSet);
-  yearArray = yearArray.filter(year => year !== "Submitted" && year !== "In preparation")
-      .sort((a, b) => b - a);
-  if (yearSet.has("Submitted")) yearArray.push("Submitted");
-  if (yearSet.has("In preparation")) yearArray.push("In preparation");
-
-  yearArray.forEach(year => {
-      $('#year-filter').append(`<option value="${year}">${year}</option>`);
-  });
-
-  // Populate project filter
-  const sortedProjects = Array.from(projectSet).sort(); // Ordenar alfabéticamente
-  sortedProjects.forEach(project => {
-      $('#project-filter').append(`<option value="${project}">${project}</option>`);
-  });
-}
-
 // Grammar implemented here:
 //  bibtex -> (string | preamble | comment | entry)*;
 //  string -> '@STRING' '{' key_equals_value '}';
@@ -62,13 +13,13 @@ function addYearsAndProjects() {
 function author_tex_reformat(input) {
   const authors = input.split(',').map(author => author.trim()); // Dividir por ',' y limpiar espacios
   if (authors.length > 1) {
-      // Unir todos menos el último con ', ' y el último con ' and '
-      return authors.slice(0, -1).join(', ') + ' and ' + authors[authors.length - 1];
-  } else {
-      // Si no hay ',' devolver el autor como está
-      return authors[0];
+      return authors.slice(0, -1).join(', ') + ' and ' + authors[authors.length - 1]; // Unir todos menos el último con ', ' y el último con ' and '
+  } else {  
+      return authors[0]; // Si no hay ',' devolver el autor como está
   }
 }
+
+
 
 
 class BibtexParser {
@@ -343,7 +294,16 @@ class BibtexDisplay {
       
       return value;
   };
+
+    this.capitalizeWords = function(value) { // Agrega la función aquí
+      return value.toLowerCase()
+      .split(' ')
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ');
+    };
+
     this.bibtexParser = null;
+
     this.prepare_parser = function(input) {
       if (this.bibtexParser === null) {
         this.bibtexParser = new BibtexParser();
@@ -450,6 +410,7 @@ class BibtexDisplay {
               }
               value = this.formatProjects(value);
               value = this.fixValue(value); // Patrones adicionales
+              value = this.capitalizeWords(value) // Capitalizar palabras
               const projectText = value.includes(',') // Si hay varios proyectos, únelos con guiones, si no, usa el único proyecto
                   ? value.split(',').map(p => p.trim()).join(' - ')
                   : value.trim();
@@ -468,40 +429,38 @@ class BibtexDisplay {
                   }
               });
           }
+          if (key === "doi") {
+              if (!value || !value.trim() || value === "{}") {
+                  tpl.find("button.btn-warning").hide(); // Si no hay contenido válido, oculta el botón y termina
+              } else {
+                  value = value.trim(); // Eliminar espacios al inicio y al final
+          
+                  // Comprobar si el DOI comienza con "http"
+                  if (!value.startsWith("http")) {
+                      if (value.startsWith("doi.org")) {
+                          // Si comienza con "doi.org", agregar "https://"
+                          value = "https://" + value;
+                      } else if (/^10\.\d+/.test(value)) {
+                          // Si comienza con un número típico de DOI ("10." seguido de dígitos), agregar "https://doi.org/"
+                          value = "https://doi.org/" + value;
+                      }
+                  }
+          
+                  // Configurar el enlace del DOI
+                  tpl.find("a.doi").attr('href', value);
+          
+                  // Extraer el DOI limpio para Altmetric
+                  const doi = value.replace("https://doi.org/", "").replace("https://", "");
+          
+                  // Configurar el Altmetric badge
+                  tpl.find(".altmetric-embed").attr('data-doi', doi); // Agregar el DOI al badge
+              }
+          }
+        
           tpl.find("span:not(a)." + key).html(value);
           tpl.find("a." + key).attr('href', value);
         }
         
-        // // Validar si el contenedor tiene contenido antes de anexarlo al DOM
-        // const hasContent = tpl.find(".bibtexdata, .title, .author").text().trim() !== "";
-        // if (hasContent) {
-        //   if (constraints == null) {
-        //     output.append(tpl);
-        //   } else {
-        //     var approved = true;
-        //     for (var constraint in constraints) {
-        //       var key = constraint;
-        //       var value = constraints[constraint];
-        //       if (key === 'YEAR') {
-        //         if (entry['YEAR'] != value) {
-        //           approved = false;
-        //         }
-        //       } else if (key === 'PROJECT') {
-        //         if (entry['PROJECT'] != undefined && entry['PROJECT'].indexOf(value) > -1) {
-        //         } else {
-        //           approved = false;
-        //         }
-        //       }
-        //     }
-        //     if (approved) {
-        //       output.append(tpl);
-        //     }
-        //   }
-        //   tpl.show();
-        // }
-
-
-
         if (constraints == null) {
           output.append(tpl);
         }
@@ -530,6 +489,10 @@ class BibtexDisplay {
         tpl.show();
       }
       old.remove();
+      if (typeof _altmetric_embed_init === "function") {
+          _altmetric_embed_init(); // Inicializa el Altmetric badge
+      }
+    
     };
   }
 }
@@ -552,7 +515,6 @@ document.addEventListener("DOMContentLoaded", function () {
   function initializeBibtex() {
     console.log("Initializing Bibtex display");
     requestAnimationFrame(() => {
-      // bibtexData = he.decode(bibtexData); // Decodifica los caracteres escapados en BibTeX
       bibtexDisplay.displayBibtex(bibtexData, $("#bibtex_display"), {});
       addYearsAndProjects();
       updateFilters();
@@ -562,47 +524,62 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function addYearsAndProjects() {
-    console.log("Adding years and projects");
-    let yearSet = new Set();
-    let projectSet = new Set();
+      console.log("Adding years and projects");
+      let yearSet = new Set();
+      let projectSet = new Set();
 
-    // Collect unique years
-    $(".year").each(function () {
-        let year = $(this).text().trim();
-        if (year !== "" && year !== "All Years") {
-            yearSet.add(year);
-        }
-    });
-    console.log("Collected years:", Array.from(yearSet));
+      // Recopilar años únicos
+      $(".year").each(function () {
+          const year = $(this).text().trim(); // Limpiar espacios
+          if (year !== "" && year !== "All Years") {
+              yearSet.add(year);
+          }
+      });
 
-    // Collect unique projects
-    $(".bib-item").each(function () {
-        const projectText = $(this).find(".project").text().trim();
-        if (projectText) {
-            const formattedProjects = (new BibtexDisplay()).formatProjects(projectText); // Limpieza
-            formattedProjects.split(',').forEach(project => {
-                projectSet.add(project.trim());
-            });
-        }
-    });
+      // Recopilar proyectos únicos
+      $(".bib-item").each(function () {
+          const projectText = $(this).find(".project").text().trim();
+          if (projectText) {
+              const formattedProjects = projectText
+                  .split(",")
+                  .map((p) => p.trim()) // Limpiar espacios
+                  .filter((p) => p !== ""); // Ignorar vacíos
+              formattedProjects.forEach((project) => projectSet.add(project));
+          }
+      });
 
+      // Limpiar y ordenar años
+      const yearArray = Array.from(yearSet).sort((a, b) => {
+          // Ordenar años numéricamente, pero mantener "Submitted" y "In preparation" al final
+          if (isNaN(a)) return 1;
+          if (isNaN(b)) return -1;
+          return b - a;
+      });
 
-    // Populate year filter
-    let yearArray = Array.from(yearSet);
-    yearArray = yearArray.filter(year => year !== "Submitted" && year !== "In preparation")
-        .sort((a, b) => b - a);
-    if (yearSet.has("Submitted")) yearArray.push("Submitted");
-    if (yearSet.has("In preparation")) yearArray.push("In preparation");
+      // Agregar opciones al filtro de años
+      const yearFilter = $('#year-filter');
+      yearFilter.empty(); // Limpiar el filtro
+      yearFilter.append('<option value="">All Years</option>');
+      yearArray.forEach((year) => {
+          yearFilter.append(`<option value="${year}">${year}</option>`);
+      });
 
-    yearArray.forEach(year => {
-        $('#year-filter').append(`<option value="${year}">${year}</option>`);
-    });
+      // Limpiar y ordenar proyectos
+      const projectArray = Array.from(projectSet)
+          .map((p) => p.charAt(0).toUpperCase() + p.slice(1).toLowerCase()) // Capitalizar
+          .sort();
 
-    // Populate project filter
-    projectSet.forEach(project => {
-        $('#project-filter').append(`<option value="${project}">${project}</option>`);
-    });
+      // Agregar opciones al filtro de proyectos
+      const projectFilter = $('#project-filter');
+      projectFilter.empty(); // Limpiar el filtro
+      projectFilter.append('<option value="">All Projectssaasda</option>');
+      projectArray.forEach((project) => {
+          projectFilter.append(`<option value="${project}">${project}</option>`);
+      });
+
+      console.log("Years and projects added:", yearArray, projectArray);
   }
+
 
 
   function updateFilters() {
@@ -628,6 +605,7 @@ document.addEventListener("DOMContentLoaded", function () {
     updateProjectFilter();
   }
 
+
   function updateProjectFilter() {
       console.log("Updating project filter");
       const selectedYear = document.getElementById('year-filter').value;
@@ -641,7 +619,7 @@ document.addEventListener("DOMContentLoaded", function () {
           if ((selectedYear === "" || itemYear === selectedYear) && itemProjects) {
               const formattedProjects = (new BibtexDisplay()).formatProjects(itemProjects); // Limpieza
               formattedProjects.split(',').forEach(project => {
-                  projectSet.add(project.trim());
+                projectSet.add(project.trim());
               });
           }
       });
