@@ -453,7 +453,8 @@ class BibtexDisplay {
                   const doi = value.replace("https://doi.org/", "").replace("https://", "");
           
                   // Configurar el Altmetric badge
-                  tpl.find(".altmetric-embed").attr('data-doi', doi); // Agregar el DOI al badge
+                  tpl.find(".altmetric-embed").attr('data-doi', doi);
+                  tpl.find(".dimensions-badge").attr("data-doi", doi);
               }
           }
         
