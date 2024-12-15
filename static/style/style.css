@@ -1704,6 +1704,10 @@ h3 {
   align-items: center;
 }
 
+.altmetric-popover-content {
+  width: 100%;
+}
+
 .altmetric-embed a {
   height: 100%;
   width: 39px;
