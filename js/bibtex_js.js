@@ -454,8 +454,13 @@ class BibtexDisplay {
           
                   // Configurar el Altmetric badge
                   tpl.find(".altmetric-embed").attr('data-doi', doi);
-                  tpl.find(".dimensions-badge").attr("data-doi", doi);
+                  // tpl.find(".dimensions-badge").attr("data-doi", doi);
               }
+          }
+          if (key === "altmetric") {
+              // tpl.find(".altmetric-embed").attr('data-id', value);
+              tpl.find(".altimetric").attr('href', value);
+              
           }
         
           tpl.find("span:not(a)." + key).html(value);
