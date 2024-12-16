@@ -2,6 +2,7 @@
 <div class="content-container">
   <div class="grid-item grid-filter">
     <div class="filter-container">
+      <!-- Filtro por Año -->
       <label for="year-filter">Filter by:</label>
       <select id="year-filter" onchange="updateFilters()">
         <option value="">All Years</option>
@@ -15,15 +16,7 @@
         {{ end }}
       </select>      
 
-      <label for="month-filter"></label>
-      <select id="month-filter" onchange="updateFilters()">
-        <option value="">All Months</option>
-        {{ $months := slice "January" "February" "March" "April" "May" "June" "July" "August" "September" "October" "November" "December" }}
-        {{ range $index, $month := $months }}
-        <option value="{{ $month }}">{{ $month }}</option>
-        {{ end }}
-      </select>
-
+      <!-- Filtro por Speaker -->
       <label for="speaker-filter"></label>
       <select id="speaker-filter" onchange="updateFilters()">
         <option value="">All Speakers</option>
@@ -51,7 +44,7 @@
     {{ end }}
     
       {{ $current := . }}
-      <div class="grid-item seminar-item project-item" data-year="{{ .Date.Format "2006" }}" data-month="{{ .Date.Format "January" }}" data-speaker="{{ .Params.speaker }}">
+      <div class="grid-item seminar-item project-item" data-year="{{ .Date.Format "2006" }}" data-speaker="{{ .Params.speaker }}">
         <div class="image-container seminar-image">
           {{ with .Params.link }}
             <a href="{{ . }}">
@@ -87,52 +80,29 @@
 <script>
   function updateFilters() {
     const year = document.getElementById('year-filter').value;
-    const month = document.getElementById('month-filter').value;
     const speaker = document.getElementById('speaker-filter').value;
     const items = document.querySelectorAll('.seminar-item');
 
-    // Gather available options based on current filter selection
-    let availableMonths = new Set();
+    // Recolectar speakers válidos
     let availableSpeakers = new Set();
 
     items.forEach(item => {
       const itemYear = item.getAttribute('data-year');
-      const itemMonth = item.getAttribute('data-month');
       const itemSpeaker = item.getAttribute('data-speaker');
 
       const yearMatch = (year === "" || itemYear === year);
-      const monthMatch = (month === "" || itemMonth === month);
       const speakerMatch = (speaker === "" || itemSpeaker === speaker);
 
-      // Display or hide items based on selected filters
-      if (yearMatch && monthMatch && speakerMatch) {
+      // Mostrar solo los elementos que coincidan con ambos filtros
+      if (yearMatch && speakerMatch) {
         item.style.display = 'flex';
-        if (year === "" || yearMatch) {
-          availableMonths.add(itemMonth);
-          availableSpeakers.add(itemSpeaker);
-        }
+        if (year === "" || yearMatch) availableSpeakers.add(itemSpeaker);
       } else {
         item.style.display = 'none';
       }
     });
 
-    // Keep Year Filter always visible
-    const yearFilter = document.getElementById('year-filter');
-    Array.from(yearFilter.options).forEach(option => {
-      option.style.display = 'block';
-    });
-
-    // Update Month Filter
-    const monthFilter = document.getElementById('month-filter');
-    Array.from(monthFilter.options).forEach(option => {
-      if (option.value === "" || availableMonths.has(option.value)) {
-        option.style.display = 'block';
-      } else {
-        option.style.display = 'none';
-      }
-    });
-
-    // Update Speaker Filter
+    // Actualizar opciones del filtro de Speakers
     const speakerFilter = document.getElementById('speaker-filter');
     Array.from(speakerFilter.options).forEach(option => {
       if (option.value === "" || availableSpeakers.has(option.value)) {
@@ -141,6 +111,11 @@
         option.style.display = 'none';
       }
     });
+
+    // Resetear el filtro de Speaker si la selección actual no es válida
+    if (!availableSpeakers.has(speakerFilter.value)) {
+      speakerFilter.value = "";
+    }
   }
 </script>
 {{ end }}

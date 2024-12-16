@@ -2,7 +2,7 @@
 title: "Epsilon-Huber Support Vector Regression"
 img: "losses_web.webp"
 image_alt: "Epsilon-Huber Support Vector Regression Image"
-link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_regression/svr_e_huber.zip"
+link: "https://github.com/IPL-UV/svr_e_huber"
 references:
   - "A unified SVM framework for signal estimation. Rojo-Álvarez, J.L., Martínez-Ramón, M., Muñoz-Marí, J., Camps-Valls, G. Digital Signal Processing: A Review Journal, 26(1):1-20, 2014."
 ---
