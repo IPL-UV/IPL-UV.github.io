@@ -7,12 +7,12 @@
     <div class="title-container">
         <h1> {{ .Key | title }} </h1>
     </div>
-    <div class="card container">
+    <div class="card container backcard">
         {{ range .Pages }}
         {{ $img := printf "%s" (relURL (printf "images/people/%s" .Params.img)) }}
         {{ $name := .Title }}
         {{ $link_image := .Params.link_image }}
-        <div class="card">
+        <div class="card cards">
             <div class="row g-0">
                 <div class="col-md-3">
                     {{ if $link_image }}
