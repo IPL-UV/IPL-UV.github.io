@@ -3,4 +3,5 @@ title: "Chromatic Induction and Contrast Masking: similar models, different goal
 date: "2013-01-21"
 speaker: "Sandra Jiménez"
 affiliation: "Universitat de València"
+img: sandra.webp
 ---

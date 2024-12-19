@@ -32,26 +32,25 @@
       </select>
     </div>
   </div>
-
   <div class="grid-container" id="seminar-grid-container">
     {{ range sort (where .Site.RegularPages "Section" "seminars") "Date" "desc" }}
     {{ $ruta := .Params.img | default "uv.webp" }}
-    {{ $img := "" }}
-    {{ if hasPrefix $ruta "http" }}
-      {{ $img = $ruta }}
-    {{ else }}
-      {{ $img = relURL (urls.JoinPath "images/people" $ruta) }}
-    {{ end }}
-    
+    {{ $imgPeople := relURL (urls.JoinPath "images/people" $ruta) }}
+    {{ $imgSeminars := relURL (urls.JoinPath "images/seminars" $ruta) }}
+  
       {{ $current := . }}
-      <div class="grid-item seminar-item project-item" data-year="{{ .Date.Format "2006" }}" data-speaker="{{ .Params.speaker }}">
+      <div class="grid-item seminar-item project-item" data-year="{{ .Date.Format "2006" }}" data-month="{{ .Date.Format "January" }}" data-speaker="{{ .Params.speaker }}">
         <div class="image-container seminar-image">
           {{ with .Params.link }}
             <a href="{{ . }}">
-              <img src="{{ $img }}" alt="{{ $current.Params.image_alt | default "Default Seminar Image" }}">
+              <img src="{{ $imgPeople }}" 
+                   alt="{{ $current.Params.image_alt | default "Default Seminar Image" }}"
+                   onerror="this.onerror=null;this.src='{{ $imgSeminars }}';">
             </a>
           {{ else }}
-            <img src="{{ $img }}" alt="{{ .Params.image_alt | default "Default Seminar Image" }}">
+            <img src="{{ $imgPeople }}" 
+                 alt="{{ .Params.image_alt | default "Default Seminar Image" }}"
+                 onerror="this.onerror=null;this.src='{{ $imgSeminars }}';">
           {{ end }}
         </div>
         <div class="text-container seminar-text">
@@ -74,7 +73,7 @@
         </div>
       </div>
     {{ end }}
-  </div>
+  </div>  
 </div>
 
 <script>

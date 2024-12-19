@@ -4,4 +4,5 @@ date: "2021-05-01"
 speaker: "Gustau Camps-Valls"
 affiliation: "ISP/UV"
 link: https://www.youtube.com/watch?v=8262BYuWVUU
+img: gus18.webp
 ---

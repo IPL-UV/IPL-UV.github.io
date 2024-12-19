@@ -3,4 +3,5 @@ title: "Domain Adaptation of Landsat-8 and Proba-V data using Generative Adversa
 date: "2019-02-08"
 speaker: "Gonzalo Mateo"
 affiliation: "ISP/UV"
+img: gonzalo.webp
 ---

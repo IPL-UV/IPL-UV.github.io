@@ -3,4 +3,5 @@ title: "Visual information from noisy measurements. Generalization of Non-local 
 date: "2013-05-10"
 speaker: "Jesús Malo"
 affiliation: "Universitat de València"
+img: jesus.webp
 ---

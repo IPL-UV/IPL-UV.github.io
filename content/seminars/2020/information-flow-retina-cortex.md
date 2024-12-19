@@ -3,4 +3,5 @@ title: "<a href='https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resol
 date: "2020-07-20"
 speaker: "Jesús Malo"
 affiliation: "ISP/UV"
+img: jesus.webp
 ---

@@ -3,4 +3,5 @@ title: "Measuring the mutual information reduction achieved by linear transforma
 date: "2009-01-09"
 speaker: "Valero Laparra"
 affiliation: "Universitat de València"
+img: valero.webp
 ---

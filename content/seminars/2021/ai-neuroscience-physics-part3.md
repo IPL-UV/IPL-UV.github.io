@@ -4,4 +4,5 @@ date: "2021-07-04"
 speaker: "V. Laparra"
 affiliation: "ISP/UV"
 link: https://youtu.be/qE27XyBM4-s?si=sMwpmgBOlktSfKMj
+img: valero.webp
 ---

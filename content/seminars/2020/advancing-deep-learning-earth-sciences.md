@@ -3,4 +3,5 @@ title: "Advancing Deep Learning For Earth Sciences: From Hybrid Modeling To Inte
 date: "2020-07-22"
 speaker: "Gustau Camps-Valls"
 affiliation: "ISP/UV"
+img: gus18.webp
 ---

@@ -3,4 +3,5 @@ title: "Convolutional Neural Networks for Cloud Screening: Transfer learning fro
 date: "2018-05-03"
 speaker: "Gonzalo Mateo"
 affiliation: "ISP/UV"
+img: gonzalo.webp
 ---

@@ -4,4 +4,5 @@ date: "2020-12-12"
 speaker: "Gustau Camps-Valls"
 affiliation: "ISP/UV"
 link: https://www.conferencemanager.dk/sustainableai/conference/
+img: gus18.webp
 ---

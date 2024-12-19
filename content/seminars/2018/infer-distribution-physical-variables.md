@@ -3,4 +3,5 @@ title: "How do you infer something about the distribution over the physical vari
 date: "2018-12-05"
 speaker: "Daniel Svendsen"
 affiliation: "ISP/UV"
+img: daniel.webp
 ---

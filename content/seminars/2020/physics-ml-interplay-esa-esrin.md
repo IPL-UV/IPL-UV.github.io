@@ -4,4 +4,5 @@ date: "2020-09-28"
 speaker: "Gustau Camps-Valls"
 affiliation: "ISP/UV"
 link: https://livestream.com/esa/phiweek2020/videos/211492628
+img: gus18.webp
 ---

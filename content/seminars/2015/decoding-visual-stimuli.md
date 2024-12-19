@@ -3,4 +3,5 @@ title: "Decoding of complex visual stimuli from large retinal populations (visio
 date: "2015-06-22"
 speaker: "Vicent Botella-Soler"
 affiliation: "Inst. Science and Technol. (IST) Austria"
+img: ista.webp
 ---
