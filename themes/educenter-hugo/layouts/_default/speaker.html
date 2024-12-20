@@ -2,6 +2,8 @@
   <img class="card-img-top rounded-0" src="{{ .Params.image | relURL }}" alt="{{ .Title }}">
   <div class="card-body">
     <h4 class="card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+    <h5 class="card-title">{{ .Params.topic }}</h4>
+    <p>{{ .Params.title_topic }}</p>
     <p>{{ .Params.Course }}</p>
     <ul class="list-inline">
       {{ range .Params.Contact }}

@@ -1,31 +1,24 @@
 ---
 title: "Maurizio Mencuccini"
 draft: false
+topic: "Earth - Land systems"
+title_topic: "Opportunities for AI in forest ecology"
+description: "Large databases of ecological properties at various scales relevant to the analysis of the effects of global changes on forests are providing opportunities for synthesis studies using AI."
 bg_image: "images/backgrounds/page-title.jpg"
-description: "Topic: Earth."
+affiliation: "CREAF (Barcelona)"
 image: "images/speaker/maurizio.jpg"
-bio: "Maurizio Mencuccini is an ICREA Researcher in Plant and Ecosystem Ecology at CREAF. Previously, he was a Professor of Forest Science at The University of Edinburgh (UK) and is currently an Honorary Professor at the same university. He holds a PhD from The University of Edinburgh and completed a postdoctoral fellowship at Cornell University (NY, USA). Mencuccini has been a visiting professor at Cornell University (USA), the Universitat Autònoma de Barcelona (UAB), and a visiting scientist at CSIRO (Tasmania, Australia). His research interests focus on forest ecosystem dynamics, carbon and water fluxes, tree-level and ecosystem-scale processes, and the use of stable isotopes to study plant physiological responses."
-interest: ["Environmental Sciences", "Forestry", "Ecology", "Plant Physiological Ecology"]
+bio: "Maurizio Mencuccini is an ICREA Research Professor of Plant and Ecosystem Ecology at CREAF (Barcelona, Spain). He holds a BSc in Forest Science and a PhD in Plant Environmental Biology from the University of Firenze (Italy). He has held academic positions at the University of Edinburgh (UK) and visiting scientist roles at CSIRO and Western Sydney University (Australia). His research explores the carbon and water cycles of forest ecosystems, with significant contributions to understanding how drought affects tree mortality. He has been recognized as a Highly Cited Researcher in Plant and Animal Science by Clarivate Analytics and is one of the top Italian scientists in Natural & Environmental Science."
+interest: ["Forest water use", "Forest ecosystems", "Carbon cycle", "Water cycle"]
 contact:
-  # contact item loop
-  - name : "Maurizio Mencuccini"
-    icon : "ti-google"
-    link : "https://scholar.google.es/citations?user=p9DYm-AAAAAJ&hl=es"
-
-  # contact item loop
   - name : "m.mencuccini@creaf.uab.cat"
     icon : "ti-email"
     link : "mailto:m.mencuccini@creaf.uab.cat"
-
-  # contact item loop
-  - name : "CREAF"
+  - name : "Personal webpage"
     icon : "ti-world"
-    link : "https://www.creaf.cat/es/sobre-nosotros/nuestra-gente/maurizio-mencuccini"
+    link : "https://www.icrea.cat/Web/ScientificStaff/maurizio-mencuccini-554"
 
-    
 type: "speaker"
+departure: "13/01/2025"
+arrival: "14/01/2025"
 ---
 
-### About Me
-
-Maurizio Mencuccini is an ICREA Researcher in Plant and Ecosystem Ecology at CREAF. Previously, he was a Professor of Forest Science at The University of Edinburgh (UK) and is currently an Honorary Professor at the same university. He holds a PhD from The University of Edinburgh and completed a postdoctoral fellowship at Cornell University (NY, USA). Mencuccini has been a visiting professor at Cornell University (USA), the Universitat Autònoma de Barcelona (UAB), and a visiting scientist at CSIRO (Tasmania, Australia). His research interests focus on forest ecosystem dynamics, carbon and water fluxes, tree-level and ecosystem-scale processes, and the use of stable isotopes to study plant physiological responses.
