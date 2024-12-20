@@ -129,7 +129,7 @@
     </div>
     <div class="row justify-content-center">
       <!-- teacher -->
-      {{ range first 4 (where site.RegularPages "File.Dir" "speaker/") }}
+      {{ range first 8 (where site.RegularPages "File.Dir" "speaker/") }}
       <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0 orgspea">
         {{ .Render "speaker" }}
       </div>
