@@ -94,11 +94,59 @@
 
 .orgspea .card {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   box-shadow: 0px 4px 25px 0px rgba(27, 39, 71, 0.15);
-  min-height: 22rem;
+  height: 20rem;
   border-radius: 5% !important; }
+
+.orgspea2 .card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 0px 4px 25px 0px rgba(27, 39, 71, 0.15);
+  height: 28rem;
+  border-radius: 5% !important; }
+
+@media (max-width: 1453px) {
+  .orgspea2 .card {
+    height: 30rem; } }
+
+@media (max-width: 1302px) {
+  .orgspea2 .card {
+    height: 31rem; } }
+
+@media (max-width: 1200px) {
+  .orgspea2 .card {
+    height: 32rem; } }
+
+@media (max-width: 991px) {
+  .orgspea2 .card {
+    height: 29rem; } }
+
+@media (max-width: 767px) {
+  .orgspea2 .card {
+    height: 32rem; } }
+
+@media (max-width: 575px) {
+  .orgspea2 .card {
+    height: 27rem; } }
+
+@media (max-width: 380px) {
+  .orgspea2 .card {
+    height: 29rem; } }
+
+@media (max-width: 394px) {
+  .orgspea2 .card {
+    height: 30rem; } }
+
+@media (max-width: 230px) {
+  .orgspea2 .card {
+    height: 32rem; } }
+
+.card-title {
+  display: flex;
+  justify-content: center; }
 
 .orgspea .card .card-img-top {
   object-fit: cover;
@@ -111,7 +159,12 @@
 .orgspea .card .card-body {
   padding-bottom: 0;
   align-content: center;
-  max-height: 7rem; }
+  max-height: 7rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem; }
+
+h5.card-title {
+  font-style: italic; }
 
 .affiliate {
   display: flex;
