@@ -6,9 +6,9 @@ bg_image: "images/people/fondo_organizers.webp"
 # meta description
 description : "Held at ADEIT in Valencia, this event connects you with the city’s iconic landmarks, natural surroundings, beaches, and weekend hiking routes. Discover authentic paella and a variety of dining options, including vegetarian, Spanish, and international cuisines, and find recommended accommodations to ensure a rich and convenient experience throughout your stay."
 ---
+
 <table border="1" cellspacing="0" cellpadding="5">
   <tbody>
-    <!-- Sección 1 -->
     <tr>
       <th>Must visit in the city</th>
       <th>Surroundings</th>
@@ -109,42 +109,41 @@ description : "Held at ADEIT in Valencia, this event connects you with the city�
     <tr>
       <td></td>
       <td><a href="https://g.page/restaurantecopenhagen?share" target="_blank">Copenhagen</a></td>
-      <td><a href="https://g.page/BarRicardo?share" target="_blank">Bar Ricardo</a></td>
+      <td>Pulpería Ligazón</td>
       <td><a href="https://g.page/hundred-burgers?share" target="_blank">Hundred burguers</a></td>
     </tr>
     <tr>
       <td></td>
       <td></td>
-      <td><a href="https://barcremaet.com/" target="_blank">Bar Cremaet</a></td>
+      <td>Saona</td>
       <td><a href="https://g.page/makhincafe?share" target="_blank">Ma khin</a></td>
     </tr>
-    <tr><td colspan="4" style="background:#fff;"></td></tr>
     <tr>
-      <th>Horchata places</th>
-      <th>Beer Bars</th>
-      <th>Pulpería Ligazón</th>
-      <th>Swagat</th>
+      <td></td>
+      <td></td>
+      <td>Mundua</td>
+      <td>Swagat</td>
     </tr>
     <tr>
-      <td>Els sariers</td>
       <td></td>
-      <td><a href="https://www.gruposaona.com/" target="_blank">Saona</a></td>
+      <td></td>
+      <td>Ciro</td>
       <td><a href="https://goo.gl/maps/zG4FZfP7WoTXrtvm8" target="_blank">Take Bao</a></td>
     </tr>
     <tr>
-      <td>Horchatería Vida</td>
       <td></td>
-      <td><a href="https://munduataberna.com/" target="_blank">Mundua</a></td>
+      <td></td>
+      <td><a href="https://g.page/BarRicardo?share" target="_blank">Bar Ricardo</a></td>
       <td><a href="https://ryukishin.es/" target="_blank">Ryukishin</a></td>
     </tr>
     <tr>
-      <td>Daniel</td>
       <td></td>
-      <td><a href="https://cirorestaurante.es/" target="_blank">Ciro</a></td>
+      <td></td>
+      <td>Bar Cremaet</td>
       <td><a href="https://g.page/restaurantelaforcola?share" target="_blank">La Forcola</a></td>
     </tr>
     <tr>
-      <td>Vachata Ruzafa</td>
+      <td></td>
       <td></td>
       <td></td>
       <td><a href="https://goo.gl/maps/C1nht8RAqkd4QSZt6" target="_blank">San Tommaso</a></td>
@@ -161,61 +160,66 @@ description : "Held at ADEIT in Valencia, this event connects you with the city�
       <td></td>
       <td><a href="https://goo.gl/maps/4wHmDtRiA5udaZSHA" target="_blank">Tobiko</a></td>
     </tr>
-    <tr><td colspan="4" style="background:#fff;"></td></tr>
     <tr>
-      <th>ACCOMMODATION</th>
-      <th>In town now</th>
-      <th></th>
-      <th>Damura Ramen Bar</th>
-    </tr>
-    <tr>
-      <td><a href="#" target="_blank">Recommended hotels nearby</a></td>
-      <td><a href="https://www.fundacionbancaja.es/exposicion/sorolla-a-traves-de-la-luz/" target="_blank">Sorolla exhibition</a></td>
+      <td></td>
+      <td></td>
       <td></td>
       <td><a href="https://g.page/damura-ramen-bar?share" target="_blank">Damura Ramen Bar</a></td>
     </tr>
+    <tr><td colspan="4" style="background:#fff;"></td></tr>
     <tr>
-      <td><a href="https://www.inglesboutique.com/en/?partner=6283&utm_source=google&utm_medium=gmb&utm_campaign=web_link" target="_blank">Hotel Sh inglés</a></td>
+      <th>Horchata places</th>
+      <th>Beer Bars</th>
+      <th>In town now</th>
+      <th>Accommodation</th>
+    </tr>
+    <tr>
+      <td>Els sariers</td>
+      <td></td>
+      <td><a href="https://www.fundacionbancaja.es/exposicion/sorolla-a-traves-de-la-luz/" target="_blank">Sorolla exhibition</a></td>
+      <td><a href="#" target="_blank">Recommended hotels nearby</a></td>
+    </tr>
+    <tr>
+      <td>Horchatería Vida</td>
+      <td></td>
       <td><a href="https://www.visitvalencia.com/en" target="_blank">sightseeing &amp; local agenda</a></td>
-      <td></td>
-      <td></td>
+      <td><a href="https://www.inglesboutique.com/en/?partner=6283&utm_source=google&utm_medium=gmb&utm_campaign=web_link" target="_blank">Hotel Sh inglés</a></td>
     </tr>
     <tr>
-      <td><a href="https://www.onlyyouhotels.com/hoteles/only-you-hotel-valencia/?utm_source=mybusiness&utm_medium=organic&utm_campaign=valencia" target="_blank">Only you</a></td>
+      <td>Daniel</td>
+      <td></td>
       <td><a href="https://valenciasecreta.com/marisgalicia-marisco-valencia/" target="_blank">seafood market</a></td>
-      <td></td>
-      <td></td>
+      <td><a href="https://www.onlyyouhotels.com/hoteles/only-you-hotel-valencia/?utm_source=mybusiness&utm_medium=organic&utm_campaign=valencia" target="_blank">Only you</a></td>
     </tr>
     <tr>
+      <td>Vachata Ruzafa</td>
+      <td></td>
+      <td></td>
       <td><a href="https://www.hostalam.com/" target="_blank">Hostal Antiga Morellana</a></td>
-      <td></td>
-      <td></td>
-      <td></td>
     </tr>
     <tr>
+      <td></td>
+      <td></td>
+      <td></td>
       <td><a href="https://petit-palace-bristol-valencia.at-hotels.com/en/" target="_blank">Hotel Petit Palace Bristol</a></td>
-      <td></td>
-      <td></td>
-      <td></td>
     </tr>
     <tr>
+      <td></td>
+      <td></td>
+      <td></td>
       <td><a href="https://www.livingvalencia.com/" target="_blank">Living Valencia Apartments</a></td>
-      <td></td>
-      <td></td>
-      <td></td>
     </tr>
     <tr>
+      <td></td>
+      <td></td>
+      <td></td>
       <td><a href="http://www.nesthostelsvalencia.com/" target="_blank">http://www.nesthostelsvalencia.com/</a></td>
-      <td></td>
-      <td></td>
-      <td></td>
     </tr>
     <tr>
+      <td></td>
+      <td></td>
+      <td></td>
       <td><a href="https://www.google.com/maps/search/valencia+hotels/@39.4732176,-0.3794964,16z" target="_blank">otherwise, click carefully here</a></td>
-      <td></td>
-      <td></td>
-      <td></td>
     </tr>
   </tbody>
 </table>
-
