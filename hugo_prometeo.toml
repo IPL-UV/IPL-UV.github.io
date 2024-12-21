@@ -228,13 +228,15 @@ url = "event/"
 # weight = 4
   
 [[Languages.en.menu.main]]
-name = "Contact"
-url = "contact/"
-weight = 3
-[[Languages.en.menu.main]]
 name = "Places"
 url = "places/"
+weight = 3
+
+[[Languages.en.menu.main]]
+name = "Contact"
+url = "contact/"
 weight = 4
+
 
 
 # footer menu

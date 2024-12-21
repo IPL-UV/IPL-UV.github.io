@@ -173,7 +173,7 @@ description : "Held at ADEIT in Valencia, this event connects you with the cityâ
       <th>In town now</th>
       <th>Accommodation</th>
     </tr>
-    <tr>
+    <tr>    
       <td>Els sariers</td>
       <td></td>
       <td><a href="https://www.fundacionbancaja.es/exposicion/sorolla-a-traves-de-la-luz/" target="_blank">Sorolla exhibition</a></td>
