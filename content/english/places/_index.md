@@ -7,6 +7,9 @@ bg_image: "images/people/fondo_organizers.webp"
 description : "Held at ADEIT in Valencia, this event connects you with the city’s iconic landmarks, natural surroundings, beaches, and weekend hiking routes. Discover authentic paella and a variety of dining options, including vegetarian, Spanish, and international cuisines, and find recommended accommodations to ensure a rich and convenient experience throughout your stay."
 ---
 
+
+
+
 <table border="1" cellspacing="0" cellpadding="5">
   <tbody>
     <tr>
@@ -177,28 +180,22 @@ description : "Held at ADEIT in Valencia, this event connects you with the city�
       <td>Els sariers</td>
       <td></td>
       <td><a href="https://www.fundacionbancaja.es/exposicion/sorolla-a-traves-de-la-luz/" target="_blank">Sorolla exhibition</a></td>
-      <td><a href="#" target="_blank">Recommended hotels nearby</a></td>
+      <td><a href="https://www.inglesboutique.com/en/?partner=6283&utm_source=google&utm_medium=gmb&utm_campaign=web_link" target="_blank">Hotel Sh inglés</a></td>
     </tr>
     <tr>
       <td>Horchatería Vida</td>
       <td></td>
       <td><a href="https://www.visitvalencia.com/en" target="_blank">sightseeing &amp; local agenda</a></td>
-      <td><a href="https://www.inglesboutique.com/en/?partner=6283&utm_source=google&utm_medium=gmb&utm_campaign=web_link" target="_blank">Hotel Sh inglés</a></td>
+      <td><a href="https://www.onlyyouhotels.com/hoteles/only-you-hotel-valencia/?utm_source=mybusiness&utm_medium=organic&utm_campaign=valencia" target="_blank">Only you</a></td>
     </tr>
     <tr>
       <td>Daniel</td>
       <td></td>
       <td><a href="https://valenciasecreta.com/marisgalicia-marisco-valencia/" target="_blank">seafood market</a></td>
-      <td><a href="https://www.onlyyouhotels.com/hoteles/only-you-hotel-valencia/?utm_source=mybusiness&utm_medium=organic&utm_campaign=valencia" target="_blank">Only you</a></td>
-    </tr>
-    <tr>
-      <td>Vachata Ruzafa</td>
-      <td></td>
-      <td></td>
       <td><a href="https://www.hostalam.com/" target="_blank">Hostal Antiga Morellana</a></td>
     </tr>
     <tr>
-      <td></td>
+      <td>Vachata Ruzafa</td>
       <td></td>
       <td></td>
       <td><a href="https://petit-palace-bristol-valencia.at-hotels.com/en/" target="_blank">Hotel Petit Palace Bristol</a></td>
