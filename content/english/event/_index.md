@@ -7,32 +7,189 @@ bg_image: "images/events/event1.jpeg"
 description : "AI4CS focuses on advancing AI methods to model and understand complex systems, including the visual brain, Earth systems, and socio-environmental interactions. With growing observational data, improved mechanistic models, and advanced machine learning, we can now monitor, predict, and analyze diverse variables. However, current approaches face key challenges: inefficiency with complex data, lack of adherence to physical laws, and limited fundamental insights. AI4CS addresses these issues with innovative, physics-aware, causality-driven AI solutions. This workshop brings together researchers to share advancements, generate new ideas, and promote interdisciplinary collaboration to enhance understanding of interconnected systems and tackle pressing global challenges."
 ---
 
-### Day 1 – Monday, 13th January
+<h3>Day 1 – Monday, 13th January</h3>
+<table border="1" cellspacing="0" cellpadding="5">
+  <thead>
+    <tr>
+      <th>Time</th>
+      <th>Session</th>
+      <th>Presenter</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Intro -->
+    <tr>
+      <td>2:00 PM – 2:30 PM</td>
+      <td>Introduction to AI4CS and workshop goals</td>
+      <td>Gustau Camps-Valls</td>
+      <td>Overview of AI4CS, objectives, and key challenges.<br>
+      Explanation of workshop structure, session formats, and expected outcomes.
+      </td>
+    </tr>
+    <!-- Session 1 (S1) – Earth-Land Systems -->
+    <tr>
+      <td rowspan="3">2:30 PM – 4:00 PM</td>
+      <td rowspan="3" style="vertical-align:middle; text-align:center;"><b>Session 1 (S1) – Earth-Land Systems</b></td>
+      <td>María Piles</td>
+      <td>Global soil moisture and microwave vegetation parameters for ecology</td>
+    </tr>
+    <tr>
+      <td>Maurizio Mencuccini</td>
+      <td>Opportunities for AI in forest ecology</td>
+    </tr>
+    <tr>
+      <td>David Chaparro</td>
+      <td>An overview of vegetation moisture retrievals from remote sensing</td>
+    </tr>
+    <tr>
+      <td>4:00 PM – 4:30 PM</td>
+      <td colspan="3" style="vertical-align:middle; text-align:center;"><b>Coffee Break</b></td>
+    </tr>
+    <!-- Session 1 (S2) – Earth-Water Systems -->
+    <tr>
+      <td rowspan="2">4:30 PM – 5:30 PM</td>
+      <td rowspan="2" style="vertical-align:middle; text-align:center;"><b>Session 1 (S2) – Earth-Water Systems</b></td>
+      <td>Ana Belén Ruescas</td>
+      <td>Challenges of AI for in-land and coastal water management</td>
+    </tr>
+    <tr>
+      <td>Álvaro Moreno-Martínez</td>
+      <td>Leveraging Crowd-sourced Biodiversity Data for an Enhanced Plant Functional Trait Mapping</td>
+    </tr>
+    <!-- Session 2 (S3) – Earth-Atmosphere Systems -->
+    <tr>
+      <td>5:30 PM – 6:00 PM</td>
+      <td><b>Session 2 (S3) – Earth-Atmosphere Systems</b></td>
+      <td>Cosmin Madalin Marina</td>
+      <td>Feature Selection for extreme atmospheric events</td>
+    </tr>
+  </tbody>
+</table>
 
-| Time                | Session                                      | Details                                                                 |
-|---------------------|----------------------------------------------|-------------------------------------------------------------------------|
-| 2:00 PM – 3:00 PM   | Introduction to AI4CS and workshop goals     | - Overview of AI4CS, objectives, and key challenges.<br>- Explanation of workshop structure, session formats, and expected outcomes. |
-| 3:00 PM – 4:00 PM   | Session 1 (S1) – Earth-Atmosphere Systems    | - Presentations: Two talks (20+10 min each).                            |
-| 4:00 PM – 4:30 PM   | Coffee Break                                 |                                                                         |
-| 4:30 PM – 5:30 PM   | Session 1 (S2) – Earth-Water Systems         | - Presentations: Two talks (20+10 min each).                            |
-| 5:30 PM – 6:00 PM   | Session 2 (S3) – Earth-Land Systems          | - Presentations: One talk (20+10 min).<br>- Moderated Q&A for all Earth presentations. |
+<br>
+<h3>Day 2 – Tuesday, 14th January</h3>
+<table border="1" cellspacing="0" cellpadding="5">
+  <thead>
+    <tr>
+      <th>Time</th>
+      <th>Session</th>
+      <th>Presenter</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Session 3 (S3) – Earth-Atmosphere Systems -->
+    <tr>
+      <td rowspan="3">9:00 AM – 11:00 AM</td>
+      <td rowspan="3" style="vertical-align:middle; text-align:center;"><b>Session 3 (S3) – Earth-Atmosphere Systems</b></td>
+      <td>Gonzalo Mateo García</td>
+      <td>AI for methane plume detection in satellite images</td>
+    </tr>
+    <tr>
+      <td>Jorge Pérez-Aracil</td>
+      <td>Heatwave reconstruction with a Deep Learning-based Analogue method</td>
+    </tr>
+    <tr>
+      <td>Breakout Discussions</td>
+      <td>Topics entered and voted using Slido. Groups form based on the most-voted topics, moderated by the proposer. A note-taker is assigned for each group.</td>
+    </tr>
+    <tr>
+      <td>11:00 AM – 11:30 AM</td>
+      <td colspan="3" style="vertical-align:middle; text-align:center;"><b>Coffee Break</b></td>
+    </tr>
+    <!-- Session 4 (S4) – Socio-Environmental Systems -->
+    <tr>
+      <td rowspan="2">11:30 AM – 1:00 PM</td>
+      <td rowspan="2" style="vertical-align:middle; text-align:center;"><b>Session 4 (S4) – Socio-Environmental Systems</b></td>
+      <td>Ioannis Athanasiadis</td>
+      <td>Hybrid machine learning in agricultural modelling</td>
+    </tr>
+    <tr>
+      <td>Michele Meroni</td>
+      <td>EO and machine learning in support to food security monitoring</td>
+    </tr>
+    <!-- Session 5 (S5) – Vision -->
+    <tr>
+      <td>1:00 PM – 1:30 PM</td>
+      <td><b>Session 5 (S5) – Vision</b></td>
+      <td>TBD</td>
+      <td>Presentations will be announced.</td>
+    </tr>
+    <tr>
+      <td>1:30 PM – 3:30 PM</td>
+      <td>Group Lunch</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">3:30 PM – 4:30 PM</td>
+      <td rowspan="2" style="vertical-align:middle; text-align:center;"><b>Session 5 (S5) – Vision</b></td>
+      <td>Dimosthenis Karatzas</td>
+      <td>Document Understanding in the era of Foundation Models</td>
+    </tr>
+    <tr>
+      <td>Nate Mankovic</td>
+      <td>A Flag Decomposition for Hierarchical Datasets</td>
+    </tr>
+    <tr>
+      <td>4:30 PM – 5:00 PM</td>
+      <td colspan="3" style="vertical-align:middle; text-align:center;"><b>Coffee Break</b></td>
+    </tr>
+    <tr>
+      <td>5:00 PM – 6:00 PM</td>
+      <td>Breakout Discussions</td>
+      <td></td>
+      <td>Topics entered and voted using Slido.<br>
+      Groups form based on the most-voted topics, moderated by the proposer.<br>
+      A note-taker is assigned for each group.</td>
+    </tr>
+  </tbody>
+</table>
 
-### Day 2 – Tuesday, 14th January
-
-| Time                | Session                                      | Details                                                                 |
-|---------------------|----------------------------------------------|-------------------------------------------------------------------------|
-| 9:00 AM – 11:00 AM  | Session 3 (S3) – Earth-Land Systems          | - Presentations: Two talks (20+10 min each).<br>- Breakout Discussions (1 hour): Topics entered and voted using Slido.<br>- Groups form based on the most-voted topics, moderated by the proposer.<br>- A note-taker is assigned for each group. |
-| 11:00 AM – 11:30 AM | Coffee Break                                 |                                                                         |
-| 11:30 AM – 1:30 PM  | Session 4 (S4) – Socio-Environmental Systems | - Presentations: Two talks (20+10 min each).<br>- Breakout Discussions: Topics entered and voted using Slido.<br>- Groups form based on the most-voted topics, moderated by the proposer.<br>- A note-taker is assigned for each group. |
-| 1:30 PM – 3:30 PM   | Group Lunch                                  |                                                                         |
-| 3:30 PM – 4:30 PM   | Session 5 (S5) – Vision Neuroscience         | - Presentations: Two talks (20+10 min each).                            |
-| 4:30 PM – 5:00 PM   | Coffee Break                                 |                                                                         |
-| 5:00 PM – 6:00 PM   | Session 6 (S6) – Vision Image Processing     | - Presentations: Two talks (20+10 min each).<br>- Moderated Q&A for both vision sessions. |
-
-### Day 3 – Wednesday, 15th January
-
-| Time                | Session                                      | Details                                                                 |
-|---------------------|----------------------------------------------|-------------------------------------------------------------------------|
-| 9:00 AM – 11:00 AM  | Session 7 (S7) – Machine learning (foundation models, causality) | - Presentations: Two talks (20+10 min each).<br>- Breakout Discussions: Topics entered and voted using Slido.<br>- Groups form based on the most-voted topics, moderated by the proposer.<br>- A note-taker is assigned for each group. |
-| 11:00 AM – 11:30 AM | Coffee Break                                 |                                                                         |
-| 11:30 AM – 1:00 PM  | Session 8 (S8) – Conclusions and Wrap-up     | - Presentation of breakout session outcomes.<br>- Consolidated discussion on common themes of complexity and possible solutions across sessions.<br>- Farewell and closing remarks. |
+<br>
+<h3>Day 3 – Wednesday, 15th January</h3>
+<table border="1" cellspacing="0" cellpadding="5">
+  <thead>
+    <tr>
+      <th>Time</th>
+      <th>Session</th>
+      <th>Presenter</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Session 7 (S7) – Machine learning -->
+    <tr>
+      <td rowspan="4">9:00 AM – 11:00 AM</td>
+      <td rowspan="4" style="vertical-align:middle; text-align:center;"><b>Session 7 (S7) – Machine learning</b></td>
+      <td>Anna Jungbluth</td>
+      <td>3D Cloud Reconstruction via Geospatially-aware Masked Autoencoders</td>
+    </tr>
+    <tr>
+      <td>Pierre Gentine</td>
+      <td>Reduced order models for prediction</td>
+    </tr>
+    <tr>
+      <td>Ismael Gomez Talal</td>
+      <td>The importance of explainable methods in artificial intelligence models, real use cases and ethical issues.</td>
+    </tr>
+    <tr>
+      <td>Breakout Discussions</td>
+      <td>Topics entered and voted using Slido. Groups form based on the most-voted topics, moderated by the proposer. A note-taker is assigned for each group.</td>
+    </tr>
+    <tr>
+      <td>11:00 AM – 11:30 AM</td>
+      <td colspan="3" style="vertical-align:middle; text-align:center;"><b>Coffee Break</b></td>
+    </tr>
+    <!-- Session 8 (S8) – Conclusions and Wrap-up -->
+    <tr>
+      <td>11:30 AM – 1:00 PM</td>
+      <td style="vertical-align:middle; text-align:center;"><b>Session 8 (S8) – Conclusions and Wrap-up</b></td>
+      <td>Presentation Team</td>
+      <td>Presentation of breakout session outcomes.<br>
+      Consolidated discussion on common themes of complexity and possible solutions across sessions.<br>
+      Farewell and closing remarks.</td>
+    </tr>
+  </tbody>
+</table>

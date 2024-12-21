@@ -1,10 +1,10 @@
 ---
-title: "Explore Valencia"
+title: "For More Information, Contact Us"
 draft: false
 # page title background image
 bg_image: "images/people/fondo_organizers.webp"
 # meta description
-description : "Discover key locations in Valencia, such as the Universitat de València, ADEIT, and the Valencia Airport, with detailed metro routes and travel times. Interactive maps display main metro lines, nearby stations, and flexible transfer options like Empalme. Highlights include routes from Parc Científic and the airport, ensuring easy navigation across the city. Perfect for exploring Valencia efficiently."
+description : "Hosted at the ADEIT building in Valencia, our event offers a central, convenient location. For inquiries or assistance, consult the provided contact information."
 ---
 
 ## Contact information
