@@ -14,49 +14,49 @@ description : "Held at ADEIT in Valencia, this event connects you with the city�
   <tbody>
     <tr>
       <th>Must visit in the city</th>
-      <th>Surroundings</th>
+      <th>Accommodation</th>
       <th>Beaches</th>
       <th>Hiking routes (weekend)</th>
     </tr>
     <tr>
       <td><a href="https://www.cac.es/es/home.html" target="_blank">La Ciutat de les Arts i les Ciències</a></td>
-      <td><a href="https://www.visitvalencia.com/que-ver-valencia/albufera-valencia" target="_blank">Albufera Natural Park</a></td>
+      <td><a href="https://www.inglesboutique.com/en/?partner=6283&utm_source=google&utm_medium=gmb&utm_campaign=web_link" target="_blank">Hotel Sh inglés</a></td>
       <td><a href="https://goo.gl/maps/ZN1ZAQiVcsW4v5qJ9" target="_blank">La Malvarrosa</a></td>
       <td><a href="https://es.wikiloc.com/rutas-senderismo/subida-al-garbi-por-las-cadenas-5916124" target="_blank">Ruta de las Cadenas</a></td>
     </tr>
     <tr>
       <td><a href="https://www.cac.es/es/home.html" target="_blank">Almoina</a></td>
-      <td><a href="https://goo.gl/maps/8T3Jgt1Xa3vZ32rt7" target="_blank">Sierra Calderona Natural Park</a></td>
+      <td><a href="https://www.onlyyouhotels.com/hoteles/only-you-hotel-valencia/?utm_source=mybusiness&utm_medium=organic&utm_campaign=valencia" target="_blank">Only you</a></td>
       <td><a href="https://goo.gl/maps/UqzRyCJgiuEhBfQS9" target="_blank">La Patacona</a></td>
       <td><a href="https://es.wikiloc.com/rutas-senderismo/bunol-ruta-del-agua-cueva-del-turche-charco-manan-cueva-de-las-palomas-5900099" target="_blank">Ruta del Agua Buñol</a></td>
     </tr>
     <tr>
       <td><a href="https://www.valencia.es/-/infociudad-el-micalet-catedral-" target="_blank">Cathedral-Miguelete</a></td>
-      <td></td>
+      <td><a href="https://www.hostalam.com/" target="_blank">Hostal Antiga Morellana</a></td>
       <td><a href="https://goo.gl/maps/8mY84K69K4ydHgwC8" target="_blank">El Saler</a></td>
       <td><a href="https://es.wikiloc.com/rutas-senderismo/cortes-del-pallas-cueva-el-tejedor-manantial-san-vicente-arroyo-cortes-el-corbinet-con-varias-zonas-19471753" target="_blank">Cortes de Pallas</a></td>
     </tr>
     <tr>
       <td><a href="https://www.valencia.es/-/infociudad-torres-de-serranos" target="_blank">Torres de Serrano</a></td>
-      <td></td>
+      <td><a href="https://petit-palace-bristol-valencia.at-hotels.com/en/" target="_blank">Hotel Petit Palace Bristol</a></td>
       <td><a href="https://goo.gl/maps/YubQzEESMMBh45Hd7" target="_blank">Pinedo</a></td>
       <td><a href="https://es.wikiloc.com/rutas-senderismo/navajas-salto-de-la-novia-19984772" target="_blank">Salto de la novia</a></td>
     </tr>
     <tr>
       <td><a href="https://www.consorcimuseus.gva.es/centro-del-carmen/" target="_blank">CCCC</a></td>
-      <td></td>
+      <td><a href="https://www.livingvalencia.com/" target="_blank">Living Valencia Apartments</a></td>
       <td></td>
       <td><a href="https://es.wikiloc.com/rutas-senderismo/ruta-del-agua-de-chelva-la-playeta-tuneles-y-presa-de-olinches-fabrica-de-la-luz-54593042" target="_blank">Ruta agua Chelva</a></td>
     </tr>
     <tr>
       <td><a href="https://www.valencia.es/-/infociudad-torres-de-quart" target="_blank">Torres de Quart</a></td>
-      <td></td>
+      <td><a href="http://www.nesthostelsvalencia.com/" target="_blank">http://www.nesthostelsvalencia.com/</a></td>
       <td></td>
       <td><a href="https://es.wikiloc.com/rutas-senderismo/alzira-circular-por-la-murta-senda-botanica-pas-del-pobre-creu-del-cardenal-cavall-bernat-monasteri-5728933" target="_blank">Monasterio La Murta</a></td>
     </tr>
     <tr>
       <td><a href="https://goo.gl/maps/Ef5ugGwZdkQDEvRS8" target="_blank">Mercat central</a></td>
-      <td></td>
+      <td><a href="https://www.google.com/maps/search/valencia+hotels/@39.4732176,-0.3794964,16z" target="_blank">otherwise, click carefully here</a></td>
       <td></td>
       <td><a href="https://es.wikiloc.com/rutas-senderismo/ruta-de-las-3-cascadas-de-anna-sendero-oficial-senalizado-febrero-2022-96508834" target="_blank">Cascadas de Anna</a></td>
     </tr>
@@ -174,49 +174,31 @@ description : "Held at ADEIT in Valencia, this event connects you with the city�
       <th>Horchata places</th>
       <th>Beer Bars</th>
       <th>In town now</th>
-      <th>Accommodation</th>
+      <th>Surroundings</th>
     </tr>
     <tr>    
       <td>Els sariers</td>
       <td></td>
       <td><a href="https://www.fundacionbancaja.es/exposicion/sorolla-a-traves-de-la-luz/" target="_blank">Sorolla exhibition</a></td>
-      <td><a href="https://www.inglesboutique.com/en/?partner=6283&utm_source=google&utm_medium=gmb&utm_campaign=web_link" target="_blank">Hotel Sh inglés</a></td>
+      <td><a href="https://www.visitvalencia.com/que-ver-valencia/albufera-valencia" target="_blank">Albufera Natural Park</a></td>
     </tr>
     <tr>
       <td>Horchatería Vida</td>
       <td></td>
       <td><a href="https://www.visitvalencia.com/en" target="_blank">sightseeing &amp; local agenda</a></td>
-      <td><a href="https://www.onlyyouhotels.com/hoteles/only-you-hotel-valencia/?utm_source=mybusiness&utm_medium=organic&utm_campaign=valencia" target="_blank">Only you</a></td>
+      <td><a href="https://goo.gl/maps/8T3Jgt1Xa3vZ32rt7" target="_blank">Sierra Calderona Natural Park</a></td>
     </tr>
     <tr>
       <td>Daniel</td>
       <td></td>
       <td><a href="https://valenciasecreta.com/marisgalicia-marisco-valencia/" target="_blank">seafood market</a></td>
-      <td><a href="https://www.hostalam.com/" target="_blank">Hostal Antiga Morellana</a></td>
+      <td></td>
     </tr>
     <tr>
       <td>Vachata Ruzafa</td>
       <td></td>
       <td></td>
-      <td><a href="https://petit-palace-bristol-valencia.at-hotels.com/en/" target="_blank">Hotel Petit Palace Bristol</a></td>
-    </tr>
-    <tr>
       <td></td>
-      <td></td>
-      <td></td>
-      <td><a href="https://www.livingvalencia.com/" target="_blank">Living Valencia Apartments</a></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td><a href="http://www.nesthostelsvalencia.com/" target="_blank">http://www.nesthostelsvalencia.com/</a></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td><a href="https://www.google.com/maps/search/valencia+hotels/@39.4732176,-0.3794964,16z" target="_blank">otherwise, click carefully here</a></td>
     </tr>
   </tbody>
 </table>
