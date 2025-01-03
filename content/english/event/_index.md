@@ -8,7 +8,7 @@ description : "AI4CS focuses on advancing AI methods to model and understand com
 ---
 
 <h3>Day 1 – Monday, 13th January</h3>
-<table border="1" cellspacing="0" cellpadding="5">
+<table border="1" cellspacing="0" cellpadding="5" style="width:100%;">
   <thead>
     <tr>
       <th>Time</th>
@@ -20,7 +20,7 @@ description : "AI4CS focuses on advancing AI methods to model and understand com
   <tbody>
     <!-- Intro -->
     <tr>
-      <td>2:00 PM – 2:30 PM</td>
+      <td style="vertical-align:middle; text-align:center;">2:00 PM – 2:30 PM</td>
       <td>Introduction to AI4CS and workshop goals</td>
       <td>Gustau Camps-Valls</td>
       <td>Overview of AI4CS, objectives, and key challenges.<br>
@@ -29,7 +29,7 @@ description : "AI4CS focuses on advancing AI methods to model and understand com
     </tr>
     <!-- Session 1 (S1) – Earth-Land Systems -->
     <tr>
-      <td rowspan="3">2:30 PM – 4:00 PM</td>
+      <td rowspan="3" style="vertical-align:middle; text-align:center;">2:30 PM – 4:00 PM</td>
       <td rowspan="3" style="vertical-align:middle; text-align:center;"><b>Session 1 (S1) – Earth-Land Systems</b></td>
       <td>María Piles</td>
       <td>Global soil moisture and microwave vegetation parameters for ecology</td>
@@ -59,7 +59,7 @@ description : "AI4CS focuses on advancing AI methods to model and understand com
     </tr>
     <!-- Session 2 (S3) – Earth-Atmosphere Systems -->
     <tr>
-      <td>5:30 PM – 6:00 PM</td>
+      <td style="vertical-align:middle; text-align:center;">5:30 PM – 6:00 PM</td>
       <td><b>Session 2 (S3) – Earth-Atmosphere Systems</b></td>
       <td>Cosmin Madalin Marina</td>
       <td>Feature Selection for extreme atmospheric events</td>
@@ -69,7 +69,7 @@ description : "AI4CS focuses on advancing AI methods to model and understand com
 
 <br>
 <h3>Day 2 – Tuesday, 14th January</h3>
-<table border="1" cellspacing="0" cellpadding="5">
+<table border="1" cellspacing="0" cellpadding="5" style="width:100%;">
   <thead>
     <tr>
       <th>Time</th>
@@ -81,7 +81,7 @@ description : "AI4CS focuses on advancing AI methods to model and understand com
   <tbody>
     <!-- Session 3 (S3) – Earth-Atmosphere Systems -->
     <tr>
-      <td rowspan="3">9:00 AM – 11:00 AM</td>
+      <td rowspan="3" style="vertical-align:middle; text-align:center;">9:00 AM – 11:00 AM</td>
       <td rowspan="3" style="vertical-align:middle; text-align:center;"><b>Session 3 (S3) – Earth-Atmosphere Systems</b></td>
       <td>Gonzalo Mateo García</td>
       <td>AI for methane plume detection in satellite images</td>
@@ -95,12 +95,12 @@ description : "AI4CS focuses on advancing AI methods to model and understand com
       <td>Topics entered and voted using Slido. Groups form based on the most-voted topics, moderated by the proposer. A note-taker is assigned for each group.</td>
     </tr>
     <tr>
-      <td>11:00 AM – 11:30 AM</td>
+      <td style="vertical-align:middle; text-align:center;">11:00 AM – 11:30 AM</td>
       <td colspan="3" style="vertical-align:middle; text-align:center;"><b>Coffee Break</b></td>
     </tr>
     <!-- Session 4 (S4) – Socio-Environmental Systems -->
     <tr>
-      <td rowspan="2">11:30 AM – 1:00 PM</td>
+      <td rowspan="2" style="vertical-align:middle; text-align:center;">11:30 AM – 1:00 PM</td>
       <td rowspan="2" style="vertical-align:middle; text-align:center;"><b>Session 4 (S4) – Socio-Environmental Systems</b></td>
       <td>Ioannis Athanasiadis</td>
       <td>Hybrid machine learning in agricultural modelling</td>
@@ -111,19 +111,19 @@ description : "AI4CS focuses on advancing AI methods to model and understand com
     </tr>
     <!-- Session 5 (S5) – Vision -->
     <tr>
-      <td>1:00 PM – 1:30 PM</td>
+      <td style="vertical-align:middle; text-align:center;">1:00 PM – 1:30 PM</td>
       <td><b>Session 5 (S5) – Vision</b></td>
       <td>TBD</td>
       <td>Presentations will be announced.</td>
     </tr>
     <tr>
-      <td>1:30 PM – 3:30 PM</td>
+      <td style="vertical-align:middle; text-align:center;">1:30 PM – 3:30 PM</td>
       <td>Group Lunch</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
-      <td rowspan="2">3:30 PM – 4:30 PM</td>
+      <td rowspan="2" style="vertical-align:middle; text-align:center;"> 3:30 PM – 4:30 PM</td>
       <td rowspan="2" style="vertical-align:middle; text-align:center;"><b>Session 5 (S5) – Vision</b></td>
       <td>Dimosthenis Karatzas</td>
       <td>Document Understanding in the era of Foundation Models</td>
@@ -133,17 +133,31 @@ description : "AI4CS focuses on advancing AI methods to model and understand com
       <td>A Flag Decomposition for Hierarchical Datasets</td>
     </tr>
     <tr>
-      <td>4:30 PM – 5:00 PM</td>
+      <td style="vertical-align:middle; text-align:center;">4:30 PM – 5:00 PM</td>
       <td colspan="3" style="vertical-align:middle; text-align:center;"><b>Coffee Break</b></td>
     </tr>
     <tr>
-      <td>5:00 PM – 6:00 PM</td>
+      <td style="vertical-align:middle; text-align:center;">5:00 PM – 6:00 PM</td>
       <td>Breakout Discussions</td>
       <td></td>
       <td>Topics entered and voted using Slido.<br>
       Groups form based on the most-voted topics, moderated by the proposer.<br>
       A note-taker is assigned for each group.</td>
     </tr>
+    <tr>
+      <td style="vertical-align:middle; text-align:center;">9:00 PM</td>
+      <td style="vertical-align:middle; text-align:center;">
+        <b>Dinner</b> at <a href="https://restauranteoslo.com/" target="_blank">Oslo Valencia Restaurant</a>
+      </td>
+      <td style="vertical-align:middle; text-align:center;"> </td>
+      <td>
+        <b>Location:</b> <a href="https://maps.app.goo.gl/s8Q9LpextPdwrmHAA" target="_blank">C/ Catalans, 8, 46001 València</a><br>
+        Vegetarian and vegan cuisine in a historic 1850s building in El Carmen.<br>
+        Focused on high-quality, seasonal, and locally sourced ingredients.
+      </td>
+    </tr>
+
+
   </tbody>
 </table>
 
@@ -161,7 +175,7 @@ description : "AI4CS focuses on advancing AI methods to model and understand com
   <tbody>
     <!-- Session 7 (S7) – Machine learning -->
     <tr>
-      <td rowspan="4">9:00 AM – 11:00 AM</td>
+      <td rowspan="4" style="vertical-align:middle; text-align:center;">9:00 AM – 11:00 AM</td>
       <td rowspan="4" style="vertical-align:middle; text-align:center;"><b>Session 7 (S7) – Machine learning</b></td>
       <td>Anna Jungbluth</td>
       <td>3D Cloud Reconstruction via Geospatially-aware Masked Autoencoders</td>
@@ -175,16 +189,16 @@ description : "AI4CS focuses on advancing AI methods to model and understand com
       <td>The importance of explainable methods in artificial intelligence models, real use cases and ethical issues.</td>
     </tr>
     <tr>
-      <td>Breakout Discussions</td>
+      <td style="vertical-align:middle; text-align:center;">Breakout Discussions</td>
       <td>Topics entered and voted using Slido. Groups form based on the most-voted topics, moderated by the proposer. A note-taker is assigned for each group.</td>
     </tr>
     <tr>
-      <td>11:00 AM – 11:30 AM</td>
+      <td style="vertical-align:middle; text-align:center;">11:00 AM – 11:30 AM</td>
       <td colspan="3" style="vertical-align:middle; text-align:center;"><b>Coffee Break</b></td>
     </tr>
     <!-- Session 8 (S8) – Conclusions and Wrap-up -->
     <tr>
-      <td>11:30 AM – 1:00 PM</td>
+      <td style="vertical-align:middle; text-align:center;"> 11:30 AM – 1:00 PM</td>
       <td style="vertical-align:middle; text-align:center;"><b>Session 8 (S8) – Conclusions and Wrap-up</b></td>
       <td>Presentation Team</td>
       <td>Presentation of breakout session outcomes.<br>
