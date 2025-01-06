@@ -129,7 +129,7 @@ description : "AI4CS focuses on advancing AI methods to model and understand com
       <td>Document Understanding in the era of Foundation Models</td>
     </tr>
     <tr>
-      <td>Nate Mankovic</td>
+      <td>Nate Mankovich</td>
       <td>A Flag Decomposition for Hierarchical Datasets</td>
     </tr>
     <tr>
