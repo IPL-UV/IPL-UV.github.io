@@ -6,7 +6,7 @@ bg_image: "images/events/event1.jpeg"
 # meta description
 description : "AI4CS focuses on advancing AI methods to model and understand complex systems, including the visual brain, Earth systems, and socio-environmental interactions. With growing observational data, improved mechanistic models, and advanced machine learning, we can now monitor, predict, and analyze diverse variables. However, current approaches face key challenges: inefficiency with complex data, lack of adherence to physical laws, and limited fundamental insights. AI4CS addresses these issues with innovative, physics-aware, causality-driven AI solutions. This workshop brings together researchers to share advancements, generate new ideas, and promote interdisciplinary collaboration to enhance understanding of interconnected systems and tackle pressing global challenges."
 ---
-
+<p><strong>Venue:</strong> <a href="https://maps.app.goo.gl/3xs6V9rGDagjoxZW8">ADEIT</a></p>
 <h3>Day 1 – Monday, 13th January</h3>
 <table border="1" cellspacing="0" cellpadding="5" style="width:100%;">
   <thead>
@@ -49,7 +49,7 @@ description : "AI4CS focuses on advancing AI methods to model and understand com
     <!-- Session 1 (S2) – Earth-Water Systems -->
     <tr>
       <td rowspan="2">4:30 PM – 5:30 PM</td>
-      <td rowspan="2" style="vertical-align:middle; text-align:center;"><b>Session 1 (S2) – Earth-Water Systems</b></td>
+      <td rowspan="2" style="vertical-align:middle; text-align:center;"><b>Session 2 (S2) – Earth-Water Systems</b></td>
       <td>Ana Belén Ruescas</td>
       <td>Challenges of AI for in-land and coastal water management</td>
     </tr>
@@ -60,7 +60,7 @@ description : "AI4CS focuses on advancing AI methods to model and understand com
     <!-- Session 2 (S3) – Earth-Atmosphere Systems -->
     <tr>
       <td style="vertical-align:middle; text-align:center;">5:30 PM – 6:00 PM</td>
-      <td><b>Session 2 (S3) – Earth-Atmosphere Systems</b></td>
+      <td><b>Session 3 (S3) – Earth-Atmosphere Systems</b></td>
       <td>Cosmin Madalin Marina</td>
       <td>Feature Selection for extreme atmospheric events</td>
     </tr>
@@ -176,7 +176,7 @@ description : "AI4CS focuses on advancing AI methods to model and understand com
     <!-- Session 7 (S7) – Machine learning -->
     <tr>
       <td rowspan="4" style="vertical-align:middle; text-align:center;">9:00 AM – 11:00 AM</td>
-      <td rowspan="4" style="vertical-align:middle; text-align:center;"><b>Session 7 (S7) – Machine learning</b></td>
+      <td rowspan="4" style="vertical-align:middle; text-align:center;"><b>Session 6 (S6) – Machine learning</b></td>
       <td>Anna Jungbluth</td>
       <td>3D Cloud Reconstruction via Geospatially-aware Masked Autoencoders</td>
     </tr>
@@ -199,7 +199,7 @@ description : "AI4CS focuses on advancing AI methods to model and understand com
     <!-- Session 8 (S8) – Conclusions and Wrap-up -->
     <tr>
       <td style="vertical-align:middle; text-align:center;"> 11:30 AM – 1:00 PM</td>
-      <td style="vertical-align:middle; text-align:center;"><b>Session 8 (S8) – Conclusions and Wrap-up</b></td>
+      <td style="vertical-align:middle; text-align:center;"><b>Session 7 (S7) – Conclusions and Wrap-up</b></td>
       <td>Presentation Team</td>
       <td>Presentation of breakout session outcomes.<br>
       Consolidated discussion on common themes of complexity and possible solutions across sessions.<br>

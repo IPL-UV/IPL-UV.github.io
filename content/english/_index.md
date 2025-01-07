@@ -6,7 +6,7 @@ title: Home
 ## Workshop – AI for Complex Systems: Brain, Earth, Climate, Society
 
 - **What:** A 2-day workshop bringing together machine learning and visual neuroscience experts to discuss new methods and common challenges in addressing complexity in the Earth and climate, visual brain, and social systems.
-- **Where:** Universitat de València, Valencia, Spain
+- **Where:** [AIDET](https://maps.app.goo.gl/3xs6V9rGDagjoxZW8)
 - **When:** 13th - 15th January 2025
 
 ### Why this workshop?

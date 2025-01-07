@@ -1,14 +1,55 @@
 ---
-title: "Getting to ADEIT: Your Valencia Exploration Guide"
+title: "Getting to ADEIT"
 draft: false
-# page title background image
 bg_image: "images/people/fondo_organizers.webp"
-# meta description
-description : "Held at ADEIT in Valencia, this event connects you with the city’s iconic landmarks, natural surroundings, beaches, and weekend hiking routes. Discover authentic paella and a variety of dining options, including vegetarian, Spanish, and international cuisines, and find recommended accommodations to ensure a rich and convenient experience throughout your stay."
+description : "[**ADEIT**](https://maps.app.goo.gl/3xs6V9rGDagjoxZW8) is centrally located in Valencia, offering convenient access to public transportation, historic landmarks, and cultural experiences. Explore the city and enjoy its unique blend of history, nature, and renowned cuisine."
 ---
 
 
+Located in the heart of Valencia, this venue is easily accessible via Metro Valencia. Below is a summary of the nearest metro stations and their walking distances:
 
+
+<table border="1" cellspacing="0" cellpadding="5">
+  <thead>
+    <tr>
+      <th>Station Metro Valencia</th>
+      <th>Lines</th>
+      <th>Walking distance to ADEIT</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Turia</td>
+      <td>Lines 1, 2</td>
+      <td>20 mins</td>
+    </tr>
+    <tr>
+      <td>Angel Guimerà</td>
+      <td>Lines 1, 2, 3, 5, 9</td>
+      <td>20 mins</td>
+    </tr>
+    <tr>
+      <td>Colón</td>
+      <td>Lines 3, 5, 7, 9</td>
+      <td>12 mins</td>
+    </tr>
+    <tr>
+      <td>Pont de Fusta</td>
+      <td>Line 4</td>
+      <td>14 mins</td>
+    </tr>
+  </tbody>
+</table>
+
+
+For more details, including route planning and schedules, visit the <a href="#metro-valencia-travel-details-routes-to-adeit" target="_self">Metro Valencia Travel Details</a> section.
+
+<div class="col-12">
+  <h2 class="section-title">Valencia Exploration Guide</h2>
+</div>
+
+
+<p>Valencia is a vibrant city known for its iconic landmarks, cultural experiences, and culinary delights. Below is a curated guide to help you make the most of your stay, whether you're exploring the city's historic sites, enjoying the beach, or venturing into nature for a weekend hike:</p>
 
 <table border="1" cellspacing="0" cellpadding="5">
   <tbody>
