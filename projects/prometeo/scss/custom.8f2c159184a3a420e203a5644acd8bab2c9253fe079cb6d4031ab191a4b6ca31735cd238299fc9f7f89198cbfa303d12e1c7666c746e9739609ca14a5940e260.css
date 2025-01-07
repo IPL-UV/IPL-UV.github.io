@@ -1,0 +1,206 @@
+@charset "UTF-8";
+.navbar-brand > .img-fluid,
+.logo-footer > .img-fluid {
+  height: 3rem; }
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1700px; } }
+
+/* Nav */
+.navigation {
+  background: none;
+  height: 80px;
+  /* Altura inicial del navegador */
+  display: flex;
+  /* Asegura que los elementos internos estén alineados */
+  align-items: center;
+  /* Centra verticalmente los elementos internos */
+  transition: height 0.3s ease, background 0.3s ease;
+  /* Transición suave */ }
+
+.navbar-nav {
+  background: none; }
+
+.header.scrolled .navigation {
+  background: white;
+  /* Fondo blanco */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Sombra */
+  transition: background 0.3s ease, box-shadow 0.3s ease; }
+
+.header.scrolled .nav-link {
+  color: #74a4cb;
+  /* Color de las letras */
+  transition: color 0.3s ease;
+  /* Transición suave del color */ }
+
+.header.scrolled .nav-link:hover {
+  color: #1e1e4b;
+  /* Cambiar a negro al pasar el mouse */
+  transition: color 0.3s ease;
+  /* Transición suave */ }
+
+.header .nav-link {
+  color: white;
+  /* Color original cuando no hay scroll */
+  transition: color 0.3s ease;
+  /* Transición suave */ }
+
+/* Search */
+.form-inline {
+  display: flex;
+  align-items: center; }
+
+.form-control {
+  border-radius: 0.25rem;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-color: #74a4cb;
+  height: 2rem; }
+
+.form-control:focus {
+  border-color: #74a4cb;
+  /* Mantiene el color del borde sin cambios */
+  border-width: 2.5px;
+  transition: border-width 0.1s ease; }
+
+.input-group {
+  display: flex;
+  align-items: center; }
+
+.input-group-append .btn {
+  border-radius: 0 0.25rem 0.25rem 0;
+  padding: 0.375rem 0.75rem; }
+
+.input-group-append .btn i {
+  font-size: 1.2rem;
+  color: #74a4cb; }
+
+.date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+  position: relative; }
+
+.date p {
+  font-size: 1rem;
+  /* Ajusta el tamaño del texto según sea necesario */
+  color: white;
+  /* Cambia el color del texto a blanco */
+  z-index: 1;
+  /* Asegura que el texto se superponga sobre la imagen */ }
+
+.orgspea .card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 0px 4px 25px 0px rgba(27, 39, 71, 0.15);
+  height: 20rem;
+  border-radius: 5% !important; }
+
+.orgspea2 .card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 0px 4px 25px 0px rgba(27, 39, 71, 0.15);
+  height: 28rem;
+  border-radius: 5% !important; }
+
+@media (max-width: 1453px) {
+  .orgspea2 .card {
+    height: 30rem; } }
+
+@media (max-width: 1302px) {
+  .orgspea2 .card {
+    height: 31rem; } }
+
+@media (max-width: 1200px) {
+  .orgspea2 .card {
+    height: 32rem; } }
+
+@media (max-width: 991px) {
+  .orgspea2 .card {
+    height: 29rem; } }
+
+@media (max-width: 767px) {
+  .orgspea2 .card {
+    height: 32rem; } }
+
+@media (max-width: 575px) {
+  .orgspea2 .card {
+    height: 27rem; } }
+
+@media (max-width: 380px) {
+  .orgspea2 .card {
+    height: 29rem; } }
+
+@media (max-width: 394px) {
+  .orgspea2 .card {
+    height: 30rem; } }
+
+@media (max-width: 230px) {
+  .orgspea2 .card {
+    height: 32rem; } }
+
+.card-title {
+  display: flex;
+  justify-content: center; }
+
+.orgspea .card .card-img-top {
+  object-fit: cover;
+  height: 13rem;
+  width: 13rem;
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+  border-radius: 50% !important; }
+
+.orgspea .card .card-body {
+  padding-bottom: 0;
+  align-content: center;
+  max-height: 7rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem; }
+
+h5.card-title {
+  font-style: italic; }
+
+.affiliate {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.affiliate .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10rem !important;
+  width: 100%;
+  max-width: 15rem; }
+
+.affiliate .card .card-img-top {
+  object-fit: contain;
+  height: 10rem;
+  padding: 1rem 0;
+  width: 100%;
+  transform: scale(0.9);
+  transition: transform 0.3s ease; }
+
+.places .card .card-img-top {
+  object-fit: contain;
+  height: 16rem;
+  padding: 1rem 0;
+  width: 100%;
+  transform: scale(0.9);
+  transition: transform 0.3s ease; }
+
+.section {
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+
+.section-sm {
+  padding-bottom: 0rem; }
+
+.section-sm {
+  padding-bottom: 0rem; }
