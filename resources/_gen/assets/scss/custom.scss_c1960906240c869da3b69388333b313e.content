@@ -108,7 +108,7 @@
   height: 28rem;
   border-radius: 5% !important; }
 
-@media (max-width: 1453px) {
+@media (max-width: 1671px) {
   .orgspea2 .card {
     height: 30rem; } }
 
@@ -204,3 +204,10 @@ h5.card-title {
 
 .section-sm {
   padding-bottom: 0rem; }
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 20px 0; }
+
+.list-inline {
+  display: flex;
+  justify-content: center; }

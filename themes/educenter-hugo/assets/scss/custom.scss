@@ -136,11 +136,16 @@
 }
 
 // media queries menor a 1200px
-@media (max-width: 1453px) {
+@media (max-width: 1671px) {
     .orgspea2 .card {
         height: 30rem;
     }
 }
+// @media (max-width: 1453px) {
+//     .orgspea2 .card {
+//         height: 30rem;
+//     }
+// }
 @media (max-width: 1302px) {
     .orgspea2 .card {
         height: 31rem;
@@ -259,4 +264,18 @@ h5.card-title {
 }
 .section-sm {
     padding-bottom: 0rem;
+}
+
+
+// Nav
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 20px 0;
+}
+
+.list-inline {
+
+    display: flex;
+    justify-content: center;
+      
 }
