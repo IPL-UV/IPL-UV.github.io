@@ -1,8 +1,8 @@
 ---
 title: "Paula Daudén Oliver"
 draft: false
-topic: ""
-title_topic: ""
+topic: "Vision"
+title_topic: "Modelling the Human Visual System with Parametric Neural Networks"
 description: ""
 bg_image: "images/backgrounds/page-title.jpg"
 affiliation: "University of Valencia"

@@ -113,8 +113,8 @@ description : "AI4CS focuses on advancing AI methods to model and understand com
     <tr>
       <td style="vertical-align:middle; text-align:center;">1:00 PM – 1:30 PM</td>
       <td><b>Session 5 (S5) – Vision</b></td>
-      <td>TBD</td>
-      <td>Presentations will be announced.</td>
+      <td>Jorge Vila Tomás and Paula Daudén Oliver</td>
+      <td>Modelling the Human Visual System with Parametric Neural Networks.</td>
     </tr>
     <tr>
       <td style="vertical-align:middle; text-align:center;">1:30 PM – 3:30 PM</td>

@@ -1,14 +1,14 @@
 ---
 title: "Jorge Vila Tomás"
 draft: false
-topic: ""
-title_topic: ""
+topic: "Vision"
+title_topic: "Modelling the Human Visual System with Parametric Neural Networks"
 description: ""
 bg_image: "images/backgrounds/page-title.jpg"
 affiliation: "University of Valencia"
 image: "images/people/Jorge_Vila.webp"
 bio: "I'm currently working on introducing human-like behaviours in deep learning models and measuring perceptual distances. I'm interested as well in generative models and reinforcement learning."
-interest: ["Climate extremes", "Natural hazards", "Machine learning", "Impact", "Attribution"]
+interest: []
 contact:
   - name : "jorge.vila-tomas@uv.es"
     icon : "ti-email"
