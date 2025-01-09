@@ -208,6 +208,6 @@ h5.card-title {
 .navbar-expand-lg .navbar-nav .nav-link {
   padding: 20px 0; }
 
-.list-inline {
+.card-body .list-inline {
   display: flex;
   justify-content: center; }
