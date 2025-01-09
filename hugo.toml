@@ -1,7 +1,7 @@
 baseURL = "https://ipl-uv.github.io/"
 #baseURL = "https://isp.uv.es/github"
 publishDir = "public"
-
+buildFuture = true
 
 
 #baseURL = "http://127.0.0.1/isp/"
@@ -139,3 +139,5 @@ theme = "isp_uv"
   name = "Contact"
   url = "/contact/"
   weight = 13
+
+
