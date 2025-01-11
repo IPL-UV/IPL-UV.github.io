@@ -21,7 +21,7 @@ description : "AI4CS focuses on advancing AI methods to model and understand com
     <!-- Intro -->
     <tr>
       <td style="vertical-align:middle; text-align:center;">2:00 PM – 2:30 PM</td>
-      <td>Introduction to AI4CS and workshop goals</td>
+      <td style="vertical-align:middle; text-align:center;"><b>Introduction to AI4CS and workshop goals</b></td>
       <td>Gustau Camps-Valls</td>
       <td>Overview of AI4CS, objectives, and key challenges.<br>
       Explanation of workshop structure, session formats, and expected outcomes.
@@ -82,7 +82,7 @@ description : "AI4CS focuses on advancing AI methods to model and understand com
     <!-- Session 3 (S3) – Earth-Atmosphere Systems -->
     <tr>
       <td rowspan="3" style="vertical-align:middle; text-align:center;">9:00 AM – 11:00 AM</td>
-      <td rowspan="3" style="vertical-align:middle; text-align:center;"><b>Session 3 (S3) – Earth-Atmosphere Systems</b></td>
+      <td rowspan="2" style="vertical-align:middle; text-align:center;"><b>Session 3 (S3) – Earth-Atmosphere Systems</b></td>
       <td>Gonzalo Mateo García</td>
       <td>AI for methane plume detection in satellite images</td>
     </tr>
@@ -91,7 +91,8 @@ description : "AI4CS focuses on advancing AI methods to model and understand com
       <td>Heatwave reconstruction with a Deep Learning-based Analogue method</td>
     </tr>
     <tr>
-      <td>Breakout Discussions</td>
+      <td style="vertical-align:middle; text-align:center;"><b>Breakout Discussions</b></td>
+      <td></td>
       <td>Topics entered and voted using Slido. Groups form based on the most-voted topics, moderated by the proposer. A note-taker is assigned for each group.</td>
     </tr>
     <tr>
@@ -118,7 +119,7 @@ description : "AI4CS focuses on advancing AI methods to model and understand com
     </tr>
     <tr>
       <td style="vertical-align:middle; text-align:center;">1:30 PM – 3:30 PM</td>
-      <td>Group Lunch</td>
+      <td style="vertical-align:middle; text-align:center;"><b>Group Lunch</b></td>
       <td></td>
       <td></td>
     </tr>
@@ -138,7 +139,7 @@ description : "AI4CS focuses on advancing AI methods to model and understand com
     </tr>
     <tr>
       <td style="vertical-align:middle; text-align:center;">5:00 PM – 6:00 PM</td>
-      <td>Breakout Discussions</td>
+      <td style="vertical-align:middle; text-align:center;"><b>Breakout Discussions</b></td>
       <td></td>
       <td>Topics entered and voted using Slido.<br>
       Groups form based on the most-voted topics, moderated by the proposer.<br>
@@ -176,7 +177,7 @@ description : "AI4CS focuses on advancing AI methods to model and understand com
     <!-- Session 7 (S7) – Machine learning -->
     <tr>
       <td rowspan="4" style="vertical-align:middle; text-align:center;">9:00 AM – 11:00 AM</td>
-      <td rowspan="4" style="vertical-align:middle; text-align:center;"><b>Session 6 (S6) – Machine learning</b></td>
+      <td rowspan="3" style="vertical-align:middle; text-align:center;"><b>Session 6 (S6) – Machine learning</b></td>
       <td>Anna Jungbluth</td>
       <td>3D Cloud Reconstruction via Geospatially-aware Masked Autoencoders</td>
     </tr>
@@ -189,7 +190,8 @@ description : "AI4CS focuses on advancing AI methods to model and understand com
       <td>The importance of explainable methods in artificial intelligence models, real use cases and ethical issues.</td>
     </tr>
     <tr>
-      <td style="vertical-align:middle; text-align:center;">Breakout Discussions</td>
+      <td style="vertical-align:middle; text-align:center;"><b>Breakout Discussions</b></td>
+      <td></td>
       <td>Topics entered and voted using Slido. Groups form based on the most-voted topics, moderated by the proposer. A note-taker is assigned for each group.</td>
     </tr>
     <tr>
