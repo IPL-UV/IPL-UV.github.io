@@ -9,7 +9,7 @@ description : "Hosted at the ADEIT building in Valencia, our event offers a cent
 
 ## Contact information
 
-**Workshop venue:** [AIDET](https://maps.app.goo.gl/3xs6V9rGDagjoxZW8)
+**Workshop venue:** [AIDET (room 1.1 & 1.2)](https://maps.app.goo.gl/3xs6V9rGDagjoxZW8)
 
 **ISP - address:** 
 - E4 building - 4th floor  

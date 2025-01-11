@@ -6,7 +6,7 @@ bg_image: "images/events/event1.jpeg"
 # meta description
 description : "AI4CS focuses on advancing AI methods to model and understand complex systems, including the visual brain, Earth systems, and socio-environmental interactions. With growing observational data, improved mechanistic models, and advanced machine learning, we can now monitor, predict, and analyze diverse variables. However, current approaches face key challenges: inefficiency with complex data, lack of adherence to physical laws, and limited fundamental insights. AI4CS addresses these issues with innovative, physics-aware, causality-driven AI solutions. This workshop brings together researchers to share advancements, generate new ideas, and promote interdisciplinary collaboration to enhance understanding of interconnected systems and tackle pressing global challenges."
 ---
-<p><strong>Venue:</strong> <a href="https://maps.app.goo.gl/3xs6V9rGDagjoxZW8">ADEIT</a></p>
+<p><strong>Venue:</strong> <a href="https://maps.app.goo.gl/3xs6V9rGDagjoxZW8">ADEIT (room 1.1 & 1.2)</a></p>
 <h3>Day 1 – Monday, 13th January</h3>
 <table border="1" cellspacing="0" cellpadding="5" style="width:100%;">
   <thead>
