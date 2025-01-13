@@ -6,7 +6,7 @@ title_topic: "Global soil moisture and microwave vegetation parameters for ecolo
 description: "Microwave sensors are sensitive to soil moisture and the liquid content of vegetation across different layers, depending on the frequency, offering a new perspective for global vegetation monitoring. ML can help fully exploit microwave EO data's capabilities for ecology."
 bg_image: "images/backgrounds/page-title.jpg"
 affiliation: "Universitat de València"
-image: "images/people/maria.webp"
+image: "images/organizer/maria_piles.webp"
 bio: "My research interests include microwave remote sensing, estimation of soil moisture and vegetation biogeophysical parameters and development of multisensor techniques for enhanced retrievals with focus on agriculture, forestry, wildfire prediction, extreme detection, and climate studies."
 interest: ["Extracting information from remote sensing using AI", "AI and EO for Earth science and applications", "Ecology and vegetation"]
 contact:
