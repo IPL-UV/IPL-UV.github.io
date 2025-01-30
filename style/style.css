@@ -3,6 +3,10 @@ body {
   font-family: sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 
 /* TITLES */
 h1 {
@@ -825,12 +829,27 @@ h3 {
 .grid-layout {
   display: grid;
   grid-template-areas:
-  "header header"
-  "abstract gallery"
-  "references enlaces";
-  grid-template-columns: 2fr 1fr;
+    /*    columnas: left   center   right */
+    "header  header  header"
+    "gallery-left abstract gallery-right"
+    "references references references"
+    "enlaces enlaces enlaces";
+  /* Tres columnas: izquierda, contenido, derecha */
+  grid-template-columns: 1fr 2fr 1fr;
   grid-gap: 7px;
 }
+
+
+/* Para la galería izquierda */
+.box-gallery-left {
+  grid-area: gallery-left;
+}
+
+/* Para la galería derecha */
+.box-gallery-right {
+  grid-area: gallery-right;
+}
+
 
 .box-gallery:empty {
   display: none;
@@ -967,9 +986,10 @@ h3 {
   border: 1px solid #ddd;
   display: flex;
   justify-content: center;
-  max-height: 49rem; 
+  /* max-height: 49rem;  */
   overflow-y: auto;
   overflow-x: hidden;
+  align-self: start
 }
 
 .gallery-grid {
@@ -984,7 +1004,7 @@ h3 {
 
 .gallery-item {
   background-color: #fff;
-  padding: 1rem;
+  padding: 0.5rem;
   border-radius: 0.625rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -1716,4 +1736,213 @@ h3 {
 .altmetric-embed a img {
   height: 100%;
   width: 100%;
+}
+
+
+
+
+/* Change - Page JMalo */
+
+
+.layout-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-gap: 1rem;
+  margin: 1rem auto;
+  width: 100%;
+
+  grid-template-areas:
+  "header header header"  /* Encabezado ocupa las 3 columnas */
+  "left   content right"; /* Galería izq. - contenido - galería der. */
+
+}
+
+/* Encabezado ocupa las 3 columnas */
+.page-header {
+  grid-area: header;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-header h1 {
+  background-color: #c5c5c5;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+
+.page-header p {
+  /* Reducimos los márgenes por defecto para que no haya tanto salto de línea */
+  margin: 0.2rem 0; 
+  /* Un pequeño relleno para que se vea mejor el “sombreado” */
+  padding: 0.3rem 0.6rem; 
+
+  /* “Sombreado” podría ser un simple fondo gris claro,
+     o un box-shadow extra si quieres un efecto de relieve */
+  background-color: #f3f3f3; 
+  /* Si deseas efecto de sombra, añade un box-shadow: 
+     box-shadow: 0 2px 5px rgba(0,0,0,0.1); */
+
+  /* Texto en cursiva */
+  font-style: italic;
+  font-size: clamp(0.6rem, 2.5vw, 0.8rem);
+  border-radius: 0.3rem;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+/* Contenido principal va en la columna central */
+.page-content {
+  grid-area: content;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 0.625rem;
+  padding: 2rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1)
+  
+}
+
+.page-content figure {
+  grid-area: left;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center;
+  margin: 0 auto;
+}
+.page-content figure {
+  text-align: justify;
+  width: 90%;
+}
+
+.page-content figure div img,
+.page-content figure div figcaption {
+  width: 100%;
+}
+.page-content figure div div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.page-content h1 {
+  color: #000000;
+  font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+  text-align: center;
+  display: block;
+  background-color: transparent;
+  margin: 0.3rem auto;
+  margin-top: 3rem;
+}
+
+
+.page-content h2 {
+  color: #000000;
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+  text-align: left;
+  background-color: transparent;
+  margin: 0.5rem auto;
+  padding: 0;
+}
+
+.page-content p {
+  text-align: justify;
+}
+
+/* Galería izquierda */
+.box-gallery-left {
+  grid-area: left;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  padding: 0;
+  
+}
+.box-gallery-left .gallery-grid {
+  height: auto;
+  
+}
+
+/* Galería derecha */
+.box-gallery-right {
+  grid-area: right;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  padding: 0;
+}
+
+/* Ajustes de la galería interna */
+.gallery-grid {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+/* Ejemplo de item */
+.box-gallery-right .gallery-grid .gallery-item,
+.box-gallery-left .gallery-grid .gallery-item {
+  width: 100%;
+  background-color: #ffffff00;
+  height: auto;
+}
+.gallery-title {
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+/* Responsivo: en pantallas <768px, ponemos todo en una sola columna */
+@media (max-width: 991px) {
+  .layout-container {
+    /* Queremos dos columnas uniformes, y tres filas:
+       1) header (span 2 columnas)
+       2) galerías (left y right en dos columnas)
+       3) contenido (span 2 columnas)
+     */
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "header header"
+      "left   right"
+      "content content";
+  }
+
+  .box-gallery-left,
+  .box-gallery-right {
+    /* Se “estiran” dentro de su fila */
+    align-self: stretch;
+    /* Si quieres que el fondo o contenido llene toda esa altura */
+    display: flex;
+    flex-direction: column;
+  }
+  .box-gallery-left .gallery-grid,
+  .box-gallery-right .gallery-grid {
+    height: 100%;
+  }
+
+}
+
+
+
+
+@media (max-width: 480px) {
+  .layout-container {
+    /* Sólo 1 columna, 4 filas: 
+       1) header
+       2) left
+       3) right
+       4) content
+     */
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "left"
+      "right"
+      "content";
+  }
+  .page-content p,
+  .page-content a,
+  .page-content figure figcaption {
+    font-size: clamp(0.6rem, 2.5vw, 0.8rem);
+  }
 }
