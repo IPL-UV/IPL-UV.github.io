@@ -1818,10 +1818,12 @@ h3 {
   width: 90%;
 }
 
-.page-content figure div img,
-.page-content figure div figcaption {
+.page-content figure div img {
   width: 100%;
+  height: auto;
+  object-fit: cover;
 }
+
 .page-content figure div div {
   display: flex;
   flex-direction: row;
