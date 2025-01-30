@@ -1,0 +1,106 @@
+{{ define "main" }}
+<div class="layout-container">
+
+  <!-- Encabezado -->
+  <div class="page-header">
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Params.author }}</p>
+    <p>{{ .Params.email }}</p>
+    <p>{{ .Params.caption }}</p>
+
+  </div>
+
+  <!-- Contenido principal (texto) -->
+  <section class="page-content">
+
+    {{ $content := .Content }}
+    {{ $content = replace $content "src=\"" (printf "src=\"%s" (relURL "images/code/")) }}
+    <p>{{ $content | markdownify }}</p>
+
+    
+  </section>
+
+  <!-- Galería Izquierda -->
+  {{ if .Params.imagesLeft }}
+  <aside class="box-gallery box-gallery-left">
+    <div class="gallery-grid">
+      {{ range .Params.imagesLeft }}
+        {{ $img := relURL (urls.JoinPath "images/code" .link) }}
+
+        <div class="gallery-item">
+          {{ if or (strings.HasSuffix .link ".jpg") (strings.HasSuffix .link ".png") (strings.HasSuffix .link ".webp") (strings.HasSuffix .link ".gif") }}
+          <!-- Renderizar imagen -->
+          <a href="javascript:void(0);" class="gallery-thumbnail" onclick="openModal('{{ $img }}', '{{ .title | default "" }}', '{{ .description | default "" }}')">
+            <img src="{{ $img }}" alt="{{ .title | default "" }}">
+           </a>
+          {{ else if or (strings.HasSuffix .link ".mp4") (strings.HasSuffix .link ".webm") }}
+          <!-- Renderizar video -->
+          <video controls>
+            <source src="{{ $img }}" type="video/{{ index (split .link ".") 1 }}">
+            Your browser does not support the video tag.
+          </video>
+          {{ else if (strings.Contains .link "https://") }}
+          <!-- Renderizar iframe (por ejemplo YouTube o similar) -->
+          <iframe src="{{ .link }}" frameborder="0" allowfullscreen></iframe>
+          {{ end }}
+
+          <!-- Título y descripción opcionales -->
+          {{ if .title }}
+          <p class="gallery-title">{{ .title | markdownify }}</p>
+          {{ end }}
+          {{ if .description }}
+          <div class="gallery-description">
+            <p>{{ .description | markdownify }}</p>
+          </div>
+          {{ end }}
+        </div>
+      {{ end }}
+    </div>
+  </aside>
+  {{ end }}
+
+  <!-- Galería Derecha -->
+  {{ if .Params.imagesRight }}
+  <aside class="box-gallery box-gallery-right">
+    <div class="gallery-grid">
+      {{ range .Params.imagesRight }}
+        {{ $img := relURL (urls.JoinPath "images/code" .link) }}
+
+        <div class="gallery-item">
+          {{ if or (strings.HasSuffix .link ".jpg") (strings.HasSuffix .link ".png") (strings.HasSuffix .link ".webp") (strings.HasSuffix .link ".gif") }}
+          <!-- Renderizar imagen -->
+           <a href="javascript:void(0);" class="gallery-thumbnail" onclick="openModal('{{ $img }}', '{{ .title | default "" }}', '{{ .description | default "" }}')">
+            <img src="{{ $img }}" alt="{{ .title | default "" }}">
+           </a>
+          {{ else if or (strings.HasSuffix .link ".mp4") (strings.HasSuffix .link ".webm") }}
+          <!-- Renderizar video -->
+          <video controls>
+            <source src="{{ $img }}" type="video/{{ index (split .link ".") 1 }}">
+            Your browser does not support the video tag.
+          </video>
+          {{ else if (strings.Contains .link "https://") }}
+          <!-- Renderizar iframe -->
+          <iframe src="{{ .link }}" frameborder="0" allowfullscreen></iframe>
+          {{ end }}
+
+          {{ if .title }}
+          <p class="gallery-title">{{ .title | markdownify }}</p>
+          {{ end }}
+          {{ if .description }}
+          <div class="gallery-description">
+            <p>{{ .description | markdownify }}</p>
+          </div>
+          {{ end }}
+        </div>
+      {{ end }}
+      <div id="imageModal" class="modal">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+      <div id="modalCaption" class="modal-caption"></div>
+    </div>
+    </div>
+  </aside>
+  {{ end }}
+
+</div>
+{{ end }}
