@@ -1,11 +1,11 @@
 ---
-title: 'Global Crop Yield Forecasting...'
+title: 'Global Crop Yield Forecasting for the FAO-GIEWS system'
 logo: 'fao_logo.png'
 pi: ''
-uvpi: 'G. Camps-Valls, M. Piles'
-years: '2022-2026'
-website: '/projects/ai4cs'
-funding_source: 'Generalitat Valenciana - PROMETEO programme'
+uvpi: 'M. Piles'
+years: '2024-2025'
+website: 'https://www.fao.org/giews/en/'
+funding_source: 'Food and Agricultural Organization'
 role: ''
 project_type: ''
 partners: []
