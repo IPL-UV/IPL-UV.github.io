@@ -36,7 +36,7 @@
       <div class="grid-item seminar-item project-item" data-year="{{ .Date.Format "2006" }}" data-month="{{ .Date.Format "January" }}">
         <div class="image-container seminar-image">
           {{ with .Params.link }}
-            <a href="{{ . }}">
+            <a href="{{ . }}" target="_blank" rel="noopener noreferrer">
               <img src="{{ $img }}" alt="{{ $current.Params.image_alt | default "Default Seminar Image" }}">
             </a>
           {{ else }}
@@ -45,7 +45,7 @@
         </div>
         <div class="text-container seminar-text">
           {{ with .Params.link }}
-            <a href="{{ . }}" class="nameLink_a seminar-title">{{ $current.Params.title | markdownify }}</a>
+            <a href="{{ . }}" class="nameLink_a seminar-title" target="_blank" rel="noopener noreferrer">{{ $current.Params.title | markdownify }}</a>
           {{ else }}
             <p class="nameLink_a seminar-title">{{ .Params.title | markdownify }}</p>
           {{ end }}

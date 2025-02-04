@@ -1,7 +1,7 @@
 ---
 title: "The GLaSS Training Material Builds on the Global Lakes Use Cases"
 img: "CarwH7tWIAAn2ry.jpg-large.webp"
-link: "https://www.learn-eo.org/lessons_glass.php"
+link: "https://web.archive.org/web/20211203042228/https://learn-eo.org/lessons_glass.php"
 instructor: "Ana B. Ruescas & GLaSS team"
 ---
   

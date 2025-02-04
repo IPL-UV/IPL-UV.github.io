@@ -9,9 +9,13 @@
         <div class="panel-body">
             <div class="panel-content row">
                 <div class="panel-image col-md-2">
-                    <a href="{{ .Params.link }}">
+                    {{ if .Params.link }}
+                        <a href="{{ .Params.link }}">
+                            <img src="{{ $img }}">
+                        </a>
+                    {{ else }}
                         <img src="{{ $img }}">
-                    </a>
+                    {{ end }}
                 </div>  
                 <div class="panel-description col-md-{{ if .Params.references }}6{{ else }}10{{ end }}">
                     <h5>
