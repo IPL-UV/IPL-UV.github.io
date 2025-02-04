@@ -2,7 +2,13 @@
     <div class="custom-wrapper">
         <div class="custom-banner">
             <img src="{{ .Params.banner }}" alt="ISP Banner">
+            <div class="custom-bannet-text">
+                <p style="color: #33646e"> <span style="color: #2b2b2b;">ISP ·</span> Image & Signal Processing</p>
+                <p style="color: #479bb0">Universitat de València</p>
+            </div>
+
         </div>
+
         <div class="custom-content">
             <div class="custom-video">
               <iframe src="https://player.vimeo.com/video/869866902?title=0&byline=0&portrait=0" 
@@ -13,13 +19,13 @@
             <div class="custom-text">
                 {{ .Content }}
                 <div class="custom-social-links">
-                    <a href="https://scholar.google.es/citations?hl=en&user=MsMYu-IAAAAJ"><i class="fab fa-google"></i></a>
-                    <a href="https://www.researchgate.net/lab/ISP-Image-and-Signal-Processing-Gustau-Camps-Valls"><i class="fab fa-researchgate"></i></a>
-                    <a href="https://twitter.com/isp_uv_es"><i class="fab fa-x-twitter"></i></a>
-                    <a href="https://github.com/IPL-UV"><i class="fab fa-github"></i></a>
-                    <a href="./../../../../videos/"><i class="fab fa-youtube"></i></a>
-                    <a href="mailto:gustau.camps@uv.es"><i class="fa fa-envelope"></i></a>
-                    <a href="https://bsky.app/profile/isp-uv-es.bsky.social"><i class="fa fa-bug"></i></a>
+                    <a href="https://scholar.google.es/citations?hl=en&user=MsMYu-IAAAAJ"><i class="fa-brands fa-google-scholar" style="color: #336daf;"></i></a>
+                    <a href="https://www.researchgate.net/lab/ISP-Image-and-Signal-Processing-Gustau-Camps-Valls"><i class="fab fa-researchgate" style="color: #60d2be;"></i></a>
+                    <a href="https://twitter.com/isp_uv_es"><i class="fab fa-x-twitter" style="color: #080808;"></i></a>
+                    <a href="https://github.com/IPL-UV"><i class="fab fa-github" style="color: #080808;"></i></a>
+                    <a href="./../../../../videos/"><i class="fab fa-youtube" style="color: #f50234;"></i></a>
+                    <a href="mailto:infoisp@uv.es"><i class="fa fa-envelope" style="color: #3d363b;"></i></a>
+                    <a href="https://bsky.app/profile/isp-uv-es.bsky.social"><i class="fa-brands fa-bluesky" style="color: #3a85ff;"></i></a>
                 </div>
                 <div class="custom-copyright">
                     <p>&copy; ISP, 2025</p>
@@ -27,4 +33,62 @@
             </div>
         </div>
     </div>
+
+
+    <style>
+        .custom-banner {
+            margin-top: 4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            gap: 2rem;
+          
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+           
+          }
+          
+          .custom-banner img {
+            width: 20%;
+          }
+          
+          .custom-banner .custom-bannet-text p {
+            font-family: 'Twentieth Century for Kenmore';
+            font-weight: 700;
+            font-size: 4.5rem;
+            text-align: center;
+            margin: 0rem 0.5rem;
+            line-height: 1;
+          }
+
+
+        
+
+        @media (max-width: 1400px) {
+            .custom-banner .custom-bannet-text p {
+                font-size: 3.5rem;
+              }
+        }
+        @media (max-width: 1199px) {
+            .custom-banner .custom-bannet-text p {
+                font-size: 3rem;
+              }
+        }
+
+        @media (max-width: 1070px) {
+            .custom-banner .custom-bannet-text p {
+                font-size: 3rem;
+              }
+            .custom-banner img {
+                display: none;
+            }
+        }
+        @media (max-width: 526px) {
+            .custom-banner .custom-bannet-text p {
+                font-size: 2.5rem;
+              }
+        }
+    </style>
 {{ end }}
