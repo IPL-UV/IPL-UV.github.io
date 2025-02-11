@@ -3,10 +3,6 @@ body {
   font-family: sans-serif;
 }
 
-a {
-  text-decoration: none;
-}
-
 
 /* TITLES */
 h1 {
@@ -829,27 +825,12 @@ h3 {
 .grid-layout {
   display: grid;
   grid-template-areas:
-    /*    columnas: left   center   right */
-    "header  header  header"
-    "gallery-left abstract gallery-right"
-    "references references references"
-    "enlaces enlaces enlaces";
-  /* Tres columnas: izquierda, contenido, derecha */
-  grid-template-columns: 1fr 2fr 1fr;
+  "header header"
+  "abstract gallery"
+  "references enlaces";
+  grid-template-columns: 2fr 1fr;
   grid-gap: 7px;
 }
-
-
-/* Para la galería izquierda */
-.box-gallery-left {
-  grid-area: gallery-left;
-}
-
-/* Para la galería derecha */
-.box-gallery-right {
-  grid-area: gallery-right;
-}
-
 
 .box-gallery:empty {
   display: none;
@@ -986,10 +967,9 @@ h3 {
   border: 1px solid #ddd;
   display: flex;
   justify-content: center;
-  /* max-height: 49rem;  */
+  max-height: 49rem; 
   overflow-y: auto;
   overflow-x: hidden;
-  align-self: start
 }
 
 .gallery-grid {
@@ -1004,7 +984,7 @@ h3 {
 
 .gallery-item {
   background-color: #fff;
-  padding: 0.5rem;
+  padding: 1rem;
   border-radius: 0.625rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -1737,8 +1717,6 @@ h3 {
   height: 100%;
   width: 100%;
 }
-
-
 
 
 /* Change - Page JMalo */
