@@ -8,4 +8,5 @@
         {{ $content = replace $content "src=\"" (printf "src=\"%s" (relURL "images/")) }}
         <p>{{ $content | markdownify }}</p>
     </div>
+</div>
 {{ end }}
