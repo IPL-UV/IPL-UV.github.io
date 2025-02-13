@@ -3,6 +3,9 @@ body {
   font-family: sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
 
 /* TITLES */
 h1 {
@@ -1745,7 +1748,7 @@ h3 {
 }
 
 .page-header h1 {
-  background-color: #c5c5c5;
+  background-color: #5bc0de;
   box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   margin-bottom: 1rem;
@@ -1753,35 +1756,30 @@ h3 {
 
 
 .page-header p {
-  /* Reducimos los márgenes por defecto para que no haya tanto salto de línea */
   margin: 0.2rem 0; 
-  /* Un pequeño relleno para que se vea mejor el “sombreado” */
-  padding: 0.3rem 0.6rem; 
-
-  /* “Sombreado” podría ser un simple fondo gris claro,
-     o un box-shadow extra si quieres un efecto de relieve */
-  background-color: #f3f3f3; 
-  /* Si deseas efecto de sombra, añade un box-shadow: 
-     box-shadow: 0 2px 5px rgba(0,0,0,0.1); */
-
-  /* Texto en cursiva */
+  padding: 0.1rem 0.6rem; 
+  font-size: clamp(0.6rem, 2.5vw, 1rem);
+  color: #5bc0de;
+}
+.page-header p:first-of-type {
+  font-weight: bold;
   font-style: italic;
-  font-size: clamp(0.6rem, 2.5vw, 0.8rem);
-  border-radius: 0.3rem;
-  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
 }
 
 /* Contenido principal va en la columna central */
 .page-content {
   grid-area: content;
-  padding: 1rem;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 0.625rem;
-  padding: 2rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1)
+  /* background-color: #f9f9f9; */
+  /* border: 1px solid #ddd; */
+  /* border-radius: 0.625rem; */
+  /* padding: 2rem; */
+  /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1) */
   
 }
+.page-content a {
+  color: #3e7ab7;
+}
+
 
 .page-content figure {
   grid-area: left;
