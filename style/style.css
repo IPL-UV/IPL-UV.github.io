@@ -1769,17 +1769,12 @@ h3 {
 /* Contenido principal va en la columna central */
 .page-content {
   grid-area: content;
-  /* background-color: #f9f9f9; */
-  /* border: 1px solid #ddd; */
-  /* border-radius: 0.625rem; */
-  /* padding: 2rem; */
-  /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1) */
   
 }
+
 .page-content a {
   color: #3e7ab7;
 }
-
 
 .page-content figure {
   grid-area: left;
@@ -1789,6 +1784,11 @@ h3 {
   justify-content: center;
   margin: 0 auto;
 }
+.page-content figure figcaption {
+  margin-bottom: 1rem;
+  width: 90%;
+}
+
 .page-content figure {
   text-align: justify;
   width: 90%;
@@ -1807,15 +1807,42 @@ h3 {
   gap: 0.5rem;
 }
 
+
 .page-content h1 {
-  color: #000000;
-  font-size: clamp(0.9rem, 2.5vw, 1.2rem);
-  text-align: center;
-  display: block;
-  background-color: transparent;
+  background-color: #5cb85c;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  width: fit-content;
+  font-size: clamp(1rem, 5vw, 1.4rem);
   margin: 0.3rem auto;
   margin-top: 3rem;
+  margin-bottom: 2rem;
+  text-align: left;
 }
+
+.page-content #table-of-contents + ul {
+  list-style-type: none; /* Elimina los puntos */
+  padding: 0; /* Elimina el padding por defecto */
+  margin: 0; /* Elimina el margin por defecto */
+}
+
+.page-content #table-of-contents + ul li:has(a) {
+  display: block; /* Hace que cada <li> sea un bloque */
+  padding: 10px; /* Relleno alrededor de cada <li> */
+  /* background-color: #e0f7fa; Color de fondo para los <li> */
+  border: 1px solid #dddddd; /* Borde alrededor de cada <li> */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+.page-content #table-of-contents + ul li a {
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  color: #3e7ab7; /* Color del texto de los enlaces */
+  font-weight: bold; /* Hace el texto de los enlaces en negrita */
+}
+
+.page-content #table-of-contents + ul li:hover {
+  background-color: #f1f1f1; /* Color de fondo cuando se pasa el ratón */
+}
+
 
 
 .page-content h2 {
