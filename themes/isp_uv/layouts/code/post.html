@@ -103,4 +103,22 @@
   {{ end }}
 
 </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Selecciona todos los enlaces dentro de los <p> en el contenedor especificado
+    const links = document.querySelectorAll('.page-content #references + ul li p a');
+    
+    links.forEach(link => {
+      // Verifica si el enlace termina en .pdf
+      if (link.href.endsWith('.pdf')) {
+        // Crea un emoji
+        const emoji = '📄'; // Puedes cambiarlo por cualquier emoji que prefieras
+        // Añade el emoji al final del texto del enlace
+        link.innerHTML += ` ${emoji}`;
+      }
+    });
+  });
+</script>
+
 {{ end }}
