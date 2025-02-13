@@ -31,7 +31,9 @@ The standard tools in ColorLab (and in [**VistaLab**](./../vistalab)) are the ne
 - [Changing the spectral illumination (standard and user defined illuminants)](#changing-the-spectral-illumination-standard-and-user-defined-illuminants)
 - [Playing with McAdam ellipses and Munsell chips](#playing-with-mcadam-ellipses-and-munsell-chips)
 - [Chromatic induction in LLab](#chromatic-induction-in-llab)
-- [Download ColorLab](#download-colorlab)
+- [Download!](#download-colorlab)
+  - Toolbox
+  - User Guide
 - [References](#references)
 
 
