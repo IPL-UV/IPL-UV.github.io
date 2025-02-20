@@ -8,8 +8,6 @@ imagesLeft:
   - link: colorlab1.webp
     title: "[Samples of the Munsell Book of Color illuminated](#the-matlab-toolbox-for-colorimetry-and-color-vision)"
     description: "Samples of the Munsell Book of Color illuminated using CIE standard illuminants D65 (top) and A (bottom). ColorLab comes with many spectral reflectances and spectral radiances of standard sources and objects. These can be used as input data to solve the corresponding pair problem [[Neur.Comp.12](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/Neco_accepted_2012.pdf), [PLoS ONE 14](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/Gutmann_PLOS_ONE_2014.pdf)]."
-
-
 imagesRight:
   - link: "colorlab2.webp"
     title: "[Pairs predicted with standard CIELab and CIECAM](#the-matlab-toolbox-for-colorimetry-and-color-vision)"
@@ -106,7 +104,7 @@ The second example shows a set of Munsell chips of different chroma which are ch
 
 <figure>
   <figcaption>
-  <b>Color discrimination (McAdam ellipses, top) and Uniformly distributed colors (Munsell chips, bottom): </b>Bigger discrimination in the blue-purple region than in the green region. Anisotropic JNDs in color is an example of the MAximum Differentiation (MAD) concept [Malo & Simoncelli SPIE 15](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/malo15a-reprint.pdf). Uniformly distributed colors (Munsell chips, bottom): Constant perceptual differences in Munsell chips imply they distribute in ellipsoids around the white point similarly to the corresponding McAdam ellipse.
+  <b>Color discrimination (McAdam ellipses, top) and Uniformly distributed colors (Munsell chips, bottom): </b>Bigger discrimination in the blue-purple region than in the green region. Anisotropic JNDs in color is an example of the MAximum Differentiation (MAD) concept [<a href="https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/malo15a-reprint.pdf">Malo & Simoncelli SPIE 15</a>]. Uniformly distributed colors (Munsell chips, bottom): Constant perceptual differences in Munsell chips imply they distribute in ellipsoids around the white point similarly to the corresponding McAdam ellipse.
   </figcaption>  
   <img src="mcadam.webp" alt="Desaturating clock" style="width: 90%">
 </figure>
@@ -137,8 +135,9 @@ This user guide corresponds to version 1.0. Some functions have been updated in 
 
 - *ColorLab: the Matlab toolbox for Colorimetry and Color Vision. Univ. Valencia 2002. J. Malo & M.J. Luque.*
 
-- [*Corresponding-pair procedure: a new approach to simulation of dichromatic color perception. P. Capilla, M. Diez, M.J. Luque, & J. Malo. JOSA A 21(2): 176-186 (2004)*](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/josa_04.pdf)
+- *First paper*
 
+  - [*Corresponding-pair procedure: a new approach to simulation of dichromatic color perception. P. Capilla, M. Diez, M.J. Luque, & J. Malo. JOSA A 21(2): 176-186 (2004)*](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/josa_04.pdf)
 
 - [*Nonlinearities and Adaptation of Color Vision from Sequential Principal Curves Analysis. V. Laparra, S. Jimenez, G. Camps & J. Malo. Neural Computation 24(10): 2751-2788 (2012)*](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/Neco_accepted_2012.pdf)
 
