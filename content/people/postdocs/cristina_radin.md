@@ -1,7 +1,7 @@
 ---
 draft: false
 title: 'Cristina Radin'
-role: "phd students"
+role: postdocs
 weight: 1
 params:
   img: cristina.webp

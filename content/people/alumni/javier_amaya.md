@@ -1,7 +1,7 @@
 ---
 draft: false
 title: 'Javier Martínez Amaya'
-role: "phd students"
+role: alumni
 weight: 1
 params:
   img: javier.webp

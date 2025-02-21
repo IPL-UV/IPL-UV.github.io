@@ -2,7 +2,7 @@
 date: '2024-05-10T05:29:29+02:00'
 draft: false
 title: 'Iván Sánchez-López'
-role: postdocs
+role: alumni
 params:
   img: ivan.webp
   googlescholar: 'https://scholar.google.es/citations?user=QAuyZJYAAAAJ&hl=es'

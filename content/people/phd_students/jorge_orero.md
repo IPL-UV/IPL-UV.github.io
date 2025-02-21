@@ -2,7 +2,7 @@
 date: '2024-05-10T05:29:29+02:00'
 draft: false
 title: 'Jorge Orero'
-role: visitors
+role: "phd students"
 params:
   img: jorge_orero.webp
 ---
