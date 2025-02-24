@@ -92,7 +92,7 @@ link = "plugins/google-map/gmap.js"
 
 #################### default parameters ################################
 [params]
-logo = "images/logo_isp_cn_fondo-modified.png"
+logo = "images/logo_isp.svg"
 # Meta data
 description = "This is meta description"
 author = "Themefisher"

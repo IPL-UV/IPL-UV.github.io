@@ -11,13 +11,10 @@ params:
   twitter: 'https://twitter.com/jesusmalo32'
   github: 'https://github.com/IPL-UV/'
   uv: 'https://www.uv.es/jmalo/'
-  # link_image: './full_professors/jesus_malo/ex_cathedra'
-  link_image: './full_professors/jesus_malo/excathedra'
+  link_image: './full_professors/jesus_malo/ex_cathedra'
 type: "people"
 layout: "single"
 ---
-
-
 
 I'm interested in understanding human vision from information theoretic principles. This statistical view has implications in experimental and computational neuroscience. [See the ex-cathedra statement](./full_professors/jesus_malo/ex_cathedra)
 

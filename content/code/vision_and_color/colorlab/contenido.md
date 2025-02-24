@@ -1,0 +1,442 @@
+---
+layout: contenido
+---
+
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ISP - Image and Signal Processing group</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="shortcut icon" href=/images/isp_ico.webp type="image/x-icon">
+<link href="https://fonts.cdnfonts.com/css/twentieth-century-for-kenmore" rel="stylesheet">
+<link rel="stylesheet" href=/style/style.css>
+<link rel="stylesheet" href=/style/bootstrap-cosmo.min.css>
+<link rel="stylesheet" href=/style/bootstrap-theme.css>
+<link rel="stylesheet" href=/style/bootstrap.css>
+<link rel="stylesheet" href=/style/bootstrap.min.css>
+<link rel="stylesheet" href=/style/bootswatch.min.css>
+
+<script src=/js/mode.js></script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D8CVQKS51G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-D8CVQKS51G');
+</script>
+</head>
+<body>
+  
+
+  <main>
+    <div class="container">
+      
+<div class="layout-container">
+
+  
+  <div class="page-header">
+    <h1>ColorLab: The Matlab Toolbox for Colorimetry and Color Vision</h1>
+    <p>Jesús Malo &amp; Maria José Luque</p>
+    <p>jesus.malo@uv.es</p>
+    <p>(c) Universitat de València 1997 - 2018</p>
+
+  </div>
+
+  
+  <section class="page-content">
+
+    
+    
+<p><p><strong>ColorLab</strong> is a color computation and visualization toolbox to be used in the MATLAB environment. <strong>ColorLab</strong> is intended to deal with color in general-purpose quantitative colorimetric applications as color image processing and psychophysical experimentation.</p>
+<p><strong>ColorLab</strong> uses colorimetrically meaningful representations of color and color images (tristimulus values, chromatic coordinates and luminance, or, dominant wavelength, purity and luminance), in any primaries system of the tristimulus colorimetry (including CIE standards as CIE XYZ or CIE RGB). <strong>ColorLab</strong> relates this variety of colorimetric representations to the usual device-dependent discrete-color representation, i.e. it solves the problem of displaying a colorimetrically specified scene in the monitor within the accuracy of the VGA.</p>
+<p>A number of other interesting color representations are also provided, as CIE uniform color spaces (as CIE Lab and CIE Luv, opponent color representations based on advanced color vision models, and color appearance representations (RLab, LLab, SVF and CIECAMs). All these representations are invertible, so the result of image processing made in these colorimetrically meaningful representations can always be inverted back to the tristimulus representation at hand, and be displayed. <strong>ColorLab</strong> includes useful visualization routines to represent colors in the tristimulus space or in the chromatic diagram of any color basis, as well as an advanced vector quantization scheme for color palette design. An extensive color data base is also included, with the CIE 1931 color matching functions, reflectance data of 1250 chips from the Munsell Book of Color, McAdam ellipses, normalized spectra of a number of standard CIE illuminants, matrices to change to a number of tristimulus representations, and calibration data of an ordinary CRT monitor.</p>
+<p>The standard tools in ColorLab (and in <a href="./../vistalab"><strong>VistaLab</strong></a>) are the necessary building blocks to develop more sophisticated vision models included in the dedicated site <a href="./../vistamodels"><strong>VistaModels</strong></a>.</p>
+<h1 id="table-of-contents">Table of Contents</h1>
+<ul>
+<li><a href="#colorfulness-edition-using-the-purity">Colorfulness edition using the purity</a></li>
+<li><a href="#hue-based-segmentation-and-edition-using-the-dominant-wavelength">Hue-based segmentation and edition using the dominant wavelength</a></li>
+<li><a href="#luminance-edition-in-cd/m2">Luminance edition in cd/m2</a></li>
+<li><a href="#changing-the-spectral-illumination-standard-and-user-defined-illuminants">Changing the spectral illumination (standard and user defined illuminants)</a></li>
+<li><a href="#playing-with-mcadam-ellipses-and-munsell-chips">Playing with McAdam ellipses and Munsell chips</a></li>
+<li><a href="#chromatic-induction-in-llab">Chromatic induction in LLab</a></li>
+<li><a href="#download-colorlab">Download!</a>
+<ul>
+<li>Toolbox</li>
+<li>User Guide</li>
+</ul>
+</li>
+<li><a href="#references">References</a></li>
+</ul>
+<h1 id="colorfulness-edition-using-the-purity">Colorfulness edition using the purity</h1>
+<p>Colorimetric Purity and Excitation Purity are the descriptors of colorfulness in Tristimulus Colorimetry. Both of them are available in ColorLab. In the example below we analyze the colors of an image in the CIE XYZ system and reduce the excitation purity by a constant factor leaving the luminace and the dominant wavelength unaltered in order to obtain an image with reduced colorfulness. Other posibilities to obtain this effect with ColorLab include using any other tristimulus representations or changing the colorfulness descriptors in a number of available non-linear color appearance models.</p>
+<figure>
+  <figcaption>
+  <b>Desaturating clock: </b>In this example the digital true-color image is converted into tristimulus values, chromatic coordinates and luminance, and finally, dominant wavelength, excitation purity and luminance. A constant factor is applied to the purity (see the contraction of chromatic coordinates in the diagram) and the palette is inverted back into digital counts so that it can be displayed.
+  </figcaption>  
+  <img src="/images/code/colorfulness.webp" alt="Desaturating clock" style="width: 90%">
+</figure>
+<h1 id="hue-based-segmentation-and-edition-using-the-dominant-wavelength">Hue-based segmentation and edition using the dominant wavelength</h1>
+<p>The Dominant Wavelength is the descriptor of hue in Tristimulus Colorimetry. In the example below we first segment the flowers by selecting a range of wavelenghts (in the CIE XYZ chromatic diagram) and then, we modify their hue by applying a rotation to the chromatic coordinates. Other posibilities to obtain this effect with ColorLab include using any other tristimulus representation or changing (rotating) the hue descriptor in a number of available non-linear color appearance models.</p>
+<figure>
+  <div style="width: 90%">
+    <figcaption style="text-align: justify;">
+    <b>Artificial Flowers: </b>Red flowers are segmented by selecting the colors in a certain range of dominant wavelengths.
+    </figcaption>  
+    <div>
+      <img src="/images/code/hue1.webp" alt="hue1">
+      <img src="/images/code/hue2.webp" alt="hue2">
+    </div>
+  </div>
+</figure>
+<h1 id="luminance-edition-in-cdm24">Luminance edition in cd/m24</h1>
+<p>The Luminance is the descriptor of brightness in Tristimulus Colorimetry. In the example below we reduce the luminance by reducing the lenght of the tristimulus vectors by a constant factor in an arbitrary (RBG) tristimulus space (note how the chromatic diagram is twisted). Of course the chromatic coordinates remain the same (as can be seen in the figures below). Other posibilities to obtain this effect with ColorLab include using any other tristimulus representation or changing the brightness descriptor in a number of available non-linear color appearance models.</p>
+<figure>
+  <figcaption>
+  <b>Marilyn in dim light: </b>The reduction in the length of the tristimulus does not change the intersection with the chromatic diagram.
+  </figcaption>  
+  <img src="/images/code/luminance.webp" alt="Desaturating clock" style="width: 90%">
+</figure>
+<h1 id="changing-the-spectral-illumination-standard-and-user-defined-illuminants">Changing the spectral illumination (standard and user defined illuminants)</h1>
+<p>ColorLab is able to deal with the spectro-radiometric description of color images or estimate it from their (usual) colorimetric description by using the Munsell reflectances data set. In this way, the effect of changing the spectral radiance of the illuminant may be simulated by obtaining the new tristimulus values with the new illuminant. In the example below, each pixel of the original image is assumed to be a patch with a given (or estimated) reflectance under white light illumination. The user may define a different illuminant (in this case a purple radiation) and apply it to the reflectances, thus obtaining the new image and the new (tristimulus) colors. Of course, this can be done in any tristimulus representation. But, better than that, if non-linear color appearance models are used together with the corresponding pair procedure [<a href="http://isp.uv.es/papers/josa_04.pdf">JOSA A 04</a>], color constancy may be predicted!.</p>
+<figure>
+  <figcaption>
+  <b>The pink room key: </b>Digital images can be turned into spectral arrays and these can be illuminated with customized light.
+  </figcaption>  
+  <img src="/images/code/irradiance.webp" alt="Desaturating clock" style="width: 90%">
+</figure>
+<h1 id="playing-with-mcadam-ellipses-and-munsell-chips">Playing with McAdam ellipses and Munsell chips</h1>
+<p>Now you can easily check the non-uniformity of the tristimulus space in your computer screen! As ColorLab comes with the McAdam ellipses database and the Munsell chips database, its color reproduction ability allows you to generate the right colors to prove that your discrimination is not Euclidean.
+In the first example below, we distort two given colors (green and blue) in by a constant factor in the chromatic diagram in the principal directions of the ellipsoids. Despite the eventual inaccuracies introduced by the use of a generic calibration, it is clear that blues are more different each other (the ellipse is smaller!) and the distortion in every case is more noticeable when it is done in the short direction of the ellipse.
+The second example shows a set of Munsell chips of different chroma which are chosen to depart each other a constant number of JNDs.</p>
+<figure>
+  <figcaption>
+  <b>Color discrimination (McAdam ellipses, top) and Uniformly distributed colors (Munsell chips, bottom): </b>Bigger discrimination in the blue-purple region than in the green region. Anisotropic JNDs in color is an example of the MAximum Differentiation (MAD) concept [<a href="https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/malo15a-reprint.pdf">Malo & Simoncelli SPIE 15</a>]. Uniformly distributed colors (Munsell chips, bottom): Constant perceptual differences in Munsell chips imply they distribute in ellipsoids around the white point similarly to the corresponding McAdam ellipse.
+  </figcaption>  
+  <img src="/images/code/mcadam.webp" alt="Desaturating clock" style="width: 90%">
+</figure>
+<h1 id="chromatic-induction-in-llab">Chromatic induction in LLab</h1>
+<p>The perception of a test is modified by the stimuli in the surround. This is referred to as chromatic induction. In the example below, the (physically constant) gray test in the center changes its hue to blueish as the surround gets more yellow. Non-linear color appearance models are required to understand this effect.</p>
+<figure>
+  <figcaption>
+  <b>Prediction of induced color with LLab: </b>The Llab non-linear color representation was used to compute the corresponding colors of the central test in a gray surround. The results are shown in the CIE xy diagram. Note that as the surround increases the colorfulness, an oposite reaction is induced in the test. This numerical result was used to generate a set of different stimuli in a constant gray background giving rise to the same perception as the central test on a changing background (see below).
+  </figcaption>  
+  <img src="/images/code/color_junto.webp" alt="Desaturating clock" style="width: 90%">
+</figure>
+<h1 id="download-colorlab">Download ColorLab</h1>
+<ul>
+<li><strong>Toolbox</strong>: <a href="https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/Colorlab.zip">Colorlab.zip (15MB)</a>.</li>
+<li><strong>User Guide</strong>: <a href="https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/COLORLAB_userguide.pdf">ColorLab_userguide.pdf (12MB)</a>.</li>
+</ul>
+<p>This user guide corresponds to version 1.0. Some functions have been updated in current version 4.0. Colorlab GUI demo has been removed since Matlab GUI changes in 2014</p>
+<h1 id="references">References</h1>
+<ul>
+<li>
+<p><em>ColorLab: the Matlab toolbox for Colorimetry and Color Vision. Univ. Valencia 2002. J. Malo &amp; M.J. Luque.</em></p>
+</li>
+<li>
+<p><em>First paper</em></p>
+<ul>
+<li><a href="https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/josa_04.pdf"><em>Corresponding-pair procedure: a new approach to simulation of dichromatic color perception. P. Capilla, M. Diez, M.J. Luque, &amp; J. Malo. JOSA A 21(2): 176-186 (2004)</em></a></li>
+</ul>
+</li>
+<li>
+<p><a href="https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/Neco_accepted_2012.pdf"><em>Nonlinearities and Adaptation of Color Vision from Sequential Principal Curves Analysis. V. Laparra, S. Jimenez, G. Camps &amp; J. Malo. Neural Computation 24(10): 2751-2788 (2012)</em></a></p>
+</li>
+<li>
+<p><a href="https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/Gutmann_PLOS_ONE_2014.pdf"><em>Spatio-Chromatic Adaptation via Higher-Order Canonical Correlation Analysis of Natural Images. M. Gutmann, V. Laparra, A. Hyvarinen &amp; J. Malo. PLoS ONE 9(2): e86481 (2014)</em></a></p>
+</li>
+<li>
+<p><a href="https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/LaparraMalo15.pdf"><em>Visual aftereffects and sensory nonlinearities from a single statistical framework. V. Laparra &amp; J. Malo. Frontiers in Human Neuroscience 9:557 (2015)</em></a></p>
+</li>
+<li>
+<p><a href="https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/Luque06.pdf"><em>Effect of a Yellow Filter on Brightness Evaluated by Asymmetric Matching: Measurements and Predictions. M.J. Luque, et al. J. Opt. A - Pure Appl. Opt. (Inst. of Physics), 8 (5): 398-408 (2006)</em></a></p>
+</li>
+<li>
+<p><a href="https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/Chorro09.pdf"><em>Analyzing the metrics of the perceptual space in a new multistage physiological colour vision model. E. Chorro, F.M. Martínez‐Verdú, D. de Fez, P. Capilla, &amp; M.J. Luque. Color Res. Appl., 34: 359-366 (2009)</em></a></p>
+</li>
+<li>
+<p><a href="https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/Luque10.pdf"><em>Images Perceived after Chromatic or Achromatic Contrast Sensitivity Losses. M.J. Luque, et al. Optom. Vision Sci., 87 (5): 313-322 (2010)</em></a></p>
+</li>
+<li>
+<p><a href="https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/Capilla12.pdf"><em>Simulating Images Seen by Patients with Inhomogeneous Sensitivity Losses. P. Capilla, M.J. Luque, M. Diez. Optom. Vision Sci., 89 (10): 1543-1556 (2012)</em></a></p>
+</li>
+<li>
+<p><a href="https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/Luque14.pdf"><em>Software for simulating dichromatic perception of video streams. M.J. Luque, D. de Fez, &amp; P. Acevedo. Color Res. Appl., 39: 486-491 (2014)</em></a></p>
+</li>
+</ul>
+</p>
+  </section> 
+  <aside class="box-gallery box-gallery-left">
+    <div class="gallery-grid">
+        <div class="gallery-item">
+          <a href="javascript:void(0);" class="gallery-thumbnail" onclick="openModal('\/images\/code\/colorlab1.webp', '[Samples of the Munsell Book of Color illuminated](#the-matlab-toolbox-for-colorimetry-and-color-vision)', 'Samples of the Munsell Book of Color illuminated using CIE standard illuminants D65 (top) and A (bottom). ColorLab comes with many spectral reflectances and spectral radiances of standard sources and objects. These can be used as input data to solve the corresponding pair problem [[Neur.Comp.12](https:\/\/huggingface.co\/datasets\/isp-uv-es\/Web_site_legacy\/resolve\/main\/code\/soft_visioncolor\/Neco_accepted_2012.pdf), [PLoS ONE 14](https:\/\/huggingface.co\/datasets\/isp-uv-es\/Web_site_legacy\/resolve\/main\/code\/soft_visioncolor\/Gutmann_PLOS_ONE_2014.pdf)].')">
+            <img src="/images/code/colorlab1.webp" alt="[Samples of the Munsell Book of Color illuminated](#the-matlab-toolbox-for-colorimetry-and-color-vision)">
+           </a>
+          <p class="gallery-title"><a href="#the-matlab-toolbox-for-colorimetry-and-color-vision">Samples of the Munsell Book of Color illuminated</a></p>
+          <div class="gallery-description">
+            <p>Samples of the Munsell Book of Color illuminated using CIE standard illuminants D65 (top) and A (bottom). ColorLab comes with many spectral reflectances and spectral radiances of standard sources and objects. These can be used as input data to solve the corresponding pair problem [<a href="https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/Neco_accepted_2012.pdf">Neur.Comp.12</a>, <a href="https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/Gutmann_PLOS_ONE_2014.pdf">PLoS ONE 14</a>].</p>
+          </div>
+        </div>
+    </div>
+  </aside>
+  
+
+  
+  
+  <aside class="box-gallery box-gallery-right">
+    <div class="gallery-grid">
+        <div class="gallery-item">
+           <a href="javascript:void(0);" class="gallery-thumbnail" onclick="openModal('\/images\/code\/colorlab2.webp', '[Pairs predicted with standard CIELab and CIECAM](#the-matlab-toolbox-for-colorimetry-and-color-vision)', 'Corresponding pairs predicted with standard CIELab and CIECAM (implemented in Colorlab, left) are compared with our statistically-based algorithms: the nonlinear Sequential Principal Curves Analysis (top-right) [Neur.Comp.12](https:\/\/huggingface.co\/datasets\/isp-uv-es\/Web_site_legacy\/resolve\/main\/code\/soft_visioncolor\/Neco_accepted_2012.pdf), and the linear Higher Order Canonical Correlation Analysis (bottom-right) [PLoS ONE 14](https:\/\/huggingface.co\/datasets\/isp-uv-es\/Web_site_legacy\/resolve\/main\/code\/soft_visioncolor\/Gutmann_PLOS_ONE_2014.pdf).')">
+            <img src="/images/code/colorlab2.webp" alt="[Pairs predicted with standard CIELab and CIECAM](#the-matlab-toolbox-for-colorimetry-and-color-vision)">
+           </a>
+          <p class="gallery-title"><a href="#the-matlab-toolbox-for-colorimetry-and-color-vision">Pairs predicted with standard CIELab and CIECAM</a></p>
+          <div class="gallery-description">
+            <p>Corresponding pairs predicted with standard CIELab and CIECAM (implemented in Colorlab, left) are compared with our statistically-based algorithms: the nonlinear Sequential Principal Curves Analysis (top-right) <a href="https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/Neco_accepted_2012.pdf">Neur.Comp.12</a>, and the linear Higher Order Canonical Correlation Analysis (bottom-right) <a href="https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/Gutmann_PLOS_ONE_2014.pdf">PLoS ONE 14</a>.</p>
+          </div>
+        </div>
+      <div id="imageModal" class="modal">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+      <div id="modalCaption" class="modal-caption"></div>
+    </div>
+    </div>
+  </aside>
+  
+
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const links = document.querySelectorAll('.page-content #references + ul li p a');
+    links.forEach(link => {
+      if (link.href.endsWith('.pdf')) {
+        const emoji = '📄';
+        link.innerHTML += ` ${emoji}`;
+      }
+    });
+  });
+
+  function closeModal() {
+    document.getElementById('imageModal').style.display = 'none';
+  }
+</script>
+
+<style>
+.layout-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-gap: 1rem;
+  margin: 1rem auto;
+  width: 100%;
+
+  grid-template-areas:
+  "header header header"
+  "left   content right";
+
+}
+
+.page-header {
+  grid-area: header;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-header h1 {
+  background-color: #5bc0de;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.page-header p {
+  margin: 0.2rem 0; 
+  padding: 0.1rem 0.6rem; 
+  font-size: clamp(0.6rem, 2.5vw, 1rem);
+  color: #5bc0de;
+}
+.page-header p:first-of-type {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.page-content {
+  grid-area: content;
+  
+}
+
+.page-content a {
+  color: #3e7ab7;
+}
+
+
+
+.page-content figure {
+  grid-area: left;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.page-content figure figcaption {
+  margin-bottom: 1rem;
+  width: 90%;
+}
+
+.page-content figure {
+  text-align: justify;
+  width: 90%;
+}
+
+.page-content figure div img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.page-content figure div div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.page-content h1 {
+  background-color: #5cb85c;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  width: fit-content;
+  font-size: clamp(1rem, 5vw, 1.4rem);
+  margin: 0.3rem auto;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.page-content #table-of-contents + ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.page-content #table-of-contents + ul li:has(a) {
+  display: block;
+  padding: 10px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+}
+
+.page-content #table-of-contents + ul li a {
+  text-decoration: none;
+  color: #3e7ab7;
+  font-weight: bold;
+}
+
+.page-content #table-of-contents + ul li:hover {
+  background-color: #f1f1f1;
+}
+
+.page-content #references + ul li ul li{
+  margin-bottom: 0.3rem;
+}
+
+.page-content h2 {
+  color: #000000;
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+  text-align: left;
+  background-color: transparent;
+  margin: 0.5rem auto;
+  padding: 0;
+}
+
+.page-content p {
+  text-align: justify;
+}
+
+.box-gallery-left {
+  grid-area: left;
+}
+
+.box-gallery-left .gallery-grid {
+  height: auto;
+}
+
+.box-gallery-right {
+  grid-area: right;
+
+}
+
+.box-gallery-right, 
+.box-gallery-left {
+  background-color: transparent;
+  padding: 1rem;
+  padding: 0;
+  box-shadow: none;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.box-gallery-right .gallery-grid .gallery-item,
+.box-gallery-left .gallery-grid .gallery-item {
+  width: 100%;
+  background-color: #ffffff00;
+  height: auto;
+}
+.gallery-title {
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 991px) {
+  .layout-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "header header"
+      "left   right"
+      "content content";
+  }
+  .box-gallery-left,
+  .box-gallery-right {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+  }
+  .box-gallery-left .gallery-grid,
+  .box-gallery-right .gallery-grid {
+    height: 100%;
+  }
+
+}
+@media (max-width: 480px) {
+  .layout-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "left"
+      "right"
+      "content";
+  }
+  .page-content p,
+  .page-content a,
+  .page-content figure figcaption {
+    font-size: clamp(0.6rem, 2.5vw, 0.8rem);
+  }
+}
+</style>
+</div>
+  </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
+</html>
