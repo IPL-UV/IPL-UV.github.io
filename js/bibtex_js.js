@@ -533,12 +533,14 @@ document.addEventListener("DOMContentLoaded", function () {
       console.log("Adding years and projects");
       let yearSet = new Set();
       let projectSet = new Set();
+      let yearCount = {};
 
       // Recopilar años únicos
       $(".year").each(function () {
           const year = $(this).text().trim(); // Limpiar espacios
           if (year !== "" && year !== "All Years") {
               yearSet.add(year);
+              yearCount[year] = (yearCount[year] || 0) + 1;
           }
       });
 
@@ -567,7 +569,7 @@ document.addEventListener("DOMContentLoaded", function () {
       yearFilter.empty(); // Limpiar el filtro
       yearFilter.append('<option value="">All Years</option>');
       yearArray.forEach((year) => {
-          yearFilter.append(`<option value="${year}">${year}</option>`);
+          yearFilter.append(`<option value="${year}">${year} (${yearCount[year]}) </option>`);
       });
 
       // Limpiar y ordenar proyectos
