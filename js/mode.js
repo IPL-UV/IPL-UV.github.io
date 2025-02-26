@@ -39,7 +39,7 @@ function updateFilters() {
     const yearMatch = (year === "" || itemYear === year);
     const monthMatch = (month === "" || itemMonth === month);
     const speakerMatch = (speaker === "" || itemSpeaker === speaker);
-
+    addEventListener
     // Display or hide items based on selected filters
     if (yearMatch && monthMatch && speakerMatch) {
       item.style.display = 'flex';
