@@ -19,9 +19,6 @@ function author_tex_reformat(input) {
   }
 }
 
-
-
-
 class BibtexParser {
   constructor() {
     this.pos = 0;
@@ -534,6 +531,8 @@ document.addEventListener("DOMContentLoaded", function () {
       let yearSet = new Set();
       let projectSet = new Set();
       let yearCount = {};
+      let projectCount = {};
+      
 
       // Recopilar años únicos
       $(".year").each(function () {
@@ -552,7 +551,10 @@ document.addEventListener("DOMContentLoaded", function () {
                   .split(",")
                   .map((p) => p.trim()) // Limpiar espacios
                   .filter((p) => p !== ""); // Ignorar vacíos
-              formattedProjects.forEach((project) => projectSet.add(project));
+              formattedProjects.forEach((project) => {
+                projectSet.add(project);
+                projectCount[project] = (projectCount[project] || 0) + 1; // Contar ocurrencias de cada proyecto
+              });
           }
       });
 
@@ -580,9 +582,10 @@ document.addEventListener("DOMContentLoaded", function () {
       // Agregar opciones al filtro de proyectos
       const projectFilter = $('#project-filter');
       projectFilter.empty(); // Limpiar el filtro
-      projectFilter.append('<option value="">All Projectssaasda</option>');
+      projectFilter.append('<option value="">All Projects</option>');
       projectArray.forEach((project) => {
-          projectFilter.append(`<option value="${project}">${project}</option>`);
+          console.log(`Adding project: ${project} (${projectCount[project]})`); // Debug
+          projectFilter.append(`<option value="">${project} (${projectCount[project]}) </option>`);
       });
 
       console.log("Years and projects added:", yearArray, projectArray);
@@ -618,6 +621,7 @@ document.addEventListener("DOMContentLoaded", function () {
       console.log("Updating project filter");
       const selectedYear = document.getElementById('year-filter').value;
       let projectSet = new Set();
+      let projectCount = {}; // Contador de proyectos
   
       // Collect projects for the selected year
       $(".bib-item").each(function () {
@@ -626,8 +630,15 @@ document.addEventListener("DOMContentLoaded", function () {
   
           if ((selectedYear === "" || itemYear === selectedYear) && itemProjects) {
               const formattedProjects = (new BibtexDisplay()).formatProjects(itemProjects); // Limpieza
-              formattedProjects.split(',').forEach(project => {
-                projectSet.add(project.trim());
+              // Aplicar la lógica de eliminación de espacios vacíos
+              const cleanProjects = formattedProjects
+                  .split(",")
+                  .map(p => p.trim()) // Limpiar espacios
+                  .filter(p => p !== ""); // Ignorar vacíos
+              
+              cleanProjects.forEach(project => {
+                  projectSet.add(project);
+                  projectCount[project] = (projectCount[project] || 0) + 1; // Contar ocurrencias de cada proyecto
               });
           }
       });
@@ -635,10 +646,14 @@ document.addEventListener("DOMContentLoaded", function () {
       // Update project filter options
       $('#project-filter').empty();
       $('#project-filter').append('<option value="">All Projects</option>');
+
+      console.log("projectSet", projectSet); // Debug
+      console.log("projectCount", projectCount); // Debug
+
   
       projectSet.forEach(project => {
           if (project && project.trim() !== "" && project !== "Project") {
-              $('#project-filter').append(`<option value="${project}">${project}</option>`);
+              $('#project-filter').append(`<option value="${project}">${project} (${projectCount[project]})</option>`);
           }
       });
   
