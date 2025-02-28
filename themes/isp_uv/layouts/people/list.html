@@ -1,54 +1,132 @@
 {{ define "main" }}
-<div class="content-container">
-    {{ $groups := .Pages.GroupByParam "role" }}
-    {{ $order := slice "full professors" "associate professors" "assistant professors" "senior research scientists" "postdocs" "phd students" "visitors" "alumni"}}
-    {{ range $order }}
-    {{ with index (where $groups "Key" .) 0 }}
-    <div class="title-container">
-        <h1> {{ .Key | title }} </h1>
-    </div>
-    <div class="card container backcard">
-        {{ range .Pages }}
-        {{ $img := printf "%s" (relURL (printf "images/people/%s" .Params.img)) }}
-        {{ $name := .Title }}
-        {{ $link_image := .Params.link_image }}
-        <div class="card cards">
-            <div class="row g-0">
-                <div class="col-md-3">
-                    {{ if $link_image }}
-                    <a href="{{ $link_image }}">
-                    {{ end }}
-                    <img src="{{ $img }}" class="img-fluid" alt="Image of {{ $name }}">
-                    </a>
+
+    <div class="container mt-5">
+        {{ $groups := .Pages.GroupByParam "role" }}
+        {{ $order := slice "full professors" "associate professors" "assistant professors" "senior research scientists" "postdocs" "phd students" "visitors" "alumni" }}
+        {{ range $order }}
+
+            {{ with index (where $groups "Key" .) 0 }}
+                <div class="title-container">
+                    <h1> {{ .Key | title }} </h1>
                 </div>
-                <div class="col-md-9">
-                    <div class="card-body">
-                        <h5 class="card-title"><b>{{ .Title }}</b></h5>
-                        <p class="card-text">{{ .Content | markdownify }}</p>
-                        <div class="card-links">
-                            {{ with .Params.googlescholar }} <a href="{{ . }}"><img src={{ relURL  "images/people/redes/gscholar.webp"}} ></a> {{ end }}
-                            {{ with .Params.orcid }} <a href="{{ . }}"><img src={{ relURL  "images/people/redes/orcid.webp"}}></a> {{ end }}
-                            {{ with .Params.twitter }} <a href="{{ . }}"><img src={{ relURL "images/people/redes/twitter.webp" }}></a> {{ end }}
-                            {{ with .Params.github }} <a href="{{ . }}"><img src={{ relURL "images/people/redes/github.webp" }}></a> {{ end }}
-                            {{ with .Params.semanticscholar }} <a href="{{ . }}"><img src={{ relURL "images/people/redes/semantic.webp" }}></a> {{ end }}
-                            {{ with .Params.researchgate }} <a href="{{ . }}"><img src={{ relURL "images/people/redes/rg.webp" }}></a> {{ end }}
-                            {{ with .Params.uv }} <a href="{{ . }}"><img src={{ relURL "images/people/redes/uv.webp" }}></a> {{ end }}
-                            {{ with .Params.linkedin }} <a href="{{ . }}"><img src={{ relURL "images/people/redes/linkedin.webp" }}></a> {{ end }}
-                            {{ with .Params.ieee }} <a href="{{ . }}"><img src={{ relURL "images/people/redes/ieee.webp" }}></a> {{ end }}
-                            {{ with .Params.dblp }} <a href="{{ . }}"><img src={{ relURL "images/people/redes/dblp.webp" }}></a> {{ end }}
-                            {{ with .Params.academia }} <a href="{{ . }}"><img src={{ relURL "images/people/redes/academia.webp" }}></a> {{ end }}
-                            {{ with .Params.scopus }} <a href="{{ . }}"><img src={{ relURL "images/people/redes/scopus.webp" }}></a> {{ end }}
-                            {{ with .Params.website }} <a href="{{ . }}"><img src={{ relURL "images/people/redes/website.webp" }}></a> {{ end }}
-                            {{ with .Params.youtube }} <a href="{{ . }}"><img src={{ relURL "images/people/redes/youtube.webp" }}></a> {{ end }}                              
-                            {{ with .Params.bluesky }} <a href="{{ . }}"><img src={{ relURL "images/people/redes/bluesky.webp" }}></a> {{ end }}                              
+                <div class="row g-1 justify-content-center"> <!-- Agregar justify-content-center aquí -->
+                    {{ range .Pages }}
+                        {{ $img := printf "%s" (relURL (printf "images/people/%s" .Params.img)) }}
+                        {{ $name := .Title }}
+                        {{ $link_image := .Params.link_image }}
+                        
+                        <div class="col-2 col-md-2 col-lg-2 mb-4"> <!-- Mantener col-2 para pantallas más grandes -->
+                            <div class="people-card">
+                                <img src="{{ $img }}" class="img-fluid" alt="Image of {{ $name }}">
+                                <h5>{{ .Title }}</h5>
+                                <div>
+                                    {{ with .Params.googlescholar }} <a href="{{ . }}" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-google-scholar" style="color: #336daf;" ></i></a> {{ end }}
+                                    {{ with .Params.orcid }} <a href="{{ . }}" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-orcid" style="color: #a9cf42;"></i></a> {{ end }}
+                                    {{ with .Params.twitter }} <a href="{{ . }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-x-twitter" style="color: #080808;"></i></a> {{ end }}
+                                    {{ with .Params.github }} <a href="{{ . }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" style="color: #080808;"></i></a> {{ end }}
+                                    {{ with .Params.researchgate }} <a href="{{ . }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-researchgate" style="color: #60d2be;"></i></a> {{ end }}
+                                    {{ with .Params.linkedin }} <a href="{{ . }}" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin" style="color: #2a66c2;"></i></a> {{ end }}
+                                    {{ with .Params.website }} <a href="{{ . }}" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-user" style="color: #000000;"></i></a> {{ end }}
+                                    {{ with .Params.youtube }} <a href="{{ . }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube" style="color: #f50234;"></i></a> {{ end }} 
+                                    {{ with .Params.bluesky }} <a href="{{ . }}" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-bluesky" style="color: #3a85ff;"></i></a> {{ end }}                                 
+                                </div>
+                                <div class="more-info">
+                                    <p class="card-text">{{ .Content | markdownify }}</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                        
+                    {{ end }}
                 </div>
-            </div>    
-        </div>
+            {{ end }}
         {{ end }}
     </div>
-    {{ end }}
-    {{ end }}
-</div>
+
+    <style>
+        .people-card {
+            padding: 8px;
+            padding-top: 10px;
+            text-align: center;
+            cursor: pointer;
+            overflow: visible;
+            position: relative;
+            background: white;
+            border: 1px solid #ddd;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+            height: 300px;
+
+        }
+        .people-card img {
+            object-fit: cover;
+            height: 200px;
+            width: 100%;
+            margin-bottom: 0.2rem;
+        }
+        .more-info {
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            top: 100%;
+            left: -0.6%;
+            width: 101%;
+            border: 1px solid #ddd;
+            padding: 5px;
+            z-index: 1;
+            background: white;
+            border-top: none;
+        }
+        .people-card:hover {
+            visibility: visible;
+            z-index: 2;
+        }
+        .people-card:hover .more-info {
+            visibility: visible;
+            opacity: 3;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+            background: white;
+        }
+        .row {
+            margin-bottom: 1rem !important;
+        }
+        .row .col-2 {
+            margin-bottom: 0.5rem !important;
+        }
+
+
+        /* Media Query para pantallas de hasta 1399px de ancho */
+        @media (max-width: 1399px) {
+            .col-2 {
+                flex: 0 0 19.2%; /* Esto ajusta a 5 columnas por fila */
+            }
+        }
+
+        /* Media Query para pantallas de hasta 1199px de ancho */
+        @media (max-width: 1199px) {
+            .col-2 {
+                flex: 0 0 24.8%; /* Esto ajusta a 4 columnas por fila */
+            }
+        }
+
+        /* Media Query para pantallas de hasta 991px de ancho */
+        @media (max-width: 991px) {
+            .col-2 {
+                flex: 0 0 32%; /* Esto ajusta a 3 columnas por fila */
+            }
+        }
+
+        /* Media Query para pantallas de hasta 767px de ancho */
+        @media (max-width: 767px) {
+            .col-2 {
+                flex: 0 0 48%; /* Esto ajusta a 2 columnas por fila */
+            }
+        }
+
+        /* Media Query para pantallas de hasta 480px de ancho */
+        @media (max-width: 430px) {
+            .col-2 {
+                flex: 0 0 65%; /* Esto ajusta a 1 columna por fila */
+            }
+        }
+    </style>
+
 {{ end }}

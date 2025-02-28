@@ -510,6 +510,7 @@ function toggleBibtex(button) { // Función que permite ver el BibTeX
 }
 
 document.addEventListener("DOMContentLoaded", function () {
+
   console.log("DOM fully loaded and parsed");
   let bibtexDisplay = new BibtexDisplay();
   let bibtexData = document.getElementById('bibtex_input').value;
@@ -570,8 +571,10 @@ document.addEventListener("DOMContentLoaded", function () {
       const yearFilter = $('#year-filter');
       yearFilter.empty(); // Limpiar el filtro
       yearFilter.append('<option value="">All Years</option>');
+      // yearFilter.append('<li value="">All Years</li>');
       yearArray.forEach((year) => {
           yearFilter.append(`<option value="${year}">${year} (${yearCount[year]}) </option>`);
+          // yearFilter.append(`<li value="${year}">${year} (${yearCount[year]}) </li>`);
       });
 
       // Limpiar y ordenar proyectos
@@ -583,9 +586,11 @@ document.addEventListener("DOMContentLoaded", function () {
       const projectFilter = $('#project-filter');
       projectFilter.empty(); // Limpiar el filtro
       projectFilter.append('<option value="">All Projects</option>');
+      // projectFilter.append('<li value="">All Projects</li>');
       projectArray.forEach((project) => {
           console.log(`Adding project: ${project} (${projectCount[project]})`); // Debug
           projectFilter.append(`<option value="">${project} (${projectCount[project]}) </option>`);
+          // projectFilter.append(`<li value="">${project} (${projectCount[project]}) </li>`);
       });
 
       console.log("Years and projects added:", yearArray, projectArray);
@@ -646,6 +651,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Update project filter options
       $('#project-filter').empty();
       $('#project-filter').append('<option value="">All Projects</option>');
+      // $('#project-filter').append('<li value="">All Projects</li>');
 
       console.log("projectSet", projectSet); // Debug
       console.log("projectCount", projectCount); // Debug
@@ -654,6 +660,7 @@ document.addEventListener("DOMContentLoaded", function () {
       projectSet.forEach(project => {
           if (project && project.trim() !== "" && project !== "Project") {
               $('#project-filter').append(`<option value="${project}">${project} (${projectCount[project]})</option>`);
+              // $('#project-filter').append(`<li value="${project}">${project} (${projectCount[project]})</li>`);
           }
       });
   
