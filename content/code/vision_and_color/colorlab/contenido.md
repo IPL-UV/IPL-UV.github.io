@@ -13,12 +13,12 @@ layout: contenido
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="shortcut icon" href=/images/isp_ico.webp type="image/x-icon">
 <link href="https://fonts.cdnfonts.com/css/twentieth-century-for-kenmore" rel="stylesheet">
-<link rel="stylesheet" href=/style/style.css>
-<link rel="stylesheet" href=/style/bootstrap-cosmo.min.css>
-<link rel="stylesheet" href=/style/bootstrap-theme.css>
-<link rel="stylesheet" href=/style/bootstrap.css>
-<link rel="stylesheet" href=/style/bootstrap.min.css>
-<link rel="stylesheet" href=/style/bootswatch.min.css>
+<!--
+<link rel="stylesheet" href=/css/bootstrap.min.css>
+<link rel="stylesheet" href=/css/bootstrap-theme.css>
+-->
+<link rel="stylesheet" href=/css/style.css>
+
 
 <script src=/js/mode.js></script>
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
@@ -33,14 +33,14 @@ layout: contenido
 </script>
 </head>
 <body>
-  
+
 
   <main>
     <div class="container">
-      
+
 <div class="layout-container">
 
-  
+
   <div class="page-header">
     <h1>ColorLab: The Matlab Toolbox for Colorimetry and Color Vision</h1>
     <p>Jesús Malo &amp; Maria José Luque</p>
@@ -49,11 +49,11 @@ layout: contenido
 
   </div>
 
-  
+
   <section class="page-content">
 
-    
-    
+
+
 <p><p><strong>ColorLab</strong> is a color computation and visualization toolbox to be used in the MATLAB environment. <strong>ColorLab</strong> is intended to deal with color in general-purpose quantitative colorimetric applications as color image processing and psychophysical experimentation.</p>
 <p><strong>ColorLab</strong> uses colorimetrically meaningful representations of color and color images (tristimulus values, chromatic coordinates and luminance, or, dominant wavelength, purity and luminance), in any primaries system of the tristimulus colorimetry (including CIE standards as CIE XYZ or CIE RGB). <strong>ColorLab</strong> relates this variety of colorimetric representations to the usual device-dependent discrete-color representation, i.e. it solves the problem of displaying a colorimetrically specified scene in the monitor within the accuracy of the VGA.</p>
 <p>A number of other interesting color representations are also provided, as CIE uniform color spaces (as CIE Lab and CIE Luv, opponent color representations based on advanced color vision models, and color appearance representations (RLab, LLab, SVF and CIECAMs). All these representations are invertible, so the result of image processing made in these colorimetrically meaningful representations can always be inverted back to the tristimulus representation at hand, and be displayed. <strong>ColorLab</strong> includes useful visualization routines to represent colors in the tristimulus space or in the chromatic diagram of any color basis, as well as an advanced vector quantization scheme for color palette design. An extensive color data base is also included, with the CIE 1931 color matching functions, reflectance data of 1250 chips from the Munsell Book of Color, McAdam ellipses, normalized spectra of a number of standard CIE illuminants, matrices to change to a number of tristimulus representations, and calibration data of an ordinary CRT monitor.</p>
@@ -79,7 +79,7 @@ layout: contenido
 <figure>
   <figcaption>
   <b>Desaturating clock: </b>In this example the digital true-color image is converted into tristimulus values, chromatic coordinates and luminance, and finally, dominant wavelength, excitation purity and luminance. A constant factor is applied to the purity (see the contraction of chromatic coordinates in the diagram) and the palette is inverted back into digital counts so that it can be displayed.
-  </figcaption>  
+  </figcaption>
   <img src="/images/code/colorfulness.webp" alt="Desaturating clock" style="width: 90%">
 </figure>
 <h1 id="hue-based-segmentation-and-edition-using-the-dominant-wavelength">Hue-based segmentation and edition using the dominant wavelength</h1>
@@ -88,7 +88,7 @@ layout: contenido
   <div style="width: 90%">
     <figcaption style="text-align: justify;">
     <b>Artificial Flowers: </b>Red flowers are segmented by selecting the colors in a certain range of dominant wavelengths.
-    </figcaption>  
+    </figcaption>
     <div>
       <img src="/images/code/hue1.webp" alt="hue1">
       <img src="/images/code/hue2.webp" alt="hue2">
@@ -100,7 +100,7 @@ layout: contenido
 <figure>
   <figcaption>
   <b>Marilyn in dim light: </b>The reduction in the length of the tristimulus does not change the intersection with the chromatic diagram.
-  </figcaption>  
+  </figcaption>
   <img src="/images/code/luminance.webp" alt="Desaturating clock" style="width: 90%">
 </figure>
 <h1 id="changing-the-spectral-illumination-standard-and-user-defined-illuminants">Changing the spectral illumination (standard and user defined illuminants)</h1>
@@ -108,7 +108,7 @@ layout: contenido
 <figure>
   <figcaption>
   <b>The pink room key: </b>Digital images can be turned into spectral arrays and these can be illuminated with customized light.
-  </figcaption>  
+  </figcaption>
   <img src="/images/code/irradiance.webp" alt="Desaturating clock" style="width: 90%">
 </figure>
 <h1 id="playing-with-mcadam-ellipses-and-munsell-chips">Playing with McAdam ellipses and Munsell chips</h1>
@@ -118,7 +118,7 @@ The second example shows a set of Munsell chips of different chroma which are ch
 <figure>
   <figcaption>
   <b>Color discrimination (McAdam ellipses, top) and Uniformly distributed colors (Munsell chips, bottom): </b>Bigger discrimination in the blue-purple region than in the green region. Anisotropic JNDs in color is an example of the MAximum Differentiation (MAD) concept [<a href="https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_visioncolor/malo15a-reprint.pdf">Malo & Simoncelli SPIE 15</a>]. Uniformly distributed colors (Munsell chips, bottom): Constant perceptual differences in Munsell chips imply they distribute in ellipsoids around the white point similarly to the corresponding McAdam ellipse.
-  </figcaption>  
+  </figcaption>
   <img src="/images/code/mcadam.webp" alt="Desaturating clock" style="width: 90%">
 </figure>
 <h1 id="chromatic-induction-in-llab">Chromatic induction in LLab</h1>
@@ -126,7 +126,7 @@ The second example shows a set of Munsell chips of different chroma which are ch
 <figure>
   <figcaption>
   <b>Prediction of induced color with LLab: </b>The Llab non-linear color representation was used to compute the corresponding colors of the central test in a gray surround. The results are shown in the CIE xy diagram. Note that as the surround increases the colorfulness, an oposite reaction is induced in the test. This numerical result was used to generate a set of different stimuli in a constant gray background giving rise to the same perception as the central test on a changing background (see below).
-  </figcaption>  
+  </figcaption>
   <img src="/images/code/color_junto.webp" alt="Desaturating clock" style="width: 90%">
 </figure>
 <h1 id="download-colorlab">Download ColorLab</h1>
@@ -172,7 +172,7 @@ The second example shows a set of Munsell chips of different chroma which are ch
 </li>
 </ul>
 </p>
-  </section> 
+  </section>
   <aside class="box-gallery box-gallery-left">
     <div class="gallery-grid">
         <div class="gallery-item">
@@ -186,10 +186,10 @@ The second example shows a set of Munsell chips of different chroma which are ch
         </div>
     </div>
   </aside>
-  
 
-  
-  
+
+
+
   <aside class="box-gallery box-gallery-right">
     <div class="gallery-grid">
         <div class="gallery-item">
@@ -208,7 +208,7 @@ The second example shows a set of Munsell chips of different chroma which are ch
     </div>
     </div>
   </aside>
-  
+
 
 </div>
 
@@ -258,8 +258,8 @@ The second example shows a set of Munsell chips of different chroma which are ch
 }
 
 .page-header p {
-  margin: 0.2rem 0; 
-  padding: 0.1rem 0.6rem; 
+  margin: 0.2rem 0;
+  padding: 0.1rem 0.6rem;
   font-size: clamp(0.6rem, 2.5vw, 1rem);
   color: #5bc0de;
 }
@@ -270,7 +270,7 @@ The second example shows a set of Munsell chips of different chroma which are ch
 
 .page-content {
   grid-area: content;
-  
+
 }
 
 .page-content a {
@@ -281,9 +281,9 @@ The second example shows a set of Munsell chips of different chroma which are ch
 
 .page-content figure {
   grid-area: left;
-  display: flex; 
-  flex-direction: column; 
-  align-items: center; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   margin: 0 auto;
 }
@@ -375,7 +375,7 @@ The second example shows a set of Munsell chips of different chroma which are ch
 
 }
 
-.box-gallery-right, 
+.box-gallery-right,
 .box-gallery-left {
   background-color: transparent;
   padding: 1rem;

@@ -41,8 +41,3 @@ The activities in ISP involve strong interactions between the theoretical and th
 The team has received funding from the EU excellence pillars in the last years: (1) 2 ERC grants (consolidator and [synergy](https://www.usmile-erc.eu/)) related to geosciences and climate modeling with AI, (2) seven H2020 projects for the development of AI both theoretically and with Earth, vision, and societal applications, and (3) involvement in 6 MINECO projects at the intersection of remote sensing, Earth, and vision sciences. We participate in and coordinate top-notch research projects from the last 5 years. See the [Projects](projects.html) page.
 
 The group is also very active in technology transfer internationally, with projects in collaboration with [ESA](https://www.esa.int/), [NASA](https://www.nasa.gov), [EUMETSAT](https://www.eumetsat.int), or [Google](https://www.google.com/). See the [Collaborators](collaborators.html) page. The group is committed to higher-level education: ISP lectures in several endorsed masters, participates in COST actions, coordinates activities in an [ELLIS research program](https://ellis.eu/programs/machine-learning-for-earth-and-climate-sciences), and is a core member of [ELISE](https://www.elise-ai.eu/) and [i-AIDA](https://www.i-aida.org/) for the excellence of AI science, transfer, and education in Europe. We contribute to knowledge transfer, as well as to the development and adoption of AI in the industry and private sectors.
-
-
-
-
-
