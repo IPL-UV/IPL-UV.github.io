@@ -11,7 +11,7 @@ params:
   twitter: 'http://twitter.com/isp_uv_es'
   github: 'https://github.com/IPL-UV/'
   researchgate: 'https://www.researchgate.net/profile/Luis-Gomez-Chova'
-  uv: 'https://www.uv.es/chovago/'
+  website: 'https://www.uv.es/chovago/'
   linkedin: 'https://www.linkedin.com/in/luis-gomez-chova'
   link_image: 'https://www.uv.es/~chovago/'
   youtube: https://www.youtube.com/watch?v=W6KW9ofdCwY
