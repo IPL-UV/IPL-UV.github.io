@@ -5,7 +5,7 @@ title: 'Valero Laparra'
 role: associate professors
 params:
   img: valero.webp
-  scholar: 'https://scholar.google.com/citations?user=dNt_xikAAAAJ&hl=ca'
+  googlescholar: 'https://scholar.google.com/citations?user=dNt_xikAAAAJ&hl=ca'
   orcid: 'https://orcid.org/0000-0001-7531-9890'
   link_image: 'https://www.uv.es/lapeva/'
 ---

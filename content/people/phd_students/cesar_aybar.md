@@ -5,7 +5,7 @@ role: "phd students"
 weight: 1
 params:
   img: cesar.webp
-  scholar: 'https://scholar.google.com/citations?user=rfF51ocAAAAJ'
+  googlescholar: 'https://scholar.google.com/citations?user=rfF51ocAAAAJ'
   github: 'https://github.com/csaybar'
 ---
 

@@ -6,7 +6,7 @@ role: assistant professors
 weight: 2
 params:
   img: julia.webp
-  scholar: 'https://scholar.google.es/citations?hl=es&user=pj5R_mQAAAAJ'
+  googlescholar: 'https://scholar.google.es/citations?hl=es&user=pj5R_mQAAAAJ'
   orcid: 'https://orcid.org/0000-0003-0876-8340'
   link_image: 'https://scholar.google.ca/citations?user=pj5R_mQAAAAJ&hl=en'
 ---

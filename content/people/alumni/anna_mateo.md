@@ -5,7 +5,7 @@ title: 'Anna Maria Mateo'
 role: alumni
 params:
   img: Anna_maria.webp
-  scholar: 'https://scholar.google.es/citations?user=UjbITuIAAAAJ&hl=es'
+  googlescholar: 'https://scholar.google.es/citations?user=UjbITuIAAAAJ&hl=es'
   orcid: 'https://orcid.org/0000-0002-2251-0410'
   researchgate: 'https://www.researchgate.com/profile/Anna-Mateo-Sanchis'
   linkedin: 'https://www.linkedin.com/in/anna-mateo-sanchis/'

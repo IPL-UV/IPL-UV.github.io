@@ -5,7 +5,7 @@ role: "phd students"
 weight: 1
 params:
   img: 06_Pablo_THIS.webp
-  scholar: 'https://scholar.google.com/citations?user=figpQ9MAAAAJ&hl=es'
+  googlescholar: 'https://scholar.google.com/citations?user=figpQ9MAAAAJ&hl=es'
   github: 'https://github.com/pablohc97'
   linkedin: 'https://www.linkedin.com/in/pablohernandezc/?originalSubdomain=es'
 ---
