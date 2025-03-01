@@ -389,7 +389,10 @@ class BibtexDisplay {
           var key = keys[index];
           var value = entry[key] || "";
           key = key.toLowerCase();
-
+          if (key === "year") {
+            // Eliminar punto final, si lo hubiera
+            value = value.replace(/\.$/, "").trim();
+          }
           if (key === "author") { // *
               value = this.formatAuthors(value); // Formato
               value = this.fixValue(value); // Patrones
@@ -509,6 +512,91 @@ function toggleBibtex(button) { // Función que permite ver el BibTeX
   bibtexElement.slideToggle();
 }
 
+function createPaginatedButtons({
+  containerId,
+  prevId,
+  nextId,
+  items,
+  itemCount,
+  itemsPerView = 3,  // cuántos ítems se ven a la vez
+  step = 2,          // cuántos ítems se avanza/retrocede cada vez
+  onClick,
+  allLabel,
+  onAllClick
+}) {
+  const container = document.getElementById(containerId);
+  const prevBtn = document.getElementById(prevId);
+  const nextBtn = document.getElementById(nextId);
+
+  let startIndex = 0; // índice del primer ítem que se muestra
+
+  function render() {
+    container.innerHTML = "";
+
+    // (1) Botón "All ..." si procede
+    if (allLabel && onAllClick) {
+      const allBtn = document.createElement("button");
+      allBtn.classList.add("filter-button");
+      allBtn.textContent = allLabel;
+      allBtn.addEventListener("click", () => onAllClick());
+      container.appendChild(allBtn);
+    }
+
+    // (2) Calcular los ítems que se mostrarán
+    const visibleItems = items.slice(startIndex, startIndex + itemsPerView);
+
+    // Crear un botón por cada ítem
+    visibleItems.forEach(item => {
+      const btn = document.createElement("button");
+      btn.classList.add("filter-button");
+      const count = itemCount[item] ? ` (${itemCount[item]})` : "";
+      btn.textContent = item + count;
+      btn.addEventListener("click", () => onClick(item));
+      container.appendChild(btn);
+    });
+
+    // (3) Habilitar/deshabilitar la flecha "prev"
+    if (startIndex > 0) {
+      prevBtn.disabled = false;
+    } else {
+      prevBtn.disabled = true;
+    }
+
+    // (4) Habilitar/deshabilitar la flecha "next"
+    if (startIndex + itemsPerView < items.length) {
+      nextBtn.disabled = false;
+    } else {
+      nextBtn.disabled = true;
+    }
+  }
+
+  // Flecha "Anterior" (<)
+  prevBtn.addEventListener("click", () => {
+    startIndex -= step;
+    if (startIndex < 0) {
+      startIndex = 0;
+    }
+    render();
+  });
+
+  // Flecha "Siguiente" (>)
+  nextBtn.addEventListener("click", () => {
+    startIndex += step;
+    // Ajustar para no pasar del final
+    const maxStartIndex = Math.max(0, items.length - itemsPerView);
+    if (startIndex > maxStartIndex) {
+      startIndex = maxStartIndex;
+    }
+    render();
+  });
+
+  // Primera renderización
+  render();
+}
+
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
 
   console.log("DOM fully loaded and parsed");
@@ -526,153 +614,217 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById('loading-spinner').style.display = 'none';
     });
   }
-
   function addYearsAndProjects() {
-      console.log("Adding years and projects");
-      let yearSet = new Set();
-      let projectSet = new Set();
-      let yearCount = {};
-      let projectCount = {};
-      
-
-      // Recopilar años únicos
-      $(".year").each(function () {
-          const year = $(this).text().trim(); // Limpiar espacios
-          if (year !== "" && year !== "All Years") {
-              yearSet.add(year);
-              yearCount[year] = (yearCount[year] || 0) + 1;
-          }
-      });
-
-      // Recopilar proyectos únicos
-      $(".bib-item").each(function () {
-          const projectText = $(this).find(".project").text().trim();
-          if (projectText) {
-              const formattedProjects = projectText
-                  .split(",")
-                  .map((p) => p.trim()) // Limpiar espacios
-                  .filter((p) => p !== ""); // Ignorar vacíos
-              formattedProjects.forEach((project) => {
-                projectSet.add(project);
-                projectCount[project] = (projectCount[project] || 0) + 1; // Contar ocurrencias de cada proyecto
-              });
-          }
-      });
-
-      // Limpiar y ordenar años
-      const yearArray = Array.from(yearSet).sort((a, b) => {
-          // Ordenar años numéricamente, pero mantener "Submitted" y "In preparation" al final
-          if (isNaN(a)) return 1;
-          if (isNaN(b)) return -1;
-          return b - a;
-      });
-
-      // Agregar opciones al filtro de años
-      const yearFilter = $('#year-filter');
-      yearFilter.empty(); // Limpiar el filtro
-      yearFilter.append('<option value="">All Years</option>');
-      // yearFilter.append('<li value="">All Years</li>');
-      yearArray.forEach((year) => {
-          yearFilter.append(`<option value="${year}">${year} (${yearCount[year]}) </option>`);
-          // yearFilter.append(`<li value="${year}">${year} (${yearCount[year]}) </li>`);
-      });
-
-      // Limpiar y ordenar proyectos
-      const projectArray = Array.from(projectSet)
-          .map((p) => p.charAt(0).toUpperCase() + p.slice(1).toLowerCase()) // Capitalizar
-          .sort();
-
-      // Agregar opciones al filtro de proyectos
-      const projectFilter = $('#project-filter');
-      projectFilter.empty(); // Limpiar el filtro
-      projectFilter.append('<option value="">All Projects</option>');
-      // projectFilter.append('<li value="">All Projects</li>');
-      projectArray.forEach((project) => {
-          console.log(`Adding project: ${project} (${projectCount[project]})`); // Debug
-          projectFilter.append(`<option value="">${project} (${projectCount[project]}) </option>`);
-          // projectFilter.append(`<li value="">${project} (${projectCount[project]}) </li>`);
-      });
-
-      console.log("Years and projects added:", yearArray, projectArray);
-  }
-
-
-
-  function updateFilters() {
-    console.log("Updating filters");
-    const year = document.getElementById('year-filter').value;
-    const project = document.getElementById('project-filter').value;
-    const items = document.querySelectorAll('.bib-item');
-    console.log("Filtering by year:", year, "and project:", project);
-
-    // Show or hide items based on filters
-    items.forEach(item => {
-      const itemYear = item.querySelector('.year') ? item.querySelector('.year').textContent.trim() : '';
-      const itemProjects = item.querySelector('.project') ? item.querySelector('.project').textContent.trim() : '';
-
-      const itemProjectsArray = itemProjects.split(",").map(p => p.trim().replace(/ Project$/, ""));
-
-      const yearMatch = (year === "" || itemYear === year);
-      const projectMatch = (project === "" || itemProjectsArray.includes(project));
-
-      item.style.display = (yearMatch && projectMatch) ? 'block' : 'none';
+    console.log("Adding years and projects");
+    let yearSet = new Set();
+    let projectSet = new Set();
+    let yearCount = {};
+    let projectCount = {};
+  
+    // ===== 1) Recopilar años únicos y contarlos  =====
+    $(".year").each(function () {
+      const year = $(this).text().trim();
+      if (year !== "" && year !== "All Years") {
+        yearSet.add(year);
+        yearCount[year] = (yearCount[year] || 0) + 1;
+      }
+    });
+  
+    // ===== 2) Recopilar proyectos únicos y contarlos =====
+    $(".bib-item").each(function () {
+      const projectText = $(this).find(".project").text().trim();
+      if (projectText) {
+        // Por si hay proyectos separados por comas
+        const formattedProjects = projectText
+          .split(",")
+          .map((p) => p.trim())
+          .filter((p) => p !== "");
+        formattedProjects.forEach((p) => {
+          projectSet.add(p);
+          projectCount[p] = (projectCount[p] || 0) + 1;
+        });
+      }
+    });
+  
+    // ===== 3) Transformar los sets en arrays y ordenarlos =====
+    const yearArray = Array.from(yearSet).sort((a, b) => {
+      // Empuja cosas no numéricas al final (ej: "In preparation")
+      if (isNaN(a)) return 1;
+      if (isNaN(b)) return -1;
+      return b - a; // orden descendente
+    });
+  
+    const projectArray = Array.from(projectSet)
+      .map((p) => p.charAt(0).toUpperCase() + p.slice(1).toLowerCase()) // capitalizar
+      .sort();
+  
+    // ===== 4) (Opcional) Vaciar los <select> para no duplicar =====
+    $('#year-filter').empty().append('<option value="">All Years</option>');
+    yearArray.forEach(y => {
+      $('#year-filter').append(`<option value="${y}">${y} (${yearCount[y]})</option>`);
+    });
+    
+    $('#project-filter').empty().append('<option value="">All Projects</option>');
+    // (Aun están en el DOM, pero ocultos)
+    
+  
+    // ===== 5) Crear los botones de años =====
+    createPaginatedButtons({
+      containerId: "year-buttons-container",
+      prevId: "prev-year-page",
+      nextId: "next-year-page",
+      items: yearArray,
+      itemCount: yearCount,
+      itemsPerPage: 1,
+      // callback para cuando se hace click en un botón:
+      onClick: (selectedYear) => {
+        console.log("Botón de año pulsado:", selectedYear);
+        document.getElementById('year-filter').value = selectedYear; // Asignamos
+        updateFilters(); // Filtramos
+      },
+      // texto para "All" (opcional). Ejemplo, mostrar un botón "All Years" que limpia el filtro
+      allLabel: "All Years",
+      onAllClick: () => {
+        document.getElementById('year-filter').value = "";
+        updateFilters();
+      }
     });
 
+    // ===== 6) Crear los botones de proyectos =====
+    createPaginatedButtons({
+      containerId: "project-buttons-container",
+      prevId: "prev-project-page",
+      nextId: "next-project-page",
+      items: projectArray,
+      itemCount: projectCount,
+      itemsPerPage: 1,
+      onClick: (selectedProject) => {
+        document.getElementById('project-filter').value = selectedProject;
+        updateFilters();
+      },
+      allLabel: "All Projects",
+      onAllClick: () => {
+        document.getElementById('project-filter').value = "";
+        updateFilters();
+      }
+    });
+  
+    console.log("Years and projects added:", yearArray, projectArray);
+  }
+  
+  function updateFilters() {
+    console.log("Updating filters");
+    const year = document.getElementById('year-filter').value.trim().replace(/\.$/, "");
+    console.log("Valor en year-filter =", JSON.stringify(year));
+    const project = document.getElementById('project-filter').value;
+    const items = document.querySelectorAll('.bib-item');
+  
+    items.forEach(item => {
+      // Usa let en vez de const, así podrás re-asignar
+      let itemYear = item.querySelector('.year')
+        ? item.querySelector('.year').textContent.trim()
+        : '';
+  
+      // Quitar el punto final, si lo hay
+      itemYear = itemYear.replace(/\.$/, "");
+          // Muestra EXACTAMENTE qué se compara:
+      console.log("Comparando itemYear =", JSON.stringify(itemYear),
+      "con selectedYear =", JSON.stringify(year),
+      " => coinciden?", (itemYear === year));
+  
+      const itemProjects = item.querySelector('.project')
+        ? item.querySelector('.project').textContent.trim()
+        : '';
+  
+      const itemProjectsArray = itemProjects
+        .split(",")
+        .map(p => p.trim().replace(/ Project$/, ""));
+  
+      const yearMatch = (year === "" || itemYear === year);
+      const projectMatch = (project === "" || itemProjectsArray.includes(project));
+  
+      item.style.display = (yearMatch && projectMatch) ? 'block' : 'none';
+    });
+  
     updateProjectFilter();
   }
-
+  
 
   function updateProjectFilter() {
-      console.log("Updating project filter");
-      const selectedYear = document.getElementById('year-filter').value;
-      let projectSet = new Set();
-      let projectCount = {}; // Contador de proyectos
+    console.log("Updating project filter");
+    const selectedYear = document.getElementById('year-filter').value;
+    let projectSet = new Set();
+    let projectCount = {}; // Contador de proyectos
   
-      // Collect projects for the selected year
-      $(".bib-item").each(function () {
-          const itemYear = $(this).find(".year").text().trim();
-          const itemProjects = $(this).find(".project").text().trim();
+    // Collect projects for the selected year
+    $(".bib-item").each(function () {
+      const itemYear = $(this).find(".year").text().trim();
+      const itemProjects = $(this).find(".project").text().trim();
   
-          if ((selectedYear === "" || itemYear === selectedYear) && itemProjects) {
-              const formattedProjects = (new BibtexDisplay()).formatProjects(itemProjects); // Limpieza
-              // Aplicar la lógica de eliminación de espacios vacíos
-              const cleanProjects = formattedProjects
-                  .split(",")
-                  .map(p => p.trim()) // Limpiar espacios
-                  .filter(p => p !== ""); // Ignorar vacíos
-              
-              cleanProjects.forEach(project => {
-                  projectSet.add(project);
-                  projectCount[project] = (projectCount[project] || 0) + 1; // Contar ocurrencias de cada proyecto
-              });
-          }
-      });
+      if ((selectedYear === "" || itemYear === selectedYear) && itemProjects) {
+        // Limpieza de proyectos
+        const formattedProjects = (new BibtexDisplay()).formatProjects(itemProjects);
+        const cleanProjects = formattedProjects
+          .split(",")
+          .map(p => p.trim())
+          .filter(p => p !== "");
   
-      // Update project filter options
-      $('#project-filter').empty();
-      $('#project-filter').append('<option value="">All Projects</option>');
-      // $('#project-filter').append('<li value="">All Projects</li>');
-
-      console.log("projectSet", projectSet); // Debug
-      console.log("projectCount", projectCount); // Debug
-
-  
-      projectSet.forEach(project => {
-          if (project && project.trim() !== "" && project !== "Project") {
-              $('#project-filter').append(`<option value="${project}">${project} (${projectCount[project]})</option>`);
-              // $('#project-filter').append(`<li value="${project}">${project} (${projectCount[project]})</li>`);
-          }
-      });
-  
-      // Restore current selection
-      const selectedProject = document.getElementById('project-filter').value;
-      if (selectedProject !== "") {
-          document.getElementById('project-filter').value = selectedProject;
-      } else {
-          document.getElementById('project-filter').value = "";
+        cleanProjects.forEach(project => {
+          projectSet.add(project);
+          projectCount[project] = (projectCount[project] || 0) + 1;
+        });
       }
+    });
+  
+    // 1) Actualizar <select> con los proyectos válidos
+    $('#project-filter').empty();
+    $('#project-filter').append('<option value="">All Projects</option>');
+  
+    // Convertir a array y ordenar
+    const newProjectArray = Array.from(projectSet).sort();
+  
+    newProjectArray.forEach(project => {
+      if (project && project.trim() !== "" && project !== "Project") {
+        $('#project-filter').append(`<option value="${project}">${project} (${projectCount[project]})</option>`);
+      }
+    });
+  
+    // Restaurar la selección previa si existía
+    const selectedProject = document.getElementById('project-filter').value;
+    if (selectedProject !== "") {
+      document.getElementById('project-filter').value = selectedProject;
+    } else {
+      document.getElementById('project-filter').value = "";
+    }
+  
+    // 2) Actualizar también los BOTONES de proyectos
+    //    (esto recrea la paginación con el nuevo subconjunto)
+  
+    // Limpiar el contenedor previo
+    document.getElementById('project-buttons-container').innerHTML = "";
+        
+    createPaginatedButtons({
+      containerId: "project-buttons-container",
+      prevId: "prev-project-page",
+      nextId: "next-project-page",
+      items: newProjectArray,   // <-- usar el subset
+      itemCount: projectCount,
+      itemsPerPage: 1,
+      onClick: (selectedProject) => {
+        document.getElementById('project-filter').value = selectedProject;
+        updateFilters();
+      },
+      allLabel: "All Projects",
+      onAllClick: () => {
+        document.getElementById('project-filter').value = "";
+        updateFilters();
+      }
+    });
+    
+    console.log("projectSet", projectSet);
+    console.log("projectCount", projectCount);
   }
-
+  
 
   // Handle changes in year filter
   document.getElementById('year-filter').addEventListener('change', () => {
