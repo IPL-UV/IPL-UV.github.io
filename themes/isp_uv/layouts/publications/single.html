@@ -139,6 +139,8 @@
     gap: 8px;
     box-sizing: border-box;
     min-height: 80px;
+    width: 340px;
+    margin-right: 25px;
   }
   
   /* Grupo de proyectos: a la derecha */
@@ -151,6 +153,8 @@
     gap: 8px;
     box-sizing: border-box;
     min-height: 80px;
+    width: 340px;
+    margin-left: 25px;
   }
   
   .buttons-container {
@@ -177,7 +181,8 @@
   
   
   .buttons-container .filter-button {
-    width: 90px;
+    flex-shrink: 0; 
+    width: 60px;
     height: 60px;     
     border-radius: 45%;
     display: inline-flex;
@@ -230,6 +235,8 @@
       justify-content: center; /* centra flechas y carril en horizontal */
       min-height: auto;        /* quita la altura mínima si deseas */
       margin-bottom: 10px;     /* algo de espacio entre el primero y el segundo */
+      margin-left: 0;
+      margin-right: 0;
     }
   }
   
