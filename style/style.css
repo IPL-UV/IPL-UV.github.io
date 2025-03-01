@@ -1410,23 +1410,23 @@ h3 {
   padding: 0.5rem;
 }
 
-.filter-container {
+/* .filter-container {
   display: flex;
   gap: 1 rem;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   width: 100%;
-}
+} */
 
-.filter-container label {
+/* .filter-container label {
   font-weight: bold;
   margin-right: 0.5rem;
   color: #000000;
   flex: 0 0 auto; 
-}
+} */
 
-.filter-container select {
+/* .filter-container select {
   padding: 0.5rem;
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -1436,12 +1436,12 @@ h3 {
   width: 10%; 
   flex: 1 1 100px;
   text-align: center;
-}
+} */
 
-.filter-container select:focus {
+/* .filter-container select:focus {
   border-color: #5bc0de;
   box-shadow: 0 0 6px rgba(91, 192, 222, 0.4);
-}
+} */
 
 .seminar-image img {
   border-radius: 0.3125rem;
