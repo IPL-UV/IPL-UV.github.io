@@ -18,20 +18,19 @@
 
   <div class="grid-item grid-filter">
     <div class="filter-container">
-      <select id="year-filter" style="display:none;"></select>
-      <select id="project-filter" style="display:none;"></select>
-      <div class="button-filter-group-year">
-        <button id="prev-year-page" class="nav-button">&lt;</button>
-        <div id="year-buttons-container" class="buttons-container"></div>
-        <button id="next-year-page" class="nav-button">&gt;</button>
-      </div>
-      <div class="button-filter-group-project">
-        <button id="prev-project-page" class="nav-button">&lt;</button>
-        <div id="project-buttons-container" class="buttons-container"></div>
-        <button id="next-project-page" class="nav-button">&gt;</button>
-      </div>
+      <label for="year-filter">Filter by:</label>
+      <select id="year-filter">
+
+      </select>
+
+      <label for="project-filter"></label>
+      <select id="project-filter">
+
+      </select>
     </div>
   </div>
+
+
 
   <div class="grid-container" id="bibtex_display"></div>
 
@@ -116,98 +115,6 @@
     </div>
   </div>
 </div>
-
-<style>
-/* Contenedor padre: reparte año y proyecto al 50%, uno a la izq y otro a la der */
-.filter-container {
-  display: flex;
-  max-width: 1000px;   /* Ajusta según el ancho deseado */
-  width: 100%;         /* Que ocupe el 100% del contenedor exterior */
-  margin: 0 auto;      /* centra horizontalmente si sobra espacio */
-  gap: 10px;           /* espacio horizontal entre los dos grupos */
-  align-items: center; /* alinear verticalmente si gustas */
-  box-sizing: border-box;
-}
-
-/* 2) Cada grupo (años, proyectos) ocupa la mitad y se mantiene centrado */
-.button-filter-group-year,
-.button-filter-group-project {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between; /* flecha izq, carril, flecha der */
-  width: 50%;                     /* cada uno la mitad exacta */
-  box-sizing: border-box;
-  min-height: 80px;               /* si quieres forzar misma altura */
-}
-
-/* 3) El carril de botones (.buttons-container) crece entre las flechas */
-.buttons-container {
-  display: flex;
-  flex: 1;                /* ocupa todo el espacio entre las flechas */
-  flex-direction: row;
-  align-items: center;
-  justify-content: center; /* si hay pocos ítems, se centran en la franja */
-  gap: 0px;
-  overflow-x: auto;        /* scroll si sobran botones */
-  scrollbar-width: none;   /* ocultar scroll en Firefox */
-  -ms-overflow-style: none;/* ocultar scroll en IE/Edge */
-  box-sizing: border-box;
-}
-
-/* Ocultar scroll en navegadores WebKit */
-.buttons-container::-webkit-scrollbar {
-  width: 0px;
-  background: transparent;
-}
-
-/* 4) Botones cuadrados (70×70, p.ej.) */
-.buttons-container .filter-button {
-  width: 74px;
-  height: 74px;           /* Botón cuadrado */
-  border-radius: 30%;     /* Algo circular */
-  display: inline-flex;   /* o flex */
-  flex-direction: column; /* para que las líneas se apilen verticalmente */
-  align-items: center;
-  justify-content: center;
-  padding: 4px;           /* deja un poco de espacio interno */
-  margin: 0;
-  box-sizing: border-box;
-  
-  /* Permitir saltos de línea */
-  white-space: normal;     /* no “nowrap” */
-  word-break: break-word;  /* o “overflow-wrap: anywhere;” */
-  overflow: hidden;        /* si el texto sobrepasa, se recorta */
-  text-overflow: clip;     /* no usar ellipsis si queremos multilinea */
-  
-  /* Estilos de fuente y color */
-  background-color: #aaa;
-  color: #fff;
-  font-size: 10px;
-  font-weight: bold;
-  line-height: 1.2;        /* un poco mayor a 1 para que las líneas no se peguen */
-  text-align: center;
-  -webkit-appearance: none;
-  appearance: none;
-}
-
-
-/* 5) Flechas (< y >) siempre visibles, ancladas a los extremos */
-.nav-button {
-  flex-shrink: 0;  /* no se encogen */
-  background-color: #ccc;
-  border: none;
-  border-radius: 4px;
-  padding: 8px 12px;
-  font-size: 16px;
-  cursor: pointer;
-}
-.nav-button:hover {
-  background-color: #aaa;
-}
-
-
-</style>
 
 
 <script type="text/javascript" src={{ relURL "js/jquery-1.12.4.min.js" }} defer></script>

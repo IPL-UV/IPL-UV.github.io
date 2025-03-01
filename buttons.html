@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      margin: 20px;
+    }
+    
+    .carousel-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      width: 600px; /* Ajusta el ancho que desees */
+      position: relative;
+    }
+    
+    .arrow-btn {
+      background-color: #555;
+      opacity: 0.5;
+      color: #fff;
+      border: none;
+      border-radius: 5%;
+      height: 60px;
+      width: 30px;
+      cursor: pointer;
+      margin: 0 5px;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .arrow-btn:hover {
+      background-color: #333;
+    }
+    
+    .carousel-track {
+      display: flex;
+      overflow: hidden;  /* Oculta los elementos que se salen del contenedor */
+      width: 400px;      /* Ajusta el tamaño visible del “carril” */
+      scroll-behavior: smooth; /* Desplazamiento suave si quieres soporte */
+    }
+    
+    .item {
+      flex: 0 0 auto;
+      margin: 0 3.5px;
+    }
+    
+    /* Estilo de los “botones” circulares */
+    .year-button {
+      display: inline-block;
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      border-radius: 50%;
+      background-color: #aaa;
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+      transition: background-color 0.3s;
+    }
+    
+    .year-button:hover {
+      background-color: #666;
+    }
+    
+    /* Ejemplos de colores para cada año (puedes ajustar o unificarlos) */
+    .y2025 { background-color: #f58c8c; } /* Rosado */
+    .y2024 { background-color: #f5c78c; } /* Naranja claro */
+    .y2023 { background-color: #f5e58c; } /* Amarillo */
+    .y2022 { background-color: #c3f58c; } /* Verde claro */
+    .y2021 { background-color: #8cf5d1; } /* Verde agua */
+    .y2020 { background-color: #8ce7f5; } /* Celeste */
+    .y2019 { background-color: #8cc3f5; } /* Azul claro */
+    .y2018 { background-color: #998cf5; } /* Morado */
+    .y2017 { background-color: #d98cf5; } /* Lila */
+    .y2016 { background-color: #f58ce3; } /* Rosa/magenta */
+    
+  </style>
+</head>
+<body>
+
+<div class="carousel-container">
+  <!-- Flecha Izquierda -->
+  <button class="arrow-btn" id="btn-prev">&lt;</button>
+  
+  <!-- Contenedor de items (carril) -->
+  <div class="carousel-track" id="carousel-track">
+    <div class="item">
+      <a href="#" class="year-button y2025">2025</a>
+    </div>
+    <div class="item">
+      <a href="#" class="year-button y2024">2024</a>
+    </div>
+    <div class="item">
+      <a href="#" class="year-button y2023">2023</a>
+    </div>
+    <div class="item">
+      <a href="#" class="year-button y2022">2022</a>
+    </div>
+    <div class="item">
+      <a href="#" class="year-button y2021">2021</a>
+    </div>
+    <div class="item">
+      <a href="#" class="year-button y2020">2020</a>
+    </div>
+    <div class="item">
+      <a href="#" class="year-button y2019">2019</a>
+    </div>
+    <div class="item">
+      <a href="#" class="year-button y2018">2018</a>
+    </div>
+    <div class="item">
+      <a href="#" class="year-button y2017">2017</a>
+    </div>
+    <div class="item">
+      <a href="#" class="year-button y2016">2016</a>
+    </div>
+  </div>
+  
+  <!-- Flecha Derecha -->
+  <button class="arrow-btn" id="btn-next">&gt;</button>
+</div>
+
+<script>
+  const btnPrev = document.getElementById('btn-prev');
+  const btnNext = document.getElementById('btn-next');
+  const track  = document.getElementById('carousel-track');
+  
+  // Ajusta el número de píxeles que se desplaza al hacer clic en las flechas
+  const scrollAmount = 100;
+  
+  btnPrev.addEventListener('click', () => {
+    track.scrollLeft -= scrollAmount;
+  });
+  
+  btnNext.addEventListener('click', () => {
+    track.scrollLeft += scrollAmount;
+  });
+</script>
+
+</body>
+</html>
