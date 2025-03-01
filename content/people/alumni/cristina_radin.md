@@ -1,7 +1,7 @@
 ---
 draft: false
 title: 'Cristina Radin'
-role: postdocs
+role: alumni
 weight: 1
 params:
   img: cristina.webp
@@ -13,4 +13,4 @@ params:
   linkedin: 'https://www.linkedin.com/in/cristina-radin-20b74b202/'
 ---
 
-I am working on the development of statistical, physical and hybrid methods to study the regional effects of climate change in the oceans (MALOC project). I have a background in Earth observation data and machine learning methods.
+When I was at ISP, I worked on the development of statistical, physical, and hybrid methods to study the regional effects of climate change in the oceans (MALOC project). I had a background in Earth observation data and machine learning methods.
