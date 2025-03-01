@@ -9,6 +9,7 @@ params:
   googlescholar: 'https://scholar.google.com/citations?user=6mgnauMAAAAJ'
   orcid: 'http://orcid.org/0000-0003-1683-2138'
   twitter: 'http://twitter.com/isp_uv_es'
+  bluesky: 'https://bsky.app/profile/isp-uv-es.bsky.social'
   github: 'https://github.com/IPL-UV/'
   semanticscholar: 'https://www.semanticscholar.org/author/1397959153'
   website: 'https://www.uv.es/gcamps/'
