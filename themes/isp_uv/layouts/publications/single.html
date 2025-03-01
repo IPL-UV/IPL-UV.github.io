@@ -118,95 +118,121 @@
 </div>
 
 <style>
-/* Contenedor padre: reparte año y proyecto al 50%, uno a la izq y otro a la der */
-.filter-container {
-  display: flex;
-  max-width: 1000px;   /* Ajusta según el ancho deseado */
-  width: 100%;         /* Que ocupe el 100% del contenedor exterior */
-  margin: 0 auto;      /* centra horizontalmente si sobra espacio */
-  gap: 10px;           /* espacio horizontal entre los dos grupos */
-  align-items: center; /* alinear verticalmente si gustas */
-  box-sizing: border-box;
-}
-
-/* 2) Cada grupo (años, proyectos) ocupa la mitad y se mantiene centrado */
-.button-filter-group-year,
-.button-filter-group-project {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between; /* flecha izq, carril, flecha der */
-  width: 50%;                     /* cada uno la mitad exacta */
-  box-sizing: border-box;
-  min-height: 80px;               /* si quieres forzar misma altura */
-}
-
-/* 3) El carril de botones (.buttons-container) crece entre las flechas */
-.buttons-container {
-  display: flex;
-  flex: 1;                /* ocupa todo el espacio entre las flechas */
-  flex-direction: row;
-  align-items: center;
-  justify-content: center; /* si hay pocos ítems, se centran en la franja */
-  gap: 0px;
-  overflow-x: auto;        /* scroll si sobran botones */
-  scrollbar-width: none;   /* ocultar scroll en Firefox */
-  -ms-overflow-style: none;/* ocultar scroll en IE/Edge */
-  box-sizing: border-box;
-}
-
-/* Ocultar scroll en navegadores WebKit */
-.buttons-container::-webkit-scrollbar {
-  width: 0px;
-  background: transparent;
-}
-
-/* 4) Botones cuadrados (70×70, p.ej.) */
-.buttons-container .filter-button {
-  width: 74px;
-  height: 74px;           /* Botón cuadrado */
-  border-radius: 30%;     /* Algo circular */
-  display: inline-flex;   /* o flex */
-  flex-direction: column; /* para que las líneas se apilen verticalmente */
-  align-items: center;
-  justify-content: center;
-  padding: 4px;           /* deja un poco de espacio interno */
-  margin: 0;
-  box-sizing: border-box;
+  .filter-container {
+    display: flex;
+    /* Así repartimos ambos grupos a izquierda y derecha */
+    justify-content: space-evenly; 
+    align-items: center;
+    max-width: 850px;
+    margin: 0 auto;
+    gap: 1px; /* Ajusta el espacio horizontal total */
+    box-sizing: border-box;
+  }
   
-  /* Permitir saltos de línea */
-  white-space: normal;     /* no “nowrap” */
-  word-break: break-word;  /* o “overflow-wrap: anywhere;” */
-  overflow: hidden;        /* si el texto sobrepasa, se recorta */
-  text-overflow: clip;     /* no usar ellipsis si queremos multilinea */
+  /* Grupo de años: a la izquierda */
+  .button-filter-group-year {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start; /* pegado a la izquierda */
+    width: 40%;
+    gap: 8px;
+    box-sizing: border-box;
+    min-height: 80px;
+  }
   
-  /* Estilos de fuente y color */
-  background-color: #aaa;
-  color: #fff;
-  font-size: 10px;
-  font-weight: bold;
-  line-height: 1.2;        /* un poco mayor a 1 para que las líneas no se peguen */
-  text-align: center;
-  -webkit-appearance: none;
-  appearance: none;
-}
-
-
-/* 5) Flechas (< y >) siempre visibles, ancladas a los extremos */
-.nav-button {
-  flex-shrink: 0;  /* no se encogen */
-  background-color: #ccc;
-  border: none;
-  border-radius: 4px;
-  padding: 8px 12px;
-  font-size: 16px;
-  cursor: pointer;
-}
-.nav-button:hover {
-  background-color: #aaa;
-}
-
-
+  /* Grupo de proyectos: a la derecha */
+  .button-filter-group-project {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end; /* pegado a la derecha */
+    width: 40%;
+    gap: 8px;
+    box-sizing: border-box;
+    min-height: 80px;
+  }
+  
+  .buttons-container {
+    display: flex;
+    flex: 1; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+  
+    /* -- Hacer que si hay más contenido, aparezca scroll horizontal manual -- */
+    overflow-x: auto;          /* scroll horizontal */
+    scrollbar-width: none;     /* oculta en Firefox */
+    -ms-overflow-style: none;  /* oculta en IE y Edge */
+    scroll-behavior: smooth;   /* desplazamiento suave al arrastrar */
+  
+    box-sizing: border-box;
+  }
+  
+  .buttons-container::-webkit-scrollbar {
+    width: 0px;                /* oculta scrollbar en Chrome/Safari */
+    background: transparent;
+  }
+  
+  
+  .buttons-container .filter-button {
+    width: 90px;
+    height: 60px;     
+    border-radius: 45%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    margin: 0;
+    box-sizing: border-box;
+  
+    white-space: normal;
+    word-break: break-word;
+    overflow: hidden;
+    text-overflow: clip;
+  
+    background-color: #479bb0;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  
+  .nav-button {
+    flex-shrink: 0;
+    background-color: #ccc;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .nav-button:hover {
+    background-color: #aaa;
+  }
+  
+  /* NUEVO: cuando la pantalla es <= 768, cambiamos a “column” */
+  @media (max-width: 991px) {
+    .filter-container {
+      flex-direction: column; 
+      align-items: center;    /* centra verticalmente */
+    }
+  
+    /* Cada grupo ocupa toda la anchura en vertical */
+    .button-filter-group-year,
+    .button-filter-group-project {
+      width: 100%;
+      justify-content: center; /* centra flechas y carril en horizontal */
+      min-height: auto;        /* quita la altura mínima si deseas */
+      margin-bottom: 10px;     /* algo de espacio entre el primero y el segundo */
+    }
+  }
+  
 </style>
 
 

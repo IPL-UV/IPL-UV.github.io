@@ -512,26 +512,13 @@ function toggleBibtex(button) { // Función que permite ver el BibTeX
   bibtexElement.slideToggle();
 }
 
-function adjustItemsPerView() {
-  const width = window.innerWidth;  // ancho de la ventana
-  if (width >= 1400) {
-    return 5;
-  } else if (width >= 1000) {
-    return 4;
-  } else if (width >= 600) {
-    return 3;
-  } else {
-    return 1;
-  }
-}
-
 function createPaginatedButtons({
   containerId,
   prevId,
   nextId,
   items,
   itemCount,
-  itemsPerView = 4,  // cuántos ítems se ven a la vez
+  itemsPerView = 3,  // cuántos ítems se ven a la vez
   step = 2,          // cuántos ítems se avanza/retrocede cada vez
   onClick,
   allLabel,
@@ -569,17 +556,15 @@ function createPaginatedButtons({
     });
 
     // (3) Habilitar/deshabilitar la flecha "prev"
-    // Siempre visible, pero si startIndex = 0, disabled.
     if (startIndex > 0) {
-      prevBtn.disabled = false;  // habilita
+      prevBtn.disabled = false;
     } else {
-      prevBtn.disabled = true;   // deshabilita
+      prevBtn.disabled = true;
     }
 
     // (4) Habilitar/deshabilitar la flecha "next"
-    // Siempre visible, pero si (startIndex + itemsPerView >= items.length), disabled.
     if (startIndex + itemsPerView < items.length) {
-      nextBtn.disabled = false; 
+      nextBtn.disabled = false;
     } else {
       nextBtn.disabled = true;
     }
@@ -587,7 +572,6 @@ function createPaginatedButtons({
 
   // Flecha "Anterior" (<)
   prevBtn.addEventListener("click", () => {
-    // Retrocede step ítems
     startIndex -= step;
     if (startIndex < 0) {
       startIndex = 0;
@@ -597,10 +581,8 @@ function createPaginatedButtons({
 
   // Flecha "Siguiente" (>)
   nextBtn.addEventListener("click", () => {
-    // Avanza step ítems
     startIndex += step;
-
-    // Si se pasa del final, ajustamos para que muestre el último bloque
+    // Ajustar para no pasar del final
     const maxStartIndex = Math.max(0, items.length - itemsPerView);
     if (startIndex > maxStartIndex) {
       startIndex = maxStartIndex;
@@ -684,19 +666,6 @@ document.addEventListener("DOMContentLoaded", function () {
     
     $('#project-filter').empty().append('<option value="">All Projects</option>');
     // (Aun están en el DOM, pero ocultos)
-
-    function adjustItemsPerView() {
-      const width = window.innerWidth;  // ancho de la ventana
-      if (width >= 1400) {
-        return 5;
-      } else if (width >= 1000) {
-        return 4;
-      } else if (width >= 600) {
-        return 3;
-      } else {
-        return 1;
-      }
-    }
     
   
     // ===== 5) Crear los botones de años =====
@@ -706,7 +675,7 @@ document.addEventListener("DOMContentLoaded", function () {
       nextId: "next-year-page",
       items: yearArray,
       itemCount: yearCount,
-      itemsPerPage: adjustItemsPerView(), // mostrar 5 por “página”
+      itemsPerPage: 1,
       // callback para cuando se hace click en un botón:
       onClick: (selectedYear) => {
         console.log("Botón de año pulsado:", selectedYear);
@@ -721,20 +690,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
 
-    function adjustItemsPerView() {
-      const width = window.innerWidth;  // ancho de la ventana
-      if (width >= 1400) {
-        return 5;
-      } else if (width >= 1000) {
-        return 4;
-      } else if (width >= 600) {
-        return 3;
-      } else {
-        return 1;
-      }
-    }
-    
-  
     // ===== 6) Crear los botones de proyectos =====
     createPaginatedButtons({
       containerId: "project-buttons-container",
@@ -742,7 +697,7 @@ document.addEventListener("DOMContentLoaded", function () {
       nextId: "next-project-page",
       items: projectArray,
       itemCount: projectCount,
-      itemsPerPage: adjustItemsPerView(),
+      itemsPerPage: 1,
       onClick: (selectedProject) => {
         document.getElementById('project-filter').value = selectedProject;
         updateFilters();
@@ -847,27 +802,14 @@ document.addEventListener("DOMContentLoaded", function () {
   
     // Limpiar el contenedor previo
     document.getElementById('project-buttons-container').innerHTML = "";
-    
-    function adjustItemsPerView() {
-      const width = window.innerWidth;  // ancho de la ventana
-      if (width >= 1400) {
-        return 5;
-      } else if (width >= 1000) {
-        return 4;
-      } else if (width >= 600) {
-        return 3;
-      } else {
-        return 1;
-      }
-    }
-    
+        
     createPaginatedButtons({
       containerId: "project-buttons-container",
       prevId: "prev-project-page",
       nextId: "next-project-page",
       items: newProjectArray,   // <-- usar el subset
       itemCount: projectCount,
-      itemsPerPage: adjustItemsPerView(),
+      itemsPerPage: 1,
       onClick: (selectedProject) => {
         document.getElementById('project-filter').value = selectedProject;
         updateFilters();
