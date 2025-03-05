@@ -2,7 +2,7 @@
 
     <div class="container mt-5">
         {{ $groups := .Pages.GroupByParam "role" }}
-        {{ $order := slice "full professors" "associate professors" "assistant professors" "senior research scientists" "postdocs" "phd students" "visitors" "alumni" }}
+        {{ $order := slice "full professors" "associate professors" "assistant professors" "senior research scientists" "postdocs" "phd students" "administrative & communications" "visitors" "alumni" }}
         {{ range $order }}
 
             {{ with index (where $groups "Key" .) 0 }}
