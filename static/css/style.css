@@ -148,8 +148,8 @@ h3 {
 }
 
 .custom-nav-item:hover {
-  background-color: #a0a0a0;
-  border-color: #fff;
+  background-color: #0866e0;
+  border-color: #0866e0;
 }
 
 .custom-nav-link {
@@ -198,8 +198,8 @@ h3 {
 }
 
 .custom-dropdown-item:hover {
-  background-color: #a0a0a0;
-  border-color: #fff;
+  background-color: #0866e0;
+  border-color: #0866e0;
 }
 
 .custom-dropdown:hover .custom-dropdown-menu {
