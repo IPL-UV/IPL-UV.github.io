@@ -5,7 +5,7 @@ title: 'Luis Gómez-Chova'
 role: "full professors"
 weight: 3
 params:
-  img: luis.webp
+  img: Luis.jpg
   googlescholar: 'https://scholar.google.com/citations?user=7LQsYOcAAAAJ&hl=en'
   orcid: 'https://orcid.org/0000-0003-3924-1269'
   twitter: 'http://twitter.com/isp_uv_es'

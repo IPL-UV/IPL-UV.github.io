@@ -53,15 +53,15 @@
             background: white;
             border: 1px solid #ddd;
             box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
-            height: 300px;
+            height: 320px;
 
         }
         .people-card img {
             object-fit: cover;
-            height: 200px;
             width: 100%;
+            aspect-ratio: 6 / 7;
             margin-bottom: 0.2rem;
-        }
+        }        
         .more-info {
             visibility: hidden;
             opacity: 0;
@@ -105,6 +105,10 @@
             .col-2 {
                 flex: 0 0 24.8%; /* Esto ajusta a 4 columnas por fila */
             }
+            .people-card {
+                height: 320px;
+    
+            }
         }
 
         /* Media Query para pantallas de hasta 991px de ancho */
@@ -119,12 +123,39 @@
             .col-2 {
                 flex: 0 0 48%; /* Esto ajusta a 2 columnas por fila */
             }
+            .people-card {
+                height: 350px;
+    
+            }
+        }
+
+        @media (max-width: 460px) {
+            .people-card {
+                height: 300px;
+    
+            }
         }
 
         /* Media Query para pantallas de hasta 480px de ancho */
         @media (max-width: 430px) {
             .col-2 {
                 flex: 0 0 65%; /* Esto ajusta a 1 columna por fila */
+            }
+            .people-card {
+                height: 350px;
+    
+            }
+        }
+        @media (max-width: 380px) {
+            .people-card {
+                height: 310px;
+    
+            }
+        }
+        @media (max-width: 330px) {
+            .people-card {
+                height: 300px;
+    
             }
         }
     </style>

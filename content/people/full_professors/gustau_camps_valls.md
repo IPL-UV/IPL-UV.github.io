@@ -5,7 +5,7 @@ title: 'Gustau Camps-Valls'
 role:  "full professors"
 weight: 1
 params:
-  img: gus18.webp
+  img: Gustau.jpg
   googlescholar: 'https://scholar.google.com/citations?user=6mgnauMAAAAJ'
   orcid: 'http://orcid.org/0000-0003-1683-2138'
   twitter: 'http://twitter.com/isp_uv_es'
