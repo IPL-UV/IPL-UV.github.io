@@ -6,6 +6,8 @@ public
 main
 build.sh
 demo
-
+demo.py
+tables/
 static/pages/
 config.sh
+buttons.html

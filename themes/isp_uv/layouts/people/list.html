@@ -13,11 +13,16 @@
                     {{ range .Pages }}
                         {{ $img := printf "%s" (relURL (printf "images/people/%s" .Params.img)) }}
                         {{ $name := .Title }}
-                        {{ $link_image := .Params.link_image }}
-                        
+   
                         <div class="col-2 col-md-2 col-lg-2 mb-4"> <!-- Mantener col-2 para pantallas más grandes -->
                             <div class="people-card">
-                                <img src="{{ $img }}" class="img-fluid" alt="Image of {{ $name }}">
+                                {{ with .Params.link_image }}
+                                    <a href="{{ . }}" target="_blank" rel="noopener noreferrer">
+                                        <img src="{{ $img }}" class="img-fluid" alt="Image of {{ $name }}">
+                                    </a>
+                                {{ else }}
+                                    <img src="{{ $img }}" class="img-fluid" alt="Image of {{ $name }}">
+                                {{ end }}
                                 <h5>{{ .Title }}</h5>
                                 <div>
                                     {{ with .Params.googlescholar }} <a href="{{ . }}" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-google-scholar" style="color: #336daf;" ></i></a> {{ end }}
