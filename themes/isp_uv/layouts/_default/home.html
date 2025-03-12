@@ -94,6 +94,18 @@
             line-height: 1;
         }
 
+        .custom-social-links {
+            display: flex;
+            flex-wrap: wrap;  /* Permite que los íconos se apilen */
+            gap: 5px;        /* Espacio entre los íconos */
+        }
+        
+        .custom-social-links a {
+            display: inline-block;
+            margin: 1px;  /* Añade algo de espacio entre los enlaces */
+            text-align: center;
+        }
+        
 
         
 
@@ -120,6 +132,14 @@
             .custom-banner .custom-bannet-text p {
                 font-size: 2.5rem;
               }
+
+            .custom-social-links {
+                justify-content: center; /* Asegura que los íconos se alineen correctamente */
+            }
+        
+            .custom-social-links a {
+                width: 30%;  /* Hacemos que cada ícono ocupe un 30% del ancho del contenedor, pero puedes ajustar esto */
+            }
         }
     </style>
 {{ end }}

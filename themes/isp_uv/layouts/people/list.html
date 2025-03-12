@@ -13,7 +13,6 @@
                     {{ range .Pages }}
                         {{ $img := printf "%s" (relURL (printf "images/people/%s" .Params.img)) }}
                         {{ $name := .Title }}
-   
                         <div class="col-2 col-md-2 col-lg-2 mb-4"> <!-- Mantener col-2 para pantallas más grandes -->
                             <div class="people-card">
                                 {{ with .Params.link_image }}
