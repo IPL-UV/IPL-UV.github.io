@@ -4,7 +4,7 @@ title: 'Cristina Radin'
 role: alumni
 weight: 1
 params:
-  img: cristina.webp
+  img: cristina.jpg
   googlescholar: 'https://scholar.google.com/citations?user=tfctuKIAAAAJ&hl=es&authuser=1'
   orcid: 'https://orcid.org/0000-0003-3969-4583'
   twitter: 'http://twitter.com/cris_radin'

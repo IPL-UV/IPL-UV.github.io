@@ -4,7 +4,7 @@ title: 'Paolo Pelucchi'
 role: "phd students"
 weight: 1
 params:
-  img: paolo.webp
+  img: paolo.jpg
   youtube: https://www.youtube.com/watch?v=gJY7aZ98FCY
 ---
 

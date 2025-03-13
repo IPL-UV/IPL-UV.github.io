@@ -5,7 +5,7 @@ title: 'Eva Sevillano Marco'
 role: alumni
 weight: 1
 params:
-  img: eva_profile.webp
+  img: eva.jpg
   orcid: 'http://orcid.org/0000-0002-5684-243X'
   twitter: 'http://twitter.com/Eva_SeviMarco'
   researchgate: 'https://www.researchgate.net/profile/Eva-Sevillano'

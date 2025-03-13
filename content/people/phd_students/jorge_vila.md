@@ -4,7 +4,8 @@ title: 'Jorge Vila Tomás'
 role: "phd students"
 weight: 1
 params:
-  img: Jorge_Vila.webp
+  img: jorge_vila.jpg
+
   youtube: https://www.youtube.com/watch?v=5DgRyeqTX5E
 ---
 

@@ -4,7 +4,7 @@ title: 'Tristan Williams'
 role: "phd students"
 weight: 1
 params:
-  img: 06_Tristan_ISP_dark.webp
+  img: tristan.jpg
   googlescholar: 'https://scholar.google.com/citations?hl=en&user=yoNnOcMAAAAJ'
   orcid: 'https://orcid.org/0000-0003-0532-7013'
   twitter: 'https://twitter.com/Tristan_Earth'

@@ -4,7 +4,7 @@ draft: false
 title: 'Jordi Muñoz-Marí'
 role: "associate professors"
 params:
-  img: jordi.webp
+  img: jordi.jpg
   googlescholar: 'https://scholar.google.com/citations?user=XPs4yHUAAAAJ&hl=en'
   orcid: 'https://orcid.org/0000-0002-3014-3921'
   github: 'https://github.com/IPL-UV/'

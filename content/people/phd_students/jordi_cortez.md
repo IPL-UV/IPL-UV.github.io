@@ -4,7 +4,7 @@ title: 'Jordi Cortes'
 role: "phd students"
 weight: 1
 params:
-  img: jordicortes.webp
+  img: jordicortes.jpg
   orcid: 'https://orcid.org/0000-0002-9344-819'
   researchgate: 'https://www.researchgate.com/profile/Jordi-Cortes-Andres'
   youtube: https://www.youtube.com/watch?v=UHLFjFzKiZE

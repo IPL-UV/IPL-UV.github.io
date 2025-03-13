@@ -4,7 +4,7 @@ title: 'Enrique Portalés'
 role: "phd students"
 weight: 1
 params:
-  img: kike.webp
+  img: kike.jpg
   googlescholar: 'https://scholar.google.es/citations?user=8NFahPMAAAAJ&hl=ca&oi=ao'
   orcid: 'https://orcid.org/0000-0002-6537-2062'
   twitter: 'http://twitter.com/remotekike'

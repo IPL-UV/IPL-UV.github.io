@@ -5,7 +5,7 @@ title: 'Roberto Fernandez-Moran'
 role: assistant professors
 weight: 2
 params:
-  img: roberto.webp
+  img: roberto.jpg
   googlescholar: 'https://scholar.google.com/citations?user=q9Bp1ekAAAAJ&hl=es&oi=ao'
   orcid: 'https://orcid.org/0000-0002-6030-8598'
   github: 'https://github.com/IPL-UV/'

@@ -5,7 +5,7 @@ title: 'Dan López'
 role: "alumni"
 weight: 1
 params:
-  img: dan.webp
+  img: dan.jpg
   googlescholar: 'https://scholar.google.com/citations?user=-wZv_nkAAAAJ&hl=en'
   orcid: 'https://orcid.org/0000-0003-4442-2507'
   twitter: 'https://twitter.com/danlopezpuig'

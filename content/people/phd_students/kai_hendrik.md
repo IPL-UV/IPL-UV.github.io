@@ -4,7 +4,7 @@ title: 'Kai-Hendrik Cohrs'
 role: "phd students"
 weight: 1
 params:
-  img: kai.webp
+  img: kai.jpg
   googlescholar: 'https://scholar.google.com/citations?user=2NKBJkEAAAAJ&hl=en'
   orcid: 'https://orcid.org/0000-0002-2286-7487'
   twitter: 'https://twitter.com/cohrskai'
