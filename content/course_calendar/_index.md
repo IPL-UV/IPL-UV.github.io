@@ -2,6 +2,8 @@
 type: calendar
 layout: single
 title: ISP Courses
+aliases:
+    - /course_calendar/
 ---
 
 
