@@ -4,7 +4,7 @@ draft: false
 title: 'Esther Rodrigo Bonet'
 role: postdocs
 params:
-  img: esther.webp
+  img: esther.jpg
   orcid: "https://orcid.org/0000-0003-4129-3295"                            
 ---
 

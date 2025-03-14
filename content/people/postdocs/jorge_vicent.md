@@ -4,7 +4,7 @@ draft: false
 title: 'Jorge Vicent Servera'
 role: postdocs
 params:
-  img: 06_vicen_ISP.webp
+  img: jorge_vincent.jpg
   github: 'https://gitlab.com/jorge.vicent/'
   researchgate: 'https://www.researchgate.net/profile/Jorge-Vicent'
   linkedin: 'https://www.linkedin.com/in/jorviser/'

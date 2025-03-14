@@ -4,7 +4,7 @@ title: Andrei Gavrilov
 role: postdocs
 weight: 1
 params:
-  img: andrei_gavrilov.webp
+  img: andrei_gavrilov.jpg
   website: https://sites.google.com/view/andreigavrilov
   researchgate: https://www.researchgate.net/profile/Andrei-Gavrilov-4
   googlescholar: https://scholar.google.com/citations?user=mMDORTsAAAAJ
