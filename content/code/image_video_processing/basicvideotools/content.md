@@ -1,7 +1,6 @@
 ---
 type: "code"
 layout: "single"
-
 title: "Basic Video Tools: A Matlab Toolbox for Video Data and Spatio-Temporal Vision Models (J. Malo, J. Gutirrez and V. Laparra (c) Universitat de Valncia 1996 - 2014)"
 ---
 # What is in BasicVideoTools?
