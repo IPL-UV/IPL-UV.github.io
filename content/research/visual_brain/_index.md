@@ -14,6 +14,6 @@ aliases:
   }
 </script>
 
-<div style="max-width: 100%; margin: 0rem auto ">
+<div style="max-width: 10000px; margin: 0rem auto ">
 <iframe src="/pages/improc.html" style="border: 0" width="100%" height="1000" referrerpolicy="same-origin" seamless onload="superSize(this)"></iframe>
 </div>
