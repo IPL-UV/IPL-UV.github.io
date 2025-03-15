@@ -1,5 +1,5 @@
 ---
-title: "spatiospectral"
+title: SpatioSpectralTools
 type: "code"
 layout: "single_iframe"
 aliases:

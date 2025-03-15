@@ -1,5 +1,5 @@
 ---
-title: "SpatioSpectralTools"
+title: SpatioSpectralTools
 img: "constancy.webp"
 image_alt: "SpatioSpectralTools Image"
 link: "./spatiospectraltools/content"
