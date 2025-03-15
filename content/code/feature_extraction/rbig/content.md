@@ -12,6 +12,9 @@ links:
   - title: "RBIG Toolbox"
     link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_feature/RBIG_toolbox.zip"
     description: "The provided software is an implementation of the proposed RBIG approach. See the file 'using_RBIG_example.m' included in the *.zip file for details."
+
+aliases:
+  - /rbig.html
 ---
 Most signal processing problems involve the challenging task of multidimensional probability density function (PDF) estimation. In this work, we propose a solution to this problem by using a family of Rotation-based Iterative Gaussianization (RBIG) transforms. The general framework consists of the sequential application of a two-step processing unit: univariate marginal Gaussianization transform followed by an orthogonal transform. The proposed procedure looks for differentiable transforms to a known PDF so that the unknown PDF can be estimated at any point of the original domain. In particular, we aim at a zero mean unit covariance Gaussian for convenience, but other distributions could be equally considered.
 

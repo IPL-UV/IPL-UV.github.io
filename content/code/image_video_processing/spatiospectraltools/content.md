@@ -1,5 +1,23 @@
 ---
 type: "code"
+layout: "single_iframe"
+aliases:
+  - /code/imvideo/SpatioSpectral.html
+---
+
+<script>
+  function superSize(me) {
+    //me.style.width = me.contentWindow.document.body.scrollWidth + 'px';
+    me.style.height = me.contentWindow.document.body.scrollHeight+20 + 'px';
+  }
+</script>
+
+<div style="max-width: 100%; margin: 0rem auto ">
+<iframe src="/pages/SpatioSpectral.html" style="border: 0" width="100%" height="1000" referrerpolicy="same-origin" seamless onload="superSize(this)"></iframe>
+</div>
+
+<!-- ---
+type: "code"
 layout: "single_four"
 
 title: "The role of spatial information in disentangling the irradiance-reflectance-transmitance ambiguity"
@@ -57,4 +75,4 @@ images:
   In this experiment, we used substantially different wavelength ranges and spatio-spectral resolutions from those in the manuscript.
 
   ## 3. Initialization of the Sources (Surface Reflectance, Atmosphere Radiance, and Transmittance)
-  The retrieval procedure used to check the accuracy of the theoretical predictions involves a series of search loops that require an initialization of the variables S, A, and T. Since we searched in the decorrelated PCA domains, each coefficient of these sources was independently initialized using a random value drawn from the empirical marginal PDFs (histograms) learned at the training stage. Below we show examples of the marginal PDFs for some AC coefficients of these sources. The strong peak at zero makes zero initialization reasonable as well.
+  The retrieval procedure used to check the accuracy of the theoretical predictions involves a series of search loops that require an initialization of the variables S, A, and T. Since we searched in the decorrelated PCA domains, each coefficient of these sources was independently initialized using a random value drawn from the empirical marginal PDFs (histograms) learned at the training stage. Below we show examples of the marginal PDFs for some AC coefficients of these sources. The strong peak at zero makes zero initialization reasonable as well. -->

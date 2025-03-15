@@ -53,6 +53,9 @@ links:
   - title: "SPCA Toolbox"
     link: "https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_feature/SPCA_toolbox.zip"
     description: "Once you download and decompress the toolbox, see the readme file 'demo_SPCA_toy_example_2D_manifold.m'."
+
+aliases:
+  - /spca.html
 ---
 
 SPCA is a manifold learning technique that identifies the curvilinear coordinates of a data set. It defines an invertible transform that can be tuned for NonLinear ICA (infomax) or optimal Vector Quantization (error minimization), and can be used in Dimensionality Reduction, Domain Adaptation, and Classification problems. The explicit form of the identified features (and associated nonlinear 'filters') makes it useful to model sensors in theoretical neuroscience.
