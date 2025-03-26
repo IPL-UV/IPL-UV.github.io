@@ -1732,3 +1732,12 @@ h3 {
   width: 100%;
 }
 
+.bad-iframe{
+  display: block;
+  position: relative;
+  left: 55%;
+  transform: translateX(-50%);
+  width: 100vw;
+  max-width: none;
+  margin: 0;
+}
