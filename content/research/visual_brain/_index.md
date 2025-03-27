@@ -6,4 +6,4 @@ aliases:
   - /visual.html
 ---
 
-<iframe class="bad-iframe" src="/pages/improc.html" style="border: 0" width="100%" height="1000" referrerpolicy="same-origin" seamless onload="superSize(this)"></iframe>
+<iframe class="bad-iframe" src="/pages/improc.html" style="border: 0" width="100%" height="1000" referrerpolicy="same-origin" seamless></iframe>
