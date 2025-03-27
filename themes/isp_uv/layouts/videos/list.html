@@ -2,17 +2,81 @@
 <div class="content-container">
   {{ range .Pages }}
   <div class="title-container">
-    <h1>{{ .Title }}</h1>
+    <h1 style="background-color: #f00">{{ .Title }}</h1>
   </div>
   <div class="collaborators-grid">
-    <!-- Renderizar el contenido directamente desde el archivo Markdown, modificando las rutas de las imágenes -->
-    {{ $content := .Content }}
-    <!-- Reemplazar las rutas que no tienen "http" ni "/" al inicio -->
-    {{ $content = replace $content "src=\"" (printf "src=\"%s" (relURL "images/home/")) }}
-    <!-- Corregir las URLs que comienzan con "http" o "https" para que no se modifiquen -->
-    {{ $content = replace $content (printf "src=\"%s" (relURL "images/home/http")) "src=\"http" }}
-    {{ $content | markdownify | safeHTML }}
+    
+    <div>
+      <h2>Talks</h2>
+      <iframe src="https://www.youtube.com/embed/videoseries?si=LW90qThetZiiJZse&amp;list=PLX_4FBzU4S7bmV2eWhOviapefLQz8p3BD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div>
+      <h2>ISP Crew</h2>
+      <iframe src="https://www.youtube.com/embed/videoseries?si=1HyRdjyCjxAX1319&amp;list=PLX_4FBzU4S7aPvTs9NoFHQLtwFOeO7xn8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div>
+      <h2>Papers</h2>
+      <iframe src="https://www.youtube.com/embed/videoseries?si=gmdkgqoijs7IAYNM&amp;list=PLX_4FBzU4S7bKkDfT1TCZB3AuAPa8TM4L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div>
+      <h2>Conferences & seminars</h2>
+      <iframe src="https://www.youtube.com/embed/videoseries?si=0-qjyXvl0t40Kijk&amp;list=PLX_4FBzU4S7Y2zlk_lOnuVRU_YHDxyg2o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
   </div>
   {{ end }}
 </div>
+
+
+<style>
+/* Contenedor general de la sección */
+  .container {
+    margin-top: 1rem;
+  }
+  .content-container {
+    max-width: 1200px;   /* o el valor que prefieras */
+    width: 100%;          /* Ocupa el 95% del ancho de la ventana */
+    margin: 0 auto;      /* Centra la sección */
+  }
+  .collaborators-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .collaborators-grid div {
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 16 / 10;
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+
+  .collaborators-grid div iframe {
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+  }
+
+  h2 {
+    background-color: #c5c5c5;
+    padding: 0.5rem;
+    font-size: large;
+  }
+
+  @media (max-width: 991px) {
+    .collaborators-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+
+</style>
 {{ end }}
+
+
