@@ -454,6 +454,7 @@ class BibtexDisplay {
           
                   // Configurar el Altmetric badge
                   tpl.find(".altmetric-embed").attr('data-doi', doi);
+                  tpl.find(".dimension-embed").attr('data-doi', doi);
                   // tpl.find(".dimensions-badge").attr("data-doi", doi);
               }
           }
@@ -849,3 +850,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
   initializeBibtex();
 });
+
