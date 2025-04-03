@@ -102,14 +102,15 @@
           </a>
         </span>
 
-        <!-- <div class="altmetric-embed" data-badge-popover="right"></div> -->
         <div class="altmetric-embed" data-badge-type="donut" data-hide-no-mentions="true"></div>
-        <!-- <div class="altmetric-embed" data-badge-popover="right" data-badge-type="medium-donut-horizontal" data-hide-no-mentions="true" data-doi="" data-badge-id="" data-template="dimensions" data-link-target="_blank"></div> -->
 
+        <div class="__dimensions_badge_embed__ dimension-embed">
+        </div>
 
+        
       </div>
 
-      
+
       <div class="bibtexdata alert alert-success" style="display: none;">
         <span class="bibtex"></span>
       </div>
@@ -118,6 +119,22 @@
 </div>
 
 <style>
+  .__dimensions_Badge_Image {
+    height: 45px !important;
+    width: 45px !important;
+  }
+  .__db_score {
+    font-size: 20px !important;
+  }
+
+  .__db_label {
+    display: none;
+  }
+
+  .dimension-embed {
+    margin-left: 0.6rem;
+  }
+
   .filter-container {
     display: flex;
     /* Así repartimos ambos grupos a izquierda y derecha */
@@ -247,6 +264,26 @@
 <script type="text/javascript" src={{ relURL "js/jquery-1.12.4.min.js" }} defer></script>
 <script type="text/javascript" src={{ relURL "js/bibtex_js.js" }} defer></script>
 <script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
-<script type="text/javascript" src="https://badge.dimensions.ai/badge.js"></script>
-
+<script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(function() {
+      document.querySelectorAll('.dimension-embed').forEach(function(container) {
+        const scoreElem = container.querySelector('.__db_score_normal');
+        if (scoreElem) {
+          const scoreText = scoreElem.textContent.trim();
+          console.log(scoreText);
+          if (scoreText === '0') {
+            const badgeImage = container.querySelector('.__dimensions_Badge_Image');
+            if (badgeImage) {
+              badgeImage.style.display = 'none';
+            }
+          }
+        }
+      });
+    }, 4000); 
+  });
+  </script>
+    
 {{ end }}
+
