@@ -119,9 +119,16 @@
 </div>
 
 <style>
+
+
+  .dimension-embed {
+    margin-left: 0.6rem;
+    
+  }
   .__dimensions_Badge_Image {
     height: 45px !important;
     width: 45px !important;
+    display: none;
   }
   .__db_score {
     font-size: 20px !important;
@@ -131,9 +138,6 @@
     display: none;
   }
 
-  .dimension-embed {
-    margin-left: 0.6rem;
-  }
 
   .filter-container {
     display: flex;
@@ -260,30 +264,28 @@
   
 </style>
 
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    function processBadges() {
+      document.querySelectorAll('.__dimensions_Badge_Image').forEach(function(badge) {
+        const scoreElem = badge.closest('.__dimensions_badge_embed__')?.querySelector('.__db_score');
+        if (scoreElem) {
+          badge.style.display = scoreElem.textContent.trim() === '0' ? 'none' : 'inline-block';
+        }
+      });
+    }
+  
+    // Ejecutar ahora y cada 100ms hasta que Dimensions cargue (máximo 5 segundos)
+    const interval = setInterval(processBadges, 100);
+    setTimeout(() => clearInterval(interval), 5000);
+  });
+</script>
 
+    
 <script type="text/javascript" src={{ relURL "js/jquery-1.12.4.min.js" }} defer></script>
 <script type="text/javascript" src={{ relURL "js/bibtex_js.js" }} defer></script>
 <script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
 <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    setTimeout(function() {
-      document.querySelectorAll('.dimension-embed').forEach(function(container) {
-        const scoreElem = container.querySelector('.__db_score_normal');
-        if (scoreElem) {
-          const scoreText = scoreElem.textContent.trim();
-          console.log(scoreText);
-          if (scoreText === '0') {
-            const badgeImage = container.querySelector('.__dimensions_Badge_Image');
-            if (badgeImage) {
-              badgeImage.style.display = 'none';
-            }
-          }
-        }
-      });
-    }, 4000); 
-  });
-  </script>
-    
+
 {{ end }}
 
