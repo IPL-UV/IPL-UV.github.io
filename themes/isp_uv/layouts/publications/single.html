@@ -266,20 +266,36 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
+        
     function processBadges() {
       document.querySelectorAll('.__dimensions_Badge_Image').forEach(function(badge) {
         const scoreElem = badge.closest('.__dimensions_badge_embed__')?.querySelector('.__db_score');
         if (scoreElem) {
-          badge.style.display = scoreElem.textContent.trim() === '0' ? 'none' : 'inline-block';
+          const score = parseInt(scoreElem.textContent.trim());
+          const MIN_SCORE = 9;
+          badge.style.display = score >= MIN_SCORE ? 'inline-block' : 'none';
         }
       });
     }
   
-    // Ejecutar ahora y cada 100ms hasta que Dimensions cargue (máximo 5 segundos)
-    const interval = setInterval(processBadges, 100);
-    setTimeout(() => clearInterval(interval), 5000);
+    // Versión optimizada con MutationObserver
+    const observer = new MutationObserver(function(mutations) {
+      processBadges();
+    });
+  
+    // Observar cambios en el contenedor principal
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true
+    });
+  
+    // Procesar badges existentes
+    processBadges();
+    
+    // Opcional: Limpiar observer después de 5 segundos
+    setTimeout(() => observer.disconnect(), 5000);
   });
-</script>
+  </script>
 
     
 <script type="text/javascript" src={{ relURL "js/jquery-1.12.4.min.js" }} defer></script>
