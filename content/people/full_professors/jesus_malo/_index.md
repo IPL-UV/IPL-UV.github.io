@@ -11,7 +11,7 @@ params:
   twitter: 'https://twitter.com/jesusmalo32'
   github: 'https://github.com/IPL-UV/'
   website: 'https://www.uv.es/jmalo/'
-  link_image: './full_professors/jesus_malo/ex_cathedra'
+  link_image: './full_professors/jesus_malo/excathedra'
 type: "people"
 layout: "single"
 ---

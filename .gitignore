@@ -11,3 +11,4 @@ tables/
 static/pages/
 config.sh
 buttons.html
+hugo_stats.json
