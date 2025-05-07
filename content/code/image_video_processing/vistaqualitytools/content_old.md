@@ -1,4 +1,4 @@
----
+<!-- ---
 type: "code"
 layout: "single_four"
 title: "VistaQualityTools: The Image and Video Quality Toolbox based on Vision Models"
@@ -86,4 +86,4 @@ links:
 
   Download the Toolbox!: [video_metric_sso.zip (34kB)](https://huggingface.co/datasets/isp-uv-es/Web_site_legacy/resolve/main/code/soft_imvideo/vista_toolbox/video_metric_sso.zip)
 
-  Performance of the different versions of the vision model as a function of its elements in terms of regression error. **SSO** stands for the CSF of the Standard Spatial Observer, **m** stands for masking, **t** stands for temporal filtering, **p** stands for post-summaton temporal filtering, and h stands for field doubling compensation.
+  Performance of the different versions of the vision model as a function of its elements in terms of regression error. **SSO** stands for the CSF of the Standard Spatial Observer, **m** stands for masking, **t** stands for temporal filtering, **p** stands for post-summaton temporal filtering, and h stands for field doubling compensation. -->

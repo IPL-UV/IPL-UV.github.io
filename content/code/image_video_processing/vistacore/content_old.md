@@ -1,4 +1,4 @@
----
+<!-- ---
 type: "code"
 layout: "single_four"
 title: "ViStaCoRe: Visual Statistics Coding and Restoration"
@@ -147,4 +147,4 @@ images:
     - Adaptive regularization functional based on perceptual divisive normalization (includes relations among coefficients) [Gutirrez06]
     - L2 regularization functional [Tychonov77].
     - CSF-based regularization functional [Andrews77].
-    - Adaptive Auto-Regressive regularization functionals [Banham97].
+    - Adaptive Auto-Regressive regularization functionals [Banham97]. -->

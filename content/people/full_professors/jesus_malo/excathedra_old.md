@@ -1,4 +1,4 @@
----
+<!-- ---
 title: "First words ex-cathedra"
 type: "people"
 layout: "single_four"
@@ -263,4 +263,4 @@ An association of [Accredited University Professors](http://acreditadosacatedra.
 
 ---
 
-For further details on each of these sections, including my research contributions and teaching philosophy, I have included over **150 hyperlinks** throughout the text, providing access to my full publications, tools, and additional resources.
+For further details on each of these sections, including my research contributions and teaching philosophy, I have included over **150 hyperlinks** throughout the text, providing access to my full publications, tools, and additional resources. -->

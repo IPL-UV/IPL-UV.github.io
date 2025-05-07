@@ -1,4 +1,4 @@
----
+<!-- ---
 type: "code"
 layout: "single_four"
 title: "Video Quality Measures based on the Standar Spatial Observer (A. B. Watson and J. Malo)"
@@ -18,4 +18,4 @@ links:
   
   To evaluate the metrics, we make use of the data set recently produced by the Video Quality Experts Group (VQEG), which consists of subjective ratings of 160 samples of digital video covering a wide range of quality. For each metric we examine the correlation between its predictions and the subjective ratings.
   
-  The results show that SSO-based models with local masking obtain the same degree of accuracy as the best metric considered by VQEG (P5), and significantly better correlations than the other VQEG models. The results suggest that local masking is a key feature to improve the correlation of the basic SSO model.
+  The results show that SSO-based models with local masking obtain the same degree of accuracy as the best metric considered by VQEG (P5), and significantly better correlations than the other VQEG models. The results suggest that local masking is a key feature to improve the correlation of the basic SSO model. -->

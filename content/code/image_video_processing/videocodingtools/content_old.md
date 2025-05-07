@@ -1,4 +1,4 @@
----
+<!-- ---
 type: "code"
 layout: "single_four"
 title: "Motion Estimation and Video Coding Toolbox"
@@ -44,4 +44,4 @@ images:
   
   Here is an example [Malo00a, Malo01b] of the relative gain in the reconstructed sequence (0.27 bits/pix) obtained from isolated improvements in motion estimation (**M**) and/or image representation and quantization (**T+Q**).
   
-  In the above distortion-per-frame plot, thick lines correspond to algorithms with poor (linear) quantization schemes and thin lines correspond to improved (non-linear) quantization schemes. Dashed lines correspond to algorithms with improved motion estimation schemes. The conclusion is that at the current bit rates an appropriate image representation and quantization is quite more important than improvements in motion estimation.
+  In the above distortion-per-frame plot, thick lines correspond to algorithms with poor (linear) quantization schemes and thin lines correspond to improved (non-linear) quantization schemes. Dashed lines correspond to algorithms with improved motion estimation schemes. The conclusion is that at the current bit rates an appropriate image representation and quantization is quite more important than improvements in motion estimation. -->

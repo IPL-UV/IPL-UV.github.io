@@ -1,4 +1,4 @@
----
+<!-- ---
 type: "code"
 layout: "single_four"
 
@@ -65,4 +65,4 @@ Identification of curved features and the effect of the metric in SPCA in a curv
 
 Infomax and Error Minimization through SPCA. 500 randomly selected samples of the sets were transformed using SPCA with different metrics. Results are analyzed in terms of independence (Mutual Information) and reconstruction error (RMSE).
 
-Illustrative Results II: Image Coding According to Different Optimization Criteria.
+Illustrative Results II: Image Coding According to Different Optimization Criteria. -->
