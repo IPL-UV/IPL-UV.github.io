@@ -5,7 +5,7 @@ title: 'Adrián Pérez-Suay'
 role: assistant professors
 weight: 2
 params:
-  img: Adrian2018.webp
+  img: Adrian.webp
   googlescholar: 'https://scholar.google.es/citations?user=9GfwpZ4AAAAJ&hl=es&authuser=1&oi=ao'
   orcid: 'https://orcid.org/0000-0002-8258-4454'
   twitter: 'https://twitter.com/PerezSuay'
