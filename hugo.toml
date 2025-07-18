@@ -33,11 +33,11 @@ theme = "isp_uv"
   name = "Research"
     url = "/research/philosophy/"
   weight = 3
-  [[menu.main]]
-    parent = "Research"
-    name = "Philosophy"
-    url = "/research/philosophy/"
-    weight = 1
+  # [[menu.main]]
+  #   parent = "Research"
+  #   name = "Philosophy"
+  #   url = "/research/philosophy/"
+  #   weight = 1
   [[menu.main]]
     parent = "Research"
     name = "Machine learning"

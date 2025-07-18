@@ -2,7 +2,7 @@
 date: '2024-05-10T05:29:29+02:00'
 draft: false
 title: 'Andrés Terrer'
-role: "administrative & communications"
+role: "phd students"
 params:
   img: andres_terrer.webp
 ---
