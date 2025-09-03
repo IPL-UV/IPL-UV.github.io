@@ -2,6 +2,7 @@ docs
 .vscode
 .DS_Store
 *.lock
+*.bak
 public
 main
 build.sh
