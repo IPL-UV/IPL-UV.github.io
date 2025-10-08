@@ -27,10 +27,46 @@
         </div>
       </div>
       <div class="panel-item">
-          <img src={{ relURL "images/IPL_logo_blanco.webp" }} alt="IPL Logo" class="logo-img">
-          <img src= {{ relURL "images/uv.webp" }} alt="UV Logo" class="logo-img">
+        <div class="video-card">
+          <div class="embed-16by9">
+            <iframe
+              src="https://www.youtube.com/embed/5O8OoSLTdsw?rel=0&modestbranding=1&playsinline=1"
+              title="ISP video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 </div>
+<style>
+  /* Tarjeta del video para que se vea alineado con el estilo de los paneles */
+  .video-card { width: 100%; }
+
+  /* Contenedor responsive 16:9 (evita “salto” y mantiene proporción) */
+  .embed-16by9{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #000; /* oculta parpadeos blancos al cargar */
+  }
+  .embed-16by9 iframe{
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+    border: 0; display: block;
+  }
+
+  /* Fallback si algún navegador ignora aspect-ratio */
+  @supports not (aspect-ratio: 1 / 1){
+    .embed-16by9{ height: 0; padding-top: 56.25%; }
+    .embed-16by9 iframe{ position: absolute; top:0; left:0; width:100%; height:100%; }
+  }
+
+</style>
 {{ end }}

@@ -1,33 +1,99 @@
 {{ define "main" }}
 <div class="content-container">
-    {{ range .Pages }}
-    {{ $img := relURL (urls.JoinPath "images/facilities" .Params.img) }}
-    <div class="panel-item">
-        <div class="panel-header">
-            <h4 class="panel-title"><b>{{ .Title }}</b></h4>
-        </div>
-        <div class="panel-body">
-            <div class="panel-content row">
-                <div class="panel-image col-md-2">
-                    {{ if .Params.link }}
-                        <a href="{{ .Params.link }}">
-                            <img src="{{ $img }}">
-                        </a>
-                    {{ else }}
-                        <img src="{{ $img }}">
-                    {{ end }}
-                </div>  
-                <div class="panel-description col-md-{{ if .Params.references }}6{{ else }}10{{ end }}">
-                    <h5>
-                        <p class="text-justify">{{ .Content | markdownify }}</p>
-                    </h5>
-                    
-                </div>  
+  {{ range .Pages }}
+  {{ $img := relURL (urls.JoinPath "images/facilities" .Params.img) }}
+  {{ $yt := .Params.youtube }}
+  {{ $ytID := "" }}
+  {{ if $yt }}
+    {{ $ytID = replaceRE `(?i).*?(?:v=|be/|embed/)([A-Za-z0-9_-]{11}).*` `$1` $yt }}
+  {{ end }}
+  {{/* usa una miniatura grande para mejor calidad */}}
+  {{ $ytThumb := cond (ne $ytID "") (printf "https://img.youtube.com/vi/%s/sddefault.jpg" $ytID) "" }}
 
-            </div>
+  <div class="panel-item">
+    <div class="panel-header">
+      <h4 class="panel-title"><b>{{ .Title }}</b></h4>
+    </div>
+    <div class="panel-body">
+      <div class="panel-content row">
+        <div class="panel-image col-md-2">
+          {{ if $ytID }}
+            <a class="yt-thumb" href="{{ $yt | safeURL }}" target="_blank" rel="noopener">
+              <div class="yt-thumb-wrap">
+                <img class="yt-thumb-img" src="{{ $ytThumb }}" alt="YouTube thumbnail for {{ .Title }}" loading="lazy">
+                <!-- Ícono play -->
+                <svg class="yt-play" viewBox="0 0 68 48" aria-hidden="true">
+                  <path class="yt-play-bg" d="M66.52 7.74a8 8 0 0 0-5.64-5.66C56.06 1 34 1 34 1s-22.06 0-26.88 1.08A8 8 0 0 0 1.48 7.74 83.3 83.3 0 0 0 .4 24a83.3 83.3 0 0 0 1.08 16.26 8 8 0 0 0 5.64 5.66C11.94 47 34 47 34 47s22.06 0 26.88-1.08a8 8 0 0 0 5.64-5.66A83.3 83.3 0 0 0 67.6 24a83.3 83.3 0 0 0-1.08-16.26z"></path>
+                  <path class="yt-play-tri" d="M45 24 27 14v20z"></path>
+                </svg>
+              </div>
+            </a>
+          {{ else }}
+            {{ if .Params.link }}
+              <a href="{{ .Params.link | safeURL }}" target="_blank" rel="noopener">
+                <img src="{{ $img }}" alt="{{ .Title }}" loading="lazy">
+              </a>
+            {{ else }}
+              <img src="{{ $img }}" alt="{{ .Title }}" loading="lazy">
+            {{ end }}
+          {{ end }}
         </div>
-    </div> 
-    {{ end }}
-    <p>{{ .RawContent | markdownify }}</p>
+
+        <div class="panel-description col-md-{{ if .Params.references }}6{{ else }}10{{ end }}">
+          <h5><p class="text-justify">{{ .Content | markdownify }}</p></h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{ end }}
+  <p>{{ .RawContent | markdownify }}</p>
 </div>
+<style>
+    /* Contenedor con relación 16:9 y recorte para evitar barras negras */
+.yt-thumb-wrap{
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;   /* mantiene proporción */
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+}
+
+/* La imagen se recorta centrada (quita letterboxing/pillarboxing visual) */
+.yt-thumb-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* recorta en lugar de dejar franjas */
+  display: block;
+}
+
+/* Ícono Play estilo YouTube */
+.yt-play{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 64px;
+  height: 45px;
+  transform: translate(-50%, -50%);
+  opacity: .92;
+  transition: transform .12s ease, opacity .12s ease;
+}
+.yt-play-bg{ fill: rgba(0,0,0,.6); }
+.yt-play-tri{ fill: #fff; }
+
+/* Hover: feedback sutil */
+.yt-thumb:hover .yt-play{
+  transform: translate(-50%, -50%) scale(1.05);
+  opacity: 1;
+}
+
+/* Accesibilidad al foco via teclado */
+.yt-thumb:focus .yt-play,
+.yt-thumb:focus-visible .yt-play{
+  outline: none;
+  transform: translate(-50%, -50%) scale(1.05);
+  opacity: 1;
+}
+
+</style>
 {{ end }}

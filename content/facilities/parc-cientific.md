@@ -1,6 +1,6 @@
 ---
 title: "Parc Científic"
-img: "ipl2.webp"
+youtube: https://youtu.be/5O8OoSLTdsw
 weight: 1
 ---
 
