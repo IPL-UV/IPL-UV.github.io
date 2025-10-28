@@ -1,8 +1,5 @@
 ---
-draft: false
 title: 'Jose Maria Tárraga'
-role: "phd students"
-weight: 1
 params:
   img: jm.webp
 ---

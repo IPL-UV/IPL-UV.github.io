@@ -1,8 +1,5 @@
 ---
-draft: false
 title: 'Simon Donike'
-role: "phd students"
-weight: 1
 params:
   img: simon.webp
   twitter: 'https://twitter.com/simon_donike'

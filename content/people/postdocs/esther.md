@@ -1,8 +1,5 @@
 ---
-date: '2025-01-07'
-draft: false
 title: 'Esther Rodrigo Bonet'
-role: postdocs
 params:
   img: esther.jpg
   orcid: "https://orcid.org/0000-0003-4129-3295"                            

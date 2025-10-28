@@ -1,8 +1,5 @@
 ---
-draft: false
 title: 'Mengxue Zhang'
-role: "phd students"
-weight: 1
 params:
   img: mengxuex.jpg
   googlescholar: 'https://scholar.google.com/citations?hl=zh-CN&user=To-g0UkAAAAJ'

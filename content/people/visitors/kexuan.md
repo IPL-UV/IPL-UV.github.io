@@ -1,8 +1,5 @@
 ---
-draft: false
 title: 'Kexuan Zhang'
-role: "visitors"
-weight: 1
 params:
   img: kexuan.webp
 ---

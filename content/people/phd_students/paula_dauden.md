@@ -1,8 +1,5 @@
 ---
-draft: false
 title: 'Paula Daudén Oliver'
-role: "phd students"
-weight: 1
 params:
   img: paula_dauden.webp
   twitter: 'https://x.com/pauladdn'

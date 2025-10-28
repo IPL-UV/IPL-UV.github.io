@@ -1,8 +1,5 @@
 ---
-date: '2024-05-10T05:29:29+02:00'
-draft: false
 title: 'Marta Sapena'
-role: postdocs
 params:
   img: marta.webp
   googlescholar: https://scholar.google.com/citations?user=-xv6QtMAAAAJ&hl=es

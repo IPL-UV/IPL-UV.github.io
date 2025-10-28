@@ -1,8 +1,5 @@
 ---
-draft: false
 title: 'Moritz Link'
-role: "phd students"
-weight: 1
 params:
   img: MoritzLink_Bio.webp
   orcid: 'https://orcid.org/0000-0001-5097-5525'

@@ -1,8 +1,5 @@
 ---
-draft: false
 title: 'Javier Martínez Amaya'
-role: alumni
-weight: 1
 params:
   img: javier.jpg
   orcid: 'https://orcid.org/my-orcid?orcid=0000-0001-6436-3845'

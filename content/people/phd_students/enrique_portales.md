@@ -1,8 +1,5 @@
 ---
-draft: false
 title: 'Enrique Portalés'
-role: "phd students"
-weight: 1
 params:
   img: kike.jpg
   googlescholar: 'https://scholar.google.es/citations?user=8NFahPMAAAAJ&hl=ca&oi=ao'

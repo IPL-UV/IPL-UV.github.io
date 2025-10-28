@@ -1,8 +1,5 @@
 ---
-draft: false
 title: 'Homer Durand'
-role: "phd students"
-weight: 1
 params:
   img: homer.jpg
   orcid: 'https://orcid.org/0000-0002-1907-7927'

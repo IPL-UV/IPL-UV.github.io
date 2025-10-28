@@ -1,8 +1,5 @@
 ---
-date: '2024-05-10T05:29:29+02:00'
-draft: false
 title: 'Javier Calpe-Maravilla'
-role: "associate professors"
 params:
   img: javi.webp
   orcid: 'https://orcid.org/0000-0003-3418-7099'

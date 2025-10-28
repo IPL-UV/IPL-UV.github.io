@@ -1,9 +1,5 @@
 ---
-date: '2024-05-10T05:29:29+02:00'
-draft: false
 title: 'Roberto Fernandez-Moran'
-role: assistant professors
-weight: 2
 params:
   img: roberto.jpg
   googlescholar: 'https://scholar.google.com/citations?user=q9Bp1ekAAAAJ&hl=es&oi=ao'

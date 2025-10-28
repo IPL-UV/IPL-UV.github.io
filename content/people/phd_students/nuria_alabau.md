@@ -1,6 +1,5 @@
 ---
 title: 'Nuria Alabau-Bosque'
-role: "phd students"
 params:
   img: nuria_alabau.webp
   orcid: 'https://orcid.org/0009-0002-8092-2066'

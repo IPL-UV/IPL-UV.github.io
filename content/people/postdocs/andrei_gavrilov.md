@@ -1,8 +1,5 @@
 ---
-draft: false
 title: Andrei Gavrilov
-role: postdocs
-weight: 1
 params:
   img: andrei_gavrilov.jpg
   website: https://sites.google.com/view/andreigavrilov

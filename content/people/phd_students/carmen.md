@@ -1,8 +1,5 @@
 ---
-draft: false
 title: 'Carmen Oliver Huidobro'
-role: "phd students"
-weight: 1
 params:
   img: carmen.webp
   linkedin: https://www.linkedin.com/in/carmen-oliver-huidobro/

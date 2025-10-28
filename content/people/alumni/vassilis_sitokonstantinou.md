@@ -1,8 +1,5 @@
 ---
-date: '2024-05-10T05:29:29+02:00'
-draft: false
 title: 'Vassilis Sitokonstantinou'
-role: postdocs
 params:
   img: 06_Vassilis_sito_ISP.webp
   googlescholar: 'https://scholar.google.gr/citations?user=8WCaLYQAAAAJ&hl=en'

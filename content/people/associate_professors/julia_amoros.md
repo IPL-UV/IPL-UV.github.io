@@ -1,9 +1,5 @@
 ---
-date: '2024-05-10T05:29:29+02:00'
-draft: false
 title: 'Julia Amorós'
-role: "associate professors"
-weight: 2
 params:
   img: julia.webp
   googlescholar: 'https://scholar.google.es/citations?hl=es&user=pj5R_mQAAAAJ'

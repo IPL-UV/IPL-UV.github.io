@@ -1,8 +1,5 @@
 ---
-draft: false
 title: 'Kai-Hendrik Cohrs'
-role: "phd students"
-weight: 1
 params:
   img: kai.jpg
   googlescholar: 'https://scholar.google.com/citations?user=2NKBJkEAAAAJ&hl=en'

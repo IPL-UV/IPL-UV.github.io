@@ -1,8 +1,5 @@
 ---
-draft: false
 title: 'Cristina Radin'
-role: alumni
-weight: 1
 params:
   img: cristina.jpg
   googlescholar: 'https://scholar.google.com/citations?user=tfctuKIAAAAJ&hl=es&authuser=1'

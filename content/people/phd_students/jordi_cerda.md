@@ -1,8 +1,5 @@
 ---
-draft: false
 title: 'Jordi Cerdà'
-role: "phd students"
-weight: 1
 params:
   img: jordicerda.webp
   github: 'https://github.com/jordicbau'

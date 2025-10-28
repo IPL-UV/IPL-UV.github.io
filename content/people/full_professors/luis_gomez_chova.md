@@ -1,9 +1,5 @@
 ---
-date: '2024-05-10T05:29:29+02:00'
-draft: false
 title: 'Luis Gómez-Chova'
-role: "full professors"
-weight: 3
 params:
   img: Luis.jpg
   googlescholar: 'https://scholar.google.com/citations?user=7LQsYOcAAAAJ&hl=en'

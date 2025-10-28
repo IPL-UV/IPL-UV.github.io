@@ -1,9 +1,6 @@
 ---
-date: '2024-05-10T05:29:29+02:00'
-draft: false
 title: 'Jesús Malo'
 role: "full professors"
-weight: 2
 params:
   img: jesus.webp
   googlescholar: 'https://scholar.google.es/citations?user=0pgrklEAAAAJ&hl=es'

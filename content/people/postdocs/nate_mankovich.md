@@ -1,10 +1,7 @@
 ---
-date: '2024-05-10T05:29:29+02:00'
-draft: false
 title: 'Nate Mankovich'
-role: postdocs
 params:
-  img: 06_Nate_ISP.webp
+  img: nate.webp
   googlescholar: 'https://scholar.google.com/citations?user=d9V9fdkAAAAJ&hl=en'
   github: 'https://github.com/nmank'
   linkedin: 'https://www.linkedin.com/in/nathan-mankovich-b1293717/'

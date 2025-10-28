@@ -1,8 +1,5 @@
 ---
-date: '2024-05-10T05:29:29+02:00'
-draft: false
 title: 'Jose Antonio Padrón'
-role: alumni
 params:
   img: joseantonio.webp
 ---

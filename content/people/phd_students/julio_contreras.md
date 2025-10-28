@@ -1,8 +1,5 @@
 ---
-draft: false
 title: 'Julio Contreras'
-role: "phd students"
-weight: 1
 params:
   img: julio.webp
 

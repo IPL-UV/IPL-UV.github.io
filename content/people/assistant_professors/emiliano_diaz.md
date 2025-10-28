@@ -1,9 +1,5 @@
 ---
-date: '2024-05-10T05:29:29+02:00'
-draft: false
 title: 'Emiliano Díaz'
-role: assistant professors
-weight: 1
 params:
   img: emiliano.jpg
   googlescholar: "https://scholar.google.com/citations?user=w2Bf-1sAAAAJ"                      

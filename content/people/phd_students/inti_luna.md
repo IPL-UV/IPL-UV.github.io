@@ -1,8 +1,5 @@
 ---
-draft: false
 title: 'Inti Luna'
-role: "phd students"
-weight: 1
 params:
   img: inti.webp
   youtube: https://www.youtube.com/watch?v=j4QRGP5agBk

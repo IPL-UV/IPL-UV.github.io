@@ -1,8 +1,5 @@
 ---
-draft: false
 title: 'Maria Gonzalez'
-role: "phd students"
-weight: 1
 params:
   img: mariagonzalez.jpg
   googlescholar: 'https://scholar.google.es/citations?user=kMv4UUsAAAAJ&hl=es&oi=ao'

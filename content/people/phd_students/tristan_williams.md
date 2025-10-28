@@ -1,8 +1,5 @@
 ---
-draft: false
 title: 'Tristan Williams'
-role: "phd students"
-weight: 1
 params:
   img: tristan.jpg
   googlescholar: 'https://scholar.google.com/citations?hl=en&user=yoNnOcMAAAAJ'

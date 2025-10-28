@@ -1,8 +1,5 @@
 ---
-draft: false
 title: 'Pablo Hernández Cámara'
-role: "phd students"
-weight: 1
 params:
   img: 06_Pablo_THIS.webp
   googlescholar: 'https://scholar.google.com/citations?user=figpQ9MAAAAJ&hl=es'

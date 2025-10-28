@@ -1,8 +1,5 @@
 ---
-draft: false
 title: Johannes Hirn
-role: postdocs
-weight: 1
 params:
   img: johannes.webp
 

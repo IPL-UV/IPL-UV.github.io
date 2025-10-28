@@ -1,9 +1,5 @@
 ---
-date: '2024-05-10T05:29:29+02:00'
-draft: false
 title: 'Maria Piles'
-role: "associate professors"
-weight: 2
 params:
   img: maria.webp
   googlescholar: 'https://scholar.google.es/citations?user=KTva-HMAAAAJ&hl=es'

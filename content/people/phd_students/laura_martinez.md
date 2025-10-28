@@ -1,8 +1,5 @@
 ---
-draft: false
 title: 'Laura Martínez'
-role: "phd students"
-weight: 1
 params:
   img: laura.jpg
   orcid: 'https://orcid.org/0000-0002-4730-8657'

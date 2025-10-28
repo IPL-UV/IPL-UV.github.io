@@ -1,8 +1,5 @@
 ---
-draft: false
 title: 'Jorge Vila Tomás'
-role: "phd students"
-weight: 1
 params:
   img: jorge_vila.jpg
 

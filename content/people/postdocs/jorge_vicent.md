@@ -1,8 +1,5 @@
 ---
-date: '2024-05-10T05:29:29+02:00'
-draft: false
 title: 'Jorge Vicent Servera'
-role: postdocs
 params:
   img: jorge_vincent.jpg
   github: 'https://gitlab.com/jorge.vicent/'

@@ -1,8 +1,5 @@
 ---
-draft: false
 title: 'Deborah Bassotto'
-role: "phd students"
-weight: 1
 params:
   img: deborah.webp
 ---

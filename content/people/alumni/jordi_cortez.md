@@ -1,8 +1,5 @@
 ---
-draft: false
 title: 'Jordi Cortes'
-role: "phd students"
-weight: 1
 params:
   img: jordicortes.jpg
   orcid: 'https://orcid.org/0000-0002-9344-819'
