@@ -1,7 +1,7 @@
 ---
 title: 'Miguel Ángel Fernández Torres'
 params:
-  img: miguelangel.jpg
+  img: miguelangel.webp
   googlescholar: 'https://scholar.google.com/citations?user=YxMTPqEAAAAJ&hl=es'
   orcid: 'https://orcid.org/0000-0002-0801-199X'
   twitter: 'https://twitter.com/miguelangelft'

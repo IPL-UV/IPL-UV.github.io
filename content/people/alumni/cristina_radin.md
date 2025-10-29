@@ -1,7 +1,7 @@
 ---
 title: 'Cristina Radin'
 params:
-  img: cristina.jpg
+  img: cristina.webp
   googlescholar: 'https://scholar.google.com/citations?user=tfctuKIAAAAJ&hl=es&authuser=1'
   orcid: 'https://orcid.org/0000-0003-3969-4583'
   twitter: 'http://twitter.com/cris_radin'

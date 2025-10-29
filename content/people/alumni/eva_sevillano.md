@@ -1,7 +1,7 @@
 ---
 title: 'Eva Sevillano Marco'
 params:
-  img: eva.jpg
+  img: eva.webp
   orcid: 'http://orcid.org/0000-0002-5684-243X'
   twitter: 'http://twitter.com/Eva_SeviMarco'
   researchgate: 'https://www.researchgate.net/profile/Eva-Sevillano'

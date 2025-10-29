@@ -1,7 +1,7 @@
 ---
 title: 'Jordi Cortes'
 params:
-  img: jordicortes.jpg
+  img: jordicortes.webp
   orcid: 'https://orcid.org/0000-0002-9344-819'
   researchgate: 'https://www.researchgate.com/profile/Jordi-Cortes-Andres'
   youtube: https://www.youtube.com/watch?v=UHLFjFzKiZE

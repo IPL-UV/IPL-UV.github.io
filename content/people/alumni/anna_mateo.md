@@ -1,7 +1,7 @@
 ---
 title: 'Anna Maria Mateo'
 params:
-  img: ana_mateo.jpg
+  img: ana_mateo.webp
   googlescholar: 'https://scholar.google.es/citations?user=UjbITuIAAAAJ&hl=es'
   orcid: 'https://orcid.org/0000-0002-2251-0410'
   researchgate: 'https://www.researchgate.com/profile/Anna-Mateo-Sanchis'

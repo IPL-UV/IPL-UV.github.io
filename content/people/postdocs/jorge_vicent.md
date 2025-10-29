@@ -1,7 +1,7 @@
 ---
 title: 'Jorge Vicent Servera'
 params:
-  img: jorge_vincent.jpg
+  img: jorge_vincent.webp
   github: 'https://gitlab.com/jorge.vicent/'
   researchgate: 'https://www.researchgate.net/profile/Jorge-Vicent'
   linkedin: 'https://www.linkedin.com/in/jorviser/'

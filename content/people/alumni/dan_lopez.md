@@ -1,7 +1,7 @@
 ---
 title: 'Dan López'
 params:
-  img: dan.jpg
+  img: dan.webp
   googlescholar: 'https://scholar.google.com/citations?user=-wZv_nkAAAAJ&hl=en'
   orcid: 'https://orcid.org/0000-0003-4442-2507'
   twitter: 'https://twitter.com/danlopezpuig'

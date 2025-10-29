@@ -1,7 +1,7 @@
 ---
 title: 'Homer Durand'
 params:
-  img: homer.jpg
+  img: homer.webp
   orcid: 'https://orcid.org/0000-0002-1907-7927'
   github: 'https://github.com/homerdurand/'
   linkedin: 'www.linkedin.com/in/homer-durand-b575b6160'

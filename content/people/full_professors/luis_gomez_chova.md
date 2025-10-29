@@ -1,7 +1,7 @@
 ---
 title: 'Luis Gómez-Chova'
 params:
-  img: Luis.jpg
+  img: Luis.webp
   googlescholar: 'https://scholar.google.com/citations?user=7LQsYOcAAAAJ&hl=en'
   orcid: 'https://orcid.org/0000-0003-3924-1269'
   twitter: 'http://twitter.com/isp_uv_es'

@@ -1,7 +1,7 @@
 ---
 title: 'Enrique Portalés'
 params:
-  img: kike.jpg
+  img: kike.webp
   googlescholar: 'https://scholar.google.es/citations?user=8NFahPMAAAAJ&hl=ca&oi=ao'
   orcid: 'https://orcid.org/0000-0002-6537-2062'
   twitter: 'http://twitter.com/remotekike'

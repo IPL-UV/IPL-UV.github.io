@@ -1,7 +1,7 @@
 ---
 title: 'Jorge Vila Tomás'
 params:
-  img: jorge_vila.jpg
+  img: jorge_vila.webp
 
   youtube: https://www.youtube.com/watch?v=5DgRyeqTX5E
 ---

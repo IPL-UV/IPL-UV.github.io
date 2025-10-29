@@ -1,7 +1,7 @@
 ---
 title: 'Gonzalo Mateo-García'
 params:
-  img: gonzalo.jpg
+  img: gonzalo.webp
   googlescholar: 'https://scholar.google.com/citations?user=ZwlGpiUAAAAJ&hl=en'
   orcid: 'https://orcid.org/0000-0002-0569-393X'
   twitter: 'https://twitter.com/gonzmg88'

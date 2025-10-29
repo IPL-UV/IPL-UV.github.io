@@ -1,7 +1,7 @@
 ---
 title: 'Javier Martínez Amaya'
 params:
-  img: javier.jpg
+  img: javier.webp
   orcid: 'https://orcid.org/my-orcid?orcid=0000-0001-6436-3845'
   twitter: 'https://twitter.com/Javi_MartAmaya'
   github: 'https://github.com/javier3297'

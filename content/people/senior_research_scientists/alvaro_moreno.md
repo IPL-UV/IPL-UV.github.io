@@ -1,7 +1,7 @@
 ---
 title: 'Álvaro Moreno Martínez'
 params:
-  img: alvaro.jpg
+  img: alvaro.webp
   googlescholar: 'https://scholar.google.es/citations?user=vmedAiwAAAAJ&hl=es'
   orcid: 'https://orcid.org/0000-0003-2990-7768'
   researchgate: 'https://www.researchgate.net/profile/Alvaro-Moreno-2'

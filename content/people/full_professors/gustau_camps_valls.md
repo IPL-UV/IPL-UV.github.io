@@ -1,7 +1,7 @@
 ---
 title: 'Gustau Camps-Valls'
 params:
-  img: Gustau.jpg
+  img: gustau.webp
   googlescholar: 'https://scholar.google.com/citations?user=6mgnauMAAAAJ'
   orcid: 'http://orcid.org/0000-0003-1683-2138'
   twitter: 'http://twitter.com/isp_uv_es'

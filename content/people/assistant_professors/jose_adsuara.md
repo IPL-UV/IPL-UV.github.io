@@ -1,7 +1,7 @@
 ---
 title: 'José Enrique Adsuara'
 params:
-  img: jose_enrique.jpg
+  img: jose_enrique.webp
   googlescholar: 'https://scholar.google.es/citations?user=emaUK3AAAAAJ&hl=es'
   orcid: 'https://orcid.org/0000-0002-3842-965X'
   researchgate: 'https://www.researchgate.com/profile/Jose-Adsuara'

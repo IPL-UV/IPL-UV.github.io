@@ -1,7 +1,7 @@
 ---
 title: 'Maria Gonzalez'
 params:
-  img: mariagonzalez.jpg
+  img: mariagonzalez.webp
   googlescholar: 'https://scholar.google.es/citations?user=kMv4UUsAAAAJ&hl=es&oi=ao'
   orcid: 'https://orcid.org/0000-0003-1254-2387'
   researchgate: 'https://www.researchgate.com/profile/Maria-Gonzalez-Calabuig'

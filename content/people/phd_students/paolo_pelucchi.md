@@ -1,7 +1,7 @@
 ---
 title: 'Paolo Pelucchi'
 params:
-  img: paolo.jpg
+  img: paolo.webp
   youtube: https://www.youtube.com/watch?v=gJY7aZ98FCY
 ---
 

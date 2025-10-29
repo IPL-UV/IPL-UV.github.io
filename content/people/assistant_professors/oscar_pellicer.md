@@ -1,7 +1,7 @@
 ---
 title: 'Óscar Pellicer'
 params:
-  img: 06_ISP_Oscar.webp
+  img: oscar.webp
   googlescholar: 'https://scholar.google.com/citations?user=CCFJshwAAAAJ'
   orcid: 'https://orcid.org/0000-0002-0104-1029'
   github: 'https://github.com/OscarPellicer'

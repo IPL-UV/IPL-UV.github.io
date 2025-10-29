@@ -1,7 +1,7 @@
 ---
 title: 'Jordi Muñoz-Marí'
 params:
-  img: jordi.jpg
+  img: jordi.webp
   googlescholar: 'https://scholar.google.com/citations?user=XPs4yHUAAAAJ&hl=en'
   orcid: 'https://orcid.org/0000-0002-3014-3921'
   github: 'https://github.com/IPL-UV/'

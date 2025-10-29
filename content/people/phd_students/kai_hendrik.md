@@ -1,7 +1,7 @@
 ---
 title: 'Kai-Hendrik Cohrs'
 params:
-  img: kai.jpg
+  img: kai.webp
   googlescholar: 'https://scholar.google.com/citations?user=2NKBJkEAAAAJ&hl=en'
   orcid: 'https://orcid.org/0000-0002-2286-7487'
   twitter: 'https://twitter.com/cohrskai'

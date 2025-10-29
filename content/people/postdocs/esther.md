@@ -1,7 +1,7 @@
 ---
 title: 'Esther Rodrigo Bonet'
 params:
-  img: esther.jpg
+  img: esther.webp
   orcid: "https://orcid.org/0000-0003-4129-3295"                            
 ---
 

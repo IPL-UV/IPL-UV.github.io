@@ -1,7 +1,7 @@
 ---
 title: 'Ana B. Ruescas'
 params:
-  img: ana.jpg
+  img: ana.webp
   googlescholar: 'https://scholar.google.com/citations?user=G-hjVSkAAAAJ&hl=en'
   orcid: 'https://orcid.org/0000-0002-0843-7288'
   researchgate: 'https://www.researchgate.com/profile/Ana-Ruescas'

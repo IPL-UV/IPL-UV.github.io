@@ -1,7 +1,7 @@
 ---
 title: 'Tristan Williams'
 params:
-  img: tristan.jpg
+  img: tristan.webp
   googlescholar: 'https://scholar.google.com/citations?hl=en&user=yoNnOcMAAAAJ'
   orcid: 'https://orcid.org/0000-0003-0532-7013'
   twitter: 'https://twitter.com/Tristan_Earth'

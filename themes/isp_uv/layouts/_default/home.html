@@ -68,6 +68,20 @@
 
 
     <style>
+        :root{
+        --nav-h: 0px; 
+        }
+
+        .custom-wrapper{
+            min-height: calc(85dvh - var(--nav-h));
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            max-width: 100%;
+            margin: 0 auto;
+;
+        }
+
         .custom-banner {
             margin-top: 2rem;
             display: flex;
@@ -75,7 +89,6 @@
             align-items: center;
             width: 100%;
             gap: 2rem;
-          
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -99,13 +112,13 @@
 
         .custom-social-links {
             display: flex;
-            flex-wrap: wrap;  /* Permite que los íconos se apilen */
-            gap: 5px;        /* Espacio entre los íconos */
+            flex-wrap: wrap;
+            gap: 5px;
         }
         
         .custom-social-links a {
             display: inline-block;
-            margin: 1px;  /* Añade algo de espacio entre los enlaces */
+            margin: 1px; 
             text-align: center;
         }
         
@@ -114,10 +127,17 @@
             .custom-banner .custom-bannet-text p {
                 font-size: 3.5rem;
               }
+              .custom-text {
+                margin-left: 0;
+                max-width: 100%;
+              }
         }
-        @media (max-width: 1199px) {
+        @media (max-width: 1200px) {
             .custom-banner .custom-bannet-text p {
                 font-size: 3rem;
+              }
+            .custom-text {
+                max-width: 100%;
               }
         }
 
@@ -128,6 +148,11 @@
             .custom-banner img {
                 display: none;
             }
+        }
+        @media (max-width: 767px) {
+            .custom-banner .custom-bannet-text p {
+                font-size: 2.8rem;
+              }
         }
         @media (max-width: 526px) {
             .custom-banner .custom-bannet-text p {
@@ -169,12 +194,12 @@
         .custom-content{
         display: flex; gap: 2rem; align-items: flex-start; flex-wrap: wrap;
         }
-        .custom-video{ flex: 1 1 420px; min-width: 280px; }
+        .custom-video{ flex: 1 1 100px; min-width: 280px; }
         .custom-text{ flex: 1 1 420px; min-width: 280px; }
 
         /* En móviles, apila y añade un margen inferior suave al vídeo */
         @media (max-width: 576px){
-        .custom-video{ width: 100%; margin-bottom: 12px; }
+        .custom-video{ width: 100%; }
         }
 
     </style>
