@@ -1,6 +1,6 @@
 ---
 title: 'ELIAS: European Lighthouse of AI for Sustainability'
-logo: 'h2020.webp'
+logo: 'elias_logo.webp'
 pi: ''
 uvpi: 'Gustau Camps-Valls'
 years: '2023-2026'

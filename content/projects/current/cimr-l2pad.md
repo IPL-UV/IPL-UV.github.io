@@ -1,6 +1,6 @@
 ---
 title: 'CIMR L2PAD: CIMR Level-2 Product and Algorithm Development'
-logo: 'esa.webp'
+logo: 'CIMRL2PAD_logo.webp'
 pi: 'Thomas Lavergne (Norwegian Meteorological Institute)'
 uvpi: 'M. Piles'
 years: '2024-2028'

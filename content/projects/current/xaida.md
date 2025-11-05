@@ -1,6 +1,6 @@
 ---
 title: 'XAIDA: Extreme Events - Artificial Intelligence for Detection and Attribution'
-logo: 'h2020.webp'
+logo: 'xaida.webp'
 pi: ''
 uvpi: 'Gustau Camps-Valls'
 years: '2021-2025'
