@@ -3,7 +3,7 @@
     {{ range .Pages }}
     {{ $img := relURL (urls.JoinPath "images/courses" .Params.img) }}
     {{ $imgBase := path.Base .Params.img }}
-    {{ $altText := strings.TrimSuffix $imgBase (path.Ext $imgBase) }} <!-- Esto genera el nombre sin la extensión -->
+    {{ $altText := strings.TrimSuffix $imgBase (path.Ext $imgBase) }}
     <div class="panel-item">
         <div class="panel-header">
             <h4 class="panel-title"><b>{{ .Title }}</b></h4>
@@ -15,20 +15,150 @@
                         <img src="{{ $img }}" alt="{{ if .Params.img }}{{ $altText }}{{ else }}Image{{ end }}">
                     </a>
                 </div>  
+
                 <div class="panel-description">
                     <h5>
+                        {{ if .Params.create_date }}
+                        <p><span style="color: #337ab7; font-weight: bold;">Created date:</span> {{ .Params.create_date }}</p>
+                        {{ end }}
                         {{ if .Params.course_duration }}
-                        <p><strong>Course Duration:</strong> {{ .Params.course_duration }}</p>
+                        <p><span style="color: #337ab7; font-weight: bold;">Duration:</span> {{ .Params.course_duration }}</p>
                         {{ end }}
                         {{ if .Params.instructor }}
-                        <p><strong>Instructors:</strong> {{ .Params.instructor }}</p>
+                        <p><span style="color: #337ab7; font-weight: bold;">Trainers:</span> {{ .Params.instructor }}</p>
                         {{ end }}
-                        <p class="text-justify">
-                            {{ .Content | markdownify }}
+                        {{ if .Content}}
+                        <p><span style="color: #337ab7; font-weight: bold;">Description:</span> {{ .Content | markdownify }}</p>
+                        {{ end }}
+                        {{ if .Params.keywords}}
+                        <p><span style="color: #337ab7; font-weight: bold;">Keywords:</span> 
+                            {{/* Verificamos si es una lista para quitar los corchetes */}}
+                            {{ if reflect.IsSlice .Params.keywords }}
+                                {{ delimit .Params.keywords " " }}
+                            {{ else }}
+                                {{ .Params.keywords }}
+                            {{ end }}
                         </p>
+                        {{ end }}
                     </h5>
                     
+                    {{ if .Params.sources }}
+                    <div class="course-sources" style="margin-bottom: 15px; font-size: 1.1rem;">
+                        
+                        {{/* 1. WEBSITE */}}
+                        {{ with .Params.sources.website }} 
+                            <a href="{{ . }}" target="_blank" rel="noopener noreferrer" style="margin-right: 8px;">
+                                <i class="fa-solid fa-globe" style="color: #000000;" title="Website"></i>
+                            </a> 
+                        {{ end }}
+                        
+                        {{/* 2. GITHUB (Con soporte para listas) */}}
+                        {{ with .Params.sources.github }} 
+                            {{ if reflect.IsSlice . }}
+                                {{/* Si es una lista, crea un icono por cada link */}}
+                                {{ range . }}
+                                    <a href="{{ . }}" target="_blank" rel="noopener noreferrer" style="margin-right: 8px;">
+                                        <i class="fab fa-github" style="color: #080808;" title="GitHub Repository"></i>
+                                    </a>
+                                {{ end }}
+                            {{ else }}
+                                {{/* Si es solo uno, ponlo normal */}}
+                                <a href="{{ . }}" target="_blank" rel="noopener noreferrer" style="margin-right: 8px;">
+                                    <i class="fab fa-github" style="color: #080808;" title="GitHub Repository"></i>
+                                </a> 
+                            {{ end }}
+                        {{ end }}
+                        
+                        {{/* 3. YOUTUBE */}}
+                        {{ with .Params.sources.youtube }} 
+                            <a href="{{ . }}" target="_blank" rel="noopener noreferrer" style="margin-right: 8px;">
+                                <i class="fab fa-youtube" style="color: #f50234;" title="Watch on YouTube"></i>
+                            </a> 
+                        {{ end }}
+
+                        {{/* 4. GOOGLE SCHOLAR */}}
+                        {{ with .Params.sources.googlescholar }} 
+                            <a href="{{ . }}" target="_blank" rel="noopener noreferrer" style="margin-right: 8px;">
+                                <i class="fa-brands fa-google-scholar" style="color: #336daf;" title="Google Scholar"></i>
+                            </a> 
+                        {{ end }}
+
+                        {{/* 5. TWITTER */}}
+                        {{ with .Params.sources.twitter }} 
+                            <a href="{{ . }}" target="_blank" rel="noopener noreferrer" style="margin-right: 8px;">
+                                <i class="fab fa-x-twitter" style="color: #080808;" title="Twitter/X"></i>
+                            </a> 
+                        {{ end }}
+
+                        {{/* 6. PDF */}}
+                        {{ with .Params.sources.pdf }} 
+                            <a href="{{ . }}" target="_blank" rel="noopener noreferrer" style="margin-right: 8px;">
+                                <i class="fa-solid fa-file-pdf" style="color: #e11d21;" title="Download PDF"></i>
+                            </a> 
+                        {{ end }}
+
+                        {{/* 7. ZIP */}}
+                        {{ with .Params.sources.zip }} 
+                            <a href="{{ . }}" target="_blank" rel="noopener noreferrer" style="margin-right: 8px;">
+                                <i class="fa-solid fa-file-zipper" style="color: #f0ad4e;" title="Download ZIP Material"></i>
+                            </a> 
+                        {{ end }}
+
+                        {{/* 8. SLIDES */}}
+                        {{ with .Params.sources.slides }} 
+                            <a href="{{ . }}" target="_blank" rel="noopener noreferrer" style="margin-right: 8px;">
+                                <i class="fa-solid fa-file-powerpoint" style="color: #d24726;" title="Download Slides"></i>
+                            </a> 
+                        {{ end }}
+
+                        {{/* 9. PYTHON (Con soporte para listas - ¡Aquí estaba el error!) */}}
+                        {{ with .Params.sources.python }} 
+                            {{ if reflect.IsSlice . }}
+                                {{ range . }}
+                                    <a href="{{ . }}" target="_blank" rel="noopener noreferrer" style="margin-right: 8px;">
+                                        <i class="fab fa-python" style="color: #3776ab;" title="Python Source"></i>
+                                    </a> 
+                                {{ end }}
+                            {{ else }}
+                                <a href="{{ . }}" target="_blank" rel="noopener noreferrer" style="margin-right: 8px;">
+                                    <i class="fab fa-python" style="color: #3776ab;" title="Python Source"></i>
+                                </a> 
+                            {{ end }}
+                        {{ end }}
+
+                        {{/* 10. JUPYTER (Con soporte para listas) */}}
+                        {{ with .Params.sources.jupyter }} 
+                            {{ if reflect.IsSlice . }}
+                                {{ range . }}
+                                    <a href="{{ . }}" target="_blank" rel="noopener noreferrer" style="margin-right: 8px;">
+                                        <i class="fa-solid fa-code" style="color: #F37726;" title="Jupyter Notebook"></i>
+                                    </a> 
+                                {{ end }}
+                            {{ else }}
+                                <a href="{{ . }}" target="_blank" rel="noopener noreferrer" style="margin-right: 8px;">
+                                    <i class="fa-solid fa-code" style="color: #F37726;" title="Jupyter Notebook"></i>
+                                </a> 
+                            {{ end }}
+                        {{ end }}
+
+                    </div>
+                    {{ end }}
+                    <div class="objectives-container">
+                        <details>
+                            <summary class="objectives-link" style="cursor: pointer; color: #337ab7; font-weight: bold;">
+                                Objectives
+                            </summary>
+                            
+                            <ul class="objectives-list" style="margin-top: 10px; padding-left: 20px;">
+                                {{ range .Params.objectives }}
+                                    <li>{{ . }}</li>
+                                {{ end }}
+                            </ul>
+                        </details>
+                    </div>
+
                 </div>  
+
                 {{ if .Params.references }}
                 <div class="panel-references col-md-4">
                     <h6><b>References</b></h6>
