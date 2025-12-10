@@ -1,5 +1,5 @@
 ---
-title: 'Paolo Frazzeto'
+title: 'Paolo Frazzetto'
 params:
   img: paolo_frazzetto.webp
   website: https://paolofraz.github.io/
