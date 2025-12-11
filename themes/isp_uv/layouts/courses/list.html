@@ -47,8 +47,11 @@
                         
                         {{/* 1. WEBSITE */}}
                         {{ with .Params.sources.website }} 
-                            <a href="{{ . }}" target="_blank" rel="noopener noreferrer" style="margin-right: 8px;">
+                            {{/*  <a href="{{ . }}" target="_blank" rel="noopener noreferrer" style="margin-right: 8px;">
                                 <i class="fa-solid fa-globe" style="color: #000000;" title="Website"></i>
+                            </a>   */}}
+                            <a href="{{ . }}" target="_blank" rel="noopener noreferrer" style="margin-right: 8px;">
+                                <i class="fab fa-youtube" style="color: #000000;" title="Watch on Website"></i>
                             </a> 
                         {{ end }}
                         
