@@ -11,6 +11,7 @@ objectives:
     - Understand the fundamentals behind basic methodologies in causal inference and causal discovery
 sources:
     website: https://docenciavirtual.uv.es/series/67eb96b33f3220604f3c6d13
+    github: https://github.com/homerdurand
 ---
 
 Introduction to causal inference methods, robust prediction techniques, and causal discovery methods. Familiarize with the vocabulary, definitions and basic concepts of causality, and understand the fundamentals behind basic methodologies in causal inference and causal discovery.
