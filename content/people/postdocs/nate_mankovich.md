@@ -5,7 +5,7 @@ params:
   googlescholar: 'https://scholar.google.com/citations?user=d9V9fdkAAAAJ&hl=en'
   github: 'https://github.com/nmank'
   linkedin: 'https://www.linkedin.com/in/nathan-mankovich-b1293717/'
-  website: 'https://natemankovich.weebly.com/'
+  website: 'https://nmank.github.io/'
   youtube: https://www.youtube.com/watch?v=xlLCBKMbjos
 ---
 
