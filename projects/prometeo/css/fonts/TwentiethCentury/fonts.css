@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Twentieth Century for Kenmore';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Twentieth Century for Kenmore'), url('TwentiethCenturyforKenmoreLight.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Twentieth Century for Kenmore';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Twentieth Century for Kenmore'), url('TwentiethCenturyforKenmoreMedium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Twentieth Century for Kenmore';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Twentieth Century for Kenmore'), url('TwentiethCenturyforKenmoreSemibold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Twentieth Century for Kenmore';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Twentieth Century for Kenmore'), url('TwentiethCenturyforKenmoreBold.woff') format('woff');
+}
