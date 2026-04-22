@@ -1,8 +1,10 @@
 {{ define "main" }}
 {{ .Content }}
+
 <div class="content-container">
   <!-- Current Projects Section -->
   {{ $activePages := where .Pages "File.Dir" "projects/current/" }}
+  {{ $activePages = union $activePages (where .Pages "File.Dir" "projects\\current\\") }}
   <div class="title-container">
       <h1>Current projects</h1>
   </div>
@@ -56,6 +58,7 @@
 
   <!-- Past Projects Section -->
   {{ $pastPages := where .Pages "File.Dir" "projects/past/" }}
+  {{ $pastPages = union $pastPages (where .Pages "File.Dir" "projects\\past\\") }}
   <div class="title-container">
       <h1>Past projects</h1>
   </div>

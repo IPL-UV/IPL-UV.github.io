@@ -13,3 +13,7 @@ static/pages/
 config.sh
 buttons.html
 hugo_stats.json
+bib_enricher.py
+bib_enricher.log
+no_duplicates.py
+assets/bibfiles/journal_prev.bib

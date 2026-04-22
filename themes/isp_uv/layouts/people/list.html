@@ -16,14 +16,16 @@
 
         {{ range $order }}
 
-            {{ $dir := printf "people/%s/" . }}
-            {{ $pages := where site.RegularPages "File.Dir" $dir }}
+        {{ $dir := printf "people/%s/" . }}
+        {{ $pages := where site.RegularPages "File.Dir" $dir }}
+        {{ $dirWin := printf "people\\%s\\" . }}
+        {{ $pages = union $pages (where site.RegularPages "File.Dir" $dirWin) }}
             
             {{ $extra := slice }}
             {{ range where site.Pages "Kind" "section" }}
             {{ $p := . }}
                 {{ with $p.File }}
-                    {{ if hasPrefix .Dir $dir }}
+                    {{ if or (hasPrefix .Dir $dir) (hasPrefix .Dir $dirWin) }}
                     {{ $extra = $extra | append $p }}
                     {{ end }}
                 {{ end }}
