@@ -9,5 +9,4 @@ funding_source: 'ESA ITT'
 role: ''
 project_type: ''
 partners: ['Norwegian Meteorological Institute', 'Finnish Meteorological Institute', 'The Danish Meteorological Institute', 'Deimos', 'University of Bremen','OceanDataLab', 'S&T Norway', 'Institut de Ciències del Mar']
-weight: 4
 ---

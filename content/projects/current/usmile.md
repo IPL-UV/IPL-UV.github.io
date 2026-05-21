@@ -9,5 +9,4 @@ funding_source: 'ERC Synergy Grant'
 role: ''
 project_type: 'Research Project'
 partners: []
-weight: 1
 ---

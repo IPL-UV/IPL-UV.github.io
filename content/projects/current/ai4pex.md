@@ -9,5 +9,4 @@ funding_source: ''
 role: ''
 project_type: ''
 partners: []
-weight: 2
 ---

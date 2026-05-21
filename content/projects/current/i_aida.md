@@ -9,5 +9,4 @@ funding_source: 'ICT-48'
 role: ''
 project_type: ''
 partners: []
-weight: 8
 ---

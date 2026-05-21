@@ -9,5 +9,4 @@ funding_source: 'Food and Agricultural Organization'
 role: ''
 project_type: ''
 partners: []
-weight: 4
 ---

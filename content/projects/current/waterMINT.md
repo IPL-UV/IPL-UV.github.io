@@ -9,5 +9,4 @@ funding_source: 'Spanish Ministry of Science, Innovation and Universities (MCIU/
 role: ''
 project_type: ''
 partners: []
-weight: 1
 ---

@@ -9,5 +9,4 @@ funding_source: 'MIT-Spain INDITEX Circularity Seed Fund'
 role: ''
 project_type: ''
 partners: [MIT]
-weight: 1
 ---

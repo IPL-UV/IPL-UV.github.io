@@ -4,9 +4,9 @@ logo: 'graint_ai_taco.webp'
 pi: ''
 uvpi: 'L. Gómez-Chova'
 years: '2025-2026'
-funding_source: 'Climate Change AI Innovation Grants 2024 — Special Track on Dataset Gaps'
+funding_source: 'Climate Change AI Innovation Grants 2024 (Special Track on Dataset Gaps) — The Global Methane Hub'
 role: 'Applicant / Lead institution'
 project_type: 'Research & Dataset‑Creation Grant (12 meses)'
 partners: ["University of Valencia", "Polytechnic University of Valencia", "Leipzig University"]
-weight: 1
+weight: 2
 ---
