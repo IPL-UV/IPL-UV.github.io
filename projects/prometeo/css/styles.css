@@ -1,0 +1,146 @@
+@media (min-width: 768px) {
+	/* This shows the submenus automatically when the mouse is over */
+	.dropdown:hover .dropdown-menu {
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	/* These two shows submenus in mobile devices */
+    .dropdown-menu {
+        display: block;
+        position: static;
+        background-color: transparent;
+        background-image: none;
+        border:0 none;
+        box-shadow:none;
+        margin-top:0;
+        width:100%;
+    }
+	.nav > li {
+		display: inline-block;
+		width: 100%;
+	}
+    /* Size of submenus */
+    .navbar-nav .dropdown-menu > li > a {
+        line-height: 20px;
+    }
+	/* This hides the cared (little down arrow) */
+    a.dropdown-toggle .caret {
+        display: none;
+    }
+
+	/*  I don't know what these do
+    .navbar-nav .dropdown-menu > li > a,
+    .navbar-nav .dropdown-menu .dropdown-header {
+        padding: 5px 15px 5px 25px;
+        width: 100%;
+    }
+    .navbar-nav > li > a {
+    	width: 100%;
+    }
+    .panel small {
+        display: inline !important;
+    }
+    .milestone-years {
+        margin-top: 7px;
+    }
+    .hide-on-mobile {
+        display: none;
+    }
+    .carousel-button-mobile {
+        padding: 5px 10px;
+        font-size: 13px;
+        line-height: 1.5;
+        border-radius: 0;
+    }
+    .carousel-caption-mobile {
+        padding-bottom: 0px;
+    }
+    */
+
+    /* Color for nav. bar */
+    .navbar-inverse .navbar-nav > li > a {
+    	color: #ffffff;
+    }
+    .navbar-inverse .navbar-nav .dropdown-menu > li > a {
+        color: #a0a0a0;
+    }
+    /* Rule divider */
+    .navbar-inverse .navbar-nav .dropdown-menu > .dropdown-header {
+        border-color: #1967be;
+    }
+    .navbar-inverse .navbar-nav .dropdown-menu .divider {
+        /* background-color: #1967be; */
+        background-color: #a0a0a0;
+        width: 90%;
+        margin-left: 15px;
+    }
+
+    /* Color when the mouse is over */
+    .navbar-inverse .navbar-nav .dropdown-menu > li > a:hover,
+    .navbar-inverse .navbar-nav .dropdown-menu > li > a:focus {
+        color: #1967be;
+        background-color: #1967be;
+        background-image: none;
+    }
+    /* Color when the link is active */
+    .navbar-inverse .navbar-nav .dropdown-menu > .active > a,
+    .navbar-inverse .navbar-nav .dropdown-menu > .active > a:hover,
+    .navbar-inverse .navbar-nav .dropdown-menu > .active > a:focus {
+        color: #ffffff;
+        background-color: #1967be;
+    }
+    /* Color when the link is disabled */
+    .navbar-inverse .navbar-nav .dropdown-menu > .disabled > a,
+    .navbar-inverse .navbar-nav .dropdown-menu > .disabled > a:hover,
+    .navbar-inverse .navbar-nav .dropdown-menu > .disabled > a:focus {
+        color: #ffffff;
+        background-color: transparent;
+    }
+
+    /* Blue color for nav. bar button */
+    /*
+    .navbar-inverse .navbar-toggle:hover,
+    .navbar-inverse .navbar-toggle:focus {
+        background-color: #1967be;
+    }
+    */
+}
+
+/* Colors for top navigation bar (in inverse mode!) */
+
+/* White color for characters */
+/*
+.navbar-inverse .navbar-nav > li > a {
+  color: #ffffff;
+}
+*/
+
+/* Background color in blue when mouse is over or focus */
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #ffffff;
+  background-color: #1967be;
+}
+
+.navbar-inverse .navbar-nav .dropdown-menu > li > a:hover,
+.navbar-inverse .navbar-nav .dropdown-menu > li > a:focus {
+  color: #ffffff;
+  background-color: #1967be;
+  background-image: none;
+}
+
+/* These styles are a workaround to remove page shifting on modal display */
+.modal {
+    overflow-y: auto;
+}
+
+.modal-open {
+    overflow: auto;
+}
+
+.modal-open[style] {
+    padding-right: 0px !important;
+}
+/* workarounds end */
