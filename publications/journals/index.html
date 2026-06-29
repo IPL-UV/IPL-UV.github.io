@@ -1094,12 +1094,19 @@ DOI = {10.5194/nhess-26-2785-2026}
   publisher = {IOP Publishing},
   month = {7},
 }
-@article{pellicer2025video,
-	title        = {Video Compression for Spatiotemporal Earth System Data},
-	author       = {Pellicer-Valero, Oscar J and Aybar, Cesar and Valls, Gustau Camps},
-	year         = 2025,
-	journal      = {arXiv preprint arXiv:2506.19656},
-	doi          = {https://doi.org/10.48550/arXiv.2506.19656}
+@article{PELLICERVALERO2026106227,
+title = {Video compression for spatiotemporal Earth system data},
+journal = {Computers &amp; Geosciences},
+volume = {215},
+pages = {106227},
+year = {2026},
+issn = {0098-3004},
+doi = {https://doi.org/10.1016/j.cageo.2026.106227},
+url = {https://www.sciencedirect.com/science/article/pii/S009830042600124X},
+author = {Oscar J. Pellicer-Valero and Cesar Aybar and Gustau {Camps Valls}},
+keywords = {Video compression, x265, Multispectral, Spatiotemporal, Sentinel-2, Era5},
+abstract = {Large-scale Earth system datasets — from high-resolution remote sensing imagery to spatiotemporal climate model outputs — exhibit spatial, temporal, and spectral redundancies that make them natural candidates for video compression. We present xarrayvideo, a Python library that compresses multichannel spatiotemporal Earth system data (ESD) by encoding them as videos via ffmpeg: spectral bands are mapped to color channels, and time steps to video frames, while non-video metadata is stored in a companion NetCDF file. Our core contribution is not a new codec, but a practical interoperability layer that makes decades of optimized video engineering immediately applicable to ESD. We demonstrate compression ratios of up to 250× with very high reconstruction fidelity across four representative datasets spanning EO imagery (DynamicEarthNet, DeepExtremeCubes, SimpleS2) and reanalysis fields (ERA5). Compressed versions of DynamicEarthNet (525GB→8.5GB at 76.63 dB PSNR) and DeepExtremeCubes (2.3 TB→323GB at 67.81 dB PSNR) are openly released in the FAIR-compliant TACO v2 format on HuggingFace. Downstream deep learning performance (land-cover segmentation and next-step reflectance prediction) shows no degradation on the compressed datasets at the quality levels evaluated. Overall, xarrayvideo provides a practical, zero-training solution to the growing storage challenges in Earth system sciences, built on standard, hardware-accelerated video tooling. The library is available at https://github.com/IPL-UV/xarrayvideo.},	
+arxiv    = {arXiv.2506.19656}
 }
 @article{zhang2025calibration,
 	title        = {Calibration and uncertainty quantification for deep learning-based drought detection},
