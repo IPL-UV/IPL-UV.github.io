@@ -2,6 +2,7 @@ baseURL = "https://ipl-uv.github.io/"
 #baseURL = "https://isp.uv.es/github"
 publishDir = "public"
 buildFuture = true
+enableRobotsTXT = true
 
 
 #baseURL = "http://127.0.0.1/isp/"
@@ -139,3 +140,6 @@ theme = "isp_uv"
   name = "Contact"
   url = "/contact/"
   weight = 13
+
+[params]
+  description = "The Image and Signal Processing (ISP) group at the Universitat de València develops AI methods for Earth, climate and vision science."

@@ -1,5 +1,5 @@
 ---
-title: "index"
+title: "ISP - Image and Signal Processing group"
 banner: "images/logo_isp.svg"
 ---
 
