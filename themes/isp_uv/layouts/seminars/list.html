@@ -35,22 +35,24 @@
   <div class="grid-container" id="seminar-grid-container">
     {{ range sort (where .Site.RegularPages "Section" "seminars") "Date" "desc" }}
     {{ $ruta := .Params.img | default "uv.webp" }}
-    {{ $imgPeople := relURL (urls.JoinPath "images/people" $ruta) }}
-    {{ $imgSeminars := relURL (urls.JoinPath "images/seminars" $ruta) }}
+    {{ $img := "" }}
+    {{ if fileExists (printf "static/images/people/%s" $ruta) }}
+      {{ $img = relURL (urls.JoinPath "images/people" $ruta) }}
+    {{ else }}
+      {{ $img = relURL (urls.JoinPath "images/seminars" $ruta) }}
+    {{ end }}
   
       {{ $current := . }}
       <div class="grid-item seminar-item project-item" data-year="{{ .Date.Format "2006" }}" data-month="{{ .Date.Format "January" }}" data-speaker="{{ .Params.speaker }}">
         <div class="image-container seminar-image">
           {{ with .Params.link }}
             <a href="{{ . }}">
-              <img src="{{ $imgPeople }}" 
-                   alt="{{ $current.Params.image_alt | default "Default Seminar Image" }}"
-                   onerror="this.onerror=null;this.src='{{ $imgSeminars }}';">
+              <img src="{{ $img }}" loading="lazy"
+                   alt="{{ $current.Params.image_alt | default $current.Title }}">
             </a>
           {{ else }}
-            <img src="{{ $imgPeople }}" 
-                 alt="{{ .Params.image_alt | default "Default Seminar Image" }}"
-                 onerror="this.onerror=null;this.src='{{ $imgSeminars }}';">
+            <img src="{{ $img }}" loading="lazy"
+                 alt="{{ .Params.image_alt | default .Title }}">
           {{ end }}
         </div>
         <div class="text-container seminar-text">

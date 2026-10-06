@@ -643,3 +643,23 @@ Then, on GitHub, navigate to the Pull Requests tab and open a new PR.
 | Courses       | :x:                 | :x:                |
 | News          | :x:                 | :x:                |
 | Contact       | :x:                 | :x:                |  -->
+
+
+---
+
+## 🚀 Deployment
+
+The site is built and deployed automatically by GitHub Actions on every push to `main` (`.github/workflows/gh-page.yml`). Pull requests only build; they do not deploy.
+
+One source, four published branches:
+
+| config | publish dir | branch | served at |
+|---|---|---|---|
+| `hugo-alt.toml` | `docs` | `gh-pages` | https://isp.uv.es (server `harpo`, `git pull` every few minutes) |
+| `hugo.toml` | `public` | `gh-ipl-pages` | https://ipl-uv.github.io |
+| `hugo-alt_prometeo.toml` | `public` | `gh-prometeo_isp` | https://isp.uv.es/projects/prometeo/ |
+| `hugo_prometeo.toml` | `public` | `gh-prometeo_ipl` | https://ipl-uv.github.io/projects/prometeo/ |
+
+- Edit content in `main` only. Never edit the published branches by hand: the next build overwrites them.
+- The main menu is duplicated in `hugo.toml` and `hugo-alt.toml`; keep both in sync.
+- Hugo version: `0.125.7` (extended).

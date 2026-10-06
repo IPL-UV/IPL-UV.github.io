@@ -2,6 +2,8 @@
 title: "SEDAL Project"
 type: "news"
 layout: "single"
+aliases:
+  - /news/2016/sedal-grant/proporsal/
 ---
 
 # Proposals

@@ -25,7 +25,7 @@
   <aside class="box-gallery box-gallery-left">
     <div class="gallery-grid">
       {{ range .Params.imagesLeft }}
-        {{ $img := relURL (urls.JoinPath "images/code" .link) }}
+        {{ $img := cond (hasPrefix .link "http") .link (relURL (urls.JoinPath "images/code" .link)) }}
 
         <div class="gallery-item">
           {{ if or (strings.HasSuffix .link ".jpg") (strings.HasSuffix .link ".png") (strings.HasSuffix .link ".webp") (strings.HasSuffix .link ".gif") }}
@@ -36,7 +36,7 @@
           {{ else if or (strings.HasSuffix .link ".mp4") (strings.HasSuffix .link ".webm") }}
           <!-- Renderizar video -->
           <video controls>
-            <source src="{{ $img }}" type="video/{{ index (split .link ".") 1 }}">
+            <source src="{{ $img }}" type="video/{{ strings.TrimPrefix "." (path.Ext .link) }}">
             Your browser does not support the video tag.
           </video>
           {{ else if (strings.Contains .link "https://") }}
@@ -64,7 +64,7 @@
   <aside class="box-gallery box-gallery-right">
     <div class="gallery-grid">
       {{ range .Params.imagesRight }}
-        {{ $img := relURL (urls.JoinPath "images/code" .link) }}
+        {{ $img := cond (hasPrefix .link "http") .link (relURL (urls.JoinPath "images/code" .link)) }}
 
         <div class="gallery-item">
           {{ if or (strings.HasSuffix .link ".jpg") (strings.HasSuffix .link ".png") (strings.HasSuffix .link ".webp") (strings.HasSuffix .link ".gif") }}
@@ -75,7 +75,7 @@
           {{ else if or (strings.HasSuffix .link ".mp4") (strings.HasSuffix .link ".webm") }}
           <!-- Renderizar video -->
           <video controls>
-            <source src="{{ $img }}" type="video/{{ index (split .link ".") 1 }}">
+            <source src="{{ $img }}" type="video/{{ strings.TrimPrefix "." (path.Ext .link) }}">
           </video>
           {{ else if (strings.Contains .link "https://") }}
           <!-- Renderizar iframe -->
