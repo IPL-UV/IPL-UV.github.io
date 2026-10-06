@@ -3,4 +3,4 @@ type: "code"
 layout: "single_iframe"
 ---
 
-<iframe class="bad-iframe" src="/pages/after_effects/index.html" style="border: 0" width="100%" height="1000" referrerpolicy="same-origin" seamless></iframe>
+{{< legacy "after_effects/index.html" >}}

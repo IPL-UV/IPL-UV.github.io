@@ -5,14 +5,20 @@ layout: "single_iframe"
 ---
 
 <script>
-  function superSize(me) {
-    //me.style.width = me.contentWindow.document.body.scrollWidth + 'px';
-    me.style.height = me.contentWindow.document.body.scrollHeight+20 + 'px';
-  }
+  window.addEventListener('load', function () {
+    var f = document.getElementById('legacy-frame');
+    if (!f) return;
+    var fit = function () {
+      try { f.style.height = f.contentWindow.document.body.scrollHeight + 20 + 'px'; }
+      catch (e) { /* cross-origin (ipl-uv.github.io): deja el height del atributo */ }
+    };
+    f.addEventListener('load', fit);
+    fit();
+  });
 </script>
 
 <div style="max-width: 10000px; margin: 0rem auto ">
-<iframe src="/pages/SpatioSpectral.html" style="border: 0" width="100%" height="1000" referrerpolicy="same-origin" seamless onload="superSize(this)"></iframe>
+{{< legacy "SpatioSpectral.html" "SpatioSpectralTools" >}}
 </div>
 
 <!-- ---

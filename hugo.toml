@@ -142,4 +142,5 @@ theme = "isp_uv"
   weight = 13
 
 [params]
+  legacyBase = "https://isp.uv.es"
   description = "The Image and Signal Processing (ISP) group at the Universitat de València develops AI methods for Earth, climate and vision science."
