@@ -1,7 +1,7 @@
 ---
 title: Pallavi Jain
 params:
-  img: Pal_color_Photo.jpg.webp
+  img: pallavi.webp
   researchgate: https://scholar.google.com/citations?user=MMYyjyIAAAAJ&hl=en
   googlescholar: https://scholar.google.com/citations?user=MMYyjyIAAAAJ&hl=en
   orcid: https://scholar.google.com/citations?user=MMYyjyIAAAAJ&hl=en
