@@ -163,7 +163,7 @@ link = "#"
 [Languages.en]
 languageName = "En"
 languageCode = "en-us"
-contentDir = "content/english"
+contentDir = "content-prometeo"
 weight = 1
 
 [Languages.en.params]
