@@ -62,7 +62,7 @@ theme = "isp_uv"
   [[menu.main]]
     parent = "Research"
     name = "Social science"
-    url = "/research/social_science"
+    url = "/research/social_science/"
     weight = 6
 
 [[menu.main]]

@@ -7,6 +7,4 @@ params:
    - "bibfiles/journal.bib"
    - "bibfiles/talks.bib"
    - "bibfiles/theses.bib"
-aliases:
-  - /papers.html
 ---
