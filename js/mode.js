@@ -21,64 +21,42 @@ function closeModal() {
 
 
 function updateFilters() {
-  const year = document.getElementById('year-filter').value;
-  const month = document.getElementById('month-filter').value;
-  const speaker = document.getElementById('speaker-filter').value;
+  const val = id => document.getElementById(id)?.value ?? "";
+  const year = val('year-filter');
+  const month = val('month-filter');
+  const speaker = val('speaker-filter');
   const items = document.querySelectorAll('.seminar-item');
 
   // Gather available options based on current filter selection
-  let availableYears = new Set();
-  let availableMonths = new Set();
-  let availableSpeakers = new Set();
+  const available = {
+    'year-filter': new Set(),
+    'month-filter': new Set(),
+    'speaker-filter': new Set()
+  };
 
   items.forEach(item => {
     const itemYear = item.getAttribute('data-year');
     const itemMonth = item.getAttribute('data-month');
     const itemSpeaker = item.getAttribute('data-speaker');
 
-    const yearMatch = (year === "" || itemYear === year);
-    const monthMatch = (month === "" || itemMonth === month);
-    const speakerMatch = (speaker === "" || itemSpeaker === speaker);
-    addEventListener
-    // Display or hide items based on selected filters
-    if (yearMatch && monthMatch && speakerMatch) {
-      item.style.display = 'flex';
-      availableYears.add(itemYear);
-      availableMonths.add(itemMonth);
-      availableSpeakers.add(itemSpeaker);
-    } else {
-      item.style.display = 'none';
+    const match = (year === "" || itemYear === year)
+               && (month === "" || itemMonth === month)
+               && (speaker === "" || itemSpeaker === speaker);
+
+    item.style.display = match ? 'flex' : 'none';
+    if (match) {
+      available['year-filter'].add(itemYear);
+      available['month-filter'].add(itemMonth);
+      available['speaker-filter'].add(itemSpeaker);
     }
   });
 
-  // Update Year Filter
-  const yearFilter = document.getElementById('year-filter');
-  Array.from(yearFilter.options).forEach(option => {
-    if (option.value === "" || availableYears.has(option.value)) {
-      option.style.display = 'block';
-    } else {
-      option.style.display = 'none';
-    }
-  });
-
-  // Update Month Filter
-  const monthFilter = document.getElementById('month-filter');
-  Array.from(monthFilter.options).forEach(option => {
-    if (option.value === "" || availableMonths.has(option.value)) {
-      option.style.display = 'block';
-    } else {
-      option.style.display = 'none';
-    }
-  });
-
-  // Update Speaker Filter
-  const speakerFilter = document.getElementById('speaker-filter');
-  Array.from(speakerFilter.options).forEach(option => {
-    if (option.value === "" || availableSpeakers.has(option.value)) {
-      option.style.display = 'block';
-    } else {
-      option.style.display = 'none';
-    }
+  Object.entries(available).forEach(([id, set]) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    Array.from(el.options).forEach(option => {
+      option.style.display = (option.value === "" || set.has(option.value)) ? 'block' : 'none';
+    });
   });
 }
 
