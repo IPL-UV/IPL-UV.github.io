@@ -5,3 +5,38 @@
 {{- $src := printf "%s/pages/%s" site.Params.legacyBase $path -}}
 {{- if hasPrefix $path "/" -}}{{ $src = printf "%s%s" site.Params.legacyBase $path -}}{{ end -}}
 <iframe{{ with $class }} class="{{ . }}"{{ end }} id="legacy-frame" src="{{ $src }}" style="border: 0" width="100%" height="1000" referrerpolicy="same-origin" loading="lazy"{{ with $title }} title="{{ . }}"{{ end }} seamless></iframe>
+<script>
+(function () {
+  var f = document.currentScript && document.currentScript.previousElementSibling;
+  if (!f || f.tagName !== 'IFRAME') return;
+  function tidy() {
+    var d;
+    try { d = f.contentDocument || (f.contentWindow && f.contentWindow.document); } catch (e) { return; }
+    if (!d || !d.head) return; // cross-origin (mirror de GitHub): no se puede
+    if (!d.getElementById('isp-legacy-tidy')) {
+      var s = d.createElement('style');
+      s.id = 'isp-legacy-tidy';
+      s.textContent = [
+        '.navbar,.navbar-fixed-top,.navbar-inverse,.navbar-static-top,.navbar-collapse,.navbar-header,.navbar-toggle,.navbar-brand{display:none!important}',
+        'body{padding-top:0!important;margin:0 auto!important;width:auto!important;max-width:100%!important;overflow-x:hidden!important}',
+        '.container{width:auto!important;max-width:100%!important;padding-left:1rem!important;padding-right:1rem!important}',
+        'img{max-width:100%!important;height:auto!important}'
+      ].join('');
+      d.head.appendChild(s);
+    }
+    f.classList.remove('bad-iframe');
+    f.style.position = 'static';
+    f.style.transform = 'none';
+    f.style.display = 'block';
+    f.style.width = '100%';
+    function size() { try { var h = d.body.scrollHeight; if (h) f.style.height = h + 'px'; } catch (e) {} }
+    size();
+    setTimeout(size, 500);
+    setTimeout(size, 1500);
+  }
+  var ready = false;
+  try { ready = !!(f.contentDocument && f.contentDocument.readyState === 'complete'); } catch (e) {}
+  if (ready) tidy();
+  f.addEventListener('load', tidy);
+})();
+</script>
