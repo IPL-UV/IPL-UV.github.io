@@ -1,1 +1,23 @@
-<p>Copyright {{ now.Year }}. All rights reserved.</p>
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <div class="site-footer-brand">
+      <strong>ISP · Image and Signal Processing group</strong>
+      <span>Universitat de València</span>
+    </div>
+    <nav class="site-footer-nav" aria-label="Footer">
+      <a href="{{ relURL "people/" }}">People</a>
+      <a href="{{ relURL "research/philosophy/" }}">Research</a>
+      <a href="{{ relURL "projects/" }}">Projects</a>
+      <a href="{{ relURL "publications/journals/" }}">Publications</a>
+      <a href="{{ relURL "code/" }}">Code</a>
+      <a href="{{ relURL "seminars/" }}">Seminars</a>
+      <a href="{{ relURL "contact/" }}">Contact</a>
+    </nav>
+    <div class="site-footer-social">
+      <a href="https://github.com/IPL-UV" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://scholar.google.es/citations?hl=en&user=MsMYu-IAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+      <a href="https://bsky.app/profile/isp-uv-es.bsky.social" target="_blank" rel="noopener noreferrer">Bluesky</a>
+    </div>
+  </div>
+  <p class="site-footer-copy">&copy; {{ now.Year }} ISP, Universitat de València</p>
+</footer>

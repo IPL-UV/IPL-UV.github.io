@@ -3,7 +3,7 @@
         <div class="custom-banner">
             <img src="{{ relURL .Params.banner }}" alt="ISP Banner">
             <div class="custom-bannet-text">
-                <p style="color: #33646e"> <span style="color: #2b2b2b;">ISP ·</span> Image & Signal Processing</p>
+                <h1 style="color: #33646e; background: none; border-radius: 0; padding: 0;"> <span style="color: #2b2b2b;">ISP ·</span> Image &amp; Signal Processing</h1>
                 <p style="color: #479bb0">Universitat de València</p>
             </div>
 
@@ -101,13 +101,16 @@
             height: auto;
         }
         
-        .custom-banner .custom-bannet-text p {
+        .custom-banner .custom-bannet-text p,.custom-banner .custom-bannet-text h1 {
             font-family: 'Twentieth Century for Kenmore';
             font-weight: 700;
             font-size: 4.5rem;
             text-align: center;
             margin: 0rem 0.5rem;
             line-height: 1;
+            background: none;
+            border-radius: 0;
+            display: block;
         }
 
         .custom-social-links {
@@ -124,7 +127,7 @@
         
 
         @media (max-width: 1400px) {
-            .custom-banner .custom-bannet-text p {
+            .custom-banner .custom-bannet-text p,.custom-banner .custom-bannet-text h1 {
                 font-size: 3.5rem;
               }
               .custom-text {
@@ -133,7 +136,7 @@
               }
         }
         @media (max-width: 1200px) {
-            .custom-banner .custom-bannet-text p {
+            .custom-banner .custom-bannet-text p,.custom-banner .custom-bannet-text h1 {
                 font-size: 3rem;
               }
             .custom-text {
@@ -142,7 +145,7 @@
         }
 
         @media (max-width: 1070px) {
-            .custom-banner .custom-bannet-text p {
+            .custom-banner .custom-bannet-text p,.custom-banner .custom-bannet-text h1 {
                 font-size: 3rem;
               }
             .custom-banner img {
@@ -150,12 +153,12 @@
             }
         }
         @media (max-width: 767px) {
-            .custom-banner .custom-bannet-text p {
+            .custom-banner .custom-bannet-text p,.custom-banner .custom-bannet-text h1 {
                 font-size: 2.8rem;
               }
         }
         @media (max-width: 526px) {
-            .custom-banner .custom-bannet-text p {
+            .custom-banner .custom-bannet-text p,.custom-banner .custom-bannet-text h1 {
                 font-size: 2.5rem;
               }
 

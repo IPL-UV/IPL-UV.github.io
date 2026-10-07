@@ -23,3 +23,17 @@
 {{- with .Params.link }}{{ if hasPrefix . "http" }}{{ $ds = merge $ds (dict "distribution" (dict "@type" "DataDownload" "contentUrl" .)) }}{{ end }}{{ end -}}
 <script type="application/ld+json">{{ $ds | jsonify | safeJS }}</script>
 {{- end -}}
+{{- if not .IsHome -}}
+{{- $list := slice (dict "@type" "ListItem" "position" 1 "name" "Home" "item" (site.Params.canonicalBase | default site.BaseURL)) -}}
+{{- $pos := 1 -}}
+{{- range .Ancestors.Reverse -}}
+{{- if not .IsHome -}}
+{{- $pos = add $pos 1 -}}
+{{- $list = $list | append (dict "@type" "ListItem" "position" $pos "name" .Title "item" .Permalink) -}}
+{{- end -}}
+{{- end -}}
+{{- $pos = add $pos 1 -}}
+{{- $list = $list | append (dict "@type" "ListItem" "position" $pos "name" .Title "item" .Permalink) -}}
+{{- $bc := dict "@context" "https://schema.org" "@type" "BreadcrumbList" "itemListElement" $list -}}
+<script type="application/ld+json">{{ $bc | jsonify | safeJS }}</script>
+{{- end -}}
