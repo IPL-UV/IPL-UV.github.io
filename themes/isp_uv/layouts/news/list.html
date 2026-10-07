@@ -53,7 +53,7 @@
           {{ with .Content }} 
           <p> {{ . | markdownify }} </p>
           {{ end }}
-          <p>
+          <p class="date-container">
             <span class="day">{{ .Date.Format "02" }}</span>
             <span class="month">{{ .Date.Format "January" }}</span>
             <span class="year">{{ .Date.Format "2006" }}</span>

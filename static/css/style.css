@@ -65,7 +65,7 @@ h3 {
 }
 
 .title-container  h1 {
-  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   margin-bottom: 1rem;
 }
@@ -175,7 +175,10 @@ h3 {
 /* Dropdown menu styles */
 .custom-dropdown-menu {
   position: absolute;
-  background-color: rgba(46, 46, 46, 0.9); /* 90% opacity */
+  min-width: 13rem;
+  padding: 0.4rem;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.35);
+  background-color: rgba(46, 46, 46, 0.97); /* opaco para que no se transparente el contenido */
   text-decoration: none;
   display: none;
   list-style: none;
@@ -1780,3 +1783,6 @@ h3 {
 .site-footer-social a:hover { color: #fff; }
 .site-footer a:focus-visible { outline: 3px solid #1F6E8C; outline-offset: 2px; }
 @media (max-width: 900px) { .site-footer-inner { flex-direction: column; gap: 1.75rem; } .site-footer-cols { gap: 2rem; } }
+
+/* Publicaciones: sin levitar */
+.bib-item, .bib-item:hover { transform: none !important; box-shadow: none !important; border: 1px solid #e3e3e3; }
