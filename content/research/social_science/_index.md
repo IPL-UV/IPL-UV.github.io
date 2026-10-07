@@ -13,7 +13,7 @@ aliases:
 
 <br>
 <p align="center">
-  <img src="SDGs.webp" width="80%">
+  <img alt="" src="SDGs.webp" width="80%">
 </p>
 <br>
 

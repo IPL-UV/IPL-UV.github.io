@@ -10,7 +10,7 @@ title: New content
 
 ![Hola](aida.webp)
 
-<img src="aida.webp"></img>
+<img alt="" src="aida.webp"></img>
 
 ## Why us? Why with us?
 

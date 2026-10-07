@@ -1786,3 +1786,6 @@ h3 {
 /* LIST DESCRIPTIONS */
 .list-desc, .course-desc, .card-text { font-size: 1rem; text-align: justify; }
 .list-desc p:last-child, .course-desc p:last-child, .card-text p:last-child { margin-bottom: 0; }
+
+.modal-close { background: transparent; border: 0; color: #fff; font-size: 40px; line-height: 1; cursor: pointer; padding: 0 0.5rem; }
+.modal-close:focus-visible { outline: 3px solid #1F6E8C; outline-offset: 2px; }

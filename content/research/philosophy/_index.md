@@ -32,7 +32,7 @@ Our overarching goal of is to go beyond mere data fitting and advance towards th
 The activities in ISP involve strong interactions between the theoretical and the complex systems pillars, see figure below. A theoretical component, led by ISP in the interplay between machine learning and visual neuroscience feeds case studies of complex systems, most notably the Earth and climate system, the visual brain and the biosphere-anthroposphere interactions. Follow the links above to learn more details about the specific goals, proposed methodology, group collaborations, related projects, and applications in the particular case studies.
 
 ![AI4CS Agenda](ai4cs_agenda.webp)
-<!-- <img src="ai4cs_agenda.webp" style="width: 80%;"> -->
+<!-- <img alt="" src="ai4cs_agenda.webp" style="width: 80%;"> -->
 
 ## Why us? Why with us?
 

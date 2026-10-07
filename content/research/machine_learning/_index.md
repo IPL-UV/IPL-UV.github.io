@@ -18,7 +18,7 @@ aliases:
 
 <br>
 <p align="center">
-  <img src="philosophy_balls.webp" width="80%">
+  <img alt="" src="philosophy_balls.webp" width="80%">
 </p>
 <br>
 

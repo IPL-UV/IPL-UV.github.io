@@ -12,7 +12,7 @@ aliases:
 
 <br>
 <p align="center">
-  <img src="AI_earth_pic.webp" width="40%">
+  <img alt="" src="AI_earth_pic.webp" width="40%">
 </p>
 <br>
 
