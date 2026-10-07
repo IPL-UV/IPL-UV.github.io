@@ -29,14 +29,22 @@
     f.style.transform = 'none';
     f.style.display = 'block';
     f.style.width = '100%';
+    var p = f.parentElement;
+    while (p && p !== document.body) {
+      if (p.classList) {
+        if (p.classList.contains('content-container')) p.style.maxWidth = '100%';
+        if (p.classList.contains('container')) { p.style.maxWidth = '100%'; p.style.width = '100%'; }
+      }
+      p = p.parentElement;
+    }
     function size() { try { var h = d.body.scrollHeight; if (h) f.style.height = h + 'px'; } catch (e) {} }
     size();
     setTimeout(size, 500);
     setTimeout(size, 1500);
   }
-  var ready = false;
-  try { ready = !!(f.contentDocument && f.contentDocument.readyState === 'complete'); } catch (e) {}
-  if (ready) tidy();
+  var tries = 0;
+  function tick() { tidy(); if (++tries < 14) setTimeout(tick, 700); }
+  tick();
   f.addEventListener('load', tidy);
 })();
 </script>
