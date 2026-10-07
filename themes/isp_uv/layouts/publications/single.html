@@ -48,10 +48,16 @@
             <div class="__dimensions_badge_embed__ dimension-embed" data-doi="{{ . }}"></div>{{ end }}
           </div>
           {{ with .raw }}<div class="bibtexdata alert alert-success" style="display: none;"><pre class="bibtex">{{ . }}</pre></div>{{ end }}
-          {{- $ld := dict "@context" "https://schema.org" "@type" "ScholarlyArticle" "headline" .title "author" .author -}}
+          {{- $type := "ScholarlyArticle" -}}
+          {{- if eq .type "phdthesis" }}{{ $type = "Thesis" }}{{ else if or (eq .type "book") (eq .type "inbook") }}{{ $type = "Book" }}{{ end -}}
+          {{- $auths := slice -}}
+          {{- range .authors }}{{ $auths = $auths | append (dict "@type" "Person" "name" .) }}{{ end -}}
+          {{- $ld := dict "@context" "https://schema.org" "@type" $type "name" .title -}}
+          {{- if $auths }}{{ $ld = merge $ld (dict "author" $auths) }}{{ end -}}
           {{- with .year }}{{ $ld = merge $ld (dict "datePublished" .) }}{{ end -}}
           {{- with .doi_url }}{{ $ld = merge $ld (dict "url" .) }}{{ end -}}
-          {{- with .journal }}{{ $ld = merge $ld (dict "isPartOf" (dict "@type" "Periodical" "name" .)) }}{{ end -}}
+          {{- with .doi_bare }}{{ $ld = merge $ld (dict "identifier" .) }}{{ end -}}
+          {{- with (or .journal .booktitle) }}{{ $ld = merge $ld (dict "isPartOf" (dict "@type" "Periodical" "name" .)) }}{{ end -}}
           <script type="application/ld+json">{{ $ld | jsonify | safeJS }}</script>
         </article>
         {{- end -}}
@@ -148,7 +154,7 @@
 </style>
 
 <script src="{{ relURL "js/publications.js" }}" defer></script>
-<script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js" async></script>
+<script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js" defer></script>
 <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
 <script>
   document.addEventListener('DOMContentLoaded', function () {

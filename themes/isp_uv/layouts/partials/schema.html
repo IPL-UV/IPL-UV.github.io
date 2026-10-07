@@ -1,23 +1,25 @@
 {{- if .IsHome -}}
 {{- $same := slice "https://scholar.google.es/citations?hl=en&user=MsMYu-IAAAAJ" "https://github.com/IPL-UV" "https://bsky.app/profile/isp-uv-es.bsky.social" -}}
-{{- $org := dict "@context" "https://schema.org" "@type" "ResearchOrganization" "name" site.Title "url" (site.Params.canonicalBase | default site.BaseURL) "parentOrganization" (dict "@type" "Organization" "name" "Universitat de València") "sameAs" $same -}}
+{{- $orgid := printf "%s/#organization" (site.Params.canonicalBase | default site.BaseURL) -}}
+{{- $org := dict "@context" "https://schema.org" "@type" "ResearchOrganization" "@id" $orgid "name" site.Title "url" (site.Params.canonicalBase | default site.BaseURL) "parentOrganization" (dict "@type" "Organization" "name" "Universitat de València") "sameAs" $same -}}
 {{- with site.Params.description }}{{ $org = merge $org (dict "description" .) }}{{ end -}}
 <script type="application/ld+json">{{ $org | jsonify | safeJS }}</script>
-{{- else if eq .Section "people" -}}
+{{- else if and (eq .Section "people") (or .IsPage (not .Pages)) -}}
 {{- $same := slice -}}
 {{- range slice "orcid" "googlescholar" "linkedin" "github" "twitter" "researchgate" "website" -}}
 {{- with (index $.Params .) }}{{ $same = $same | append . }}{{ end -}}
 {{- end -}}
 {{- $role := "" -}}
 {{- with .File }}{{ $role = path.Base (path.Dir .Dir) }}{{ end -}}
-{{- $person := dict "@context" "https://schema.org" "@type" "Person" "name" .Title "url" .Permalink "affiliation" (dict "@type" "ResearchOrganization" "name" site.Title) -}}
+{{- $orgid := printf "%s/#organization" (site.Params.canonicalBase | default site.BaseURL) -}}
+{{- $person := dict "@context" "https://schema.org" "@type" "Person" "name" .Title "url" .Permalink "affiliation" (dict "@type" "ResearchOrganization" "@id" $orgid "name" site.Title) -}}
 {{- if $role }}{{ $person = merge $person (dict "jobTitle" ($role | replaceRE "_" " " | title)) }}{{ end -}}
 {{- if $same }}{{ $person = merge $person (dict "sameAs" $same) }}{{ end -}}
 <script type="application/ld+json">{{ $person | jsonify | safeJS }}</script>
-{{- else if eq .Section "data" -}}
+{{- else if and (eq .Section "data") (or .IsPage (not .Pages)) -}}
 {{- $desc := .Description | default .Summary | plainify | truncate 300 -}}
 {{- $ds := dict "@context" "https://schema.org" "@type" "Dataset" "name" .Title "url" .Permalink -}}
 {{- with $desc }}{{ $ds = merge $ds (dict "description" .) }}{{ end -}}
-{{- with .Params.link }}{{ $ds = merge $ds (dict "distribution" (dict "@type" "DataDownload" "contentUrl" .)) }}{{ end -}}
+{{- with .Params.link }}{{ if hasPrefix . "http" }}{{ $ds = merge $ds (dict "distribution" (dict "@type" "DataDownload" "contentUrl" .)) }}{{ end }}{{ end -}}
 <script type="application/ld+json">{{ $ds | jsonify | safeJS }}</script>
 {{- end -}}

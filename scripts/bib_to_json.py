@@ -5,6 +5,7 @@ Sin dependencias. Se ejecuta antes de `hugo` (local y en CI).
 Uso: python3 scripts/bib_to_json.py
 """
 import glob
+import html
 import json
 import os
 import re
@@ -44,6 +45,7 @@ def latex_clean(s):
     s = s.replace("{", "").replace("}", "")
     s = re.sub(r"\\[a-zA-Z]+\s?", "", s)
     s = unicodedata.normalize("NFC", s)
+    s = html.unescape(s)
     return re.sub(r"\s+", " ", s).strip()
 
 
@@ -146,7 +148,7 @@ def split_authors(authors):
     return [p.strip() for p in parts if p.strip()]
 
 
-def format_authors(authors):
+def author_list(authors):
     out = []
     for a in split_authors(authors):
         a = a.strip()
@@ -161,6 +163,11 @@ def format_authors(authors):
                 out.append(words[0])
             else:
                 out.append(f"{words[-1]} {words[0][0].upper()}.")
+    return out
+
+
+def format_authors(authors):
+    out = author_list(authors)
     if len(out) > 12:
         out = out[:12] + ["others"]
     if len(out) > 1:
@@ -171,6 +178,7 @@ def format_authors(authors):
 def format_projects(projects):
     arr = [p.strip() for p in projects.split(",") if p.strip()]
     arr = [p[:-8].strip() if p.endswith(" Project") else p for p in arr]
+    arr = [p.lower().title() for p in arr]
     seen = []
     for p in arr:
         if p not in seen:
@@ -197,6 +205,7 @@ def norm_entry(e):
         "type": e["type"],
         "title": get("title"),
         "author": format_authors(get("author")),
+        "authors": author_list(get("author")),
         "journal": get("journal"),
         "booktitle": get("booktitle"),
         "volume": get("volume"),
@@ -242,13 +251,19 @@ def content_bibfiles():
 def main():
     os.makedirs(OUT_DIR, exist_ok=True)
     generated = set()
-    problems = []
+    errors = []
+    warnings = []
+    known = {"article", "inproceedings", "incollection", "book", "inbook",
+             "misc", "phdthesis", "techreport", "unpublished"}
     for path in sorted(glob.glob(os.path.join(BIB_DIR, "*.bib"))):
         name = os.path.splitext(os.path.basename(path))[0]
+        out = os.path.join(OUT_DIR, f"{name}.json")
         try:
             entries = [norm_entry(e) for e in parse_bib(read_bib(path))]
         except ValueError as exc:
-            problems.append(f"{os.path.basename(path)}: {exc}")
+            errors.append(f"{os.path.basename(path)}: {exc}")
+            if os.path.exists(out):
+                os.remove(out)
             continue
         # dedupe por citekey (gana la última aparición), conservando el orden
         seen = {}
@@ -259,9 +274,13 @@ def main():
             seen[e["key"]] = e
         entries = list(seen.values())
         if not entries:
-            problems.append(f"{name}.bib: 0 entradas")
+            errors.append(f"{name}.bib: 0 entradas")
+            if os.path.exists(out):
+                os.remove(out)
             continue
-        out = os.path.join(OUT_DIR, f"{name}.json")
+        rare = sorted({e["type"] for e in entries} - known)
+        if rare:
+            warnings.append(f"{name}.bib: tipos no estandar {rare}")
         with open(out, "w", encoding="utf-8") as fh:
             json.dump(entries, fh, ensure_ascii=False, indent=0)
         generated.add(name)
@@ -270,13 +289,17 @@ def main():
             msg += f" ({dups} citekeys duplicadas colapsadas)"
         print(msg)
     for missing in sorted(content_bibfiles() - generated):
-        problems.append(f"content declara bibfiles/{missing}.bib pero no hay JSON")
+        errors.append(f"content declara bibfiles/{missing}.bib pero no hay JSON")
     for orphan in sorted(generated - content_bibfiles()):
-        problems.append(f"assets/bibfiles/{orphan}.bib no lo usa ninguna pagina de content")
-    if problems:
-        print("PROBLEMAS:", file=sys.stderr)
-        for p in problems:
-            print("  -", p, file=sys.stderr)
+        warnings.append(f"assets/bibfiles/{orphan}.bib no lo usa ninguna pagina de content")
+    if warnings:
+        print("AVISOS:", file=sys.stderr)
+        for w in warnings:
+            print("  -", w, file=sys.stderr)
+    if errors:
+        print("ERRORES:", file=sys.stderr)
+        for e in errors:
+            print("  -", e, file=sys.stderr)
         sys.exit(1)
 
 

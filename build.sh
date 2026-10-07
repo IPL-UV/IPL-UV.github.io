@@ -1,4 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 
 python3 scripts/bib_to_json.py
 hugo --config hugo.toml --destination public/
