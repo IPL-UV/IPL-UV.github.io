@@ -1759,3 +1759,12 @@ h3 {
   height: 0 !important;
   display: none;
 }
+
+/* FOOTER */
+.site-footer { background-color: #222; color: #d9d9d9; margin-top: 3rem; padding: 2rem 1rem 1rem; font-size: 0.95rem; }
+.site-footer a { color: #9ec9e0; }
+.site-footer a:hover { color: #fff; }
+.site-footer-inner { max-width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: space-between; align-items: flex-start; }
+.site-footer-brand { display: flex; flex-direction: column; }
+.site-footer-nav, .site-footer-social { display: flex; flex-wrap: wrap; gap: 0.8rem; }
+.site-footer-copy { text-align: center; margin: 1.5rem 0 0; color: #8a8a8a; }
