@@ -1789,3 +1789,8 @@ h3 {
 
 .modal-close { background: transparent; border: 0; color: #fff; font-size: 40px; line-height: 1; cursor: pointer; padding: 0 0.5rem; }
 .modal-close:focus-visible { outline: 3px solid #1F6E8C; outline-offset: 2px; }
+
+/* Enlaces dentro de texto: subrayado para no depender solo del color (WCAG 1.4.1) */
+p a:not(.btn), li a:not(.btn), td a:not(.btn), dd a:not(.btn), blockquote a:not(.btn),
+.box-content a:not(.btn), .box-abstract a:not(.btn), .references-list a, .card-text a:not(.btn),
+.panel-description a:not(.btn), .enlaces-list a, .course-desc a, .person-bio a { text-decoration: underline; }
