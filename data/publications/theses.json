@@ -1,6 +1,7 @@
 [
 {
 "key": "CortesAndres2025",
+"bib": "CortesAndres2025",
 "type": "unpublished",
 "title": "Regularization in Machine Learning: Advances for Earth Sciences",
 "author": "Cortés Andrés J.",
@@ -8,11 +9,11 @@
 "Cortés Andrés J."
 ],
 "year": "2025",
-"url": "https://roderic.uv.es/items/95655950-87d1-4a20-896e-f150b5b70453",
-"raw": "@unpublished{CortesAndres2025,\n  author       = {Cort\\'es Andr\\'es, Jordi},\n  title        = {Regularization in Machine Learning: Advances for Earth Sciences},\n  school       = {Universitat de Val\\`encia},\n  year         = {2025},\n  note         = {PhD Thesis},\n  url          = {https://roderic.uv.es/items/95655950-87d1-4a20-896e-f150b5b70453},\n}"
+"url": "https://roderic.uv.es/items/95655950-87d1-4a20-896e-f150b5b70453"
 },
 {
 "key": "MateoSanchis2023",
+"bib": "MateoSanchis2023",
 "type": "unpublished",
 "title": "Crop Yield Estimation using Remote Sensing and Machine Learning",
 "author": "Mateo Sanchis A.",
@@ -20,11 +21,11 @@
 "Mateo Sanchis A."
 ],
 "year": "2023",
-"url": "https://roderic.uv.es/items/07da5ef7-accc-4987-b35c-e9d1a909158e",
-"raw": "@unpublished{MateoSanchis2023,\n  author       = {Mateo Sanchis, A.~M.},\n  title        = {Crop Yield Estimation using Remote Sensing and Machine Learning},\n  school       = {Universitat de Val\\`encia},\n  year         = {2023},\n  note         = {PhD Thesis},\n  url          = {https://roderic.uv.es/items/07da5ef7-accc-4987-b35c-e9d1a909158e},\n}"
+"url": "https://roderic.uv.es/items/07da5ef7-accc-4987-b35c-e9d1a909158e"
 },
 {
 "key": "PadronHidalgo2021",
+"bib": "PadronHidalgo2021",
 "type": "unpublished",
 "title": "Anomaly and Change Detection in Remote Sensing Images",
 "author": "Padrón Hidalgo J.",
@@ -32,11 +33,11 @@
 "Padrón Hidalgo J."
 ],
 "year": "2021",
-"url": "https://roderic.uv.es/items/479c191b-7224-4e26-b3bc-516850285179",
-"raw": "@unpublished{PadronHidalgo2021,\n  author       = {Padr\\'on Hidalgo, Jos\\'e Antonio},\n  title        = {Anomaly and Change Detection in Remote Sensing Images},\n  school       = {Universitat de Val\\`encia},\n  year         = {2021},\n  note         = {PhD Thesis},\n  url          = {https://roderic.uv.es/items/479c191b-7224-4e26-b3bc-516850285179},\n}"
+"url": "https://roderic.uv.es/items/479c191b-7224-4e26-b3bc-516850285179"
 },
 {
 "key": "Svendsen2020",
+"bib": "Svendsen2020",
 "type": "unpublished",
 "title": "Integrating Physics Modelling with Machine Learning for Remote Sensing",
 "author": "Svendsen D.",
@@ -44,165 +45,165 @@
 "Svendsen D."
 ],
 "year": "2020",
-"url": "https://roderic.uv.es/items/a35fe6d3-5a8b-417a-be97-af06f11f5299",
-"raw": "@unpublished{Svendsen2020,\n  author       = {Svendsen, Daniel H.},\n  title        = {Integrating Physics Modelling with Machine Learning for Remote Sensing},\n  school       = {Universitat de Val\\`encia},\n  year         = {2020},\n  note         = {PhD Thesis},\n  url          = {https://roderic.uv.es/items/a35fe6d3-5a8b-417a-be97-af06f11f5299},\n}"
+"url": "https://roderic.uv.es/items/a35fe6d3-5a8b-417a-be97-af06f11f5299"
 },
 {
 "key": "Tarraga26thesis",
+"bib": "Tarraga26thesis",
 "type": "unpublished",
 "title": "Causal inference in the human-biosphere coupled system",
 "author": "Tarraga J.",
 "authors": [
 "Tarraga J."
 ],
-"year": "TBD 2026",
-"raw": "@unpublished{Tarraga26thesis,\n\ttitle        = {Causal inference in the human-biosphere coupled system},\n\tauthor       = {Jose Maria Tarraga},\n\tyear         = {TBD 2026},\n\tnote         = {M. Piles and G. Camps-Valls (advisors)},\n\tinstitution  = {Universitat de València, Spain}\n}"
+"year": "TBD 2026"
 },
 {
 "key": "Kondylatos25thesis",
+"bib": "Kondylatos25thesis",
 "type": "unpublished",
 "title": "Bayesian Neural Networks in EO",
 "author": "Kondylatos S.",
 "authors": [
 "Kondylatos S."
 ],
-"year": "TBD 2025",
-"raw": "@unpublished{Kondylatos25thesis,\n\ttitle        = {Bayesian Neural Networks in EO},\n\tauthor       = {Spyros Kondylatos},\n\tyear         = {TBD 2025},\n\tnote         = {I. Papotsis and G. Camps-Valls (advisors)},\n\tinstitution  = {NOA, Athens and Universitat de València, Spain}\n}"
+"year": "TBD 2025"
 },
 {
 "key": "Prapas25thesis",
+"bib": "Prapas25thesis",
 "type": "unpublished",
 "title": "Deep Learning for Fire Danger Forecasting using Earth Observation Data",
 "author": "Prapas I.",
 "authors": [
 "Prapas I."
 ],
-"year": "TBD 2025",
-"raw": "@unpublished{Prapas25thesis,\n\ttitle        = {Deep Learning for Fire Danger Forecasting using Earth Observation Data},\n\tauthor       = {Ioannis Prapas},\n\tyear         = {TBD 2025},\n\tnote         = {I. Papotsis and G. Camps-Valls (advisors)},\n\tinstitution  = {NOA, Athens and Universitat de València, Spain}\n}"
+"year": "TBD 2025"
 },
 {
 "key": "Radin24thesis",
+"bib": "Radin24thesis",
 "type": "unpublished",
 "title": "Machine learning for sea level variability forecasting and impact assessment",
 "author": "Radin C.",
 "authors": [
 "Radin C."
 ],
-"year": "2025",
-"raw": "@unpublished{Radin24thesis,\n\ttitle        = {Machine learning for sea level variability forecasting and impact assessment},\n\tauthor       = {Cristina Radin},\n\tyear         = {2025},\n\tnote         = {V. Nieves and A. B. Ruescas (advisors)},\n\tinstitution  = {Universitat de València, Spain}\n}"
+"year": "2025"
 },
 {
 "key": "Laura26thesis",
+"bib": "Laura26thesis",
 "type": "unpublished",
 "title": "High resolution Products for better quantifying the terrestrial biosphere",
 "author": "Martinez L.",
 "authors": [
 "Martinez L."
 ],
-"year": "2026",
-"raw": "@unpublished{Laura26thesis,\n\ttitle        = {High resolution Products for better quantifying the terrestrial biosphere},\n\tauthor       = {Laura Martinez},\n\tyear         = {2026},\n\tnote         = {A. Moreno and G. Camps-Valls (advisors)},\n\tinstitution  = {Universitat de València, Spain}\n}"
+"year": "2026"
 },
 {
 "key": "Jessenia25thesis",
+"bib": "Jessenia25thesis",
 "type": "unpublished",
 "title": "Detection of aerosol-cloud interactions in observations space",
 "author": "Villarreal J.",
 "authors": [
 "Villarreal J."
 ],
-"year": "2025",
-"raw": "@unpublished{Jessenia25thesis,\n\ttitle        = {Detection of aerosol-cloud interactions in observations space},\n\tauthor       = {Jessenia Gonzalez Villarreal},\n\tyear         = {2025},\n\tnote         = {Johannes Quaas and G. Camps-Valls (advisors)},\n\tinstitution  = {University of Leipzig, Germany and Universitat de València, Spain}\n}"
+"year": "2025"
 },
 {
 "key": "Paolo26thesis",
+"bib": "Paolo26thesis",
 "type": "unpublished",
 "title": "Physics-aware and explainable ML for dust and cloud properties retrieval",
 "author": "Pelucchi P.",
 "authors": [
 "Pelucchi P."
 ],
-"year": "2026",
-"raw": "@unpublished{Paolo26thesis,\n\ttitle        = {Physics-aware and explainable ML for dust and cloud properties retrieval},\n\tauthor       = {Paolo Pelucchi},\n\tyear         = {2026},\n\tnote         = {G. Camps-Valls and Jorge Vicent (advisors)},\n\tinstitution  = {Universitat de València, Spain and University of Oxford, UK}\n}"
+"year": "2026"
 },
 {
 "key": "Tristan24thesis",
+"bib": "Tristan24thesis",
 "type": "unpublished",
 "title": "Persistence in European Vegetation",
 "author": "Williams T.",
 "authors": [
 "Williams T."
 ],
-"year": "TBD 2026",
-"raw": "@unpublished{Tristan24thesis,\n\ttitle        = {Persistence in European Vegetation},\n\tauthor       = {Tristan Williams},\n\tyear         = {TBD 2026},\n\tnote         = {G. Camps-Valls, A. Moreno and M. Mahecha (advisors)},\n\tinstitution  = {University of Leipzig, Germany and Universitat de València, Spain}\n}"
+"year": "TBD 2026"
 },
 {
 "key": "Franziska26thesis",
+"bib": "Franziska26thesis",
 "type": "unpublished",
 "title": "Forest disturbance classification using deep learning approaches",
 "author": "Muller F.",
 "authors": [
 "Muller F."
 ],
-"year": "TBD 2026",
-"raw": "@unpublished{Franziska26thesis,\n\ttitle        = {Forest disturbance classification using deep learning approaches},\n\tauthor       = {Franziska Muller},\n\tyear         = {TBD 2026},\n\tnote         = {A. Bastos, A. Moreno and G. Camps-Valls (advisors)},\n\tinstitution  = {Max Planck Institute, Jena, Germany and Universitat de València, Spain}\n}"
+"year": "TBD 2026"
 },
 {
 "key": "Cohrs26thesis",
+"bib": "Cohrs26thesis",
 "type": "unpublished",
 "title": "Characterization of hybrid machine learning",
 "author": "Cohrs K.",
 "authors": [
 "Cohrs K."
 ],
-"year": "TBD 2026",
-"raw": "@unpublished{Cohrs26thesis,\n\ttitle        = {Characterization of hybrid machine learning},\n\tauthor       = {Kai-Hendrik Cohrs},\n\tyear         = {TBD 2026},\n\tnote         = {G. Camps-Valls and M. Reichstein (advisors)},\n\tinstitution  = {Universitat de València, Spain and Max Planck Institute for Biogeochemistry, Jena, Germany}\n}"
+"year": "TBD 2026"
 },
 {
 "key": "Cortes25thesis",
+"bib": "Cortes25thesis",
 "type": "unpublished",
 "title": "Machine learning for detection and attribution of climate extremes",
 "author": "Cortes J.",
 "authors": [
 "Cortes J."
 ],
-"year": "2025",
-"raw": "@unpublished{Cortes25thesis,\n\ttitle        = {Machine learning for detection and attribution of climate extremes},\n\tauthor       = {Jordi Cortes},\n\tyear         = {2025},\n\tnote         = {M. A. Fernandez-Torres and G. Camps-Valls (advisors)},\n\tinstitution  = {Universitat de València, Spain}\n}"
+"year": "2025"
 },
 {
 "key": "Gonzalez26thesis",
+"bib": "Gonzalez26thesis",
 "type": "unpublished",
 "title": "Anomaly and extreme event detection with attention networks",
 "author": "Gonzalez M.",
 "authors": [
 "Gonzalez M."
 ],
-"year": "TBD 2026",
-"raw": "@unpublished{Gonzalez26thesis,\n\ttitle        = {Anomaly and extreme event detection with attention networks},\n\tauthor       = {Maria Gonzalez},\n\tyear         = {TBD 2026},\n\tnote         = {M. A. Fernandez-Torres and G. Camps-Valls (advisors)},\n\tinstitution  = {Universitat de València, Spain}\n}"
+"year": "TBD 2026"
 },
 {
 "key": "Mengxue26thesis",
+"bib": "Mengxue26thesis",
 "type": "unpublished",
 "title": "Physics-Aware Deep Learning Models for Drought Monitor and Prediction Based on Multi-Source Observational Data",
 "author": "Zhang M.",
 "authors": [
 "Zhang M."
 ],
-"year": "TBD 2026",
-"raw": "@unpublished{Mengxue26thesis,\n\ttitle        = {Physics-Aware Deep Learning Models for Drought Monitor and Prediction Based on Multi-Source Observational Data},\n\tauthor       = {Mengxue Zhang},\n\tyear         = {TBD 2026},\n\tnote         = {G. Camps-Valls and (advisors)},\n\tinstitution  = {Universitat de València, Spain and Hohai University, China}\n}"
+"year": "TBD 2026"
 },
 {
 "key": "MateoGarcia23thesis",
+"bib": "MateoGarcia23thesis",
 "type": "phdthesis",
 "title": "Transfer Learning of Deep Learning Models for Cloud Masking in Optical Satellite Images",
 "author": "García G.",
 "authors": [
 "García G."
 ],
-"year": "2023",
-"raw": "@phdthesis{MateoGarcia23thesis,\n\ttitle        = {Transfer Learning of Deep Learning Models for Cloud Masking in Optical Satellite Images},\n\tauthor       = {Gonzalo Mateo García},\n\tyear         = 2023,\n\tnote         = {L. Gómez-Chova (advisor)},\n\tschool       = {Universitat de València, Spain}\n}"
+"year": "2023"
 },
 {
 "key": "Fernando20MSCTHesis",
+"bib": "Fernando20MSCTHesis",
 "type": "phdthesis",
 "title": "Estimación de parámetros biofísicos de cultivos de arroz mediante procesos gaussianos utilizando imágenes de radar de apertura sintética",
 "author": "Brizuela F.",
@@ -210,11 +211,11 @@
 "Brizuela F."
 ],
 "year": "2020",
-"address": "Universitat de València, Spain",
-"raw": "@phdthesis{Fernando20MSCTHesis,\n\ttitle        = {Estimación de parámetros biofísicos de cultivos de arroz mediante procesos gaussianos utilizando imágenes de radar de apertura sintética},\n\tauthor       = {Fernando L. Rodríguez Brizuela},\n\tyear         = 2020,\n\tmonth        = {September},\n\taddress      = {Universitat de València, Spain},\n\tnote         = {Juan Manuel López Sánchez; Gustau Camps-Valls (advisors)},\n\tschool       = {Master in Remote Sensing, Universitat de València, Spain}\n}"
+"address": "Universitat de València, Spain"
 },
 {
 "key": "JoseMaria20MSCThesis",
+"bib": "JoseMaria20MSCThesis",
 "type": "phdthesis",
 "title": "Estudio del impacto del clima en las migraciones humanas mediante aprendizaje estadístico",
 "author": "Tárraga J.",
@@ -222,11 +223,11 @@
 "Tárraga J."
 ],
 "year": "2020",
-"address": "Universitat de València, Spain",
-"raw": "@phdthesis{JoseMaria20MSCThesis,\n\ttitle        = {Estudio del impacto del clima en las migraciones humanas mediante aprendizaje estadístico},\n\tauthor       = {José María Tárraga},\n\tyear         = 2020,\n\tmonth        = {September},\n\taddress      = {Universitat de València, Spain},\n\tnote         = {Gustau Camps-Valls; Maria Piles (advisors)},\n\tschool       = {Master in Remote Sensing, Universitat de València, Spain}\n}"
+"address": "Universitat de València, Spain"
 },
 {
 "key": "JuanPalao20MSCThesis",
+"bib": "JuanPalao20MSCThesis",
 "type": "phdthesis",
 "title": "Detección de perturbaciones en la cubierta terrestre vegetal mediante análisis y segmentación espectro-temporal",
 "author": "Barceló J.",
@@ -234,11 +235,11 @@
 "Barceló J."
 ],
 "year": "2020",
-"address": "Universitat de València, Spain",
-"raw": "@phdthesis{JuanPalao20MSCThesis,\n\ttitle        = {Detección de perturbaciones en la cubierta terrestre vegetal mediante análisis y segmentación espectro-temporal},\n\tauthor       = {Juan Palao Barceló},\n\tyear         = 2020,\n\tmonth        = {September},\n\taddress      = {Universitat de València, Spain},\n\tnote         = {Álvaro Moreno Martínez; Gustau Camps-Valls;(advisors)},\n\tschool       = {Master in Remote Sensing, Universitat de València, Spain}\n}"
+"address": "Universitat de València, Spain"
 },
 {
 "key": "MiguelMorata20MSCThesis",
+"bib": "MiguelMorata20MSCThesis",
 "type": "phdthesis",
 "title": "Evaluación del impacto del clima sobre la vegetación mediante causalidad de Granger no lineal",
 "author": "Dolz M.",
@@ -246,11 +247,11 @@
 "Dolz M."
 ],
 "year": "2020",
-"address": "Universitat de València, Spain",
-"raw": "@phdthesis{MiguelMorata20MSCThesis,\n\ttitle        = {Evaluación del impacto del clima sobre la vegetación mediante causalidad de Granger no lineal},\n\tauthor       = {Miguel Morata Dolz},\n\tyear         = 2020,\n\tmonth        = {September},\n\taddress      = {Universitat de València, Spain},\n\tnote         = {Gustau Camps-Valls;(advisor)},\n\tschool       = {Master in Remote Sensing, Universitat de València, Spain}\n}"
+"address": "Universitat de València, Spain"
 },
 {
 "key": "Cristina20MSCThesis",
+"bib": "Cristina20MSCThesis",
 "type": "phdthesis",
 "title": "Decadal,regional sea level assessment using advanced statistical techniques",
 "author": "Radin C.",
@@ -258,11 +259,11 @@
 "Radin C."
 ],
 "year": "2020",
-"address": "Universitat de València, Spain",
-"raw": "@phdthesis{Cristina20MSCThesis,\n\ttitle        = {Decadal,regional sea level assessment using advanced statistical techniques},\n\tauthor       = {Cristina Radin},\n\tyear         = 2020,\n\tmonth        = {September},\n\taddress      = {Universitat de València, Spain},\n\tnote         = {Verónica Nieves; Gustau Camps-Valls;(advisors)},\n\tschool       = {Master in Remote Sensing, Universitat de València, Spain}\n}"
+"address": "Universitat de València, Spain"
 },
 {
 "key": "Svendsen20",
+"bib": "Svendsen20",
 "type": "phdthesis",
 "title": "Integrating Physics Modelling with Machine Learning for Remote Sensing",
 "author": "Svendsen D.",
@@ -270,11 +271,11 @@
 "Svendsen D."
 ],
 "year": "2020",
-"address": "Universitat de València, Spain",
-"raw": "@phdthesis{Svendsen20,\n\ttitle        = {Integrating Physics Modelling with Machine Learning for Remote Sensing},\n\tauthor       = {Daniel Svendsen},\n\tyear         = 2020,\n\taddress      = {Universitat de València, Spain},\n\tnote         = {Gustau Camps-Valls and Luca Martino (advisors)},\n\tschool       = {PhD Universitat de València, Spain}\n}"
+"address": "Universitat de València, Spain"
 },
 {
 "key": "Campos-Taberner17",
+"bib": "Campos-Taberner17",
 "type": "phdthesis",
 "title": "Development of an earth observation processing chain for crop biophysical parameters at local and global scale",
 "author": "Campos-Taberner M.",
@@ -282,11 +283,11 @@
 "Campos-Taberner M."
 ],
 "year": "2017",
-"address": "Universitat de València, Spain",
-"raw": "@phdthesis{Campos-Taberner17,\n\ttitle        = {Development of an earth observation processing chain for crop biophysical parameters at local and global scale},\n\tauthor       = {Manuel Campos-Taberner},\n\tyear         = 2017,\n\tmonth        = {September},\n\taddress      = {Universitat de València, Spain},\n\tnote         = {F.J- García-Haro and G. Camps-Valls (advisors)},\n\tschool       = {PhD in Remote Sensing, Universitat de València, Spain}\n}"
+"address": "Universitat de València, Spain"
 },
 {
 "key": "Johnson21",
+"bib": "Johnson21",
 "type": "phdthesis",
 "title": "Estimating Information in Earth System Data with Machine Learning",
 "author": "Johnson E.",
@@ -294,11 +295,11 @@
 "Johnson E."
 ],
 "year": "2021",
-"address": "Universitat de València, Spain",
-"raw": "@phdthesis{Johnson21,\n\ttitle        = {Estimating Information in Earth System Data with Machine Learning},\n\tauthor       = {Emmanuel J. Johnson},\n\tyear         = 2021,\n\taddress      = {Universitat de València, Spain},\n\tnote         = {Gustau Camps-Valls and Valero Laparra (advisors)},\n\tschool       = {Universitat de València, Spain}\n}"
+"address": "Universitat de València, Spain"
 },
 {
 "key": "DiazPorras23",
+"bib": "DiazPorras23",
 "type": "phdthesis",
 "title": "Towards Causal Discovery for Earth System Sciences",
 "author": "Diaz E.",
@@ -306,11 +307,11 @@
 "Diaz E."
 ],
 "year": "2023",
-"address": "Universitat de València, Spain",
-"raw": "@phdthesis{DiazPorras23,\n\ttitle        = {Towards Causal Discovery for Earth System Sciences},\n\tauthor       = {Emiliano Diaz},\n\tyear         = 2023,\n\taddress      = {Universitat de València, Spain},\n\tnote         = {Gherardo Varando and Gustau Camps-Valls (advisors)},\n\tschool       = {Universitat de València, Spain}\n}"
+"address": "Universitat de València, Spain"
 },
 {
 "key": "Mateo24",
+"bib": "Mateo24",
 "type": "phdthesis",
 "title": "Advances in machine learning for remote sensing crop yield predction",
 "author": "Mateo A.",
@@ -318,11 +319,11 @@
 "Mateo A."
 ],
 "year": "2024",
-"address": "Universitat de València, Spain",
-"raw": "@phdthesis{Mateo24,\n\ttitle        = {Advances in machine learning for remote sensing crop yield predction},\n\tauthor       = {Anna Mateo},\n\tyear         = 2024,\n\taddress      = {Universitat de València, Spain},\n\tnote         = {Maria Piles, Jordi Muñoz-Marí, Gustau Camps-Valls (advisors)},\n\tschool       = {Universitat de València, Spain}\n}"
+"address": "Universitat de València, Spain"
 },
 {
 "key": "Martinez19",
+"bib": "Martinez19",
 "type": "phdthesis",
 "title": "Estimación de la producción de cultivos a través de la fusión de MODIS y SMAP mediante algoritmos de regresión",
 "author": "Ferrer L.",
@@ -330,11 +331,11 @@
 "Ferrer L."
 ],
 "year": "2019",
-"address": "Universitat de València, Spain",
-"raw": "@phdthesis{Martinez19,\n\ttitle        = {Estimación de la producción de cultivos a través de la fusión de MODIS y SMAP mediante algoritmos de regresión},\n\tauthor       = {Laura Martínez Ferrer},\n\tyear         = 2019,\n\taddress      = {Universitat de València, Spain},\n\tnote         = {G. Camps-Valls and M. Piles (advisors)},\n\tschool       = {Master in Remote Sensing, Universitat de València, Spain}\n}"
+"address": "Universitat de València, Spain"
 },
 {
 "key": "Kraemer20",
+"bib": "Kraemer20",
 "type": "phdthesis",
 "title": "Changes in the coupled Biosphere-Human System",
 "author": "Kraemer G.",
@@ -342,11 +343,11 @@
 "Kraemer G."
 ],
 "year": "2020",
-"address": "Universitat de València, Spain",
-"raw": "@phdthesis{Kraemer20,\n\ttitle        = {Changes in the coupled Biosphere-Human System},\n\tauthor       = {Guido Kraemer},\n\tyear         = 2020,\n\taddress      = {Universitat de València, Spain},\n\tnote         = {Miguel Mahecha, Markus Reichstein, Gustau Camps-Valls (advisors)},\n\tschool       = {PhD Universitat de València, Spain}\n}"
+"address": "Universitat de València, Spain"
 },
 {
 "key": "Chaparro18thesis",
+"bib": "Chaparro18thesis",
 "type": "phdthesis",
 "title": "Applications of L-band missions for environmental research",
 "author": "Chaparro D.",
@@ -354,11 +355,11 @@
 "Chaparro D."
 ],
 "year": "2018",
-"address": "Universitat Politècnica de Catalunya, Spain",
-"raw": "@phdthesis{Chaparro18thesis,\n\ttitle        = {Applications of L-band missions for environmental research},\n\tauthor       = {David Chaparro},\n\tyear         = 2018,\n\taddress      = {Universitat Politècnica de Catalunya, Spain},\n\tnote         = {M. Piles and M. Vall-llossera (advisors)},\n\tschool       = {Universitat Politècnica de Catalunya, Spain}\n}"
+"address": "Universitat Politècnica de Catalunya, Spain"
 },
 {
 "key": "Pablos16thesis",
+"bib": "Pablos16thesis",
 "type": "phdthesis",
 "title": "Earth remote sensing with SMOS,Aquarius and SMAP missions",
 "author": "Pablos M.",
@@ -366,11 +367,11 @@
 "Pablos M."
 ],
 "year": "2016",
-"address": "Universitat Politècnica de Catalunya, Spain",
-"raw": "@phdthesis{Pablos16thesis,\n\ttitle        = {Earth remote sensing with SMOS,Aquarius and SMAP missions},\n\tauthor       = {Miriam Pablos},\n\tyear         = 2016,\n\taddress      = {Universitat Politècnica de Catalunya, Spain},\n\tnote         = {M. Piles and M. Vall-llossera (advisors)},\n\tschool       = {Universitat Politècnica de Catalunya, Spain}\n}"
+"address": "Universitat Politècnica de Catalunya, Spain"
 },
 {
 "key": "Bueso17",
+"bib": "Bueso17",
 "type": "phdthesis",
 "title": "Estudio del impacto de El Niño Godzilla en la humedad del suelo global",
 "author": "Acevedo D.",
@@ -378,11 +379,11 @@
 "Acevedo D."
 ],
 "year": "2017",
-"address": "Universitat de València, Spain",
-"raw": "@phdthesis{Bueso17,\n\ttitle        = {Estudio del impacto de El Niño Godzilla en la humedad del suelo global},\n\tauthor       = {Diego Bueso Acevedo},\n\tyear         = 2017,\n\taddress      = {Universitat de València, Spain},\n\tnote         = {G. Camps-Valls and M. Piles (advisors)},\n\tschool       = {Master in Remote Sensing, Universitat de València, Spain}\n}"
+"address": "Universitat de València, Spain"
 },
 {
 "key": "Almendra18",
+"bib": "Almendra18",
 "type": "phdthesis",
 "title": "Análisis del impacto de ENSO y NAO en variables climáticas esenciales y en la ocurrencia de eventos extremos",
 "author": "Martin L.",
@@ -390,11 +391,11 @@
 "Martin L."
 ],
 "year": "2018",
-"address": "Universitat de València, Spain",
-"raw": "@phdthesis{Almendra18,\n\ttitle        = {Análisis del impacto de ENSO y NAO en variables climáticas esenciales y en la ocurrencia de eventos extremos},\n\tauthor       = {Laura Almendra Martin},\n\tyear         = 2018,\n\taddress      = {Universitat de València, Spain},\n\tnote         = {G. Camps-Valls and M. Piles (advisors)},\n\tschool       = {Master in Remote Sensing, Universitat de València, Spain}\n}"
+"address": "Universitat de València, Spain"
 },
 {
 "key": "Montes17",
+"bib": "Montes17",
 "type": "phdthesis",
 "title": "Identificación mineral mediante sensores multiespectrales e hiperespectrales",
 "author": "Fernández S.",
@@ -402,11 +403,11 @@
 "Fernández S."
 ],
 "year": "2017",
-"address": "Universitat de València, Spain",
-"raw": "@phdthesis{Montes17,\n\ttitle        = {Identificación mineral mediante sensores multiespectrales e hiperespectrales},\n\tauthor       = {Sergio Montes Fernández},\n\tyear         = 2017,\n\taddress      = {Universitat de València, Spain},\n\tnote         = {G. Camps-Valls (advisor)},\n\tschool       = {Master in Remote Sensing, Universitat de València, Spain}\n}"
+"address": "Universitat de València, Spain"
 },
 {
 "key": "Llorens17",
+"bib": "Llorens17",
 "type": "phdthesis",
 "title": "Relación entre la humedad del suelo y el riesgo de incendios en el continente europeo",
 "author": "Company R.",
@@ -414,11 +415,11 @@
 "Company R."
 ],
 "year": "2017",
-"address": "Universitat de València, Spain",
-"raw": "@phdthesis{Llorens17,\n\ttitle        = {Relación entre la humedad del suelo y el riesgo de incendios en el continente europeo},\n\tauthor       = {Rafael Llorens Company},\n\tyear         = 2017,\n\taddress      = {Universitat de València, Spain},\n\tnote         = {G. Camps-Valls and M. Piles (advisors)},\n\tschool       = {Master in Remote Sensing, Universitat de València, Spain}\n}"
+"address": "Universitat de València, Spain"
 },
 {
 "key": "Borras16",
+"bib": "Borras16",
 "type": "phdthesis",
 "title": "Clasificación de suelos a partir de imágenes Sentinel-2",
 "author": "Hernandis J.",
@@ -426,11 +427,11 @@
 "Hernandis J."
 ],
 "year": "2016",
-"address": "Universitat de València, Spain",
-"raw": "@phdthesis{Borras16,\n\ttitle        = {Clasificación de suelos a partir de imágenes {Sentinel-2}},\n\tauthor       = {Judit Borràs Hernandis},\n\tyear         = 2016,\n\taddress      = {Universitat de València, Spain},\n\tnote         = {J. Delegido and G. Camps-Valls (advisor)},\n\tschool       = {Master in Remote Sensing, Universitat de València, Spain}\n}"
+"address": "Universitat de València, Spain"
 },
 {
 "key": "Descals16",
+"bib": "Descals16",
 "type": "phdthesis",
 "title": "Parameter estimation by hyperspectral and LiDAR data fusion",
 "author": "Ferrando A.",
@@ -438,11 +439,11 @@
 "Ferrando A."
 ],
 "year": "2016",
-"address": "Universitat de València, Spain",
-"raw": "@phdthesis{Descals16,\n\ttitle        = {Parameter estimation by hyperspectral and LiDAR data fusion},\n\tauthor       = {Adrià Descals Ferrando},\n\tyear         = 2016,\n\taddress      = {Universitat de València, Spain},\n\tnote         = {G. Camps-Valls (advisor)},\n\tschool       = {Master in Remote Sensing, Universitat de València, Spain}\n}"
+"address": "Universitat de València, Spain"
 },
 {
 "key": "ChireChira14",
+"bib": "ChireChira14",
 "type": "phdthesis",
 "title": "Detección de cambios multi-sensor ante un evento sísmico",
 "author": "Chira J.",
@@ -450,22 +451,22 @@
 "Chira J."
 ],
 "year": "2014",
-"address": "Universitat de València, Spain",
-"raw": "@phdthesis{ChireChira14,\n\ttitle        = {Detección de cambios multi-sensor ante un evento sísmico},\n\tauthor       = {J. R. Chire Chira},\n\tyear         = 2014,\n\taddress      = {Universitat de València, Spain},\n\tnote         = {G. Camps-Valls (advisor)},\n\tschool       = {Master in Remote Sensing, Universitat de València, Spain}\n}"
+"address": "Universitat de València, Spain"
 },
 {
 "key": "Izquierdo14thesis",
+"bib": "Izquierdo14thesis",
 "type": "phdthesis",
 "title": "Kernel feature extraction methods for remote sensing data analysis",
 "author": "Verdiguier E.",
 "authors": [
 "Verdiguier E."
 ],
-"year": "2014",
-"raw": "@phdthesis{Izquierdo14thesis,\n\ttitle        = {Kernel feature extraction methods for remote sensing data analysis},\n\tauthor       = {Emma Izquierdo Verdiguier},\n\tyear         = 2014,\n\tnote         = {L. Gómez-Chova and G. Camps-Valls (advisors)},\n\tschool       = {Universitat de València, Spain}\n}"
+"year": "2014"
 },
 {
 "key": "Campos-Taberner13",
+"bib": "Campos-Taberner13",
 "type": "phdthesis",
 "title": "Evaluación de Procesos Gaussianos en la estimación de parámetros biofísicos",
 "author": "Campos-Taberner M.",
@@ -473,22 +474,22 @@
 "Campos-Taberner M."
 ],
 "year": "2013",
-"address": "Universitat de València, Spain",
-"raw": "@phdthesis{Campos-Taberner13,\n\ttitle        = {Evaluación de Procesos Gaussianos en la estimación de parámetros biofísicos},\n\tauthor       = {Manuel Campos-Taberner},\n\tyear         = 2013,\n\tmonth        = {September},\n\taddress      = {Universitat de València, Spain},\n\tnote         = {G. Camps-Valls (advisor)},\n\tschool       = {Master in Remote Sensing, Universitat de València, Spain}\n}"
+"address": "Universitat de València, Spain"
 },
 {
 "key": "Amoros12thesis",
+"bib": "Amoros12thesis",
 "type": "phdthesis",
 "title": "Multi-resolution Spatial Unmixing for MERIS and Landsat Image Fusion",
 "author": "Verdiguier E.",
 "authors": [
 "Verdiguier E."
 ],
-"year": "2012",
-"raw": "@phdthesis{Amoros12thesis,\n\ttitle        = {Multi-resolution Spatial Unmixing for MERIS and Landsat Image Fusion},\n\tauthor       = {Emma Izquierdo Verdiguier},\n\tyear         = 2012,\n\tnote         = {L. Gómez-Chova and J. Calpe-Maravilla (advisors)},\n\tschool       = {Universitat de València, Spain}\n}"
+"year": "2012"
 },
 {
 "key": "Laparra11thesis",
+"bib": "Laparra11thesis",
 "type": "phdthesis",
 "title": "Learning efficient image representations: Conections between statistics and neuroscience",
 "author": "Laparra V.",
@@ -496,11 +497,11 @@
 "Laparra V."
 ],
 "year": "2013",
-"address": "Universitat de València, Spain",
-"raw": "@phdthesis{Laparra11thesis,\n\ttitle        = {Learning efficient image representations: Conections between statistics and neuroscience},\n\tauthor       = {Valero Laparra},\n\tyear         = 2013,\n\taddress      = {Universitat de València, Spain},\n\tnote         = {J. Malo and G. Camps-Valls (advisors)},\n\tschool       = {Universitat de València, Spain}\n}"
+"address": "Universitat de València, Spain"
 },
 {
 "key": "Ramos13",
+"bib": "Ramos13",
 "type": "phdthesis",
 "title": "Spectral Unmixing Techniques for Mineral Mapping with Hyperspectral Imagery",
 "author": "Peredo S.",
@@ -508,11 +509,11 @@
 "Peredo S."
 ],
 "year": "2013",
-"address": "Universitat de València, Spain",
-"raw": "@phdthesis{Ramos13,\n\ttitle        = {Spectral Unmixing Techniques for Mineral Mapping with Hyperspectral Imagery},\n\tauthor       = {Saúl Ramos Peredo},\n\tyear         = 2013,\n\taddress      = {Universitat de València, Spain},\n\tnote         = {G. Camps-Valls (advisor)},\n\tschool       = {Master in Remote Sensing, Universitat de València, Spain}\n}"
+"address": "Universitat de València, Spain"
 },
 {
 "key": "Moya12",
+"bib": "Moya12",
 "type": "phdthesis",
 "title": "Detección automática de nuevas construcciones a partir de ortofotos del Instituto Cartográfico Valenciano",
 "author": "Fuero A.",
@@ -520,11 +521,11 @@
 "Fuero A."
 ],
 "year": "2012",
-"address": "Universitat de València, Spain",
-"raw": "@phdthesis{Moya12,\n\ttitle        = {Detección automática de nuevas construcciones a partir de ortofotos del Instituto Cartográfico Valenciano},\n\tauthor       = {Alfonso Moya Fuero},\n\tyear         = 2012,\n\taddress      = {Universitat de València, Spain},\n\tnote         = {J. García-Haro and G. Camps-Valls (advisors)},\n\tschool       = {Master in Remote Sensing, Universitat de València, Spain}\n}"
+"address": "Universitat de València, Spain"
 },
 {
 "key": "Izquierdo11",
+"bib": "Izquierdo11",
 "type": "phdthesis",
 "title": "Detección automática de plantaciones de árboles de cultivo en imágenes de muy alta resolución",
 "author": "Verdiguier E.",
@@ -532,11 +533,11 @@
 "Verdiguier E."
 ],
 "year": "2011",
-"address": "Universitat de València, Spain",
-"raw": "@phdthesis{Izquierdo11,\n\ttitle        = {Detección automática de plantaciones de árboles de cultivo en imágenes de muy alta resolución},\n\tauthor       = {Emma Izquierdo Verdiguier},\n\tyear         = 2011,\n\taddress      = {Universitat de València, Spain},\n\tnote         = {L. Gómez Chova and G. Camps-Valls (advisors)},\n\tschool       = {Master in Remote Sensing, Universitat de València, Spain}\n}"
+"address": "Universitat de València, Spain"
 },
 {
 "key": "Jimenez11",
+"bib": "Jimenez11",
 "type": "phdthesis",
 "title": "The statistics of remote sensing images",
 "author": "Jiménez S.",
@@ -544,11 +545,11 @@
 "Jiménez S."
 ],
 "year": "2011",
-"address": "Universitat de València, Spain",
-"raw": "@phdthesis{Jimenez11,\n\ttitle        = {The statistics of remote sensing images},\n\tauthor       = {Sandra Jiménez},\n\tyear         = 2011,\n\taddress      = {Universitat de València, Spain},\n\tnote         = {J. Malo (advisor)},\n\tschool       = {Master in Computer Science and Mathematics, Universitat de València, Spain}\n}"
+"address": "Universitat de València, Spain"
 },
 {
 "key": "Rodrigo12",
+"bib": "Rodrigo12",
 "type": "phdthesis",
 "title": "Estimación de parámetros atmosféricos mediante métodos núcleo",
 "author": "González A.",
@@ -556,11 +557,11 @@
 "González A."
 ],
 "year": "2011",
-"address": "Universitat de València, Spain",
-"raw": "@phdthesis{Rodrigo12,\n\ttitle        = {Estimación de parámetros atmosféricos mediante métodos núcleo},\n\tauthor       = {Antonio Rodrigo González},\n\tyear         = 2011,\n\taddress      = {Universitat de València, Spain},\n\tnote         = {G. Camps-Valls (advisor)},\n\tschool       = {Master in Electrical Engineering, Universitat de València, Spain}\n}"
+"address": "Universitat de València, Spain"
 },
 {
 "key": "Talens11",
+"bib": "Talens11",
 "type": "phdthesis",
 "title": "Nova mètrica de similitud per a l'avaluació de productes de multiresolució d'imatges",
 "author": "Noguera J.",
@@ -568,11 +569,11 @@
 "Noguera J."
 ],
 "year": "2011",
-"address": "Universitat de València, Spain",
-"raw": "@phdthesis{Talens11,\n\ttitle        = {Nova mètrica de similitud per a l'avaluació de productes de multiresolució d'imatges},\n\tauthor       = {Joan Vicent Talens Noguera},\n\tyear         = 2011,\n\taddress      = {Universitat de València, Spain},\n\tnote         = {J. Moreno and G. Camps-Valls (advisors)},\n\tschool       = {Master in Remote Sensing, Universitat de València, Spain}\n}"
+"address": "Universitat de València, Spain"
 },
 {
 "key": "Capobianco09thesis",
+"bib": "Capobianco09thesis",
 "type": "phdthesis",
 "title": "Advances in Hyperspectral Kernel screening algorithm Target Detection",
 "author": "Capobianco L.",
@@ -580,11 +581,11 @@
 "Capobianco L."
 ],
 "year": "2009",
-"address": "Universita degli Studi di Siena, Italy",
-"raw": "@phdthesis{Capobianco09thesis,\n\ttitle        = {Advances in Hyperspectral Kernel screening algorithm Target Detection},\n\tauthor       = {Luca Capobianco},\n\tyear         = 2009,\n\taddress      = {Universita degli Studi di Siena, Italy},\n\tnote         = {A. Garzelli and G. Camps-Valls (advisors)},\n\tschool       = {Universita degli Studi di Siena, Italy}\n}"
+"address": "Universita degli Studi di Siena, Italy"
 },
 {
 "key": "GomezSanchis09thesis",
+"bib": "GomezSanchis09thesis",
 "type": "phdthesis",
 "title": "Desarrollo de técnicas avanzadas para la detección de defectos superficiales peligrosos en cítricos basadas en imágenes hiperespectrales",
 "author": "Sanchis J.",
@@ -592,11 +593,11 @@
 "Sanchis J."
 ],
 "year": "2009",
-"address": "Universitat de València, Spain",
-"raw": "@phdthesis{GomezSanchis09thesis,\n\ttitle        = {Desarrollo de técnicas avanzadas para la detección de defectos superficiales peligrosos en cítricos basadas en imágenes hiperespectrales},\n\tauthor       = {Juan Gómez Sanchis},\n\tyear         = 2009,\n\taddress      = {Universitat de València, Spain},\n\tnote         = {J. Blasco Ivars and G. Camps-Valls (advisors)},\n\tschool       = {Universitat de València, Spain}\n}"
+"address": "Universitat de València, Spain"
 },
 {
 "key": "GomezChova08thesis",
+"bib": "GomezChova08thesis",
 "type": "phdthesis",
 "title": "Cloud screening algorithm for MERIS and CHRIS satellite sensors",
 "author": "Chova L.",
@@ -604,11 +605,11 @@
 "Chova L."
 ],
 "year": "2008",
-"address": "Universitat de València, Spain",
-"raw": "@phdthesis{GomezChova08thesis,\n\ttitle        = {Cloud screening algorithm for MERIS and CHRIS satellite sensors},\n\tauthor       = {Luis Gómez Chova},\n\tyear         = 2008,\n\taddress      = {Universitat de València, Spain},\n\tnote         = {G. Camps-Valls and J. Calpe (advisors)},\n\tschool       = {Universitat de València, Spain}\n}"
+"address": "Universitat de València, Spain"
 },
 {
 "key": "Bolanos06",
+"bib": "Bolanos06",
 "type": "phdthesis",
 "title": "Interfaz de MATLAB para la extracción de características y clasificación de imágenes",
 "author": "Merario G.",
@@ -616,11 +617,11 @@
 "Merario G."
 ],
 "year": "2006",
-"address": "Universitat de València, Spain",
-"raw": "@phdthesis{Bolanos06,\n\ttitle        = {Interfaz de MATLAB para la extracción de características y clasificación de imágenes},\n\tauthor       = {Gustavo Bolaños Merario},\n\tyear         = 2006,\n\taddress      = {Universitat de València, Spain},\n\tnote         = {G. Camps-Valls (advisor)},\n\tschool       = {Electrical Engineering Dep., Universitat de València, Spain}\n}"
+"address": "Universitat de València, Spain"
 },
 {
 "key": "Campayo06",
+"bib": "Campayo06",
 "type": "phdthesis",
 "title": "Análisis de splines autorregresivos multivariantes en teledetección",
 "author": "Villalta D.",
@@ -628,11 +629,11 @@
 "Villalta D."
 ],
 "year": "2006",
-"address": "Universitat de València, Spain",
-"raw": "@phdthesis{Campayo06,\n\ttitle        = {Análisis de splines autorregresivos multivariantes en teledetección},\n\tauthor       = {David Campayo Villalta},\n\tyear         = 2006,\n\taddress      = {Universitat de València, Spain},\n\tnote         = {G. Camps-Valls (advisor)},\n\tschool       = {Electrical Engineering Dep., Universitat de València, Spain}\n}"
+"address": "Universitat de València, Spain"
 },
 {
 "key": "Gomez06",
+"bib": "Gomez06",
 "type": "phdthesis",
 "title": "Desarrollo de técnicas de análisis de imágenes hiperespectrales. Aplicación a un sistema de identificación de podredumbres en cítricos basado en filtros sintonizables de cristal líquido",
 "author": "Sanchis J.",
@@ -640,11 +641,11 @@
 "Sanchis J."
 ],
 "year": "2006",
-"address": "Universitat de València, Spain",
-"raw": "@phdthesis{Gomez06,\n\ttitle        = {Desarrollo de técnicas de análisis de imágenes hiperespectrales. Aplicación a un sistema de identificación de podredumbres en cítricos basado en filtros sintonizables de cristal líquido},\n\tauthor       = {Juan Gómez Sanchis},\n\tyear         = 2006,\n\taddress      = {Universitat de València, Spain},\n\tnote         = {G. Camps-Valls (advisor)},\n\tschool       = {Electrical Engineering Dep., Universitat de València, Spain}\n}"
+"address": "Universitat de València, Spain"
 },
 {
 "key": "Laparra06",
+"bib": "Laparra06",
 "type": "phdthesis",
 "title": "Compresión de imágenes mediante SVM adaptativa perceptual en el dominio wavelet",
 "author": "Pérez-Muelas V.",
@@ -652,11 +653,11 @@
 "Pérez-Muelas V."
 ],
 "year": "2006",
-"address": "Universitat de València, Spain",
-"raw": "@phdthesis{Laparra06,\n\ttitle        = {Compresión de imágenes mediante SVM adaptativa perceptual en el dominio wavelet},\n\tauthor       = {Valero Laparra Pérez-Muelas},\n\tyear         = 2006,\n\taddress      = {Universitat de València, Spain},\n\tnote         = {J. Malo and G. Camps-Valls (advisors)},\n\tschool       = {Electrical Engineering Dep., Universitat de València, Spain}\n}"
+"address": "Universitat de València, Spain"
 },
 {
 "key": "Laparra08",
+"bib": "Laparra08",
 "type": "phdthesis",
 "title": "Eliminación de ruido en imágenes mediante kernels basados en información mútua en el dominio wavelet",
 "author": "Pérez-Muelas V.",
@@ -664,11 +665,11 @@
 "Pérez-Muelas V."
 ],
 "year": "2006",
-"address": "Universitat de València, Spain",
-"raw": "@phdthesis{Laparra08,\n\ttitle        = {Eliminación de ruido en imágenes mediante kernels basados en información mútua en el dominio wavelet},\n\tauthor       = {Valero Laparra Pérez-Muelas},\n\tyear         = 2006,\n\taddress      = {Universitat de València, Spain},\n\tnote         = {J. Malo and G. Camps-Valls (advisors)},\n\tschool       = {Computer Science Dep and Electrical Engineering Dep., Universitat de València, Spain}\n}"
+"address": "Universitat de València, Spain"
 },
 {
 "key": "Rodrigo06",
+"bib": "Rodrigo06",
 "type": "phdthesis",
 "title": "Clasificación supervisada de imágenes hiperespectrales mediante máquinas de vectores soporte y AdaBoosting",
 "author": "González A.",
@@ -676,11 +677,11 @@
 "González A."
 ],
 "year": "2006",
-"address": "Universitat de València, Spain",
-"raw": "@phdthesis{Rodrigo06,\n\ttitle        = {Clasificación supervisada de imágenes hiperespectrales mediante máquinas de vectores soporte y AdaBoosting},\n\tauthor       = {Antonio Rodrigo González},\n\tyear         = 2006,\n\taddress      = {Universitat de València, Spain},\n\tnote         = {G. Camps-Valls (advisor)},\n\tschool       = {Electrical Engineering Dep., Universitat de València, Spain}\n}"
+"address": "Universitat de València, Spain"
 },
 {
 "key": "Gutierrez05",
+"bib": "Gutierrez05",
 "type": "phdthesis",
 "title": "Contrast perception non-linearities and applications to image restoration and motion estimation",
 "author": "Gutiérrez J.",
@@ -688,11 +689,11 @@
 "Gutiérrez J."
 ],
 "year": "2005",
-"address": "Universitat de València, Spain",
-"raw": "@phdthesis{Gutierrez05,\n\ttitle        = {Contrast perception non-linearities and applications to image restoration and motion estimation},\n\tauthor       = {Juan Gutiérrez},\n\tyear         = 2005,\n\taddress      = {Universitat de València, Spain},\n\tnote         = {J. Malo and F. Ferri (advisors)},\n\tschool       = {Master in Computer Science, Universitat de València, Spain}\n}"
+"address": "Universitat de València, Spain"
 },
 {
 "key": "Navarro05",
+"bib": "Navarro05",
 "type": "phdthesis",
 "title": "Non-linear masking models for color image coding in the JPEG2000 framework",
 "author": "Navarro Y.",
@@ -700,11 +701,11 @@
 "Navarro Y."
 ],
 "year": "2005",
-"address": "Universitat de València, Spain",
-"raw": "@phdthesis{Navarro05,\n\ttitle        = {Non-linear masking models for color image coding in the JPEG2000 framework},\n\tauthor       = {Yolanda Navarro},\n\tyear         = 2005,\n\taddress      = {Universitat de València, Spain},\n\tnote         = {J. Malo and F. Ferri (advisors)},\n\tschool       = {Master in Physics, Universitat de València, Spain}\n}"
+"address": "Universitat de València, Spain"
 },
 {
 "key": "Bandos04",
+"bib": "Bandos04",
 "type": "phdthesis",
 "title": "Effective early stopping in support vector machines procedures using statistical criteria",
 "author": "Bandos T.",
@@ -712,11 +713,11 @@
 "Bandos T."
 ],
 "year": "2004",
-"address": "Universitat de València, Spain",
-"raw": "@phdthesis{Bandos04,\n\ttitle        = {Effective early stopping in support vector machines procedures using statistical criteria},\n\tauthor       = {Tatyana V. Bandos},\n\tyear         = 2004,\n\taddress      = {Universitat de València, Spain},\n\tnote         = {E. Soria and G. Camps-Valls (advisors)},\n\tschool       = {Electrical Engineering Dep., Universitat de València, Spain}\n}"
+"address": "Universitat de València, Spain"
 },
 {
 "key": "Girbes03",
+"bib": "Girbes03",
 "type": "phdthesis",
 "title": "Igualación robusta de canales de comunicaciones mediante filtros gamma y Laguerre",
 "author": "Candel J.",
@@ -724,11 +725,11 @@
 "Candel J."
 ],
 "year": "2003",
-"address": "Universitat de València, Spain",
-"raw": "@phdthesis{Girbes03,\n\ttitle        = {Igualación robusta de canales de comunicaciones mediante filtros gamma y Laguerre},\n\tauthor       = {Jaime Girbés Candel},\n\tyear         = 2003,\n\taddress      = {Universitat de València, Spain},\n\tnote         = {G. Camps-Valls (advisor)},\n\tschool       = {Electrical Engineering Dep., Universitat de València, Spain}\n}"
+"address": "Universitat de València, Spain"
 },
 {
 "key": "GomezPerez04",
+"bib": "GomezPerez04",
 "type": "phdthesis",
 "title": "Compresión de imágenes mediante SVM adaptativa perceptual",
 "author": "Pérez G.",
@@ -736,11 +737,11 @@
 "Pérez G."
 ],
 "year": "2003",
-"address": "Universitat de València, Spain",
-"raw": "@phdthesis{GomezPerez04,\n\ttitle        = {Compresión de imágenes mediante SVM adaptativa perceptual},\n\tauthor       = {Gabriel Gómez Pérez},\n\tyear         = 2003,\n\taddress      = {Universitat de València, Spain},\n\tnote         = {J. Malo and G. Camps-Valls (advisors)},\n\tschool       = {Electrical Engineering Dep., Universitat de València, Spain}\n}"
+"address": "Universitat de València, Spain"
 },
 {
 "key": "Epifanio02",
+"bib": "Epifanio02",
 "type": "phdthesis",
 "title": "Texture description: applications to image coding and classification",
 "author": "Epifanio I.",
@@ -748,11 +749,11 @@
 "Epifanio I."
 ],
 "year": "2002",
-"address": "Universitat de València, Spain",
-"raw": "@phdthesis{Epifanio02,\n\ttitle        = {Texture description: applications to image coding and classification},\n\tauthor       = {Irene Epifanio},\n\tyear         = 2002,\n\taddress      = {Universitat de València, Spain},\n\tnote         = {J. Malo and G. Ayala (advisors)},\n\tschool       = {Physics and Maths Departments, Universitat de València, Spain}\n}"
+"address": "Universitat de València, Spain"
 },
 {
 "key": "Saez01",
+"bib": "Saez01",
 "type": "phdthesis",
 "title": "Desarrollo de modelos neuronales FIR en problemas de predicción en farmacocinética clínica",
 "author": "Sáez S.",
@@ -760,11 +761,11 @@
 "Sáez S."
 ],
 "year": "2001",
-"address": "Universitat de València, Spain",
-"raw": "@phdthesis{Saez01,\n\ttitle        = {Desarrollo de modelos neuronales FIR en problemas de predicción en farmacocinética clínica},\n\tauthor       = {Sergio Sáez},\n\tyear         = 2001,\n\taddress      = {Universitat de València, Spain},\n\tnote         = {G. Camps-Valls (advisor)},\n\tschool       = {Electrical Engineering Dep., Universitat de València, Spain}\n}"
+"address": "Universitat de València, Spain"
 },
 {
 "key": "Malo99",
+"bib": "Malo99",
 "type": "phdthesis",
 "title": "Bit allocation in the human visual system, applications to image and video coding",
 "author": "Malo J.",
@@ -772,11 +773,11 @@
 "Malo J."
 ],
 "year": "1999",
-"address": "Universitat de València, Spain",
-"raw": "@phdthesis{Malo99,\n\ttitle        = {Bit allocation in the human visual system, applications to image and video coding},\n\tauthor       = {J. Malo},\n\tyear         = 1999,\n\taddress      = {Universitat de València, Spain},\n\tschool       = {PhD Physics, Universitat de València, Spain}\n}"
+"address": "Universitat de València, Spain"
 },
 {
 "key": "Malo95",
+"bib": "Malo95",
 "type": "phdthesis",
 "title": "Linear characterization of the human visual system in the Gabor domain",
 "author": "Malo J.",
@@ -784,7 +785,6 @@
 "Malo J."
 ],
 "year": "1995",
-"address": "Universitat de València, Spain",
-"raw": "@phdthesis{Malo95,\n\ttitle        = {Linear characterization of the human visual system in the Gabor domain},\n\tauthor       = {J. Malo},\n\tyear         = 1995,\n\taddress      = {Universitat de València, Spain},\n\tschool       = {Msc Physics, Universitat de València, Spain}\n}"
+"address": "Universitat de València, Spain"
 }
 ]

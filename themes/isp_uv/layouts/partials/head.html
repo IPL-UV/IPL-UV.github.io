@@ -1,8 +1,5 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-<link rel="preconnect" href="https://fonts.cdnfonts.com" crossorigin>
 {{ $ptitle := .Title }}
 {{ if or (eq $ptitle "") (eq (lower $ptitle) "content") }}{{ with .Parent }}{{ $ptitle = .Title }}{{ end }}{{ end }}
 {{ $title := cond .IsHome site.Title (printf "%s · %s" $ptitle site.Title) }}

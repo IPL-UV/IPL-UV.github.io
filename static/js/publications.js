@@ -89,7 +89,7 @@
           if (pre && !pre.textContent) {
             var base = (document.getElementById('bibtex_display') || {}).dataset ? document.getElementById('bibtex_display').dataset.bibtexBase : '/bibtex/';
             fetchBib((base || '/bibtex/') + el.dataset.bibfile + '.bib').then(function (text) {
-              pre.textContent = extractBib(text, el.dataset.key);
+              pre.textContent = text.trim();
               show();
             }).catch(function () { show(); });
           } else {

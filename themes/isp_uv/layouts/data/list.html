@@ -4,11 +4,11 @@
     {{ range .Pages }}
     {{ $img := relURL (urls.JoinPath "images/data" .Params.img) }}
     <div class="grid-item">
-      <a href="{{ .Params.link }}">
+      <a href="{{ .Params.link | default .RelPermalink }}">
         <img loading="lazy" decoding="async" src="{{ $img }}" alt="{{ .Title }}">
       </a>
       <div class="text">
-        <a href="{{ .Params.link }}" class="nameLink_a"> {{ .Params.title }} </a>
+        <a href="{{ .Params.link | default .RelPermalink }}" class="nameLink_a"> {{ .Params.title }} </a>
         {{ .Content }}
       </div>
     </div>

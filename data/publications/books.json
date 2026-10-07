@@ -1,6 +1,7 @@
 [
 {
 "key": "CampsValls21wiley",
+"bib": "CampsValls21wiley",
 "type": "book",
 "title": "Deep learning for the Earth Sciences: A comprehensive approach to remote sensing, climate science and geosciences",
 "author": "Camps-Valls G., Tuia D., Zhu X. and Reichstein M.",
@@ -13,11 +14,11 @@
 "year": "2021",
 "publisher": "Wiley & Sons",
 "project": "SEDAL, USMILE",
-"url": "https://github.com/DL4ES",
-"raw": "@book{CampsValls21wiley,\n\ttitle        = {Deep learning for the Earth Sciences: A comprehensive approach to remote sensing, climate science and geosciences},\n\tauthor       = {Gustau Camps-Valls and Devis Tuia and Xiao Xiang Zhu and Markus Reichstein},\n\tyear         = 2021,\n\tpublisher    = {Wiley \\& Sons},\n\tisbn         = 9781119646143,\n\turl          = {https://github.com/DL4ES},\n\tproject      = {SEDAL,USMILE}\n}"
+"url": "https://github.com/DL4ES"
 },
 {
 "key": "MorenoMartinez_et_al_2020",
+"bib": "MorenoMartinez_et_al_2020",
 "type": "incollection",
 "title": "Machine Learning Methods for Spatial and Temporal Parameter Estimation",
 "author": "Moreno-Martínez Á., Piles M., Muñoz-Marí J., Campos-Taberner M., Adsuara J., Mateo A., Pérez-Suay A., García-Haro F. and Camps-Valls G.",
@@ -35,11 +36,11 @@
 "booktitle": "Hyperspectral Image Analysis – Advances in Machine Learning and Signal Processing",
 "pages": "…",
 "year": "2020",
-"publisher": "Springer",
-"raw": "@incollection{MorenoMartinez_et_al_2020,\n\ttitle        = {Machine Learning Methods for Spatial and Temporal Parameter Estimation},\n\tauthor       = {\\'Alvaro Moreno-Mart\\'inez and Mar\\'ia Piles and Jordi Mu\\~noz-Mar\\'i and Manuel Campos-Taberner and Jose E. Adsuara and Anna Mateo and Adri\\'an P\\'erez-Suay and Francisco J. Garc\\'ia-Haro and Gustau Camps-Valls},\n\tyear         = 2020,\n\tbooktitle    = {Hyperspectral Image Analysis -- Advances in Machine Learning and Signal Processing},\n\tpublisher    = {Springer},\n\tseries       = {Advances in Computer Vision and Pattern Recognition},\n\tpages        = {…},\n\teditor       = {Saurabh Prasad and Jocelyn Chanussot}\n}"
+"publisher": "Springer"
 },
 {
 "key": "CampsValls_2020",
+"bib": "CampsValls_2020",
 "type": "incollection",
 "title": "Perspective on Deep Learning for Earth Sciences",
 "author": "Camps-Valls G.",
@@ -49,11 +50,11 @@
 "booktitle": "Hyperspectral Imaging",
 "pages": "333–368",
 "year": "2020",
-"publisher": "Elsevier",
-"raw": "@incollection{CampsValls_2020,\n\ttitle        = {Perspective on Deep Learning for Earth Sciences},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2020,\n\tbooktitle    = {Hyperspectral Imaging},\n\tpublisher    = {Elsevier},\n\tseries       = {Data Handling in Science and Technology},\n\tpages        = {333--368},\n\teditor       = {Jos\\'e Manuel Amigo}\n}"
+"publisher": "Elsevier"
 },
 {
 "key": "adsuara2021learning",
+"bib": "adsuara2021learning",
 "type": "article",
 "title": "Learning Unsupervised Feature Representations of Remote Sensing Data with Sparse Convolutional Networks",
 "author": "Adsuara J., Campos-Taberner M., García-Haro J., Gatta C., Romero A. and Camps-Valls G.",
@@ -68,11 +69,11 @@
 "journal": "Deep Learning for the Earth Sciences: A Comprehensive Approach to Remote Sensing, Climate Science, and Geosciences",
 "pages": "13–23",
 "year": "2021",
-"publisher": "Wiley Online Library",
-"raw": "@article{adsuara2021learning,\n\ttitle        = {Learning Unsupervised Feature Representations of Remote Sensing Data with Sparse Convolutional Networks},\n\tauthor       = {Adsuara, Jose E and Campos-Taberner, Manuel and Garc{\\'i}a-Haro, Javier and Gatta, Carlo and Romero, Adriana and Camps-Valls, Gustau},\n\tyear         = 2021,\n\tjournal      = {Deep Learning for the Earth Sciences: A Comprehensive Approach to Remote Sensing, Climate Science, and Geosciences},\n\tpublisher    = {Wiley Online Library},\n\tpages        = {13--23}\n}"
+"publisher": "Wiley Online Library"
 },
 {
 "key": "mateo2021generative",
+"bib": "mateo2021generative",
 "type": "article",
 "title": "Generative Adversarial Networks in the Geosciences",
 "author": "Mateo-García G., Laparra V., Requena-Mesa C. and Gómez-Chova L.",
@@ -85,11 +86,11 @@
 "journal": "Deep Learning for the Earth Sciences: A Comprehensive Approach to Remote Sensing, Climate Science, and Geosciences",
 "pages": "24–36",
 "year": "2021",
-"publisher": "Wiley Online Library",
-"raw": "@article{mateo2021generative,\n\ttitle        = {Generative Adversarial Networks in the Geosciences},\n\tauthor       = {Mateo-Garc{\\'i}a, Gonzalo and Laparra, Valero and Requena-Mesa, Christian and G{\\'o}mez-Chova, Luis},\n\tyear         = 2021,\n\tjournal      = {Deep Learning for the Earth Sciences: A Comprehensive Approach to Remote Sensing, Climate Science, and Geosciences},\n\tpublisher    = {Wiley Online Library},\n\tpages        = {24--36}\n}"
+"publisher": "Wiley Online Library"
 },
 {
 "key": "CampsValls21wsp",
+"bib": "CampsValls21wsp",
 "type": "incollection",
 "title": "Perspective on Deep Learning for Earth Sciences",
 "author": "Camps-Valls G.",
@@ -100,11 +101,11 @@
 "pages": "159–173",
 "year": "2021",
 "publisher": "World Scientific Pub Co Inc",
-"project": "SEDAL, USMILE",
-"raw": "@incollection{CampsValls21wsp,\n\ttitle        = {Perspective on Deep Learning for Earth Sciences},\n\tauthor       = {Camps-Valls, Gustau},\n\tyear         = 2021,\n\tbooktitle    = {Generalization with Deep Learning: for Improvement on Sensing Capability},\n\tpublisher    = {World Scientific Pub Co Inc},\n\tpages        = {159--173},\n\tisbn         = {978-9811218835},\n\teditor       = {Zhenghua Chen, Xiaoli Li, Min Wu},\n\tproject      = {SEDAL,USMILE}\n}"
+"project": "SEDAL, USMILE"
 },
 {
 "key": "Reichstein21crc",
+"bib": "Reichstein21crc",
 "type": "incollection",
 "title": "Combining system modeling and machine learning into hybrid ecosystem modeling",
 "author": "Reichstein M., Ahrens B., Kraft B., Camps-Valls G., Carvalhais N., Gans F., Gentine P. and Winkler A.",
@@ -121,11 +122,11 @@
 "booktitle": "Science-guided Machine Learning: Emerging Trends in Combining Scientific Knowledge with Data-driven Methods",
 "year": "2021",
 "publisher": "Data Mining and Knowledge Discovery Series. CRC Press",
-"project": "USMILE",
-"raw": "@incollection{Reichstein21crc,\n\ttitle        = {Combining system modeling and machine learning into hybrid ecosystem modeling},\n\tauthor       = {Reichstein, M. and Ahrens, B. and Kraft, B. and Camps-Valls, G. and Carvalhais, N. and Gans, F. and Gentine, P. and Winkler, A.J.},\n\tyear         = 2021,\n\tbooktitle    = {Science-guided Machine Learning: Emerging Trends in Combining Scientific Knowledge with Data-driven Methods},\n\tpublisher    = {Data Mining and Knowledge Discovery Series. CRC Press},\n\tpages        = {},\n\tisbn         = {},\n\teditor       = {Anuj Karpatne, Ramakrishnan Kanan, and Vipin Kumar},\n\tproject      = {USMILE}\n}"
+"project": "USMILE"
 },
 {
 "key": "van2022intelligent",
+"bib": "van2022intelligent",
 "type": "article",
 "title": "Intelligent Learning Management Systems: Overview and Application in Mathematics Education",
 "author": "Van Vaerenbergh S. and Pérez-Suay A.",
@@ -136,11 +137,11 @@
 "journal": "Strategy, Policy, Practice, and Governance for AI in Higher Education Institutions",
 "pages": "206–232",
 "year": "2022",
-"publisher": "IGI Global",
-"raw": "@article{van2022intelligent,\n\ttitle        = {Intelligent Learning Management Systems: Overview and Application in Mathematics Education},\n\tauthor       = {Van Vaerenbergh, Steven and P{\\'e}rez-Suay, Adri{\\'a}n},\n\tyear         = 2022,\n\tjournal      = {Strategy, Policy, Practice, and Governance for AI in Higher Education Institutions},\n\tpublisher    = {IGI Global},\n\tpages        = {206--232}\n}"
+"publisher": "IGI Global"
 },
 {
 "key": "CAMPSVALLS2020333",
+"bib": "CAMPSVALLS2020333",
 "type": "incollection",
 "title": "Statistical biophysical parameter retrieval and emulation with Gaussian processes",
 "author": "Camps-Valls G., Gómez-Chova L., Laparra V., Martino L., Mateo-García G., Muñoz-Marí J., Svendsen D. and Verrelst J.",
@@ -164,11 +165,11 @@
 "doi_bare": "10.1016/B978-0-444-63977-6.00015-8",
 "doi_url": "https://doi.org/10.1016/B978-0-444-63977-6.00015-8",
 "url": "http://www.sciencedirect.com/science/article/pii/B9780444639776000158",
-"abstract": "Earth observation from satellites poses challenging problems where machine learning is being widely adopted as a key player. Perhaps the most challenging scenario that we are facing nowadays is to provide accurate estimates of particular variables of interest characterizing the Earth's surface. This chapter introduces some recent advances in statistical bio-geophysical parameter retrieval from satellite data. In particular, we will focus on Gaussian process regression (GPR) that has excelled in parameter estimation as well as in modeling complex radiative transfer processes. GPR is based on solid Bayesian statistics and generally yields efficient and accurate parameter estimates, accompanied by confidence intervals for the estimations. We will first review the standard application of GPs for parameter retrieval and inverse modeling, which is based on regressing the parameter of interest on the concurrent observations. Secondly, noting that very often several parameters need to be estimated simultaneously, we review the field of multioutput GPR and illustrate its application in gap filling of multiple time series of parameters. The third GP modeling that we review here is that of combining real and simulated data. Very often a forward model encoding the well-understood physical relations is available. Inverting the model with GP is a standard practice known as hybrid modeling. In addition, we review a joint GP (JGP) model that combines both in~situ measurements and simulated data in a single GP model and allows us to transfer information across spatial, temporal, and land cover modalities such as different crops. In recent years, forced by the data deluge, a plethora of large-scale GP models were introduced. We review recent advances and illustrate their performance for the estimation of surface temperature from infrared sounding data. Finally, we take a reversed pathway and focus on mimicking physical models with GPs. We present an automatic emulation scheme that approximates the forward physical model via interpolation, reducing the number of necessary nodes. Empirical evidence of the performance of these models will be presented through illustrative examples of land and vegetation monitoring.",
-"raw": "@incollection{CAMPSVALLS2020333,\n\ttitle        = {Statistical biophysical parameter retrieval and emulation with Gaussian processes},\n\tauthor       = {Gustau Camps-Valls and Luis G\\'{o}mez-Chova and Valero Laparra and Luca Martino and Gonzalo Mateo-Garc\\'{\\i}a and Jordi Mu\\~{n}oz-Mar\\'{\\i} and Daniel H. Svendsen and Jochem Verrelst},\n\tyear         = 2020,\n\tbooktitle    = {Hyperspectral Imaging},\n\tpublisher    = {Elsevier},\n\tseries       = {Data Handling in Science and Technology},\n\tvolume       = 32,\n\tpages        = {333--368},\n\tdoi          = {https://doi.org/10.1016/B978-0-444-63977-6.00015-8},\n\tissn         = {0922-3487},\n\turl          = {http://www.sciencedirect.com/science/article/pii/B9780444639776000158},\n\teditor       = {Jos\\'{e} Manuel Amigo},\n\tkeywords     = {Bayesian Inference, Earth observation, Earth Observing System, Emulation, Fractional vegetation cover, Gaussian process, Linear model of coregionalization, Machine Learning, Model Inversion, Parameter Retrieval, Radiative transfer model},\n\tabstract     = {Earth observation from satellites poses challenging problems where machine learning is being widely adopted as a key player. Perhaps the most challenging scenario that we are facing nowadays is to provide accurate estimates of particular variables of interest characterizing the Earth's surface. This chapter introduces some recent advances in statistical bio-geophysical parameter retrieval from satellite data. In particular, we will focus on Gaussian process regression (GPR) that has excelled in parameter estimation as well as in modeling complex radiative transfer processes. GPR is based on solid Bayesian statistics and generally yields efficient and accurate parameter estimates, accompanied by confidence intervals for the estimations. We will first review the standard application of GPs for parameter retrieval and inverse modeling, which is based on regressing the parameter of interest on the concurrent observations. Secondly, noting that very often several parameters need to be estimated simultaneously, we review the field of multioutput GPR and illustrate its application in gap filling of multiple time series of parameters. The third GP modeling that we review here is that of combining real and simulated data. Very often a forward model encoding the well-understood physical relations is available. Inverting the model with GP is a standard practice known as hybrid modeling. In addition, we review a joint GP (JGP) model that combines both in~situ measurements and simulated data in a single GP model and allows us to transfer information across spatial, temporal, and land cover modalities such as different crops. In recent years, forced by the data deluge, a plethora of large-scale GP models were introduced. We review recent advances and illustrate their performance for the estimation of surface temperature from infrared sounding data. Finally, we take a reversed pathway and focus on mimicking physical models with GPs. We present an automatic emulation scheme that approximates the forward physical model via interpolation, reducing the number of necessary nodes. Empirical evidence of the performance of these models will be presented through illustrative examples of land and vegetation monitoring.},\n\tproject      = {SEDAL}\n}"
+"abstract": "Earth observation from satellites poses challenging problems where machine learning is being widely adopted as a key player. Perhaps the most challenging scenario that we are facing nowadays is to provide accurate estimates of particular variables of interest characterizing the Earth's surface. This chapter introduces some recent advances in statistical bio-geophysical parameter retrieval from satellite data. In particular, we will focus on Gaussian process regression (GPR) that has excelled in parameter estimation as well as in modeling complex radiative transfer processes. GPR is based on solid Bayesian statistics and generally yields efficient and accurate parameter estimates, accompanied by confidence intervals for the estimations. We will first review the standard application of GPs for parameter retrieval and inverse modeling, which is based on regressing the parameter of interest on the concurrent observations. Secondly, noting that very often several parameters need to be estimated simultaneously, we review the field of multioutput GPR and illustrate its application in gap filling of multiple time series of parameters. The third GP modeling that we review here is that of combining real and simulated data. Very often a forward model encoding the well-understood physical relations is available. Inverting the model with GP is a standard practice known as hybrid modeling. In addition, we review a joint GP (JGP) model that combines both in~situ measurements and simulated data in a single GP model and allows us to transfer information across spatial, temporal, and land cover modalities such as different crops. In recent years, forced by the data deluge, a plethora of large-scale GP models were introduced. We review recent advances and illustrate their performance for the estimation of surface temperature from infrared sounding data. Finally, we take a reversed pathway and focus on mimicking physical models with GPs. We present an automatic emulation scheme that approximates the forward physical model via interpolation, reducing the number of necessary nodes. Empirical evidence of the performance of these models will be presented through illustrative examples of land and vegetation monitoring."
 },
 {
 "key": "CampsValls20springer",
+"bib": "CampsValls20springer",
 "type": "incollection",
 "title": "Machine Learning Methods for Spatial and Temporal Parameter Estimation",
 "author": "Moreno-Martínez Á., Piles M., Muñoz-Marí J., Campos-Taberner M., Adsuara J., Mateo A., Pérez-Suay A., García-Haro F. and Camps-Valls G.",
@@ -186,11 +187,11 @@
 "booktitle": "Hyperspectral Image Analysis - Advances in Machine Learning and Signal Processing: In Series `Advances in Computer Vision and Pattern Recognition'",
 "year": "2020",
 "publisher": "Springer-Verlag",
-"project": "SEDAL",
-"raw": "@incollection{CampsValls20springer,\n\ttitle        = {Machine Learning Methods for Spatial and Temporal Parameter Estimation},\n\tauthor       = {\\'{A}lvaro Moreno-Mart\\'{\\i}nez and Maria Piles and Jordi Mu\\~{n}oz-Mar\\'{\\i} and Manuel Campos-Taberner and Jose E. Adsuara and Anna Mateo and Adri\\'{a}n P\\'{e}rez-Suay and Francisco Javier Garc\\'{\\i}a-Haro and Gustau Camps-Valls},\n\tyear         = 2020,\n\tbooktitle    = {Hyperspectral Image Analysis - Advances in Machine Learning and Signal Processing: In Series `Advances in Computer Vision and Pattern Recognition'},\n\tpublisher    = {Springer-Verlag},\n\teditor       = {Saurabh Prasad and Jocelyn Chanussot},\n\tproject      = {SEDAL}\n}"
+"project": "SEDAL"
 },
 {
 "key": "Verrelst18springerchapter",
+"bib": "Verrelst18springerchapter",
 "type": "incollection",
 "title": "Quantitative land vegetation products of imaging spectroscopy: a review on retrieval methods",
 "author": "Verrelst J., Malenovsky Z., Tol C., Camps-Valls G., Gastellu-Etchegorry J., Lewis P., North P. and Moreno J.",
@@ -206,11 +207,11 @@
 ],
 "year": "2018",
 "publisher": "Springer-Verlag",
-"project": "SEDAL",
-"raw": "@incollection{Verrelst18springerchapter,\n\ttitle        = {Quantitative land vegetation products of imaging spectroscopy: a review on retrieval methods},\n\tauthor       = {Jochem Verrelst and Zbynek Malenovsky and Christiaan Van der Tol and Gustau Camps-Valls and Jean-Philippe Gastellu-Etchegorry and Philip Lewis and Peter North and Jose Moreno},\n\tyear         = 2018,\n\tpublisher    = {Springer-Verlag},\n\tproject      = {SEDAL}\n}"
+"project": "SEDAL"
 },
 {
 "key": "Izquierdo17elsevier",
+"bib": "Izquierdo17elsevier",
 "type": "incollection",
 "title": "Feature extraction in Earth Observation Data Processing",
 "author": "Izquierdo E., Laparra V., Muñoz-Marí J., Gómez-Chova L. and Camps-Valls G.",
@@ -224,11 +225,11 @@
 "booktitle": "Comprehensive Remote Sensing",
 "year": "2017",
 "publisher": "Elsevier",
-"project": "SEDAL",
-"raw": "@incollection{Izquierdo17elsevier,\n\ttitle        = {Feature extraction in Earth Observation Data Processing},\n\tauthor       = {Izquierdo, E. and Laparra, V. and Mu\\~{n}oz-Mar\\'{\\i}, J. and G\\'{o}mez-Chova, L and Camps-Valls, Gustau},\n\tyear         = 2017,\n\tbooktitle    = {Comprehensive Remote Sensing},\n\tpublisher    = {Elsevier},\n\tproject      = {SEDAL}\n}"
+"project": "SEDAL"
 },
 {
 "key": "Monte17Luca",
+"bib": "Monte17Luca",
 "type": "incollection",
 "title": "Metropolis Sampling",
 "author": "Martino L. and Elvira V.",
@@ -241,11 +242,11 @@
 "publisher": "Wiley & Sons",
 "doi": "http://dx.doi.org/10.1002/9781118445112.stat03876.pub2",
 "doi_bare": "10.1002/9781118445112.stat03876.pub2",
-"doi_url": "http://dx.doi.org/10.1002/9781118445112.stat03876.pub2",
-"raw": "@incollection{Monte17Luca,\n\ttitle        = {Metropolis Sampling},\n\tauthor       = {Martino, L and Elvira, V},\n\tyear         = 2017,\n\tbooktitle    = {Wiley StatsRef: Statistics Reference Online},\n\tpublisher    = {Wiley \\& Sons},\n\tdoi          = {http://dx.doi.org/10.1002/9781118445112.stat03876.pub2}\n}"
+"doi_url": "http://dx.doi.org/10.1002/9781118445112.stat03876.pub2"
 },
 {
 "key": "moser:hal-01419170",
+"bib": "moser_hal-01419170",
 "type": "book",
 "title": "Mathematical Models for Remote Sensing Image Processing: Models and Methods for the Analysis of 2D Satellite and Aerial Images",
 "author": "Moser G. and Zerubia J.",
@@ -254,11 +255,11 @@
 "Zerubia J."
 ],
 "year": "2017",
-"publisher": "Springer",
-"raw": "@book{moser:hal-01419170,\n\ttitle        = {Mathematical Models for Remote Sensing Image Processing: Models and Methods for the Analysis of 2D Satellite and Aerial Images},\n\tauthor       = {Moser, Gabriele and Zerubia, Josiane},\n\tyear         = 2017,\n\tpublisher    = {Springer}\n}"
+"publisher": "Springer"
 },
 {
 "key": "Rojo18dspkm",
+"bib": "Rojo18dspkm",
 "type": "book",
 "title": "Digital Signal Processing with Kernel Methods",
 "author": "Rojo-Álvarez J., Martínez-Ramón M., Muñoz-Marí J. and Camps-Valls G.",
@@ -273,11 +274,11 @@
 "address": "UK",
 "project": "SEDAL",
 "url": "https://www.wiley.com/en-es/Digital+Signal+Processing+with+Kernel+Methods-p-9781118611791",
-"code": "https://github.com/DSPKM",
-"raw": "@book{Rojo18dspkm,\n\ttitle        = {Digital Signal Processing with Kernel Methods},\n\tauthor       = {Rojo-\\'{A}lvarez, J.L. and Mart\\'{\\i}nez-Ram\\'{o}n, M. and Mu\\~{n}oz-Mar\\'{\\i}, J. and Camps-Valls, G.},\n\tyear         = 2018,\n\tmonth        = {Apr},\n\tpublisher    = {Wiley \\& Sons},\n\taddress      = {UK},\n\tisbn         = {978-1118611791},\n\turl          = {https://www.wiley.com/en-es/Digital+Signal+Processing+with+Kernel+Methods-p-9781118611791},\n\tcode         = {https://github.com/DSPKM},\n\tproject      = {SEDAL}\n}"
+"code": "https://github.com/DSPKM"
 },
 {
 "key": "Tuia17review",
+"bib": "Tuia17review",
 "type": "incollection",
 "title": "Advances in Kernel Machines for Image Classification and Biophysical Parameter Retrieval",
 "author": "Tuia D., Volpi M., Verrelst J. and Camps-Valls G.",
@@ -293,11 +294,11 @@
 "pages": "1–1",
 "year": "2017",
 "publisher": "Springer Verlag",
-"project": "SEDAL",
-"raw": "@incollection{Tuia17review,\n\ttitle        = {Advances in Kernel Machines for Image Classification and Biophysical Parameter Retrieval},\n\tauthor       = {Tuia, D. and Volpi, M. and Verrelst, J. and Camps-Valls, G.},\n\tyear         = 2017,\n\tbooktitle    = {Mathematical Models for Remote Sensing Image Processing: Models and Methods for the Analysis of 2D Satellite and Aerial Images},\n\tpublisher    = {Springer Verlag},\n\tvolume       = 1,\n\tnumber       = 1,\n\tpages        = {1--1},\n\tproject      = {SEDAL}\n}"
+"project": "SEDAL"
 },
 {
 "key": "Ruiz13",
+"bib": "Ruiz13",
 "type": "incollection",
 "title": "Interactive Pansharpening and Active Classification in Remote Sensing",
 "author": "Ruiz P., Mateos J., Camps-Valls G., Molina R. and Katsaggelos A.",
@@ -316,11 +317,11 @@
 "doi": "10.1007/978-3-642-35932-3\\_5",
 "doi_bare": "10.1007/978-3-642-35932-3\\_5",
 "doi_url": "https://doi.org/10.1007/978-3-642-35932-3\\_5",
-"url": "http://dx.doi.org/10.1007/978-3-642-35932-3\\_5",
-"raw": "@incollection{Ruiz13,\n\ttitle        = {Interactive Pansharpening and Active Classification in Remote Sensing},\n\tauthor       = {Ruiz, Pablo and Mateos, Javier and Camps-Valls, Gustavo and Molina, Rafael and Katsaggelos, Aggelos K.},\n\tyear         = 2013,\n\tbooktitle    = {Multimodal Interaction in Image and Video Applications},\n\tpublisher    = {Springer Berlin Heidelberg},\n\tseries       = {Intelligent Systems Reference Library},\n\tvolume       = 48,\n\tpages        = {67--81},\n\tdoi          = {10.1007/978-3-642-35932-3\\_5},\n\tisbn         = {978-3-642-35931-6},\n\turl          = {http://dx.doi.org/10.1007/978-3-642-35932-3\\_5}\n}"
+"url": "http://dx.doi.org/10.1007/978-3-642-35932-3\\_5"
 },
 {
 "key": "Camps-Valls:2011:RSI:2207963",
+"bib": "Camps-Valls_2011_RSI_2207963",
 "type": "book",
 "title": "Remote Sensing Image Processing",
 "author": "Camps-Valls G., Tuia D., Gómez-Chova L., Jiménez S. and Malo J.",
@@ -332,11 +333,11 @@
 "Malo J."
 ],
 "year": "2011",
-"publisher": "Morgan & Claypool Publishers",
-"raw": "@book{Camps-Valls:2011:RSI:2207963,\n\ttitle        = {Remote Sensing Image Processing},\n\tauthor       = {Camps-Valls, Gustavo and Tuia, Devis and G\\'{o}mez-Chova, Luis and Jim\\'{e}nez, Sandra and Malo, Jess},\n\tyear         = 2011,\n\tpublisher    = {Morgan \\& Claypool Publishers},\n\tisbn         = {1608458199, 9781608458196},\n\tedition      = {1st}\n}"
+"publisher": "Morgan & Claypool Publishers"
 },
 {
 "key": "GomezChova11review",
+"bib": "GomezChova11review",
 "type": "incollection",
 "title": "A Review of Kernel Methods in Remote Sensing Data Analysis",
 "author": "Gómez-Chova L., Muñoz-Marí J., Laparra V., Malo-López J. and Camps-Valls G.",
@@ -355,11 +356,11 @@
 "doi": "10.1007/978-3-642-14212-3\\_10",
 "doi_bare": "10.1007/978-3-642-14212-3\\_10",
 "doi_url": "https://doi.org/10.1007/978-3-642-14212-3\\_10",
-"url": "http://dx.doi.org/10.1007/978-3-642-14212-3\\_10",
-"raw": "@incollection{GomezChova11review,\n\ttitle        = {A Review of Kernel Methods in Remote Sensing Data Analysis},\n\tauthor       = {G\\'{o}mez-Chova, Luis and Mu\\~{n}oz-Mar\\'{\\i}, Jordi and Laparra, Valero and Malo-L\\'{o}pez, Jes\\'{u}s and Camps-Valls, Gustavo},\n\tyear         = 2011,\n\tbooktitle    = {Optical Remote Sensing -- Advances in Signal Processing and Exploitation Techniques},\n\tpublisher    = {Springer Berlin Heidelberg},\n\tseries       = {Augmented Vision and Reality},\n\tvolume       = 3,\n\tpages        = {171--206},\n\tdoi          = {10.1007/978-3-642-14212-3\\_10},\n\tisbn         = {978-3-642-14211-6},\n\turl          = {http://dx.doi.org/10.1007/978-3-642-14212-3\\_10},\n\teditor       = {Prasad, Saurabh and Bruce, Lori M. and Chanussot, Jocelyn}\n}"
+"url": "http://dx.doi.org/10.1007/978-3-642-14212-3\\_10"
 },
 {
 "key": "Rojo11kmecg",
+"bib": "Rojo11kmecg",
 "type": "incollection",
 "title": "A Review of Kernel Methods in ECG Signal Classification",
 "author": "Rojo-Álvarez J., Camps-Valls G., Caamaño-Fernández F. and Guerrero-Martínez J.",
@@ -373,11 +374,11 @@
 "pages": "194–218",
 "year": "2011",
 "publisher": "Springer-Verlag",
-"address": "Germany",
-"raw": "@incollection{Rojo11kmecg,\n\ttitle        = {A Review of Kernel Methods in ECG Signal Classification},\n\tauthor       = {Rojo-\\'{A}lvarez, J. L. and Camps-Valls, G. and Caama\\~{n}o-Fern\\'{a}ndez, F. and Guerrero-Mart\\'{\\i}nez, J. F.},\n\tyear         = 2011,\n\tbooktitle    = {ECG Signal Processing, Classification and Interpretation: A Comprehensive Framework of Computational Intelligence},\n\tpublisher    = {Springer-Verlag},\n\taddress      = {Germany},\n\tpages        = {194--218},\n\teditor       = {Gacek, A. and Pedrycz, W.}\n}"
+"address": "Germany"
 },
 {
 "key": "Camps09bioinfo",
+"bib": "Camps09bioinfo",
 "type": "incollection",
 "title": "Bioinformatics and Computational Biology",
 "author": "Camps-Valls G. and Chalk A.",
@@ -389,11 +390,11 @@
 "year": "2009",
 "publisher": "Idea Group Inc.",
 "address": "Hershey, PA (USA)",
-"url": "http://www.irma-international.org/",
-"raw": "@incollection{Camps09bioinfo,\n\ttitle        = {Bioinformatics and Computational Biology},\n\tauthor       = {Camps-Valls, G. and Chalk, A. M.},\n\tyear         = 2009,\n\tmonth        = {Jan},\n\tbooktitle    = {Encyclopedia of Data Warehousing and Mining (2 Volumes), 2nd edition},\n\tpublisher    = {Idea Group Inc.},\n\taddress      = {Hershey, PA (USA)},\n\tisbn         = {1-59140-557-2},\n\turl          = {http://www.irma-international.org/},\n\teditor       = {John Wang}\n}"
+"url": "http://www.irma-international.org/"
 },
 {
 "key": "Camps09introKM",
+"bib": "Camps09introKM",
 "type": "incollection",
 "title": "An Introduction to Kernel Methods",
 "author": "Camps-Valls G., Martínez-Ramón M. and Rojo-Álvarez J.",
@@ -406,11 +407,11 @@
 "year": "2009",
 "publisher": "Idea Group Inc.",
 "address": "Hershey, PA (USA)",
-"url": "http://www.irma-international.org/",
-"raw": "@incollection{Camps09introKM,\n\ttitle        = {An Introduction to Kernel Methods},\n\tauthor       = {Camps-Valls, G. and Mart\\'{\\i}nez-Ram\\'{o}n, M. and Rojo-\\'{A}lvarez, J. L.},\n\tyear         = 2009,\n\tmonth        = {Jan},\n\tbooktitle    = {Encyclopedia of Data Warehousing and Mining (2 Volumes), 2nd edition},\n\tpublisher    = {Idea Group Inc.},\n\taddress      = {Hershey, PA (USA)},\n\tisbn         = {1-59140-557-2},\n\turl          = {http://www.irma-international.org/},\n\teditor       = {John Wang}\n}"
+"url": "http://www.irma-international.org/"
 },
 {
 "key": "Camps09survey",
+"bib": "Camps09survey",
 "type": "incollection",
 "title": "Applications of Kernel Methods",
 "author": "Camps-Valls G., Martínez-Ramón M. and Rojo-Álvarez J.",
@@ -423,11 +424,11 @@
 "year": "2009",
 "publisher": "Idea Group Inc.",
 "address": "Hershey, PA (USA)",
-"url": "http://www.irma-international.org/",
-"raw": "@incollection{Camps09survey,\n\ttitle        = {Applications of Kernel Methods},\n\tauthor       = {Camps-Valls, G. and Mart\\'{\\i}nez-Ram\\'{o}n, M. and Rojo-\\'{A}lvarez, J. L.},\n\tyear         = 2009,\n\tmonth        = {Jan},\n\tbooktitle    = {Encyclopedia of Data Warehousing and Mining (2 Volumes), 2nd edition},\n\tpublisher    = {Idea Group Inc.},\n\taddress      = {Hershey, PA (USA)},\n\tisbn         = {1-59140-557-2},\n\turl          = {http://www.irma-international.org/},\n\teditor       = {John Wang}\n}"
+"url": "http://www.irma-international.org/"
 },
 {
 "key": "CampsValls09wiley",
+"bib": "CampsValls09wiley",
 "type": "book",
 "title": "Kernel methods for Remote Sensing Data Analysis",
 "author": "Camps-Valls G. and Bruzzone L.",
@@ -437,11 +438,11 @@
 ],
 "year": "2009",
 "publisher": "Wiley & Sons",
-"address": "UK",
-"raw": "@book{CampsValls09wiley,\n\ttitle        = {Kernel methods for Remote Sensing Data Analysis},\n\tauthor       = {Camps-Valls, G. and Bruzzone, L.},\n\tyear         = 2009,\n\tmonth        = {Dec},\n\tpublisher    = {Wiley \\& Sons},\n\taddress      = {UK},\n\tisbn         = {978-0-470-72211-4},\n\teditor       = {Camps-Valls, G. and Bruzzone, L.}\n}"
+"address": "UK"
 },
 {
 "key": "GomezChova09wiley",
+"bib": "GomezChova09wiley",
 "type": "incollection",
 "title": "Kernel Mean for Semi-supervised Remote Sensing Image Classification",
 "author": "Gómez-Chova L., Calpe-Maravilla J., Bruzzone L. and Camps-Valls G.",
@@ -454,11 +455,11 @@
 "booktitle": "Kernel methods for Remote Sensing Data Analysis",
 "year": "2009",
 "publisher": "Wiley & Sons",
-"address": "UK",
-"raw": "@incollection{GomezChova09wiley,\n\ttitle        = {Kernel Mean for Semi-supervised Remote Sensing Image Classification},\n\tauthor       = {G\\'{o}mez-Chova, L. and Calpe-Maravilla, J. and Bruzzone, L. and Camps-Valls, G.},\n\tyear         = 2009,\n\tbooktitle    = {Kernel methods for Remote Sensing Data Analysis},\n\tpublisher    = {Wiley \\& Sons},\n\taddress      = {UK},\n\tisbn         = {978-0-470-72211-4},\n\teditor       = {Camps-Valls, G. and Bruzzone, L.}\n}"
+"address": "UK"
 },
 {
 "key": "Munoz09b",
+"bib": "Munoz09b",
 "type": "incollection",
 "title": "Parallel Implementation of SVM in Earth Observation Applications",
 "author": "Muñoz J., Plaza A., Gualtieri J. and Camps-Valls G.",
@@ -472,11 +473,11 @@
 "pages": "292–312",
 "year": "2009",
 "publisher": "IOS Press",
-"address": "UK",
-"raw": "@incollection{Munoz09b,\n\ttitle        = {Parallel Implementation of SVM in Earth Observation Applications},\n\tauthor       = {Mu\\~{n}oz, J. and Plaza, A. and Gualtieri, J.A. and Camps-Valls, G.},\n\tyear         = 2009,\n\tbooktitle    = {Parallel Programming and Applications in Grid, P2P and Networking systems},\n\tpublisher    = {IOS Press},\n\taddress      = {UK},\n\tpages        = {292--312},\n\tisbn         = {978-1-60750-004-9},\n\teditor       = {F. Xhafa}\n}"
+"address": "UK"
 },
 {
 "key": "Munoz09wiley",
+"bib": "Munoz09wiley",
 "type": "incollection",
 "title": "Multi-temporal Image Classification and Change Detection with Kernels",
 "author": "Muñoz-Marí J., Gómez-Chova L., Calpe-Maravilla J. and Camps-Valls G.",
@@ -489,11 +490,11 @@
 "booktitle": "Kernel methods for Remote Sensing Data Analysis",
 "year": "2009",
 "publisher": "Wiley & Sons",
-"address": "UK",
-"raw": "@incollection{Munoz09wiley,\n\ttitle        = {Multi-temporal Image Classification and Change Detection with Kernels},\n\tauthor       = {Mu\\~{n}oz-Mar\\'{\\i}, J. and G\\'{o}mez-Chova, L. and Calpe-Maravilla, J. and Camps-Valls, G.},\n\tyear         = 2009,\n\tbooktitle    = {Kernel methods for Remote Sensing Data Analysis},\n\tpublisher    = {Wiley \\& Sons},\n\taddress      = {UK},\n\tisbn         = {978-0-470-72211-4},\n\teditor       = {Camps-Valls, G. and Bruzzone, L.}\n}"
+"address": "UK"
 },
 {
 "key": "Sancho09",
+"bib": "Sancho09",
 "type": "incollection",
 "title": "Hybrid Genetic Algorithms in Data Mining Applications",
 "author": "Salcedo S., Camps-Valls G. and Bousoño-Calzón C.",
@@ -506,11 +507,11 @@
 "year": "2009",
 "publisher": "Idea Group Inc.",
 "address": "Hershey, PA (USA)",
-"url": "http://www.igi-global.com/",
-"raw": "@incollection{Sancho09,\n\ttitle        = {Hybrid Genetic Algorithms in Data Mining Applications},\n\tauthor       = {Salcedo, S. and Camps-Valls, G. and Bouso\\~{n}o-Calz\\'{o}n, C.},\n\tyear         = 2009,\n\tmonth        = {Jan},\n\tbooktitle    = {Encyclopedia of Data Warehousing and Mining (2 Volumes), 2nd edition},\n\tpublisher    = {Idea Group Inc.},\n\taddress      = {Hershey, PA (USA)},\n\tisbn         = {1-59140-557-2},\n\turl          = {http://www.igi-global.com/},\n\teditor       = {John Wang}\n}"
+"url": "http://www.igi-global.com/"
 },
 {
 "key": "CampsValls07springer",
+"bib": "CampsValls07springer",
 "type": "incollection",
 "title": "Classification of Satellite Images with Regularized AdaBoosting of RBF Neural Networks",
 "author": "Camps-Valls G. and Rodrigo-González A.",
@@ -522,11 +523,11 @@
 "pages": "307–326",
 "year": "2008",
 "publisher": "Springer-Verlag",
-"address": "Germany",
-"raw": "@incollection{CampsValls07springer,\n\ttitle        = {Classification of Satellite Images with Regularized {A}da{B}oosting of {RBF} Neural Networks},\n\tauthor       = {Camps-Valls, G. and Rodrigo-Gonz\\'{a}lez, A.},\n\tyear         = 2008,\n\tbooktitle    = {Speech, Audio, Image and Biomedical Signal Processing using Neural Networks},\n\tpublisher    = {Springer-Verlag},\n\taddress      = {Germany},\n\tpages        = {307--326},\n\tisbn         = {978-3-540-75397-1},\n\teditor       = {Bhanu Prasad and S. R. Mahadeva Prasanna}\n}"
+"address": "Germany"
 },
 {
 "key": "CampsValls08shaker",
+"bib": "CampsValls08shaker",
 "type": "incollection",
 "title": "Kernel Machines in Remote Sensing Image Classification",
 "author": "Camps-Valls G., Muñoz-Marí J., Gómez-Chova L. and Calpe-Maravilla J.",
@@ -540,11 +541,11 @@
 "pages": "199–222",
 "year": "2008",
 "publisher": "Shaker Publishing",
-"address": "Maastrich, The Netherlands",
-"raw": "@incollection{CampsValls08shaker,\n\ttitle        = {Kernel Machines in Remote Sensing Image Classification},\n\tauthor       = {Camps-Valls, G. and Mu\\~{n}oz-Mar\\'{\\i}, J. and G\\'{o}mez-Chova, L. and Calpe-Maravilla, J.},\n\tyear         = 2008,\n\tbooktitle    = {Intelligent Systems: Techniques and Applications},\n\tpublisher    = {Shaker Publishing},\n\taddress      = {Maastrich, The Netherlands},\n\tpages        = {199--222},\n\tisbn         = {978-90-423-0345-4},\n\teditor       = {Evor Hines and Manel Mart\\'{\\i}nez-Ram\\'{o}n and Matteo Pardo and Eduard Llobet and Mark Leeson and Daciana Iliescu and Jianhua Yang eds.}\n}"
+"address": "Maastrich, The Netherlands"
 },
 {
 "key": "Rojo08shaker",
+"bib": "Rojo08shaker",
 "type": "incollection",
 "title": "Learning the Relevant Features of Ventricular Fibrillation from Automatic Detection Algorithms",
 "author": "Alonso-Atienza F., Rosado-Muñoz A., Rojo-Álvarez J. and Camps-Valls G.",
@@ -558,11 +559,11 @@
 "pages": "505–534",
 "year": "2008",
 "publisher": "Shaker Publishing",
-"address": "Maastrich, The Netherlands",
-"raw": "@incollection{Rojo08shaker,\n\ttitle        = {Learning the Relevant Features of Ventricular Fibrillation from Automatic Detection Algorithms},\n\tauthor       = {Alonso-Atienza, F. and Rosado-Mu\\~{n}oz, A. and Rojo-\\'{A}lvarez, J. L. and Camps-Valls, G.},\n\tyear         = 2008,\n\tbooktitle    = {Intelligent Systems: Techniques and Applications},\n\tpublisher    = {Shaker Publishing},\n\taddress      = {Maastrich, The Netherlands},\n\tpages        = {505--534},\n\tisbn         = {978-90-423-0345-4},\n\teditor       = {Evor Hines and Manel Mart\\'{\\i}nez-Ram\\'{o}n and Matteo Pardo and Eduard Llobet and Mark Leeson and Daciana Iliescu and Jianhua Yang eds.}\n}"
+"address": "Maastrich, The Netherlands"
 },
 {
 "key": "Bruzzone07",
+"bib": "Bruzzone07",
 "type": "incollection",
 "title": "Hyperspectral Image Classification with Kernels",
 "author": "Bruzzone L., Gómez-Chova L., Marconcini M. and Camps-Valls G.",
@@ -576,11 +577,11 @@
 "year": "2007",
 "publisher": "Idea Group Inc.",
 "address": "Hershey, PA (USA)",
-"url": "http://www.igi-global.com/",
-"raw": "@incollection{Bruzzone07,\n\ttitle        = {Hyperspectral Image Classification with Kernels},\n\tauthor       = {Bruzzone, L. and G\\'{o}mez-Chova, L. and Marconcini, M. and Camps-Valls, G.},\n\tyear         = 2007,\n\tmonth        = {Nov.},\n\tbooktitle    = {Kernel Methods in Bioengineering, Signal and Image Processing},\n\tpublisher    = {Idea Group Inc.},\n\taddress      = {Hershey, PA (USA)},\n\tisbn         = {1-559904-042-5},\n\turl          = {http://www.igi-global.com/},\n\teditor       = {Camps-Valls, G. and Rojo-\\'{A}lvarez, J. L. and Mart\\'{\\i}nez-Ram\\'{o}n, M.}\n}"
+"url": "http://www.igi-global.com/"
 },
 {
 "key": "CampsValls07a",
+"bib": "CampsValls07a",
 "type": "book",
 "title": "Kernel Methods in Bioengineering, Signal and Image Processing",
 "author": "Camps-Valls G., Rojo-Álvarez J. and Martínez-Ramón M.",
@@ -591,11 +592,11 @@
 ],
 "year": "2007",
 "publisher": "Idea Group Publishing",
-"address": "Hershey, PA (USA)",
-"raw": "@book{CampsValls07a,\n\ttitle        = {Kernel Methods in Bioengineering, Signal and Image Processing},\n\tauthor       = {Camps-Valls, G. and Rojo-\\'{A}lvarez, J. L. and Mart\\'{\\i}nez-Ram\\'{o}n, M.},\n\tyear         = 2007,\n\tmonth        = {Nov},\n\tpublisher    = {Idea Group Publishing},\n\taddress      = {Hershey, PA (USA)},\n\tisbn         = {1-559904-042-5}\n}"
+"address": "Hershey, PA (USA)"
 },
 {
 "key": "Gutierrez07",
+"bib": "Gutierrez07",
 "type": "incollection",
 "title": "Perceptual Image Representations for Support Vector Machine Image Coding",
 "author": "Gutiérrez J., Gómez-Pérez G., Malo J. and Camps-Valls G.",
@@ -609,11 +610,11 @@
 "year": "2007",
 "publisher": "Idea Group Inc.",
 "address": "Hershey, PA (USA)",
-"url": "http://www.igi-global.com/",
-"raw": "@incollection{Gutierrez07,\n\ttitle        = {Perceptual Image Representations for Support Vector Machine Image Coding},\n\tauthor       = {Guti\\'{e}rrez, J. and G\\'{o}mez-P\\'{e}rez, G. and Malo, J. and Camps-Valls, G.},\n\tyear         = 2007,\n\tmonth        = {Nov.},\n\tbooktitle    = {Kernel Methods in Bioengineering, Signal and Image Processing},\n\tpublisher    = {Idea Group Inc.},\n\taddress      = {Hershey, PA (USA)},\n\tisbn         = {1-559904-042-5},\n\turl          = {http://www.igi-global.com/},\n\teditor       = {Camps-Valls, G. and Rojo-\\'{A}lvarez, J. L. and Mart\\'{\\i}nez-Ram\\'{o}n, M.}\n}"
+"url": "http://www.igi-global.com/"
 },
 {
 "key": "Rojo07",
+"bib": "Rojo07",
 "type": "incollection",
 "title": "Discrete time signal processing framework with Support Vector Machines",
 "author": "Rojo-Álvarez J., Martínez-Ramón M., and Camps-Valls G., Martínez C. and Figuera C.",
@@ -628,11 +629,11 @@
 "year": "2007",
 "publisher": "Idea Group Inc.",
 "address": "Hershey, PA (USA)",
-"url": "http://www.igi-global.com/",
-"raw": "@incollection{Rojo07,\n\ttitle        = {Discrete time signal processing framework with Support Vector Machines},\n\tauthor       = {Rojo-\\'{A}lvarez, J. L. and Mart\\'{\\i}nez-Ram\\'{o}n, M. and and Camps-Valls, G. and Mart\\'{\\i}nez, C. E. and Figuera, C.},\n\tyear         = 2007,\n\tmonth        = {Nov.},\n\tbooktitle    = {Kernel Methods in Bioengineering, Signal and Image Processing},\n\tpublisher    = {Idea Group Inc.},\n\taddress      = {Hershey, PA (USA)},\n\tisbn         = {1-559904-042-5},\n\turl          = {http://www.igi-global.com/},\n\teditor       = {Camps-Valls, G. and Rojo-\\'{A}lvarez, J. L. and Mart\\'{\\i}nez-Ram\\'{o}n, M.}\n}"
+"url": "http://www.igi-global.com/"
 },
 {
 "key": "CampsValls06next",
+"bib": "CampsValls06next",
 "type": "incollection",
 "title": "Neural Networks in ECG classification: what is next in adaptive systems?",
 "author": "Camps-Valls G. and Guerrero-Martínez J.",
@@ -645,11 +646,11 @@
 "year": "2006",
 "publisher": "Idea Group Inc.",
 "address": "Hershey, PA, USA",
-"url": "http://www.igi-global.com/",
-"raw": "@incollection{CampsValls06next,\n\ttitle        = {Neural Networks in {ECG} classification: what is next in adaptive systems?},\n\tauthor       = {G. Camps-Valls and J. F. Guerrero-Mart\\'{\\i}nez},\n\tyear         = 2006,\n\tbooktitle    = {Neural Networks in Healthcare: Potential and Challenges},\n\tpublisher    = {Idea Group Inc.},\n\taddress      = {Hershey, PA, USA},\n\tpages        = {81--104},\n\tisbn         = {1-59140-848-2},\n\turl          = {http://www.igi-global.com/},\n\teditor       = {J. Kamruzzaman and R. K. Begg and R. A. Sarker}\n}"
+"url": "http://www.igi-global.com/"
 },
 {
 "key": "CampsValls06tdm_begg",
+"bib": "CampsValls06tdm_begg",
 "type": "incollection",
 "title": "Neural and kernel methods for Therapeutic Drug Monitoring",
 "author": "Camps-Valls G. and Martín-Guerrero J.",
@@ -662,11 +663,11 @@
 "year": "2006",
 "publisher": "Idea Group Inc.",
 "address": "Hershey, PA, USA",
-"url": "http://www.igi-global.com/",
-"raw": "@incollection{CampsValls06tdm_begg,\n\ttitle        = {Neural and kernel methods for Therapeutic Drug Monitoring},\n\tauthor       = {G. Camps-Valls and J. D. Mart\\'{\\i}n-Guerrero},\n\tyear         = 2006,\n\tbooktitle    = {Neural Networks in Healthcare: Potential and Challenges},\n\tpublisher    = {Idea Group Inc.},\n\taddress      = {Hershey, PA, USA},\n\tpages        = {231--268},\n\tisbn         = {1-59140-848-2},\n\turl          = {http://www.igi-global.com/},\n\teditor       = {J. Kamruzzaman and R. K. Begg and R. A. Sarker}\n}"
+"url": "http://www.igi-global.com/"
 },
 {
 "key": "CampsValls06uab",
+"bib": "CampsValls06uab",
 "type": "incollection",
 "title": "Hyperspectral Kernel Classifiers",
 "author": "Camps-Valls G., Gómez-Chova L., Calpe-Maravilla J., Muñoz-Marí J., Martín-Guerrero J., Alonso-Chordá L. and Moreno J.",
@@ -683,7 +684,6 @@
 "pages": "75–94",
 "year": "2006",
 "publisher": "Computer Vision Center, Universitat Autònoma de Barcelona",
-"address": "Barcelona, Spain",
-"raw": "@incollection{CampsValls06uab,\n\ttitle        = {Hyperspectral Kernel Classifiers},\n\tauthor       = {Camps-Valls, G. and G\\'{o}mez-Chova, L. and Calpe-Maravilla, J. and Mu\\~{n}oz-Mar\\'{\\i}, J. and Mart\\'{\\i}n-Guerrero, J. D. and Alonso-Chord\\'{a}, L. and Moreno, J.},\n\tyear         = 2006,\n\tbooktitle    = {Pattern Recognition: Progress, Directions and Applications},\n\tpublisher    = {Computer Vision Center, Universitat Aut\\`{o}noma de Barcelona},\n\taddress      = {Barcelona, Spain},\n\tpages        = {75--94},\n\tisbn         = {84-933652-6-2},\n\teditor       = {F. Pla, P. Radeva, J. Vitri\\`{a}}\n}"
+"address": "Barcelona, Spain"
 }
 ]

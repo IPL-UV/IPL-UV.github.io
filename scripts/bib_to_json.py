@@ -200,6 +200,7 @@ def norm_entry(e):
             doi_url = "https://doi.org/" + doi
     out = {
         "key": e["key"],
+        "bib": re.sub(r"[^A-Za-z0-9_.-]", "_", e["key"]),
         "type": e["type"],
         "title": get("title"),
         "author": format_authors(get("author")),
@@ -223,7 +224,6 @@ def norm_entry(e):
         "code": get("code"),
         "altimetric": get("altimetric"),
         "abstract": get("abstract"),
-        "raw": e["raw"],
     }
     return {k: v for k, v in out.items() if v}
 
@@ -248,6 +248,10 @@ def content_bibfiles():
 
 def main():
     os.makedirs(OUT_DIR, exist_ok=True)
+    bdir = os.path.join(ROOT, "static", "bibtex")
+    if os.path.isdir(bdir):
+        for _f in glob.glob(os.path.join(bdir, "*.bib")):
+            os.remove(_f)
     generated = set()
     errors = []
     warnings = []
@@ -282,9 +286,11 @@ def main():
         with open(out, "w", encoding="utf-8") as fh:
             json.dump(entries, fh, ensure_ascii=False, indent=0)
         generated.add(name)
-        import shutil
-        bdir = os.path.join(ROOT, "static", "bibtex"); os.makedirs(bdir, exist_ok=True)
-        shutil.copyfile(path, os.path.join(bdir, f"{name}.bib"))
+        bdir = os.path.join(ROOT, "static", "bibtex")
+        os.makedirs(bdir, exist_ok=True)
+        for _e in [x for x in parse_bib(read_bib(path)) if "raw" in x]:
+            with open(os.path.join(bdir, re.sub(r"[^A-Za-z0-9_.-]", "_", _e["key"]) + ".bib"), "w", encoding="utf-8") as _fh:
+                _fh.write(_e["raw"] + "\n")
         msg = f"{name}: {len(entries)} entradas"
         if dups:
             msg += f" ({dups} citekeys duplicadas colapsadas)"
