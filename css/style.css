@@ -1778,3 +1778,7 @@ h3 {
 .person-role { color: #666; margin: 0 0 0.6rem; }
 .person-links { display: flex; flex-wrap: wrap; gap: 0.8rem; }
 .person-bio { margin-top: 1rem; }
+
+/* SKIP LINK */
+.skip-link { position: absolute; left: -9999px; top: 0; background: #222; color: #fff; padding: 0.5rem 1rem; z-index: 2000; }
+.skip-link:focus { left: 0; }
