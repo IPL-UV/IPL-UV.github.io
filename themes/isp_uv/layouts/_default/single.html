@@ -1,3 +1,4 @@
 {{ define "main" }}
-        {{ .Content | safeHTML }}
+<div class="title-container"><h1>{{ .Title }}</h1></div>
+{{ .Content | safeHTML }}
 {{ end }}

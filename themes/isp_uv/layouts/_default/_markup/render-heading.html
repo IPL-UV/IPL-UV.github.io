@@ -1,1 +1,1 @@
-<h{{ add .Level 1 }} id="{{ .Anchor | safeURL }}">{{ .Text | safeHTML }}</h{{ add .Level 1 }}>
+{{ $lvl := cond (gt .Level 5) 6 (add .Level 1) }}<h{{ $lvl }} id="{{ .Anchor | safeURL }}">{{ .Text | safeHTML }}</h{{ $lvl }}>

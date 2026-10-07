@@ -1,8 +1,9 @@
 {{ define "main" }}
 <div class="content-container">
+  <div class="title-container"><h1>{{ .Title }}</h1></div>
   {{ range .Pages }}
   <div class="title-container">
-    <h1>{{ .Title }}</h1>
+    <h2>{{ .Title }}</h2>
   </div>
   <div class="collaborators-grid">
     {{ $content := .Content }}
