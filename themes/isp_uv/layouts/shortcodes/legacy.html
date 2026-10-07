@@ -2,4 +2,6 @@
 {{- $title := .Get 1 | default .Page.Title -}}
 {{- $class := "bad-iframe" -}}
 {{- if ge (len .Params) 3 -}}{{ $class = .Get 2 }}{{- end -}}
-<iframe{{ with $class }} class="{{ . }}"{{ end }} id="legacy-frame" src="{{ site.Params.legacyBase }}/pages/{{ $path }}" style="border: 0" width="100%" height="1000" referrerpolicy="same-origin" loading="lazy"{{ with $title }} title="{{ . }}"{{ end }} seamless></iframe>
+{{- $src := printf "%s/pages/%s" site.Params.legacyBase $path -}}
+{{- if hasPrefix $path "/" -}}{{ $src = printf "%s%s" site.Params.legacyBase $path -}}{{ end -}}
+<iframe{{ with $class }} class="{{ . }}"{{ end }} id="legacy-frame" src="{{ $src }}" style="border: 0" width="100%" height="1000" referrerpolicy="same-origin" loading="lazy"{{ with $title }} title="{{ . }}"{{ end }} seamless></iframe>
