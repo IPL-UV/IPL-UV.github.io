@@ -2015,7 +2015,7 @@ h3 {
     .custom-social-links { justify-content: flex-start; gap: 1.25rem; }
 
 /* PEOPLE (movido del inline) */
-.people-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 1rem; }
+.people-grid { display: grid; grid-template-columns: repeat(auto-fit, 165px); gap: 1rem; justify-content: center; margin-bottom: 2.5rem; }
 .people-grid-item { display: flex; }
 .people-card {
             padding: 8px;
@@ -2030,6 +2030,7 @@ h3 {
             height: 100%;
 
         }
+        .people-card h5 { min-height: 2.7em; display: flex; align-items: center; justify-content: center; margin: 0.15rem 0 0.35rem; font-size: 1rem; line-height: 1.2; }
         .people-card img {
             object-fit: cover;
             width: 100%;
