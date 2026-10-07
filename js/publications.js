@@ -2,22 +2,8 @@
 (function () {
   var _bibCache = {};
   function fetchBib(url) {
-    if (!_bibCache[url]) _bibCache[url] = fetch(url).then(function (r) { return r.text(); });
+    if (!_bibCache[url]) _bibCache[url] = fetch(url).then(function (r) { if (!r.ok) throw new Error(r.status); return r.text(); });
     return _bibCache[url];
-  }
-  function extractBib(text, key) {
-    if (!key) return '';
-    var i = text.indexOf('@');
-    var re = new RegExp('@\\w+\\s*\\{\\s*' + key.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\s*,');
-    var m = re.exec(text);
-    if (!m) return '';
-    var brace = text.indexOf('{', m.index);
-    var depth = 0;
-    for (var j = brace; j < text.length; j++) {
-      if (text[j] === '{') depth++;
-      else if (text[j] === '}') { depth--; if (depth === 0) return text.slice(m.index, j + 1).trim(); }
-    }
-    return text.slice(m.index).trim();
   }
   function makePager(cfg) {
     var container = document.getElementById(cfg.containerId);
