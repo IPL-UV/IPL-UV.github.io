@@ -1,17 +1,29 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-{{ $title := cond .IsHome site.Title (printf "%s · %s" .Title site.Title) }}
-{{ $desc := or .Description .Summary site.Params.description | plainify | truncate 160 }}
-{{ $img := absURL "images/isp_banner.webp" }}
+{{ $ptitle := .Title }}
+{{ if or (eq $ptitle "") (eq (lower $ptitle) "content") }}{{ with .Parent }}{{ $ptitle = .Title }}{{ end }}{{ end }}
+{{ $title := cond .IsHome site.Title (printf "%s · %s" $ptitle site.Title) }}
+{{ $desc := "" }}
+{{ with .Description }}{{ $desc = . }}{{ end }}
+{{ if not $desc }}{{ $desc = .Summary | plainify }}{{ end }}
+{{ if not $desc }}{{ $desc = site.Params.description }}{{ end }}
+{{ $desc = $desc | plainify | truncate 160 }}
+{{ $img := absURL "images/og-isp.jpg" }}
+{{ $canonical := printf "%s%s" (site.Params.canonicalBase | default "") .RelPermalink }}
 <title>{{ $title }}</title>
 <meta name="description" content="{{ $desc }}">
-<link rel="canonical" href="{{ .Permalink }}">
+<link rel="canonical" href="{{ $canonical }}">
+{{ if site.Params.noindex }}<meta name="robots" content="noindex,follow">{{ end }}
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
 <meta property="og:site_name" content="{{ site.Title }}">
+<meta property="og:locale" content="en_US">
 <meta property="og:title" content="{{ $title }}">
 <meta property="og:description" content="{{ $desc }}">
-<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:url" content="{{ $canonical }}">
 <meta property="og:image" content="{{ $img }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{ site.Title }}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ $title }}">
 <meta name="twitter:description" content="{{ $desc }}">
