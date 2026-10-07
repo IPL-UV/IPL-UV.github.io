@@ -17,6 +17,13 @@ function closeModal() {
   if (modal) modal.style.display = "none";
 }
 
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape') {
+    var modal = document.getElementById('imageModal');
+    if (modal && modal.style.display === 'block') closeModal();
+  }
+});
+
 // NAVBAR
 document.addEventListener('DOMContentLoaded', function () {
   const toggler = document.querySelector('.navbar-toggler');
