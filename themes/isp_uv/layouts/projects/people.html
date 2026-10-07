@@ -41,7 +41,7 @@
                             {{ with .Params.dblp }} <a class="btn btn-xss btn-danger" href="{{ . }}" role="button">dblp</a> {{ end }}
                             {{ with .Params.academia }} <a href="{{ . }}" aria-label="Academia"><img alt="" loading="lazy" decoding="async" src="{{ relURL "images/people/redes/academia.webp" }}"></a> {{ end }}
                             {{ with .Params.scopus }} <a href="{{ . }}" aria-label="Scopus"><img alt="" loading="lazy" decoding="async" src="{{ relURL "images/people/redes/scopus.webp" }}"></a> {{ end }}
-                            {{ with .Params.website }} <a href="{{ . }}"><button type="button" class="btn btn-xss btn-info">Website</button></a> {{ end }}                            
+                            {{ with .Params.website }} <a class="btn btn-xss btn-info" href="{{ . }}" role="button">Website</a> {{ end }}                            
                         </div>
                     </div>
                 </div>
