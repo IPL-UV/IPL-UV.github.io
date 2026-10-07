@@ -17,7 +17,7 @@
                 {{ if or (strings.HasSuffix .link ".webp") (strings.HasSuffix .link ".jpg") (strings.HasSuffix .link ".png") (strings.HasSuffix .link ".gif") }}
 
                 <a href="javascript:void(0);" class="gallery-thumbnail" onclick="openModal('{{ $img }}', '{{ .title | default "" }}', '{{ .description | default "" }}')">
-                    <img src="{{ $img }}" alt="{{ .title | default "" }}">
+                    <img loading="lazy" decoding="async" src="{{ $img }}" alt="{{ .title | default "" }}">
                 </a>
                 {{ else if or (strings.HasSuffix .link ".mp4") (strings.HasSuffix .link ".webm") }}
 

@@ -37,10 +37,10 @@
         <div class="image-container seminar-image">
           {{ with .Params.link }}
             <a href="{{ . }}" target="_blank" rel="noopener noreferrer">
-              <img src="{{ $img }}" alt="{{ $current.Params.image_alt | default "Default Seminar Image" }}">
+              <img loading="lazy" decoding="async" src="{{ $img }}" alt="{{ $current.Params.image_alt | default "Default Seminar Image" }}">
             </a>
           {{ else }}
-            <img src="{{ $img }}" alt="{{ .Params.image_alt | default "Default Seminar Image" }}">
+            <img loading="lazy" decoding="async" src="{{ $img }}" alt="{{ .Params.image_alt | default "Default Seminar Image" }}">
           {{ end }}
         </div>
         <div class="text-container seminar-text">

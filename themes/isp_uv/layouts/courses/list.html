@@ -12,7 +12,7 @@
             <div class="panel-content row">
                 <div class="panel-image col-md-2">
                     <a href="{{ .Params.link }}" target="_blank" rel="noopener noreferrer">
-                        <img src="{{ $img }}" alt="{{ if .Params.img }}{{ $altText }}{{ else }}Image{{ end }}">
+                        <img loading="lazy" decoding="async" src="{{ $img }}" alt="{{ if .Params.img }}{{ $altText }}{{ else }}Image{{ end }}">
                     </a>
                 </div>  
 

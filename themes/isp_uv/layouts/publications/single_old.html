@@ -1,6 +1,7 @@
 {{ define "main" }}
 <div id="loading-spinner" style="text-align: center; margin-top: 50px;">
-  <img src={{ relURL "images/spinner.gif" }} alt="" width="50" height="50">
+  <span class="isp-spinner" aria-label="Loading"></span>
+  <style>.isp-spinner{display:inline-block;width:46px;height:46px;border:5px solid #e0e0e0;border-top-color:#5bc0de;border-radius:50%;animation:isp-spin 1s linear infinite}@keyframes isp-spin{to{transform:rotate(360deg)}}</style>
 </div>
 
 <div class="content-container" style="display: none;" id="content-container">

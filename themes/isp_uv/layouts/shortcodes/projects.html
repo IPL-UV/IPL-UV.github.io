@@ -10,10 +10,10 @@
         <tr>
             <td class="project-logo-cell">
                 {{ with resources.Get $logo }}
-                <img src="{{ .RelPermalink }}" width="auto" height="auto" class="img-fluid" alt="Image of {{ .Title }}">
+                <img loading="lazy" decoding="async" src="{{ .RelPermalink }}" width="auto" height="auto" class="img-fluid" alt="Image of {{ .Title }}">
                 {{ end }}
                 {{ with resources.Get $flogo }}
-                <img src="{{ .RelPermalink }}" width="auto" height="auto" class="img-fluid" alt="Image of {{ .Title }}">
+                <img loading="lazy" decoding="async" src="{{ .RelPermalink }}" width="auto" height="auto" class="img-fluid" alt="Image of {{ .Title }}">
                 {{ end }}
             </td>
             <td class="project-info-cell">

@@ -48,10 +48,10 @@
                     <div class="people-card">
                         {{ with .Params.link_image }}
                         <a href="{{ . }}" target="_blank" rel="noopener noreferrer">
-                            <img src="{{ $img }}" class="img-fluid" alt="Image of {{ $name }}">
+                            <img loading="lazy" decoding="async" src="{{ $img }}" class="img-fluid" alt="Image of {{ $name }}">
                         </a>
                         {{ else }}
-                        <img src="{{ $img }}" class="img-fluid" alt="Image of {{ $name }}">
+                        <img loading="lazy" decoding="async" src="{{ $img }}" class="img-fluid" alt="Image of {{ $name }}">
                         {{ end }}
                         <h5>{{ .Title }}</h5>
                         <div>
