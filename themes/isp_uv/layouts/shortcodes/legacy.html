@@ -1,3 +1,5 @@
 {{- $path := .Get 0 -}}
 {{- $title := .Get 1 | default .Page.Title -}}
-<iframe id="legacy-frame" class="bad-iframe" src="{{ site.Params.legacyBase }}/pages/{{ $path }}" style="border: 0" width="100%" height="1000" referrerpolicy="same-origin" loading="lazy"{{ with $title }} title="{{ . }}"{{ end }} seamless></iframe>
+{{- $class := "bad-iframe" -}}
+{{- if ge (len .Params) 3 -}}{{ $class = .Get 2 }}{{- end -}}
+<iframe{{ with $class }} class="{{ . }}"{{ end }} id="legacy-frame" src="{{ site.Params.legacyBase }}/pages/{{ $path }}" style="border: 0" width="100%" height="1000" referrerpolicy="same-origin" loading="lazy"{{ with $title }} title="{{ . }}"{{ end }} seamless></iframe>

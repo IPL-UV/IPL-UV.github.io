@@ -18,7 +18,7 @@ layout: "single_iframe"
 </script>
 
 <div style="max-width: 10000px; margin: 0rem auto ">
-{{< legacy "SpatioSpectral.html" "SpatioSpectralTools" >}}
+{{< legacy "SpatioSpectral.html" "SpatioSpectralTools" "" >}}
 </div>
 
 <!-- ---
