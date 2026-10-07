@@ -7,14 +7,14 @@
   <div class="grid-item grid-filter">
     <div class="filter-container">
       <div class="button-filter-group-year">
-        <button id="prev-year-page" class="nav-button">&lt;</button>
+        <button id="prev-year-page" class="nav-button" aria-label="Previous years">&lt;</button>
         <div id="year-buttons-container" class="buttons-container"></div>
-        <button id="next-year-page" class="nav-button">&gt;</button>
+        <button id="next-year-page" class="nav-button" aria-label="Next years">&gt;</button>
       </div>
       <div class="button-filter-group-project">
-        <button id="prev-project-page" class="nav-button">&lt;</button>
+        <button id="prev-project-page" class="nav-button" aria-label="Previous projects">&lt;</button>
         <div id="project-buttons-container" class="buttons-container"></div>
-        <button id="next-project-page" class="nav-button">&gt;</button>
+        <button id="next-project-page" class="nav-button" aria-label="Next projects">&gt;</button>
       </div>
     </div>
   </div>
@@ -35,7 +35,7 @@
           <span class="year">{{ .year }}</span><br>
           <span class="project" style="display: none;">{{ .project }}</span>
           <div class="card-links">
-            {{ with .raw }}<button type="button" class="btn btn-xss btn-success bibtex-toggle">BibTeX</button>{{ end }}
+            {{ with .raw }}<button type="button" class="btn btn-xss btn-success bibtex-toggle" aria-expanded="false">BibTeX</button>{{ end }}
             {{ with .url }}<a class="btn btn-xss btn-info" href="{{ . }}" role="button">URL</a>{{ end }}
             {{ with .pdf }}<a class="btn btn-xss btn-danger" href="{{ . }}" role="button">PDF</a>{{ end }}
             {{ with .arxiv }}<a class="btn btn-xss btn-danger" href="{{ . }}" role="button">arXiv</a>{{ end }}

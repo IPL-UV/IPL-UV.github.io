@@ -1,9 +1,10 @@
 {{ define "main" }}
+<div class="title-container"><h1>{{ .Title }}</h1></div>
 <div class="content-container">
   <div class="grid-item grid-filter">
     <div class="filter-container">
       <label for="year-filter">Filter by:</label>
-      <select id="year-filter" onchange="updateFilters()">
+      <select id="year-filter" aria-label="Filter by year" onchange="updateFilters()">
         <option value="">All Years</option>
         {{ $years := slice }}
         {{ range sort (where .Site.RegularPages "Section" "news") "Date" "desc" }}
@@ -16,7 +17,7 @@
       </select>      
 
       <label for="month-filter"></label>
-      <select id="month-filter" onchange="updateFilters()">
+      <select id="month-filter" aria-label="Filter by month" onchange="updateFilters()">
         <option value="">All Months</option>
         {{ $months := slice "January" "February" "March" "April" "May" "June" "July" "August" "September" "October" "November" "December" }}
         {{ range $index, $month := $months }}

@@ -1,4 +1,5 @@
 {{ define "main" }}
+<div class="title-container"><h1>{{ .Title }}</h1></div>
 <div class="content-container">
   {{ range .Pages }}
   {{ $img := relURL (urls.JoinPath "images/facilities" .Params.img) }}
@@ -40,7 +41,7 @@
         </div>
 
         <div class="panel-description col-md-{{ if .Params.references }}6{{ else }}10{{ end }}">
-          <h5><p class="text-justify">{{ .Content | markdownify }}</p></h5>
+          <div class="list-desc">{{ .Content }}</div>
         </div>
       </div>
     </div>

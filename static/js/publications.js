@@ -58,7 +58,11 @@
       if (bib) {
         bib.addEventListener('click', function () {
           var d = el.querySelector('.bibtexdata');
-          if (d) d.style.display = (d.style.display === 'block') ? 'none' : 'block';
+          if (d) {
+            var open = d.style.display === 'block';
+            d.style.display = open ? 'none' : 'block';
+            bib.setAttribute('aria-expanded', open ? 'false' : 'true');
+          }
         });
       }
       var pbtn = el.querySelector('.project-btn');

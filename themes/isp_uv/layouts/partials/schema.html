@@ -4,23 +4,25 @@
 {{- $org := dict "@context" "https://schema.org" "@type" "ResearchOrganization" "@id" $orgid "name" site.Title "url" (site.Params.canonicalBase | default site.BaseURL) "logo" (absURL "images/isp_logo.webp") "parentOrganization" (dict "@type" "Organization" "name" "Universitat de València") "address" (dict "@type" "PostalAddress" "addressLocality" "València" "addressCountry" "ES") "sameAs" $same -}}
 {{- with site.Params.description }}{{ $org = merge $org (dict "description" .) }}{{ end -}}
 <script type="application/ld+json">{{ $org | jsonify | safeJS }}</script>
-{{- else if and (eq .Section "people") (or .IsPage (not .Pages)) -}}
+{{- else if and (eq .Section "people") .Params.img -}}
 {{- $same := slice -}}
-{{- range slice "orcid" "googlescholar" "linkedin" "github" "twitter" "researchgate" "website" "bluesky" "youtube" -}}
+{{- range slice "orcid" "googlescholar" "linkedin" "twitter" "researchgate" "website" -}}
 {{- with (index $.Params .) }}{{ $same = $same | append . }}{{ end -}}
 {{- end -}}
+{{- $roles := dict "full_professors" "Full professor" "associate_professors" "Associate professor" "assistant_professors" "Assistant professor" "senior_research_scientists" "Senior research scientist" "postdocs" "Postdoctoral researcher" "phd_students" "PhD student" "visitors" "Visiting researcher" "administrative_communications" "Communications" "alumni" "Alumnus" -}}
 {{- $role := "" -}}
 {{- with .File }}{{ $role = path.Base (path.Dir .Dir) }}{{ end -}}
+{{- $jobtitle := .Params.role | default (index $roles $role) -}}
 {{- $person := dict "@context" "https://schema.org" "@type" "Person" "name" .Title "url" .Permalink -}}
 {{- if eq $role "alumni" -}}
 {{- $person = merge $person (dict "alumniOf" (dict "@type" "ResearchOrganization" "@id" $orgid "name" site.Title)) -}}
 {{- else -}}
 {{- $person = merge $person (dict "affiliation" (dict "@type" "ResearchOrganization" "@id" $orgid "name" site.Title)) -}}
-{{- if $role }}{{ $person = merge $person (dict "jobTitle" ($role | replaceRE "_" " " | title)) }}{{ end -}}
+{{- with $jobtitle }}{{ $person = merge $person (dict "jobTitle" .) }}{{ end -}}
 {{- end -}}
 {{- if $same }}{{ $person = merge $person (dict "sameAs" $same) }}{{ end -}}
 <script type="application/ld+json">{{ $person | jsonify | safeJS }}</script>
-{{- else if and (eq .Section "data") (or .IsPage (not .Pages)) -}}
+{{- else if and (eq .Section "data") (or .IsPage .Params.img) -}}
 {{- $desc := .Description | default .Summary | plainify | truncate 300 -}}
 {{- if ge (len $desc) 50 -}}
 {{- $ds := dict "@context" "https://schema.org" "@type" "Dataset" "name" .Title "url" .Permalink "description" $desc -}}

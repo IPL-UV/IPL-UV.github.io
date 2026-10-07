@@ -1,10 +1,11 @@
 {{ define "main" }}
+<div class="title-container"><h1>{{ .Title }}</h1></div>
 <div class="content-container">
   <div class="grid-item grid-filter">
     <div class="filter-container">
       <!-- Filtro por Año -->
       <label for="year-filter">Filter by:</label>
-      <select id="year-filter" onchange="updateFilters()">
+      <select id="year-filter" aria-label="Filter by year" onchange="updateFilters()">
         <option value="">All Years</option>
         {{ $years := slice }}
         {{ range sort (where .Site.RegularPages "Section" "seminars") "Date" "desc" }}
@@ -18,7 +19,7 @@
 
       <!-- Filtro por Speaker -->
       <label for="speaker-filter"></label>
-      <select id="speaker-filter" onchange="updateFilters()">
+      <select id="speaker-filter" aria-label="Filter by speaker" onchange="updateFilters()">
         <option value="">All Speakers</option>
         {{ $speakers := slice }}
         {{ range sort (where .Site.RegularPages "Section" "seminars") "Date" "desc" }}

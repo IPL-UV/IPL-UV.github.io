@@ -6,8 +6,9 @@
   {{ partial "head.html" . }}
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   {{ partial "nav.html" . }}
-  <main>
+  <main id="main">
     <div class="container">
       {{ block "main" . }}{{ end }}
     </div>

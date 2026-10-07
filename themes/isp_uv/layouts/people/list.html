@@ -1,6 +1,7 @@
 {{ define "main" }}
 
     <div class="container mt-5">
+        <div class="title-container"><h1>{{ .Title }}</h1></div>
 
         {{ $order := slice
         "full_professors"
@@ -37,7 +38,7 @@
                 {{ $sec := site.GetPage (printf "people/%s" .) }}
                 
                 <div class="title-container">
-                <h1>{{ if $sec }}{{ $sec.Title }}{{ else }}{{ replace (title .) "_" " " }}{{ end }}</h1>
+                <h2>{{ if $sec }}{{ $sec.Title }}{{ else }}{{ replace (title .) "_" " " }}{{ end }}</h2>
                 </div>
 
                 <div class="row g-1 justify-content-center">
