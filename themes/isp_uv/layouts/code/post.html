@@ -92,8 +92,8 @@
           {{ end }}
         </div>
       {{ end }}
-      <div id="imageModal" class="modal">
-        <span class="modal-close" onclick="closeModal()">&times;</span>
+      <div id="imageModal" class="modal" role="dialog" aria-modal="true" aria-label="Image viewer">
+        <button type="button" class="modal-close" aria-label="Close" onclick="closeModal()">&times;</button>
         <img class="modal-content" id="modalImage">
       <div id="modalCaption" class="modal-caption"></div>
     </div>

@@ -1,6 +1,6 @@
 {{- $path := .Get 0 -}}
 {{- $title := .Get 1 | default .Page.Title -}}
-{{- $class := "bad-iframe" -}}
+{{- $class := "" -}}
 {{- if ge (len .Params) 3 -}}{{ $class = .Get 2 }}{{- end -}}
 {{- $src := printf "%s/pages/%s" site.Params.legacyBase $path -}}
 {{- if hasPrefix $path "/" -}}{{ $src = printf "%s%s" site.Params.legacyBase $path -}}{{ end -}}
