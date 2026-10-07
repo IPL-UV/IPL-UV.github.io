@@ -1,6 +1,8 @@
 body {
   padding-top: 56px;
   font-family: sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 a {
@@ -18,7 +20,7 @@ h1 {
   text-align: center;
   vertical-align: baseline;
   border-radius: 0.25em;
-  background-color: #5bc0de;
+  background-color: #1F6E8C;
 }
 h2 {
   display: inline-block;
@@ -30,7 +32,7 @@ h2 {
   text-align: center;
   vertical-align: baseline;
   border-radius: 0.25em;
-  background-color: #5cb85c;
+  background-color: #2E7D32;
   margin-bottom: 20px;
   margin-top: 10px;
 }
@@ -40,7 +42,7 @@ h3 {
   font-size: 1.2em;
   font-weight: 700;
   line-height: 1;
-  color: #fff;
+  color: #222;
   text-align: center;
   vertical-align: baseline;
   border-radius: 0.25em;
@@ -53,7 +55,7 @@ h3 {
 .content-container {
   margin: 1rem auto; 
   max-width: 70%;
-  font-size: clamp(0.6rem, 2.5vw, 0.8rem);
+  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
 }
 
 .title-container {
@@ -64,6 +66,7 @@ h3 {
 
 .title-container  h1 {
   background-color: #c5c5c5;
+  color: #222;
   box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   margin-bottom: 1rem;
@@ -202,7 +205,8 @@ h3 {
   border-color: #0866e0;
 }
 
-.custom-dropdown:hover .custom-dropdown-menu {
+.custom-dropdown:hover .custom-dropdown-menu,
+.custom-dropdown:focus-within .custom-dropdown-menu {
   display: block;
 }
 
@@ -289,7 +293,7 @@ h3 {
 
   .custom-dropdown-menu {
     position: static;
-    display: none;
+    display: block;
     width: 100%;
     background-color: #333;
   }
@@ -382,7 +386,7 @@ h3 {
   margin: 0.3125rem 0;
   color: #666;
   line-height: 1.6;
-  font-size: clamp(0.6rem, 2.5vw, 0.8rem);
+  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
 }
 
 
@@ -723,7 +727,7 @@ h3 {
 }
 
 .panel-description h5 {
-  font-size: clamp(0.6rem, 2.5vw, 0.8rem);
+  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
   color: #333;
   line-height: 1.5;
   overflow: hidden;
@@ -746,7 +750,7 @@ h3 {
   margin-top: 0.5rem;
   color: #333;
   font-style: italic;
-  font-size: clamp(0.6rem, 2.5vw, 0.8rem);
+  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
   padding: 0;
   list-style-position: inside;
   word-wrap: break-word;
@@ -763,7 +767,7 @@ h3 {
   margin-top: 0.5rem;
   color: #333;
   font-style: italic;
-  font-size: clamp(0.6rem, 2.5vw, 0.8rem);
+  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
   padding: 0;
   text-align: justify;
 }
@@ -930,13 +934,13 @@ h3 {
 }
 
 .box-abstract p {
-  font-size: clamp(0.6rem, 2.5vw, 0.8rem);
+  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
   line-height: 1.6;
   margin: 0;
 }
 
 .box-abstract ul {
-  font-size: clamp(0.6rem, 2.5vw, 0.8rem);
+  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
   line-height: 1.6;
   margin: 0;
   text-align: left;
@@ -968,7 +972,7 @@ h3 {
   color: #337ab7;
   text-decoration: none;
   transition: color 0.3s ease;
-  font-size: clamp(0.6rem, 2.5vw, 0.8rem);
+  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
 }
 
 .box-gallery {
@@ -1031,7 +1035,7 @@ h3 {
 
 
 .gallery-description {
-  font-size: clamp(0.6rem, 2.5vw, 0.8rem);
+  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
 }
 
 .gallery-description p {
@@ -1095,7 +1099,7 @@ h3 {
 }
 
 .enlaces-list li {
-  font-size: clamp(0.6rem, 2.5vw, 0.8rem);
+  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
 }
 
 .enlaces-list li a {
@@ -1297,7 +1301,7 @@ h3 {
 }
 
 .box-content p {
-  font-size: clamp(0.6rem, 2.5vw, 0.8rem);
+  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
   line-height: 1.6;
   margin: 0;
 }
@@ -1317,7 +1321,7 @@ h3 {
 }
 
 .box-content ul {
-  font-size: clamp(0.6rem, 2.5vw, 0.8rem);
+  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
   line-height: 1.6;
   margin: 0;
   text-align: left;
@@ -1371,7 +1375,7 @@ h3 {
   color: #337ab7;
   text-decoration: none;
   transition: color 0.3s ease;
-  font-size: clamp(0.6rem, 2.5vw, 0.8rem);
+  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
 }
 
 /* Contact */
