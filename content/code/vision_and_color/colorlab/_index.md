@@ -8,3 +8,5 @@ references:
 ---
 
 COLORLAB is a color computation and visualization toolbox to be used in the MATLAB environment. It is intended for colorimetric applications, such as color image processing and psychophysical experimentation. The toolbox includes classical Tristimulus representations (e.g. CIE XYZ 1931), current Color Appearance Models (CIE Lab 76 or CIECAM2000), and various tools for visualization and color processing.
+
+See also the [VistaLab](/code/vision_and_color/colorlab/vistalab/) and [VistaModels](/code/vision_and_color/colorlab/vistamodels/) pages.

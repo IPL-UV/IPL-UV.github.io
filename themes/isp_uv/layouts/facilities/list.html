@@ -1,5 +1,4 @@
 {{ define "main" }}
-<div class="title-container"><h1>{{ .Title }}</h1></div>
 <div class="content-container">
   {{ range .Pages }}
   {{ $img := relURL (urls.JoinPath "images/facilities" .Params.img) }}
@@ -49,52 +48,5 @@
   {{ end }}
   {{ .RawContent | markdownify }}
 </div>
-<style>
-    /* Contenedor con relación 16:9 y recorte para evitar barras negras */
-.yt-thumb-wrap{
-  position: relative;
-  width: 100%;
-  aspect-ratio: 16 / 9;   /* mantiene proporción */
-  overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,.08);
-}
 
-/* La imagen se recorta centrada (quita letterboxing/pillarboxing visual) */
-.yt-thumb-img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;      /* recorta en lugar de dejar franjas */
-  display: block;
-}
-
-/* Ícono Play estilo YouTube */
-.yt-play{
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 64px;
-  height: 45px;
-  transform: translate(-50%, -50%);
-  opacity: .92;
-  transition: transform .12s ease, opacity .12s ease;
-}
-.yt-play-bg{ fill: rgba(0,0,0,.6); }
-.yt-play-tri{ fill: #fff; }
-
-/* Hover: feedback sutil */
-.yt-thumb:hover .yt-play{
-  transform: translate(-50%, -50%) scale(1.05);
-  opacity: 1;
-}
-
-/* Accesibilidad al foco via teclado */
-.yt-thumb:focus .yt-play,
-.yt-thumb:focus-visible .yt-play{
-  outline: none;
-  transform: translate(-50%, -50%) scale(1.05);
-  opacity: 1;
-}
-
-</style>
 {{ end }}

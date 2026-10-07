@@ -282,6 +282,9 @@ def main():
         with open(out, "w", encoding="utf-8") as fh:
             json.dump(entries, fh, ensure_ascii=False, indent=0)
         generated.add(name)
+        import shutil
+        bdir = os.path.join(ROOT, "static", "bibtex"); os.makedirs(bdir, exist_ok=True)
+        shutil.copyfile(path, os.path.join(bdir, f"{name}.bib"))
         msg = f"{name}: {len(entries)} entradas"
         if dups:
             msg += f" ({dups} citekeys duplicadas colapsadas)"

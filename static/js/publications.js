@@ -1,5 +1,24 @@
 // Filtros de publicaciones (SSR: la lista ya viene renderizada desde el servidor)
 (function () {
+  var _bibCache = {};
+  function fetchBib(url) {
+    if (!_bibCache[url]) _bibCache[url] = fetch(url).then(function (r) { return r.text(); });
+    return _bibCache[url];
+  }
+  function extractBib(text, key) {
+    if (!key) return '';
+    var i = text.indexOf('@');
+    var re = new RegExp('@\\w+\\s*\\{\\s*' + key.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\s*,');
+    var m = re.exec(text);
+    if (!m) return '';
+    var brace = text.indexOf('{', m.index);
+    var depth = 0;
+    for (var j = brace; j < text.length; j++) {
+      if (text[j] === '{') depth++;
+      else if (text[j] === '}') { depth--; if (depth === 0) return text.slice(m.index, j + 1).trim(); }
+    }
+    return text.slice(m.index).trim();
+  }
   function makePager(cfg) {
     var container = document.getElementById(cfg.containerId);
     var prev = document.getElementById(cfg.prevId);
@@ -58,10 +77,23 @@
       if (bib) {
         bib.addEventListener('click', function () {
           var d = el.querySelector('.bibtexdata');
-          if (d) {
-            var open = d.style.display === 'block';
-            d.style.display = open ? 'none' : 'block';
-            bib.setAttribute('aria-expanded', open ? 'false' : 'true');
+          if (!d) return;
+          var open = d.style.display === 'block';
+          if (open) {
+            d.style.display = 'none';
+            bib.setAttribute('aria-expanded', 'false');
+            return;
+          }
+          var show = function () { d.style.display = 'block'; bib.setAttribute('aria-expanded', 'true'); };
+          var pre = d.querySelector('.bibtex');
+          if (pre && !pre.textContent) {
+            var base = (document.getElementById('bibtex_display') || {}).dataset ? document.getElementById('bibtex_display').dataset.bibtexBase : '/bibtex/';
+            fetchBib((base || '/bibtex/') + el.dataset.bibfile + '.bib').then(function (text) {
+              pre.textContent = extractBib(text, el.dataset.key);
+              show();
+            }).catch(function () { show(); });
+          } else {
+            show();
           }
         });
       }

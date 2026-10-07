@@ -19,13 +19,13 @@
     </div>
   </div>
 
-  <div class="grid-container" id="bibtex_display">
+  <div class="grid-container" id="bibtex_display" data-bibtex-base="{{ relURL "bibtex/" }}">
     {{- range .Params.bibfiles -}}
       {{- $name := path.BaseName . -}}
       {{- with index site.Data.publications $name -}}
         {{- range . -}}
         {{- $e := . -}}
-        <article id="pub-{{ .key }}" class="grid-item bib-item seminar-item project-item" data-year="{{ .year }}" data-project="{{ .project }}">
+        <article id="pub-{{ .key }}" class="grid-item bib-item seminar-item project-item" data-year="{{ .year }}" data-project="{{ .project }}" data-bibfile="{{ $name }}" data-key="{{ .key }}">
           <h3 class="pub-title">{{ .title }}</h3>
           <span class="author">{{ .author }}</span><br>
           {{ with .booktitle }}<span style="font-style: italic;">{{ . }}{{ with $e.address }}, <span style="font-style: normal;">{{ . }}</span>{{ end }},</span>{{ end }}
@@ -35,7 +35,7 @@
           <span class="year">{{ .year }}</span><br>
           <span class="project" style="display: none;">{{ .project }}</span>
           <div class="card-links">
-            {{ with .raw }}<button type="button" class="btn btn-xss btn-success bibtex-toggle" aria-expanded="false">BibTeX</button>{{ end }}
+            <button type="button" class="btn btn-xss btn-success bibtex-toggle" aria-expanded="false">BibTeX</button>
             {{ with .url }}<a class="btn btn-xss btn-info" href="{{ . }}" role="button">URL</a>{{ end }}
             {{ with .pdf }}<a class="btn btn-xss btn-danger" href="{{ . }}" role="button">PDF</a>{{ end }}
             {{ with .arxiv }}<a class="btn btn-xss btn-danger" href="{{ . }}" role="button">arXiv</a>{{ end }}
@@ -47,7 +47,7 @@
             {{ with .doi_bare }}<div class="altmetric-embed" data-badge-type="donut" data-hide-no-mentions="true" data-doi="{{ . }}"></div>
             <div class="__dimensions_badge_embed__ dimension-embed" data-doi="{{ . }}"></div>{{ end }}
           </div>
-          {{ with .raw }}<div class="bibtexdata alert alert-success" style="display: none;"><pre class="bibtex">{{ . }}</pre></div>{{ end }}
+          <div class="bibtexdata alert alert-success" style="display: none;"><pre class="bibtex"></pre></div>
           {{- $type := "ScholarlyArticle" -}}
           {{- if eq .type "phdthesis" }}{{ $type = "Thesis" }}{{ else if or (eq .type "book") (eq .type "inbook") }}{{ $type = "Book" }}{{ end -}}
           {{- $auths := slice -}}
