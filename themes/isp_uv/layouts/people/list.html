@@ -82,12 +82,13 @@
             padding: 8px;
             padding-top: 10px;
             text-align: center;
-            cursor: pointer;
+            
             overflow: visible;
             position: relative;
             background: white;
             border: 1px solid #ddd;
-            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+            border-radius: 0.625rem;
             height: 320px;
 
         }
@@ -110,14 +111,15 @@
             background: white;
             border-top: none;
         }
-        .people-card:hover {
+        .people-card:hover,
+        .people-card:focus-within {
             visibility: visible;
             z-index: 2;
         }
         .people-card:hover .more-info {
             visibility: visible;
             opacity: 3;
-            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
             background: white;
         }
         .row {

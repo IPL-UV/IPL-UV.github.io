@@ -9,7 +9,7 @@
     </div>
     <div class="site-footer-cols">
       <div class="site-footer-col">
-        <h2>Group</h2>
+        <p class="site-footer-h">Group</p>
         <a href="{{ relURL "people/" }}">People</a>
         <a href="{{ relURL "projects/" }}">Projects</a>
         <a href="{{ relURL "publications/journals/" }}">Publications</a>
@@ -17,29 +17,39 @@
         <a href="{{ relURL "data/" }}">Data</a>
       </div>
       <div class="site-footer-col">
-        <h2>Research</h2>
+        <p class="site-footer-h">Research</p>
         <a href="{{ relURL "research/machine_learning/" }}">Machine learning</a>
         <a href="{{ relURL "research/visual_neuroscience/" }}">Visual science</a>
         <a href="{{ relURL "research/visual_brain/" }}">Image processing</a>
         <a href="{{ relURL "research/earth_science/" }}">Earth science</a>
         <a href="{{ relURL "research/social_science/" }}">Social science</a>
       </div>
+      <div class="site-footer-col">
+        <p class="site-footer-h">Activities</p>
+        <a href="{{ relURL "seminars/" }}">Seminars</a>
+        <a href="{{ relURL "courses/" }}">Courses</a>
+        <a href="{{ relURL "news/" }}">News</a>
+        <a href="{{ relURL "facilities/" }}">Facilities</a>
+        <a href="{{ relURL "collaborators/" }}">Collaborators</a>
+      </div>
       <div class="site-footer-col site-footer-contact">
-        <h2>Contact</h2>
+        <p class="site-footer-h">Contact</p>
         <p>Image Processing Laboratory (IPL)<br>Parc Científic, C/ Cat. Agustín Escardino Benlloch, 9<br>46980 Paterna (València), Spain</p>
         <p><a href="mailto:infoisp@uv.es">infoisp@uv.es</a> · +34 963543229</p>
       </div>
     </div>
   </div>
   <div class="site-footer-bottom">
-    <span>&copy; {{ now.Year }} ISP, Universitat de València</span>
-    <span class="site-footer-social">
-      <a href="https://github.com/IPL-UV" target="_blank" rel="noopener noreferrer">GitHub</a>
-      <a href="https://scholar.google.es/citations?hl=en&user=MsMYu-IAAAAJ" target="_blank" rel="noopener noreferrer">Scholar</a>
-      <a href="https://bsky.app/profile/isp-uv-es.bsky.social" target="_blank" rel="noopener noreferrer">Bluesky</a>
-      <a href="https://www.linkedin.com/company/image-and-signal-processing/posts/?feedView=all" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      <a href="https://www.instagram.com/isp_uv_es/" target="_blank" rel="noopener noreferrer">Instagram</a>
-      <a href="https://www.youtube.com/channel/UCTQjbAu8eGO2Sjb0MFadlLg" target="_blank" rel="noopener noreferrer">YouTube</a>
-    </span>
+    <div class="site-footer-bottom-inner">
+      <span>&copy; {{ now.Year }} ISP, Universitat de València</span>
+      <span class="site-footer-social">
+        <a href="https://github.com/IPL-UV" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://scholar.google.es/citations?hl=en&user=MsMYu-IAAAAJ" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a>
+        <a href="https://bsky.app/profile/isp-uv-es.bsky.social" target="_blank" rel="noopener noreferrer" aria-label="Bluesky"><i class="fa-brands fa-bluesky"></i></a>
+        <a href="https://www.linkedin.com/company/image-and-signal-processing/posts/?feedView=all" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/isp_uv_es/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UCTQjbAu8eGO2Sjb0MFadlLg" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </span>
+    </div>
   </div>
 </footer>
