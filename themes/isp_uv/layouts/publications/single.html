@@ -25,7 +25,7 @@
       {{- with index site.Data.publications $name -}}
         {{- range . -}}
         {{- $e := . -}}
-        <article id="pub-{{ .key }}" class="grid-item bib-item seminar-item project-item" data-year="{{ .year }}" data-project="{{ .project }}" data-bibfile="{{ .bib }}" data-key="{{ .key }}">
+        <article id="pub-{{ .key }}" class="grid-item bib-item seminar-item project-item" data-year="{{ .year }}" data-project="{{ .project }}" data-bibfile="{{ $name }}/{{ .bib }}" data-key="{{ .key }}">
           <h3 class="pub-title">{{ .title }}</h3>
           <span class="author">{{ .author }}</span><br>
           {{ with .booktitle }}<span style="font-style: italic;">{{ . }}{{ with $e.address }}, <span style="font-style: normal;">{{ . }}</span>{{ end }},</span>{{ end }}

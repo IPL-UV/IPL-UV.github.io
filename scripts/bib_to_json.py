@@ -250,7 +250,7 @@ def main():
     os.makedirs(OUT_DIR, exist_ok=True)
     bdir = os.path.join(ROOT, "static", "bibtex")
     if os.path.isdir(bdir):
-        for _f in glob.glob(os.path.join(bdir, "*.bib")):
+        for _f in glob.glob(os.path.join(bdir, "**", "*.bib"), recursive=True):
             os.remove(_f)
     generated = set()
     errors = []
@@ -286,9 +286,9 @@ def main():
         with open(out, "w", encoding="utf-8") as fh:
             json.dump(entries, fh, ensure_ascii=False, indent=0)
         generated.add(name)
-        bdir = os.path.join(ROOT, "static", "bibtex")
+        bdir = os.path.join(ROOT, "static", "bibtex", name)
         os.makedirs(bdir, exist_ok=True)
-        for _e in [x for x in parse_bib(read_bib(path)) if "raw" in x]:
+        for _e in parse_bib(read_bib(path)):
             with open(os.path.join(bdir, re.sub(r"[^A-Za-z0-9_.-]", "_", _e["key"]) + ".bib"), "w", encoding="utf-8") as _fh:
                 _fh.write(_e["raw"] + "\n")
         msg = f"{name}: {len(entries)} entradas"

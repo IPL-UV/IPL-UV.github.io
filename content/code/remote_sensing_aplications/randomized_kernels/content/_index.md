@@ -28,3 +28,5 @@ Kernel methods are powerful machine learning algorithms widely used in remote se
 We demonstrate the feasibility of kernel regression and classification on datasets with millions of samples. Examples include atmospheric parameter retrieval from IASI/Metop hyperspectral infrared sounders, large-scale inversion of the PROSAIL model on Sentinel-2 data, and cloud identification over landmarks in time series from MSG/Seviri images.
 
 This webpage includes supplementary material to the paper Randomized Kernels for large scale Earth Observation applications by Pérez-Suay et al. in [Remote Sensing of Environment, 2017](http://www.sciencedirect.com/science/article/pii/S0034425717300615). We include MATLAB illustrative code and videos showing operational performance of the proposed method in the particular case of cloud identification over landmarks. If you find the paper or provided MATLAB code below interesting and useful, please cite the work.
+
+See the [cloud detection over landmarks videos](/code/remote_sensing_aplications/randomized_kernels/videos/) from MSG/Seviri.

@@ -12,7 +12,7 @@
         <div class="panel-body">
             <div class="panel-content row">
                 <div class="panel-image col-md-2">
-                    <a href="{{ .Params.link }}">
+                    <a href="{{ .Params.link | default .RelPermalink }}">
                         <img loading="lazy" decoding="async" src="{{ $img }}" alt="{{ .Params.image_alt }}">
                     </a>
                 </div>  
