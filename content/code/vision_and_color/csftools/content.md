@@ -5,7 +5,9 @@ layout: "single_four"
 title: "CSFs of the Standard Spatial Observer"
 images:
   - link: "csf1.webp"
+    title: "CSF of the standard spatial observer"
   - link: "csf2.webp"
+    title: "Comparison of luminance CSFs"
 references:
   - title: "Video Quality Measures based on the Standard Spatial Observer"
     authors: "A. B. Watson and Jesus Malo."

@@ -56,15 +56,15 @@
                         {{ end }}
                         <h5><a class="people-name-link" href="{{ .RelPermalink }}">{{ .Title }}</a></h5>
                         <div>
-                        {{ with .Params.googlescholar }} <a href="{{ . }}" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-google-scholar" style="color: #336daf;"></i></a> {{ end }}
-                        {{ with .Params.orcid }} <a href="{{ . }}" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-orcid" style="color: #a9cf42;"></i></a> {{ end }}
-                        {{ with .Params.twitter }} <a href="{{ . }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-x-twitter" style="color: #080808;"></i></a> {{ end }}
-                        {{ with .Params.github }} <a href="{{ . }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" style="color: #080808;"></i></a> {{ end }}
-                        {{ with .Params.researchgate }} <a href="{{ . }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-researchgate" style="color: #60d2be;"></i></a> {{ end }}
-                        {{ with .Params.linkedin }} <a href="{{ . }}" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin" style="color: #2a66c2;"></i></a> {{ end }}
-                        {{ with .Params.website }} <a href="{{ . }}" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-user" style="color: #000000;"></i></a> {{ end }}
-                        {{ with .Params.youtube }} <a href="{{ . }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube" style="color: #f50234;"></i></a> {{ end }}
-                        {{ with .Params.bluesky }} <a href="{{ . }}" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-bluesky" style="color: #3a85ff;"></i></a> {{ end }}
+                        {{ with .Params.googlescholar }} <a href="{{ . }}" aria-label="Google Scholar" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-google-scholar" style="color: #336daf;"></i></a> {{ end }}
+                        {{ with .Params.orcid }} <a href="{{ . }}" aria-label="ORCID" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-orcid" style="color: #a9cf42;"></i></a> {{ end }}
+                        {{ with .Params.twitter }} <a href="{{ . }}" aria-label="Twitter/X" target="_blank" rel="noopener noreferrer"><i class="fab fa-x-twitter" style="color: #080808;"></i></a> {{ end }}
+                        {{ with .Params.github }} <a href="{{ . }}" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" style="color: #080808;"></i></a> {{ end }}
+                        {{ with .Params.researchgate }} <a href="{{ . }}" aria-label="ResearchGate" target="_blank" rel="noopener noreferrer"><i class="fab fa-researchgate" style="color: #60d2be;"></i></a> {{ end }}
+                        {{ with .Params.linkedin }} <a href="{{ . }}" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin" style="color: #2a66c2;"></i></a> {{ end }}
+                        {{ with .Params.website }} <a href="{{ . }}" aria-label="Website" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-user" style="color: #000000;"></i></a> {{ end }}
+                        {{ with .Params.youtube }} <a href="{{ . }}" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube" style="color: #f50234;"></i></a> {{ end }}
+                        {{ with .Params.bluesky }} <a href="{{ . }}" aria-label="Bluesky" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-bluesky" style="color: #3a85ff;"></i></a> {{ end }}
                         </div>
                         <div class="more-info">
                         <div class="card-text">{{ .Content }}</div>
