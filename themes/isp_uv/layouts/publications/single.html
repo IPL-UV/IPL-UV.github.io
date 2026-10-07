@@ -154,7 +154,8 @@
   }
 </style>
 
-<script src="{{ relURL "js/publications.js" }}" defer></script>
+{{- $vp := substr (sha256 (readFile "static/js/publications.js")) 0 10 -}}
+<script src="{{ relURL "js/publications.js" }}?v={{ $vp }}" defer></script>
 <script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js" defer></script>
 <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
 <script>
