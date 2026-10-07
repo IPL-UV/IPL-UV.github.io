@@ -32,26 +32,19 @@
 <meta name="twitter:description" content="{{ $desc }}">
 <meta name="twitter:image" content="{{ $img }}">
 {{ partial "schema.html" . }}
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
-      crossorigin="anonymous" 
-      onerror="this.onerror=null;this.removeAttribute('integrity');this.removeAttribute('crossorigin');this.href='{{ relURL "css/bootstrap.min.css" }}';">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
-      crossorigin="anonymous" referrerpolicy="no-referrer"
-      onerror="this.onerror=null;this.href='{{ relURL "css/all.min.css" }}';">
+{{- $vb := substr (sha256 (readFile "static/css/bootstrap.min.css")) 0 10 -}}
+<link rel="stylesheet" href="{{ relURL "css/bootstrap.min.css" }}?v={{ $vb }}">
+{{- $vf := substr (sha256 (readFile "static/css/all.min.css")) 0 10 -}}
+<link rel="stylesheet" href="{{ relURL "css/all.min.css" }}?v={{ $vf }}">
 <link rel="icon" href="{{ relURL `images/favicon.ico` }}" sizes="any">
 <link rel="icon" href="{{ relURL `images/isp_ico.webp` }}" type="image/webp">
-<link id="kenmore-font" rel="stylesheet" href="https://fonts.cdnfonts.com/css/twentieth-century-for-kenmore" 
-      onerror="this.onerror=null;this.href='{{ relURL "css/fonts/TwentiethCentury/fonts.css" }}';">
+{{- $vk := substr (sha256 (readFile "static/css/fonts/TwentiethCentury/fonts.css")) 0 10 -}}
+<link rel="stylesheet" href="{{ relURL "css/fonts/TwentiethCentury/fonts.css" }}?v={{ $vk }}">
 
 {{- $v := substr (sha256 (readFile "static/css/style.css")) 0 10 -}}
 <link rel="stylesheet" href="{{ relURL "css/style.css" }}?v={{ $v }}">
-<script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"
-        integrity="sha384-/TQbtLCAerC3jgaim+N78RZSDYV7ryeoBCVqTuzRrFec2akfBkHS7ACQ3PQhvMVi"
-        crossorigin="anonymous" defer
-        onerror="this.onerror=null;this.removeAttribute('integrity');this.removeAttribute('crossorigin');this.src='{{ relURL "js/marked.min.js" }}';">
-</script>
+{{- $vmk := substr (sha256 (readFile "static/js/marked.min.js")) 0 10 -}}
+<script src="{{ relURL "js/marked.min.js" }}?v={{ $vmk }}" defer></script>
 {{- $vm := substr (sha256 (readFile "static/js/mode.js")) 0 10 -}}
 <script src="{{ relURL "js/mode.js" }}?v={{ $vm }}" defer></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-D8CVQKS51G"></script>
