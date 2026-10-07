@@ -1768,3 +1768,13 @@ h3 {
 .site-footer-brand { display: flex; flex-direction: column; }
 .site-footer-nav, .site-footer-social { display: flex; flex-wrap: wrap; gap: 0.8rem; }
 .site-footer-copy { text-align: center; margin: 1.5rem 0 0; color: #8a8a8a; }
+
+/* FICHA DE PERSONA */
+.person-single { max-width: 900px; }
+.person-header { display: flex; gap: 1.5rem; align-items: flex-start; flex-wrap: wrap; margin: 1.5rem 0; }
+.person-photo { width: 200px; max-width: 40%; border-radius: 0.5rem; object-fit: cover; aspect-ratio: 6 / 7; }
+.person-head { flex: 1 1 300px; }
+.person-name { background: none; color: inherit; padding: 0; display: block; text-align: left; margin: 0 0 0.3rem; }
+.person-role { color: #666; margin: 0 0 0.6rem; }
+.person-links { display: flex; flex-wrap: wrap; gap: 0.8rem; }
+.person-bio { margin-top: 1rem; }
