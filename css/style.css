@@ -155,6 +155,13 @@ h3 {
   border-color: #0866e0;
 }
 
+.custom-nav-link:focus-visible,
+.custom-dropdown-item:focus-visible,
+.custom-nav-item:focus-visible {
+  outline: 3px solid #1F6E8C;
+  outline-offset: 2px;
+}
+
 .custom-nav-link {
   text-decoration: none;
   color: #f8f8f8;
@@ -312,7 +319,8 @@ h3 {
 }
 
 .grid-item {
-  height: 5rem;
+  height: auto;
+  min-height: 5rem;
   display: flex;
   align-items: center;
   background-color: #ffffff;
@@ -355,7 +363,7 @@ h3 {
 }
 
 .grid-item div p a {
-  color: #337ab7;
+  color: #23527c;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -375,11 +383,10 @@ h3 {
   font-weight: bold;
   text-decoration: none;
   transition: color 0.3s ease;
-  font-size: 0.9rem;
 }
 
 .nameLink_a:hover {
-  color: #5bc0de;
+  color: #1F6E8C;
 }
 
 .text p {
@@ -488,7 +495,7 @@ h3 {
 }
 
 .card-text a {
-  color: #337ab7;
+  color: #23527c;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -651,7 +658,7 @@ h3 {
 }
 
 .panel-item .text a {
-  color: #337ab7;
+  color: #23527c;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -721,7 +728,7 @@ h3 {
 }
 
 .panel-description h5 p a {
-  color: #337ab7;
+  color: #23527c;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -758,7 +765,7 @@ h3 {
 
 
 .references-list li a {
-  color: #337ab7;
+  color: #23527c;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -773,7 +780,7 @@ h3 {
 }
 
 .enlaces-description p a {
-  color: #337ab7;
+  color: #23527c;
   text-decoration: none;
 }
 
@@ -969,7 +976,7 @@ h3 {
 }
 
 .box-abstract p a, .box-abstract ul li a {
-  color: #337ab7;
+  color: #23527c;
   text-decoration: none;
   transition: color 0.3s ease;
   font-size: clamp(0.95rem, 1.1vw, 1.05rem);
@@ -1028,7 +1035,7 @@ h3 {
 }
 
 .gallery-title a {
-  color: #337ab7;
+  color: #23527c;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -1043,7 +1050,7 @@ h3 {
 }
 
 .gallery-description p a {
-  color: #337ab7;
+  color: #23527c;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -1103,7 +1110,7 @@ h3 {
 }
 
 .enlaces-list li a {
-  color: #337ab7;
+  color: #23527c;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -1307,14 +1314,14 @@ h3 {
 }
 
 .box-content p a {
-  color: #337ab7;
+  color: #23527c;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 
 .box-content ul li a {
-  color: #337ab7;
+  color: #23527c;
   text-decoration: none;
   transition: color 0.3s ease;
 
@@ -1363,7 +1370,7 @@ h3 {
 
 .box-content table {
   display: block;
-
+  overflow-x: auto;
 }
 
 .content-container .box-content thead { 
@@ -1372,7 +1379,7 @@ h3 {
 
 
 .box-abstract p a, .box-abstract ul li a {
-  color: #337ab7;
+  color: #23527c;
   text-decoration: none;
   transition: color 0.3s ease;
   font-size: clamp(0.95rem, 1.1vw, 1.05rem);
@@ -1455,8 +1462,8 @@ h3 {
 }
 
 .filter-container select:focus {
-  border-color: #5bc0de;
-  box-shadow: 0 0 6px rgba(91, 192, 222, 0.4);
+  border-color: #1F6E8C;
+  box-shadow: 0 0 6px rgba(31, 110, 140, 0.4);
 }
 
 
@@ -1488,7 +1495,7 @@ h3 {
 .date-container {
   margin-top: 1rem;
   font-style: italic;
-  color: #888;
+  color: #666;
   display: flex;
   gap: 0.3rem;
   font-size: 0.9rem;
