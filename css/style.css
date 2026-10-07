@@ -1782,3 +1782,7 @@ h3 {
 /* SKIP LINK */
 .skip-link { position: absolute; left: -9999px; top: 0; background: #222; color: #fff; padding: 0.5rem 1rem; z-index: 2000; }
 .skip-link:focus { left: 0; }
+
+/* LIST DESCRIPTIONS */
+.list-desc, .course-desc, .card-text { font-size: 1rem; text-align: justify; }
+.list-desc p:last-child, .course-desc p:last-child, .card-text p:last-child { margin-bottom: 0; }
