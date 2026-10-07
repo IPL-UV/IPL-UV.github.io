@@ -53,7 +53,7 @@
                         {{ else }}
                         <img loading="lazy" decoding="async" src="{{ $img }}" class="img-fluid" alt="Image of {{ $name }}">
                         {{ end }}
-                        <h5>{{ .Title }}</h5>
+                        <h5><a class="people-name-link" href="{{ .RelPermalink }}">{{ .Title }}</a></h5>
                         <div>
                         {{ with .Params.googlescholar }} <a href="{{ . }}" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-google-scholar" style="color: #336daf;"></i></a> {{ end }}
                         {{ with .Params.orcid }} <a href="{{ . }}" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-orcid" style="color: #a9cf42;"></i></a> {{ end }}

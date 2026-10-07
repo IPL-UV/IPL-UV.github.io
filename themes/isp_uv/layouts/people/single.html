@@ -1,3 +1,26 @@
 {{ define "main" }}
-        {{ .Content | safeHTML }}
+<div class="content-container person-single">
+  <div class="person-header">
+    {{ with .Params.img }}
+    <img class="person-photo" src="{{ relURL (printf "images/people/%s" .) }}" alt="{{ $.Title }}" loading="lazy">
+    {{ end }}
+    <div class="person-head">
+      <h1 class="person-name">{{ .Title }}</h1>
+      {{ with .File }}<p class="person-role">{{ path.Base (path.Dir .Dir) | replaceRE "_" " " | title }}</p>{{ end }}
+      <div class="person-links">
+        {{ with .Params.googlescholar }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">Google Scholar</a>{{ end }}
+        {{ with .Params.orcid }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">ORCID</a>{{ end }}
+        {{ with .Params.github }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">GitHub</a>{{ end }}
+        {{ with .Params.linkedin }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>{{ end }}
+        {{ with .Params.researchgate }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">ResearchGate</a>{{ end }}
+        {{ with .Params.twitter }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">Twitter/X</a>{{ end }}
+        {{ with .Params.bluesky }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">Bluesky</a>{{ end }}
+        {{ with .Params.youtube }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">YouTube</a>{{ end }}
+        {{ with .Params.website }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">Website</a>{{ end }}
+        {{ with .Params.link_image }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">Profile</a>{{ end }}
+      </div>
+    </div>
+  </div>
+  <div class="person-bio">{{ .Content }}</div>
+</div>
 {{ end }}

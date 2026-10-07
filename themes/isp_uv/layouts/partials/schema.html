@@ -1,27 +1,32 @@
-{{- if .IsHome -}}
-{{- $same := slice "https://scholar.google.es/citations?hl=en&user=MsMYu-IAAAAJ" "https://github.com/IPL-UV" "https://bsky.app/profile/isp-uv-es.bsky.social" -}}
 {{- $orgid := printf "%s/#organization" (site.Params.canonicalBase | default site.BaseURL) -}}
-{{- $org := dict "@context" "https://schema.org" "@type" "ResearchOrganization" "@id" $orgid "name" site.Title "url" (site.Params.canonicalBase | default site.BaseURL) "parentOrganization" (dict "@type" "Organization" "name" "Universitat de València") "sameAs" $same -}}
+{{- if .IsHome -}}
+{{- $same := slice "https://scholar.google.es/citations?hl=en&user=MsMYu-IAAAAJ" "https://github.com/IPL-UV" "https://bsky.app/profile/isp-uv-es.bsky.social" "https://www.youtube.com/channel/UCTQjbAu8eGO2Sjb0MFadlLg" -}}
+{{- $org := dict "@context" "https://schema.org" "@type" "ResearchOrganization" "@id" $orgid "name" site.Title "url" (site.Params.canonicalBase | default site.BaseURL) "logo" (absURL "images/isp_logo.webp") "parentOrganization" (dict "@type" "Organization" "name" "Universitat de València") "address" (dict "@type" "PostalAddress" "addressLocality" "València" "addressCountry" "ES") "sameAs" $same -}}
 {{- with site.Params.description }}{{ $org = merge $org (dict "description" .) }}{{ end -}}
 <script type="application/ld+json">{{ $org | jsonify | safeJS }}</script>
 {{- else if and (eq .Section "people") (or .IsPage (not .Pages)) -}}
 {{- $same := slice -}}
-{{- range slice "orcid" "googlescholar" "linkedin" "github" "twitter" "researchgate" "website" -}}
+{{- range slice "orcid" "googlescholar" "linkedin" "github" "twitter" "researchgate" "website" "bluesky" "youtube" -}}
 {{- with (index $.Params .) }}{{ $same = $same | append . }}{{ end -}}
 {{- end -}}
 {{- $role := "" -}}
 {{- with .File }}{{ $role = path.Base (path.Dir .Dir) }}{{ end -}}
-{{- $orgid := printf "%s/#organization" (site.Params.canonicalBase | default site.BaseURL) -}}
-{{- $person := dict "@context" "https://schema.org" "@type" "Person" "name" .Title "url" .Permalink "affiliation" (dict "@type" "ResearchOrganization" "@id" $orgid "name" site.Title) -}}
+{{- $person := dict "@context" "https://schema.org" "@type" "Person" "name" .Title "url" .Permalink -}}
+{{- if eq $role "alumni" -}}
+{{- $person = merge $person (dict "alumniOf" (dict "@type" "ResearchOrganization" "@id" $orgid "name" site.Title)) -}}
+{{- else -}}
+{{- $person = merge $person (dict "affiliation" (dict "@type" "ResearchOrganization" "@id" $orgid "name" site.Title)) -}}
 {{- if $role }}{{ $person = merge $person (dict "jobTitle" ($role | replaceRE "_" " " | title)) }}{{ end -}}
+{{- end -}}
 {{- if $same }}{{ $person = merge $person (dict "sameAs" $same) }}{{ end -}}
 <script type="application/ld+json">{{ $person | jsonify | safeJS }}</script>
 {{- else if and (eq .Section "data") (or .IsPage (not .Pages)) -}}
 {{- $desc := .Description | default .Summary | plainify | truncate 300 -}}
-{{- $ds := dict "@context" "https://schema.org" "@type" "Dataset" "name" .Title "url" .Permalink -}}
-{{- with $desc }}{{ $ds = merge $ds (dict "description" .) }}{{ end -}}
+{{- if ge (len $desc) 50 -}}
+{{- $ds := dict "@context" "https://schema.org" "@type" "Dataset" "name" .Title "url" .Permalink "description" $desc -}}
 {{- with .Params.link }}{{ if hasPrefix . "http" }}{{ $ds = merge $ds (dict "distribution" (dict "@type" "DataDownload" "contentUrl" .)) }}{{ end }}{{ end -}}
 <script type="application/ld+json">{{ $ds | jsonify | safeJS }}</script>
+{{- end -}}
 {{- end -}}
 {{- if not .IsHome -}}
 {{- $list := slice (dict "@type" "ListItem" "position" 1 "name" "Home" "item" (site.Params.canonicalBase | default site.BaseURL)) -}}

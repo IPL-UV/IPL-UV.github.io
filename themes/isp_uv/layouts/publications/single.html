@@ -36,14 +36,14 @@
           <span class="project" style="display: none;">{{ .project }}</span>
           <div class="card-links">
             {{ with .raw }}<button type="button" class="btn btn-xss btn-success bibtex-toggle">BibTeX</button>{{ end }}
-            {{ with .url }}<a href="{{ . }}"><button type="button" class="btn btn-xss btn-info">URL</button></a>{{ end }}
-            {{ with .pdf }}<a href="{{ . }}"><button type="button" class="btn btn-xss btn-danger">PDF</button></a>{{ end }}
-            {{ with .arxiv }}<a href="{{ . }}"><button type="button" class="btn btn-xss btn-danger">arXiv</button></a>{{ end }}
-            {{ with .video }}<a href="{{ . }}"><button type="button" class="btn btn-xss btn-info">Watch!</button></a>{{ end }}
-            {{ with .code }}<a href="{{ . }}"><button type="button" class="btn btn-xss btn-info">Code</button></a>{{ end }}
+            {{ with .url }}<a class="btn btn-xss btn-info" href="{{ . }}" role="button">URL</a>{{ end }}
+            {{ with .pdf }}<a class="btn btn-xss btn-danger" href="{{ . }}" role="button">PDF</a>{{ end }}
+            {{ with .arxiv }}<a class="btn btn-xss btn-danger" href="{{ . }}" role="button">arXiv</a>{{ end }}
+            {{ with .video }}<a class="btn btn-xss btn-info" href="{{ . }}" role="button">Watch!</a>{{ end }}
+            {{ with .code }}<a class="btn btn-xss btn-info" href="{{ . }}" role="button">Code</a>{{ end }}
             {{ with .project }}<button type="button" class="btn btn-xss btn-primary project-btn">Project</button>{{ end }}
-            {{ with .doi_url }}<a href="{{ . }}"><button type="button" class="btn btn-xss btn-warning">DOI</button></a>{{ end }}
-            {{ with .altimetric }}<a href="{{ . }}"><button type="button" class="btn btn-xss btn-danger">Altimetric</button></a>{{ end }}
+            {{ with .doi_url }}<a class="btn btn-xss btn-warning" href="{{ . }}" role="button">DOI</a>{{ end }}
+            {{ with .altimetric }}<a class="btn btn-xss btn-danger" href="{{ . }}" role="button">Altimetric</a>{{ end }}
             {{ with .doi_bare }}<div class="altmetric-embed" data-badge-type="donut" data-hide-no-mentions="true" data-doi="{{ . }}"></div>
             <div class="__dimensions_badge_embed__ dimension-embed" data-doi="{{ . }}"></div>{{ end }}
           </div>
@@ -54,7 +54,7 @@
           {{- range .authors }}{{ $auths = $auths | append (dict "@type" "Person" "name" .) }}{{ end -}}
           {{- $ld := dict "@context" "https://schema.org" "@type" $type "name" .title -}}
           {{- if $auths }}{{ $ld = merge $ld (dict "author" $auths) }}{{ end -}}
-          {{- with .year }}{{ $ld = merge $ld (dict "datePublished" .) }}{{ end -}}
+          {{- with .year }}{{ if findRE "^[0-9]{4}$" . }}{{ $ld = merge $ld (dict "datePublished" .) }}{{ end }}{{ end -}}
           {{- with .doi_url }}{{ $ld = merge $ld (dict "url" .) }}{{ end -}}
           {{- with .doi_bare }}{{ $ld = merge $ld (dict "identifier" .) }}{{ end -}}
           {{- with (or .journal .booktitle) }}{{ $ld = merge $ld (dict "isPartOf" (dict "@type" "Periodical" "name" .)) }}{{ end -}}

@@ -194,7 +194,7 @@
 "booktitle": "Joint Urban Remote Sensing Event",
 "year": "2023",
 "address": "Heraklion Crete, Greece",
-"project": "Deepcube, Fbbva, Usmile, Xaida",
+"project": "DEEPCUBE, FBBVA, USMILE, XAIDA",
 "url": "http://jurse2023.org/keynotes.html",
 "raw": "@inproceedings{Camps23jurse,\n\ttitle        = {{Advancing AI for Urban Sustainability}},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2023,\n\tmonth        = {May},\n\tbooktitle    = {Joint Urban Remote Sensing Event},\n\taddress      = {Heraklion Crete, Greece},\n\turl          = {http://jurse2023.org/keynotes.html},\n\tproject      = {USMILE,XAIDA,FBBVA,DEEPCUBE,USMILE}\n}"
 },
@@ -209,7 +209,7 @@
 "booktitle": "Workshop on AI for Disaster Management - ESA philab",
 "year": "2023",
 "address": "Frascati, Italy",
-"project": "Deepcube, Fbbva, Usmile, Xaida",
+"project": "DEEPCUBE, FBBVA, USMILE, XAIDA",
 "pdf": "http://isp.uv.es/slides/causal4disasters.pdf",
 "raw": "@inproceedings{Camps23esa,\n\ttitle        = {{Causal Inference for Disaster Management}},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2023,\n\tmonth        = {May},\n\tbooktitle    = {Workshop on AI for Disaster Management - ESA philab},\n\taddress      = {Frascati, Italy},\n\tproject      = {USMILE,XAIDA,FBBVA,DEEPCUBE},\n\tpdf          = {http://isp.uv.es/slides/causal4disasters.pdf}\n}"
 },
@@ -224,7 +224,7 @@
 "booktitle": "CausalStats23: When Causal Inference meets Statistical Analysis",
 "year": "2023",
 "address": "Paris",
-"project": "Causeme, Scale, Usmile",
+"project": "CAUSEME, SCALE, USMILE",
 "pdf": "http://isp.uv.es/slides/graphEM_causeme_2023.pdf",
 "raw": "@inproceedings{Camps23causalstats,\n\ttitle        = {Graphs in State-Space Models for Granger Causality in Climate Science},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2023,\n\tbooktitle    = {CausalStats23: When Causal Inference meets Statistical Analysis},\n\taddress      = {Paris},\n\tvolume       = {},\n\tdoi          = {},\n\turl          = {},\n\teditor       = {},\n\tpdf          = {http://isp.uv.es/slides/graphEM_causeme_2023.pdf},\n\torganization = {},\n\tproject      = {USMILE,SCALE,CAUSEME}\n}"
 },
@@ -239,7 +239,7 @@
 "booktitle": "Catalonia AI4EO Day",
 "year": "2023",
 "address": "Barcelona",
-"project": "Usmile",
+"project": "USMILE",
 "pdf": "https://www.ieec.cat/content/media/announcements/en/1035",
 "raw": "@inproceedings{Camps23agenda,\n\ttitle        = {{A collective AI agenda for Earth Observation}},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2023,\n\tmonth        = {Feb},\n\tbooktitle    = {Catalonia AI4EO Day},\n\taddress      = {Barcelona},\n\tproject      = {USMILE},\n\tpdf          = {https://www.ieec.cat/content/media/announcements/en/1035}\n}"
 },
@@ -254,7 +254,7 @@
 "booktitle": "Winter 2022/2023 Workshop at Lorentz Center",
 "year": "2023",
 "address": "Leiden, NL",
-"project": "Usmile",
+"project": "USMILE",
 "pdf": "http://isp.uv.es/slides/LorentzCenter_Leiden_2023_AI4DTE_v1.pdf",
 "raw": "@inproceedings{Camps23dte,\n\ttitle        = {{The role of AI in Digital Twins}},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2023,\n\tmonth        = {Feb},\n\tbooktitle    = {Winter 2022/2023 Workshop at Lorentz Center},\n\taddress      = {Leiden, NL},\n\tproject      = {USMILE},\n\tpdf          = {http://isp.uv.es/slides/LorentzCenter_Leiden_2023_AI4DTE_v1.pdf}\n}"
 },
@@ -269,7 +269,7 @@
 "booktitle": "NeurIPS 2022 - Workshop on Tackling Climate Change with Machine Learning",
 "year": "2022",
 "address": "New Orleans",
-"project": "Usmile",
+"project": "USMILE",
 "pdf": "http://isp.uv.es/slides/2022_PhysicsML_CausalML_40min.pdf",
 "raw": "@inproceedings{Camps22neurips,\n\ttitle        = {{Physics-aware Machine Learning for Earth Observation}},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2022,\n\tmonth        = {Dec 2022},\n\tbooktitle    = {NeurIPS 2022 - Workshop on Tackling Climate Change with Machine Learning},\n\taddress      = {New Orleans},\n\tproject      = {USMILE},\n\tpdf          = {http://isp.uv.es/slides/2022_PhysicsML_CausalML_40min.pdf}\n}"
 },
@@ -284,7 +284,7 @@
 "booktitle": "Advancing AI for modeling and understanding the Earth system",
 "year": "2022",
 "address": "E4C - Institut Polytechnique de Paris",
-"project": "Usmile",
+"project": "USMILE",
 "pdf": "http://isp.uv.es/slides/E4C_2022_PhysicsML_XAI_Causality_2h_2parts.pdf",
 "video": "https://www.youtube.com/watch?v=0YUFVhjrBn0",
 "raw": "@inproceedings{Camps22poly,\n\ttitle        = {{Advancing AI for modeling and understanding the Earth system}},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2022,\n\tmonth        = {May 2022},\n\tbooktitle    = {Advancing AI for modeling and understanding the Earth system},\n\taddress      = {E4C - Institut Polytechnique de Paris},\n\tproject      = {USMILE},\n\tvideo        = {https://www.youtube.com/watch?v=0YUFVhjrBn0},\n\tpdf          = {http://isp.uv.es/slides/E4C_2022_PhysicsML_XAI_Causality_2h_2parts.pdf}\n}"
@@ -300,7 +300,7 @@
 "booktitle": "ETN iMIRACLI - Summer school",
 "year": "2022",
 "address": "Stockholm, Sweden",
-"project": "Usmile",
+"project": "USMILE",
 "pdf": "http://isp.uv.es/slides/gustau_ml4earth_20_09_2022.pdf",
 "raw": "@inproceedings{Camps22imiracli,\n\ttitle        = {{Advancing AI for modeling and understanding the Earth system}},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2022,\n\tmonth        = {September 2022},\n\tbooktitle    = {ETN iMIRACLI - Summer school},\n\taddress      = {Stockholm, Sweden},\n\tproject      = {USMILE},\n\tpdf          = {http://isp.uv.es/slides/gustau_ml4earth_20_09_2022.pdf}\n}"
 },
@@ -315,7 +315,7 @@
 "booktitle": "A collective agenda for AI on the Earth sciences - AI and Climate Science",
 "year": "2022",
 "address": "Online talk - ITU-UN AI4Good seminar series",
-"project": "Sedal, Usmile",
+"project": "SEDAL, USMILE",
 "pdf": "http://isp.uv.es/slides/UN-ITU-AI4GOOD_2022_AI_AGENDA_PhysicsML_XAI_CAUSALITY_45min.pdf",
 "video": "https://www.youtube.com/watch?v=ts5XSYgcsiE",
 "raw": "@inproceedings{Camps22ituun,\n\ttitle        = {{A collective agenda for AI on the Earth sciences}},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2022,\n\tmonth        = {February 2022},\n\tbooktitle    = {A collective agenda for AI on the Earth sciences - AI and Climate Science},\n\taddress      = {Online talk - ITU-UN AI4Good seminar series},\n\tproject      = {SEDAL,USMILE},\n\tvideo        = {https://www.youtube.com/watch?v=ts5XSYgcsiE},\n\tpdf          = {http://isp.uv.es/slides/UN-ITU-AI4GOOD_2022_AI_AGENDA_PhysicsML_XAI_CAUSALITY_45min.pdf}\n}"
@@ -331,7 +331,7 @@
 "booktitle": "ML and Remote Sensing Discussion Group",
 "year": "2021",
 "address": "Online talk",
-"project": "Sedal, Usmile",
+"project": "SEDAL, USMILE",
 "raw": "@inproceedings{Camps21ml4rs,\n\ttitle        = {{Physics-aware machine learning and causality for the Earth sciences}},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2021,\n\tmonth        = {November 2021},\n\tbooktitle    = {ML and Remote Sensing Discussion Group},\n\taddress      = {Online talk},\n\tproject      = {SEDAL,USMILE}\n}"
 },
 {
@@ -345,7 +345,7 @@
 "booktitle": "KITP Conference: Machine Learning for Climate",
 "year": "2021",
 "address": "Online talk",
-"project": "Sedal, Usmile",
+"project": "SEDAL, USMILE",
 "pdf": "http://isp.uv.es/slides/kitp2021_rbig_gcamps.pdf",
 "video": "https://online.kitp.ucsb.edu/online/climate-c21/campsvalls/",
 "raw": "@inproceedings{Camps21kitp,\n\ttitle        = {{Gaussianizing the Earth}},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2021,\n\tmonth        = {November 2021},\n\tbooktitle    = {KITP Conference: Machine Learning for Climate},\n\taddress      = {Online talk},\n\tproject      = {SEDAL,USMILE},\n\tpdf          = {http://isp.uv.es/slides/kitp2021_rbig_gcamps.pdf},\n\tvideo        = {https://online.kitp.ucsb.edu/online/climate-c21/campsvalls/}\n}"
@@ -361,7 +361,7 @@
 "booktitle": "GIMM: Europe - Side Event. The challenge of GEOAI for Good & GEOAI for a Sustainable Europe",
 "year": "2021",
 "address": "Online talk",
-"project": "Sedal, Usmile",
+"project": "SEDAL, USMILE",
 "pdf": "http://isp.uv.es/slides/UN_GIMM21_ML4EARTH_15min.pdf",
 "raw": "@inproceedings{Camps21un,\n\ttitle        = {{Machine Learning for Earth and Climate Sciences}},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2021,\n\tmonth        = {October 2021},\n\tbooktitle    = {GIMM: Europe - Side Event. The challenge of GEOAI for Good & GEOAI for a Sustainable Europe},\n\taddress      = {Online talk},\n\tproject      = {SEDAL,USMILE},\n\tpdf          = {http://isp.uv.es/slides/UN_GIMM21_ML4EARTH_15min.pdf}\n}"
 },
@@ -376,7 +376,7 @@
 "booktitle": "ESA Phi-Week Workshop",
 "year": "2021",
 "address": "Online talk",
-"project": "Sedal, Usmile",
+"project": "SEDAL, USMILE",
 "pdf": "http://isp.uv.es/slides/ESA_PHIWEEK_2021_XAI_Causality_15min.pdf",
 "raw": "@inproceedings{Camps21phiweek,\n\ttitle        = {{Interpretability and Causality in Earth Sciences (aka \"fitting is not enough\")}},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2021,\n\tmonth        = {September 2021},\n\tbooktitle    = {ESA Phi-Week Workshop},\n\taddress      = {Online talk},\n\tproject      = {SEDAL,USMILE},\n\tpdf          = {http://isp.uv.es/slides/ESA_PHIWEEK_2021_XAI_Causality_15min.pdf}\n}"
 },
@@ -391,7 +391,7 @@
 "booktitle": "Climate Change AI - Machine Learning for Earth and Climate Sciences",
 "year": "2021",
 "address": "Online talk, https://www.climatechange.ai/",
-"project": "Sedal, Usmile",
+"project": "SEDAL, USMILE",
 "pdf": "https://www.youtube.com/watch?v=-dpA75KU8Pg",
 "raw": "@inproceedings{Camps21ccai,\n\ttitle        = {{Physics-aware Machine Learning for the Earth sciences}},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2021,\n\tmonth        = {September 2021},\n\tbooktitle    = {Climate Change AI - Machine Learning for Earth and Climate Sciences},\n\taddress      = {Online talk, https://www.climatechange.ai/},\n\tproject      = {SEDAL,USMILE},\n\tpdf          = {https://www.youtube.com/watch?v=-dpA75KU8Pg}\n}"
 },
@@ -406,7 +406,7 @@
 "booktitle": "MACLEAN workshop",
 "year": "2021",
 "address": "Online talk",
-"project": "Usmile",
+"project": "USMILE",
 "pdf": "http://isp.uv.es/slides/MACLEAN21_PhysicsMLinterplay_XAI_Causality_1h.pdf",
 "raw": "@inproceedings{Camps21maclean,\n\ttitle        = {{Advances in Machine Learning for Modelling and Understanding in Earth Sciences}},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2021,\n\tmonth        = {September 2021},\n\tbooktitle    = {MACLEAN workshop},\n\taddress      = {Online talk},\n\tproject      = {USMILE},\n\tpdf          = {http://isp.uv.es/slides/MACLEAN21_PhysicsMLinterplay_XAI_Causality_1h.pdf}\n}"
 },
@@ -421,7 +421,7 @@
 "booktitle": "IEEE GRSS - Italian chapter",
 "year": "2021",
 "address": "Online talk, Italy",
-"project": "Usmile",
+"project": "USMILE",
 "url": "https://www.youtube.com/watch?v=8262BYuWVUU",
 "raw": "@inproceedings{Camps21dl_grssitaly,\n\ttitle        = {{Advances in Machine Learning for Modelling and Understanding in Earth Sciences}},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2021,\n\tmonth        = {Jan 21 2021},\n\tbooktitle    = {IEEE GRSS - Italian chapter},\n\taddress      = {Online talk, Italy},\n\turl          = {https://www.youtube.com/watch?v=8262BYuWVUU},\n\tproject      = {USMILE}\n}"
 },
@@ -436,7 +436,7 @@
 "booktitle": "UTHZ Seminar series",
 "year": "2021",
 "address": "Online talk, Zurich",
-"project": "Usmile",
+"project": "USMILE",
 "raw": "@inproceedings{Camps21_uthz,\n\ttitle        = {{Living in the Physics and Machine Learning Interplay for the Earth Sciences}},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2021,\n\tmonth        = {May 2021},\n\tbooktitle    = {UTHZ Seminar series},\n\taddress      = {Online talk, Zurich},\n\turl          = {},\n\tproject      = {USMILE}\n}"
 },
 {
@@ -450,7 +450,7 @@
 "booktitle": "OCEANIX Seminar series",
 "year": "2021",
 "address": "Online talk, France",
-"project": "Usmile",
+"project": "USMILE",
 "url": "https://www.youtube.com/watch?v=PLuT0Yznvhg",
 "raw": "@inproceedings{Camps21_oceanix,\n\ttitle        = {{Physics-aware Interpretable Machine learning in the Earth sciences}},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2021,\n\tmonth        = {May 19th 2021},\n\tbooktitle    = {OCEANIX Seminar series},\n\taddress      = {Online talk, France},\n\turl          = {https://www.youtube.com/watch?v=PLuT0Yznvhg},\n\tproject      = {USMILE}\n}"
 },
@@ -465,7 +465,7 @@
 "booktitle": "MPML Seminar series - ELLIS seminar",
 "year": "2021",
 "address": "Online talk, Lisboa",
-"project": "Usmile",
+"project": "USMILE",
 "url": "https://mpml.tecnico.ulisboa.pt/seminars?recent",
 "raw": "@inproceedings{Camps21_mppl,\n\ttitle        = {{Physics Aware Machine Learning for the Earth Sciences}},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2021,\n\tmonth        = {May 28th 2021},\n\tbooktitle    = {MPML Seminar series - ELLIS seminar},\n\taddress      = {Online talk, Lisboa},\n\turl          = {https://mpml.tecnico.ulisboa.pt/seminars?recent},\n\tproject      = {USMILE}\n}"
 },
@@ -518,7 +518,7 @@
 "booktitle": "The ESA Phi-week 2020",
 "year": "2020",
 "address": "ESA-ESRIN, Italy",
-"project": "Sedal",
+"project": "SEDAL",
 "pdf": "http://isp.uv.es/slides/PHIWEEK20_PhysicsMLinterplay.pdf",
 "video": "https://livestream.com/esa/phiweek2020/videos/211492628",
 "raw": "@inproceedings{CampsValls20phiweek,\n\ttitle        = {{Living in the Physics and Machine Learning Interplay - An AI agenda with examples for the DTE}},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2020,\n\tmonth        = {28-30 September 2020.},\n\tbooktitle    = {The ESA Phi-week 2020},\n\taddress      = {ESA-ESRIN, Italy},\n\tvideo        = {https://livestream.com/esa/phiweek2020/videos/211492628},\n\tpdf          = {http://isp.uv.es/slides/PHIWEEK20_PhysicsMLinterplay.pdf},\n\tproject      = {SEDAL}\n}"
@@ -542,7 +542,7 @@
 ],
 "booktitle": "AAAI Fall Series 2020 Symposium on Physics-guided AI for Accelerating Scientific Discovery",
 "year": "2020",
-"project": "Kermes, Sedal",
+"project": "KERMES, SEDAL",
 "raw": "@inproceedings{CampsValls20physicsaware,\n\ttitle        = {Living in the Physics -- Machine Learning Interplay for Earth Observation},\n\tauthor       = {Camps-Valls, G. and Svendsen, D. H. and Cortes-Andres, J. and Moreno-Martínez, A. and Pérez-Suay, A. and Adsuara, J. and Martin, I. and Piles, M. and Muñoz-Marí, J. and Martino, L.},\n\tyear         = 2020,\n\tmonth        = {},\n\tbooktitle    = {AAAI Fall Series 2020 Symposium on Physics-guided AI for Accelerating Scientific Discovery},\n\taddress      = {},\n\tpages        = {},\n\tdoi          = {},\n\tnote         = {},\n\tproject      = {SEDAL,KERMES}\n}"
 },
 {
@@ -559,7 +559,7 @@
 "booktitle": "IGARSS 2020 - 2020 IEEE International Geoscience and Remote Sensing Symposium",
 "year": "2020",
 "address": "Waikoloa, Hawaii, USA",
-"project": "Sedal",
+"project": "SEDAL",
 "pdf": "http://isp.uv.es/slides/AdvancesDL.pdf",
 "video": "http://isp.uv.es/videos/AdvancesDL-2020-07-09_11-38-45.mkv",
 "raw": "@inproceedings{CampsValls2020igarss_hybridxai,\n\ttitle        = {Advancing Deep Learning For Earth Sciences: From Hybrid Modeling To Interpretability},\n\tauthor       = {Camps-Valls, G. and Reichstein, M. and Zhu, Z. and Tuia, D.},\n\tyear         = 2020,\n\tmonth        = {Jul},\n\tbooktitle    = {{IGARSS} 2020 - 2020 {IEEE} {International} {Geoscience} and {Remote} {Sensing} {Symposium}},\n\taddress      = {Waikoloa, Hawaii, USA},\n\tdoi          = {},\n\tvideo        = {http://isp.uv.es/videos/AdvancesDL-2020-07-09_11-38-45.mkv},\n\tpdf          = {http://isp.uv.es/slides/AdvancesDL.pdf},\n\tproject      = {SEDAL}\n}"
@@ -631,7 +631,7 @@
 "booktitle": "Dept Geography – University of Zurich, Switzerland",
 "year": "2020",
 "address": "Dept Geography – University of Zurich, Switzerland",
-"project": "Sedal",
+"project": "SEDAL",
 "url": "https://www.geo.uzh.ch/en/units/rsl/events.html",
 "raw": "@inproceedings{Camps20UZH,\n\ttitle        = {{Advances in Machine Learning for Earth Observation}},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2020,\n\tmonth        = {April 7, 2020},\n\tbooktitle    = {Dept Geography -- University of Zurich, Switzerland},\n\taddress      = {Dept Geography -- University of Zurich, Switzerland},\n\turl          = {https://www.geo.uzh.ch/en/units/rsl/events.html},\n\tproject      = {SEDAL}\n}"
 },
@@ -646,7 +646,7 @@
 "booktitle": "UGent Data Science Seminar – University of Ghent, Belgium",
 "year": "2020",
 "address": "UGent Data Science Seminar – University of Ghent, Belgium",
-"project": "Sedal",
+"project": "SEDAL",
 "url": "https://www.meetup.com/UgentDSS/events/268501329/",
 "raw": "@inproceedings{Camps20UGent,\n\ttitle        = {{Advances in Machine Learning for Earth Sciences}},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2020,\n\tmonth        = {February 11, 2020},\n\tbooktitle    = {UGent Data Science Seminar -- University of Ghent, Belgium},\n\taddress      = {UGent Data Science Seminar -- University of Ghent, Belgium},\n\turl          = {https://www.meetup.com/UgentDSS/events/268501329/},\n\tproject      = {SEDAL}\n}"
 },
@@ -661,7 +661,7 @@
 "booktitle": "Severo Ochoa Research Seminars – Barcelona Supercomputing Center (BSC), Barcelona",
 "year": "2020",
 "address": "Severo Ochoa Research Seminars – Barcelona Supercomputing Center (BSC), Barcelona",
-"project": "Sedal",
+"project": "SEDAL",
 "doi": "https://upcommons.upc.edu/handle/2117/330962",
 "doi_bare": "https://upcommons.upc.edu/handle/2117/330962",
 "doi_url": "https://upcommons.upc.edu/handle/2117/330962",
@@ -679,7 +679,7 @@
 "booktitle": "Technical University of Berlin, Germany",
 "year": "2019",
 "address": "Technical University of Berlin, Germany",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Camps19Berlin,\n\ttitle        = {{Multivariate Gaussianization: Information Bottleneck and Flows}},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2019,\n\tmonth        = {29 October 2019},\n\tbooktitle    = {Technical University of Berlin, Germany},\n\taddress      = {Technical University of Berlin, Germany},\n\tproject      = {SEDAL}\n}"
 },
 {
@@ -706,7 +706,7 @@
 "booktitle": "https://www.wur.nl/en/Research-Results/Chair-groups/Environmental-Sciences/Laboratory-of-Geo-information-Science-and-Remote-Sensing/Show/Earth-Observations-and-Terrestrial-Carbon-Cycling.htm",
 "year": "2019",
 "address": "Wageningen University and Research, Wageningen, The Netherlands",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Camps19Wageningen,\n\ttitle        = {{Physics-aware Machine Learning for Earth Observation}},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2019,\n\tmonth        = {20 September 2019},\n\tbooktitle    = {https://www.wur.nl/en/Research-Results/Chair-groups/Environmental-Sciences/Laboratory-of-Geo-information-Science-and-Remote-Sensing/Show/Earth-Observations-and-Terrestrial-Carbon-Cycling.htm},\n\taddress      = {Wageningen University and Research, Wageningen, The Netherlands},\n\tproject      = {SEDAL}\n}"
 },
 {
@@ -720,7 +720,7 @@
 "booktitle": "Indian Statistical Institute, Kalkota, India",
 "year": "2019",
 "address": "Indian Statistical Institute, Kalkota, India",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Camps19Kolkata,\n\ttitle        = {{Towards Physics-aware Machine Learning for Earth Observation}},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2019,\n\tmonth        = {2 July 2019},\n\tbooktitle    = {Indian Statistical Institute, Kalkota, India},\n\taddress      = {Indian Statistical Institute, Kalkota, India},\n\tproject      = {SEDAL}\n}"
 },
 {
@@ -734,7 +734,7 @@
 "booktitle": "ISI, Bangalore, India",
 "year": "2019",
 "address": "ISI, Bangalore, India",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Camps19Bangalore,\n\ttitle        = {{Physics-aware Machine Learning and Causal Inferece in Earth and Climate Sciences}},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2019,\n\tmonth        = {2 July 2019},\n\tbooktitle    = {ISI, Bangalore, India},\n\taddress      = {ISI, Bangalore, India},\n\tproject      = {SEDAL}\n}"
 },
 {
@@ -748,7 +748,7 @@
 "booktitle": "CEPT, Ahmedabad, India",
 "year": "2019",
 "address": "CEPT, Ahmedabad, India",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Camps19Ahmedabad,\n\ttitle        = {{Advances in Machine Learning for Earth Observation}},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2019,\n\tmonth        = {27 June 2019},\n\tbooktitle    = {CEPT, Ahmedabad, India},\n\taddress      = {CEPT, Ahmedabad, India},\n\tproject      = {SEDAL}\n}"
 },
 {
@@ -762,7 +762,7 @@
 "booktitle": "ISI, Mumbai, India",
 "year": "2019",
 "address": "ISI, Mumbai, India",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Camps19Mumbai,\n\ttitle        = {{New Machine Learning for Earth and Climate Sciences}},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2019,\n\tmonth        = {25 June 2019},\n\tbooktitle    = {ISI, Mumbai, India},\n\taddress      = {ISI, Mumbai, India},\n\tproject      = {SEDAL}\n}"
 },
 {
@@ -776,7 +776,7 @@
 "booktitle": "ESA Living Planet Symposium, 2019",
 "year": "2019",
 "address": "ESA Living Planet Symposium, 2019",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Camps19LPS,\n\ttitle        = {{Revisiting global teleconnections of ENSO over soils and vegetation}},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2019,\n\tmonth        = {15 May 2019},\n\tbooktitle    = {ESA Living Planet Symposium, 2019},\n\taddress      = {ESA Living Planet Symposium, 2019},\n\tproject      = {SEDAL}\n}"
 },
 {
@@ -790,7 +790,7 @@
 "booktitle": "EGU",
 "year": "2019",
 "address": "EGU 2019",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Camps19EGU,\n\ttitle        = {{Learning nonlinear feature representations from Earth data}},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2019,\n\tmonth        = {3 Apr 2019},\n\tbooktitle    = {EGU},\n\taddress      = {EGU 2019},\n\tproject      = {SEDAL}\n}"
 },
 {
@@ -803,7 +803,7 @@
 ],
 "year": "2019",
 "address": "ESA BIDs 2019",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Camps19BIDS,\n\ttitle        = {{Advances in Machine Learning for Earth Observation}},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2019,\n\tmonth        = {20 Feb 2019},\n\tbooktitle    = {},\n\taddress      = {ESA BIDs 2019},\n\tproject      = {SEDAL}\n}"
 },
 {
@@ -817,7 +817,7 @@
 "booktitle": "Cavanilles Institute of Biodiversity and Evolutionary Biology",
 "year": "2019",
 "address": "Cavanilles Institute of Biodiversity and Evolutionary Biology, Valencia",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Camps19Cavanilles,\n\ttitle        = {{Machine Learning for Earth Observation}},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2019,\n\tmonth        = {21 March 2019},\n\tbooktitle    = {Cavanilles Institute of Biodiversity and Evolutionary Biology},\n\taddress      = {Cavanilles Institute of Biodiversity and Evolutionary Biology, Valencia},\n\tproject      = {SEDAL}\n}"
 },
 {
@@ -897,7 +897,7 @@
 ],
 "year": "2018",
 "address": "Machine Learning and Climate Workshop 2018 - Oxford, UK",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{CampsValls18oxfordworkshop,\n\ttitle        = {Machine Learning for Climate: 15 ways to leave your lover},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2018,\n\tmonth        = {October, 31st - November 1st},\n\taddress      = {Machine Learning and Climate Workshop 2018 - Oxford, UK},\n\turl          = {},\n\tproject      = {SEDAL}\n}"
 },
 {
@@ -910,7 +910,7 @@
 ],
 "year": "2018",
 "address": "Department of Engineering Mathematics, University of Bristol, UK",
-"project": "Sedal",
+"project": "SEDAL",
 "pdf": "http://isp.uv.es/slides/",
 "raw": "@inproceedings{CampsValls18bristol,\n\ttitle        = {From sparsity to Gaussianization in neural networks},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2018,\n\tmonth        = {October, 30th},\n\taddress      = {Department of Engineering Mathematics, University of Bristol, UK},\n\turl          = {},\n\tproject      = {SEDAL},\n\tpdf          = {http://isp.uv.es/slides/}\n}"
 },
@@ -924,7 +924,7 @@
 ],
 "year": "2018",
 "address": "Data Science Institute, Grantham Institute, Imperial College London, UK",
-"project": "Sedal",
+"project": "SEDAL",
 "url": "http://www3.imperial.ac.uk/newsandeventspggrp/imperialcollege/engineering/datascienceinstitute/eventssummary/event_19-10-2018-13-7-58",
 "pdf": "http://isp.uv.es/slides/imperial2018_gcamps_3x4.pdf",
 "raw": "@inproceedings{CampsValls18imperial,\n\ttitle        = {Physics-driven Gaussian Processes for Earth Observation},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2018,\n\tmonth        = {October, 29th},\n\taddress      = {Data Science Institute, Grantham Institute, Imperial College London, UK},\n\turl          = {http://www3.imperial.ac.uk/newsandeventspggrp/imperialcollege/engineering/datascienceinstitute/eventssummary/event_19-10-2018-13-7-58},\n\tproject      = {SEDAL},\n\tpdf          = {http://isp.uv.es/slides/imperial2018_gcamps_3x4.pdf}\n}"
@@ -939,7 +939,7 @@
 ],
 "year": "2018",
 "address": "Climathon KIC. Tackling Water Innovation Challenges. Role of Copernicus EO products. Universitat de València",
-"project": "Sedal",
+"project": "SEDAL",
 "url": "https://climathon.climate-kic.org/en/burjassot",
 "raw": "@inproceedings{CampsValls18kic,\n\ttitle        = {Machine learning for Earth Observation},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2018,\n\tmonth        = {October, 26th},\n\taddress      = {Climathon KIC. Tackling Water Innovation Challenges. Role of Copernicus EO products. Universitat de València},\n\turl          = {https://climathon.climate-kic.org/en/burjassot},\n\tproject      = {SEDAL}\n}"
 },
@@ -953,7 +953,7 @@
 ],
 "year": "2018",
 "address": "Digital Globe, Denver, US",
-"project": "Sedal",
+"project": "SEDAL",
 "pdf": "http://isp.uv.es/slides/dg_gcamps_2018.pdf",
 "raw": "@inproceedings{CampsValls18dg,\n\ttitle        = {Neural networks, Gaussianization, and information distillation},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2018,\n\tmonth        = {September},\n\taddress      = {Digital Globe, Denver, US},\n\turl          = {},\n\tproject      = {SEDAL},\n\tpdf          = {http://isp.uv.es/slides/dg_gcamps_2018.pdf}\n}"
 },
@@ -967,7 +967,7 @@
 ],
 "year": "2018",
 "address": "Descartes Labs, Santa Fe, US",
-"project": "Sedal",
+"project": "SEDAL",
 "pdf": "http://isp.uv.es/slides/dlabs_gcamps_2018.pdf",
 "raw": "@inproceedings{CampsValls18dlabs,\n\ttitle        = {Unsupervised Deep Networks: Sparsity, Gaussianization, and the information bottleneck},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2018,\n\tmonth        = {September},\n\taddress      = {Descartes Labs, Santa Fe, US},\n\turl          = {},\n\tproject      = {SEDAL},\n\tpdf          = {http://isp.uv.es/slides/dlabs_gcamps_2018.pdf}\n}"
 },
@@ -981,7 +981,7 @@
 ],
 "year": "2018",
 "address": "Climate Informatics 2018, NCAR, Boulder, US",
-"project": "Sedal",
+"project": "SEDAL",
 "pdf": "http://isp.uv.es/slides/ci_gcamps_2018.pdf",
 "raw": "@inproceedings{CampsValls18ci,\n\ttitle        = {Unsupervised Deep Feature Learning with Sparse Codes and Gaussianization},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2018,\n\tmonth        = {September},\n\taddress      = {Climate Informatics 2018, NCAR, Boulder, US},\n\turl          = {},\n\tproject      = {SEDAL},\n\tpdf          = {http://isp.uv.es/slides/ci_gcamps_2018.pdf}\n}"
 },
@@ -995,7 +995,7 @@
 ],
 "year": "2018",
 "address": "Maths department, Colorado State University, Fort Collins, US",
-"project": "Sedal",
+"project": "SEDAL",
 "pdf": "http://isp.uv.es/slides/csu_gcamps_2018.pdf",
 "raw": "@inproceedings{CampsValls18csu,\n\ttitle        = {Unsupervised Deep Networks: Neural networks, Gaussianization, and information distillation},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2018,\n\tmonth        = {September},\n\taddress      = {Maths department, Colorado State University, Fort Collins, US},\n\turl          = {},\n\tproject      = {SEDAL},\n\tpdf          = {http://isp.uv.es/slides/csu_gcamps_2018.pdf}\n}"
 },
@@ -1009,7 +1009,7 @@
 ],
 "year": "2018",
 "address": "Oxford, Dep. Statistics",
-"project": "Sedal",
+"project": "SEDAL",
 "pdf": "http://isp.uv.es/slides/oxford2018_gcamps.pdf",
 "raw": "@inproceedings{CampsValls18ox,\n\ttitle        = {Gaussianization, Independence, Fairness},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2018,\n\tmonth        = {July},\n\taddress      = {Oxford, Dep. Statistics},\n\turl          = {},\n\tproject      = {SEDAL},\n\tpdf          = {http://isp.uv.es/slides/oxford2018_gcamps.pdf}\n}"
 },
@@ -1023,7 +1023,7 @@
 ],
 "year": "2017",
 "address": "IEEE Distinguished Lecturer - Campinas, Brasil",
-"project": "Sedal",
+"project": "SEDAL",
 "pdf": "http://isp.uv.es/slides/DL_gcamps.pdf",
 "raw": "@inproceedings{CampsValls17DLcampinas,\n\ttitle        = {Machine Learning in Remote Sensing},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2017,\n\tmonth        = {November},\n\taddress      = {IEEE Distinguished Lecturer - Campinas, Brasil},\n\turl          = {},\n\tproject      = {SEDAL},\n\tpdf          = {http://isp.uv.es/slides/DL_gcamps.pdf}\n}"
 },
@@ -1037,7 +1037,7 @@
 ],
 "year": "2017",
 "address": "IEEE Distinguished Lecturer - Rio de Janeiro, Brasil",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{CampsValls17DLrio,\n\ttitle        = {Advanced Machine Learning for Biophysical Parameter Retrieval},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2017,\n\tmonth        = {November},\n\taddress      = {IEEE Distinguished Lecturer - Rio de Janeiro, Brasil},\n\turl          = {},\n\tproject      = {SEDAL}\n}"
 },
 {
@@ -1050,7 +1050,7 @@
 ],
 "year": "2017",
 "address": "Causality in Complex Systems - Amsterdam Soesterberg, The Netherlands",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{CampsValls17wageningen,\n\ttitle        = {Open problems in remote sensing},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2017,\n\tmonth        = {27-30 June},\n\taddress      = {Causality in Complex Systems - Amsterdam Soesterberg, The Netherlands},\n\turl          = {},\n\tproject      = {SEDAL}\n}"
 },
 {
@@ -1117,7 +1117,7 @@
 ],
 "year": "2017",
 "address": "SCIA17 - Tromsø, Norway",
-"project": "Sedal",
+"project": "SEDAL",
 "url": "https://link.springer.com/chapter/10.1007/978-3-319-59129-2_18",
 "pdf": "http://isp.uv.es/slides/scia2017_gcamps_v2_16x9_light.pdf",
 "raw": "@inproceedings{CampsValls17scia,\n\ttitle        = {Physics-Aware Gaussian Processes for Earth Observation},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2017,\n\tmonth        = {12-14 June},\n\taddress      = {SCIA17 - Troms\\o, Norway},\n\turl          = {https://link.springer.com/chapter/10.1007/978-3-319-59129-2_18},\n\tproject      = {SEDAL},\n\tpdf          = {http://isp.uv.es/slides/scia2017_gcamps_v2_16x9_light.pdf}\n}"
@@ -1132,7 +1132,7 @@
 ],
 "year": "2017",
 "address": "BACI meeting - Jena, Germany",
-"project": "Sedal",
+"project": "SEDAL",
 "url": "http://baci-h2020.eu",
 "raw": "@inproceedings{CampsValls17baci,\n\ttitle        = {Physics-aware machine learning for biophysical parameter retrieval},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2017,\n\tmonth        = {19-21 June},\n\taddress      = {BACI meeting - Jena, Germany},\n\turl          = {http://baci-h2020.eu},\n\tproject      = {SEDAL}\n}"
 },

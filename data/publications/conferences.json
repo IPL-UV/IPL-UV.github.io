@@ -1346,7 +1346,7 @@
 "booktitle": "Climate Informatics",
 "year": "2024",
 "address": "London, UK",
-"project": "Imiracli",
+"project": "IMIRACLI",
 "url": "https://www.eventsforce.net/turingevents/frontend/reg/tOtherPage.csp?pageID=150908&ef_sel_menu=2178&eventID=358",
 "raw": "@inproceedings{Pelucchi24ci,\n\ttitle        = {{Towards probabilistic aerosol retrievals with invertible neural networks}},\n\tauthor       = {Pelucchi, P. and Vicent, J. and Camps-Valls, G.},\n\tyear         = 2024,\n\tbooktitle    = {Climate Informatics},\n\taddress      = {London, UK},\n\tvolume       = {},\n\turl          = {https://www.eventsforce.net/turingevents/frontend/reg/tOtherPage.csp?pageID=150908&ef_sel_menu=2178&eventID=358},\n\teditor       = {},\n\torganization = {},\n\tdate         = {22-24 Apr 2024},\n\tproject      = {imiracli}\n}"
 },
@@ -1365,7 +1365,7 @@
 "booktitle": "EO for Agriculture Under Pressure 2024 Workshop",
 "year": "2024",
 "address": "ESA/ESRIN, Frascati, Italy",
-"project": "Thinkingearth",
+"project": "THINKINGEARTH",
 "doi": "https://doi.org/10.48550/arXiv.2211.03179",
 "doi_bare": "10.48550/arXiv.2211.03179",
 "doi_url": "https://doi.org/10.48550/arXiv.2211.03179",
@@ -1396,7 +1396,7 @@
 "booktitle": "EO for Agriculture Under Pressure 2024 Workshop",
 "year": "2024",
 "address": "ESA/ESRIN, Frascati, Italy",
-"project": "Thinkingearth",
+"project": "THINKINGEARTH",
 "url": "https://eo4agri2024.esa.int/",
 "raw": "@inproceedings{Luna24esa,\n\ttitle        = {{Operational Machine Learning Models for Nation-level Yield Predictions}},\n\tauthor       = {Luna, I and Sitokonstantinou, V. and Piles, M. and Munoz, J.  and Camps-Vals, G. and Szabo, P and Meroni, M. and Collivignarelli, F. and Vojnovic, P. and Kerdiles, H. and Rembold, F. and Zappacosta, M. and Pound, J.},\n\tyear         = 2024,\n\tbooktitle    = {EO for Agriculture Under Pressure 2024 Workshop},\n\taddress      = {ESA/ESRIN, Frascati, Italy},\n\tvolume       = {},\n\turl          = {https://eo4agri2024.esa.int/},\n\teditor       = {},\n\torganization = {},\n\tdate         = {11-16 May 2024},\n\tproject      = {thinkingearth}\n}"
 },
@@ -1414,7 +1414,7 @@
 "booktitle": "EO for Agriculture Under Pressure 2024 Workshop",
 "year": "2024",
 "address": "ESA/ESRIN, Frascati, Italy",
-"project": "Thinkingearth",
+"project": "THINKINGEARTH",
 "url": "https://eo4agri2024.esa.int/",
 "raw": "@inproceedings{Cerda24esa,\n\ttitle        = {{Evaluating the Causal Impact of Humanitarian Interventions on Food Insecurity in Climate-Vulnerable Regions of Africa}},\n\tauthor       = {Cerdà, J and Tarraga, JM and Sitokonstantinou, V. and Camps-Valls, G.},\n\tyear         = 2024,\n\tbooktitle    = {EO for Agriculture Under Pressure 2024 Workshop},\n\taddress      = {ESA/ESRIN, Frascati, Italy},\n\tvolume       = {},\n\turl          = {https://eo4agri2024.esa.int/},\n\teditor       = {},\n\torganization = {},\n\tdate         = {11-16 May 2024},\n\tproject      = {thinkingearth}\n}"
 },
@@ -1435,7 +1435,7 @@
 "booktitle": "Machine Learning for Remote Sensing Workshop in ICLR 2024",
 "year": "2024",
 "address": "Vienna, AU",
-"project": "Thinkingearth",
+"project": "THINKINGEARTH",
 "doi": "https://doi.org/10.48550/arXiv.2403.08414",
 "doi_bare": "10.48550/arXiv.2403.08414",
 "doi_url": "https://doi.org/10.48550/arXiv.2403.08414",
@@ -1458,7 +1458,7 @@
 "booktitle": "AI for Differential Equations in Science Workshop in ICLR 2024",
 "year": "2024",
 "address": "Vienna, AU",
-"project": "Usmile",
+"project": "USMILE",
 "arxiv": "https://openreview.net/forum?id=7YqV4deFAc¬eId=MOv048h3lL",
 "raw": "@inproceedings{cohrs24bms,\n\ttitle        = {{Semiparametric Inference and Equation Discovery with the Bayesian Machine Scientist}},\n\tauthor       = {Cohrs, K-H. and Varando, G. and Guimerà, R. and Sales-Pardo, M. and Camps-Valls, G.},\n\tyear         = 2024,\n\tbooktitle    = {AI for Differential Equations in Science Workshop in ICLR 2024},\n\taddress      = {Vienna, AU},\n\tvolume       = {},\n\teditor       = {},\n\torganization = {},\n\tdate         = {May 2024},\n\tarxiv        = {https://openreview.net/forum?id=7YqV4deFAc&noteId=MOv048h3lL},\n\tproject      = {usmile}\n}"
 },
@@ -1475,7 +1475,7 @@
 "booktitle": "Dynamics, Data and Deep Learning workshop",
 "year": "2024",
 "address": "Bristol, UK",
-"project": "Usmile",
+"project": "USMILE",
 "doi": "https://doi.org/10.5194/egusphere-egu24-11831",
 "doi_bare": "10.5194/egusphere-egu24-11831",
 "doi_url": "https://doi.org/10.5194/egusphere-egu24-11831",
@@ -1494,7 +1494,7 @@
 "volume": "Vol. 26",
 "year": "2024",
 "address": "Hybrid, 14-19 April 2024",
-"project": "Causal4Africa",
+"project": "CAUSAL4AFRICA",
 "doi": "https://doi.org/10.5194/egusphere-egu24-21883",
 "doi_bare": "10.5194/egusphere-egu24-21883",
 "doi_url": "https://doi.org/10.5194/egusphere-egu24-21883",
@@ -1548,7 +1548,7 @@
 "volume": "Vol. 26",
 "year": "2024",
 "address": "Hybrid, 14-19 April 2024",
-"project": "Causal4Africa",
+"project": "CAUSAL4AFRICA",
 "doi": "https://doi.org/10.5194/egusphere-egu24-17312",
 "doi_bare": "10.5194/egusphere-egu24-17312",
 "doi_url": "https://doi.org/10.5194/egusphere-egu24-17312",
@@ -1631,7 +1631,7 @@
 ],
 "booktitle": "AAAI 2024 Workshop on ``Are Large Language Models Simply Causal Parrots?''",
 "year": "2024",
-"project": "Causal4Africa",
+"project": "CAUSAL4AFRICA",
 "pdf": "https://openreview.net/pdf?id=NEAoZRWHPN",
 "raw": "@inproceedings{cohrs2024large,\n\ttitle        = {Large Language Models for Constrained-Based Causal Discovery},\n\tauthor       = {Cohrs, Kai-Hendrik and Diaz, Emiliano and Sitokonstantinou, Vasileios and Varando, Gherardo and Camps-Valls, Gustau},\n\tyear         = 2024,\n\tbooktitle    = {AAAI 2024 Workshop on ``Are Large Language Models Simply Causal Parrots?''},\n\tpdf          = {https://openreview.net/pdf?id=NEAoZRWHPN},\n\tproject      = {causal4africa}\n}"
 },
@@ -2117,7 +2117,7 @@
 "pages": "8871–8888",
 "year": "2023",
 "publisher": "PMLR",
-"project": "Bbva, Causeme, Usmile",
+"project": "BBVA, CAUSEME, USMILE",
 "url": "https://proceedings.mlr.press/v206/leonelli23a.html",
 "pdf": "https://proceedings.mlr.press/v206/leonelli23a/leonelli23a.pdf",
 "abstract": "Causal discovery algorithms aim at untangling complex causal relationships from data. Here, we study causal discovery and inference methods based on staged tree models, which can represent complex and asymmetric causal relationships between categorical variables. We provide a first graphical representation of the equivalence class of a staged tree, by looking only at a specific subset of its underlying independences. We further define a new pre-metric, inspired by the widely used structural intervention distance, to quantify the closeness between two staged trees in terms of their corresponding causal inference statements. A simulation study highlights the efficacy of staged trees in uncovering complexes, asymmetric causal relationships from data, and real-world data applications illustrate their use in practical causal analysis.",
@@ -2136,7 +2136,7 @@
 ],
 "booktitle": "CausalStats23: When Causal Inference meets Statistical Analysis",
 "year": "2023",
-"project": "Bbva, Causeme, Usmile",
+"project": "BBVA, CAUSEME, USMILE",
 "pdf": "http://isp.uv.es/slides/graphEM_causeme_2023_for_web.pdf",
 "arxiv": "https://arxiv.org/abs/2307.10703",
 "raw": "@inproceedings{Elvira23,\n\ttitle        = {{Graphs in State-Space Models for Granger Causality in Climate Science}},\n\tauthor       = {Elvira, V. and Chouzenoux, \\'E. and Cerd\\`a-Bautista, J and Camps-Valls},\n\tyear         = 2023,\n\tbooktitle    = {CausalStats23: When Causal Inference meets Statistical Analysis},\n\taddress      = {},\n\tvolume       = {},\n\tdoi          = {},\n\turl          = {},\n\teditor       = {},\n\tpdf          = {http://isp.uv.es/slides/graphEM_causeme_2023_for_web.pdf},\n\torganization = {},\n\tarxiv        = {https://arxiv.org/abs/2307.10703},\n\tproject      = {usmile,bbva,causeme}\n}"
@@ -2438,7 +2438,7 @@
 "volume": "Vol. 25",
 "year": "2023",
 "address": "Hybrid, 23-28 April 2023",
-"project": "Xaida",
+"project": "XAIDA",
 "raw": "@inproceedings{hohl2023uscc,\n\ttitle        = {{USCC: A Benchmark Dataset for Crop Yield Prediction under Climate Extremes}},\n\tauthor       = {H{\\\"o}hl, Adrian and Ofori-Ampofo, Stella and Obadic, Ivica and Fern{\\'a}ndez-Torres, Miguel-{\\'A}ngel and Kuzu, Ridvan Salih and Zhu, Xiaoxiang},\n\tyear         = 2023,\n\tbooktitle    = {EGU General Assembly, Geophysical Research Abstracts},\n\taddress      = {Hybrid, 23-28 April 2023},\n\tvolume       = {Vol. 25},\n\teditor       = {EGU General Assembly 2023},\n\torganization = {EGU},\n\tproject      = {xaida}\n}"
 },
 {
@@ -2457,7 +2457,7 @@
 "volume": "Vol. 25",
 "year": "2023",
 "address": "Hybrid, 23-28 April 2023",
-"project": "Usmile",
+"project": "USMILE",
 "raw": "@inproceedings{Cohrs23egu,\n\ttitle        = {{Double machine learning for geosciences}},\n\tauthor       = {Kai-Hendrik Cohrs, Gherardo Varando, Nuno Carvalhais, Markus Reichstein, Gustau Camps-Valls},\n\tyear         = 2023,\n\tbooktitle    = {EGU General Assembly, Geophysical Research Abstracts},\n\taddress      = {Hybrid, 23-28 April 2023},\n\tvolume       = {Vol. 25},\n\tdoi          = {},\n\turl          = {},\n\teditor       = {EGU General Assembly 2023},\n\torganization = {EGU},\n\tproject      = {usmile}\n}"
 },
 {
@@ -2477,7 +2477,7 @@
 "volume": "Vol. 25",
 "year": "2023",
 "address": "Hybrid, 23-28 April 2023",
-"project": "Bbva, Causal4Africa",
+"project": "BBVA, CAUSAL4AFRICA",
 "raw": "@inproceedings{Cerda23egu,\n\ttitle        = {{Causal inference to study food insecurity in Africa}},\n\tauthor       = {Jordi Cerdà-Bautista, José María Tárraga, Gherardo Varando, Alberto Arribas, Ted Shepherd, Gustau Camps-Valls},\n\tyear         = 2023,\n\tbooktitle    = {EGU General Assembly, Geophysical Research Abstracts},\n\taddress      = {Hybrid, 23-28 April 2023},\n\tvolume       = {Vol. 25},\n\tdoi          = {},\n\turl          = {},\n\teditor       = {EGU General Assembly 2023},\n\torganization = {EGU},\n\tproject      = {bbva,causal4africa}\n}"
 },
 {
@@ -2498,7 +2498,7 @@
 "volume": "Vol. 25",
 "year": "2023",
 "address": "Hybrid, 23-28 April 2023",
-"project": "Imiracli, Usmile",
+"project": "IMIRACLI, USMILE",
 "raw": "@inproceedings{Diaz23egu,\n\ttitle        = {{Learning causal drivers of PyroCb}},\n\tauthor       = {Emiliano Diaz Salas Porras, Gherardo Varando, Fernando Iglesias-Suarez, Gustau Camps-Valls, Kenza Tazi, Kara Lamb, Duncan Watson-Parris},\n\tyear         = 2023,\n\tbooktitle    = {EGU General Assembly, Geophysical Research Abstracts},\n\taddress      = {Hybrid, 23-28 April 2023},\n\tvolume       = {Vol. 25},\n\tdoi          = {},\n\turl          = {},\n\teditor       = {EGU General Assembly 2023},\n\torganization = {EGU},\n\tproject      = {usmile,imiracli}\n}"
 },
 {
@@ -2513,7 +2513,7 @@
 "volume": "Vol. 25",
 "year": "2023",
 "address": "Hybrid, 23-28 April 2023",
-"project": "Xaida",
+"project": "XAIDA",
 "raw": "@inproceedings{Anand23egu,\n\ttitle        = {{Identifying compound weather prototypes of forest mortality with beta-VAE}},\n\tauthor       = {Mohit Anand et al.},\n\tyear         = 2023,\n\tbooktitle    = {EGU General Assembly, Geophysical Research Abstracts},\n\taddress      = {Hybrid, 23-28 April 2023},\n\tvolume       = {Vol. 25},\n\tdoi          = {},\n\turl          = {},\n\teditor       = {EGU General Assembly 2023},\n\torganization = {EGU},\n\tproject      = {xaida}\n}"
 },
 {
@@ -2528,7 +2528,7 @@
 "volume": "Vol. 25",
 "year": "2023",
 "address": "Hybrid, 23-28 April 2023",
-"project": "Usmile",
+"project": "USMILE",
 "raw": "@inproceedings{Izquierdo23egu,\n\ttitle        = {{Enhanced and gap-free Sentinel-2 reflectance data at vast scales with GEE}},\n\tauthor       = {Emma Izquierdo-Verdiguier et al.},\n\tyear         = 2023,\n\tbooktitle    = {EGU General Assembly, Geophysical Research Abstracts},\n\taddress      = {Hybrid, 23-28 April 2023},\n\tvolume       = {Vol. 25},\n\tdoi          = {},\n\turl          = {},\n\teditor       = {EGU General Assembly 2023},\n\torganization = {EGU},\n\tproject      = {usmile}\n}"
 },
 {
@@ -2549,7 +2549,7 @@
 "volume": "Vol. 25",
 "year": "2023",
 "address": "Hybrid, 23-28 April 2023",
-"project": "Xaida",
+"project": "XAIDA",
 "raw": "@inproceedings{Cortes23egu,\n\ttitle        = {{xaida4Detection: A Toolbox for the Detection and Characterization of Spatio-Temporal Extreme Events}},\n\tauthor       = {Jordi Cortés-Andrés, Maria Gonzalez-Calabuig, Mengxue Zhang, Tristan K. E. Williams, Miguel-Ángel Fernández-Torres, Oscar J. Pellicer-Valero, Gustau Camps-Valls},\n\tyear         = 2023,\n\tbooktitle    = {EGU General Assembly, Geophysical Research Abstracts},\n\taddress      = {Hybrid, 23-28 April 2023},\n\tvolume       = {Vol. 25},\n\tdoi          = {},\n\turl          = {},\n\teditor       = {EGU General Assembly 2023},\n\torganization = {EGU},\n\tproject      = {xaida}\n}"
 },
 {
@@ -2568,7 +2568,7 @@
 "volume": "Vol. 25",
 "year": "2023",
 "address": "Hybrid, 23-28 April 2023",
-"project": "Imiracli",
+"project": "IMIRACLI",
 "raw": "@inproceedings{Pelucchi23egu,\n\ttitle        = {{Invertible neural networks for satellite retrievals of aerosol optical depth}},\n\tauthor       = {Paolo Pelucchi, Jorge Vicent, J. Emmanuel Johnson, Philip Stier, Gustau Camps-Valls},\n\tyear         = 2023,\n\tbooktitle    = {EGU General Assembly, Geophysical Research Abstracts},\n\taddress      = {Hybrid, 23-28 April 2023},\n\tvolume       = {Vol. 25},\n\tdoi          = {},\n\turl          = {},\n\teditor       = {EGU General Assembly 2023},\n\torganization = {EGU},\n\tproject      = {imiracli}\n}"
 },
 {
@@ -2590,7 +2590,7 @@
 "volume": "Vol. 25",
 "year": "2023",
 "address": "Hybrid, 23-28 April 2023",
-"project": "Usmile",
+"project": "USMILE",
 "raw": "@inproceedings{Moreno23egu,\n\ttitle        = {{Physics-Aware Machine Learning for Carbon Fluxes at High Spatio-Temporal Resolution and Scales}},\n\tauthor       = {Laura Martínez-Ferrer, Álvaro Moreno-Martínez, Jordi Muñoz-Marí, Emma Izquierdo-Verdiguier, John S. Kimball,  Steven W. Running, Nicholas Clinton, Gustau Camps-Valls},\n\tyear         = 2023,\n\tbooktitle    = {EGU General Assembly, Geophysical Research Abstracts},\n\taddress      = {Hybrid, 23-28 April 2023},\n\tvolume       = {Vol. 25},\n\tdoi          = {},\n\turl          = {},\n\teditor       = {EGU General Assembly 2023},\n\torganization = {EGU},\n\tproject      = {usmile}\n}"
 },
 {
@@ -2622,7 +2622,7 @@
 "volume": "Vol. 25",
 "year": "2023",
 "address": "Hybrid, 23-28 April 2023",
-"project": "Xaida",
+"project": "XAIDA",
 "raw": "@inproceedings{Williams23egu,\n\ttitle        = {{Estimating non-linear persistence for impact assessment in European forests}},\n\tauthor       = {Tristan Williams, Miguel Mahecha, Gustau Camps-Valls},\n\tyear         = 2023,\n\tbooktitle    = {EGU General Assembly, Geophysical Research Abstracts},\n\taddress      = {Hybrid, 23-28 April 2023},\n\tvolume       = {Vol. 25},\n\tdoi          = {},\n\turl          = {},\n\teditor       = {EGU General Assembly 2023},\n\torganization = {EGU},\n\tproject      = {xaida}\n}"
 },
 {
@@ -2642,7 +2642,7 @@
 "volume": "Vol. 25",
 "year": "2023",
 "address": "Hybrid, 23-28 April 2023",
-"project": "Usmile",
+"project": "USMILE",
 "raw": "@inproceedings{Martinez23egu,\n\ttitle        = {{Gaussian Processes for vegetation traits global mapping}},\n\tauthor       = {Laura Martínez-Ferrer, Álvaro Moreno-Martínez, Jordi Muñoz-Marí, Hanna Meyer, Marvin Ludwig, Gustau Camps-Valls},\n\tyear         = 2023,\n\tbooktitle    = {EGU General Assembly, Geophysical Research Abstracts},\n\taddress      = {Hybrid, 23-28 April 2023},\n\tvolume       = {Vol. 25},\n\tdoi          = {},\n\turl          = {},\n\teditor       = {EGU General Assembly 2023},\n\torganization = {EGU},\n\tproject      = {usmile}\n}"
 },
 {
@@ -2660,7 +2660,7 @@
 "booktitle": "EGU General Assembly Conference Abstracts",
 "pages": "EGU–7465",
 "year": "2023",
-"project": "Imiracli",
+"project": "IMIRACLI",
 "doi": "https://ui.adsabs.harvard.edu/link_gateway/2023EGUGA..25.7465P/doi:10.5194/egusphere-egu23-7465",
 "doi_bare": "https://ui.adsabs.harvard.edu/link_gateway/2023EGUGA..25.7465P/doi:10.5194/egusphere-egu23-7465",
 "doi_url": "https://ui.adsabs.harvard.edu/link_gateway/2023EGUGA..25.7465P/doi:10.5194/egusphere-egu23-7465",
@@ -2773,7 +2773,7 @@
 ],
 "booktitle": "NeurIPS 2022 Workshop-Causality for Real-world Impact",
 "year": "2022",
-"project": "Imiracli, Usmile",
+"project": "IMIRACLI, USMILE",
 "arxiv": "https://arxiv.org/abs/2211.08883",
 "raw": "@inproceedings{Diaz22neurips,\n\ttitle        = {{Identifying the Causes of Pyrocumulonimbus (PyroCb)}},\n\tauthor       = {Díaz Salas-Porras, E. and Tazi, K and Braude, A. and Okoh, D. and Lamb, K.D. and Watson-Parris, D. and Harder, P. and Meinert, N.},\n\tyear         = 2022,\n\tbooktitle    = {NeurIPS 2022 Workshop-Causality for Real-world Impact},\n\taddress      = {},\n\tvolume       = {},\n\tdoi          = {},\n\turl          = {},\n\tproject      = {usmile,imiracli},\n\tarxiv        = {https://arxiv.org/abs/2211.08883},\n\torganization = {}\n}"
 },
@@ -2787,7 +2787,7 @@
 ],
 "booktitle": "NeurIPS 2022 Workshop-Tackling Climate Change with Machine Learning",
 "year": "2022",
-"project": "Imiracli, Usmile",
+"project": "IMIRACLI, USMILE",
 "pdf": "http://isp.uv.es/slides/2022_PhysicsML_CausalML_40min.pdf",
 "raw": "@inproceedings{CampsValls22neurips,\n\ttitle        = {{Physics-aware Machine learning for Earth observation}},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2022,\n\tbooktitle    = {NeurIPS 2022 Workshop-Tackling Climate Change with Machine Learning},\n\taddress      = {},\n\tvolume       = {},\n\tdoi          = {},\n\turl          = {},\n\tproject      = {usmile,imiracli},\n\tpdf          = {http://isp.uv.es/slides/2022_PhysicsML_CausalML_40min.pdf},\n\torganization = {}\n}"
 },
@@ -2808,7 +2808,7 @@
 ],
 "booktitle": "NeurIPS 2022 Workshop-Tackling Climate Change with Machine Learning",
 "year": "2022",
-"project": "Imiracli, Usmile",
+"project": "IMIRACLI, USMILE",
 "arxiv": "https://arxiv.org/abs/2211.13052",
 "raw": "@inproceedings{Tazi22neurips,\n\ttitle        = {{Pyrocast: a Machine Learning Pipeline to Forecast Pyrocumulonimbus (PyroCb) Clouds}},\n\tauthor       = {Tazi, K and Díaz Salas-Porras, E. and Braude, A. and Okoh, D. and Lamb, K.D. and Watson-Parris, D. and Harder, P. and Meinert, N.},\n\tyear         = 2022,\n\tbooktitle    = {NeurIPS 2022 Workshop-Tackling Climate Change with Machine Learning},\n\taddress      = {},\n\tvolume       = {},\n\tdoi          = {},\n\turl          = {},\n\tproject      = {usmile,imiracli},\n\tarxiv        = {https://arxiv.org/abs/2211.13052},\n\torganization = {}\n}"
 },
@@ -2824,7 +2824,7 @@
 ],
 "booktitle": "NeurIPS 2022 Workshop-Tackling Climate Change with Machine Learning",
 "year": "2022",
-"project": "Usmile, Xaida",
+"project": "USMILE, XAIDA",
 "raw": "@inproceedings{Zhang22neurips,\n\ttitle        = {{Hybrid Recurrent Neural Network for Drought Monitoring}},\n\tauthor       = {Zhang, M. and Fernández-Torres, MA and Camps-Valls, G},\n\tyear         = 2022,\n\tbooktitle    = {NeurIPS 2022 Workshop-Tackling Climate Change with Machine Learning},\n\taddress      = {},\n\tvolume       = {},\n\tdoi          = {},\n\turl          = {},\n\tproject      = {usmile,xaida},\n\torganization = {}\n}"
 },
 {
@@ -2840,7 +2840,7 @@
 ],
 "booktitle": "NeurIPS 2022 Workshop-Tackling Climate Change with Machine Learning",
 "year": "2022",
-"project": "Xaida",
+"project": "XAIDA",
 "raw": "@inproceedings{Anand22neurips,\n\ttitle        = {{Identifying Compound Climate Drivers of Forest Mortality with β-VAE}},\n\tauthor       = {Anand, M. and Sweet, L-b. and Camps-Valls, G and Zscheischler, J.},\n\tyear         = 2022,\n\tbooktitle    = {NeurIPS 2022 Workshop-Tackling Climate Change with Machine Learning},\n\taddress      = {},\n\tvolume       = {},\n\tdoi          = {},\n\turl          = {},\n\tproject      = {xaida},\n\torganization = {}\n}"
 },
 {
@@ -2857,7 +2857,7 @@
 "booktitle": "Causal Representation Learning Workshop @UAI'22",
 "year": "2022",
 "address": "Eindhoven, The Netherlands",
-"project": "Usmile",
+"project": "USMILE",
 "doi": "https://openreview.net/pdf?id=XsTEnaD_Lel",
 "doi_bare": "https://openreview.net/pdf?id=XsTEnaD_Lel",
 "doi_url": "https://openreview.net/pdf?id=XsTEnaD_Lel",
@@ -2876,7 +2876,7 @@
 "booktitle": "2022 symposium of the Norwegian AI Society",
 "year": "2022",
 "address": "31 May-1 June 2022, Oslo, Norway",
-"project": "Usmile",
+"project": "USMILE",
 "doi": "https://doi.org/",
 "doi_url": "https://doi.org/",
 "url": "https://www.aisociety.no/nais2022/",
@@ -2896,7 +2896,7 @@
 "booktitle": "Living Planet Symposium",
 "year": "2022",
 "address": "23-27 May 2022, Bonn, Germany",
-"project": "Usmile",
+"project": "USMILE",
 "doi": "https://doi.org/",
 "doi_url": "https://doi.org/",
 "raw": "@inproceedings{Dan22lps,\n\ttitle        = {{Exploiting Spatial and Temporal Information with ConvLSTM Networks for Cloud Detection over Landmarks}},\n\tauthor       = {D. López-Puigdollers, A. Pérez-Suay, G. Mateo-García, L. Gómez-Chova},\n\tyear         = 2022,\n\tbooktitle    = {Living Planet Symposium},\n\taddress      = {23-27 May 2022, Bonn, Germany},\n\tvolume       = {},\n\tdoi          = {https://doi.org/},\n\turl          = {},\n\tproject      = {usmile},\n\torganization = {ESA}\n}"
@@ -2989,7 +2989,7 @@
 "booktitle": "Living Planet Symposium",
 "year": "2022",
 "address": "23-27 May 2022, Bonn, Germany",
-"project": "Usmile",
+"project": "USMILE",
 "doi": "https://doi.org/",
 "doi_url": "https://doi.org/",
 "raw": "@inproceedings{Kaps22lps,\n\ttitle        = {{A two-stage machine learning framework using global satellite data of cloud classes for process-oriented model evaluation}},\n\tauthor       = {A. Kaps, A. Lauer, G. Camps-Valls, P. Gentine, L. Gómez-Chova, V. Eyring},\n\tyear         = 2022,\n\tbooktitle    = {Living Planet Symposium},\n\taddress      = {23-27 May 2022, Bonn, Germany},\n\tvolume       = {},\n\tdoi          = {https://doi.org/},\n\turl          = {},\n\tproject      = {usmile},\n\torganization = {ESA}\n}"
@@ -3010,7 +3010,7 @@
 "booktitle": "Living Planet Symposium",
 "year": "2022",
 "address": "23-27 May 2022, Bonn, Germany",
-"project": "Usmile",
+"project": "USMILE",
 "doi": "https://doi.org/",
 "doi_url": "https://doi.org/",
 "raw": "@inproceedings{Martinez22lps,\n\ttitle        = {{Carbon fluxes estimation at scale: long-term, continuous, high spatial resolution with uncertainties at continental scales}},\n\tauthor       = {L. Martínez-Ferrer, A. Moreno‑Martínez, J. Kimball, S. Running, N. Clinton, G. Camps-Valls},\n\tyear         = 2022,\n\tbooktitle    = {Living Planet Symposium},\n\taddress      = {23-27 May 2022, Bonn, Germany},\n\tvolume       = {},\n\tdoi          = {https://doi.org/},\n\turl          = {},\n\tproject      = {usmile},\n\torganization = {ESA}\n}"
@@ -3032,7 +3032,7 @@
 "booktitle": "Living Planet Symposium",
 "year": "2022",
 "address": "23-27 May 2022, Bonn, Germany",
-"project": "Usmile",
+"project": "USMILE",
 "doi": "https://doi.org/",
 "doi_url": "https://doi.org/",
 "raw": "@inproceedings{Adsuara22lps,\n\ttitle        = {{Characterizing the Earth complex dynamical system through spectral decomposition of kernel transfer operators}},\n\tauthor       = {J. Adsuara, G. Varando, A. Pérez-Suay, K. Cohrs, E. Díaz, D. Bueso, G. Camps-Valls},\n\tyear         = 2022,\n\tbooktitle    = {Living Planet Symposium},\n\taddress      = {23-27 May 2022, Bonn, Germany},\n\tvolume       = {},\n\tdoi          = {https://doi.org/},\n\turl          = {},\n\tproject      = {usmile},\n\torganization = {ESA}\n}"
@@ -3055,7 +3055,7 @@
 "booktitle": "Living Planet Symposium",
 "year": "2022",
 "address": "23-27 May 2022, Bonn, Germany",
-"project": "Deepcube",
+"project": "DEEPCUBE",
 "doi": "https://doi.org/",
 "doi_url": "https://doi.org/",
 "raw": "@inproceedings{Kondylatos22lps,\n\ttitle        = {{Deep Learning Methods for Daily Wildfire Danger Forecasting}},\n\tauthor       = {S. Kondylatos, I. Prapas, I. Papoutsis, G. Camps-Valls, M. Ronco, M. Fernández-Torres, M. Piles, N. Carvalhais},\n\tyear         = 2022,\n\tbooktitle    = {Living Planet Symposium},\n\taddress      = {23-27 May 2022, Bonn, Germany},\n\tvolume       = {},\n\tdoi          = {https://doi.org/},\n\turl          = {},\n\tproject      = {deepcube},\n\torganization = {ESA}\n}"
@@ -3082,7 +3082,7 @@
 "booktitle": "Living Planet Symposium",
 "year": "2022",
 "address": "23-27 May 2022, Bonn, Germany",
-"project": "Deepextremes",
+"project": "DEEPEXTREMES",
 "doi": "https://doi.org/",
 "doi_url": "https://doi.org/",
 "raw": "@inproceedings{Mahecha22lps,\n\ttitle        = {{DeepExtremes - Deploying Artificial Experiments on High-Resolution Data Cubes for explaining extreme event impacts}},\n\tauthor       = {M. Mahecha, F. Gans, G. Camps-Valls, B. Gunnar, G. Kraemer, K. Mora, M. Fernández-Torres, C. RequenA, V. Benson, M. Reichstein, C. Brockmann, M. Ronco},\n\tyear         = 2022,\n\tbooktitle    = {Living Planet Symposium},\n\taddress      = {23-27 May 2022, Bonn, Germany},\n\tvolume       = {},\n\tdoi          = {https://doi.org/},\n\turl          = {},\n\tproject      = {deepextremes},\n\torganization = {ESA}\n}"
@@ -3103,7 +3103,7 @@
 "booktitle": "Living Planet Symposium",
 "year": "2022",
 "address": "23-27 May 2022, Bonn, Germany",
-"project": "Deepextremes",
+"project": "DEEPEXTREMES",
 "doi": "https://doi.org/",
 "doi_url": "https://doi.org/",
 "raw": "@inproceedings{Fernandez22lps,\n\ttitle        = {{Explaining Deep Learning Models for Earth Surface Forecasting}},\n\tauthor       = {M. Fernández-Torres, M. Ronco, V. Benson, C. Requena, M. Mahecha, G. Camps-Valls},\n\tyear         = 2022,\n\tbooktitle    = {Living Planet Symposium},\n\taddress      = {23-27 May 2022, Bonn, Germany},\n\tvolume       = {},\n\tdoi          = {https://doi.org/},\n\turl          = {},\n\tproject      = {deepextremes},\n\torganization = {ESA}\n}"
@@ -3122,7 +3122,7 @@
 "booktitle": "Living Planet Symposium",
 "year": "2022",
 "address": "23-27 May 2022, Bonn, Germany",
-"project": "Usmile",
+"project": "USMILE",
 "doi": "https://doi.org/",
 "doi_url": "https://doi.org/",
 "raw": "@inproceedings{Tuia22lps,\n\ttitle        = {{Representation learning in remote sensing: from unsupervised, to self-and meta-learning}},\n\tauthor       = {D. Tuia, X. Zhu, M. Molinier, G. Camps-Valls},\n\tyear         = 2022,\n\tbooktitle    = {Living Planet Symposium},\n\taddress      = {23-27 May 2022, Bonn, Germany},\n\tvolume       = {},\n\tdoi          = {https://doi.org/},\n\turl          = {},\n\tproject      = {usmile},\n\torganization = {ESA}\n}"
@@ -3140,7 +3140,7 @@
 "booktitle": "Living Planet Symposium",
 "year": "2022",
 "address": "23-27 May 2022, Bonn, Germany",
-"project": "Xaida",
+"project": "XAIDA",
 "doi": "https://doi.org/",
 "doi_url": "https://doi.org/",
 "raw": "@inproceedings{Williams22lps,\n\ttitle        = {{Short and long-term persistence in European vegetation}},\n\tauthor       = {T. Williams, M. Mahecha, G. Camps-Valls},\n\tyear         = 2022,\n\tbooktitle    = {Living Planet Symposium},\n\taddress      = {23-27 May 2022, Bonn, Germany},\n\tvolume       = {},\n\tdoi          = {https://doi.org/},\n\turl          = {},\n\tproject      = {xaida},\n\torganization = {ESA}\n}"
@@ -3161,7 +3161,7 @@
 "booktitle": "Living Planet Symposium",
 "year": "2022",
 "address": "23-27 May 2022, Bonn, Germany",
-"project": "Jrc",
+"project": "JRC",
 "doi": "https://doi.org/",
 "doi_url": "https://doi.org/",
 "raw": "@inproceedings{Mateo22lps,\n\ttitle        = {{Understanding Neural Networks for Crop Yield Estimation}},\n\tauthor       = {A. Mateo-Sanchis, J. Adsuara, A. Pérez-Suay, M. Piles, J. Muñoz-Marí,  G. Camps-Valls},\n\tyear         = 2022,\n\tbooktitle    = {Living Planet Symposium},\n\taddress      = {23-27 May 2022, Bonn, Germany},\n\tvolume       = {},\n\tdoi          = {https://doi.org/},\n\turl          = {},\n\tproject      = {jrc},\n\torganization = {ESA}\n}"
@@ -3183,7 +3183,7 @@
 "booktitle": "Living Planet Symposium",
 "year": "2022",
 "address": "23-27 May 2022, Bonn, Germany",
-"project": "Xaida",
+"project": "XAIDA",
 "doi": "https://doi.org/",
 "doi_url": "https://doi.org/",
 "raw": "@inproceedings{Gonzalez22lps,\n\ttitle        = {{Validation of Sentinel-2 Atmospheric Correction Using Radiative Transfer Models Emulators}},\n\tauthor       = {D. Malik, J Rivero-Caicedo, J. Verrelst, L. Martino, G. Camps-Valls, B. Berthelot, J. Vicent Servera},\n\tyear         = 2022,\n\tbooktitle    = {Living Planet Symposium},\n\taddress      = {23-27 May 2022, Bonn, Germany},\n\tvolume       = {},\n\tdoi          = {https://doi.org/},\n\turl          = {},\n\tproject      = {xaida},\n\torganization = {ESA}\n}"
@@ -3205,7 +3205,7 @@
 "volume": "Vol. 24",
 "year": "2022",
 "address": "Hybrid, 23-27 May 2022",
-"project": "Usmile",
+"project": "USMILE",
 "doi": "https://doi.org/",
 "doi_url": "https://doi.org/",
 "raw": "@inproceedings{Arndt22egu,\n\ttitle        = {{A two-stage machine learning framework using global satellite data of cloud classes for process-oriented model evaluation}},\n\tauthor       = {Kaps, Arndt and Lauer, Axel and Camps-Valls, Gustau and Gentine, Pierre and G{\\'o}mez-Chova, Luis and Eyring, Veronika},\n\tyear         = 2022,\n\tbooktitle    = {EGU General Assembly, Geophysical Research Abstracts},\n\taddress      = {Hybrid, 23-27 May 2022},\n\tvolume       = {Vol. 24},\n\tdoi          = {https://doi.org/},\n\turl          = {},\n\teditor       = {EGU General Assembly 2022},\n\torganization = {EGU},\n\tproject      = {usmile}\n}"
@@ -3227,7 +3227,7 @@
 "volume": "Vol. 24",
 "year": "2022",
 "address": "Hybrid, 23-27 May 2022",
-"project": "Imiracli",
+"project": "IMIRACLI",
 "doi": "https://doi.org/",
 "doi_url": "https://doi.org/",
 "raw": "@inproceedings{Jeggle22egu,\n\ttitle        = {{Exploring cirrus cloud microphysical properties using explainable machine learning}},\n\tauthor       = {Jeggle, Kai and Neubauer, David and Camps-Valls, Gustau and Binder, Hanin and Sprenger, Michael and Lohmann, Ulrike},\n\tyear         = 2022,\n\tbooktitle    = {EGU General Assembly, Geophysical Research Abstracts},\n\taddress      = {Hybrid, 23-27 May 2022},\n\tvolume       = {Vol. 24},\n\tdoi          = {https://doi.org/},\n\turl          = {},\n\teditor       = {EGU General Assembly 2022},\n\torganization = {EGU},\n\tproject      = {imiracli}\n}"
@@ -3272,7 +3272,7 @@
 "volume": "Vol. 24",
 "year": "2022",
 "address": "Hybrid, 23-27 May 2022",
-"project": "Imiracli, Usmile",
+"project": "IMIRACLI, USMILE",
 "doi": "https://doi.org/",
 "doi_url": "https://doi.org/",
 "raw": "@inproceedings{Duncan22egu,\n\ttitle        = {{ClimateBench: A benchmark for data-driven climate projections}},\n\tauthor       = {Watson-Parris, Duncan and Rao, Yuhan and Olivi{\\'e}, Dirk and Seland, {\\O}yvind and Nowack, Peer and Camps-Valls, Gustau and Stier, Philip and Bouabid, Shahine and Dewey, Maura and Fons, Emilie and others},\n\tyear         = 2022,\n\tbooktitle    = {EGU General Assembly, Geophysical Research Abstracts},\n\taddress      = {Hybrid, 23-27 May 2022},\n\tvolume       = {Vol. 24},\n\tdoi          = {https://doi.org/},\n\turl          = {},\n\teditor       = {EGU General Assembly 2022},\n\torganization = {EGU},\n\tproject      = {imiracli,usmile}\n}"
@@ -3292,7 +3292,7 @@
 "volume": "Vol. 24",
 "year": "2022",
 "address": "Hybrid, 23-27 May 2022",
-"project": "Imiracli",
+"project": "IMIRACLI",
 "doi": "https://doi.org/",
 "doi_url": "https://doi.org/",
 "raw": "@inproceedings{Gonzalez22egu,\n\ttitle        = {{Machine learning to quantify cloud responses to aerosols from satellite data}},\n\tauthor       = {Gonzalez, Jessenia and Sourdeval, Odran and Camps-Valls, Gustau and Quaas, Johannes},\n\tyear         = 2022,\n\tbooktitle    = {EGU General Assembly, Geophysical Research Abstracts},\n\taddress      = {Hybrid, 23-27 May 2022},\n\tvolume       = {Vol. 24},\n\tdoi          = {https://doi.org/},\n\turl          = {},\n\teditor       = {EGU General Assembly 2022},\n\torganization = {EGU},\n\tproject      = {imiracli}\n}"
@@ -3314,7 +3314,7 @@
 "volume": "Vol. 24",
 "year": "2022",
 "address": "Hybrid, 23-27 May 2022",
-"project": "Usmile",
+"project": "USMILE",
 "doi": "https://doi.org/",
 "doi_url": "https://doi.org/",
 "raw": "@inproceedings{Martinez22egu,\n\ttitle        = {{Carbon fluxes estimation with aleatoric and epistemic uncertainties at high spatial resolution over large areas}},\n\tauthor       = {Mart{\\'\\i}nez-Ferrer, Laura and Moreno-Mart{\\'\\i}nez, {\\'A}lvaro and Kimball, John S and Running, Steven W and Clinton, Nicholas and Camps-Valls, Gustau},\n\tyear         = 2022,\n\tbooktitle    = {EGU General Assembly, Geophysical Research Abstracts},\n\taddress      = {Hybrid, 23-27 May 2022},\n\tvolume       = {Vol. 24},\n\tdoi          = {https://doi.org/},\n\turl          = {},\n\teditor       = {EGU General Assembly 2022},\n\torganization = {EGU},\n\tproject      = {usmile}\n}"
@@ -3338,7 +3338,7 @@
 "volume": "Vol. 24",
 "year": "2022",
 "address": "Hybrid, 23-27 May 2022",
-"project": "Bbva, Deepcube",
+"project": "BBVA, DEEPCUBE",
 "doi": "https://doi.org/",
 "doi_url": "https://doi.org/",
 "raw": "@inproceedings{Tarraga22egu,\n\ttitle        = {{Inspecting the link between climate and human displacement with Explainable AI and Causal inference}},\n\tauthor       = {Habas, Jos{\\'e} Mar{\\'\\i}a T{\\'a}rraga and Ronco, Michele and Miranda, Maria Teresa and Marco, Eva Sevillano and Wang, Qiang and Piles, Mar{\\'\\i}a and Mu{\\~n}oz, Jordi and Camps-Valls, Gustau},\n\tyear         = 2022,\n\tbooktitle    = {EGU General Assembly, Geophysical Research Abstracts},\n\taddress      = {Hybrid, 23-27 May 2022},\n\tvolume       = {Vol. 24},\n\tdoi          = {https://doi.org/},\n\turl          = {},\n\teditor       = {EGU General Assembly 2022},\n\torganization = {EGU},\n\tproject      = {deepcube,bbva}\n}"
@@ -3371,7 +3371,7 @@
 "volume": "Vol. 24",
 "year": "2022",
 "address": "Hybrid, 23-27 May 2022",
-"project": "Usmile",
+"project": "USMILE",
 "doi": "https://doi.org/",
 "doi_url": "https://doi.org/",
 "raw": "@inproceedings{Varando22egu,\n\ttitle        = {{Learning ENSO-related Principal Modes of Vegetation via a Granger-Causal Variational Autoencoder}},\n\tauthor       = {Varando, Gherardo and Fern{\\'a}ndez-Torres, Miguel-{\\'A}ngel and Camps-Valls, Gustau},\n\tyear         = 2022,\n\tbooktitle    = {EGU General Assembly, Geophysical Research Abstracts},\n\taddress      = {Hybrid, 23-27 May 2022},\n\tvolume       = {Vol. 24},\n\tdoi          = {https://doi.org/},\n\turl          = {},\n\teditor       = {EGU General Assembly 2022},\n\torganization = {EGU},\n\tproject      = {usmile}\n}"
@@ -3411,7 +3411,7 @@
 "volume": "Vol. 24",
 "year": "2022",
 "address": "Hybrid, 23-27 May 2022",
-"project": "Deepcube",
+"project": "DEEPCUBE",
 "doi": "https://doi.org/",
 "doi_url": "https://doi.org/",
 "raw": "@inproceedings{Ronco22egu,\n\ttitle        = {{Explainable deep learning for wildfire danger estimation}},\n\tauthor       = {Ronco, Michele and Prapas, Ioannis and Kondylatos, Spyros and Papoutsis, Ioannis and Camps-Valls, Gustau and Fern{\\'a}ndez-Torres, Miguel-{\\'A}ngel and Piles Guillem, Maria and Carvalhais, Nuno},\n\tyear         = 2022,\n\tbooktitle    = {EGU General Assembly, Geophysical Research Abstracts},\n\taddress      = {Hybrid, 23-27 May 2022},\n\tvolume       = {Vol. 24},\n\tdoi          = {https://doi.org/},\n\turl          = {},\n\teditor       = {EGU General Assembly 2022},\n\torganization = {EGU},\n\tproject      = {deepcube}\n}"
@@ -3431,7 +3431,7 @@
 "volume": "Vol. 24",
 "year": "2022",
 "address": "Hybrid, 23-27 May 2022",
-"project": "Deepextremes, Xaida",
+"project": "DEEPEXTREMES, XAIDA",
 "doi": "https://doi.org/",
 "doi_url": "https://doi.org/",
 "raw": "@inproceedings{Maria22egu,\n\ttitle        = {{Recent Advances in Deep Learning for Spatio-Temporal Drought Monitoring, Forecasting and Model Understanding}},\n\tauthor       = {Gonz{\\'a}lez-Calabuig, Mar{\\'\\i}a and Cort{\\'e}s-Andr{\\'e}s, Jordi and Fern{\\'a}ndez-Torres, Miguel-{\\'A}ngel and Camps-Valls, Gustau},\n\tyear         = 2022,\n\tbooktitle    = {EGU General Assembly, Geophysical Research Abstracts},\n\taddress      = {Hybrid, 23-27 May 2022},\n\tvolume       = {Vol. 24},\n\tdoi          = {https://doi.org/},\n\turl          = {},\n\teditor       = {EGU General Assembly 2022},\n\torganization = {EGU},\n\tproject      = {xaida,deepextremes}\n}"
@@ -3466,7 +3466,7 @@
 "volume": "Vol. 24",
 "year": "2022",
 "address": "Hybrid, 23-27 May 2022",
-"project": "Xaida",
+"project": "XAIDA",
 "doi": "https://doi.org/",
 "doi_url": "https://doi.org/",
 "raw": "@inproceedings{Anand22egu,\n\ttitle        = {{Identifying drivers of extreme reductions in carbon uptake of forests with interpretable machine learning}},\n\tauthor       = {Anand, Mohit and Camps-Valls, Gustau and Zscheischler, Jakob},\n\tyear         = 2022,\n\tbooktitle    = {EGU General Assembly, Geophysical Research Abstracts},\n\taddress      = {Hybrid, 23-27 May 2022},\n\tvolume       = {Vol. 24},\n\tdoi          = {https://doi.org/},\n\turl          = {},\n\teditor       = {EGU General Assembly 2022},\n\torganization = {EGU},\n\tproject      = {xaida}\n}"
@@ -3629,7 +3629,7 @@
 "booktitle": "AGU American Geophysical Union",
 "year": "2021",
 "address": "New Orleans LA USA & Online, 13-17 December 2021, https://www.agu.org/Fall-Meeting",
-"project": "Deepcube",
+"project": "DEEPCUBE",
 "url": "https://agu.confex.com/agu/fm21/meetingapp.cgi/Paper/805896",
 "raw": "@inproceedings{CampsValls21AGUkndvi,\n\ttitle        = {{Unified Vegetation Index for Quantifying the Terrestrial Biosphere}},\n\tauthor       = {Camps-Valls, G., Campos-Taberner, M., Moreno-Martínez, Á., Walther, S., Duveiller, G., Cescatti, A., ... Running, S. W.},\n\tyear         = 2021,\n\tmonth        = dec,\n\tbooktitle    = {AGU American Geophysical Union},\n\taddress      = {New Orleans LA USA & Online, 13-17 December 2021, https://www.agu.org/Fall-Meeting},\n\turl          = {https://agu.confex.com/agu/fm21/meetingapp.cgi/Paper/805896},\n\torganization = {AGU},\n\tproject      = {deepcube}\n}"
 },
@@ -3649,7 +3649,7 @@
 "booktitle": "AGU American Geophysical Union",
 "year": "2021",
 "address": "New Orleans LA USA & Online, 13-17 December 2021, https://www.agu.org/Fall-Meeting",
-"project": "Deepcube",
+"project": "DEEPCUBE",
 "url": "https://agu.confex.com/agu/fm21/webprogrampreliminary/Paper881761.html",
 "raw": "@inproceedings{JM21DCAGU,\n\ttitle        = {{Climate-Induced Displacement with Explainable Machine Learning Models}},\n\tauthor       = {José María Tárraga and Michele Ronco and Maria Teresa Miranda and, Maria Piles and Eva Sevillano Marco and Jordi Muñoz and Gustau Camps-Valls},\n\tyear         = 2021,\n\tmonth        = dec,\n\tbooktitle    = {AGU American Geophysical Union},\n\taddress      = {New Orleans LA USA & Online, 13-17 December 2021, https://www.agu.org/Fall-Meeting},\n\turl          = {https://agu.confex.com/agu/fm21/webprogrampreliminary/Paper881761.html},\n\torganization = {AGU},\n\tproject      = {deepcube}\n}"
 },
@@ -3666,7 +3666,7 @@
 "booktitle": "AGU American Geophysical Union",
 "year": "2021",
 "address": "New Orleans LA USA & Online, 13-17 December 2021, https://www.agu.org/Fall-Meeting",
-"project": "Usmile",
+"project": "USMILE",
 "url": "https://agu.confex.com/agu/fm21/webprogrampreliminary/Paper857866.html",
 "raw": "@inproceedings{Ghe21USAGU,\n\ttitle        = {{Learning Granger Causal Feature Representations}},\n\tauthor       = {Gherardo Varando and Miguel-Ángel Fernández-Torres and Gustau Camps-Valls},\n\tyear         = 2021,\n\tmonth        = dec,\n\tbooktitle    = {AGU American Geophysical Union},\n\taddress      = {New Orleans LA USA & Online, 13-17 December 2021, https://www.agu.org/Fall-Meeting},\n\turl          = {https://agu.confex.com/agu/fm21/webprogrampreliminary/Paper857866.html},\n\torganization = {AGU},\n\tproject      = {usmile}\n}"
 },
@@ -3688,7 +3688,7 @@
 "booktitle": "AGU American Geophysical Union",
 "year": "2021",
 "address": "New Orleans LA USA & Online, 13-17 December 2021, https://www.agu.org/Fall-Meeting",
-"project": "Usmile",
+"project": "USMILE",
 "url": "https://agu.confex.com/agu/fm21/webprogrampreliminary/Paper934068.html",
 "raw": "@inproceedings{AM21USAGU,\n\ttitle        = {{Long-time record and continuous high resolution gross primary productivity estimates at continental scales}},\n\tauthor       = {Álvaro Moreno and Laura Martínez-Ferrer and John Kimball and Martin Jung and Markus Reichstein and Steven W Running and Nicholas Clinton and Gustau Camps-Valls},\n\tyear         = 2021,\n\tmonth        = dec,\n\tbooktitle    = {AGU American Geophysical Union},\n\taddress      = {New Orleans LA USA & Online, 13-17 December 2021, https://www.agu.org/Fall-Meeting},\n\turl          = {https://agu.confex.com/agu/fm21/webprogrampreliminary/Paper934068.html},\n\torganization = {AGU},\n\tproject      = {usmile}\n}"
 },
@@ -3709,7 +3709,7 @@
 "booktitle": "AGU American Geophysical Union",
 "year": "2021",
 "address": "New Orleans LA USA & Online, 13-17 December 2021, https://www.agu.org/Fall-Meeting",
-"project": "Usmile",
+"project": "USMILE",
 "url": "https://agu.confex.com/agu/fm21/webprogrampreliminary/Paper805896.html",
 "raw": "@inproceedings{DB21USAGU,\n\ttitle        = {{Reconstruction of Seasonal Interaction of Soil Moisture and Tree Water Content Over Boreal Forests}},\n\tauthor       = {Diego Bueso and Maria Piles and Álvaro Moreno and Gustau Camps-Valls and Frederic Frappart and Jean-Pierre Wigneron and Philippe Ciais},\n\tyear         = 2021,\n\tmonth        = dec,\n\tbooktitle    = {AGU American Geophysical Union},\n\taddress      = {New Orleans LA USA & Online, 13-17 December 2021, https://www.agu.org/Fall-Meeting},\n\turl          = {https://agu.confex.com/agu/fm21/webprogrampreliminary/Paper805896.html},\n\torganization = {AGU},\n\tproject      = {usmile}\n}"
 },
@@ -3726,7 +3726,7 @@
 "booktitle": "AGU American Geophysical Union",
 "year": "2021",
 "address": "New Orleans LA USA & Online, 13-17 December 2021, https://www.agu.org/Fall-Meeting",
-"project": "Deepcube, Usmile",
+"project": "DEEPCUBE, USMILE",
 "url": "https://agu.confex.com/agu/fm21/meetingapp.cgi/Paper/836661",
 "raw": "@inproceedings{JC21AGU,\n\ttitle        = {{Location-Aware Convolutional Encoder-Decoder for Drought Detection in Europe}},\n\tauthor       = {Jordi Cortés-Andrés and Miguel-Ángel Fernández-Torres and Gustau Camps-Valls},\n\tyear         = 2021,\n\tmonth        = dec,\n\tbooktitle    = {AGU American Geophysical Union},\n\taddress      = {New Orleans LA USA & Online, 13-17 December 2021, https://www.agu.org/Fall-Meeting},\n\turl          = {https://agu.confex.com/agu/fm21/meetingapp.cgi/Paper/836661},\n\torganization = {AGU},\n\tproject      = {usmile,deepcube}\n}"
 },
@@ -3773,7 +3773,7 @@
 "booktitle": "AGU American Geophysical Union",
 "year": "2021",
 "address": "New Orleans LA USA & Online, 13-17 December 2021, https://www.agu.org/Fall-Meeting",
-"project": "Usmile",
+"project": "USMILE",
 "url": "https://agu.confex.com/agu/fm21/meetingapp.cgi/Paper/907332",
 "raw": "@inproceedings{AM21AGUINTERCOMP,\n\ttitle        = {{Intercomparing Global Foliar Trait and Canopy Height Maps: Upscaling Approaches and Spatial Patterns}},\n\tauthor       = {Benjamin Dechant and Ryan Pavlick and Jens Kattge and Fabian D Schneider and Ethan E Butler and Alvaro Moreno and Peter van Bodegom and Helena Vallicrosa and Teja Kattenborn and Coline Boonman and Sönke Zaehle and Nima Madani and Iain COLIN C Prentice11 and Ian J Wright and Jeannine Cavender-Bares and Sandra Díaz and Isla H Myers-Smith and Karin Rebel and Ning Dong and Sandra Milena Duran and Holly Croft and Irena Simova and Hannes Feilhauer and Francesco Sabbatini and Helge Bruehlheide and Josep Penuelas and Jesús Aguirre-Gutiérrez and Peter B. Reich and Miguel Mahecha and Christian Wirth and Markus Reichstein and Yadvinder Malhi and Philip A Townsend},\n\tyear         = 2021,\n\tmonth        = dec,\n\tbooktitle    = {AGU American Geophysical Union},\n\taddress      = {New Orleans LA USA & Online, 13-17 December 2021, https://www.agu.org/Fall-Meeting},\n\turl          = {https://agu.confex.com/agu/fm21/meetingapp.cgi/Paper/907332},\n\torganization = {AGU},\n\tproject      = {usmile}\n}"
 },
@@ -3789,7 +3789,7 @@
 "booktitle": "AGU American Geophysical Union",
 "year": "2021",
 "address": "New Orleans LA USA & Online, 13-17 December 2021, https://www.agu.org/Fall-Meeting",
-"project": "Maloc",
+"project": "MALOC",
 "url": "https://agu.confex.com/agu/fm21/meetingapp.cgi/Paper/805340",
 "raw": "@inproceedings{CR21AGU,\n\ttitle        = {{A new machine learning approach for regional sea level reconstructions using proxy-climate fingerprints}},\n\tauthor       = {Cristina Radin and Veronica Nieves},\n\tyear         = 2021,\n\tmonth        = dec,\n\tbooktitle    = {AGU American Geophysical Union},\n\taddress      = {New Orleans LA USA & Online, 13-17 December 2021, https://www.agu.org/Fall-Meeting},\n\turl          = {https://agu.confex.com/agu/fm21/meetingapp.cgi/Paper/805340},\n\torganization = {AGU},\n\tproject      = {maloc}\n}"
 },
@@ -3811,7 +3811,7 @@
 "booktitle": "AGU American Geophysical Union",
 "year": "2021",
 "address": "New Orleans LA USA & Online, 13-17 December 2021, https://www.agu.org/Fall-Meeting",
-"project": "Deepcloud",
+"project": "DEEPCLOUD",
 "url": "https://agu.confex.com/agu/fm21/meetingapp.cgi/Paper/981285",
 "raw": "@inproceedings{LGC21AGU,\n\ttitle        = {{Clouds aware flood extent segmentation for emergency response services}},\n\tauthor       = {Gonzalo Mateo-Garcia and Enrique Portales and Fei Liu and Edoardo Nemni and J. Emmanuel Johnson and Lucas Kruitwagen and Guy Schumann and Luis Gómez-Chova},\n\tyear         = 2021,\n\tmonth        = dec,\n\tbooktitle    = {AGU American Geophysical Union},\n\taddress      = {New Orleans LA USA & Online, 13-17 December 2021, https://www.agu.org/Fall-Meeting},\n\turl          = {https://agu.confex.com/agu/fm21/meetingapp.cgi/Paper/981285},\n\torganization = {AGU},\n\tproject      = {deepcloud}\n}"
 },
@@ -3827,7 +3827,7 @@
 ],
 "booktitle": "International Conference on Machine Learning - Workshop on Tackling Climate Change with Machine Learning",
 "year": "2021",
-"project": "Usmile",
+"project": "USMILE",
 "arxiv": "https://www.climatechange.ai/papers/icml2021/34/paper.pdf",
 "video": "https://www.climatechange.ai/papers/icml2021/34",
 "raw": "@inproceedings{varandolearning,\n\ttitle        = {{Learning Granger Causal Feature Representations}},\n\tauthor       = {Varando, Gherardo and Fernández-Torres, Miguel-Angel and Camps-Valls, Gustau},\n\tyear         = 2021,\n\tbooktitle    = {International Conference on Machine Learning - Workshop on Tackling Climate Change with Machine Learning},\n\teditor       = {ICML},\n\tproject      = {usmile},\n\torganization = {ICML},\n\tvideo        = {https://www.climatechange.ai/papers/icml2021/34},\n\tarxiv        = {https://www.climatechange.ai/papers/icml2021/34/paper.pdf}\n}"
@@ -3867,7 +3867,7 @@
 "booktitle": "BiDS Big Data from Space",
 "year": "2021",
 "address": "Online Everywhere, https://www.bigdatafromspace2021.org/",
-"project": "Deepcube",
+"project": "DEEPCUBE",
 "url": "http://cgi.di.uoa.gr/~koubarak/publications/2021/BIDS21_paper54.pdf",
 "raw": "@inproceedings{CampsValls21deepcube,\n\ttitle        = {{deepcube: Explainable AI Pipelines for Big Copernicus data}},\n\tauthor       = {Ioannis Papoutsis and Alkyoni Baglatzi and Souzana Touloumtzi and Markus Reichstein and Nuno Carvalhais and Fabian Gans and Gustau Camps-Valls and Maria Piles and Theofilos Kakantousis and Jim Dowling and Manolis Koubarakis and Dimitris Bilidas and Despina-Athanasia Pantazi and George Stamoulis and Christophe Demange and Leo-Gad Journel and Marco Bianchi and Chiara Gervasi and Alessio Rucci and Ioannis Tsampoulatidis and Eleni Kamateri and Tarek Habib and Alejandro Díaz Bolívar and Zisoula Ntasiou and Anastasios Paschalis},\n\tyear         = 2021,\n\tmonth        = may,\n\tbooktitle    = {BiDS Big Data from Space},\n\taddress      = {Online Everywhere, https://www.bigdatafromspace2021.org/},\n\turl          = {http://cgi.di.uoa.gr/~koubarak/publications/2021/BIDS21_paper54.pdf},\n\tproject      = {deepcube}\n}"
 },
@@ -3892,7 +3892,7 @@
 "volume": "Vol. 23",
 "year": "2021",
 "address": "Online, 19-30 April 2021",
-"project": "Usmile",
+"project": "USMILE",
 "doi": "https://doi.org/10.5194/egusphere-egu21-9484",
 "doi_bare": "10.5194/egusphere-egu21-9484",
 "doi_url": "https://doi.org/10.5194/egusphere-egu21-9484",
@@ -3911,7 +3911,7 @@
 ],
 "booktitle": "AGU Fall Meeting 2021",
 "year": "2021",
-"project": "Imiracli",
+"project": "IMIRACLI",
 "url": "https://scholar.google.es/scholar?hl=es&as_sdt=0%2C5&q=Aerosol+Optical+Depth+Retrievals+with+Invertible+Neural+Networks&btnG=",
 "raw": "@inproceedings{pelucchi2021aerosol,\n\ttitle        = {Aerosol Optical Depth Retrievals with Invertible Neural Networks},\n\tauthor       = {Pelucchi, Paolo and Stier, Philip and Camps-Valls, Gustau},\n\tyear         = 2021,\n\tbooktitle    = {AGU Fall Meeting 2021},\n\turl          = {https://scholar.google.es/scholar?hl=es&as_sdt=0%2C5&q=Aerosol+Optical+Depth+Retrievals+with+Invertible+Neural+Networks&btnG=},\n\torganization = {AGU},\n\tproject      = {imiracli}\n}"
 },
@@ -3930,7 +3930,7 @@
 "volume": "Vol. 23",
 "year": "2021",
 "address": "Online, 19-30 April 2021",
-"project": "Usmile",
+"project": "USMILE",
 "doi": "https://doi.org/10.5194/egusphere-egu21-14519",
 "doi_bare": "10.5194/egusphere-egu21-14519",
 "doi_url": "https://doi.org/10.5194/egusphere-egu21-14519",
@@ -3962,7 +3962,7 @@
 "volume": "Vol. 23",
 "year": "2021",
 "address": "Online, 19-30 April 2021",
-"project": "Usmile",
+"project": "USMILE",
 "doi": "https://doi.org/10.5194/egusphere-egu21-14263",
 "doi_bare": "10.5194/egusphere-egu21-14263",
 "doi_url": "https://doi.org/10.5194/egusphere-egu21-14263",
@@ -3984,7 +3984,7 @@
 "volume": "Vol. 23",
 "year": "2021",
 "address": "Online, 19-30 April 2021",
-"project": "Usmile",
+"project": "USMILE",
 "doi": "https://doi.org/10.5194/egusphere-egu21-15729",
 "doi_bare": "10.5194/egusphere-egu21-15729",
 "doi_url": "https://doi.org/10.5194/egusphere-egu21-15729",
@@ -4011,7 +4011,7 @@
 "volume": "Vol. 23",
 "year": "2021",
 "address": "Online, 19-30 April 2021",
-"project": "Usmile",
+"project": "USMILE",
 "doi": "https://doi.org/10.5194/egusphere-egu21-15835",
 "doi_bare": "10.5194/egusphere-egu21-15835",
 "doi_url": "https://doi.org/10.5194/egusphere-egu21-15835",
@@ -4031,7 +4031,7 @@
 "volume": "Vol. 23",
 "year": "2021",
 "address": "Online, 19-30 April 2021",
-"project": "Usmile",
+"project": "USMILE",
 "doi": "https://doi.org/10.5194/egusphere-egu21-15196",
 "doi_bare": "10.5194/egusphere-egu21-15196",
 "doi_url": "https://doi.org/10.5194/egusphere-egu21-15196",
@@ -4054,7 +4054,7 @@
 "booktitle": "IGARSS 2021 - 2021 IEEE International Geoscience and Remote Sensing Symposium",
 "year": "2021",
 "address": "Brussels, Belgium",
-"project": "Usmile",
+"project": "USMILE",
 "raw": "@inproceedings{Vicent2021igarss_atmos,\n\ttitle        = {{Atmospheric Correction Of Satellite Data Based On Emulation Of Atmospheric Radiative Transfer Models}},\n\tauthor       = {Vicent, J. and Verrelst, J. and Rivera Caicedo, JP and Muñoz Marí, J and Camps Valls, G. and Berthelot, B.},\n\tyear         = 2021,\n\tmonth        = jul,\n\tbooktitle    = {{IGARSS} 2021 - 2021 {IEEE} {International} {Geoscience} and {Remote} {Sensing} {Symposium}},\n\taddress      = {Brussels, Belgium},\n\tdoi          = {},\n\tvideo        = {},\n\tpdf          = {},\n\tproject      = {usmile}\n}"
 },
 {
@@ -4100,7 +4100,7 @@
 "booktitle": "IGARSS 2021 - 2021 IEEE International Geoscience and Remote Sensing Symposium",
 "year": "2021",
 "address": "Brussels, Belgium",
-"project": "Usmile",
+"project": "USMILE",
 "raw": "@inproceedings{CampsValls2021_paml,\n\ttitle        = {{Physics-Aware Machine Learning For Geosciences And Remote Sensing}},\n\tauthor       = {Camps-Valls, G. and Svendsen, DH and Cortés, J and Moreno-Martínez, A and Pérez-Suay, A and Adsuara, J and Martin, I and Piles, M and Muñoz-Marí, J and Luca Martino, L.},\n\tyear         = 2021,\n\tmonth        = jul,\n\tbooktitle    = {{IGARSS} 2021 - 2021 {IEEE} {International} {Geoscience} and {Remote} {Sensing} {Symposium}},\n\taddress      = {Brussels, Belgium},\n\tdoi          = {},\n\tvideo        = {},\n\tpdf          = {},\n\tproject      = {usmile}\n}"
 },
 {
@@ -4133,7 +4133,7 @@
 "booktitle": "IGARSS 2021 - 2021 IEEE International Geoscience and Remote Sensing Symposium",
 "year": "2021",
 "address": "Brussels, Belgium",
-"project": "Usmile",
+"project": "USMILE",
 "raw": "@inproceedings{Piles21igarss,\n\ttitle        = {{Global Cropland Production Monitoring With Gaussian Processes}},\n\tauthor       = {Piles, M. and Mateo-Sanchís, A. and Muñoz-Marí, J. and Camps-Valls, G. and Waldner, F. and  Rembold, F. and Meroni, M.},\n\tyear         = 2021,\n\tmonth        = jul,\n\tbooktitle    = {{IGARSS} 2021 - 2021 {IEEE} {International} {Geoscience} and {Remote} {Sensing} {Symposium}},\n\taddress      = {Brussels, Belgium},\n\tdoi          = {},\n\tvideo        = {},\n\tpdf          = {},\n\tproject      = {usmile}\n}"
 },
 {
@@ -4155,7 +4155,7 @@
 "booktitle": "IGARSS 2021 - 2021 IEEE International Geoscience and Remote Sensing Symposium",
 "year": "2021",
 "address": "Brussels, Belgium",
-"project": "Usmile",
+"project": "USMILE",
 "raw": "@inproceedings{Izquierdo21igarss,\n\ttitle        = {{Global Upscaling Of The MODIS Land Cover With Google Earth Engineand Landsat Data}},\n\tauthor       = {Izquierdo-Verdiguier, E and Moreno-Martinez, A and Adsuara, J and Muñoz-Marí, J and Camps-Valls, G and Maneta, MP and Kimball, J and Clinton, N and Running, SW},\n\tyear         = 2021,\n\tmonth        = jul,\n\tbooktitle    = {{IGARSS} 2021 - 2021 {IEEE} {International} {Geoscience} and {Remote} {Sensing} {Symposium}},\n\taddress      = {Brussels, Belgium},\n\tdoi          = {},\n\tvideo        = {},\n\tpdf          = {},\n\tproject      = {usmile}\n}"
 },
 {
@@ -4236,7 +4236,7 @@
 "booktitle": "NeurIPS AI for Earth Sciences",
 "year": "2020",
 "address": "Online Everywhere, https://ai4earthscience.github.io/neurips-2020-workshop/",
-"project": "Sedal, Usmile",
+"project": "SEDAL, USMILE",
 "arxiv": "https://arxiv.org/pdf/2012.03338.pdf",
 "raw": "@inproceedings{Morata20neuripsEarth,\n\ttitle        = {{Understanding Climate Impacts on Vegetation with  Gaussian Processes in Granger Causality}},\n\tauthor       = {Morata, M. and Bueso, D. and Piles, M. and Camps-Valls, G.},\n\tyear         = 2020,\n\tmonth        = dec,\n\tbooktitle    = {NeurIPS AI for Earth Sciences},\n\taddress      = {Online Everywhere, https://ai4earthscience.github.io/neurips-2020-workshop/},\n\tproject      = {sedal,usmile},\n\tarxiv        = {https://arxiv.org/pdf/2012.03338.pdf}\n}"
 },
@@ -4253,7 +4253,7 @@
 "booktitle": "NeurIPS ML for Development",
 "year": "2020",
 "address": "Online Everywhere, https://sites.google.com/view/ml4d",
-"project": "Bbva, Deepcube",
+"project": "BBVA, DEEPCUBE",
 "arxiv": "https://arxiv.org/abs/2011.08901",
 "raw": "@inproceedings{Tarraga20neuripsDevelopment,\n\ttitle        = {{Learning drivers of climate-induced human migrations with Gaussian processes}},\n\tauthor       = {Tarraga, J.M. and Piles, M. and Camps-Valls, G.},\n\tyear         = 2020,\n\tmonth        = dec,\n\tbooktitle    = {NeurIPS ML for Development},\n\taddress      = {Online Everywhere, https://sites.google.com/view/ml4d},\n\tproject      = {bbva,deepcube},\n\tarxiv        = {https://arxiv.org/abs/2011.08901}\n}"
 },
@@ -4269,7 +4269,7 @@
 "booktitle": "AGU Fall Meeting",
 "year": "2020",
 "address": "Online Everywhere",
-"project": "Leaves",
+"project": "LEAVES",
 "url": "https://agu.confex.com/agu/fm20/prelim.cgi/Paper/722309",
 "raw": "@inproceedings{Rajadel20agu,\n\ttitle        = {{Early crop mapping at continental scales derived from reconstructed high spatial resolution images}},\n\tauthor       = {Clara Rajadel, Emma Izquierdo, Alvaro Moreno, Clement Atzberger, Santiago Begueria, Marco P Maneta, John S Kimball, Gustau Camps-Valls and Steven W Running},\n\tyear         = 2020,\n\tmonth        = {1-17 December 2020},\n\tbooktitle    = {AGU Fall Meeting},\n\taddress      = {Online Everywhere},\n\turl          = {https://agu.confex.com/agu/fm20/prelim.cgi/Paper/722309},\n\tproject      = {leaves}\n}"
 },
@@ -4285,7 +4285,7 @@
 "booktitle": "AGU Fall Meeting",
 "year": "2020",
 "address": "Online Everywhere",
-"project": "Sedal, Usmile",
+"project": "SEDAL, USMILE",
 "url": "https://agu.confex.com/agu/fm20/prelim.cgi/Paper/730371",
 "raw": "@inproceedings{Martinez20agu,\n\ttitle        = {{High spatial resolution gap free biophysical variables for Earth Observation at continental scales with Google Earth Engine}},\n\tauthor       = {Laura Martínez-Ferrer, Alvaro Moreno, Jordi Muñoz, Emma Izquierdo-Verdiguier, Manuel Campos-Taberner, Javier García Haro, J. Emmanuel Johnson, Marco P Maneta, Nathaniel Robinson, Nicholas Clinton, John Kimball, Steven W Running and Gustau Camps-Valls},\n\tyear         = 2020,\n\tmonth        = {1-17 December 2020},\n\tbooktitle    = {AGU Fall Meeting},\n\taddress      = {Online Everywhere},\n\turl          = {https://agu.confex.com/agu/fm20/prelim.cgi/Paper/730371},\n\tproject      = {usmile,sedal}\n}"
 },
@@ -4301,7 +4301,7 @@
 "booktitle": "AGU Fall Meeting",
 "year": "2020",
 "address": "Online Everywhere",
-"project": "Usmile",
+"project": "USMILE",
 "url": "https://agu.confex.com/agu/fm20/prelim.cgi/Paper/719871",
 "raw": "@inproceedings{Eyring20agu,\n\ttitle        = {{Machine Learning Based Process-oriented Earth System Model Evaluation}},\n\tauthor       = {Veronika Eyring, Gustau Camps-Valls, Pierre Gentine, Markus Reichstein, Jakob Runge and Manuel Schlund},\n\tyear         = 2020,\n\tmonth        = {1-17 December 2020},\n\tbooktitle    = {AGU Fall Meeting},\n\taddress      = {Online Everywhere},\n\turl          = {https://agu.confex.com/agu/fm20/prelim.cgi/Paper/719871},\n\tproject      = {usmile}\n}"
 },
@@ -4317,7 +4317,7 @@
 "booktitle": "AGU Fall Meeting",
 "year": "2020",
 "address": "Online Everywhere",
-"project": "Leaves, Sedal",
+"project": "LEAVES, SEDAL",
 "url": "https://agu.confex.com/agu/fm20/prelim.cgi/Paper/719677",
 "raw": "@inproceedings{Mateo20agu,\n\ttitle        = {{Satellite and model-based data integration for crop yield estimation and interpretability in Europe}},\n\tauthor       = {Anna Mateo-Sanchis, Maria Piles, Julia Amorós-López, Jordi Muñoz, Jose Adsuara, Alvaro Moreno and Gustau Camps-Valls},\n\tyear         = 2020,\n\tmonth        = {1-17 December 2020},\n\tbooktitle    = {AGU Fall Meeting},\n\taddress      = {Online Everywhere},\n\turl          = {https://agu.confex.com/agu/fm20/prelim.cgi/Paper/719677},\n\tproject      = {sedal,leaves}\n}"
 },
@@ -4347,7 +4347,7 @@
 "booktitle": "AGU Fall Meeting",
 "year": "2020",
 "address": "Online Everywhere",
-"project": "Sedal, Usmile",
+"project": "SEDAL, USMILE",
 "url": "https://agu.confex.com/agu/fm20/prelim.cgi/Paper/730739",
 "raw": "@inproceedings{Johnson20agu,\n\ttitle        = {{Gaussianization of Earth Observation data - Invertible Transformations for Multidimensional Data Analysis}},\n\tauthor       = {J. Emmanuel Johnson, Maria Piles, Valero Laparra and Gustau Camps-Valls},\n\tyear         = 2020,\n\tmonth        = {1-17 December 2020},\n\tbooktitle    = {AGU Fall Meeting},\n\taddress      = {Online Everywhere},\n\turl          = {https://agu.confex.com/agu/fm20/prelim.cgi/Paper/730739},\n\tproject      = {sedal,usmile}\n}"
 },
@@ -4384,7 +4384,7 @@
 "booktitle": "https://opc.mfo.de/show_workshop?id=3575",
 "year": "2020",
 "address": "Oberwolfach, Germany",
-"project": "Sedal, Usmile",
+"project": "SEDAL, USMILE",
 "url": "https://opc.mfo.de/show_workshop?id=3575",
 "raw": "@inproceedings{CampsReichstein2020,\n\ttitle        = {{ELLIS Workshop on Machine Learning in Earth and Climate Sciences}},\n\tauthor       = {Gustau Camps-Valls and Markus Reichstein},\n\tyear         = 2020,\n\tbooktitle    = {https://opc.mfo.de/show_workshop?id=3575},\n\taddress      = {Oberwolfach, Germany},\n\turl          = {https://opc.mfo.de/show_workshop?id=3575},\n\tnote         = {1-4 March 2020 (a few days before the European lockdown because of COVID)},\n\tproject      = {sedal,usmile}\n}"
 },
@@ -4400,7 +4400,7 @@
 "booktitle": "AGU Fall Meeting",
 "year": "2020",
 "address": "Online Everywhere",
-"project": "Sedal, Usmile",
+"project": "SEDAL, USMILE",
 "url": "https://agu.confex.com/agu/fm20/prelim.cgi/Paper/691597",
 "raw": "@inproceedings{Cortes20agu,\n\ttitle        = {{Physics-aware Nonlinear Modeling and Inference from Earth Data}},\n\tauthor       = {Jordi Cortes-Andres, Adrian Perez-Suay and Gustau Camps-Valls},\n\tyear         = 2020,\n\tmonth        = {1-17 December 2020},\n\tbooktitle    = {AGU Fall Meeting},\n\taddress      = {Online Everywhere},\n\turl          = {https://agu.confex.com/agu/fm20/prelim.cgi/Paper/691597},\n\tproject      = {sedal,usmile}\n}"
 },
@@ -4416,7 +4416,7 @@
 "booktitle": "AGU Fall Meeting",
 "year": "2020",
 "address": "Online Everywhere",
-"project": "Leaves, Sedal, Usmile",
+"project": "LEAVES, SEDAL, USMILE",
 "url": "https://agu.confex.com/agu/fm20/prelim.cgi/Paper/691707",
 "raw": "@inproceedings{Bueso20agu,\n\ttitle        = {{Quantifying the impact of 2015-2016 ENSO over global soil and vegetation water content by causality models}},\n\tauthor       = {Diego Bueso, Maria Piles and Gustau Camps-Valls},\n\tyear         = 2020,\n\tmonth        = {1-17 December 2020},\n\tbooktitle    = {AGU Fall Meeting},\n\taddress      = {Online Everywhere},\n\turl          = {https://agu.confex.com/agu/fm20/prelim.cgi/Paper/691707},\n\tproject      = {sedal,usmile,leaves}\n}"
 },
@@ -4432,7 +4432,7 @@
 "booktitle": "AGU Fall Meeting",
 "year": "2020",
 "address": "Online Everywhere",
-"project": "Leaves, Sedal, Usmile",
+"project": "LEAVES, SEDAL, USMILE",
 "url": "https://agu.confex.com/agu/fm20/prelim.cgi/Paper/694728",
 "raw": "@inproceedings{Nieves20agu,\n\ttitle        = {{Strengthening our knowledge on regional sea level rise through proxy data and machine learning}},\n\tauthor       = {Veronica Nieves, Cristina Radin and Gustau Camps-Valls},\n\tyear         = 2020,\n\tmonth        = {1-17 December 2020},\n\tbooktitle    = {AGU Fall Meeting},\n\taddress      = {Online Everywhere},\n\turl          = {https://agu.confex.com/agu/fm20/prelim.cgi/Paper/694728},\n\tproject      = {sedal,usmile,leaves}\n}"
 },
@@ -4447,7 +4447,7 @@
 "booktitle": "The ESA Phi-week 2020",
 "year": "2020",
 "address": "ESA-ESRIN, Italy",
-"project": "Sedal",
+"project": "SEDAL",
 "pdf": "http://isp.uv.es/slides/PHIWEEK20_PhysicsMLinterplay.pdf",
 "video": "https://livestream.com/esa/phiweek2020/videos/211492628",
 "raw": "@inproceedings{CampsValls20phiweek,\n\ttitle        = {{Living in the Physics and Machine Learning Interplay - An AI agenda with examples for the DTE}},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2020,\n\tmonth        = {28-30 September 2020.},\n\tbooktitle    = {The ESA Phi-week 2020},\n\taddress      = {ESA-ESRIN, Italy},\n\tvideo        = {https://livestream.com/esa/phiweek2020/videos/211492628},\n\tpdf          = {http://isp.uv.es/slides/PHIWEEK20_PhysicsMLinterplay.pdf},\n\tproject      = {sedal}\n}"
@@ -4471,7 +4471,7 @@
 ],
 "booktitle": "AAAI Fall Series 2020 Symposium on Physics-guided AI for Accelerating Scientific Discovery",
 "year": "2020",
-"project": "Kermes, Sedal",
+"project": "KERMES, SEDAL",
 "raw": "@inproceedings{CampsValls20physicsaware,\n\ttitle        = {{Living in the Physics -- Machine Learning Interplay for Earth Observation}},\n\tauthor       = {Camps-Valls, G. and Svendsen, D. H. and Cortes-Andres, J. and Moreno-Martinez, J. and Perez-Suay, A. and Adsuara, J. and Martin, I. and Piles, M. and Munoz-Mari, J. and Martino, L.},\n\tyear         = 2020,\n\tmonth        = {},\n\tbooktitle    = {AAAI Fall Series 2020 Symposium on Physics-guided AI for Accelerating Scientific Discovery},\n\taddress      = {},\n\tpages        = {},\n\tdoi          = {},\n\tnote         = {},\n\tproject      = {sedal,kermes}\n}"
 },
 {
@@ -4488,7 +4488,7 @@
 ],
 "booktitle": "JMLR: Workshop and Conference Proceedings. 2020 NeurIPS2019 Competition & Demonstration Track PMLR Post-proceedings",
 "year": "2020",
-"project": "Sedal",
+"project": "SEDAL",
 "pdf": "http://proceedings.mlr.press/v123/runge20a/runge20a.pdf",
 "raw": "@inproceedings{Runge2020pmlr,\n\ttitle        = {{The Causality for Climate Competition}},\n\tauthor       = {Jakob Runge, J. and Xavier-Andoni, T. and Bruhns, M. and Mu{ñ}oz-Marí, J. and Camps-Valls, G.},\n\tyear         = 2020,\n\tmonth        = {},\n\tbooktitle    = {JMLR: Workshop and Conference Proceedings. 2020 NeurIPS2019 Competition & Demonstration Track PMLR Post-proceedings},\n\taddress      = {},\n\tpages        = {},\n\tdoi          = {},\n\tnote         = {},\n\tpdf          = {http://proceedings.mlr.press/v123/runge20a/runge20a.pdf},\n\tproject      = {sedal}\n}"
 },
@@ -4510,7 +4510,7 @@
 "year": "2020",
 "publisher": "Copernicus GmbH",
 "address": "Nice, France",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{sauzede2020estimation,\n\ttitle        = {{Estimation of Oceanic Particulate Organic Carbon with Machine Learning}},\n\tauthor       = {Sauz{è}de, R and Johnson, J Emmanuel and Claustre, H and Camps-Valls, G and Ruescas, AB},\n\tyear         = 2020,\n\tmonth        = jun,\n\tjournal      = {ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences},\n\tpublisher    = {Copernicus GmbH},\n\taddress      = {Nice, France},\n\tvolume       = 2,\n\tpages        = {949--956},\n\tproject      = {sedal}\n}"
 },
 {
@@ -4525,7 +4525,7 @@
 "booktitle": "IGARSS 2020 - 2020 IEEE International Geoscience and Remote Sensing Symposium",
 "year": "2020",
 "address": "Waikoloa, Hawaii, USA",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Taskin2020igarss_manifold,\n\ttitle        = {{Manifold Learning With High Dimensional Model Representations}},\n\tauthor       = {Taskin, G. and Camps-Valls, G.},\n\tyear         = 2020,\n\tmonth        = jul,\n\tbooktitle    = {{IGARSS} 2020 - 2020 {IEEE} {International} {Geoscience} and {Remote} {Sensing} {Symposium}},\n\taddress      = {Waikoloa, Hawaii, USA},\n\tpages        = {},\n\tdoi          = {},\n\tnote         = {},\n\tproject      = {sedal}\n}"
 },
 {
@@ -4542,7 +4542,7 @@
 "booktitle": "IGARSS 2020 - 2020 IEEE International Geoscience and Remote Sensing Symposium",
 "year": "2020",
 "address": "Waikoloa, Hawaii, USA",
-"project": "Sedal",
+"project": "SEDAL",
 "pdf": "http://isp.uv.es/slides/AdvancesDL.pdf",
 "video": "http://isp.uv.es/videos/AdvancesDL-2020-07-09_11-38-45.mkv",
 "raw": "@inproceedings{CampsValls2020igarss_hybridxai,\n\ttitle        = {{Advancing Deep Learning For Earth Sciences: From Hybrid Modeling To Interpretability}},\n\tauthor       = {Camps-Valls, G. and Reichstein, M. and Zhu, Z. and Tuia, D.},\n\tyear         = 2020,\n\tmonth        = jul,\n\tbooktitle    = {{IGARSS} 2020 - 2020 {IEEE} {International} {Geoscience} and {Remote} {Sensing} {Symposium}},\n\taddress      = {Waikoloa, Hawaii, USA},\n\tdoi          = {},\n\tvideo        = {http://isp.uv.es/videos/AdvancesDL-2020-07-09_11-38-45.mkv},\n\tpdf          = {http://isp.uv.es/slides/AdvancesDL.pdf},\n\tproject      = {sedal}\n}"
@@ -4564,7 +4564,7 @@
 "booktitle": "IGARSS 2020 - 2020 IEEE International Geoscience and Remote Sensing Symposium",
 "year": "2020",
 "address": "Waikoloa, Hawaii, USA",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Adsuara2020igarss_ode,\n\ttitle        = {{Discovering Differential Equations from Earth Observation Data}},\n\tauthor       = {Adsuara, J.E. and Perez-Suay, A. and Moreno-Martínez, A. and Camps-Valls, G. and Kraemer, G. and Reichstein, M. and Mahecha, M.},\n\tyear         = 2020,\n\tmonth        = jul,\n\tbooktitle    = {{IGARSS} 2020 - 2020 {IEEE} {International} {Geoscience} and {Remote} {Sensing} {Symposium}},\n\taddress      = {Waikoloa, Hawaii, USA},\n\tpages        = {},\n\tdoi          = {},\n\tnote         = {},\n\tproject      = {sedal}\n}"
 },
 {
@@ -4584,7 +4584,7 @@
 "booktitle": "IGARSS 2020 - 2020 IEEE International Geoscience and Remote Sensing Symposium",
 "year": "2020",
 "address": "Waikoloa, Hawaii, USA",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{PerezSuay2020igarss_xai,\n\ttitle        = {{Interpretability of Recurrent Neural Networks in Remote Sensing}},\n\tauthor       = {Perez-Suay, A. and Adsuara, J. E. and Piles, M. and Martinez-Ferrer, L. and Diaz, E. and Moreno-Martinez, A. and Camps-Valls, G.},\n\tyear         = 2020,\n\tmonth        = jul,\n\tbooktitle    = {{IGARSS} 2020 - 2020 {IEEE} {International} {Geoscience} and {Remote} {Sensing} {Symposium}},\n\taddress      = {Waikoloa, Hawaii, USA},\n\tpages        = {},\n\tdoi          = {},\n\tnote         = {},\n\tproject      = {sedal}\n}"
 },
 {
@@ -4610,7 +4610,7 @@
 "booktitle": "IGARSS 2020 - 2020 IEEE International Geoscience and Remote Sensing Symposium",
 "year": "2020",
 "address": "Waikoloa, Hawaii, USA",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Moreno2020igarss_kf,\n\ttitle        = {{Down-Scaling MODIS Vegetation Products With Landsat Gap Filled Surface Reflectance In Google Earth Engine}},\n\tauthor       = {Moreno-Martinez, A. and Izquierdo-Verdiguier, E. and Camps-Valls, G. and Maneta, M. and Muñoz-Marí, J. and Robinson, N. and Adsuara, J.E. and Campos, M. and García-Haro, J. and Perez, A. and Clinton, N. and Kimball, J. and Running, S.W.},\n\tyear         = 2020,\n\tmonth        = jul,\n\tbooktitle    = {{IGARSS} 2020 - 2020 {IEEE} {International} {Geoscience} and {Remote} {Sensing} {Symposium}},\n\taddress      = {Waikoloa, Hawaii, USA},\n\tpages        = {},\n\tdoi          = {},\n\tnote         = {},\n\tproject      = {sedal}\n}"
 },
 {
@@ -4627,7 +4627,7 @@
 "booktitle": "45th IEEE International Conference on Acoustics, Speech, and Signal Processing (IEEE ICASSP)",
 "year": "2020",
 "address": "4-8 May 2020, Barcelona",
-"project": "Kermes, Sedal",
+"project": "KERMES, SEDAL",
 "url": "https://cmsworkshops.com/ICASSP2020/Papers/ViewPaper.asp?PaperNum=2478",
 "raw": "@inproceedings{Martino20emulation,\n\ttitle        = {{Adaptive sequential interpolator using active learning for efficient emulation of complex systems}},\n\tauthor       = {Martino, L. and Svendsen, D.H. and Vicent, J. and Camps-Valls, G.},\n\tyear         = 2020,\n\tbooktitle    = {45th IEEE International Conference on Acoustics, Speech, and Signal Processing (IEEE ICASSP)},\n\taddress      = {4-8 May 2020, Barcelona},\n\turl          = {https://cmsworkshops.com/ICASSP2020/Papers/ViewPaper.asp?PaperNum=2478},\n\tproject      = {sedal,kermes}\n}"
 },
@@ -4644,7 +4644,7 @@
 "booktitle": "45th IEEE International Conference on Acoustics, Speech, and Signal Processing (IEEE ICASSP)",
 "year": "2020",
 "address": "4-8 May 2020, Barcelona",
-"project": "Kermes, Sedal",
+"project": "KERMES, SEDAL",
 "url": "https://cmsworkshops.com/ICASSP2020/Papers/ViewPaper.asp?PaperNum=4023",
 "raw": "@inproceedings{Martino20lai,\n\ttitle        = {{Particle group metropolis methods for tracking the leaf area index}},\n\tauthor       = {Martino, L. and Elvira, V. and Camps-Valls, G.},\n\tyear         = 2020,\n\tbooktitle    = {45th IEEE International Conference on Acoustics, Speech, and Signal Processing (IEEE ICASSP)},\n\taddress      = {4-8 May 2020, Barcelona},\n\turl          = {https://cmsworkshops.com/ICASSP2020/Papers/ViewPaper.asp?PaperNum=4023},\n\tproject      = {sedal,kermes}\n}"
 },
@@ -4661,7 +4661,7 @@
 "volume": "Vol. 22",
 "year": "2020",
 "address": "Vienna, Austria, 3-8 May 2020",
-"project": "Kermes, Sedal",
+"project": "KERMES, SEDAL",
 "pdf": "https://presentations.copernicus.org/EGU2020/EGU2020-21329_presentation.pdf",
 "raw": "@inproceedings{MartinezFerrer20EGU,\n\ttitle        = {{Multisensor crop yield estimation with machine learning}},\n\tauthor       = {Laura Martínez Ferrer, Maria Piles, and Gustau Camps-Valls},\n\tyear         = 2020,\n\tbooktitle    = {EGU General Assembly, Geophysical Research Abstracts},\n\taddress      = {Vienna, Austria, 3-8 May 2020},\n\tvolume       = {Vol. 22},\n\teditor       = {EGU General Assembly 2020},\n\torganization = {EGU},\n\tproject      = {sedal,kermes},\n\tpdf          = {https://presentations.copernicus.org/EGU2020/EGU2020-21329_presentation.pdf}\n}"
 },
@@ -4678,7 +4678,7 @@
 "volume": "Vol. 22",
 "year": "2020",
 "address": "Vienna, Austria, 3-8 May 2020",
-"project": "Sedal",
+"project": "SEDAL",
 "pdf": "https://presentations.copernicus.org/EGU2020/EGU2020-19620_presentation.pdf",
 "raw": "@inproceedings{Adsuara20EGU,\n\ttitle        = {{Learning ordinary differential equations from remote sensing data}},\n\tauthor       = {Jose E. Adsuara, Adrián Pérez-Suay, Alvaro Moreno-Martínez, Anna Mateo-Sanchis, Maria Piles, Guido Kraemer, Markus Reichstein, Miguel D. Mahecha, and Gustau Camps-Valls},\n\tyear         = 2020,\n\tbooktitle    = {EGU General Assembly, Geophysical Research Abstracts},\n\taddress      = {Vienna, Austria, 3-8 May 2020},\n\tvolume       = {Vol. 22},\n\teditor       = {EGU General Assembly 2020},\n\torganization = {EGU},\n\tproject      = {sedal},\n\tpdf          = {https://presentations.copernicus.org/EGU2020/EGU2020-19620_presentation.pdf}\n}"
 },
@@ -4694,7 +4694,7 @@
 "volume": "Vol. 22",
 "year": "2020",
 "address": "Vienna, Austria, 3-8 May 2020",
-"project": "Kermes, Sedal",
+"project": "KERMES, SEDAL",
 "pdf": "https://presentations.copernicus.org/EGU2020/EGU2020-21329_presentation.pdf",
 "raw": "@inproceedings{Mateo20EGU,\n\ttitle        = {{Learning main drivers of crop dynamics and production in Europe}},\n\tauthor       = {Anna Mateo Sanchis et al.},\n\tyear         = 2020,\n\tbooktitle    = {EGU General Assembly, Geophysical Research Abstracts},\n\taddress      = {Vienna, Austria, 3-8 May 2020},\n\tvolume       = {Vol. 22},\n\teditor       = {EGU General Assembly 2020},\n\tproject      = {sedal,kermes},\n\torganization = {EGU},\n\tpdf          = {https://presentations.copernicus.org/EGU2020/EGU2020-21329_presentation.pdf}\n}"
 },
@@ -4711,7 +4711,7 @@
 "volume": "Vol. 22",
 "year": "2020",
 "address": "Vienna, Austria, 3-8 May 2020",
-"project": "Kermes, Sedal",
+"project": "KERMES, SEDAL",
 "pdf": "https://presentations.copernicus.org/EGU2020/EGU2020-18028_presentation.pdf",
 "raw": "@inproceedings{Bueso20EGU,\n\ttitle        = {{Unraveling the time-scale teleconnections between soil moisture and vegetation}},\n\tauthor       = {Diego Bueso, Maria Piles, and Gustau Camps-Valls},\n\tyear         = 2020,\n\tbooktitle    = {EGU General Assembly, Geophysical Research Abstracts},\n\taddress      = {Vienna, Austria, 3-8 May 2020},\n\tvolume       = {Vol. 22},\n\teditor       = {EGU General Assembly 2020},\n\torganization = {EGU},\n\tproject      = {sedal,kermes},\n\tpdf          = {https://presentations.copernicus.org/EGU2020/EGU2020-18028_presentation.pdf}\n}"
 },
@@ -4728,7 +4728,7 @@
 "volume": "Vol. 22",
 "year": "2020",
 "address": "Vienna, Austria, 3-8 May 2020",
-"project": "Kermes, Sedal",
+"project": "KERMES, SEDAL",
 "pdf": "https://presentations.copernicus.org/EGU2020/EGU2020-14677_presentation.pdf",
 "raw": "@inproceedings{CampsValls20EGU,\n\ttitle        = {{Advances in Gaussian Processes for Earth Sciences: Physics-aware, interpretability and consistency}},\n\tauthor       = {Gustau Camps-Valls, Daniel Svendsen, Luca Martino, Adrian Pérez-Suay, Maria Piles, and Jordi Muñoz-Marí},\n\tyear         = 2020,\n\tbooktitle    = {EGU General Assembly, Geophysical Research Abstracts},\n\taddress      = {Vienna, Austria, 3-8 May 2020},\n\tvolume       = {Vol. 22},\n\teditor       = {EGU General Assembly 2020},\n\torganization = {EGU},\n\tproject      = {sedal,kermes},\n\tpdf          = {https://presentations.copernicus.org/EGU2020/EGU2020-14677_presentation.pdf}\n}"
 },
@@ -4745,7 +4745,7 @@
 "volume": "Vol. 22",
 "year": "2020",
 "address": "Vienna, Austria, 3-8 May 2020",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Berger20EGU,\n\ttitle        = {{Spectroscopic retrieval of above-ground crop nitrogen content with a hybrid machine learning regression method}},\n\tauthor       = {Katja Berger, Gustau Camps-Valls, Jochem Verrelst, Jean-Baptiste Féret, Matthias Wocher, and Tobias Hank},\n\tyear         = 2020,\n\tbooktitle    = {EGU General Assembly, Geophysical Research Abstracts},\n\taddress      = {Vienna, Austria, 3-8 May 2020},\n\tvolume       = {Vol. 22},\n\teditor       = {EGU General Assembly 2020},\n\torganization = {EGU},\n\tproject      = {sedal}\n}"
 },
 {
@@ -4760,7 +4760,7 @@
 "volume": "Vol. 22",
 "year": "2020",
 "address": "Vienna, Austria, 3-8 May 2020",
-"project": "Sedal, Usmile",
+"project": "SEDAL, USMILE",
 "raw": "@inproceedings{Schlund20EGU,\n\ttitle        = {{Constraining uncertainty in projected gross primary production with machine learning}},\n\tauthor       = {Manuel Schlund et al.},\n\tyear         = 2020,\n\tbooktitle    = {EGU General Assembly, Geophysical Research Abstracts},\n\taddress      = {Vienna, Austria, 3-8 May 2020},\n\tvolume       = {Vol. 22},\n\teditor       = {EGU General Assembly 2020},\n\torganization = {EGU},\n\tproject      = {sedal, usmile}\n}"
 },
 {
@@ -4776,7 +4776,7 @@
 "volume": "Vol. 22",
 "year": "2020",
 "address": "Vienna, Austria, 3-8 May 2020",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Izquierdo20EGU,\n\ttitle        = {{Gross Primary Production and False Spring: a spatio-temporal analysis}},\n\tauthor       = {Emma Izquierdo-Verdiguier, Raúl Zurita-Milla, Álvaro Moreno-Martinez, Gustau Camps-Valls, Anja Klisch, Clement Atzberger, and Steven W. Running},\n\tyear         = 2020,\n\tbooktitle    = {EGU General Assembly, Geophysical Research Abstracts},\n\taddress      = {Vienna, Austria, 3-8 May 2020},\n\tvolume       = {Vol. 22},\n\teditor       = {EGU General Assembly 2020},\n\torganization = {EGU},\n\tproject      = {sedal}\n}"
 },
 {
@@ -4792,7 +4792,7 @@
 "volume": "Vol. 22",
 "year": "2020",
 "address": "Vienna, Austria, 3-8 May 2020",
-"project": "Sedal",
+"project": "SEDAL",
 "pdf": "https://presentations.copernicus.org/EGU2020/EGU2020-18163_presentation.pdf",
 "raw": "@inproceedings{Wolanin20EGU,\n\ttitle        = {{Explainable deep learning to predict and understand crop yield estimates}},\n\tauthor       = {Aleksandra Wolanin, Gonzalo Mateo-García, Gustau Camps-Valls, Luis Gómez-Chova, Michele Meroni, Gregory Duveiller, You Liangzhi, and Luis Guanter},\n\tyear         = 2020,\n\tbooktitle    = {EGU General Assembly, Geophysical Research Abstracts},\n\taddress      = {Vienna, Austria, 3-8 May 2020},\n\tvolume       = {Vol. 22},\n\teditor       = {EGU General Assembly 2020},\n\torganization = {EGU},\n\tproject      = {sedal},\n\tpdf          = {https://presentations.copernicus.org/EGU2020/EGU2020-18163_presentation.pdf}\n}"
 },
@@ -4808,7 +4808,7 @@
 "volume": "Vol. 22",
 "year": "2020",
 "address": "Vienna, Austria, 3-8 May 2020",
-"project": "Sedal",
+"project": "SEDAL",
 "pdf": "https://presentations.copernicus.org/EGU2020/EGU2020-21329_presentation.pdf",
 "raw": "@inproceedings{Moreno20EGU,\n\ttitle        = {{Down-scaling MODIS operational vegetation products with machine learning and fused gap-free high resolution reflectance data in Google Earth Engine}},\n\tauthor       = {Álvaro Moreno Martínez et al.},\n\tyear         = 2020,\n\tbooktitle    = {EGU General Assembly, Geophysical Research Abstracts},\n\taddress      = {Vienna, Austria, 3-8 May 2020},\n\tvolume       = {Vol. 22},\n\teditor       = {EGU General Assembly 2020},\n\torganization = {EGU},\n\tproject      = {sedal},\n\tpdf          = {https://presentations.copernicus.org/EGU2020/EGU2020-21329_presentation.pdf}\n}"
 },
@@ -4825,7 +4825,7 @@
 "volume": "Vol. 22",
 "year": "2020",
 "address": "Vienna, Austria, 3-8 May 2020",
-"project": "Sedal",
+"project": "SEDAL",
 "pdf": "https://presentations.copernicus.org/EGU2020/EGU2020-18686_presentation.pdf",
 "raw": "@inproceedings{Bao20EGU,\n\ttitle        = {{Analysis of water dynamics in the soil-plant-atmosphere continuum using a multi-sensor approach}},\n\tauthor       = {David Chaparro, Thomas Jagdhuber, Dara Entekhabi, María Piles, Anke Fluhrer, Andrew Feldman, François Jonard, and Mercè Vall-llossera},\n\tyear         = 2020,\n\tbooktitle    = {EGU General Assembly, Geophysical Research Abstracts},\n\taddress      = {Vienna, Austria, 3-8 May 2020},\n\tvolume       = {Vol. 22},\n\teditor       = {EGU General Assembly 2020},\n\torganization = {EGU},\n\tproject      = {sedal},\n\tpdf          = {https://presentations.copernicus.org/EGU2020/EGU2020-18686_presentation.pdf}\n}"
 },
@@ -4841,7 +4841,7 @@
 "booktitle": "AGU Fall Meeting",
 "year": "2019",
 "address": "San Francisco, USA",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{CampsValls19agu,\n\ttitle        = {{Inferring causal graphs from observational long-term carbon and water fluxes records}},\n\tauthor       = {Gustau Camps-Valls, Emiliano Diaz, Jose Adsuara, Maria Piles, Alvaro Moreno, Pierre Gentine, Martin Jung, Markus Reichstein and Steven W Running},\n\tyear         = 2019,\n\tmonth        = {9-13 December 2019.},\n\tbooktitle    = {AGU Fall Meeting},\n\taddress      = {San Francisco, USA},\n\tproject      = {sedal}\n}"
 },
 {
@@ -4857,7 +4857,7 @@
 "booktitle": "AGU Fall Meeting",
 "year": "2019",
 "address": "San Francisco, USA",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Bueso19agu,\n\ttitle        = {{Revisiting impacts of MJO on soil moisture: a causality perspective}},\n\tauthor       = {Diego Bueso, Maria Piles, Gustau Camps-Valls},\n\tyear         = 2019,\n\tmonth        = {9-13 December 2019.},\n\tbooktitle    = {AGU Fall Meeting},\n\taddress      = {San Francisco, USA},\n\tproject      = {sedal}\n}"
 },
 {
@@ -4875,7 +4875,7 @@
 "booktitle": "AGU Fall Meeting",
 "year": "2019",
 "address": "San Francisco, USA",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Johnson19agu,\n\ttitle        = {{Climate Model Intercomparison with Multivariate Information Theoretic Measures}},\n\tauthor       = {J. Emmanuel Johnson, Valero Laparra, Peer Johannes Nowack, Jakob Runge, Gustau Camps-Valls},\n\tyear         = 2019,\n\tmonth        = {9-13 December 2019.},\n\tbooktitle    = {AGU Fall Meeting},\n\taddress      = {San Francisco, USA},\n\tproject      = {sedal}\n}"
 },
 {
@@ -4890,7 +4890,7 @@
 "booktitle": "AGU Fall Meeting",
 "year": "2019",
 "address": "San Francisco, USA",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Moreno19agu,\n\ttitle        = {{New opportunities for developing high spatial resolution land products derived from gap free Landsat reflectance time series in Google Earth Engine}},\n\tauthor       = {Alvaro Moreno, Emma Izquierdo, Marco P Maneta, Gustau Camps-Valls, Nathaniel Robinson, Jordi Munoz, Nicholas Clinton, Fernando Sedano and Steven Running},\n\tyear         = 2019,\n\tmonth        = {9-13 December 2019.},\n\tbooktitle    = {AGU Fall Meeting},\n\taddress      = {San Francisco, USA},\n\tproject      = {sedal}\n}"
 },
 {
@@ -4906,7 +4906,7 @@
 "booktitle": "Climate Informatics 2019",
 "year": "2019",
 "address": "Paris, France",
-"project": "Kermes, Sedal",
+"project": "KERMES, SEDAL",
 "raw": "@inproceedings{Bueso19ci,\n\ttitle        = {{Cross-Information Kernel Causality: Revisiting global teleconnections of ENSO over soil moisture and vegetation}},\n\tauthor       = {Diego Bueso, Maria Piles, Gustau Camps-Valls},\n\tyear         = 2019,\n\tmonth        = {2-4 October 2019},\n\tbooktitle    = {Climate Informatics 2019},\n\taddress      = {Paris, France},\n\tproject      = {sedal,kermes}\n}"
 },
 {
@@ -4923,7 +4923,7 @@
 "booktitle": "Climate Informatics 2019",
 "year": "2019",
 "address": "Paris, France",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Johnson19ci,\n\ttitle        = {{Multivariate Gaussianization in Earth and Climate Sciences}},\n\tauthor       = {Juan E. Johnson, Maria Piles, Valero Laparra, Gustau Camps-Valls},\n\tyear         = 2019,\n\tmonth        = {2-4 October 2019},\n\tbooktitle    = {Climate Informatics 2019},\n\taddress      = {Paris, France},\n\tproject      = {sedal}\n}"
 },
 {
@@ -4942,7 +4942,7 @@
 "booktitle": "Climate Informatics 2019",
 "year": "2019",
 "address": "Paris, France",
-"project": "Sedal, Usmile",
+"project": "SEDAL, USMILE",
 "raw": "@inproceedings{Schlund19ci,\n\ttitle        = {{Reducing uncertainties in projected gross primary production using gradient boosted regression trees}},\n\tauthor       = {Manuel Schlund, Veronika Eyring, Gustau Camps-Valls, Pierre Friedlingstein, Pierre Gentine, Markus Reichstein},\n\tyear         = 2019,\n\tmonth        = {2-4 October 2019},\n\tbooktitle    = {Climate Informatics 2019},\n\taddress      = {Paris, France},\n\tproject      = {sedal,usmile}\n}"
 },
 {
@@ -4962,7 +4962,7 @@
 "booktitle": "The Phi-week - EO Open Science and Future EO",
 "year": "2019",
 "address": "ESA-ESRIN, Italy",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{CampsValls19phiweekPhysics,\n\ttitle        = {{Physics-aware Machine Learning in Earth Observation}},\n\tauthor       = {Gustau Camps-Valls, Daniel H. Svendsen, Adrian Pérez-Suay, Emiliano Diaz, Luca Martino, Zhu Li, Dino Sejdinovic},\n\tyear         = 2019,\n\tmonth        = {9-13 September 2019.},\n\tbooktitle    = {The Phi-week - EO Open Science and Future EO},\n\taddress      = {ESA-ESRIN, Italy},\n\tproject      = {sedal}\n}"
 },
 {
@@ -4982,7 +4982,7 @@
 "booktitle": "The Phi-week - EO Open Science and Future EO",
 "year": "2019",
 "address": "ESA-ESRIN, Italy",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{CampsValls19phiweekCausality,\n\ttitle        = {{Inferring Causal Relations in Earth Observation: Methods, Applications and a Web-platform}},\n\tauthor       = {Gustau Camps-Valls, Jordi Muñoz-Marí, Emiliano Diaz, Adrian Pérez-Suay, Alvaro Moreno, Dino Sejdinovic, Jakob Runge},\n\tyear         = 2019,\n\tmonth        = {9-13 September 2019.},\n\tbooktitle    = {The Phi-week - EO Open Science and Future EO},\n\taddress      = {ESA-ESRIN, Italy},\n\tproject      = {sedal}\n}"
 },
 {
@@ -5161,7 +5161,7 @@
 "booktitle": "The Phi-week - EO Open Science and Future EO",
 "year": "2019",
 "address": "ESA-ESRIN, Italy",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Verrelst19phiweekEmulation,\n\ttitle        = {{Emulation for approximating radiative transfer modeling: computational efficiency and sensitivity analysis}},\n\tauthor       = {Jochem Verrelst, Emmanuel Johnson, Pablo Morcillo, Jorge Vicent,  Laura Martínez Ferrer, Juan Pablo Rivera, Gustau Camps-Valls},\n\tyear         = 2019,\n\tmonth        = {9-13 September 2019.},\n\tbooktitle    = {The Phi-week - EO Open Science and Future EO},\n\taddress      = {ESA-ESRIN, Italy},\n\tproject      = {sedal}\n}"
 },
 {
@@ -5178,7 +5178,7 @@
 ],
 "booktitle": "International Conference on Machine Learning - Workshop Invertible Neural Nets and Normalising Flows (INNF)",
 "year": "2019",
-"project": "Sedal",
+"project": "SEDAL",
 "arxiv": "https://arxiv.org/abs/2012.01012",
 "raw": "@inproceedings{Johnson19icml,\n\ttitle        = {{Information Theory in Density Destructors}},\n\tauthor       = {Johnson, E. and Laparra, V. and Santos, R. and Camps-Valls, G. and Malo, J},\n\tyear         = 2019,\n\tbooktitle    = {International Conference on Machine Learning - Workshop Invertible Neural Nets and Normalising Flows (INNF)},\n\teditor       = {ICML},\n\tproject      = {sedal},\n\torganization = {ICML},\n\tarxiv        = {https://arxiv.org/abs/2012.01012}\n}"
 },
@@ -5240,7 +5240,7 @@
 "booktitle": "Living Planet Symposium",
 "year": "2019",
 "address": "13-17 May 2019, Milano, Italy",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Piles19LP,\n\ttitle        = {{Learning New Ways to Predict Agricultural Drought from Optical and Microwave Satellites}},\n\tauthor       = {Piles, M. and Laparra, V. and Padrón, J. A. and Bueso, D. and Sánchez, N. and González-Zamora, Á. and Martínez-Fernández, J. and Camps-Valls G.},\n\tyear         = 2019,\n\tbooktitle    = {Living Planet Symposium},\n\taddress      = {13-17 May 2019, Milano, Italy},\n\tvolume       = {},\n\tproject      = {sedal},\n\torganization = {ESA}\n}"
 },
 {
@@ -5289,7 +5289,7 @@
 "booktitle": "Living Planet Symposium",
 "year": "2019",
 "address": "13-17 May 2019, Milano, Italy",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Mateo19LP,\n\ttitle        = {{Statistical learning methods and optical/microwave fusion of time series for crop yield prediction}},\n\tauthor       = {Mateo-Sanchis, A. and Piles, M. and Muñoz-Marí, J. and Chaparro, D. and Adsuara, J. and Pérez-Suay, A. and Camps-Valls G.},\n\tyear         = 2019,\n\tbooktitle    = {Living Planet Symposium},\n\taddress      = {13-17 May 2019, Milano, Italy},\n\tvolume       = {},\n\tproject      = {sedal},\n\torganization = {ESA}\n}"
 },
 {
@@ -5310,7 +5310,7 @@
 "booktitle": "Living Planet Symposium",
 "year": "2019",
 "address": "13-17 May 2019, Milano, Italy",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Moreno19LP,\n\ttitle        = {{Gap filling Sentinel 2 observations in Google Earth Engine: a synergistic Landsat and MODIS Bayesian blending approach}},\n\tauthor       = {Moreno Martínez, Á. and Izquierdo Verdiguier, E. and Camps-Valls, G. and Robinson, N. and Martino, L. and Maneta M. P. and Allred, B. and Running, S. W.},\n\tyear         = 2019,\n\tbooktitle    = {Living Planet Symposium},\n\taddress      = {13-17 May 2019, Milano, Italy},\n\tvolume       = {},\n\tproject      = {sedal},\n\torganization = {ESA}\n}"
 },
 {
@@ -5327,7 +5327,7 @@
 "booktitle": "Living Planet Symposium",
 "year": "2019",
 "address": "13-17 May 2019, Milano, Italy",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Bueso19LP,\n\ttitle        = {{Revisiting global teleconnection patterns of ENSO over soils and vegetation}},\n\tauthor       = {Bueso, D. and Piles, M. and Fernandez-Moran, and Camps-Valls, G.},\n\tyear         = 2019,\n\tbooktitle    = {Living Planet Symposium},\n\taddress      = {13-17 May 2019, Milano, Italy},\n\tvolume       = {},\n\torganization = {ESA},\n\tproject      = {sedal}\n}"
 },
 {
@@ -5346,7 +5346,7 @@
 "booktitle": "Living Planet Symposium",
 "year": "2019",
 "address": "13-17 May 2019, Milano, Italy",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Walther19LP,\n\ttitle        = {{Remote sensing to track a bipolar response of forests and grasses to variations in soil water content}},\n\tauthor       = {Walther, S. and Duveiller, G. and Jung, M. and  Guanter, L. and Cescatti, A. and Camps-Valls, G.},\n\tyear         = 2019,\n\tbooktitle    = {Living Planet Symposium},\n\taddress      = {13-17 May 2019, Milano, Italy},\n\tvolume       = {},\n\tproject      = {sedal},\n\torganization = {ESA}\n}"
 },
 {
@@ -5362,7 +5362,7 @@
 "booktitle": "Living Planet Symposium",
 "year": "2019",
 "address": "13-17 May 2019, Milano, Italy",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Wolanin19LP,\n\ttitle        = {{Crop Yield Prediction With Convolutional Neural Networks on Remote Sensing and Meteorological Data}},\n\tauthor       = {Wolanin, A. and Guanter, L. and Camps-Valls, G.},\n\tyear         = 2019,\n\tbooktitle    = {Living Planet Symposium},\n\taddress      = {13-17 May 2019, Milano, Italy},\n\tvolume       = {},\n\tproject      = {sedal},\n\torganization = {ESA}\n}"
 },
 {
@@ -5377,7 +5377,7 @@
 "booktitle": "EGU General Assembly, Geophysical Research Abstracts",
 "volume": "Vol. 21",
 "year": "2019",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Walther19EGU,\n\ttitle        = {{Remote sensing to track differential responses of forests and grasses to variations in soil water content}},\n\tauthor       = {Sophia Walther, Gregory Duveiller, Martin Jung, Luis Guanter, Alessandro Cescatti, and Gustau Camps-Valls},\n\tyear         = 2019,\n\tbooktitle    = {EGU General Assembly, Geophysical Research Abstracts},\n\tvolume       = {Vol. 21},\n\tproject      = {sedal},\n\teditor       = {EGU General Assembly 2019},\n\torganization = {EGU}\n}"
 },
 {
@@ -5392,7 +5392,7 @@
 "booktitle": "EGU General Assembly, Geophysical Research Abstracts",
 "volume": "Vol. 21",
 "year": "2019",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{CampsValls19EGU,\n\ttitle        = {{Learning nonlinear feature representations from spatio-temporal Earth observation data}},\n\tauthor       = {Gustau Camps-Valls, Diego Bueso, and Maria Piles},\n\tyear         = 2019,\n\tbooktitle    = {EGU General Assembly, Geophysical Research Abstracts},\n\tvolume       = {Vol. 21},\n\tproject      = {sedal},\n\teditor       = {EGU General Assembly 2019},\n\torganization = {EGU}\n}"
 },
 {
@@ -5407,7 +5407,7 @@
 "booktitle": "EGU General Assembly, Geophysical Research Abstracts",
 "volume": "Vol. 21",
 "year": "2019",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Mateo19EGU,\n\ttitle        = {{Multisensor distribution regression for crop yield estimation}},\n\tauthor       = {Anna Mateo Sanchis, Jose Adsuara, Maria Piles, Adrián Perez-Suay, Jordi Muñoz-Marí, and Gustau Camps-Valls},\n\tyear         = 2019,\n\tbooktitle    = {EGU General Assembly, Geophysical Research Abstracts},\n\tvolume       = {Vol. 21},\n\tproject      = {sedal},\n\teditor       = {EGU General Assembly 2019},\n\torganization = {EGU}\n}"
 },
 {
@@ -5422,7 +5422,7 @@
 "booktitle": "EGU General Assembly, Geophysical Research Abstracts",
 "volume": "Vol. 21",
 "year": "2019",
-"project": "Kermes, Sedal",
+"project": "KERMES, SEDAL",
 "raw": "@inproceedings{DiazSalas19EGU,\n\ttitle        = {{Causal inference in Geosciences with multidimensional kernel deviance measures}},\n\tauthor       = {Emiliano Diaz Salas Porras, Adrian Perez Suay, Valero Laparra, and Gustau Camps-Valls},\n\tyear         = 2019,\n\tbooktitle    = {EGU General Assembly, Geophysical Research Abstracts},\n\tvolume       = {Vol. 21},\n\tproject      = {sedal,kermes},\n\teditor       = {EGU General Assembly 2019},\n\torganization = {EGU}\n}"
 },
 {
@@ -5437,7 +5437,7 @@
 "booktitle": "EGU General Assembly, Geophysical Research Abstracts",
 "volume": "Vol. 21",
 "year": "2019",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Wolanin19EGU,\n\ttitle        = {{Extracting important features for crop yield prediction with convolutional neural networks on remote sensing and meteorological data}},\n\tauthor       = {Aleksandra Wolanin, Luis Guanter, Gustau Camps-Valls, and Grégory Duveiller},\n\tyear         = 2019,\n\tbooktitle    = {EGU General Assembly, Geophysical Research Abstracts},\n\tvolume       = {Vol. 21},\n\tproject      = {sedal},\n\teditor       = {EGU General Assembly 2019},\n\torganization = {EGU}\n}"
 },
 {
@@ -5452,7 +5452,7 @@
 "booktitle": "EGU General Assembly, Geophysical Research Abstracts",
 "volume": "Vol. 21",
 "year": "2019",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Moreno19EGU,\n\ttitle        = {{Convergent cross-mapping for causal Inference in carbon and water fluxes processes}},\n\tauthor       = {Álvaro Moreno Martínez, Emiliano Díaz, Adrian Pérez Suay, Jose Adsuara, Valero Laparra, María Piles, Jordi Muñoz Marí, Steven W Running, and Gustau Camps-Valls},\n\tyear         = 2019,\n\tbooktitle    = {EGU General Assembly, Geophysical Research Abstracts},\n\tvolume       = {Vol. 21},\n\tproject      = {sedal},\n\teditor       = {EGU General Assembly 2019},\n\torganization = {EGU}\n}"
 },
 {
@@ -5467,7 +5467,7 @@
 "booktitle": "EGU General Assembly, Geophysical Research Abstracts",
 "volume": "Vol. 21",
 "year": "2019",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Teubner19EGU,\n\ttitle        = {{Using microwave vegetation optical depth for estimating gross primary production}},\n\tauthor       = {Irene Teubner, Matthias Forkel, Gustau Camps-Valls, Martin Jung, Diego Miralles, Gianluca Tramontana, Robin van der Schalie, Mariette Vreugdenhil, Leander Mösinger, and Wouter Dorigo},\n\tyear         = 2019,\n\tbooktitle    = {EGU General Assembly, Geophysical Research Abstracts},\n\tvolume       = {Vol. 21},\n\tproject      = {sedal},\n\teditor       = {EGU General Assembly 2019},\n\torganization = {EGU}\n}"
 },
 {
@@ -5482,7 +5482,7 @@
 "booktitle": "EGU General Assembly, Geophysical Research Abstracts",
 "volume": "Vol. 21",
 "year": "2019",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Tramontana19EGU,\n\ttitle        = {{A machine learning based approach for estimating  gross carbon dioxide fluxes from eddy covariance net ecosystem exchange measurements}},\n\tauthor       = {Gianluca Tramontana, Martin Jung, Trevor Keenan, Mirco Migliavacca, Markus Reichstein, Jerome Ogee, Gustau Camps-Valls, and Dario Papale},\n\tyear         = 2019,\n\tbooktitle    = {EGU General Assembly, Geophysical Research Abstracts},\n\tvolume       = {Vol. 21},\n\tproject      = {sedal},\n\teditor       = {EGU General Assembly 2019},\n\torganization = {EGU}\n}"
 },
 {
@@ -5499,7 +5499,7 @@
 "booktitle": "MED 2018",
 "year": "2018",
 "address": "ESA-ESRIN, Frascati (Rome), Italy",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Bueso18med,\n\ttitle        = {{Extraction of SMOS soil moisture and ocean salinity main features across the Mediterranean region over the last decade}},\n\tauthor       = {Bueso Acevedo, D. and Piles, M. and Ballabrera-Poy, J. and Camps-Valls, G},\n\tyear         = 2018,\n\tmonth        = {11-12 December 2018.},\n\tbooktitle    = {MED 2018},\n\taddress      = {ESA-ESRIN, Frascati (Rome), Italy},\n\tproject      = {sedal}\n}"
 },
 {
@@ -5519,7 +5519,7 @@
 "booktitle": "ESA CCI Soil Moisture Workshop",
 "year": "2018",
 "address": "Vienna, Austria",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Piles18CCI,\n\ttitle        = {{Assessing memory effects in modeled and remotely sensed soil moisture products}},\n\tauthor       = {M. Piles, W. Dorigo, R. van der Schalie, A. Gruber, J. Muñoz-Marí, G. Camps-Valls, R. de Jeu},\n\tyear         = 2018,\n\tmonth        = {15 November 2018.},\n\tbooktitle    = {ESA CCI Soil Moisture Workshop},\n\taddress      = {Vienna, Austria},\n\tproject      = {sedal}\n}"
 },
 {
@@ -5535,7 +5535,7 @@
 "booktitle": "AGU Fall Meeting",
 "year": "2018",
 "address": "Washington, USA",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Runge18agu,\n\ttitle        = {{Causal discovery in Earth system science: State-of-the-art and a new Causality Challenge platform}},\n\tauthor       = {Runge, J. and Munoz-Marí, J. and Camps-Valls, G.},\n\tyear         = 2018,\n\tmonth        = {10-14 December 2018.},\n\tbooktitle    = {AGU Fall Meeting},\n\taddress      = {Washington, USA},\n\tproject      = {sedal}\n}"
 },
 {
@@ -5550,7 +5550,7 @@
 "booktitle": "AGU Fall Meeting",
 "year": "2018",
 "address": "Washington, USA",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Moreno18agu,\n\ttitle        = {{Gap fillingof Landsat reflectance time series using Google Earth Engine}},\n\tauthor       = {Alvaro Moreno, Marco P Maneta, Gustau Camps-Valls, Luca Martino, Nathaniel Robinson, Brady W Allred and Steven W Running},\n\tyear         = 2018,\n\tmonth        = {10-14 December 2018.},\n\tbooktitle    = {AGU Fall Meeting},\n\taddress      = {Washington, USA},\n\tproject      = {sedal}\n}"
 },
 {
@@ -5568,7 +5568,7 @@
 "booktitle": "AGU Fall Meeting",
 "year": "2018",
 "address": "Washington, USA",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{CampsValls18agu,\n\ttitle        = {{Crop Yield Prediction with Nonlinear Distribution Regression}},\n\tauthor       = {Gustau Camps-Valls, Jose Adsuara, Adrian Perez-Suay Jordi Munoz-Mari, Anna Mateo-Sanchis, Maria Piles},\n\tyear         = 2018,\n\tmonth        = {10-14 December 2018.},\n\tbooktitle    = {AGU Fall Meeting},\n\taddress      = {Washington, USA},\n\tproject      = {sedal}\n}"
 },
 {
@@ -5584,7 +5584,7 @@
 "booktitle": "The Phi-week - EO Open Science and Future EO",
 "year": "2018",
 "address": "ESA-ESRIN, Italy",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Gomez18phiweeDL,\n\ttitle        = {{Transferring Knowledge between EO Satellite Missions: Proba-V Cloud Detection through Deep Learning}},\n\tauthor       = {Luis Gomez-Chova, Gonzalo Mateo-Garcia, Gustau Camps-Valls},\n\tyear         = 2018,\n\tmonth        = {12-16 November 2018.},\n\tbooktitle    = {The Phi-week - EO Open Science and Future EO},\n\taddress      = {ESA-ESRIN, Italy},\n\tproject      = {sedal}\n}"
 },
 {
@@ -5601,7 +5601,7 @@
 "booktitle": "The Phi-week - EO Open Science and Future EO",
 "year": "2018",
 "address": "ESA-ESRIN, Italy",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Gomez18phiweeGEE,\n\ttitle        = {{Exploiting Time on the Google Earth Engine: Cloud Detection of Landsat-8 Time Series}},\n\tauthor       = {Luis Gomez-Chova, Gonzalo Mateo-Garcia, Jordi Munoz-Mari, Gustau Camps-Valls},\n\tyear         = 2018,\n\tmonth        = {12-16 November 2018},\n\tbooktitle    = {The Phi-week - EO Open Science and Future EO},\n\taddress      = {ESA-ESRIN, Italy},\n\tproject      = {sedal}\n}"
 },
 {
@@ -5621,7 +5621,7 @@
 "booktitle": "The Phi-week - EO Open Science and Future EO",
 "year": "2018",
 "address": "ESA-ESRIN, Italy",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Ruescas18phiweekHyperlabelme,\n\ttitle        = {{HyperLabelMe: Benchmarking Image Classifiers}},\n\tauthor       = {Ana Ruescas, Jordi Munoz-Mari, Luis Gomez-Chova, Gonzalo Mateo-Garcia, Emma Izquiedo, Manuel Campos, Gustau Camps-Valls},\n\tyear         = 2018,\n\tmonth        = {12-16 November 2018},\n\tbooktitle    = {The Phi-week - EO Open Science and Future EO},\n\taddress      = {ESA-ESRIN, Italy},\n\tproject      = {sedal}\n}"
 },
 {
@@ -5643,7 +5643,7 @@
 "booktitle": "The Phi-week - EO Open Science and Future EO",
 "year": "2018",
 "address": "ESA-ESRIN, Italy",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Camps18phiweekPhysics,\n\ttitle        = {{Physics-aware And Explainable Machine Learning}},\n\tauthor       = {Gustau Camps-Valls, Luis Gomez-Chova, Daniel Svendsen, Diego Bueso, Luca Martino, Adrian Perez, Maria Piles,  Valero Laparra,  Ana Ruescas},\n\tyear         = 2018,\n\tmonth        = {12-16 November 2018},\n\tbooktitle    = {The Phi-week - EO Open Science and Future EO},\n\taddress      = {ESA-ESRIN, Italy},\n\tproject      = {sedal}\n}"
 },
 {
@@ -5658,7 +5658,7 @@
 "booktitle": "The Phi-week - EO Open Science and FutureEO",
 "year": "2018",
 "address": "ESA-ESRIN, Italy",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Camps18phiweekESDC,\n\ttitle        = {{Statistical Distillation of the Earth System Data Cube}},\n\tauthor       = {Gustau Camps-Valls, Juan Johnson, Valero Laparra, Diego Bueso, Gunnar Brandt, Norman Fomferra, Hans Permana and Miguel Mahecha},\n\tyear         = 2018,\n\tmonth        = {12-16 November 2018},\n\tbooktitle    = {The Phi-week - EO Open Science and FutureEO},\n\taddress      = {ESA-ESRIN, Italy},\n\tproject      = {sedal}\n}"
 },
 {
@@ -5673,7 +5673,7 @@
 "booktitle": "10th International Conference on Ecological Informatics (ICEI)",
 "year": "2018",
 "address": "Jena, Germany",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Moreno18icei,\n\ttitle        = {{A general framework for global mapping of plant traits with operational satellites and climatological data}},\n\tauthor       = {Alvaro Moreno Martinez, Gustau Camps-Valls, Jens Kattge, Nuno Carvalhais, Markus Reichstein, Emma Izquierdo, Daniel Heestermans Svendsen and Steven W Running},\n\tyear         = 2018,\n\tmonth        = {24-28 September 2018},\n\tbooktitle    = {10th International Conference on Ecological Informatics (ICEI)},\n\taddress      = {Jena, Germany},\n\tproject      = {sedal}\n}"
 },
 {
@@ -5688,7 +5688,7 @@
 "booktitle": "10th International Conference on Ecological Informatics (ICEI)",
 "year": "2018",
 "address": "Jena, Germany",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Izquierdo18icei,\n\ttitle        = {{Gross Primary Production and spring onset linked by spatio-temporal data analysis}},\n\tauthor       = {Emma Izquierdo-Verdiguier, Alvaro Moreno, Raul Zurita-Milla, Gustau Camps-Valls and Steve Running},\n\tyear         = 2018,\n\tmonth        = {24-28 September 2018},\n\tbooktitle    = {10th International Conference on Ecological Informatics (ICEI)},\n\taddress      = {Jena, Germany},\n\tproject      = {sedal}\n}"
 },
 {
@@ -6032,7 +6032,7 @@
 ],
 "year": "2018",
 "address": "Machine Learning and Climate Workshop 2018 - Oxford, UK",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{CampsValls18oxfordworkshop,\n\ttitle        = {{Machine Learning for Climate: 15 ways to leave your lover}},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2018,\n\tmonth        = {October, 31st - November 1st},\n\taddress      = {Machine Learning and Climate Workshop 2018 - Oxford, UK},\n\turl          = {},\n\tproject      = {sedal}\n}"
 },
 {
@@ -6045,7 +6045,7 @@
 ],
 "year": "2018",
 "address": "Climate Informatics 2018, NCAR, Boulder, US",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{CampsValls18ci,\n\ttitle        = {{Unsupervised Deep Feature Learning with Sparse Codes and Gaussianization}},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2018,\n\tmonth        = sep,\n\taddress      = {Climate Informatics 2018, NCAR, Boulder, US},\n\turl          = {},\n\tproject      = {sedal}\n}"
 },
 {
@@ -6061,7 +6061,7 @@
 "booktitle": "IEEE Statistical Signal Processing Workshop (SSP)",
 "year": "2018",
 "address": "Freiburg, Germany",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Martino18SSP,\n\ttitle        = {{Distributed Particle Metropolis-Hastings schemes}},\n\tauthor       = {L. Martino and V. Elvira and G. Camps-Valls},\n\tyear         = 2018,\n\tmonth        = {June 10-13},\n\tbooktitle    = {IEEE Statistical Signal Processing Workshop (SSP)},\n\taddress      = {Freiburg, Germany},\n\tproject      = {sedal}\n}"
 },
 {
@@ -6220,7 +6220,7 @@
 "booktitle": "2018 IEEE International Geoscience and Remote Sensing Symposium",
 "year": "2018",
 "address": "València, Spain",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Bueso18,\n\ttitle        = {{Nonlinear Complex PCA for Spatio-Temporal Analysis of Global Soil Moisture}},\n\tauthor       = {Diego Bueso and Maria Piles and Gustau Camps-Valls},\n\tyear         = 2018,\n\tmonth        = {July 23-28},\n\tbooktitle    = {2018 IEEE International Geoscience and Remote Sensing Symposium},\n\taddress      = {València, Spain},\n\tproject      = {sedal}\n}"
 },
 {
@@ -6293,7 +6293,7 @@
 "booktitle": "2018 IEEE International Geoscience and Remote Sensing Symposium",
 "year": "2018",
 "address": "València, Spain",
-"project": "Kermes, Sedal",
+"project": "KERMES, SEDAL",
 "raw": "@inproceedings{Diaz18,\n\ttitle        = {{Consistent Regression of Biophysical Parameters with Kernel Methods}},\n\tauthor       = {Emiliano Díaz and Adrián Peréz-Suay and Valero Laparra and Gustau Camps-Valls},\n\tyear         = 2018,\n\tmonth        = {July 23-28},\n\tbooktitle    = {2018 IEEE International Geoscience and Remote Sensing Symposium},\n\taddress      = {València, Spain},\n\tproject      = {sedal,kermes}\n}"
 },
 {
@@ -6336,7 +6336,7 @@
 "booktitle": "2018 IEEE International Geoscience and Remote Sensing Symposium",
 "year": "2018",
 "address": "València, Spain",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Garcia18,\n\ttitle        = {{Generation of Global Vegetation Products from Eumetsat AVHRR/MetOp Satellites}},\n\tauthor       = {Francisco Javier García-Haro and Manuel Campos-Taberner and Beatriz Martínez and Sergio Sánchez-Ruiz and María Amparo Gilabert and Gustau Camps-Valls and Jordi Muñoz-Marí and Valero Laparra and Fernando Camacho and Jorge Sánchez-Zapero and Beatriz Fuster},\n\tyear         = 2018,\n\tmonth        = {July 23-28},\n\tbooktitle    = {2018 IEEE International Geoscience and Remote Sensing Symposium},\n\taddress      = {València, Spain},\n\tproject      = {sedal}\n}"
 },
 {
@@ -6354,7 +6354,7 @@
 "booktitle": "EGU General Assembly, Geophysical Research Abstracts",
 "volume": "Vol. 20",
 "year": "2018",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Izquierdo18EGU,\n\ttitle        = {{Gross Primary Production and spring onset: spatial-temporal correlation analysis}},\n\tauthor       = {E. Izquierdo-Verdiguier and A. Moreno and R. Zurita-Milla and G. Camps-Valls and S. Running},\n\tyear         = 2018,\n\tbooktitle    = {EGU General Assembly, Geophysical Research Abstracts},\n\tvolume       = {Vol. 20},\n\teditor       = {EGU General Assembly 2018},\n\torganization = {EGU},\n\tproject      = {sedal}\n}"
 },
 {
@@ -6370,7 +6370,7 @@
 "booktitle": "2018 IEEE International Geoscience and Remote Sensing Symposium",
 "year": "2018",
 "address": "València, Spain",
-"project": "Kermes, Sedal",
+"project": "KERMES, SEDAL",
 "raw": "@inproceedings{Johnson18,\n\ttitle        = {{Disentangling Derivatives, Uncertainty and Error in Statistical Models }},\n\tauthor       = {Juan Emmanuel Johnson and Valero Laparra and Gustau Camps-Valls},\n\tyear         = 2018,\n\tmonth        = {July 23-28},\n\tbooktitle    = {2018 IEEE International Geoscience and Remote Sensing Symposium},\n\taddress      = {València, Spain},\n\tproject      = {sedal,kermes}\n}"
 },
 {
@@ -6389,7 +6389,7 @@
 "booktitle": "EGU General Assembly, Geophysical Research Abstracts",
 "volume": "Vol. 20",
 "year": "2018",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Johnson18EGU,\n\ttitle        = {{Estimating Information in Earth Data Cubes}},\n\tauthor       = {J.E. Johnson and E. Diaz and Valero Laparra and M. Mahecha and D. Miralles and G. Camps-Valls},\n\tyear         = 2018,\n\tbooktitle    = {EGU General Assembly, Geophysical Research Abstracts},\n\tvolume       = {Vol. 20},\n\tproject      = {sedal},\n\teditor       = {EGU General Assembly 2018},\n\torganization = {EGU}\n}"
 },
 {
@@ -6406,7 +6406,7 @@
 "booktitle": "2018 IEEE International Geoscience and Remote Sensing Symposium",
 "year": "2018",
 "address": "València, Spain",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Malgrem18,\n\ttitle        = {{Transfer Learning with Convolutional Networks for Atmospheric Parameter Retrieval}},\n\tauthor       = {David Malmgren-Hansen and Valero Laparra and Allan Aasbjerg Nielsen and Gustau Camps-Valls},\n\tyear         = 2018,\n\tmonth        = {July 23-28},\n\tbooktitle    = {2018 IEEE International Geoscience and Remote Sensing Symposium},\n\taddress      = {València, Spain},\n\tproject      = {sedal}\n}"
 },
 {
@@ -6422,7 +6422,7 @@
 "booktitle": "2018 IEEE International Geoscience and Remote Sensing Symposium",
 "year": "2018",
 "address": "València, Spain",
-"project": "Kermes, Sedal",
+"project": "KERMES, SEDAL",
 "raw": "@inproceedings{Mateo18a,\n\ttitle        = {{Optimizing Kernel Ridge Regression for Remote Sensing Problems}},\n\tauthor       = {Gonzalo Mateo-García and Valero Laparra and Luis Gómez-Chova},\n\tyear         = 2018,\n\tmonth        = {July 23-28},\n\tbooktitle    = {2018 IEEE International Geoscience and Remote Sensing Symposium},\n\taddress      = {València, Spain},\n\tproject      = {sedal,kermes}\n}"
 },
 {
@@ -6454,7 +6454,7 @@
 "booktitle": "2018 IEEE International Geoscience and Remote Sensing Symposium",
 "year": "2018",
 "address": "València, Spain",
-"project": "Kermes, Sedal",
+"project": "KERMES, SEDAL",
 "raw": "@inproceedings{Mateo-Sanchis18,\n\ttitle        = {{Gap Filling of Biophysical Parameter Time Series with Multi-Output Gaussian Processes }},\n\tauthor       = {Anna Mateo-Sanchis and Jordi Muñoz-Marí and Manuel Campos-Taberner and Javier García-Haro and Gustau Camps-Valls},\n\tyear         = 2018,\n\tmonth        = {July 23-28},\n\tbooktitle    = {2018 IEEE International Geoscience and Remote Sensing Symposium},\n\taddress      = {València, Spain},\n\tproject      = {sedal,kermes}\n}"
 },
 {
@@ -6511,7 +6511,7 @@
 "booktitle": "2018 IEEE International Geoscience and Remote Sensing Symposium",
 "year": "2018",
 "address": "València, Spain",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Moreno18,\n\ttitle        = {{Interpolation and Gap Filling of Landsat Reflectance Time Series}},\n\tauthor       = {Alvaro Moreno and Marco Maneta and Gustau Camps-Valls and Luca Matino and Nathaniel Robinson and Brady Allred and Steve Running},\n\tyear         = 2018,\n\tmonth        = {July 23-28},\n\tbooktitle    = {2018 IEEE International Geoscience and Remote Sensing Symposium},\n\taddress      = {València, Spain},\n\tproject      = {sedal}\n}"
 },
 {
@@ -6528,7 +6528,7 @@
 ],
 "booktitle": "European Geosciences Union, EGU General Assembly 2018",
 "year": "2018",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Moreno18EGU,\n\ttitle        = {{Refining Maximum Light Use Efficiency for Land Carbon Models Using Satellite Data and Climatology}},\n\tauthor       = {A. Moreno and G. Camps-Valls and J. Kattge and M. Reichstein and S.W. Running},\n\tyear         = 2018,\n\tmonth        = may,\n\tbooktitle    = {European Geosciences Union, EGU General Assembly 2018},\n\tlocation     = {Vienna, Austria},\n\tproject      = {sedal}\n}"
 },
 {
@@ -6544,7 +6544,7 @@
 "booktitle": "2018 IEEE International Geoscience and Remote Sensing Symposium",
 "year": "2018",
 "address": "València, Spain",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Nar18a,\n\ttitle        = {{Sparsity-Driven Digital Terrain Model Extraction}},\n\tauthor       = {Fatih Nar and Erdal Yilmaz and Gustau Camps-Valls},\n\tyear         = 2018,\n\tmonth        = {July 23-28},\n\tbooktitle    = {2018 IEEE International Geoscience and Remote Sensing Symposium},\n\taddress      = {València, Spain},\n\tproject      = {sedal}\n}"
 },
 {
@@ -6561,7 +6561,7 @@
 "booktitle": "2018 IEEE International Geoscience and Remote Sensing Symposium",
 "year": "2018",
 "address": "València, Spain",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Nar18b,\n\ttitle        = {{Randomized RX for Target Detection}},\n\tauthor       = {Fatih Nar and Adrian Perez-Suay and Jose Antonio Padron and Gustau Camps-Valls},\n\tyear         = 2018,\n\tmonth        = {July 23-28},\n\tbooktitle    = {2018 IEEE International Geoscience and Remote Sensing Symposium},\n\taddress      = {València, Spain},\n\tproject      = {sedal}\n}"
 },
 {
@@ -6597,7 +6597,7 @@
 "booktitle": "2018 IEEE International Geoscience and Remote Sensing Symposium",
 "year": "2018",
 "address": "València, Spain",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Piles18,\n\ttitle        = {{Global Estimation of Soil Moisture Persistence with L and C-Band Microwave Sensors}},\n\tauthor       = {Maria Piles and Robin Van Der Schalie and Alexander Gruber and Gustau Camps-Valls and Robert Parinussa and Wouter Dorigo and Richard De Jeu},\n\tyear         = 2018,\n\tmonth        = {July 23-28},\n\tbooktitle    = {2018 IEEE International Geoscience and Remote Sensing Symposium},\n\taddress      = {València, Spain},\n\tproject      = {sedal}\n}"
 },
 {
@@ -6634,7 +6634,7 @@
 "booktitle": "2018 IEEE International Geoscience and Remote Sensing Symposium",
 "year": "2018",
 "address": "València, Spain",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Ruescas18a,\n\ttitle        = {{Retrieval Of Case 2 Water Quality Parameters with Machine Learning}},\n\tauthor       = {Ana Belen Ruescas and Gonzalo Mateo-Garcia and Gustau Camps-Valls and Martin Hieronymi},\n\tyear         = 2018,\n\tmonth        = {July 23-28},\n\tbooktitle    = {2018 IEEE International Geoscience and Remote Sensing Symposium},\n\taddress      = {València, Spain},\n\tproject      = {sedal}\n}"
 },
 {
@@ -6669,7 +6669,7 @@
 "booktitle": "2018 IEEE International Geoscience and Remote Sensing Symposium",
 "year": "2018",
 "address": "València, Spain",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Svendsen18a,\n\ttitle        = {{Multioutput Automatic Emulator for Radiative Transfer Models }},\n\tauthor       = {Daniel Heestermans Svendsen and Luca Martino and Jorge Vicent and Gustau Camps-Valls},\n\tyear         = 2018,\n\tmonth        = {July 23-28},\n\tbooktitle    = {2018 IEEE International Geoscience and Remote Sensing Symposium},\n\taddress      = {València, Spain},\n\tproject      = {sedal}\n}"
 },
 {
@@ -6686,7 +6686,7 @@
 "booktitle": "2018 IEEE International Geoscience and Remote Sensing Symposium",
 "year": "2018",
 "address": "València, Spain",
-"project": "Kermes, Sedal",
+"project": "KERMES, SEDAL",
 "raw": "@inproceedings{Svendsen18b,\n\ttitle        = {{Deep Gaussian Processes for Geophysical Parameter Retrieval}},\n\tauthor       = {Daniel Heestermans Svendsen and Pablo Morales-Álvarez and Rafael Molina and Gustau Camps-Valls},\n\tyear         = 2018,\n\tmonth        = {July 23-28},\n\tbooktitle    = {2018 IEEE International Geoscience and Remote Sensing Symposium},\n\taddress      = {València, Spain},\n\tproject      = {sedal,kermes}\n}"
 },
 {
@@ -6733,7 +6733,7 @@
 "booktitle": "EGU General Assembly, Geophysical Research Abstracts",
 "volume": "Vol. 20",
 "year": "2018",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Teubner18EGU,\n\ttitle        = {{Analyzing Microwave Vegetation Optical Depth in Relation to Gross Primary Production}},\n\tauthor       = {I.E. Teubner and M. Forkel and M. Jung and Y.Y. Liu and D.G. Miralles and R. Parinussa and R. van der Schalie and M. Vreugdenhil and C.R. Schwalm and G. Tramontana and G. Camps-Valls and W.A. Dorigo},\n\tyear         = 2018,\n\tbooktitle    = {EGU General Assembly, Geophysical Research Abstracts},\n\tvolume       = {Vol. 20},\n\tproject      = {sedal},\n\teditor       = {EGU General Assembly 2018},\n\torganization = {EGU}\n}"
 },
 {
@@ -6750,7 +6750,7 @@
 "booktitle": "2018 IEEE International Geoscience and Remote Sensing Symposium",
 "year": "2018",
 "address": "València, Spain",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Tuia18,\n\ttitle        = {{A Deep Network Approach to Multitemporal Cloud Detection }},\n\tauthor       = {Devis Tuia and Benjamin Kellenberger and Adrian Pérez-Suay and Gustau Camps-Valls},\n\tyear         = 2018,\n\tmonth        = {July 23-28},\n\tbooktitle    = {2018 IEEE International Geoscience and Remote Sensing Symposium},\n\taddress      = {València, Spain},\n\tproject      = {sedal}\n}"
 },
 {
@@ -6781,7 +6781,7 @@
 "booktitle": "5th International Symposium – Recent Advances in Quantitative Remote Sensing",
 "year": "2017",
 "address": "Torrent, Spain",
-"project": "Ermes, Sedal",
+"project": "ERMES, SEDAL",
 "raw": "@inproceedings{CamposTaberner17raqrs,\n\ttitle        = {{Generation of multisource LAI time series for crop assessment}},\n\tauthor       = {M. Campos-Taberner and F.J. Garcia-Haro and F.J. Nutini and G. Grau-Muedra and G. Camps-Valls and L. Busetto and D. Katsantonis and D. Stavrakoudis and C. Minakou and B. Martinez and S. Sanchez-Ruiz and M.A. Gilabert and L. Gatti and M. Barbieri and F.J. Collivignarelli and F.J. Holecz and D. Stroppiana and M. Boschetti},\n\tyear         = 2017,\n\tmonth        = {18-22 September},\n\tbooktitle    = {5th International Symposium -- Recent Advances in Quantitative Remote Sensing},\n\taddress      = {Torrent, Spain},\n\tproject      = {sedal,ermes}\n}"
 },
 {
@@ -6798,7 +6798,7 @@
 "booktitle": "American Geophysical Union (AGU) Fall meeting 2017",
 "year": "2017",
 "address": "New Orleans, USA, 11-15 December 2017",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{CampsValls17agu_emula,\n\ttitle        = {{Advanced Machine Learning Emulators of Radiative Transfer Models}},\n\tauthor       = {G. Camps-Valls and J. Verrelst and L. Martino and J. Vicent},\n\tyear         = 2017,\n\tbooktitle    = {American Geophysical Union (AGU) Fall meeting 2017},\n\taddress      = {New Orleans, USA, 11-15 December 2017},\n\tproject      = {sedal}\n}"
 },
 {
@@ -6817,7 +6817,7 @@
 "booktitle": "American Geophysical Union (AGU) Fall meeting 2017",
 "year": "2017",
 "address": "New Orleans, USA, 11-15 December 2017",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{CampsValls17agu_gps,\n\ttitle        = {{Large Scale Gaussian Processes for Atmospheric Parameter Retrieval and Cloud Screening}},\n\tauthor       = {G. Camps-Valls and L. Gomez-Chova and G. Mateo and V. Laparra and Adrian Perez-Suay and J. Munoz-Mari},\n\tyear         = 2017,\n\tbooktitle    = {American Geophysical Union (AGU) Fall meeting 2017},\n\taddress      = {New Orleans, USA, 11-15 December 2017},\n\tproject      = {sedal}\n}"
 },
 {
@@ -6838,7 +6838,7 @@
 "booktitle": "American Geophysical Union (AGU) Fall meeting 2017",
 "year": "2017",
 "address": "New Orleans, USA, 11-15 December 2017",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{CampsValls17agu_wood,\n\ttitle        = {{Mapping wood density globally using remote sensing and climatological data}},\n\tauthor       = {A. Moreno-Martinez and G. Camps-Valls and N. Carvalhais and J. Kattge and N. Robinson and M. Reichstein and B. Allred and S.W. Running},\n\tyear         = 2017,\n\tbooktitle    = {American Geophysical Union (AGU) Fall meeting 2017},\n\taddress      = {New Orleans, USA, 11-15 December 2017},\n\tproject      = {sedal}\n}"
 },
 {
@@ -6856,7 +6856,7 @@
 "booktitle": "European Geosciences Union General Assembly 2017",
 "year": "2017",
 "address": "Vienna, Austria, 23-28 April 2017",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{CampsValls17egu,\n\ttitle        = {{Vegetation Monitoring with Gaussian Processes and Latent Force Models}},\n\tauthor       = {Camps-Valls, G. and Svendsen, D. and Campos, M. and Martino, L. and Luengo, D.},\n\tyear         = 2017,\n\tbooktitle    = {European Geosciences Union General Assembly 2017},\n\taddress      = {Vienna, Austria, 23-28 April 2017},\n\tproject      = {sedal}\n}"
 },
 {
@@ -6872,7 +6872,7 @@
 "booktitle": "10th EARSeL SIG Imaging Spectroscopy Workshop",
 "year": "2017",
 "address": "19-21 April 2017, University of Zurich (Switzerland)",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{CampsValls17lfmearsl,\n\ttitle        = {{Latent Force Models for Model-Data Integration in Vegetation Monitoring}},\n\tauthor       = {Martino, L. and Luengo, D. and Camps-Valls, G.},\n\tyear         = 2017,\n\tbooktitle    = {10th EARSeL SIG Imaging Spectroscopy Workshop},\n\taddress      = {19-21 April 2017, University of Zurich (Switzerland)},\n\tproject      = {sedal}\n}"
 },
 {
@@ -6892,7 +6892,7 @@
 "booktitle": "Scandinavian Conference on Image Analysis (SCIA)",
 "year": "2017",
 "address": "Tromsø, Norway",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{CampsValls17scia,\n\ttitle        = {{Physics-Aware Gaussian Processes for Earth Observation}},\n\tauthor       = {G. Camps-Valls and Daniel Svendsen and L. Martino and J. Munoz-Mari and V. Laparra and M. Campos-Taberner and David Luengo},\n\tyear         = 2017,\n\tmonth        = {12-14 June},\n\tbooktitle    = {Scandinavian Conference on Image Analysis (SCIA)},\n\taddress      = {Troms\\o, Norway},\n\tproject      = {sedal}\n}"
 },
 {
@@ -6913,7 +6913,7 @@
 "booktitle": "5th International Symposium – Recent Advances in Quantitative Remote Sensing",
 "year": "2017",
 "address": "Torrent, Spain",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{GarciaHaro17raqrs,\n\ttitle        = {{The geostationary and polar orbit LSA SAF vegetation products}},\n\tauthor       = {F.J. Garcia-Haro and M. Campos-Taberner and F. Camacho and B. Martinez and J. Sanchez-Zapero and G. Camps-Valls and S. Sanchez-Ruiz and M.A. Gilabert},\n\tyear         = 2017,\n\tmonth        = {18-22 September},\n\tbooktitle    = {5th International Symposium -- Recent Advances in Quantitative Remote Sensing},\n\taddress      = {Torrent, Spain},\n\tproject      = {sedal}\n}"
 },
 {
@@ -6931,7 +6931,7 @@
 "booktitle": "2017 EUMETSAT Meteorological Satellite Conference",
 "year": "2017",
 "address": "Rome, Italy",
-"project": "Sedal",
+"project": "SEDAL",
 "url": "http://isp.uv.es/papers/GarciaSobrino17eum.pdf",
 "raw": "@inproceedings{GarciaSobrino17eum,\n\ttitle        = {{Statistical Retrieval of Temperature and Moisture Atmospheric Profiles Benefits from Spatial-Spectral Image Compression}},\n\tauthor       = {J. Garcia-Sobrino and J. Serra-Sagrista and V. Laparra and X. Calbet and G. Camps-Valls},\n\tyear         = 2017,\n\tmonth        = {2-6 October},\n\tbooktitle    = {2017 EUMETSAT Meteorological Satellite Conference},\n\taddress      = {Rome, Italy},\n\turl          = {http://isp.uv.es/papers/GarciaSobrino17eum.pdf},\n\tproject      = {sedal}\n}"
 },
@@ -6949,7 +6949,7 @@
 "booktitle": "5th International Symposium – Recent Advances in Quantitative Remote Sensing",
 "year": "2017",
 "address": "Torrent, Spain",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{GomezChova17raqrs,\n\ttitle        = {{Advances in statistical cloud screening: the Proba-V case study}},\n\tauthor       = {Gomez-Chova, L. and Mateo-Garcia, G. and Munoz-Mari, J. and Camps-Valls, G.},\n\tyear         = 2017,\n\tmonth        = {18-22 September},\n\tbooktitle    = {5th International Symposium -- Recent Advances in Quantitative Remote Sensing},\n\taddress      = {Torrent, Spain},\n\tproject      = {sedal}\n}"
 },
 {
@@ -6972,7 +6972,7 @@
 "booktitle": "JpGU/AGU Joint Meeting",
 "year": "2017",
 "address": "Makuhari Messe, Japan",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Ichii17jpguagu,\n\ttitle        = {{FLUXCOM remote sensing data based CO2 flux products: overview and synthesis}},\n\tauthor       = {K. Ichii and M. Jung and G. Tramontana and G. Camps-Valls and C. R Schwalm and M. Kondo and D. Papale and M. Reichstein and U. Weber and Y. Yanagi},\n\tyear         = 2017,\n\tmonth        = {20-25 May},\n\tbooktitle    = {JpGU/AGU Joint Meeting},\n\taddress      = {Makuhari Messe, Japan},\n\tproject      = {sedal}\n}"
 },
 {
@@ -6996,7 +6996,7 @@
 "booktitle": "European Geosciences Union General Assembly 2017",
 "year": "2017",
 "address": "Vienna, Austria, 23-28 April 2017",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Koirala17egu,\n\ttitle        = {{Global distribution of groundwater-vegetation spatial covariation}},\n\tauthor       = {S. Koirala and Martin Jung and M. Reichstein and Inge E.M. de Graaf and G. Camps-Valls and K. Ichii and D. Papale and B. Raduly and C.R. Schwalm and G. Tramontana and N. Carvalhais},\n\tyear         = 2017,\n\tbooktitle    = {European Geosciences Union General Assembly 2017},\n\taddress      = {Vienna, Austria, 23-28 April 2017},\n\tproject      = {sedal}\n}"
 },
 {
@@ -7014,7 +7014,7 @@
 "booktitle": "2017 EUMETSAT Meteorological Satellite Conference",
 "year": "2017",
 "address": "Rome, Italy",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Laparra17eum,\n\ttitle        = {{Nonlinear statistical retrieval of land surface emissivity from infrared sounding data}},\n\tauthor       = {V. Laparra and J. Munoz-Mari and L. Gomez and X. Calbet and and G. Camps-Valls},\n\tyear         = 2017,\n\tmonth        = {2-6 October},\n\tbooktitle    = {2017 EUMETSAT Meteorological Satellite Conference},\n\taddress      = {Rome, Italy},\n\tproject      = {sedal}\n}"
 },
 {
@@ -7030,7 +7030,7 @@
 "booktitle": "2017 IEEE International Geoscience and Remote Sensing Symposium (IGARSS)",
 "pages": "1780–1783",
 "year": "2017",
-"project": "Kermes, Sedal",
+"project": "KERMES, SEDAL",
 "doi": "https://doi.org/10.1109/IGARSS.2017.8127320",
 "doi_bare": "10.1109/IGARSS.2017.8127320",
 "doi_url": "https://doi.org/10.1109/IGARSS.2017.8127320",
@@ -7199,7 +7199,7 @@
 "booktitle": "2017 IEEE International Geoscience and Remote Sensing Symposium (IGARSS)",
 "pages": "4346–4349",
 "year": "2017",
-"project": "Sedal",
+"project": "SEDAL",
 "doi": "https://doi.org/10.1109/IGARSS.2017.8127964",
 "doi_bare": "10.1109/IGARSS.2017.8127964",
 "doi_url": "https://doi.org/10.1109/IGARSS.2017.8127964",
@@ -7241,7 +7241,7 @@
 "booktitle": "2017 IEEE International Geoscience and Remote Sensing Symposium (IGARSS)",
 "pages": "5450–5453",
 "year": "2017",
-"project": "Kermes, Sedal",
+"project": "KERMES, SEDAL",
 "doi": "https://doi.org/10.1109/IGARSS.2017.8128237",
 "doi_bare": "10.1109/IGARSS.2017.8128237",
 "doi_url": "https://doi.org/10.1109/IGARSS.2017.8128237",
@@ -7282,7 +7282,7 @@
 "booktitle": "2017 EUMETSAT Meteorological Satellite Conference",
 "year": "2017",
 "address": "Rome, Italy",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Malmgren17eum,\n\ttitle        = {{Temperature Retrieval with Spatial Noise-aware dimensionality reduction}},\n\tauthor       = {D. Malmgren-Hansen and V. Laparra and A.A. Nielsen and X. Calbet and G. Camps-Valls},\n\tyear         = 2017,\n\tmonth        = {2-6 October},\n\tbooktitle    = {2017 EUMETSAT Meteorological Satellite Conference},\n\taddress      = {Rome, Italy},\n\tproject      = {sedal}\n}"
 },
 {
@@ -7299,7 +7299,7 @@
 "booktitle": "2017 IEEE International Geoscience and Remote Sensing Symposium (IGARSS)",
 "pages": "17–20",
 "year": "2017",
-"project": "Sedal",
+"project": "SEDAL",
 "doi": "https://doi.org/10.1109/IGARSS.2017.8126882",
 "doi_bare": "10.1109/IGARSS.2017.8126882",
 "doi_url": "https://doi.org/10.1109/IGARSS.2017.8126882",
@@ -7318,7 +7318,7 @@
 "booktitle": "25th European Signal Processing Conference (EUSIPCO)",
 "year": "2017",
 "address": "Kos, Greece",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Martino17eusipcoGMS,\n\ttitle        = {{Group Metropolis Sampling}},\n\tauthor       = {Martino, L. and Elvira, V. and Camps-Valls, G.},\n\tyear         = 2017,\n\tmonth        = aug,\n\tbooktitle    = {25th European Signal Processing Conference (EUSIPCO)},\n\taddress      = {Kos, Greece},\n\tproject      = {sedal}\n}"
 },
 {
@@ -7334,7 +7334,7 @@
 "booktitle": "25th European Signal Processing Conference (EUSIPCO)",
 "year": "2017",
 "address": "Kos, Greece",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Martino17eusipcoPCV,\n\ttitle        = {{Probabilistic Cross-Validation Estimators for Gaussian Process Regression}},\n\tauthor       = {Martino, L. and V., L and Camps-Valls, G.},\n\tyear         = 2017,\n\tmonth        = aug,\n\tbooktitle    = {25th European Signal Processing Conference (EUSIPCO)},\n\taddress      = {Kos, Greece},\n\tproject      = {sedal}\n}"
 },
 {
@@ -7350,7 +7350,7 @@
 "booktitle": "25th European Signal Processing Conference (EUSIPCO)",
 "year": "2017",
 "address": "Kos, Greece",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Martino17eusipcoRGS,\n\ttitle        = {{Recycling Gibbs Sampling}},\n\tauthor       = {Martino, L. and Elvira, V. and Camps-Valls, G.},\n\tyear         = 2017,\n\tmonth        = aug,\n\tbooktitle    = {25th European Signal Processing Conference (EUSIPCO)},\n\taddress      = {Kos, Greece},\n\tproject      = {sedal}\n}"
 },
 {
@@ -7366,7 +7366,7 @@
 "booktitle": "2017 IEEE International Geoscience and Remote Sensing Symposium (IGARSS)",
 "pages": "1457–1460",
 "year": "2017",
-"project": "Kermes, Sedal",
+"project": "KERMES, SEDAL",
 "doi": "https://doi.org/10.1109/IGARSS.2017.8127241",
 "doi_bare": "10.1109/IGARSS.2017.8127241",
 "doi_url": "https://doi.org/10.1109/IGARSS.2017.8127241",
@@ -7385,7 +7385,7 @@
 "booktitle": "Scandinavian Conference on Image Analysis (SCIA)",
 "year": "2017",
 "address": "Tromsø, Norway",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Martino17scia,\n\ttitle        = {{Automatic Emulation by Adaptive Relevance Vector Machines}},\n\tauthor       = {L. Martino and J. Vicent and G. Camps-Valls},\n\tyear         = 2017,\n\tmonth        = {12-14 June},\n\tbooktitle    = {Scandinavian Conference on Image Analysis (SCIA)},\n\taddress      = {Troms\\o, Norway},\n\tproject      = {sedal}\n}"
 },
 {
@@ -7420,7 +7420,7 @@
 "booktitle": "2017 IEEE International Geoscience and Remote Sensing Symposium (IGARSS)",
 "pages": "2227–2230",
 "year": "2017",
-"project": "Kermes, Sedal",
+"project": "KERMES, SEDAL",
 "doi": "https://doi.org/10.1109/IGARSS.2017.8127431",
 "doi_bare": "10.1109/IGARSS.2017.8127431",
 "doi_url": "https://doi.org/10.1109/IGARSS.2017.8127431",
@@ -7441,7 +7441,7 @@
 "booktitle": "2017 IEEE International Conference on Image Processing",
 "year": "2017",
 "address": "Beijing, China",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{PabloMorales2017,\n\ttitle        = {{Passive millimeter wave image classification with large scale Gaussian processes}},\n\tauthor       = {Pablo Morales, A. and Perez-Suay, A. and Molina, R. and Camps-Valls, G. and Katsaggelos, A. K.},\n\tyear         = 2017,\n\tmonth        = {17-20 September},\n\tbooktitle    = {2017 IEEE International Conference on Image Processing},\n\taddress      = {Beijing, China},\n\tproject      = {sedal}\n}"
 },
 {
@@ -7460,7 +7460,7 @@
 "booktitle": "European Conference on Machine Learning (ECML)",
 "year": "2017",
 "address": "Skopje, Macedonia",
-"project": "Kermes, Sedal",
+"project": "KERMES, SEDAL",
 "raw": "@inproceedings{PerezSuay17ecmlpkdd,\n\ttitle        = {{Fair Kernel Learning}},\n\tauthor       = {Perez-Suay, A. and Laparra, V. and Mateo-Garcia, G. and Munoz-Mari, J. and Gomez-Chova, L. and Camps-Valls, G.},\n\tyear         = 2017,\n\tmonth        = {18-22 September},\n\tbooktitle    = {European Conference on Machine Learning (ECML)},\n\taddress      = {Skopje, Macedonia},\n\tproject      = {sedal,kermes}\n}"
 },
 {
@@ -7480,7 +7480,7 @@
 "booktitle": "2017 EUMETSAT Meteorological Satellite Conference",
 "year": "2017",
 "address": "Rome, Italy",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{PerezSuay17eum,\n\ttitle        = {{Fast Cloud Detection over Landmarks in MSG/SEVIRI Image Time Series}},\n\tauthor       = {A. Perez-Suay and J. Amoros-Lopez and L. Gomez-Chova and V. Laparra and J. Munoz-Mari and D. Just and G. Camps-Valls},\n\tyear         = 2017,\n\tmonth        = {2-6 October},\n\tbooktitle    = {2017 EUMETSAT Meteorological Satellite Conference},\n\taddress      = {Rome, Italy},\n\tproject      = {sedal}\n}"
 },
 {
@@ -7495,7 +7495,7 @@
 "booktitle": "2017 IEEE International Geoscience and Remote Sensing Symposium (IGARSS)",
 "pages": "763–766",
 "year": "2017",
-"project": "Kermes, Sedal",
+"project": "KERMES, SEDAL",
 "doi": "https://doi.org/10.1109/IGARSS.2017.8127064",
 "doi_bare": "10.1109/IGARSS.2017.8127064",
 "doi_url": "https://doi.org/10.1109/IGARSS.2017.8127064",
@@ -7516,7 +7516,7 @@
 "booktitle": "2017 IEEE International Geoscience and Remote Sensing Symposium (IGARSS)",
 "pages": "2187–2190",
 "year": "2017",
-"project": "Kermes, Sedal",
+"project": "KERMES, SEDAL",
 "doi": "https://doi.org/10.1109/IGARSS.2017.8127421",
 "doi_bare": "10.1109/IGARSS.2017.8127421",
 "doi_url": "https://doi.org/10.1109/IGARSS.2017.8127421",
@@ -7536,7 +7536,7 @@
 "booktitle": "2017 IEEE International Geoscience and Remote Sensing Symposium (IGARSS)",
 "pages": "3980–3983",
 "year": "2017",
-"project": "Kermes, Sedal",
+"project": "KERMES, SEDAL",
 "doi": "https://doi.org/10.1109/IGARSS.2017.8127872",
 "doi_bare": "10.1109/IGARSS.2017.8127872",
 "doi_url": "https://doi.org/10.1109/IGARSS.2017.8127872",
@@ -7559,7 +7559,7 @@
 "booktitle": "5th International Symposium – Recent Advances in Quantitative Remote Sensing",
 "year": "2017",
 "address": "Torrent, Spain",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Svendsen17raqrs,\n\ttitle        = {{Advances in statistical biophysical parameter retrieval}},\n\tauthor       = {Svendsen, D. and Martino, L. and Gomez-Chova, L. and Munoz-Mar{i}, J. and Garcia-Haro, J. and M. Campos-Taberner and Camps-Valls, G.},\n\tyear         = 2017,\n\tmonth        = {18-22 September},\n\tbooktitle    = {5th International Symposium -- Recent Advances in Quantitative Remote Sensing},\n\taddress      = {Torrent, Spain},\n\tproject      = {sedal}\n}"
 },
 {
@@ -7587,7 +7587,7 @@
 "booktitle": "European Geosciences Union General Assembly 2017",
 "year": "2017",
 "address": "Vienna, Austria, 23-28 April 2017",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Tramontana17egu,\n\ttitle        = {{Predicting carbon dioxide and energy fluxes with empirical approaches in FLUXNET}},\n\tauthor       = {G. Tramontana and M. Jung and C. R. Schwalm and K. Ichii and G. Camps-Valls and B. Ráduly and M. Reichstein and M. Altaf Arain and A. Cescatti and G. Kiely and L. Merbold and P. Serrano-Ortiz and S. Sickert and S. Wolf and D. Papale},\n\tyear         = 2017,\n\tbooktitle    = {European Geosciences Union General Assembly 2017},\n\taddress      = {Vienna, Austria, 23-28 April 2017},\n\tproject      = {sedal}\n}"
 },
 {
@@ -7602,7 +7602,7 @@
 "booktitle": "10th EARSeL SIG Imaging Spectroscopy Workshop",
 "year": "2017",
 "address": "19-21 April 2017, University of Zurich (Switzerland)",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Tuia17earsl,\n\ttitle        = {{Is My Method Robust To Acquisition Conditions? An Empirical Manifold alignment Perspective}},\n\tauthor       = {Tuia, D. and Camps-Valls, G.},\n\tyear         = 2017,\n\tbooktitle    = {10th EARSeL SIG Imaging Spectroscopy Workshop},\n\taddress      = {19-21 April 2017, University of Zurich (Switzerland)},\n\tproject      = {sedal}\n}"
 },
 {
@@ -7622,7 +7622,7 @@
 "booktitle": "10th EARSeL SIG Imaging Spectroscopy Workshop",
 "year": "2017",
 "address": "19-21 April 2017, University of Zurich (Switzerland)",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Verrelst17artmoearsl,\n\ttitle        = {{Automated Spectral Band Selection for Optimized Vegetation Properties Retrieval Using Gaussian Processes Regression}},\n\tauthor       = {Verrelst, J. and Rivera, J.P. and Gitelson, A. and Delegido, J. and Wittenberghe, S. and Moreno, J. and Camps-Valls, G.},\n\tyear         = 2017,\n\tbooktitle    = {10th EARSeL SIG Imaging Spectroscopy Workshop},\n\taddress      = {19-21 April 2017, University of Zurich (Switzerland)},\n\tproject      = {sedal}\n}"
 },
 {
@@ -7642,7 +7642,7 @@
 "booktitle": "10th EARSeL SIG Imaging Spectroscopy Workshop",
 "year": "2017",
 "address": "19-21 April 2017, University of Zurich (Switzerland)",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Verrelst17emulaearsl,\n\ttitle        = {{Emulation of Radiative Transfer Models: New Opportunities for Spectroscopy Data Processing}},\n\tauthor       = {Verrelst, J. and Sabater, N. and Rivera, J.P. and Munoz-Mari, J. and Vicent, J. and Moreno, J. and Camps-Valls, G.},\n\tyear         = 2017,\n\tbooktitle    = {10th EARSeL SIG Imaging Spectroscopy Workshop},\n\taddress      = {19-21 April 2017, University of Zurich (Switzerland)},\n\tproject      = {sedal}\n}"
 },
 {
@@ -7662,7 +7662,7 @@
 "booktitle": "ESA Workshop on Remote Sensing of Fluoroscence, Photosynthesis and Vegetation Status",
 "year": "2017",
 "address": "17-19 January 2017 at ESA-ESRIN, Frascati, Italy",
-"project": "Sedal",
+"project": "SEDAL",
 "raw": "@inproceedings{Walther17esasif,\n\ttitle        = {{An intercomparison of SIF vs EO-based vegetation parameters at global scale: what else can we learn about photosynthesis in the temporal dimension?}},\n\tauthor       = {Walther, S. and Guanter, L. and Duveiller, G. and Cescatti, A. and Jung, M. and Koehler, P. and Camps-Valls, G.},\n\tyear         = 2017,\n\tbooktitle    = {{ESA} Workshop on Remote Sensing of Fluoroscence, Photosynthesis and Vegetation Status},\n\taddress      = {17-19 January 2017 at ESA-ESRIN, Frascati, Italy},\n\tproject      = {sedal}\n}"
 },
 {
@@ -7722,7 +7722,7 @@
 "booktitle": "9th International Conference on Computational and Methodological Statistics, CMStatistics",
 "year": "2016",
 "address": "Sevilla, Spain",
-"project": "Kermes, Sedal",
+"project": "KERMES, SEDAL",
 "raw": "@inproceedings{CampsValls16cms,\n\ttitle        = {{Monitoring Vegetation From Space with Gaussian Processes and Latent Force Models}},\n\tauthor       = {Camps-Valls, G.},\n\tyear         = 2016,\n\tmonth        = dec,\n\tbooktitle    = {9th International Conference on Computational and Methodological Statistics, CMStatistics},\n\taddress      = {Sevilla, Spain},\n\tproject      = {sedal,kermes}\n}"
 },
 {
@@ -7756,7 +7756,7 @@
 "booktitle": "2016 IEEE International Workshop on Machine Learning for Signal Processing (MLSP 2016)",
 "year": "2016",
 "address": "Salerno, Italy",
-"project": "Sedal",
+"project": "SEDAL",
 "url": "http://mlsp2016.conwiz.dk/home.htm",
 "raw": "@inproceedings{Luengo16mlsp,\n\ttitle        = {{Latent Force Models for Earth Observation Time Series Prediction}},\n\tauthor       = {Luengo-Garcia, D. and Campos-Taberner, M. and Camps-Valls, G.},\n\tyear         = 2016,\n\tmonth        = sep,\n\tbooktitle    = {2016 IEEE International Workshop on Machine Learning for Signal Processing (MLSP 2016)},\n\taddress      = {Salerno, Italy},\n\turl          = {http://mlsp2016.conwiz.dk/home.htm},\n\tproject      = {sedal}\n}"
 },
@@ -7897,7 +7897,7 @@
 "year": "2016",
 "publisher": "Springer International Publishing",
 "address": "Cham",
-"project": "Kermes, Sedal",
+"project": "KERMES, SEDAL",
 "doi": "http://dx.doi.org/10.1007/978-3-319-44412-3_6",
 "doi_bare": "10.1007/978-3-319-44412-3_6",
 "doi_url": "http://dx.doi.org/10.1007/978-3-319-44412-3_6",
@@ -7923,7 +7923,7 @@
 ],
 "booktitle": "AGU Fall Meeting",
 "year": "2016",
-"project": "Sedal",
+"project": "SEDAL",
 "url": "https://agu.confex.com/agu/fm16/meetingapp.cgi/Paper/133025",
 "raw": "@inproceedings{reichstein16,\n\ttitle        = {{Potential of new machine learning methods for understanding long-term interannual variability of carbon and energy fluxes and states from site to global scale}},\n\tauthor       = {M. Reichstein and M. Jung and P. Bodesheim and M. Mahecha and F. Gans and E. Rodner and G. Camps-Valls and D. Papaple and G. Tramontana and J. Denzler and D. Baldocchi},\n\tyear         = 2016,\n\tbooktitle    = {AGU Fall Meeting},\n\turl          = {https://agu.confex.com/agu/fm16/meetingapp.cgi/Paper/133025},\n\tproject      = {sedal}\n}"
 },
@@ -7970,7 +7970,7 @@
 ],
 "booktitle": "AGU Fall Meeting",
 "year": "2016",
-"project": "Sedal",
+"project": "SEDAL",
 "url": "https://agu.confex.com/agu/fm16/meetingapp.cgi/Paper/179882",
 "raw": "@inproceedings{Walther2016,\n\ttitle        = {{Space-borne Chlorophyll Fluorescence, Greenness, Vegetation Models and Interannual Variability of Photosynthetic Activity: Spatio-temporal Patterns, Mechanisms, and Environmental Sensitivities}},\n\tauthor       = {S. Walther and L. Guanter and M. Jung and C. Frankenberg and Y. Sun and M. Forkel and Y. Zhang and G. Duvellier and A. Cescatti and G. Camps-Valls and P. Köhler},\n\tyear         = 2016,\n\tbooktitle    = {AGU Fall Meeting},\n\turl          = {https://agu.confex.com/agu/fm16/meetingapp.cgi/Paper/179882},\n\tproject      = {sedal}\n}"
 },
@@ -7988,7 +7988,7 @@
 "booktitle": "Geoscience and Remote Sensing Symposium (IGARSS), 2015 IEEE International",
 "pages": "17–20",
 "year": "2015",
-"project": "Kermes, Sedal",
+"project": "KERMES, SEDAL",
 "doi": "http://dx.doi.org/10.1109/IGARSS.2015.7325686",
 "doi_bare": "10.1109/IGARSS.2015.7325686",
 "doi_url": "http://dx.doi.org/10.1109/IGARSS.2015.7325686",
@@ -8029,7 +8029,7 @@
 "booktitle": "Geoscience and Remote Sensing Symposium (IGARSS), 2015 IEEE International",
 "pages": "996–999",
 "year": "2015",
-"project": "Sedal",
+"project": "SEDAL",
 "doi": "http://dx.doi.org/10.1109/IGARSS.2015.7325936",
 "doi_bare": "10.1109/IGARSS.2015.7325936",
 "doi_url": "http://dx.doi.org/10.1109/IGARSS.2015.7325936",
@@ -8095,7 +8095,7 @@
 "booktitle": "Geoscience and Remote Sensing Symposium (IGARSS), 2015 IEEE International",
 "pages": "4416–4419",
 "year": "2015",
-"project": "Sedal",
+"project": "SEDAL",
 "doi": "http://dx.doi.org/10.1109/IGARSS.2015.7326806",
 "doi_bare": "10.1109/IGARSS.2015.7326806",
 "doi_url": "http://dx.doi.org/10.1109/IGARSS.2015.7326806",
@@ -8119,7 +8119,7 @@
 "booktitle": "Geoscience and Remote Sensing Symposium (IGARSS), 2015 IEEE International",
 "pages": "17–20",
 "year": "2015",
-"project": "Ermes, Sedal",
+"project": "ERMES, SEDAL",
 "doi": "http://dx.doi.org/10.1109/IGARSS.2015.7325686",
 "doi_bare": "10.1109/IGARSS.2015.7325686",
 "doi_url": "http://dx.doi.org/10.1109/IGARSS.2015.7325686",

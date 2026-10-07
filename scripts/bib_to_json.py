@@ -178,13 +178,11 @@ def format_authors(authors):
 def format_projects(projects):
     arr = [p.strip() for p in projects.split(",") if p.strip()]
     arr = [p[:-8].strip() if p.endswith(" Project") else p for p in arr]
-    arr = [p.lower().title() for p in arr]
-    seen = []
+    # etiquetas canonicas: mayusculas (los nombres de proyecto son acronimos)
+    best = {}
     for p in arr:
-        if p not in seen:
-            seen.append(p)
-    seen.sort()
-    return ", ".join(seen)
+        best[p.lower()] = p.upper()
+    return ", ".join(sorted(best.values()))
 
 
 def norm_entry(e):
