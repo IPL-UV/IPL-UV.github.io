@@ -26,7 +26,7 @@
         {{- range . -}}
         {{- $e := . -}}
         <article id="pub-{{ .key }}" class="grid-item bib-item seminar-item project-item" data-year="{{ .year }}" data-project="{{ .project }}">
-          <span class="title" style="font-weight: bold;">{{ .title }}</span><br>
+          <h3 class="pub-title">{{ .title }}</h3>
           <span class="author">{{ .author }}</span><br>
           {{ with .booktitle }}<span style="font-style: italic;">{{ . }}{{ with $e.address }}, <span style="font-style: normal;">{{ . }}</span>{{ end }},</span>{{ end }}
           {{ with .journal }}<span style="font-style: italic;">{{ . }},</span>{{ end }}
@@ -48,6 +48,11 @@
             <div class="__dimensions_badge_embed__ dimension-embed" data-doi="{{ . }}"></div>{{ end }}
           </div>
           {{ with .raw }}<div class="bibtexdata alert alert-success" style="display: none;"><pre class="bibtex">{{ . }}</pre></div>{{ end }}
+          {{- $ld := dict "@context" "https://schema.org" "@type" "ScholarlyArticle" "headline" .title "author" .author -}}
+          {{- with .year }}{{ $ld = merge $ld (dict "datePublished" .) }}{{ end -}}
+          {{- with .doi_url }}{{ $ld = merge $ld (dict "url" .) }}{{ end -}}
+          {{- with .journal }}{{ $ld = merge $ld (dict "isPartOf" (dict "@type" "Periodical" "name" .)) }}{{ end -}}
+          <script type="application/ld+json">{{ $ld | jsonify | safeJS }}</script>
         </article>
         {{- end -}}
       {{- end -}}
@@ -129,6 +134,7 @@
   .bib-item { display: block; }
   .bib-item.hidden { display: none !important; }
   .bibtex { white-space: pre-wrap; overflow-x: auto; margin: 0; font-size: 0.85em; background: transparent; border: 0; }
+  .bib-item .pub-title { background: none; color: inherit; font-size: 1em; padding: 0; margin: 0 0 0.2rem 0; display: block; text-align: left; line-height: 1.4; }
   @media (max-width: 991px) {
     .filter-container { flex-direction: column; align-items: center; }
     .button-filter-group-year,
@@ -142,6 +148,21 @@
 </style>
 
 <script src="{{ relURL "js/publications.js" }}" defer></script>
-<script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+<script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js" async></script>
 <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    function processBadges() {
+      document.querySelectorAll('.__dimensions_Badge_Image').forEach(function (badge) {
+        var box = badge.closest('.__dimensions_badge_embed__');
+        var score = box && box.querySelector('.__db_score');
+        if (score) badge.style.display = parseInt(score.textContent.trim(), 10) >= 9 ? 'inline-block' : 'none';
+      });
+    }
+    var obs = new MutationObserver(processBadges);
+    obs.observe(document.body, { childList: true, subtree: true });
+    processBadges();
+    setTimeout(function () { obs.disconnect(); }, 5000);
+  });
+</script>
 {{ end }}

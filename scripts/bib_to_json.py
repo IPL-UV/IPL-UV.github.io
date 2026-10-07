@@ -149,12 +149,18 @@ def split_authors(authors):
 def format_authors(authors):
     out = []
     for a in split_authors(authors):
-        a = a.replace(",", " ").strip()
-        words = a.split()
-        if len(words) > 1:
-            out.append(f"{words[0]} {words[1][0].upper()}.")
-        elif words:
-            out.append(words[0])
+        a = a.strip()
+        if "," in a:
+            last, first = [p.strip() for p in a.split(",", 1)]
+            words = first.split()
+            init = (words[0][0].upper() + ".") if words else ""
+            out.append((last + " " + init).strip())
+        else:
+            words = a.split()
+            if len(words) == 1:
+                out.append(words[0])
+            else:
+                out.append(f"{words[-1]} {words[0][0].upper()}.")
     if len(out) > 12:
         out = out[:12] + ["others"]
     if len(out) > 1:
@@ -254,6 +260,7 @@ def main():
         entries = list(seen.values())
         if not entries:
             problems.append(f"{name}.bib: 0 entradas")
+            continue
         out = os.path.join(OUT_DIR, f"{name}.json")
         with open(out, "w", encoding="utf-8") as fh:
             json.dump(entries, fh, ensure_ascii=False, indent=0)
@@ -264,6 +271,8 @@ def main():
         print(msg)
     for missing in sorted(content_bibfiles() - generated):
         problems.append(f"content declara bibfiles/{missing}.bib pero no hay JSON")
+    for orphan in sorted(generated - content_bibfiles()):
+        problems.append(f"assets/bibfiles/{orphan}.bib no lo usa ninguna pagina de content")
     if problems:
         print("PROBLEMAS:", file=sys.stderr)
         for p in problems:
