@@ -29,7 +29,7 @@
                         <p><span style="color: #337ab7; font-weight: bold;">Trainers:</span> {{ .Params.instructor }}</p>
                         {{ end }}
                         {{ if .Content}}
-                        <p><span style="color: #337ab7; font-weight: bold;">Description:</span> {{ .Content | markdownify }}</p>
+                        <div class="course-desc"><span style="color: #23527c; font-weight: bold;">Description:</span> {{ .Content }}</div>
                         {{ end }}
                         {{ if .Params.keywords}}
                         <p><span style="color: #337ab7; font-weight: bold;">Keywords:</span> 

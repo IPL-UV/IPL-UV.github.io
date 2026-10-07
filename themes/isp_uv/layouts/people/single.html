@@ -6,7 +6,7 @@
     {{ end }}
     <div class="person-head">
       <h1 class="person-name">{{ .Title }}</h1>
-      {{ with .Params.role }}<p class="person-role">{{ . }}</p>{{ else }}{{ with .File }}<p class="person-role">{{ path.Base (path.Dir .Dir) | replaceRE "_" " " | title }}</p>{{ end }}{{ end }}
+      {{ $rmap := dict "full_professors" "Full professor" "associate_professors" "Associate professor" "assistant_professors" "Assistant professor" "senior_research_scientists" "Senior research scientist" "postdocs" "Postdoctoral researcher" "phd_students" "PhD student" "visitors" "Visiting researcher" "administrative_communications" "Communications" "alumni" "Alumnus" }}{{ $rr := "" }}{{ with .File }}{{ $rr = index (split (strings.TrimSuffix "/" .Dir) "/") 1 }}{{ end }}{{ $rt := index $rmap $rr | default .Params.role | default ($rr | replaceRE "_" " " | title) }}{{ with $rt }}<p class="person-role">{{ . }}</p>{{ end }}
       <div class="person-links">
         {{ with .Params.googlescholar }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">Google Scholar</a>{{ end }}
         {{ with .Params.orcid }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">ORCID</a>{{ end }}

@@ -11,8 +11,8 @@
 {{- end -}}
 {{- $roles := dict "full_professors" "Full professor" "associate_professors" "Associate professor" "assistant_professors" "Assistant professor" "senior_research_scientists" "Senior research scientist" "postdocs" "Postdoctoral researcher" "phd_students" "PhD student" "visitors" "Visiting researcher" "administrative_communications" "Communications" "alumni" "Alumnus" -}}
 {{- $role := "" -}}
-{{- with .File }}{{ $role = path.Base (path.Dir .Dir) }}{{ end -}}
-{{- $jobtitle := .Params.role | default (index $roles $role) -}}
+{{- with .File }}{{ $role = index (split (strings.TrimSuffix "/" .Dir) "/") 1 }}{{ end -}}
+{{- $jobtitle := index $roles $role | default .Params.role -}}
 {{- $person := dict "@context" "https://schema.org" "@type" "Person" "name" .Title "url" .Permalink -}}
 {{- if eq $role "alumni" -}}
 {{- $person = merge $person (dict "alumniOf" (dict "@type" "ResearchOrganization" "@id" $orgid "name" site.Title)) -}}
