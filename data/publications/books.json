@@ -55,39 +55,6 @@
 "raw": "@article{mateo2021generative,\n\ttitle        = {Generative Adversarial Networks in the Geosciences},\n\tauthor       = {Mateo-Garc{\\'i}a, Gonzalo and Laparra, Valero and Requena-Mesa, Christian and G{\\'o}mez-Chova, Luis},\n\tyear         = 2021,\n\tjournal      = {Deep Learning for the Earth Sciences: A Comprehensive Approach to Remote Sensing, Climate Science, and Geosciences},\n\tpublisher    = {Wiley Online Library},\n\tpages        = {24--36}\n}"
 },
 {
-"key": "CampsValls21wiley",
-"type": "book",
-"title": "Deep learning for the Earth Sciences: A comprehensive approach to remote sensing, climate science and geosciences",
-"author": "Gustau C., Devis T., Xiao X. and Markus R.",
-"year": "2021",
-"publisher": "Wiley & Sons",
-"project": "SEDAL, USMILE",
-"url": "https://github.com/DL4ES",
-"raw": "@book{CampsValls21wiley,\n\ttitle        = {Deep learning for the Earth Sciences: A comprehensive approach to remote sensing, climate science and geosciences},\n\tauthor       = {Gustau Camps-Valls and Devis Tuia and Xiao Xiang Zhu and Markus Reichstein},\n\tyear         = 2021,\n\tpublisher    = {Wiley \\& Sons},\n\tisbn         = 9781119646143,\n\turl          = {https://github.com/DL4ES},\n\tproject      = {SEDAL,USMILE}\n}"
-},
-{
-"key": "adsuara2021learning",
-"type": "article",
-"title": "Learning Unsupervised Feature Representations of Remote Sensing Data with Sparse Convolutional Networks",
-"author": "Adsuara J., Campos-Taberner M., García-Haro J., Gatta C., Romero A. and Camps-Valls G.",
-"journal": "Deep Learning for the Earth Sciences: A Comprehensive Approach to Remote Sensing, Climate Science, and Geosciences",
-"pages": "13–23",
-"year": "2021",
-"publisher": "Wiley Online Library",
-"raw": "@article{adsuara2021learning,\n\ttitle        = {Learning Unsupervised Feature Representations of Remote Sensing Data with Sparse Convolutional Networks},\n\tauthor       = {Adsuara, Jose E and Campos-Taberner, Manuel and Garc{\\'i}a-Haro, Javier and Gatta, Carlo and Romero, Adriana and Camps-Valls, Gustau},\n\tyear         = 2021,\n\tjournal      = {Deep Learning for the Earth Sciences: A Comprehensive Approach to Remote Sensing, Climate Science, and Geosciences},\n\tpublisher    = {Wiley Online Library},\n\tpages        = {13--23}\n}"
-},
-{
-"key": "mateo2021generative",
-"type": "article",
-"title": "Generative Adversarial Networks in the Geosciences",
-"author": "Mateo-García G., Laparra V., Requena-Mesa C. and Gómez-Chova L.",
-"journal": "Deep Learning for the Earth Sciences: A Comprehensive Approach to Remote Sensing, Climate Science, and Geosciences",
-"pages": "24–36",
-"year": "2021",
-"publisher": "Wiley Online Library",
-"raw": "@article{mateo2021generative,\n\ttitle        = {Generative Adversarial Networks in the Geosciences},\n\tauthor       = {Mateo-Garc{\\'i}a, Gonzalo and Laparra, Valero and Requena-Mesa, Christian and G{\\'o}mez-Chova, Luis},\n\tyear         = 2021,\n\tjournal      = {Deep Learning for the Earth Sciences: A Comprehensive Approach to Remote Sensing, Climate Science, and Geosciences},\n\tpublisher    = {Wiley Online Library},\n\tpages        = {24--36}\n}"
-},
-{
 "key": "CampsValls21wsp",
 "type": "incollection",
 "title": "Perspective on Deep Learning for Earth Sciences",
@@ -133,6 +100,7 @@
 "publisher": "Elsevier",
 "project": "SEDAL",
 "doi": "https://doi.org/10.1016/B978-0-444-63977-6.00015-8",
+"doi_bare": "10.1016/B978-0-444-63977-6.00015-8",
 "doi_url": "https://doi.org/10.1016/B978-0-444-63977-6.00015-8",
 "url": "http://www.sciencedirect.com/science/article/pii/B9780444639776000158",
 "abstract": "Earth observation from satellites poses challenging problems where machine learning is being widely adopted as a key player. Perhaps the most challenging scenario that we are facing nowadays is to provide accurate estimates of particular variables of interest characterizing the Earth's surface. This chapter introduces some recent advances in statistical bio-geophysical parameter retrieval from satellite data. In particular, we will focus on Gaussian process regression (GPR) that has excelled in parameter estimation as well as in modeling complex radiative transfer processes. GPR is based on solid Bayesian statistics and generally yields efficient and accurate parameter estimates, accompanied by confidence intervals for the estimations. We will first review the standard application of GPs for parameter retrieval and inverse modeling, which is based on regressing the parameter of interest on the concurrent observations. Secondly, noting that very often several parameters need to be estimated simultaneously, we review the field of multioutput GPR and illustrate its application in gap filling of multiple time series of parameters. The third GP modeling that we review here is that of combining real and simulated data. Very often a forward model encoding the well-understood physical relations is available. Inverting the model with GP is a standard practice known as hybrid modeling. In addition, we review a joint GP (JGP) model that combines both in~situ measurements and simulated data in a single GP model and allows us to transfer information across spatial, temporal, and land cover modalities such as different crops. In recent years, forced by the data deluge, a plethora of large-scale GP models were introduced. We review recent advances and illustrate their performance for the estimation of surface temperature from infrared sounding data. Finally, we take a reversed pathway and focus on mimicking physical models with GPs. We present an automatic emulation scheme that approximates the forward physical model via interpolation, reducing the number of necessary nodes. Empirical evidence of the performance of these models will be presented through illustrative examples of land and vegetation monitoring.",
@@ -179,6 +147,7 @@
 "year": "2017",
 "publisher": "Wiley & Sons",
 "doi": "http://dx.doi.org/10.1002/9781118445112.stat03876.pub2",
+"doi_bare": "10.1002/9781118445112.stat03876.pub2",
 "doi_url": "http://dx.doi.org/10.1002/9781118445112.stat03876.pub2",
 "raw": "@incollection{Monte17Luca,\n\ttitle        = {Metropolis Sampling},\n\tauthor       = {Martino, L and Elvira, V},\n\tyear         = 2017,\n\tbooktitle    = {Wiley StatsRef: Statistics Reference Online},\n\tpublisher    = {Wiley \\& Sons},\n\tdoi          = {http://dx.doi.org/10.1002/9781118445112.stat03876.pub2}\n}"
 },
@@ -229,6 +198,7 @@
 "year": "2013",
 "publisher": "Springer Berlin Heidelberg",
 "doi": "10.1007/978-3-642-35932-3\\_5",
+"doi_bare": "10.1007/978-3-642-35932-3\\_5",
 "doi_url": "https://doi.org/10.1007/978-3-642-35932-3\\_5",
 "url": "http://dx.doi.org/10.1007/978-3-642-35932-3\\_5",
 "raw": "@incollection{Ruiz13,\n\ttitle        = {Interactive Pansharpening and Active Classification in Remote Sensing},\n\tauthor       = {Ruiz, Pablo and Mateos, Javier and Camps-Valls, Gustavo and Molina, Rafael and Katsaggelos, Aggelos K.},\n\tyear         = 2013,\n\tbooktitle    = {Multimodal Interaction in Image and Video Applications},\n\tpublisher    = {Springer Berlin Heidelberg},\n\tseries       = {Intelligent Systems Reference Library},\n\tvolume       = 48,\n\tpages        = {67--81},\n\tdoi          = {10.1007/978-3-642-35932-3\\_5},\n\tisbn         = {978-3-642-35931-6},\n\turl          = {http://dx.doi.org/10.1007/978-3-642-35932-3\\_5}\n}"
@@ -253,6 +223,7 @@
 "year": "2011",
 "publisher": "Springer Berlin Heidelberg",
 "doi": "10.1007/978-3-642-14212-3\\_10",
+"doi_bare": "10.1007/978-3-642-14212-3\\_10",
 "doi_url": "https://doi.org/10.1007/978-3-642-14212-3\\_10",
 "url": "http://dx.doi.org/10.1007/978-3-642-14212-3\\_10",
 "raw": "@incollection{GomezChova11review,\n\ttitle        = {A Review of Kernel Methods in Remote Sensing Data Analysis},\n\tauthor       = {G\\'{o}mez-Chova, Luis and Mu\\~{n}oz-Mar\\'{\\i}, Jordi and Laparra, Valero and Malo-L\\'{o}pez, Jes\\'{u}s and Camps-Valls, Gustavo},\n\tyear         = 2011,\n\tbooktitle    = {Optical Remote Sensing -- Advances in Signal Processing and Exploitation Techniques},\n\tpublisher    = {Springer Berlin Heidelberg},\n\tseries       = {Augmented Vision and Reality},\n\tvolume       = 3,\n\tpages        = {171--206},\n\tdoi          = {10.1007/978-3-642-14212-3\\_10},\n\tisbn         = {978-3-642-14211-6},\n\turl          = {http://dx.doi.org/10.1007/978-3-642-14212-3\\_10},\n\teditor       = {Prasad, Saurabh and Bruce, Lori M. and Chanussot, Jocelyn}\n}"

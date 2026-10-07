@@ -452,19 +452,6 @@
 "raw": "@inproceedings{campsvalls2020ingarss,\n\ttitle        = {{Living in the Physics-Machine learning interplay for earth observation}},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2020,\n\tmonth        = {Dec},\n\tbooktitle    = {InGARSS 2020},\n\taddress      = {Online Everywhere, https://www.ingarss2020.org/},\n\tvideo        = {https://www.ingarss2020.org/}\n}"
 },
 {
-"key": "CampsValls20phiweek",
-"type": "inproceedings",
-"title": "Living in the Physics and Machine Learning Interplay - An AI agenda with examples for the DTE",
-"author": "Gustau C.",
-"booktitle": "The ESA Phi-week 2020",
-"year": "2020",
-"address": "ESA-ESRIN, Italy",
-"project": "SEDAL",
-"pdf": "http://isp.uv.es/slides/PHIWEEK20_PhysicsMLinterplay.pdf",
-"video": "https://livestream.com/esa/phiweek2020/videos/211492628",
-"raw": "@inproceedings{CampsValls20phiweek,\n\ttitle        = {{Living in the Physics and Machine Learning Interplay - An AI agenda with examples for the DTE}},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2020,\n\tmonth        = {28-30 September 2020.},\n\tbooktitle    = {The ESA Phi-week 2020},\n\taddress      = {ESA-ESRIN, Italy},\n\tvideo        = {https://livestream.com/esa/phiweek2020/videos/211492628},\n\tpdf          = {http://isp.uv.es/slides/PHIWEEK20_PhysicsMLinterplay.pdf},\n\tproject      = {SEDAL}\n}"
-},
-{
 "key": "campsvalls2020dtu",
 "type": "inproceedings",
 "title": "Advances in Machine Learning for Earth Sciences",
@@ -474,29 +461,6 @@
 "address": "Online Everywhere, https://www.conferencemanager.dk/sustainableai/conference/",
 "pdf": "http://isp.uv.es/slides/AdvancesML4EO_20min.pdf",
 "raw": "@inproceedings{campsvalls2020dtu,\n\ttitle        = {{Advances in Machine Learning for Earth Sciences}},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2020,\n\tmonth        = {Dec},\n\tbooktitle    = {Sustainable AI in practice 2020},\n\taddress      = {Online Everywhere, https://www.conferencemanager.dk/sustainableai/conference/},\n\tpdf          = {http://isp.uv.es/slides/AdvancesML4EO_20min.pdf}\n}"
-},
-{
-"key": "CampsValls20physicsaware",
-"type": "inproceedings",
-"title": "Living in the Physics – Machine Learning Interplay for Earth Observation",
-"author": "Camps-Valls G., Svendsen D., Cortes-Andres J., Moreno-Martínez A., Pérez-Suay A., Adsuara J., Martin I., Piles M., Muñoz-Marí J. and Martino L.",
-"booktitle": "AAAI Fall Series 2020 Symposium on Physics-guided AI for Accelerating Scientific Discovery",
-"year": "2020",
-"project": "KERMES, SEDAL",
-"raw": "@inproceedings{CampsValls20physicsaware,\n\ttitle        = {Living in the Physics -- Machine Learning Interplay for Earth Observation},\n\tauthor       = {Camps-Valls, G. and Svendsen, D. H. and Cortes-Andres, J. and Moreno-Martínez, A. and Pérez-Suay, A. and Adsuara, J. and Martin, I. and Piles, M. and Muñoz-Marí, J. and Martino, L.},\n\tyear         = 2020,\n\tmonth        = {},\n\tbooktitle    = {AAAI Fall Series 2020 Symposium on Physics-guided AI for Accelerating Scientific Discovery},\n\taddress      = {},\n\tpages        = {},\n\tdoi          = {},\n\tnote         = {},\n\tproject      = {SEDAL,KERMES}\n}"
-},
-{
-"key": "CampsValls2020igarss_hybridxai",
-"type": "inproceedings",
-"title": "Advancing Deep Learning For Earth Sciences: From Hybrid Modeling To Interpretability",
-"author": "Camps-Valls G., Reichstein M., Zhu Z. and Tuia D.",
-"booktitle": "IGARSS 2020 - 2020 IEEE International Geoscience and Remote Sensing Symposium",
-"year": "2020",
-"address": "Waikoloa, Hawaii, USA",
-"project": "SEDAL",
-"pdf": "http://isp.uv.es/slides/AdvancesDL.pdf",
-"video": "http://isp.uv.es/videos/AdvancesDL-2020-07-09_11-38-45.mkv",
-"raw": "@inproceedings{CampsValls2020igarss_hybridxai,\n\ttitle        = {Advancing Deep Learning For Earth Sciences: From Hybrid Modeling To Interpretability},\n\tauthor       = {Camps-Valls, G. and Reichstein, M. and Zhu, Z. and Tuia, D.},\n\tyear         = 2020,\n\tmonth        = {Jul},\n\tbooktitle    = {{IGARSS} 2020 - 2020 {IEEE} {International} {Geoscience} and {Remote} {Sensing} {Symposium}},\n\taddress      = {Waikoloa, Hawaii, USA},\n\tdoi          = {},\n\tvideo        = {http://isp.uv.es/videos/AdvancesDL-2020-07-09_11-38-45.mkv},\n\tpdf          = {http://isp.uv.es/slides/AdvancesDL.pdf},\n\tproject      = {SEDAL}\n}"
 },
 {
 "key": "Camps20UZH",
@@ -532,6 +496,7 @@
 "address": "Severo Ochoa Research Seminars – Barcelona Supercomputing Center (BSC), Barcelona",
 "project": "SEDAL",
 "doi": "https://upcommons.upc.edu/handle/2117/330962",
+"doi_bare": "https://upcommons.upc.edu/handle/2117/330962",
 "doi_url": "https://upcommons.upc.edu/handle/2117/330962",
 "url": "https://www.bsc.es/research-and-development/research-seminars/sors-advances-machine-learning-modelling-and-understanding-earth-sciences",
 "raw": "@inproceedings{Camps20BSC,\n\ttitle        = {{Advances in Machine learning for Modelling and Understanding in Earth Sciences}},\n\tauthor       = {Gustau Camps-Valls},\n\tyear         = 2020,\n\tmonth        = {1/Jan/2020},\n\tbooktitle    = {Severo Ochoa Research Seminars -- Barcelona Supercomputing Center (BSC), Barcelona},\n\taddress      = {Severo Ochoa Research Seminars -- Barcelona Supercomputing Center (BSC), Barcelona},\n\tdoi          = {https://upcommons.upc.edu/handle/2117/330962},\n\turl          = {https://www.bsc.es/research-and-development/research-seminars/sors-advances-machine-learning-modelling-and-understanding-earth-sciences},\n\tproject      = {SEDAL}\n}"
@@ -669,7 +634,7 @@
 "key": "Ruescas18phiweekHyperlabelme",
 "type": "inproceedings",
 "title": "HyperLabelMe: Benchmarking Image Classifiers",
-"author": "Ana R.",
+"author": "Ana R., Jordi M., Luis G., Gonzalo M., Emma I., Manuel C. and <b>Gustau C.",
 "booktitle": "The Phi-week - EO Open Science and Future EO - ESA-ESRIN, Italy",
 "year": "2018",
 "address": "The Phi-week - EO Open Science and Future EO - ESA-ESRIN, Italy",
@@ -679,7 +644,7 @@
 "key": "Camps18phiweekPhysics",
 "type": "inproceedings",
 "title": "Physics-aware And Explainable Machine Learning",
-"author": "<b>Gustau C.",
+"author": "<b>Gustau C., Luis G., Daniel S., Diego B., Luca M., Adrián P., Maria P., Valero L. and Ana R.",
 "booktitle": "The Phi-week - EO Open Science and Future EO - ESA-ESRIN, Italy",
 "year": "2018",
 "address": "The Phi-week - EO Open Science and Future EO - ESA-ESRIN, Italy",

@@ -4,14 +4,17 @@
 Sin dependencias. Se ejecuta antes de `hugo` (local y en CI).
 Uso: python3 scripts/bib_to_json.py
 """
+import glob
 import json
 import os
 import re
+import sys
 import unicodedata
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BIB_DIR = os.path.join(ROOT, "assets", "bibfiles")
 OUT_DIR = os.path.join(ROOT, "data", "publications")
+CONTENT_DIR = os.path.join(ROOT, "content", "publications")
 
 MARKS = {
     "'": "\u0301", '"': "\u0308", "`": "\u0300", "^": "\u0302", "~": "\u0303",
@@ -36,7 +39,8 @@ def latex_clean(s):
     for k, v in SPECIALS.items():
         s = s.replace(k, v)
     s = s.replace("---", "\u2014").replace("--", "\u2013")
-    s = s.replace(r"\&", "&").replace(r"\%", "%").replace(r"\ ", " ")
+    s = s.replace(r"\&", "&").replace(r"\%", "%").replace(r"\$", "$").replace(r"\#", "#")
+    s = s.replace(r"\ ", " ")
     s = s.replace("{", "").replace("}", "")
     s = re.sub(r"\\[a-zA-Z]+\s?", "", s)
     s = unicodedata.normalize("NFC", s)
@@ -44,7 +48,6 @@ def latex_clean(s):
 
 
 def find_matching(text, start):
-    """Devuelve el índice del '}' que cierra la llave abierta en start."""
     depth = 0
     i = start
     n = len(text)
@@ -57,7 +60,7 @@ def find_matching(text, start):
             if depth == 0:
                 return i
         i += 1
-    return n
+    raise ValueError("llave sin cerrar")
 
 
 def parse_fields(body):
@@ -121,28 +124,36 @@ def parse_bib(text):
             continue
         etype = m.group(1).lower()
         key = m.group(2).strip()
-        body_start = at + m.end()
         brace = text.index("{", at)
         end = find_matching(text, brace)
-        body = text[body_start:end]
+        body = text[at + m.end():end]
         if etype not in ("comment", "preamble", "string"):
             entries.append({"type": etype, "key": key, "fields": parse_fields(body),
-                            "raw": re.sub(r"\s+\n", "\n", text[at:end + 1]).strip()})
+                            "raw": text[at:end + 1].strip()})
         i = end + 1
     return entries
 
 
-def format_authors(authors):
+def split_authors(authors):
     if not authors:
-        return ""
-    clean = authors.replace(",", "")
-    arr = [a.strip() for a in clean.split(" and ") if a.strip()]
+        return []
+    if " and " in authors:
+        parts = authors.split(" and ")
+    elif authors.count(",") > 1:
+        parts = authors.split(",")
+    else:
+        parts = [authors]
+    return [p.strip() for p in parts if p.strip()]
+
+
+def format_authors(authors):
     out = []
-    for a in arr:
+    for a in split_authors(authors):
+        a = a.replace(",", " ").strip()
         words = a.split()
         if len(words) > 1:
             out.append(f"{words[0]} {words[1][0].upper()}.")
-        else:
+        elif words:
             out.append(words[0])
     if len(out) > 12:
         out = out[:12] + ["others"]
@@ -164,10 +175,11 @@ def format_projects(projects):
 
 def norm_entry(e):
     f = e["fields"]
-    get = lambda k: latex_clean(f.get(k, "")) if k != "project" else format_projects(latex_clean(f.get(k, "")))
-    year = get("year")
-    year = re.sub(r"\.$", "", year).strip()
+    get = lambda k: latex_clean(f.get(k, ""))
+    year = re.sub(r"\.$", "", get("year")).strip()
     doi = get("doi")
+    doi_bare = re.sub(r"^https?://(dx\.)?doi\.org/", "", doi)
+    doi_bare = re.sub(r"^(dx\.)?doi\.org/", "", doi_bare)
     doi_url = doi
     if doi and not doi.startswith("http"):
         if doi.startswith("doi.org"):
@@ -178,7 +190,7 @@ def norm_entry(e):
         "key": e["key"],
         "type": e["type"],
         "title": get("title"),
-        "author": format_authors(latex_clean(f.get("author", ""))),
+        "author": format_authors(get("author")),
         "journal": get("journal"),
         "booktitle": get("booktitle"),
         "volume": get("volume"),
@@ -187,8 +199,9 @@ def norm_entry(e):
         "year": year,
         "publisher": get("publisher"),
         "address": get("address"),
-        "project": get("project"),
+        "project": format_projects(get("project")),
         "doi": doi,
+        "doi_bare": doi_bare,
         "doi_url": doi_url,
         "url": get("url"),
         "pdf": get("pdf"),
@@ -202,18 +215,60 @@ def norm_entry(e):
     return {k: v for k, v in out.items() if v}
 
 
+def read_bib(path):
+    raw = open(path, "rb").read()
+    try:
+        return raw.decode("utf-8")
+    except UnicodeDecodeError:
+        print(f"AVISO: {os.path.basename(path)} no es UTF-8; leído como latin-1", file=sys.stderr)
+        return raw.decode("latin-1")
+
+
+def content_bibfiles():
+    """Nombres base de los bibfiles declarados en content/publications/*.md."""
+    names = set()
+    for md in glob.glob(os.path.join(CONTENT_DIR, "*.md")):
+        for m in re.finditer(r"bibfiles/([\w-]+)\.bib", open(md, encoding="utf-8").read()):
+            names.add(m.group(1))
+    return names
+
+
 def main():
     os.makedirs(OUT_DIR, exist_ok=True)
-    for name in ("books", "conferences", "journal", "talks", "theses"):
-        path = os.path.join(BIB_DIR, f"{name}.bib")
-        if not os.path.exists(path):
+    generated = set()
+    problems = []
+    for path in sorted(glob.glob(os.path.join(BIB_DIR, "*.bib"))):
+        name = os.path.splitext(os.path.basename(path))[0]
+        try:
+            entries = [norm_entry(e) for e in parse_bib(read_bib(path))]
+        except ValueError as exc:
+            problems.append(f"{os.path.basename(path)}: {exc}")
             continue
-        text = open(path, encoding="utf-8", errors="ignore").read()
-        entries = [norm_entry(e) for e in parse_bib(text)]
+        # dedupe por citekey (gana la última aparición), conservando el orden
+        seen = {}
+        dups = 0
+        for e in entries:
+            if e["key"] in seen:
+                dups += 1
+            seen[e["key"]] = e
+        entries = list(seen.values())
+        if not entries:
+            problems.append(f"{name}.bib: 0 entradas")
         out = os.path.join(OUT_DIR, f"{name}.json")
         with open(out, "w", encoding="utf-8") as fh:
             json.dump(entries, fh, ensure_ascii=False, indent=0)
-        print(f"{name}: {len(entries)} entradas -> {os.path.relpath(out, ROOT)}")
+        generated.add(name)
+        msg = f"{name}: {len(entries)} entradas"
+        if dups:
+            msg += f" ({dups} citekeys duplicadas colapsadas)"
+        print(msg)
+    for missing in sorted(content_bibfiles() - generated):
+        problems.append(f"content declara bibfiles/{missing}.bib pero no hay JSON")
+    if problems:
+        print("PROBLEMAS:", file=sys.stderr)
+        for p in problems:
+            print("  -", p, file=sys.stderr)
+        sys.exit(1)
 
 
 if __name__ == "__main__":

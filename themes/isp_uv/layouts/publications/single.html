@@ -25,7 +25,7 @@
       {{- with index site.Data.publications $name -}}
         {{- range . -}}
         {{- $e := . -}}
-        <div class="grid-item bib-item seminar-item project-item" data-year="{{ .year }}" data-project="{{ .project }}">
+        <article id="pub-{{ .key }}" class="grid-item bib-item seminar-item project-item" data-year="{{ .year }}" data-project="{{ .project }}">
           <span class="title" style="font-weight: bold;">{{ .title }}</span><br>
           <span class="author">{{ .author }}</span><br>
           {{ with .booktitle }}<span style="font-style: italic;">{{ . }}{{ with $e.address }}, <span style="font-style: normal;">{{ . }}</span>{{ end }},</span>{{ end }}
@@ -35,7 +35,7 @@
           <span class="year">{{ .year }}</span><br>
           <span class="project" style="display: none;">{{ .project }}</span>
           <div class="card-links">
-            {{ with .raw }}<button type="button" class="btn btn-xss btn-success bibtex-toggle" onclick="toggleBibtex(this)">BibTeX</button>{{ end }}
+            {{ with .raw }}<button type="button" class="btn btn-xss btn-success bibtex-toggle">BibTeX</button>{{ end }}
             {{ with .url }}<a href="{{ . }}"><button type="button" class="btn btn-xss btn-info">URL</button></a>{{ end }}
             {{ with .pdf }}<a href="{{ . }}"><button type="button" class="btn btn-xss btn-danger">PDF</button></a>{{ end }}
             {{ with .arxiv }}<a href="{{ . }}"><button type="button" class="btn btn-xss btn-danger">arXiv</button></a>{{ end }}
@@ -44,11 +44,11 @@
             {{ with .project }}<button type="button" class="btn btn-xss btn-primary project-btn">Project</button>{{ end }}
             {{ with .doi_url }}<a href="{{ . }}"><button type="button" class="btn btn-xss btn-warning">DOI</button></a>{{ end }}
             {{ with .altimetric }}<a href="{{ . }}"><button type="button" class="btn btn-xss btn-danger">Altimetric</button></a>{{ end }}
-            {{ with .doi }}<div class="altmetric-embed" data-badge-type="donut" data-hide-no-mentions="true" data-doi="{{ . }}"></div>
+            {{ with .doi_bare }}<div class="altmetric-embed" data-badge-type="donut" data-hide-no-mentions="true" data-doi="{{ . }}"></div>
             <div class="__dimensions_badge_embed__ dimension-embed" data-doi="{{ . }}"></div>{{ end }}
           </div>
-          {{ with .raw }}<div class="bibtexdata alert alert-success" style="display: none;"><span class="bibtex">{{ . }}</span></div>{{ end }}
-        </div>
+          {{ with .raw }}<div class="bibtexdata alert alert-success" style="display: none;"><pre class="bibtex">{{ . }}</pre></div>{{ end }}
+        </article>
         {{- end -}}
       {{- end -}}
     {{- end -}}
@@ -126,6 +126,9 @@
     cursor: pointer;
   }
   .nav-button:hover { background-color: #aaa; }
+  .bib-item { display: block; }
+  .bib-item.hidden { display: none !important; }
+  .bibtex { white-space: pre-wrap; overflow-x: auto; margin: 0; font-size: 0.85em; background: transparent; border: 0; }
   @media (max-width: 991px) {
     .filter-container { flex-direction: column; align-items: center; }
     .button-filter-group-year,
