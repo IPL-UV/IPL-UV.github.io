@@ -2060,76 +2060,49 @@ h3 {
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
             background: white;
         }
-        .row {
-            margin-bottom: 1rem !important;
-        }
-        .row .col-2 {
-            margin-bottom: 0.5rem !important;
-        }
-
+                
 
         /* Media Query para pantallas de hasta 1399px de ancho */
         @media (max-width: 1399px) {
-            .col-2 {
-                flex: 0 0 19.2%; /* Esto ajusta a 5 columnas por fila */
-            }
-        }
+                    }
 
         /* Media Query para pantallas de hasta 1199px de ancho */
         @media (max-width: 1199px) {
-            .col-2 {
-                flex: 0 0 24.8%; /* Esto ajusta a 4 columnas por fila */
-            }
-            .people-card {
-                height: 320px;
+                        .people-card {
     
             }
         }
 
         /* Media Query para pantallas de hasta 991px de ancho */
         @media (max-width: 991px) {
-            .col-2 {
-                flex: 0 0 32%; /* Esto ajusta a 3 columnas por fila */
-            }
-        }
+                    }
 
         /* Media Query para pantallas de hasta 767px de ancho */
         @media (max-width: 767px) {
-            .col-2 {
-                flex: 0 0 48%; /* Esto ajusta a 2 columnas por fila */
-            }
-            .people-card {
-                height: 350px;
+                        .people-card {
     
             }
         }
 
         @media (max-width: 460px) {
             .people-card {
-                height: 300px;
     
             }
         }
 
         /* Media Query para pantallas de hasta 480px de ancho */
         @media (max-width: 430px) {
-            .col-2 {
-                flex: 0 0 65%; /* Esto ajusta a 1 columna por fila */
-            }
-            .people-card {
-                height: 350px;
+                        .people-card {
     
             }
         }
         @media (max-width: 380px) {
             .people-card {
-                height: 310px;
     
             }
         }
         @media (max-width: 330px) {
             .people-card {
-                height: 300px;
     
             }
         }
@@ -2159,7 +2132,6 @@ h3 {
   left: 50%;
   top: 50%;
   width: 64px;
-  height: 45px;
   transform: translate(-50%, -50%);
   opacity: .92;
   transition: transform .12s ease, opacity .12s ease;
