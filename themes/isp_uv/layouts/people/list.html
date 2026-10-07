@@ -1,7 +1,6 @@
 {{ define "main" }}
 
     <div class="container mt-5">
-        <div class="title-container"><h1>{{ .Title }}</h1></div>
 
         {{ $order := slice
         "full_professors"
@@ -38,7 +37,7 @@
                 {{ $sec := site.GetPage (printf "people/%s" .) }}
                 
                 <div class="title-container">
-                <h2>{{ if $sec }}{{ $sec.Title }}{{ else }}{{ replace (title .) "_" " " }}{{ end }}</h2>
+                <h1>{{ if $sec }}{{ $sec.Title }}{{ else }}{{ replace (title .) "_" " " }}{{ end }}</h1>
                 </div>
 
                 <div class="row g-1 justify-content-center">
@@ -54,7 +53,7 @@
                         {{ else }}
                         <img loading="lazy" decoding="async" src="{{ $img }}" class="img-fluid" alt="Image of {{ $name }}">
                         {{ end }}
-                        <h5><a class="people-name-link" href="{{ .RelPermalink }}">{{ .Title }}</a></h5>
+                        <h5>{{ .Title }}</h5>
                         <div>
                         {{ with .Params.googlescholar }} <a href="{{ . }}" aria-label="Google Scholar" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-google-scholar" style="color: #336daf;"></i></a> {{ end }}
                         {{ with .Params.orcid }} <a href="{{ . }}" aria-label="ORCID" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-orcid" style="color: #a9cf42;"></i></a> {{ end }}

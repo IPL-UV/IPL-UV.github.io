@@ -1,26 +1,3 @@
 {{ define "main" }}
-<div class="content-container person-single">
-  <div class="person-header">
-    {{ with .Params.img }}
-    <img class="person-photo" src="{{ relURL (printf "images/people/%s" .) }}" alt="{{ $.Title }}" loading="lazy">
-    {{ end }}
-    <div class="person-head">
-      <h1 class="person-name">{{ .Title }}</h1>
-      {{ $rmap := dict "full_professors" "Full professor" "associate_professors" "Associate professor" "assistant_professors" "Assistant professor" "senior_research_scientists" "Senior research scientist" "postdocs" "Postdoctoral researcher" "phd_students" "PhD student" "visitors" "Visiting researcher" "administrative_communications" "Communications" "alumni" "Alumnus" }}{{ $rr := "" }}{{ with .File }}{{ $rr = index (split (strings.TrimSuffix "/" (replace .Dir "\\" "/")) "/") 1 }}{{ end }}{{ $rt := index $rmap $rr | default .Params.role | default ($rr | replaceRE "_" " " | title) }}{{ with $rt }}<p class="person-role">{{ . }}</p>{{ end }}
-      <div class="person-links">
-        {{ with .Params.googlescholar }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">Google Scholar</a>{{ end }}
-        {{ with .Params.orcid }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">ORCID</a>{{ end }}
-        {{ with .Params.github }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">GitHub</a>{{ end }}
-        {{ with .Params.linkedin }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>{{ end }}
-        {{ with .Params.researchgate }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">ResearchGate</a>{{ end }}
-        {{ with .Params.twitter }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">Twitter/X</a>{{ end }}
-        {{ with .Params.bluesky }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">Bluesky</a>{{ end }}
-        {{ with .Params.youtube }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">YouTube</a>{{ end }}
-        {{ with .Params.website }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">Website</a>{{ end }}
-        {{ with .Params.link_image }}<a href="{{ . | relURL }}" target="_blank" rel="noopener noreferrer">Profile</a>{{ end }}
-      </div>
-    </div>
-  </div>
-  <div class="person-bio">{{ .Content }}</div>
-</div>
+        {{ .Content | safeHTML }}
 {{ end }}

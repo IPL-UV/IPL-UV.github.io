@@ -1,5 +1,4 @@
 {{ define "main" }}
-<div class="title-container"><h1>{{ .Title }}</h1></div>
 {{ .Content }}
 
 <div class="content-container">
@@ -7,7 +6,7 @@
   {{ $activePages := where .Pages "File.Dir" "projects/current/" }}
   {{ $activePages = union $activePages (where .Pages "File.Dir" "projects\\current\\") }}
   <div class="title-container">
-      <h2>Current projects</h2>
+      <h1>Current projects</h1>
   </div>
   {{ if gt (len $activePages) 0 }}
   <div class="grid-container" id="grid-container">
@@ -61,7 +60,7 @@
   {{ $pastPages := where .Pages "File.Dir" "projects/past/" }}
   {{ $pastPages = union $pastPages (where .Pages "File.Dir" "projects\\past\\") }}
   <div class="title-container">
-      <h2>Past projects</h2>
+      <h1>Past projects</h1>
   </div>
   {{ if gt (len $pastPages) 0 }}
   <div class="grid-container" id="grid-container">
