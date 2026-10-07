@@ -1,26 +1,11 @@
 {{ define "main" }}
-<div id="loading-spinner" style="text-align: center; margin-top: 50px;">
-  <span class="isp-spinner" aria-label="Loading"></span>
-  <style>.isp-spinner{display:inline-block;width:46px;height:46px;border:5px solid #e0e0e0;border-top-color:#5bc0de;border-radius:50%;animation:isp-spin 1s linear infinite}@keyframes isp-spin{to{transform:rotate(360deg)}}</style>
-</div>
-
-<div class="content-container" style="display: none;" id="content-container">
+<div class="content-container">
   <div class="title-container">
     <h1>{{ .Title }}</h1>
   </div>
 
-  <textarea id="bibtex_input" style="display:none;">
-    {{- range .Params.bibfiles }}
-    {{- $path := printf "assets/%s" . }}
-    {{- $content := readFile $path }}
-    {{ $content }}
-    {{- end }}
-  </textarea>
-
   <div class="grid-item grid-filter">
     <div class="filter-container">
-      <select id="year-filter" style="display:none;"></select>
-      <select id="project-filter" style="display:none;"></select>
       <div class="button-filter-group-year">
         <button id="prev-year-page" class="nav-button">&lt;</button>
         <div id="year-buttons-container" class="buttons-container"></div>
@@ -34,189 +19,84 @@
     </div>
   </div>
 
-  <div class="grid-container" id="bibtex_display"></div>
-
-  <div class="bibtex_template" style="display: none;">
-    <div class="grid-item bib-item seminar-item project-item">
-      <span class="title" style="font-weight: bold;"></span><br>
-      <span class="author"></span><br>
-
-      <span class="if booktitle" style="font-style: italic;">
-        <span class="booktitle"></span>,
-        <span class="if address" style="font-style: normal;">
-          <span class="address"></span>
-        </span>
-      </span>
-
-      <span class="if journal" style="font-style: italic;">
-        <span class="journal"></span>,
-      </span>
-      
-      <span class="if volume">
-        <span class="volume"></span>,
-      </span>
-      <span class="if pages">
-        <span class="pages"></span>,
-      </span>
-      
-      <span class="year"></span><br>
-
-      <span class="project" style="display: none;"></span>
-
-      <div class="card-links">
-        <span class="if bibtex">
-          <button type="button" class="btn btn-xss btn-success bibtex-toggle"
-            onclick="toggleBibtex(this)">BibTeX</button>
-        </span>
-        <span class="if url">
-          <a class="url">
-            <button type="button" class="btn btn-xss btn-info">URL</button>
-          </a>
-        </span>
-        <span class="if pdf">
-          <a class="pdf" style="color: #FFFFFF;">
-            <button type="button" class="btn btn-xss btn-danger">PDF</button>
-          </a>
-        </span>
-
-        </span>
-        <span class="if arxiv">
-          <a class="arxiv">
-            <button type="button" class="btn btn-xss btn-danger">arXiv</button>
-          </a>
-        </span>
-
-        <span class="if video">
-          <a class="video">
-            <button type="button" class="btn btn-xss btn-info">Watch!</button>
-          </a>
-        </span>
-
-        <span class="if code">
-          <a class="code">
-            <button type="button" class="btn btn-xss btn-info">Code</button>
-          </a>
-        </span>
-
-        <span class="if project">
-          <button type="button" class="btn btn-xss btn-primary project-btn">Project</button>
-        </span>
-
-        <span class="if doi">
-          <a class="doi">
-            <button type="button" class="btn btn-xss btn-warning">DOI</button>
-          </a>
-        </span>
-
-        <span class="if altimetric">
-          <a class="altimetric">
-            <button type="button" class="btn btn-xss btn-danger">Altimetric</button>
-          </a>
-        </span>
-
-        <div class="altmetric-embed" data-badge-type="donut" data-hide-no-mentions="true"></div>
-
-        <div class="__dimensions_badge_embed__ dimension-embed">
+  <div class="grid-container" id="bibtex_display">
+    {{- range .Params.bibfiles -}}
+      {{- $name := path.BaseName . -}}
+      {{- with index site.Data.publications $name -}}
+        {{- range . -}}
+        {{- $e := . -}}
+        <div class="grid-item bib-item seminar-item project-item" data-year="{{ .year }}" data-project="{{ .project }}">
+          <span class="title" style="font-weight: bold;">{{ .title }}</span><br>
+          <span class="author">{{ .author }}</span><br>
+          {{ with .booktitle }}<span style="font-style: italic;">{{ . }}{{ with $e.address }}, <span style="font-style: normal;">{{ . }}</span>{{ end }},</span>{{ end }}
+          {{ with .journal }}<span style="font-style: italic;">{{ . }},</span>{{ end }}
+          {{ with .volume }}<span>{{ . }},</span>{{ end }}
+          {{ with .pages }}<span>{{ . }},</span>{{ end }}
+          <span class="year">{{ .year }}</span><br>
+          <span class="project" style="display: none;">{{ .project }}</span>
+          <div class="card-links">
+            {{ with .raw }}<button type="button" class="btn btn-xss btn-success bibtex-toggle" onclick="toggleBibtex(this)">BibTeX</button>{{ end }}
+            {{ with .url }}<a href="{{ . }}"><button type="button" class="btn btn-xss btn-info">URL</button></a>{{ end }}
+            {{ with .pdf }}<a href="{{ . }}"><button type="button" class="btn btn-xss btn-danger">PDF</button></a>{{ end }}
+            {{ with .arxiv }}<a href="{{ . }}"><button type="button" class="btn btn-xss btn-danger">arXiv</button></a>{{ end }}
+            {{ with .video }}<a href="{{ . }}"><button type="button" class="btn btn-xss btn-info">Watch!</button></a>{{ end }}
+            {{ with .code }}<a href="{{ . }}"><button type="button" class="btn btn-xss btn-info">Code</button></a>{{ end }}
+            {{ with .project }}<button type="button" class="btn btn-xss btn-primary project-btn">Project</button>{{ end }}
+            {{ with .doi_url }}<a href="{{ . }}"><button type="button" class="btn btn-xss btn-warning">DOI</button></a>{{ end }}
+            {{ with .altimetric }}<a href="{{ . }}"><button type="button" class="btn btn-xss btn-danger">Altimetric</button></a>{{ end }}
+            {{ with .doi }}<div class="altmetric-embed" data-badge-type="donut" data-hide-no-mentions="true" data-doi="{{ . }}"></div>
+            <div class="__dimensions_badge_embed__ dimension-embed" data-doi="{{ . }}"></div>{{ end }}
+          </div>
+          {{ with .raw }}<div class="bibtexdata alert alert-success" style="display: none;"><span class="bibtex">{{ . }}</span></div>{{ end }}
         </div>
-
-        
-      </div>
-
-
-      <div class="bibtexdata alert alert-success" style="display: none;">
-        <span class="bibtex"></span>
-      </div>
-    </div>
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
   </div>
 </div>
 
 <style>
-
-
-  .dimension-embed {
-    margin-left: 0.6rem;
-    
-  }
-  .__dimensions_Badge_Image {
-    height: 45px !important;
-    width: 45px !important;
-    display: none;
-  }
-  .__db_score {
-    font-size: 20px !important;
-  }
-
-  .__db_label {
-    display: none;
-  }
-
+  .dimension-embed { margin-left: 0.6rem; }
+  .__dimensions_Badge_Image { height: 45px !important; width: 45px !important; display: none; }
+  .__db_score { font-size: 20px !important; }
+  .__db_label { display: none; }
 
   .filter-container {
     display: flex;
-    /* Así repartimos ambos grupos a izquierda y derecha */
-    justify-content: space-evenly; 
+    justify-content: space-evenly;
     align-items: center;
     max-width: 850px;
     margin: 0 auto;
-    gap: 1px; /* Ajusta el espacio horizontal total */
     box-sizing: border-box;
   }
-  
-  /* Grupo de años: a la izquierda */
-  .button-filter-group-year {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start; /* pegado a la izquierda */
-    width: 40%;
-    gap: 8px;
-    box-sizing: border-box;
-    min-height: 80px;
-    width: 340px;
-    margin-right: 25px;
-  }
-  
-  /* Grupo de proyectos: a la derecha */
+  .button-filter-group-year,
   .button-filter-group-project {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-end; /* pegado a la derecha */
-    width: 40%;
     gap: 8px;
     box-sizing: border-box;
     min-height: 80px;
     width: 340px;
-    margin-left: 25px;
   }
-  
+  .button-filter-group-year { justify-content: flex-start; margin-right: 25px; }
+  .button-filter-group-project { justify-content: flex-end; margin-left: 25px; }
   .buttons-container {
     display: flex;
-    flex: 1; 
+    flex: 1;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 0px;
-  
-    /* -- Hacer que si hay más contenido, aparezca scroll horizontal manual -- */
-    overflow-x: auto;          /* scroll horizontal */
-    scrollbar-width: none;     /* oculta en Firefox */
-    -ms-overflow-style: none;  /* oculta en IE y Edge */
-    scroll-behavior: smooth;   /* desplazamiento suave al arrastrar */
-  
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
     box-sizing: border-box;
   }
-  
-  .buttons-container::-webkit-scrollbar {
-    width: 0px;                /* oculta scrollbar en Chrome/Safari */
-    background: transparent;
-  }
-  
-  
+  .buttons-container::-webkit-scrollbar { width: 0px; background: transparent; }
   .buttons-container .filter-button {
-    flex-shrink: 0; 
+    flex-shrink: 0;
     width: 60px;
-    height: 45px;     
+    height: 45px;
     border-radius: 15%;
     display: inline-flex;
     flex-direction: column;
@@ -225,23 +105,17 @@
     padding: 4px;
     margin: auto 1px;
     box-sizing: border-box;
-  
     white-space: normal;
     word-break: break-word;
     overflow: hidden;
-    text-overflow: clip;
-  
     background-color: #336daf;
     color: #fff;
     font-size: 10px;
     font-weight: bold;
     line-height: 1.2;
     text-align: center;
-    -webkit-appearance: none;
-    appearance: none;
     border-style: none;
   }
-  
   .nav-button {
     flex-shrink: 0;
     background-color: #ccc;
@@ -251,69 +125,20 @@
     font-size: 16px;
     cursor: pointer;
   }
-  .nav-button:hover {
-    background-color: #aaa;
-  }
-  
-  /* NUEVO: cuando la pantalla es <= 768, cambiamos a “column” */
+  .nav-button:hover { background-color: #aaa; }
   @media (max-width: 991px) {
-    .filter-container {
-      flex-direction: column; 
-      align-items: center;    /* centra verticalmente */
-    }
-  
-    /* Cada grupo ocupa toda la anchura en vertical */
+    .filter-container { flex-direction: column; align-items: center; }
     .button-filter-group-year,
     .button-filter-group-project {
       width: 100%;
-      justify-content: center; /* centra flechas y carril en horizontal */
-      min-height: auto;        /* quita la altura mínima si deseas */
-      margin-bottom: 10px;     /* algo de espacio entre el primero y el segundo */
-      margin-left: 0;
-      margin-right: 0;
+      justify-content: center;
+      min-height: auto;
+      margin: 0 0 10px 0;
     }
   }
-  
 </style>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-        
-    function processBadges() {
-      document.querySelectorAll('.__dimensions_Badge_Image').forEach(function(badge) {
-        const scoreElem = badge.closest('.__dimensions_badge_embed__')?.querySelector('.__db_score');
-        if (scoreElem) {
-          const score = parseInt(scoreElem.textContent.trim());
-          const MIN_SCORE = 9;
-          badge.style.display = score >= MIN_SCORE ? 'inline-block' : 'none';
-        }
-      });
-    }
-  
-    // Versión optimizada con MutationObserver
-    const observer = new MutationObserver(function(mutations) {
-      processBadges();
-    });
-  
-    // Observar cambios en el contenedor principal
-    observer.observe(document.body, {
-      childList: true,
-      subtree: true
-    });
-  
-    // Procesar badges existentes
-    processBadges();
-    
-    // Opcional: Limpiar observer después de 5 segundos
-    setTimeout(() => observer.disconnect(), 5000);
-  });
-  </script>
-
-    
-<script type="text/javascript" src={{ relURL "js/jquery-1.12.4.min.js" }} defer></script>
-<script type="text/javascript" src={{ relURL "js/bibtex_js.js" }} defer></script>
+<script src="{{ relURL "js/publications.js" }}" defer></script>
 <script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
 <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
-
 {{ end }}
-

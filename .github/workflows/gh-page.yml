@@ -31,6 +31,10 @@ jobs:
           hugo-version: '0.125.7'
           extended: true
 
+      # Paso 2b: JSON de publicaciones (render SSR)
+      - name: Generate publications JSON
+        run: python3 scripts/bib_to_json.py
+
       # Paso 3: Construcción del sitio
       - name: Build Hugo site
         run: hugo --minify --config hugo-alt.toml
@@ -60,6 +64,10 @@ jobs:
         with:
           hugo-version: '0.125.7'
           extended: true
+
+      # Paso 2b: JSON de publicaciones (render SSR)
+      - name: Generate publications JSON
+        run: python3 scripts/bib_to_json.py
 
       # Paso 3: Construcción del sitio
       - name: Build Hugo site
