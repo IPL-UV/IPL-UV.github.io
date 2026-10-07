@@ -6,7 +6,7 @@
     <div class="box-abstract">
         {{ $content := .Content }}
         {{ $content = replace $content "src=\"" (printf "src=\"%s" (relURL "images/research/")) }}
-        <p>{{ $content | markdownify }}</p>
+        {{ $content | markdownify }}
     </div>
     {{ if .Params.images }}
     <aside class="box-gallery">

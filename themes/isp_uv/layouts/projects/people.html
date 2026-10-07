@@ -1,11 +1,12 @@
 {{ define "main" }}
 <div class="content-container">
+    <div class="title-container"><h1>{{ .Title }}</h1></div>
     {{ $groups := .Pages.GroupByParam "role" }}
     {{ $order := slice "university of oxford" "university of valencia" "brockmann consult"}}
     {{ range $order }}
     {{ with index (where $groups "Key" .) 0 }}
     <div class="title-container">
-        <h1> {{ .Key | title }} </h1>
+        <h2> {{ .Key | title }} </h2>
     </div>
     <div class="card container">
         {{ range .Pages }}

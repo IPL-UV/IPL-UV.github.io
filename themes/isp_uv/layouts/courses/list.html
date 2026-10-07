@@ -18,21 +18,21 @@
                 </div>  
 
                 <div class="panel-description">
-                    <h5>
+                    <div class="course-meta">
                         {{ if .Params.create_date }}
-                        <p><span style="color: #337ab7; font-weight: bold;">Created date:</span> {{ .Params.create_date }}</p>
+                        <p><span style="color: #23527c; font-weight: bold;">Created date:</span> {{ .Params.create_date }}</p>
                         {{ end }}
                         {{ if .Params.course_duration }}
-                        <p><span style="color: #337ab7; font-weight: bold;">Duration:</span> {{ .Params.course_duration }}</p>
+                        <p><span style="color: #23527c; font-weight: bold;">Duration:</span> {{ .Params.course_duration }}</p>
                         {{ end }}
                         {{ if .Params.instructor }}
-                        <p><span style="color: #337ab7; font-weight: bold;">Trainers:</span> {{ .Params.instructor }}</p>
+                        <p><span style="color: #23527c; font-weight: bold;">Trainers:</span> {{ .Params.instructor }}</p>
                         {{ end }}
                         {{ if .Content}}
                         <div class="course-desc"><span style="color: #23527c; font-weight: bold;">Description:</span> {{ .Content }}</div>
                         {{ end }}
                         {{ if .Params.keywords}}
-                        <p><span style="color: #337ab7; font-weight: bold;">Keywords:</span> 
+                        <p><span style="color: #23527c; font-weight: bold;">Keywords:</span> 
                             {{/* Verificamos si es una lista para quitar los corchetes */}}
                             {{ if reflect.IsSlice .Params.keywords }}
                                 {{ delimit .Params.keywords " " }}
@@ -41,7 +41,7 @@
                             {{ end }}
                         </p>
                         {{ end }}
-                    </h5>
+                    </div>
                     
                     {{ if .Params.sources }}
                     <div class="course-sources" style="margin-bottom: 15px; font-size: 1.1rem;">
@@ -149,7 +149,7 @@
                     {{ end }}
                     <div class="objectives-container">
                         <details>
-                            <summary class="objectives-link" style="cursor: pointer; color: #337ab7; font-weight: bold;">
+                            <summary class="objectives-link" style="cursor: pointer; color: #23527c; font-weight: bold;">
                                 Objectives
                             </summary>
                             
@@ -177,6 +177,6 @@
         </div>
     </div> 
     {{ end }}
-    <p>{{ .RawContent | markdownify }}</p>
+    {{ .RawContent | markdownify }}
 </div>
 {{ end }}

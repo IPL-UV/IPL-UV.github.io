@@ -47,7 +47,7 @@
     </div>
   </div>
   {{ end }}
-  <p>{{ .RawContent | markdownify }}</p>
+  {{ .RawContent | markdownify }}
 </div>
 <style>
     /* Contenedor con relación 16:9 y recorte para evitar barras negras */
