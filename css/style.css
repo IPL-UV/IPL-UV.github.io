@@ -2016,8 +2016,9 @@ h3 {
 
 /* PEOPLE (movido del inline) */
 .people-grid { display: grid; grid-template-columns: repeat(auto-fit, 165px); gap: 1rem; justify-content: center; margin-bottom: 2.5rem; }
-.people-grid-item { display: flex; }
+.people-grid-item { display: block; }
 .people-card {
+            width: 100%;
             padding: 8px;
             padding-top: 10px;
             text-align: center;
