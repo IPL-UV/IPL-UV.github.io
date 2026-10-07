@@ -1,20 +1,26 @@
 // MODAL
+var _lastFocus = null;
 function openModal(imageUrl, title, description) {
   var modal = document.getElementById("imageModal");
   var modalImage = document.getElementById("modalImage");
   var modalCaption = document.getElementById("modalCaption");
   if (!modal || !modalImage || !modalCaption) return;
+  _lastFocus = document.activeElement;
   var render = function (s) {
     return (typeof marked !== 'undefined' && marked.parse) ? marked.parse(s || "") : (s || "");
   };
   modalImage.src = imageUrl;
+  modalImage.alt = (title || "").replace(/[#*\[\]]/g, "").trim();
   modalCaption.innerHTML = `<strong>${render(title)}</strong><br>${render(description)}`;
   modal.style.display = "block";
+  var close = modal.querySelector(".modal-close");
+  if (close) close.focus();
 }
 
 function closeModal() {
   var modal = document.getElementById("imageModal");
   if (modal) modal.style.display = "none";
+  if (_lastFocus && _lastFocus.focus) _lastFocus.focus();
 }
 
 document.addEventListener('keydown', function (e) {
