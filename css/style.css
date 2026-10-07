@@ -1,8 +1,6 @@
 body {
   padding-top: 56px;
   font-family: sans-serif;
-  font-size: 1rem;
-  line-height: 1.5;
 }
 
 a {
@@ -20,7 +18,7 @@ h1 {
   text-align: center;
   vertical-align: baseline;
   border-radius: 0.25em;
-  background-color: #1F6E8C;
+  background-color: #5bc0de;
 }
 h2 {
   display: inline-block;
@@ -32,7 +30,7 @@ h2 {
   text-align: center;
   vertical-align: baseline;
   border-radius: 0.25em;
-  background-color: #2E7D32;
+  background-color: #5cb85c;
   margin-bottom: 20px;
   margin-top: 10px;
 }
@@ -42,7 +40,7 @@ h3 {
   font-size: 1.2em;
   font-weight: 700;
   line-height: 1;
-  color: #222;
+  color: #fff;
   text-align: center;
   vertical-align: baseline;
   border-radius: 0.25em;
@@ -55,7 +53,7 @@ h3 {
 .content-container {
   margin: 1rem auto; 
   max-width: 70%;
-  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+  font-size: clamp(0.6rem, 2.5vw, 0.8rem);
 }
 
 .title-container {
@@ -66,7 +64,6 @@ h3 {
 
 .title-container  h1 {
   background-color: #c5c5c5;
-  color: #222;
   box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   margin-bottom: 1rem;
@@ -363,7 +360,7 @@ h3 {
 }
 
 .grid-item div p a {
-  color: #23527c;
+  color: #337ab7;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -393,7 +390,7 @@ h3 {
   margin: 0.3125rem 0;
   color: #666;
   line-height: 1.6;
-  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+  font-size: clamp(0.6rem, 2.5vw, 0.8rem);
 }
 
 
@@ -495,7 +492,7 @@ h3 {
 }
 
 .card-text a {
-  color: #23527c;
+  color: #337ab7;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -658,7 +655,7 @@ h3 {
 }
 
 .panel-item .text a {
-  color: #23527c;
+  color: #337ab7;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -728,13 +725,13 @@ h3 {
 }
 
 .panel-description h5 p a {
-  color: #23527c;
+  color: #337ab7;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .panel-description h5 {
-  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+  font-size: clamp(0.6rem, 2.5vw, 0.8rem);
   color: #333;
   line-height: 1.5;
   overflow: hidden;
@@ -757,7 +754,7 @@ h3 {
   margin-top: 0.5rem;
   color: #333;
   font-style: italic;
-  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+  font-size: clamp(0.6rem, 2.5vw, 0.8rem);
   padding: 0;
   list-style-position: inside;
   word-wrap: break-word;
@@ -765,7 +762,7 @@ h3 {
 
 
 .references-list li a {
-  color: #23527c;
+  color: #337ab7;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -774,13 +771,13 @@ h3 {
   margin-top: 0.5rem;
   color: #333;
   font-style: italic;
-  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+  font-size: clamp(0.6rem, 2.5vw, 0.8rem);
   padding: 0;
   text-align: justify;
 }
 
 .enlaces-description p a {
-  color: #23527c;
+  color: #337ab7;
   text-decoration: none;
 }
 
@@ -941,13 +938,13 @@ h3 {
 }
 
 .box-abstract p {
-  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+  font-size: clamp(0.6rem, 2.5vw, 0.8rem);
   line-height: 1.6;
   margin: 0;
 }
 
 .box-abstract ul {
-  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+  font-size: clamp(0.6rem, 2.5vw, 0.8rem);
   line-height: 1.6;
   margin: 0;
   text-align: left;
@@ -976,10 +973,10 @@ h3 {
 }
 
 .box-abstract p a, .box-abstract ul li a {
-  color: #23527c;
+  color: #337ab7;
   text-decoration: none;
   transition: color 0.3s ease;
-  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+  font-size: clamp(0.6rem, 2.5vw, 0.8rem);
 }
 
 .box-gallery {
@@ -1035,14 +1032,14 @@ h3 {
 }
 
 .gallery-title a {
-  color: #23527c;
+  color: #337ab7;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 
 .gallery-description {
-  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+  font-size: clamp(0.6rem, 2.5vw, 0.8rem);
 }
 
 .gallery-description p {
@@ -1050,7 +1047,7 @@ h3 {
 }
 
 .gallery-description p a {
-  color: #23527c;
+  color: #337ab7;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -1106,17 +1103,17 @@ h3 {
 }
 
 .enlaces-list li {
-  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+  font-size: clamp(0.6rem, 2.5vw, 0.8rem);
 }
 
 .enlaces-list li a {
-  color: #23527c;
+  color: #337ab7;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .enlaces-list li a:hover {
-  color: #23527c;
+  color: #337ab7;
 }
 
 .references-name {
@@ -1308,27 +1305,27 @@ h3 {
 }
 
 .box-content p {
-  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+  font-size: clamp(0.6rem, 2.5vw, 0.8rem);
   line-height: 1.6;
   margin: 0;
 }
 
 .box-content p a {
-  color: #23527c;
+  color: #337ab7;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 
 .box-content ul li a {
-  color: #23527c;
+  color: #337ab7;
   text-decoration: none;
   transition: color 0.3s ease;
 
 }
 
 .box-content ul {
-  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+  font-size: clamp(0.6rem, 2.5vw, 0.8rem);
   line-height: 1.6;
   margin: 0;
   text-align: left;
@@ -1379,10 +1376,10 @@ h3 {
 
 
 .box-abstract p a, .box-abstract ul li a {
-  color: #23527c;
+  color: #337ab7;
   text-decoration: none;
   transition: color 0.3s ease;
-  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+  font-size: clamp(0.6rem, 2.5vw, 0.8rem);
 }
 
 /* Contact */
@@ -1495,7 +1492,7 @@ h3 {
 .date-container {
   margin-top: 1rem;
   font-style: italic;
-  color: #666;
+  color: #888;
   display: flex;
   gap: 0.3rem;
   font-size: 0.9rem;
@@ -1760,37 +1757,18 @@ h3 {
   display: none;
 }
 
+
 /* FOOTER */
-.site-footer { background-color: #222; color: #d9d9d9; margin-top: 3rem; padding: 2rem 1rem 1rem; font-size: 0.95rem; }
-.site-footer a { color: #9ec9e0; }
-.site-footer a:hover { color: #fff; }
-.site-footer-inner { max-width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: space-between; align-items: flex-start; }
-.site-footer-brand { display: flex; flex-direction: column; }
-.site-footer-nav, .site-footer-social { display: flex; flex-wrap: wrap; gap: 0.8rem; }
-.site-footer-copy { text-align: center; margin: 1.5rem 0 0; color: #8a8a8a; }
-
-/* FICHA DE PERSONA */
-.person-single { max-width: 900px; }
-.person-header { display: flex; gap: 1.5rem; align-items: flex-start; flex-wrap: wrap; margin: 1.5rem 0; }
-.person-photo { width: 200px; max-width: 40%; border-radius: 0.5rem; object-fit: cover; aspect-ratio: 6 / 7; }
-.person-head { flex: 1 1 300px; }
-.person-name { background: none; color: inherit; padding: 0; display: block; text-align: left; margin: 0 0 0.3rem; }
-.person-role { color: #666; margin: 0 0 0.6rem; }
-.person-links { display: flex; flex-wrap: wrap; gap: 0.8rem; }
-.person-bio { margin-top: 1rem; }
-
-/* SKIP LINK */
-.skip-link { position: absolute; left: -9999px; top: 0; background: #222; color: #fff; padding: 0.5rem 1rem; z-index: 2000; }
-.skip-link:focus { left: 0; }
-
-/* LIST DESCRIPTIONS */
-.list-desc, .course-desc, .card-text { font-size: 1rem; text-align: justify; }
-.list-desc p:last-child, .course-desc p:last-child, .card-text p:last-child { margin-bottom: 0; }
-
-.modal-close { background: transparent; border: 0; color: #fff; font-size: 40px; line-height: 1; cursor: pointer; padding: 0 0.5rem; }
-.modal-close:focus-visible { outline: 3px solid #1F6E8C; outline-offset: 2px; }
-
-/* Enlaces dentro de texto: subrayado para no depender solo del color (WCAG 1.4.1) */
-p a:not(.btn), li a:not(.btn), td a:not(.btn), dd a:not(.btn), blockquote a:not(.btn),
-.box-content a:not(.btn), .box-abstract a:not(.btn), .references-list a, .card-text a:not(.btn),
-.panel-description a:not(.btn), .enlaces-list a, .course-desc a, .person-bio a { text-decoration: underline; }
+.site-footer { background-color: #222; color: #cfcfcf; margin-top: 3rem; padding: 2.5rem 1.5rem 1rem; font-size: 0.95rem; line-height: 1.6; }
+.site-footer a { color: #cfcfcf; text-decoration: none; }
+.site-footer a:hover { color: #fff; text-decoration: underline; }
+.site-footer-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1.4fr 1fr 1.2fr 1.5fr; gap: 2rem; }
+.site-footer-title { color: #fff; font-weight: 700; font-size: 1.05rem; margin-bottom: 0.3rem; }
+.site-footer-brand p { margin: 0; }
+.site-footer-col h2 { background: none; color: #fff; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; margin: 0 0 0.7rem; padding: 0; display: block; text-align: left; }
+.site-footer-col a { display: block; margin-bottom: 0.3rem; }
+.site-footer-social { display: flex; flex-wrap: wrap; gap: 0.4rem 0.9rem; margin-top: 0.7rem; }
+.site-footer-social a { display: inline; }
+.site-footer-bottom { max-width: 1200px; margin: 2rem auto 0; padding-top: 1rem; border-top: 1px solid #3a3a3a; color: #8a8a8a; font-size: 0.85rem; text-align: center; }
+@media (max-width: 900px) { .site-footer-inner { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .site-footer-inner { grid-template-columns: 1fr; } }
