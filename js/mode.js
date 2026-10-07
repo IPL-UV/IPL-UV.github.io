@@ -24,14 +24,17 @@ document.addEventListener('DOMContentLoaded', function () {
   const currentPath = window.location.pathname;
 
   if (toggler && navbarCollapse) {
+    toggler.setAttribute('aria-expanded', 'false');
     toggler.addEventListener('click', function () {
-      navbarCollapse.classList.toggle('show');
+      const open = navbarCollapse.classList.toggle('show');
+      toggler.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
 
     // Close menu when clicking outside the navbar
     document.addEventListener('click', function (e) {
       if (!e.target.closest('.custom-navbars')) {
         navbarCollapse.classList.remove('show');
+        toggler.setAttribute('aria-expanded', 'false');
       }
     });
   }
@@ -42,6 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (linkPath === currentPath && currentPath !== '/') {
       const item = link.closest('.custom-nav-item');
       if (item) item.classList.add('active');
+      link.setAttribute('aria-current', 'page');
     }
   });
 
