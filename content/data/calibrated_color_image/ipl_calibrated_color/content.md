@@ -1,4 +1,5 @@
 ---
+title: "IPL Calibrated Color"
 type: "data"
 layout: "single_iframe"
 aliases:

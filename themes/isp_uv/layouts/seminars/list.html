@@ -107,9 +107,9 @@
     const speakerFilter = document.getElementById('speaker-filter');
     Array.from(speakerFilter.options).forEach(option => {
       if (option.value === "" || availableSpeakers.has(option.value)) {
-        option.style.display = 'block';
+        option.hidden = false;
       } else {
-        option.style.display = 'none';
+        option.hidden = true;
       }
     });
 

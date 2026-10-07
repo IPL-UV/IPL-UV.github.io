@@ -1,4 +1,5 @@
 ---
+title: "Ex Cathedra"
 type: "people"
 layout: "single_iframe"
 aliases:

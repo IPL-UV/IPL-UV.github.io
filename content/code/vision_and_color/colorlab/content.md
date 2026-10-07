@@ -1,4 +1,5 @@
 ---
+title: "ColorLab"
 type: "code"
 layout: "single_iframe"
 aliases:

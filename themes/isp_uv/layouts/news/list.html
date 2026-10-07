@@ -94,16 +94,16 @@
     // Keep Year Filter always visible
     const yearFilter = document.getElementById('year-filter');
     Array.from(yearFilter.options).forEach(option => {
-      option.style.display = 'block';
+      option.hidden = false;
     });
 
     // Update Month Filter
     const monthFilter = document.getElementById('month-filter');
     Array.from(monthFilter.options).forEach(option => {
       if (option.value === "" || availableMonths.has(option.value)) {
-        option.style.display = 'block';
+        option.hidden = false;
       } else {
-        option.style.display = 'none';
+        option.hidden = true;
       }
     });
   }

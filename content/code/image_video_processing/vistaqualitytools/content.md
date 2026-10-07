@@ -1,4 +1,5 @@
 ---
+title: "Vista Quality Tools"
 type: "code"
 layout: "single_iframe"
 aliases:

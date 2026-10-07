@@ -1,4 +1,5 @@
 ---
+title: "Visual Science"
 type: "research"
 layout: "single_iframe"
 aliases:

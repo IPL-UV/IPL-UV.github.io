@@ -1,4 +1,5 @@
 ---
+title: "VistaCore"
 type: "code"
 layout: "single_iframe"
 aliases:
