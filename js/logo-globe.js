@@ -144,9 +144,9 @@
       }
       ctx.putImageData(out, 0, 0);
       atmosphere(e);
-      if (e < 0.2) {
+      if (e < 0.22) {
         ctx.save();
-        ctx.globalAlpha = 1 - e / 0.2;
+        ctx.globalAlpha = 1 - e / 0.22;
         ctx.translate(cx, cx);
         ctx.rotate(angle0 + SPIN * e);
         ctx.translate(-cx, -cx);
@@ -266,7 +266,7 @@
     var bitmap = new Image();
     bitmap.onload = function () {
       sctx.drawImage(bitmap, 0, 0, W, W);
-      sbctx.filter = "blur(6px)";
+      sbctx.filter = "blur(4px)";
       sbctx.drawImage(bitmap, 0, 0, W, W);
       sbctx.filter = "none";
       var id = sbctx.getImageData(0, 0, W, W).data;
