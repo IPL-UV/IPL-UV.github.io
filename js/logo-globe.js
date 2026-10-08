@@ -304,7 +304,7 @@
         atm = null;
         buildSources(bitmap);
         precompute();
-        if (mode === "planet") drawPlanet();
+        if (mode === "planet") drawWarp(1);
         else if (mode === "morph") drawWarp(t);
         else drawRosette(angle);
       }, 220);
