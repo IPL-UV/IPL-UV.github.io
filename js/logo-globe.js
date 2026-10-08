@@ -148,9 +148,12 @@
       }
       ctx.putImageData(out, 0, 0);
       atmosphere(e);
-      if (e < 0.22) {
+      if (e < 0.2) {
         ctx.save();
-        ctx.globalAlpha = 1 - e / 0.22;
+        ctx.globalAlpha = 1 - e / 0.2;
+        ctx.beginPath();
+        ctx.arc(cx, cx, cx, 0, Math.PI * 2);
+        ctx.clip();
         ctx.translate(cx, cx);
         ctx.rotate(angle0 + SPIN * e);
         ctx.translate(-cx, -cx);
