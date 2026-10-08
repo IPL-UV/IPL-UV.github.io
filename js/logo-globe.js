@@ -29,6 +29,9 @@
     var sc = document.createElement("canvas");
     sc.width = W; sc.height = W;
     var sctx = sc.getContext("2d", { willReadFrequently: true });
+    var sb = document.createElement("canvas");
+    sb.width = W; sb.height = W;
+    var sbctx = sb.getContext("2d", { willReadFrequently: true });
     var src = new Uint8ClampedArray(W * W * 4);
     var out = ctx.createImageData(W, W);
     var od = out.data;
@@ -254,7 +257,10 @@
     var bitmap = new Image();
     bitmap.onload = function () {
       sctx.drawImage(bitmap, 0, 0, W, W);
-      var id = sctx.getImageData(0, 0, W, W).data;
+      sbctx.filter = "blur(6px)";
+      sbctx.drawImage(bitmap, 0, 0, W, W);
+      sbctx.filter = "none";
+      var id = sbctx.getImageData(0, 0, W, W).data;
       for (var i = 0; i < id.length; i += 4) {
         var al = id[i + 3] / 255;
         src[i] = id[i] * al; src[i + 1] = id[i + 1] * al; src[i + 2] = id[i + 2] * al; src[i + 3] = id[i + 3];
