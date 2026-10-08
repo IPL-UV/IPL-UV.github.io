@@ -3,6 +3,7 @@
     font-style: normal;
     font-weight: 300;
     src: local('Twentieth Century for Kenmore'), url('TwentiethCenturyforKenmoreLight.woff') format('woff');
+    font-display: swap;
 }
 
 @font-face {
@@ -10,6 +11,7 @@
     font-style: normal;
     font-weight: 500;
     src: local('Twentieth Century for Kenmore'), url('TwentiethCenturyforKenmoreMedium.woff') format('woff');
+    font-display: swap;
 }
 
 @font-face {
@@ -17,6 +19,7 @@
     font-style: normal;
     font-weight: 600;
     src: local('Twentieth Century for Kenmore'), url('TwentiethCenturyforKenmoreSemibold.woff') format('woff');
+    font-display: swap;
 }
 
 @font-face {
@@ -24,4 +27,5 @@
     font-style: normal;
     font-weight: 700;
     src: local('Twentieth Century for Kenmore'), url('TwentiethCenturyforKenmoreBold.woff') format('woff');
+    font-display: swap;
 }
