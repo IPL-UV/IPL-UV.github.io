@@ -18,10 +18,22 @@
 
   <section class="home-mission reveal">
     <div class="home-mission-text">{{ .Content }}</div>
-    <a class="home-video" href="https://www.youtube.com/watch?v=WWQ26ep5hJo" target="_blank" rel="noopener noreferrer">
-      <img src="https://img.youtube.com/vi/WWQ26ep5hJo/mqdefault.jpg" alt="ISP video" width="320" height="180" loading="lazy" referrerpolicy="no-referrer">
-      <span class="home-play" aria-hidden="true"><i class="fa-solid fa-play"></i></span>
-    </a>
+    <div class="home-mission-media">
+      <a class="home-video" href="https://www.youtube.com/watch?v=WWQ26ep5hJo" target="_blank" rel="noopener noreferrer">
+        <img src="https://img.youtube.com/vi/WWQ26ep5hJo/mqdefault.jpg" alt="ISP video" width="320" height="180" loading="lazy" referrerpolicy="no-referrer">
+        <span class="home-play" aria-hidden="true"><i class="fa-solid fa-play"></i></span>
+      </a>
+      <div class="home-social reveal">
+        <a href="https://scholar.google.es/citations?hl=en&user=MsMYu-IAAAAJ" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a>
+        <a href="https://www.researchgate.net/lab/ISP-Image-and-Signal-Processing-Gustau-Camps-Valls" target="_blank" rel="noopener noreferrer" aria-label="ResearchGate"><i class="fab fa-researchgate"></i></a>
+        <a href="https://bsky.app/profile/isp-uv-es.bsky.social" target="_blank" rel="noopener noreferrer" aria-label="Bluesky"><i class="fa-brands fa-bluesky"></i></a>
+        <a href="https://www.linkedin.com/company/image-and-signal-processing/posts/?feedView=all" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/isp_uv_es/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://github.com/IPL-UV" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="{{ relURL "videos/" }}" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="mailto:infoisp@uv.es" aria-label="Email"><i class="fa fa-envelope"></i></a>
+      </div>
+    </div>
   </section>
 
   <section class="home-latest">
@@ -83,16 +95,6 @@
     </div>
   </section>
 
-  <div class="home-social reveal">
-    <a href="https://scholar.google.es/citations?hl=en&user=MsMYu-IAAAAJ" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a>
-    <a href="https://www.researchgate.net/lab/ISP-Image-and-Signal-Processing-Gustau-Camps-Valls" target="_blank" rel="noopener noreferrer" aria-label="ResearchGate"><i class="fab fa-researchgate"></i></a>
-    <a href="https://bsky.app/profile/isp-uv-es.bsky.social" target="_blank" rel="noopener noreferrer" aria-label="Bluesky"><i class="fa-brands fa-bluesky"></i></a>
-    <a href="https://www.linkedin.com/company/image-and-signal-processing/posts/?feedView=all" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-    <a href="https://www.instagram.com/isp_uv_es/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-    <a href="https://github.com/IPL-UV" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
-    <a href="{{ relURL "videos/" }}" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-    <a href="mailto:infoisp@uv.es" aria-label="Email"><i class="fa fa-envelope"></i></a>
-  </div>
 
 </div>
 <noscript><style>.reveal{opacity:1;transform:none}.home-mission-text p{opacity:1;transform:none}.home-col::before{transform:scaleX(1)}</style></noscript>
