@@ -44,7 +44,7 @@
     var angle = 0, angle0 = 0;
     var t = 0, from = 0, to = 0, t0 = 0, dur = 1100, morphRaf = 0;
     var restRaf = 0, restLast = 0;
-    var planetRaf = 0, planetLast = 0, planetSpin = 0, planetAcc = 0;
+    var planetRaf = 0, planetLast = 0, planetSpin = 0;
     var autoTimer = 0, visible = true, atm = null;
     var reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
@@ -144,6 +144,15 @@
       }
       ctx.putImageData(out, 0, 0);
       atmosphere(e);
+      if (e < 0.2) {
+        ctx.save();
+        ctx.globalAlpha = 1 - e / 0.2;
+        ctx.translate(cx, cx);
+        ctx.rotate(angle0 + SPIN * e);
+        ctx.translate(-cx, -cx);
+        ctx.drawImage(sc, 0, 0, W, W);
+        ctx.restore();
+      }
     }
 
     function drawPlanet() {
@@ -197,7 +206,7 @@
 
     function startPlanet() {
       if (reduced || planetRaf) return;
-      planetLast = performance.now(); planetAcc = 1;
+      planetLast = performance.now();
       planetRaf = requestAnimationFrame(planetLoop);
     }
     function stopLoops() {
