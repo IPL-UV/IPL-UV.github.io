@@ -2205,7 +2205,7 @@ h3 {
 .home-mission.in .home-mission-text p:nth-child(2) { transition-delay: 120ms; }
 .home-mission.in .home-mission-text p:nth-child(3) { transition-delay: 240ms; }
 .home-mission.in .home-mission-text p:nth-child(4) { transition-delay: 360ms; }
-.home-mission-media { display: flex; flex-direction: column; align-items: flex-end; gap: 1.1rem; flex: 0 0 440px; margin-left: auto; }
+.home-mission-media { display: flex; flex-direction: column; align-items: flex-end; gap: 1.1rem; flex: 0 0 380px; margin-left: auto; }
 .home-video { position: relative; width: 100%; display: block; aspect-ratio: 16 / 9; overflow: hidden; }
 .home-video img { width: 100%; height: 100%; object-fit: cover; display: block; animation: kenburns 22s ease-in-out infinite alternate; }
 @keyframes kenburns { from { transform: scale(1) translate(0, 0); } to { transform: scale(1.1) translate(-1.6%, -1.6%); } }
