@@ -2191,9 +2191,9 @@ h3 {
 .home-hero-logo.is-ready canvas { opacity: 1; }
 .home-hero-logo.is-ready img { opacity: 0; }
 .home-hero-logo:focus-visible { outline: 3px solid #33646e; outline-offset: 4px; border-radius: 50%; }
-.logo-morph-glow { position: absolute; inset: -16%; border-radius: 50%; z-index: -1; background: conic-gradient(from 210deg, #e01e5a, #f0ad4e, #a6c94a, #5cb85c, #5bc0de, #337ab7, #9b59b6, #e01e5a); -webkit-mask-image: radial-gradient(closest-side, rgba(0,0,0,0.9) 42%, transparent 76%); mask-image: radial-gradient(closest-side, rgba(0,0,0,0.9) 42%, transparent 76%); opacity: 0.22; transition: opacity 500ms var(--ease-out); animation: glow-pulse 7s ease-in-out infinite; }
-.home-hero-logo.is-planet .logo-morph-glow { animation: none; opacity: 0.1; }
-@keyframes glow-pulse { 0%, 100% { opacity: 0.16; } 50% { opacity: 0.26; } }
+.logo-morph-glow { position: absolute; inset: -10%; border-radius: 50%; z-index: -1; background: radial-gradient(closest-side, rgba(91, 192, 222, 0.30), rgba(240, 173, 78, 0.12) 62%, rgba(240, 173, 78, 0) 82%); transition: opacity 500ms var(--ease-out); animation: glow-pulse 7s ease-in-out infinite; }
+.home-hero-logo.is-planet .logo-morph-glow { animation: none; opacity: 0.5; }
+@keyframes glow-pulse { 0%, 100% { opacity: 0.8; } 50% { opacity: 1; } }
 
 .home-mission { display: flex; gap: 2rem; align-items: center; padding: 1rem 1rem 2.4rem; flex-wrap: wrap; }
 .home-mission-text { flex: 1 1 380px; max-width: 66ch; text-align: left; font-size: 1.1rem; }
