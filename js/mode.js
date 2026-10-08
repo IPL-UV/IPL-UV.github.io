@@ -37,19 +37,35 @@ document.addEventListener('DOMContentLoaded', function () {
   const currentPath = window.location.pathname;
 
   if (toggler && navbarCollapse) {
+    navbarCollapse.id = navbarCollapse.id || 'primary-navigation';
+    toggler.setAttribute('aria-controls', navbarCollapse.id);
     toggler.setAttribute('aria-expanded', 'false');
-    toggler.addEventListener('click', function () {
-      const open = navbarCollapse.classList.toggle('show');
+    const setMenu = function (open) {
+      navbarCollapse.classList.toggle('show', open);
       toggler.setAttribute('aria-expanded', open ? 'true' : 'false');
+    };
+    toggler.addEventListener('click', function () {
+      setMenu(!navbarCollapse.classList.contains('show'));
     });
 
     // Close menu when clicking outside the navbar
     document.addEventListener('click', function (e) {
-      if (!e.target.closest('.custom-navbars')) {
-        navbarCollapse.classList.remove('show');
-        toggler.setAttribute('aria-expanded', 'false');
+      if (!e.target.closest('.custom-navbars')) setMenu(false);
+    });
+
+    // Close menu with Escape
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && navbarCollapse.classList.contains('show')) {
+        setMenu(false);
+        toggler.focus();
       }
     });
+
+    // Reset the open menu when the window grows back to desktop
+    const desktop = window.matchMedia('(min-width: 1341px)');
+    const onDesktop = function (ev) { if (ev.matches) setMenu(false); };
+    if (desktop.addEventListener) desktop.addEventListener('change', onDesktop);
+    else if (desktop.addListener) desktop.addListener(onDesktop);
   }
 
   // Highlight active nav item
