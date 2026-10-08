@@ -1,69 +1,111 @@
 {{ define "main" }}
-    <div class="custom-wrapper">
-        <div class="custom-banner">
-            <img src="{{ relURL .Params.banner }}" alt="ISP Banner">
-            <div class="custom-bannet-text">
-                <h1 style="color: #33646e; background: none; border-radius: 0; padding: 0;"> <span style="color: #2b2b2b;">ISP ·</span> Image &amp; Signal Processing</h1>
-                <p style="color: #479bb0">Universitat de València</p>
-            </div>
+<div class="home-demo">
 
-        </div>
-
-        <div class="custom-content">
-            <div class="custom-video">
-            <div class="embed-16by9">
-                <iframe
-                src="https://www.youtube.com/embed/WWQ26ep5hJo?rel=0&modestbranding=1&playsinline=1"
-                loading="lazy"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen>
-                </iframe>
-            </div>
-            </div>
-
-            <div class="custom-text">
-                {{ .Content }}
-                <div class="custom-social-links">
-                    <a href="https://scholar.google.es/citations?hl=en&user=MsMYu-IAAAAJ" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
-                        <i class="fa-brands fa-google-scholar" style="color: #336daf;"></i>
-                    </a>
-                    
-                    <a href="https://www.researchgate.net/lab/ISP-Image-and-Signal-Processing-Gustau-Camps-Valls" target="_blank" rel="noopener noreferrer" aria-label="ResearchGate">
-                        <i class="fab fa-researchgate" style="color: #60d2be;"></i>
-                    </a>
-
-                    <a href="https://bsky.app/profile/isp-uv-es.bsky.social" target="_blank" rel="noopener noreferrer" aria-label="Bluesky">
-                        <i class="fa-brands fa-bluesky" style="color: #3a85ff;"></i>
-                    </a>
-
-                    <a href="https://www.linkedin.com/company/image-and-signal-processing/posts/?feedView=all" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                        <i class="fa-brands fa-linkedin" style="color: #2a66c2;"></i>
-                    </a>
-                    
-                    
-                    <a href="https://www.instagram.com/isp_uv_es/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                        <i class="fa-brands fa-instagram" style="color: #f61971;"></i>
-                    </a>
-    
-                    <a href="https://github.com/IPL-UV" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                        <i class="fab fa-github" style="color: #080808;"></i>
-                    </a>
-                    
-                    <a href="{{ relURL "videos/" }}" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-                        <i class="fab fa-youtube" style="color: #f50234;"></i>
-                    </a>
-
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=infoisp@uv.es" target="_blank" rel="noopener noreferrer" aria-label="Email">
-                        <i class="fa fa-envelope" style="color: #3d363b;"></i>
-                    </a>
-                                       
-                </div>
-            </div>
-        </div>
+  <section class="home-hero">
+    <div class="home-hero-text">
+      <h1><span class="home-isp">ISP ·</span> Image and Signal Processing group</h1>
+      <p class="home-uni">Universitat de València</p>
+      <p class="home-sub">AI for the visual brain, Earth and climate systems.</p>
     </div>
+    <button class="home-hero-logo logo-morph" type="button" aria-pressed="false"
+            data-logo="{{ relURL "images/isp_logo_sinfondo.webp" }}"
+            aria-label="ISP logo"
+            title="Click to turn the logo into a planet">
+      <span class="logo-morph-glow" aria-hidden="true"></span>
+      <img src="{{ relURL "images/isp_logo_sinfondo.webp" }}" alt="">
+      <canvas aria-hidden="true"></canvas>
+    </button>
+  </section>
 
+  <section class="home-mission reveal">
+    <div class="home-mission-text">{{ .Content }}</div>
+    <a class="home-video" href="https://www.youtube.com/watch?v=WWQ26ep5hJo" target="_blank" rel="noopener noreferrer">
+      <img src="https://img.youtube.com/vi/WWQ26ep5hJo/mqdefault.jpg" alt="ISP video" width="320" height="180" loading="lazy" referrerpolicy="no-referrer">
+      <span class="home-play" aria-hidden="true"><i class="fa-solid fa-play"></i></span>
+    </a>
+  </section>
 
-    
+  <section class="home-latest">
+    <div class="home-col home-col-news reveal">
+      <h2>Latest news</h2>
+      <ul>
+        {{ range first 3 (sort (where site.RegularPages "Section" "news") "Date" "desc") }}
+        <li><a href="{{ .RelPermalink }}"><span class="home-date">{{ .Date.Format "Jan 2006" }}</span> {{ .Title }}</a></li>
+        {{ end }}
+      </ul>
+      <a class="home-more" href="{{ relURL "news/" }}">All news →</a>
+    </div>
+    <div class="home-col home-col-seminar reveal">
+      {{ $seminars := where site.RegularPages "Section" "seminars" }}
+      {{ $future := where $seminars "Date" "ge" now }}
+      {{ if gt (len $future) 0 }}
+      {{ $next := first 1 (sort $future "Date" "asc") }}
+      <h2>Next seminar</h2>
+      {{ range $next }}
+      {{ $img := .Params.img | default "uv.webp" }}
+      {{ $src := "" }}
+      {{ if fileExists (printf "static/images/people/%s" $img) }}{{ $src = printf "images/people/%s" $img }}{{ else }}{{ $src = printf "images/seminars/%s" $img }}{{ end }}
+      <div class="home-seminar">
+        <img src="{{ relURL $src }}" alt="" width="92" height="92" loading="lazy">
+        <div>
+          <div class="home-date">{{ .Date.Format "2 Jan 2006" }}</div>
+          <a class="home-sem-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+          {{ $aff := .Params.affiliation | default .Params.afiliation }}{{ with .Params.speaker }}<div class="home-sem-speaker">{{ . }}{{ with $aff }}, {{ . }}{{ end }}</div>{{ end }}
+        </div>
+      </div>
+      {{ end }}
+      {{ else }}
+      {{ $last := first 1 (sort $seminars "Date" "desc") }}
+      <h2>Latest seminar</h2>
+      {{ range $last }}
+      {{ $img := .Params.img | default "uv.webp" }}
+      {{ $src := "" }}
+      {{ if fileExists (printf "static/images/people/%s" $img) }}{{ $src = printf "images/people/%s" $img }}{{ else }}{{ $src = printf "images/seminars/%s" $img }}{{ end }}
+      <div class="home-seminar">
+        <img src="{{ relURL $src }}" alt="" width="92" height="92" loading="lazy">
+        <div>
+          <div class="home-date">{{ .Date.Format "2 Jan 2006" }}</div>
+          <a class="home-sem-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+          {{ $aff := .Params.affiliation | default .Params.afiliation }}{{ with .Params.speaker }}<div class="home-sem-speaker">{{ . }}{{ with $aff }}, {{ . }}{{ end }}</div>{{ end }}
+        </div>
+      </div>
+      {{ end }}
+      {{ end }}
+      <a class="home-more" href="{{ relURL "seminars/" }}">All seminars →</a>
+    </div>
+    <div class="home-col home-col-papers reveal">
+      <h2>Latest papers</h2>
+      <ul>
+        {{ range first 3 (index site.Data.publications "journal") }}
+        <li><a href="{{ .doi_url | default (printf "%spublications/journals/" (relURL "")) }}"><span class="home-paper-title">{{ .title }}</span>{{ with .journal }} <span class="home-journal">{{ . }}</span>{{ end }}</a></li>
+        {{ end }}
+      </ul>
+      <a class="home-more" href="{{ relURL "publications/journals/" }}">All publications →</a>
+    </div>
+  </section>
+
+  <div class="home-social reveal">
+    <a href="https://scholar.google.es/citations?hl=en&user=MsMYu-IAAAAJ" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a>
+    <a href="https://www.researchgate.net/lab/ISP-Image-and-Signal-Processing-Gustau-Camps-Valls" target="_blank" rel="noopener noreferrer" aria-label="ResearchGate"><i class="fab fa-researchgate"></i></a>
+    <a href="https://bsky.app/profile/isp-uv-es.bsky.social" target="_blank" rel="noopener noreferrer" aria-label="Bluesky"><i class="fa-brands fa-bluesky"></i></a>
+    <a href="https://www.linkedin.com/company/image-and-signal-processing/posts/?feedView=all" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://www.instagram.com/isp_uv_es/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://github.com/IPL-UV" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    <a href="{{ relURL "videos/" }}" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+    <a href="mailto:infoisp@uv.es" aria-label="Email"><i class="fa fa-envelope"></i></a>
+  </div>
+
+</div>
+<noscript><style>.reveal{opacity:1;transform:none}.home-mission-text p{opacity:1;transform:none}.home-col::before{transform:scaleX(1)}</style></noscript>
+
+<script>
+  (function () {
+    var els = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window)) { els.forEach(function (e) { e.classList.add('in'); }); return; }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+    }, { threshold: 0.12 });
+    els.forEach(function (e) { io.observe(e); });
+  })();
+</script>
 {{ end }}
