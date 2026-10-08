@@ -25,7 +25,11 @@
     var canvas = node.querySelector("canvas");
     if (!canvas) return;
     var ctx = canvas.getContext("2d");
+    var _r = node.getBoundingClientRect();
+    W = Math.max(140, Math.min(480, Math.round((_r.width || 190) * (window.devicePixelRatio || 1))));
     canvas.width = W; canvas.height = W;
+    ctx.imageSmoothingEnabled = true;
+    ctx.imageSmoothingQuality = "high";
     var sc = document.createElement("canvas");
     sc.width = W; sc.height = W;
     var sctx = sc.getContext("2d", { willReadFrequently: true });
@@ -43,7 +47,7 @@
     var ready = false, mode = "rest";
     var angle = 0, angle0 = 0;
     var t = 0, from = 0, to = 0, t0 = 0, dur = 1100, morphRaf = 0;
-    var restRaf = 0, restLast = 0;
+    var restRaf = 0, restLast = 0, restStart = 0;
     var planetRaf = 0, planetLast = 0, planetSpin = 0;
     var autoTimer = 0, visible = true, atm = null;
     var reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -176,7 +180,7 @@
       if (mode !== "rest") { restRaf = 0; return; }
       var dt = (now - restLast) / 1000; restLast = now;
       if (dt > 0.25) dt = 0.25;
-      if (visible) { angle += IDLE_RATE * dt; drawRosette(angle); }
+      if (visible) { angle += IDLE_RATE * Math.min(1, (now - restStart) / 1400) * dt; drawRosette(angle); }
       restRaf = requestAnimationFrame(restLoop);
     }
 
@@ -189,7 +193,7 @@
         morphRaf = 0;
         if (!visible) drawWarp(t);
         if (to === 1) { mode = "planet"; node.classList.add("is-planet"); startPlanet(); }
-        else { mode = "rest"; node.classList.remove("is-planet"); angle = angle0; restLast = performance.now(); restRaf = requestAnimationFrame(restLoop); }
+        else { mode = "rest"; node.classList.remove("is-planet"); angle = angle0; restLast = restStart = performance.now(); restRaf = requestAnimationFrame(restLoop); }
       }
     }
 
@@ -250,7 +254,7 @@
             else { mode = "rest"; node.classList.remove("is-planet"); drawRosette(angle); }
           }
         } else {
-          if (mode === "rest" && !restRaf) { restLast = performance.now(); restRaf = requestAnimationFrame(restLoop); }
+          if (mode === "rest" && !restRaf) { restLast = restStart = performance.now(); restRaf = requestAnimationFrame(restLoop); }
           if (mode === "planet" && !planetRaf) startPlanet();
         }
       };
@@ -263,18 +267,49 @@
       io.observe(node);
     }
 
-    var bitmap = new Image();
-    bitmap.onload = function () {
-      sctx.drawImage(bitmap, 0, 0, W, W);
+    function buildSources(img) {
+      sctx.clearRect(0, 0, W, W);
+      sctx.drawImage(img, 0, 0, W, W);
+      sbctx.clearRect(0, 0, W, W);
       sbctx.filter = "blur(4px)";
-      sbctx.drawImage(bitmap, 0, 0, W, W);
+      sbctx.drawImage(img, 0, 0, W, W);
       sbctx.filter = "none";
       var id = sbctx.getImageData(0, 0, W, W).data;
       for (var i = 0; i < id.length; i += 4) {
         var al = id[i + 3] / 255;
         src[i] = id[i] * al; src[i + 1] = id[i + 1] * al; src[i + 2] = id[i + 2] * al; src[i + 3] = id[i + 3];
       }
-      bitmap = null;
+    }
+
+    var rszT = 0;
+    window.addEventListener("resize", function () {
+      clearTimeout(rszT);
+      rszT = setTimeout(function () {
+        if (!ready || !bitmap) return;
+        var w = Math.max(140, Math.min(480, Math.round((node.getBoundingClientRect().width || 190) * (window.devicePixelRatio || 1))));
+        if (w === W) return;
+        W = w;
+        canvas.width = W; canvas.height = W;
+        sc.width = W; sc.height = W;
+        sb.width = W; sb.height = W;
+        src = new Uint8ClampedArray(W * W * 4);
+        out = ctx.createImageData(W, W); od = out.data;
+        rhoA = new Float32Array(W * W); kA = new Float32Array(W * W);
+        rowA = new Uint16Array(W * W); colA = new Uint16Array(W * W);
+        base = new Uint8ClampedArray(W * W * 4);
+        ctx.imageSmoothingEnabled = true; ctx.imageSmoothingQuality = "high";
+        atm = null;
+        buildSources(bitmap);
+        precompute();
+        if (mode === "planet") drawPlanet();
+        else if (mode === "morph") drawWarp(t);
+        else drawRosette(angle);
+      }, 220);
+    });
+
+    var bitmap = new Image();
+    bitmap.onload = function () {
+      buildSources(bitmap);
       precompute();
       ready = true;
       drawRosette(0);
@@ -282,7 +317,7 @@
       node.setAttribute("aria-pressed", "false");
       if (reduced) { mode = "rest"; }
       else {
-        if (!restRaf) { restLast = performance.now(); restRaf = requestAnimationFrame(restLoop); }
+        if (!restRaf) { restLast = restStart = performance.now(); restRaf = requestAnimationFrame(restLoop); }
         autoTimer = setTimeout(function () { if (mode === "rest") { go(1, 4600); } }, 1500);
       }
     };
