@@ -213,6 +213,7 @@ h3 {
   color: #f8f8f8;
   display: inline-block;
   vertical-align: middle;
+  transition: transform 200ms ease;
 }
 
 .custom-dropdown-item {
@@ -286,7 +287,9 @@ h3 {
   flex-direction: column;
   width: 100%;
   height: auto;
-  background-color: #2e2e2e;
+  background-color: rgba(30, 30, 30, 0.82);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   position: absolute;
   top: 3rem;
   left: 0;
@@ -319,10 +322,12 @@ h3 {
 }
 .custom-navbar-collapse.show .custom-dropdown-menu {
   position: static;
-  display: block;
+  display: none;
   width: 100%;
-  background-color: #333;
+  background-color: rgba(0, 0, 0, 0.22);
 }
+.custom-navbar-collapse.show .custom-dropdown.open .custom-dropdown-menu { display: block; }
+.custom-navbar-collapse.show .custom-dropdown.open .custom-dropdown-toggle::after { transform: rotate(180deg); }
 
 /* CODE and DATA */
 
@@ -2190,7 +2195,8 @@ h3 {
 .home-hero-text h1 { background: none; color: #33646e; font-family: 'Twentieth Century for Kenmore', system-ui, sans-serif; padding: 0; text-align: left; font-size: clamp(2.6rem, 5.4vw, 4.1rem); font-weight: 700; line-height: 1.1; margin: 0 0 0.5rem; display: block; animation: home-rise 620ms var(--ease-out) both; }
 .home-isp { color: #2b2b2b; }
 .home-uni { color: #479bb0; font-family: 'Twentieth Century for Kenmore', system-ui, sans-serif; font-size: clamp(1.8rem, 3.5vw, 2.5rem); margin: 0 0 0.4rem; animation: home-rise 620ms var(--ease-out) 90ms both; }
-.home-sub { font-size: 1.35rem; font-weight: 600; margin: 0.2rem 0 0; background: linear-gradient(90deg, #2a7f9e, #2f7d32, #a3660a); -webkit-background-clip: text; background-clip: text; color: transparent; -webkit-text-fill-color: transparent; animation: home-rise 620ms var(--ease-out) 180ms both; }
+.home-sub { font-size: 1.35rem; font-weight: 600; margin: 0.2rem 0 0; background: linear-gradient(90deg, #2a7f9e, #2f7d32, #a3660a, #2a7f9e); background-size: 220% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; -webkit-text-fill-color: transparent; animation: home-rise 620ms var(--ease-out) 180ms both, sub-shimmer 9s ease-in-out infinite; }
+@keyframes sub-shimmer { 0%, 100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
 .home-hero-logo { position: relative; isolation: isolate; width: 250px; height: 250px; padding: 0; border: 0; background: none; cursor: pointer; -webkit-tap-highlight-color: transparent; animation: home-rise 620ms var(--ease-out) 240ms both; }
 .home-hero-logo img { width: 100%; height: 100%; display: block; }
 .home-hero-logo canvas { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; display: block; transition: opacity 320ms var(--ease-out); }
