@@ -99,4 +99,16 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
+
+  // En el menu movil, la sublista se pliega/despliega al pulsar el titulo
+  document.querySelectorAll('.custom-dropdown-toggle').forEach(function (toggle) {
+    toggle.addEventListener('click', function (e) {
+      const collapse = document.querySelector('.custom-navbar-collapse');
+      if (collapse && collapse.classList.contains('show')) {
+        e.preventDefault();
+        const parent = toggle.closest('.custom-dropdown');
+        if (parent) parent.classList.toggle('open');
+      }
+    });
+  });
 });
