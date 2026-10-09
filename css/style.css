@@ -2243,7 +2243,7 @@ h3 {
 @media (max-width: 1000px) {
   .home-mission { flex-direction: column; align-items: center; gap: 1rem; }
   .home-mission-text { width: 100%; flex: 0 0 auto; }
-  .home-mission-media { flex: 0 1 auto; width: 50%; max-width: 420px; margin-left: 0; }
+  .home-mission-media { flex: 0 1 auto; width: 65%; max-width: 546px; margin-left: 0; }
   .home-social { justify-content: center; }
 }
 .home-demo a:focus-visible { outline: 3px solid #33646e; outline-offset: 2px; }
