@@ -36,6 +36,9 @@
     var sb = document.createElement("canvas");
     sb.width = W; sb.height = W;
     var sbctx = sb.getContext("2d", { willReadFrequently: true });
+    var sr = document.createElement("canvas");
+    sr.width = W; sr.height = W;
+    var srctx = sr.getContext("2d", { willReadFrequently: true });
     var src = new Uint8ClampedArray(W * W * 4);
     var out = ctx.createImageData(W, W);
     var od = out.data;
@@ -102,7 +105,7 @@
       ctx.translate(W / 2, W / 2);
       ctx.rotate(a);
       ctx.translate(-W / 2, -W / 2);
-      ctx.drawImage(sc, 0, 0, W, W);
+      ctx.drawImage(sr, 0, 0, W, W);
       ctx.setTransform(1, 0, 0, 1, 0, 0);
     }
 
@@ -277,6 +280,10 @@
       sbctx.filter = "blur(4px)";
       sbctx.drawImage(img, 0, 0, W, W);
       sbctx.filter = "none";
+      srctx.clearRect(0, 0, W, W);
+      srctx.filter = "blur(2px)";
+      srctx.drawImage(img, 0, 0, W, W);
+      srctx.filter = "none";
       var id = sbctx.getImageData(0, 0, W, W).data;
       for (var i = 0; i < id.length; i += 4) {
         var al = id[i + 3] / 255;
@@ -295,6 +302,7 @@
         canvas.width = W; canvas.height = W;
         sc.width = W; sc.height = W;
         sb.width = W; sb.height = W;
+        sr.width = W; sr.height = W;
         src = new Uint8ClampedArray(W * W * 4);
         out = ctx.createImageData(W, W); od = out.data;
         rhoA = new Float32Array(W * W); kA = new Float32Array(W * W);
