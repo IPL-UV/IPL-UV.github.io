@@ -2241,8 +2241,9 @@ h3 {
 .home-social a { color: #6f6f6f; transition: color 160ms ease, transform 160ms var(--ease-out); }
 .home-social a:hover { color: #222; transform: translateY(-2px); }
 @media (max-width: 1000px) {
-  .home-mission { flex-direction: column; align-items: stretch; gap: 1.5rem; }
-  .home-mission-media { flex: 1 1 auto; width: 100%; margin-left: 0; align-items: stretch; }
+  .home-mission { flex-direction: column; align-items: center; gap: 1rem; }
+  .home-mission-text { width: 100%; }
+  .home-mission-media { flex: 0 1 auto; width: 50%; max-width: 420px; margin-left: 0; }
   .home-social { justify-content: center; }
 }
 .home-demo a:focus-visible { outline: 3px solid #33646e; outline-offset: 2px; }
